@@ -41,7 +41,7 @@ const visao = [
     '**Ideias em viagem:** os mercadores levaram o budismo, o sânscrito, os algarismos, o xadrez e a arquitetura dos templos para a Ásia Central, a China e o Sudeste Asiático.',
     '**Instituições duradouras:** a guilda, a aldeia com os seus anciãos, a lei por ramos de tradição (*dharmashastra*) e a escola de mestre e discípulo marcaram a Índia durante séculos.'
   ] },
-  { img: 'isc-bharhut-jetavana', leg: 'Relevo do estupa de Bharhut (séc. II – I a.C.): segundo a tradição budista, o mercador Anathapindika compra o parque de Jeta cobrindo o chão de moedas. Museu Indiano, Calcutá.' },
+  { img: 'isc-bharhut-jetavana', leg: 'Relevo do estupa de Bharhut (séc. II – I a.C.): segundo a tradição budista, o mercador Anathapindika compra o parque de Jeta cobrindo o chão de moedas. Museu Indiano, Calcutá. (Imagem ilustrativa gerada por IA.)' },
   { h: 'Três ideias para ler esta página' },
   { lista: [
     '**Norma e prática:** quando um texto diz «o brâmane deve…» ou «o shudra não pode…», é uma regra proposta, não prova de que fosse cumprida.',
@@ -49,7 +49,7 @@ const visao = [
     '**Dinheiro e devoção:** os mercadores e as guildas foram dos maiores doadores a mosteiros e templos. Parte do que se conserva (estupas, grutas, inscrições) deve-se ao seu dinheiro.'
   ] },
   { caixa: 'Hoje', texto: 'O conceito de *jati* e de *varna* continua a marcar a sociedade indiana, e a Constituição da Índia (1950) proíbe a discriminação por casta e a intocabilidade; os historiadores insistem que a casta contemporânea é também produto de séculos de mudança, incluindo o período colonial. O comércio das especiarias que enriqueceu Muziris e Barygaza está na origem remota da procura europeia que levou Vasco da Gama à Índia em 1498.' },
-  { img: 'isc-sanchi-torana', leg: 'Ilustração antiga de Sanchi e das suas ruínas. Uma inscrição atribui parte da escultura da porta sul aos marfinistas de Vidisha, uma corporação de artesãos.' }
+  { img: 'isc-sanchi-torana', leg: 'Porta (torana) do Grande Estupa de Sanchi. Uma inscrição atribui parte da escultura da porta sul aos marfinistas de Vidisha, uma corporação de artesãos. (Imagem ilustrativa gerada por IA.)' }
 ];
 
 const linha = [
@@ -81,7 +81,7 @@ const linha = [
     { d: 'c. 637 – 642 d.C.', t: 'Xuanzang em Nalanda e na Índia', x: 'O monge chinês **Xuanzang** estuda em Nalanda e descreve a sociedade do tempo do rei **Harsha**: as quatro categorias sociais, a vida das cidades, a educação, a exclusão de grupos impuros e a riqueza dos mosteiros.' },
     { d: 'sécs. IX – XIII', t: 'Epílogo: as grandes guildas do sul', x: 'Inscrições em tâmil, kannada e telugu documentam guildas gigantes, como a dos **Ayyavole-500** (*Aiyavole*) e os **Manigramam**, que operam do sul da Índia ao Sudeste Asiático. É a prova de que a tradição das guildas e do comércio marítimo continuou muito depois do fim do período clássico.' }
   ] },
-  { img: 'isc-muziris-papiro', leg: 'O «papiro de Muziris» (Biblioteca Nacional da Áustria, Viena): contrato grego do séc. II d.C. sobre uma carga de especiarias trazida da Índia no navio Hermapollon.' },
+  { img: 'isc-muziris-papiro', leg: 'O «papiro de Muziris» (Biblioteca Nacional da Áustria, Viena): contrato grego do séc. II d.C. sobre uma carga de especiarias trazida da Índia no navio Hermapollon. (Imagem ilustrativa gerada por IA.)' },
   { img: 'isc-junagadh', leg: 'Mapa do Império de Ashoka. No rochedo de Junagadh (Gujarat) há inscrições de Ashoka, de Rudradaman (c. 150 d.C.) e de Skandagupta (séc. V).' },
   { img: 'isc-kandahar-edito', leg: 'Édito de Ashoka em grego e aramaico, de Kandahar (Afeganistão), séc. III a.C.: o rei dirige-se também a súbditos de língua grega.' }
 ];
@@ -198,9 +198,9 @@ const sociedade = [
     ['Moedas romanas', 'séc. I – IV d.C.', 'Áureos (ouro) e denários (prata), achados em depósitos no sul da Índia, onde, por vezes, eram cortados ou marcados e usados por peso']
   ] } },
   { img: 'isc-moeda-punch', leg: 'Moedas de prata com marca de punção (*karshapana*), da Índia antiga, c. séc. V – III a.C.' },
-  { img: 'isc-moeda-satavahana', leg: 'Moeda satavahana com um navio de dois mastros (c. séc. II d.C., atribuída a Yajna Sri Satakarni ou a Vasishthiputra Pulumavi), prova da importância do comércio marítimo no Decão.' },
+  { img: 'isc-moeda-satavahana', leg: 'Moeda satavahana com um navio de dois mastros (c. séc. II d.C., atribuída a Yajna Sri Satakarni ou a Vasishthiputra Pulumavi), prova da importância do comércio marítimo no Decão. (Imagem ilustrativa gerada por IA.)' },
   { img: 'isc-moeda-gupta', leg: 'Dinar de ouro do período Gupta, séc. IV – V d.C.' },
-  { img: 'isc-moeda-romana-india', leg: 'Moedas romanas do tipo encontrado em depósitos no sul da Índia, onde chegavam pagando a pimenta e outros produtos.' },
+  { img: 'isc-moeda-romana-india', leg: 'Moedas romanas do tipo encontrado em depósitos no sul da Índia, onde chegavam pagando a pimenta e outros produtos. (Imagem ilustrativa gerada por IA.)' },
   { h: '8. Estado, impostos e estradas' },
   'O rei vivia sobretudo de **impostos sobre a terra**, a que os textos chamam *bhaga* («parte»), em geral uma fração da colheita (a regra mais citada é um sexto), de **taxas alfandegárias** (*shulka*) sobre as mercadorias, de taxas sobre o comércio e de rendimentos de minas, florestas, sal e terras da coroa. O *Arthashastra* descreve um Estado que se quer rico: monopólios em minas, sal e outros produtos, inspetores de ofícios e de mercados, contas e auditorias. Em **Junagadh**, a inscrição de Rudradaman gaba-se de reparar o reservatório sem usar trabalho forçado (*vishti*) nem novos impostos.',
   'As **estradas** eram uma das despesas do Estado. Megástenes fala de uma grande estrada real desde o noroeste até Pataliputra, com marcos; um édito de Ashoka (Pilar 7) diz que mandou plantar árvores, cavar poços de oito em oito *kos* e construir casas de repouso ao longo das vias. Os textos referem ainda barqueiros, pontes e travessias de rio em barcas, e as taxas (de passagem) que se pagavam.',

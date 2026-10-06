@@ -36,7 +36,7 @@ const visao = [
     '**Ideas on the move:** merchants carried Buddhism, Sanskrit, numerals, chess and temple architecture to Central Asia, China and Southeast Asia.',
     '**Lasting institutions:** the guild, the village with its elders, law by schools of tradition (*dharmashastra*) and the master-and-pupil school shaped India for centuries.'
   ] },
-  { img: 'isc-bharhut-jetavana', leg: 'Relief from the stupa at Bharhut (2nd – 1st century BC): according to Buddhist tradition, the merchant Anathapindika buys the Jeta grove by covering the ground with coins. Indian Museum, Kolkata.' },
+  { img: 'isc-bharhut-jetavana', leg: 'Relief from the stupa at Bharhut (2nd – 1st century BC): according to Buddhist tradition, the merchant Anathapindika buys the Jeta grove by covering the ground with coins. Indian Museum, Kolkata. (Illustrative AI-generated image.)' },
   { h: 'Three ideas for reading this page' },
   { lista: [
     '**Norm and practice:** when a text says «the Brahmin must…» or «the shudra may not…», it is a proposed rule, not proof that it was obeyed.',
@@ -44,7 +44,7 @@ const visao = [
     '**Money and devotion:** merchants and guilds were among the biggest donors to monasteries and temples. Part of what survives (stupas, caves, inscriptions) is owed to their money.'
   ] },
   { caixa: 'Today', texto: 'The concepts of *jati* and *varna* still mark Indian society, and the Constitution of India (1950) forbids discrimination on grounds of caste and untouchability; historians stress that contemporary caste is also a product of centuries of change, including the colonial period. The spice trade that enriched Muziris and Barygaza is the distant origin of the European demand that led Vasco da Gama to India in 1498.' },
-  { img: 'isc-sanchi-torana', leg: 'Old illustration of Sanchi and its remains. An inscription credits part of the sculpture of the southern gate to the ivory-workers of Vidisha, a guild of craftsmen.' }
+  { img: 'isc-sanchi-torana', leg: 'Gateway (torana) of the Great Stupa at Sanchi. An inscription credits part of the sculpture of the southern gate to the ivory-workers of Vidisha, a guild of craftsmen. (Illustrative AI-generated image.)' }
 ];
 
 const linha = [
@@ -76,7 +76,7 @@ const linha = [
     { d: 'c. AD 637 – 642', t: 'Xuanzang at Nalanda and in India', x: 'The Chinese monk **Xuanzang** studies at Nalanda and describes the society of King **Harsha**’s time: the four social categories, city life, education, the exclusion of impure groups and the wealth of the monasteries.' },
     { d: '9th – 13th centuries', t: 'Epilogue: the great guilds of the south', x: 'Inscriptions in Tamil, Kannada and Telugu document giant guilds, such as the **Ayyavole-500** (*Aiyavole*) and the **Manigramam**, operating from southern India to Southeast Asia. This proves that the tradition of guilds and maritime trade continued long after the end of the classical period.' }
   ] },
-  { img: 'isc-muziris-papiro', leg: 'The «Muziris papyrus» (Austrian National Library, Vienna): a 2nd-century AD Greek contract on a cargo of spices brought from India on the ship Hermapollon.' },
+  { img: 'isc-muziris-papiro', leg: 'The «Muziris papyrus» (Austrian National Library, Vienna): a 2nd-century AD Greek contract on a cargo of spices brought from India on the ship Hermapollon. (Illustrative AI-generated image.)' },
   { img: 'isc-junagadh', leg: 'Map of Ashoka\'s empire. The rock of Junagadh (Gujarat) bears inscriptions of Ashoka, Rudradaman (c. AD 150) and Skandagupta (5th century).' },
   { img: 'isc-kandahar-edito', leg: 'Edict of Ashoka in Greek and Aramaic, from Kandahar (Afghanistan), 3rd century BC: the king also addresses Greek-speaking subjects.' }
 ];
@@ -193,9 +193,9 @@ const sociedade = [
     ['Roman coins', '1st – 4th century AD', 'Gold aurei and silver denarii, found in hoards in southern India, where they were sometimes cut or marked and used by weight']
   ] } },
   { img: 'isc-moeda-punch', leg: 'Punch-marked silver coins (*karshapana*) of ancient India, c. 5th – 3rd century BC.' },
-  { img: 'isc-moeda-satavahana', leg: 'Satavahana coin with a two-masted ship (c. 2nd century AD, attributed to Yajna Sri Satakarni or Vasishthiputra Pulumavi), proof of the importance of maritime trade in the Deccan.' },
+  { img: 'isc-moeda-satavahana', leg: 'Satavahana coin with a two-masted ship (c. 2nd century AD, attributed to Yajna Sri Satakarni or Vasishthiputra Pulumavi), proof of the importance of maritime trade in the Deccan. (Illustrative AI-generated image.)' },
   { img: 'isc-moeda-gupta', leg: 'Gold dinar of the Gupta period, 4th – 5th century AD.' },
-  { img: 'isc-moeda-romana-india', leg: 'Roman coins of the type found in hoards in southern India, where they arrived as payment for pepper and other goods.' },
+  { img: 'isc-moeda-romana-india', leg: 'Roman coins of the type found in hoards in southern India, where they arrived as payment for pepper and other goods. (Illustrative AI-generated image.)' },
   { h: '8. State, taxes and roads' },
   'The king lived chiefly on **land taxes**, which texts call *bhaga* («share»), usually a fraction of the harvest (the most quoted rule is one sixth), on **customs duties** (*shulka*) on goods, on taxes on trade and on revenues from mines, forests, salt and crown lands. The *Arthashastra* describes a state that wants to be rich: monopolies on mines, salt and other products, inspectors of crafts and markets, accounts and audits. At **Junagadh**, Rudradaman’s inscription boasts of repairing the reservoir without forced labour (*vishti*) or new taxes.',
   '**Roads** were one of the state’s expenses. Megasthenes speaks of a great royal road from the north-west to Pataliputra, with milestones; an edict of Ashoka (Pillar 7) says he had trees planted, wells dug every eight *kos* and rest-houses built along the roads. Texts also mention boatmen, bridges and ferry crossings, and the tolls paid.',
