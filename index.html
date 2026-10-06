@@ -431,7 +431,7 @@ function desenhar(agora) {
     vis.push(m);
   }
   // Com zoom forte, afasta marcadores (disco + nome) que se sobreporiam no ecrã.
-  const peso = limitar((zf - 0.3) / 0.3, 0, 1);
+  const peso = 1;   // afasta sempre os marcadores sobrepostos (também com o globo todo à vista)
   if (peso > 0 && vis.length > 1) {
     const rotulos = zf > 0.3;
     for (const m of vis) {
@@ -439,7 +439,7 @@ function desenhar(agora) {
       m.w = Math.max(64, rotulos ? m.lw : 0) * escala + 8;           // largura da caixa (px)
       m.h = (rotulos ? 70 + 26 : 64) * escala + 6;                    // altura da caixa: disco + nome
     }
-    for (let it = 0; it < 40; it++) {
+    for (let it = 0; it < 60; it++) {
       let mexeu = false;
       for (let i = 0; i < vis.length; i++) for (let j = i + 1; j < vis.length; j++) {
         const A = vis[i], B = vis[j];

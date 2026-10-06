@@ -1,5 +1,6 @@
 // SUMÉRIOS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Datas aproximadas, na «cronologia média». a.C. = antes de Cristo. Os acádios são tratados aqui como parte desta civilização.
 // Imagens: cada {img:'id'} procura o ficheiro  sumerios/img/id.jpg  (ver IMAGENS_SUMERIOS.md para a lista e os prompts).
 
@@ -282,6 +283,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };
