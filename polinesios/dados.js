@@ -146,6 +146,7 @@ const sociedade = [
     ['Makemake', 'Criador (Rapa Nui)', 'O principal deus de Rapa Nui; associado ao culto do Homem-Pássaro']
   ] } },
   { img: 'pol-marae-ritual', leg: 'Cerimónia num marae das Ilhas da Sociedade, com sacerdotes, chefes e oferendas; cena imaginada. Ilustração gerada por IA.' },
+  { img: 'pol-heiau-puukohola', leg: 'A consagração do templo (heiau) de Puʻukoholā, na ilha do Havai, em 1791: cena imaginada, com chefes de mantos de penas, sacerdotes e imagens de madeira (kiʻi). Ilustração gerada por IA.' },
   'Os templos eram, quase sempre, espaços **ao ar livre**: o **marae** (Taiti, Cook, Maori), o **heiau** (Havai) e o **ahu** (Rapa Nui, onde designa a plataforma dos moai) eram recintos de pedra, com plataformas, altares e estátuas. Os rituais incluíam oferendas de comida, danças e, em algumas ilhas (Taiti, Havai, Marquesas), em tempos de crise ou de guerra, **sacrifícios humanos**: a prática está atestada em relatos de europeus (Cook assistiu a um no Taiti, em 1777) e em tradições locais, mas a sua frequência varia e é difícil de medir.',
   { h: '4. Economia' },
   'A economia assentava na **agricultura**, na **pesca** e na troca. Os colonos trouxeram nas canoas as chamadas «**plantas de canoa**»: taro, inhame, árvore-do-pão, banana, cana-de-açúcar, coco, amoreira-do-papel (para o tapa) e kava, além de **porcos, cães e galinhas** (e, sem querer, o rato do Pacífico). Na Nova Zelândia, mais fria, só o *kūmara* e alguns inhames sobreviveram, por isso a caça, a pesca e a recolha de raízes de feto tiveram um papel maior.',

@@ -143,6 +143,7 @@ const sociedade = [
     ['Makemake', 'Creator (Rapa Nui)', 'The principal god of Rapa Nui; associated with the Birdman cult']
   ] } },
   { img: 'pol-marae-ritual', leg: 'A ceremony at a marae in the Society Islands, with priests, chiefs and offerings; imagined scene. AI-generated illustration.' },
+  { img: 'pol-heiau-puukohola', leg: 'The consecration of the Puʻukoholā temple (heiau) on the island of Hawaiʻi in 1791: an imagined scene, with chiefs in feather cloaks, priests and wooden images (kiʻi). AI-generated illustration.' },
   'Temples were almost always **open-air** spaces: the **marae** (Tahiti, Cook Islands, Māori), the **heiau** (Hawaiʻi) and the **ahu** (Rapa Nui, where it means the platform of the moai) were stone enclosures with platforms, altars and statues. Rituals included offerings of food, dances and, on some islands (Tahiti, Hawaiʻi, the Marquesas), in times of crisis or war, **human sacrifice**: the practice is attested in European accounts (Cook witnessed one in Tahiti in 1777) and in local traditions, but its frequency varied and is hard to measure.',
   { h: '4. Economy' },
   'The economy rested on **agriculture**, **fishing** and exchange. The settlers brought in their canoes the so-called “**canoe plants**”: taro, yam, breadfruit, banana, sugar cane, coconut, paper mulberry (for tapa) and kava, as well as **pigs, dogs and chickens** (and, unintentionally, the Pacific rat). In colder New Zealand only the *kūmara* and a few yams survived, so hunting, fishing and gathering fern root played a larger part.',
