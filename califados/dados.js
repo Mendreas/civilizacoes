@@ -1,0 +1,321 @@
+// CALIFADOS ISLÂMICOS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
+import EN from './dados-en.js';
+import CRED from './creditos.js';
+// Datas na cronologia habitual (d.C.; entre parênteses, o calendário islâmico só quando útil). Tratamento factual e respeitoso: o que pertence à tradição islâmica é assinalado como tal.
+// Imagens: cada {img:'id'} procura o ficheiro  califados/img/id.jpg  (ver IMAGENS_CALIFADOS.md para a lista e os prompts).
+
+const visao = [
+  { caixa: 'Em resumo', texto: [
+    'Os **califados islâmicos** foram os Estados governados por um **califa** («sucessor», «representante»), o chefe da comunidade muçulmana depois da morte do profeta **Muhammad** em 632. Em pouco mais de cem anos, exércitos e administradores árabes, vindos de uma Península Arábica até então à margem das grandes potências, criaram um império que ia do Atlântico, na Península Ibérica, ao rio Indo e à Ásia Central. Foi um dos maiores impérios da história.',
+    'Mas os califados não foram só conquistas. Entre os séculos VIII e XI formaram-se cidades enormes (Bagdade, Córdova, o Cairo), uma língua comum de cultura (o **árabe**), uma rede comercial que ligava a China ao Atlântico e uma ciência que traduziu, criticou e ampliou o saber da Grécia, da Pérsia e da Índia. O império político acabou por se fragmentar em vários califados rivais e sultanatos, e a sua capital abássida, Bagdade, foi saqueada pelos mongóis em **1258**; mas a civilização que ali floresceu continuou, e deixou marcas profundas na Europa, incluindo em Portugal.'
+  ] },
+  { img: 'clf-mapa-expansao', leg: 'Mapa da expansão do Islão nas primeiras fases dos califados.' },
+  { h: 'Onde e quando' },
+  'O núcleo inicial foi **Meca** e **Medina**, no Hejaz (oeste da atual Arábia Saudita). Daí, no espaço de uma geração, o poder muçulmano chegou à Síria, ao Iraque, ao Egito e ao planalto iraniano; na geração seguinte, ao Magrebe, à Península Ibérica (711) e ao vale do Indo. As capitais mudaram com o centro de poder: Medina, Damasco, Bagdade, Córdova, o Cairo. Houve **três califados em simultâneo** no século X (abássida em Bagdade, fatímida no Cairo e omíada em Córdova), sinal de que a unidade política se tinha perdido muito antes de 1258, ainda que a unidade cultural e religiosa continuasse.',
+  { tabela: { cab: ['Fase', 'Datas', 'O que a marca'], linhas: [
+    ['Arábia pré-islâmica', 'séculos V–VI', 'Tribos beduínas, cidades-oásis e rotas de caravanas; Meca como centro de peregrinação e comércio; impérios vizinhos (Bizâncio e Pérsia sassânida)'],
+    ['Muhammad e a primeira comunidade', 'c. 570 – 632', 'Segundo a tradição islâmica, as primeiras revelações por volta de 610; a Hégira (622) para Medina; unificação do Hejaz'],
+    ['Califado Rashidun («bem guiados»)', '632 – 661', 'Abu Bakr, Umar, Uthman e Ali; conquista da Síria, Iraque, Egito e Pérsia; primeira guerra civil (*fitna*)'],
+    ['Califado Omíada', '661 – 750', 'Capital em Damasco; arabização do Estado; Cúpula da Rocha; Hispânia (711); queda às mãos dos abássidas'],
+    ['Califado Abássida', '750 – 1258', 'Capital em Bagdade (762); idade de ouro da ciência e das letras; depois enfraquecimento político e domínio de emires, buídas e seljúcidas'],
+    ['Emirado e Califado de Córdova', '756 – 1031', 'Sobrevivência omíada em Al-Andalus; califado proclamado em 929; Medina Azahara; guerras civis a partir de 1009'],
+    ['Califado fatímida', '909 – 1171', 'Dinastia xiita ismaelita; fundação do Cairo (969) e de Al-Azhar; queda para Saladino'],
+    ['O fim em Bagdade', '1258', 'Os mongóis de Hulagu tomam a cidade e matam o califa al-Musta’sim']
+  ] } },
+  { img: 'clf-mapa-abassida', leg: 'Mapa do Califado Abássida cerca de 850.' },
+  { h: 'Antes do Islão: a Arábia' },
+  'Antes do século VII, a Arábia não era um deserto vazio nem um mundo isolado. No sul (o atual Iémen) florescera uma civilização de agricultores e comerciantes de incenso, o reino de Himiar. No norte e no oeste, as caravanas ligavam o Índico ao Mediterrâneo, e os impérios vizinhos tinham aliados árabes: os **gassânidas** (ligados a Bizâncio) e os **lacmidas** (ligados à Pérsia). Os nabateus, com a sua capital Petra, tinham sido absorvidos por Roma no ano 106.',
+  'No Hejaz, a sociedade estava organizada em **tribos** e clãs, com forte sentido de honra e de linhagem, e a **poesia** oral era a grande arte, o espelho dos valores tribais. Meca, governada pelos Coraixitas (a tribo de Muhammad), era um centro comercial e religioso. Aí ficava a **Caaba**, santuário de culto pré-islâmico a que acorriam peregrinos de toda a região; o Islão mantê-lo-ia, redefinindo-o como a casa de Deus construída, segundo a tradição islâmica, por Abraão e Ismael. Havia politeístas, mas também comunidades judaicas (em Medina e noutros oásis) e cristãs (em Najran e na fronteira) e pessoas que procuravam um monoteísmo independente, os *hanifs*.',
+  { img: 'clf-kaaba', leg: 'A Caaba na Grande Mesquita de Meca.' },
+  { img: 'clf-ia-caravana', leg: 'Caravana na Arábia, século VI; cena imaginada. Ilustração gerada por IA.' },
+  { h: 'Muhammad e a mensagem do Islão' },
+  'Segundo a tradição islâmica, **Muhammad ibn Abdallah** nasceu em Meca por volta de 570, no clã de Hashim, dos Coraixitas. Órfão cedo, foi comerciante, e por volta dos 40 anos, numa gruta do monte Hira, recebeu a primeira de uma série de revelações que, na fé muçulmana, lhe foram transmitidas por Deus através do anjo Jibril (Gabriel) e que formam o **Alcorão** («a recitação»). A mensagem, centrada na unicidade de Deus (*tawhid*), na justiça social e no juízo final, atraiu seguidores e a hostilidade das elites de Meca.',
+  'Em **622**, perseguido, Muhammad e os seus seguidores emigraram para Yathrib, mais tarde chamada **Medina** («a cidade»). Esta migração, a **Hégira** (*hijra*), é o ponto de partida do calendário islâmico. Em Medina fundou uma comunidade (*umma*) que reunia crentes de várias tribos, com regras escritas (a chamada «Constituição de Medina»). Seguiram-se anos de guerra e negociação com Meca, que se rendeu em 630; Muhammad purificou a Caaba e, até à sua morte, em **632**, a maior parte da Arábia reconheceu a sua liderança.',
+  { caixa: 'Uma nota de método', texto: 'Este texto descreve a vida de Muhammad e as revelações tal como as apresenta a **tradição islâmica**, que é a fonte principal para a sua biografia: o Alcorão e, muito mais tarde (séculos VIII e IX), as biografias (*sira*) e as recolhas de ditos (*hadith*). Para os crentes, é a palavra de Deus e o testemunho de uma vida exemplar. Os historiadores estudam estas fontes com os métodos habituais, e discutem alguns pormenores cronológicos. Por respeito pela tradição islâmica, o Profeta não é representado em imagens neste site.' },
+  { img: 'clf-alcorao-azul', leg: 'Folha do Alcorão Azul, cúfico a ouro sobre pergaminho índigo; Chester Beatty Library, Is 1405A, f. 1b.' },
+  { h: 'Porque importam' },
+  { lista: [
+    '**Um império de culturas:** juntaram sob uma mesma autoridade gregos, sírios, persas, egípcios, berberes, hispano-godos, indianos e árabes, e criaram uma civilização que não era só árabe nem só islâmica.',
+    '**Ciência e saber:** traduziram e discutiram a filosofia e a ciência da Grécia, da Índia e da Pérsia, e fizeram avanços próprios em álgebra, ótica, medicina, astronomia e geografia, transmitidos mais tarde à Europa latina.',
+    '**Cidades e comércio:** Bagdade, Córdova e o Cairo estiveram entre as maiores cidades do mundo, ligadas por uma rede de comércio que juntava o Atlântico, o Mediterrâneo, o Índico e a Rota da Seda.',
+    '**Uma religião mundial:** o Islão é hoje a religião de cerca de dois mil milhões de pessoas, e a língua árabe de cultura continua viva.',
+    '**Portugal:** o sul do atual território foi parte de Al-Andalus durante cinco séculos; a língua, a toponímia, a agricultura, a arquitetura e o azeite, o arroz e os azulejos guardam essa herança.'
+  ] },
+  { h: 'Os califados hoje' },
+  'Não existe hoje nenhum califado reconhecido: o último título califal ligado a uma dinastia (o dos sultões otomanos) foi extinto em 1924. Mas os grandes monumentos dessa época, como a Cúpula da Rocha, a Mesquita de Córdova, Al-Azhar, as bibliotecas e os manuscritos, continuam a ser visitados, estudados e usados. Muitos termos da ciência e da vida quotidiana na Europa (álgebra, algoritmo, alquimia, azimute, açúcar, algodão) vieram do árabe.'
+];
+
+const linha = [
+  'Esta linha do tempo segue os acontecimentos mais importantes, de Muhammad à queda de Bagdade. Para os séculos mais antigos, as fontes escritas são em geral posteriores aos acontecimentos, pelo que algumas datas e pormenores são discutidos.',
+  { linha: [
+    { d: 'c. 570', t: 'Nascimento de Muhammad', x: 'Segundo a tradição islâmica, nasce em Meca no clã de Hashim. A data exata é incerta; a tradição liga-a ao «ano do elefante», em que um exército do sul teria marchado sobre Meca.' },
+    { d: 'c. 610', t: 'As primeiras revelações', x: 'A tradição islâmica situa na gruta de Hira, perto de Meca, a primeira revelação que Muhammad recebeu. Durante cerca de vinte anos continuaria a receber o que viria a constituir o Alcorão.' },
+    { d: '622', t: 'A Hégira', x: 'Muhammad e os seus seguidores emigram de Meca para **Medina**. É o ano 1 do calendário islâmico.' },
+    { d: '630 – 632', t: 'Meca e a morte do Profeta', x: 'Meca rende-se em 630. Em **632** Muhammad morre em Medina, sem deixar um sucessor claramente designado, e a comunidade escolhe **Abu Bakr** como primeiro califa.' },
+    { d: '634 – 642', t: 'As grandes conquistas rashiduns', x: 'Sob **Umar** (634–644), os exércitos árabes vencem os bizantinos no **Yarmuk** (636) e os persas em **Qadisiyya** (c. 636), tomam Jerusalém (c. 637–638) e o Egito (639–642). O império sassânida colapsa depois de Nahavand (642), exaustos que estavam os dois impérios vizinhos de décadas de guerra mútua.' },
+    { d: '656 – 661', t: 'A primeira guerra civil (fitna)', x: 'O califa **Uthman** é assassinado em 656. **Ali**, primo e genro do Profeta, é eleito, mas é contestado por Aisha (batalha do Camelo) e por Mu’awiya, governador da Síria (Siffin, 657). Ali é assassinado em Cufa em 661. A disputa sobre a sucessão está na origem da divisão entre sunitas e xiitas.' },
+    { d: '661', t: 'Mu’awiya funda o Califado Omíada', x: '**Mu’awiya** torna-se califa e instala a capital em **Damasco**, na Síria. O califado passa a ser, de facto, hereditário.' },
+    { d: '680', t: 'Karbala', x: 'Husayn, neto do Profeta, é morto com um pequeno grupo de familiares e partidários em Karbala (Iraque), por forças do califa Yazid I. O dia, *Ashura*, é para os xiitas um momento central de luto e memória.' },
+    { d: 'c. 691 – 692', t: 'A Cúpula da Rocha', x: 'O califa **Abd al-Malik** manda construir em Jerusalém a Cúpula da Rocha, um dos mais antigos monumentos do Islão. Em seguida reforma a administração (o árabe como língua oficial) e a moeda, com os primeiros dinares só com inscrições.' },
+    { d: '670 – 711', t: 'O Magrebe e a Hispânia', x: 'Fundação de **Cairuão** (670) como base no Norte de África. Em 711 o governador **Musa ibn Nusayr** envia **Tariq ibn Ziyad** através do estreito (que viria a chamar-se Jabal Tariq, «Gibraltar»). Em julho vence o rei visigodo **Rodrigo** na batalha de **Guadalete**.' },
+    { d: '711 – 720', t: 'A conquista da Península Ibérica', x: 'Em menos de dez anos, quase toda a Península fica sob domínio muçulmano, em parte por tratados com as elites locais. Nasce **Al-Andalus**. Só um pequeno núcleo cristão resiste nas Astúrias.' },
+    { d: '732', t: 'Poitiers (Tours)', x: 'Uma força comandada por Abd al-Rahman al-Ghafiqi é travada por **Carlos Martel** entre Tours e Poitiers. Os historiadores atuais veem nela sobretudo um confronto de dimensão regional (uma incursão em larga escala) e não o «salvar da Europa» da tradição.' },
+    { d: '747 – 750', t: 'A revolução abássida', x: 'Uma revolta que parte do Khorasan, no leste, e que reúne árabes e não árabes descontentes, derrota o último califa omíada em 750 na batalha do Grande Zab. A família abássida, descendente de um tio do Profeta, toma o poder. Quase toda a família omíada é morta.' },
+    { d: '751', t: 'Talas', x: 'Perto do rio Talas (hoje na fronteira do Cazaquistão e do Quirguistão), um exército abássida e aliados vence um exército da dinastia chinesa Tang. A tradição liga a batalha à difusão do fabrico de papel no mundo islâmico, mas o papel já era conhecido em Samarcanda; o impacto é debatido.' },
+    { d: '756', t: 'Abd al-Rahman I em Córdova', x: 'O príncipe omíada **Abd al-Rahman I**, que escapou ao massacre de 750, chega a Al-Andalus e funda o emirado independente de Córdova. Começa a Mesquita de Córdova (c. 785).' },
+    { d: '762', t: 'Fundação de Bagdade', x: 'O califa **al-Mansur** funda a «Cidade da Paz» (Madinat al-Salam), a Cidade Redonda, no Tigre. Torna-se a capital abássida e uma das maiores cidades do mundo.' },
+    { d: '786 – 809', t: 'Harun al-Rashid', x: 'O auge do poder e do esplendor abássidas. As histórias das *Mil e Uma Noites* que o têm como personagem são lendas; o califa histórico foi um governante complexo, com a corte sustentada por uma burocracia persa, os Barmécidas.' },
+    { d: '813 – 833', t: 'Al-Ma’mun e a Casa da Sabedoria', x: 'O califa **al-Ma’mun** patrocina a tradução do grego e do siríaco, e os estudos em Bagdade. A «Casa da Sabedoria» (*Bayt al-Hikma*) é hoje vista como um centro de biblioteca e de estudo, menos institucionalizado do que a tradição supôs.' },
+    { d: '836', t: 'Samarra', x: 'O califa al-Mu’tasim muda a capital para Samarra, para afastar a sua guarda de soldados turcos da população de Bagdade. Regressa-se a Bagdade em 892.' },
+    { d: '869 – 883', t: 'A revolta dos Zanj', x: 'Escravos africanos empregues em trabalhos agrícolas no sul do Iraque revoltam-se e controlam durante anos a região de Basra, só vencida a custo. É uma das maiores revoltas de escravos da história.' },
+    { d: '909', t: 'Fundação do Califado fatímida', x: 'Os fatímidas, uma dinastia xiita ismaelita, tomam o poder em Ifriqiya (a atual Tunísia) e proclamam um califa rival, o que desafia os abássidas e, mais tarde, os omíadas de Córdova.' },
+    { d: '929', t: 'Califado de Córdova', x: '**Abd al-Rahman III** proclama-se califa, rompendo o simbolismo de subordinação a Bagdade. Cerca de 936–940 começa a construção de **Medina Azahara**.' },
+    { d: '945', t: 'Os buídas em Bagdade', x: 'Uma dinastia xiita persa, os **buídas**, ocupa Bagdade. O califa abássida mantém o título, mas não o poder: torna-se uma figura religiosa e simbólica sob tutela. Em 1055 os turcos seljúcidas, sunitas, substituem-nos.' },
+    { d: '969 – 972', t: 'O Cairo e Al-Azhar', x: 'O general fatímida **Jawhar** conquista o Egito e funda **Al-Qahira**, o Cairo. Em 970–972 constrói-se a mesquita de **Al-Azhar**, mais tarde uma das universidades mais antigas ainda em funcionamento.' },
+    { d: '976 – 1002', t: 'Al-Hakam II e Almançor', x: 'Al-Hakam II (961–976), califa culto, reúne uma grande biblioteca. Após a sua morte, o vizir **Almançor** (Ibn Abi Amir) governa de facto, com campanhas anuais contra os reinos cristãos do norte, até à sua morte em 1002.' },
+    { d: '1009 – 1031', t: 'O fim do Califado de Córdova', x: 'Uma guerra civil (*fitna*) desfaz o Estado omíada. Em 1031 o califado é abolido. Al-Andalus divide-se em dezenas de reinos de taifas.' },
+    { d: '1099 – 1187', t: 'As Cruzadas e Saladino', x: 'Os cruzados tomam Jerusalém em 1099. **Saladino**, que pôs fim ao califado fatímida em 1171, reconquista a cidade em 1187 depois da vitória em Hattin; fundou a dinastia ayúbida.' },
+    { d: '1258', t: 'O saque de Bagdade', x: 'Os mongóis de **Hulagu** cercam e tomam Bagdade em fevereiro. O califa al-Musta’sim é morto, a cidade é saqueada e grande parte da população massacrada (as estimativas variam muito), com perdas graves de bibliotecas. O califado abássida termina; um califa-sombra seria instalado no Cairo pelos mamelucos.' }
+  ] },
+  { img: 'clf-ia-batalha-guadalete', leg: 'Batalha de Guadalete, 711; reconstituição artística conjetural. Ilustração gerada por IA.' },
+  { img: 'clf-gibraltar', leg: 'Rochedo de Gibraltar visto da Eastern Beach, na costa oriental.' },
+  { img: 'clf-cupula-rocha', leg: 'Cúpula da Rocha, Jerusalém.' },
+  { img: 'clf-dinar', leg: 'Dinar de ouro omíada de Abd al-Malik, 77 AH (697), Khalili Collections, AV 1071.' },
+  { img: 'clf-kairouan', leg: 'Grande Mesquita de Cairuão, Tunísia.' },
+  { img: 'clf-mapa-fatimida', leg: 'Mapa do Califado Fatímida.' },
+  { img: 'clf-mongois-bagdade', leg: 'Cerco de Bagdade em 1258, miniatura persa de uma obra de Rashid al-Din.' }
+];
+
+const mapa = [
+  'Os califados não tinham um só centro: o poder deslocou-se com as dinastias, de Medina para Damasco, de Damasco para Bagdade, e para Córdova e o Cairo, onde se formaram califados rivais. A tabela mostra as principais cidades e as ligações entre elas. Eram cidades de tamanho excecional para a época: Bagdade e Córdova chegaram a ter, segundo as estimativas, várias centenas de milhares de habitantes (o número é muito discutido).',
+  { img: 'clf-mapa-andalus', leg: 'Quatro fases da evolução de Al-Andalus, de 711 a 1492.' },
+  { tabela: { cab: ['Cidade', 'Local hoje', 'Papel nos califados', 'Ficou conhecida por'], linhas: [
+    ['Meca', 'Arábia Saudita', 'Cidade santa; destino da peregrinação (*hajj*)', 'A Caaba; terra de Muhammad'],
+    ['Medina', 'Arábia Saudita', 'Primeira capital do Estado islâmico (622–656)', 'Mesquita do Profeta; primeiros califas'],
+    ['Jerusalém', 'Israel/Palestina', 'Terceira cidade santa do Islão', 'Cúpula da Rocha e mesquita de Al-Aqsa'],
+    ['Damasco', 'Síria', 'Capital omíada (661–750)', 'Grande Mesquita dos Omíadas, jardins, aquedutos'],
+    ['Cufa e Basra', 'Iraque', 'Cidades-guarnição fundadas em 636–638; berços da gramática e da teologia', 'Escolas de filologia; os rios e o comércio do golfo'],
+    ['Bagdade', 'Iraque', 'Capital abássida (762–1258)', 'Cidade Redonda, Casa da Sabedoria, mercados, tradutores'],
+    ['Samarra', 'Iraque', 'Capital abássida (836–892)', 'Minarete em espiral (Malwiya), palácios'],
+    ['Cairuão', 'Tunísia', 'Base no Magrebe (670), depois capital aglabida', 'Grande Mesquita; centro de estudos religiosos'],
+    ['Fustate e o Cairo', 'Egito', 'Fustate (641), depois Al-Qahira (969), capital fatímida', 'Al-Azhar; Dar al-Ilm; Ibn al-Haytham'],
+    ['Córdova', 'Espanha', 'Capital do emirado e do califado omíada (756–1031)', 'Mesquita, Medina Azahara, bibliotecas, Averróis'],
+    ['Samarcanda e Bucara', 'Uzbequistão', 'Cidades da Ásia Central; samânidas', 'Papel; Ibn Sina nasceu perto de Bucara'],
+    ['Sevilha, Toledo, Saragoça', 'Espanha', 'Cidades de Al-Andalus; capitais de taifas', 'Poesia, agricultura, ciência, tradutores']
+  ] } },
+  { h: 'Damasco, a capital omíada' },
+  'Capital dos omíadas desde 661, Damasco era uma cidade antiga, com população sobretudo cristã nos primeiros tempos. O califa **al-Walid I** (705–715) mandou construir a **Grande Mesquita dos Omíadas** no local de uma antiga basílica dedicada a São João Batista, com mosaicos de ouro e vidro feitos, segundo as fontes, com artesãos bizantinos, com paisagens, árvores e edifícios mas sem figuras humanas. Foi o modelo de muitas mesquitas posteriores.',
+  { img: 'clf-mesquita-damasco', leg: 'Mosaicos do pórtico ocidental do pátio da Grande Mesquita dos Omíadas, Damasco.' },
+  { h: 'Bagdade, a Cidade da Paz' },
+  'Em 762 o califa **al-Mansur** escolheu o local, no Tigre, perto do cruzamento de rotas fluviais e caravaneiras, e fundou a cidade que os seus contemporâneos chamaram «Cidade da Paz». O núcleo era um círculo com cerca de 2 km de diâmetro, com muralhas concêntricas, quatro portas e, ao centro, o palácio do califa e a mesquita. Nada resta desta Cidade Redonda; conhecemo-la por descrições árabes antigas e por escavações limitadas. Em poucas décadas, a cidade extravasou as muralhas, com bairros, mercados e pontes sobre o Tigre.',
+  { img: 'clf-ia-bagdade-redonda', leg: 'Cidade Redonda de Bagdade cerca de 770; reconstituição conjetural. Ilustração gerada por IA.' },
+  { h: 'Córdova e Medina Azahara' },
+  'Capital de Al-Andalus, Córdova teve no século X uma enorme riqueza: mesquita, bibliotecas, mercados, banhos públicos e palácios. A **Mesquita**, iniciada por Abd al-Rahman I em c. 785 e ampliada várias vezes, é famosa pela floresta de arcos de dois níveis, vermelhos e brancos. A cerca de 5 km, **Abd al-Rahman III** mandou construir, a partir de c. 936–940, a cidade palaciana de **Medina Azahara** (*Madinat al-Zahra*), símbolo do poder do califado: era residência, sede do governo e cenário de receções de embaixadores. Foi saqueada na guerra civil a partir de 1010 e abandonada; foi redescoberta no século XX e é Património Mundial da UNESCO.',
+  { img: 'clf-ia-cordoba-califal', leg: 'Córdova no século X; reconstituição conjetural. Ilustração gerada por IA.' },
+  { img: 'clf-medina-azahara', leg: 'Fachada do Salão Rico de Medina Azahara, Córdova.' },
+  { img: 'clf-ia-medina-azahara', leg: 'Medina Azahara cerca de 950; reconstituição conjetural. Ilustração gerada por IA.' },
+  { h: 'O Cairo fatímida' },
+  'Quando o general Jawhar conquistou o Egito em 969, os fatímidas fundaram junto à antiga capital, Fustate, uma nova cidade-palácio reservada ao califa, a **Al-Qahira**, «a Vitoriosa» (nome de que vem «Cairo»). Em 970–972 construíram a mesquita de **Al-Azhar**, onde ainda hoje se estuda: é um dos centros de ensino mais antigos do mundo em funcionamento. O Cairo foi também o lugar de trabalho do sábio Ibn al-Haytham e, mais tarde, da cidade que Saladino fortificou com a Cidadela.',
+  { img: 'clf-al-azhar', leg: 'Mesquita de Al-Azhar, Cairo.' },
+  { img: 'clf-ia-cairo-fatimida', leg: 'Cairo fatímida cerca de 1090; reconstituição conjetural. Ilustração gerada por IA.' },
+  { h: 'Gharb al-Andalus: o território português' },
+  'O oeste de Al-Andalus, o **Gharb al-Andalus** («o poente»), ocupava o que é hoje o sul de Portugal, de uma maneira geral, com limites mal definidos ao longo dos séculos. Daí o nome **Algarve**, do árabe *al-Gharb*. As cidades principais eram **Lisboa** (*Lishbuna*), **Santarém** (*Shantarin*), **Évora** (*Yabura*), **Beja** (*Baja*), **Mértola** (*Martula*), **Silves** (*Shilb*), **Faro**, **Tavira** e **Badajoz**, esta última capital de uma taifa que incluía partes do Alentejo. Sob a tutela de Córdova até 1031, o Gharb passou depois para vários reinos de taifas (com destaque para o de **Badajoz**, o de **Silves** e o de **Sevilha**, de cujo rei-poeta al-Mu’tamid se conserva uma poesia célebre), depois para os **almorávidas** (séc. XI–XII) e os **almóadas** (séc. XII–XIII).',
+  { tabela: { cab: ['Cidade', 'Nome árabe', 'Conquista cristã', 'O que resta'], linhas: [
+    ['Lisboa', 'Lishbuna', '1147 (Afonso Henriques e cruzados)', 'Muralha, Alfama (traçado), Castelo de São Jorge (alcáçova); topónimos'],
+    ['Santarém', 'Shantarin', '1147', 'Alcáçova, topónimos; poetas locais, como Ibn Bassam'],
+    ['Silves', 'Shilb', '1189 (efémera); definitiva em 1242', 'Castelo de arenito vermelho, cisterna, muralhas'],
+    ['Mértola', 'Martula', '1238', 'Mesquita transformada em igreja, núcleo islâmico, museu'],
+    ['Beja', 'Baja', '1162 (efémera); definitiva em 1234', 'Muralhas e topónimos; cidade romana e islâmica'],
+    ['Évora', 'Yabura', '1165 (Geraldo Sem Pavor)', 'Muralhas e traçado do centro histórico'],
+    ['Faro', 'Santa Maria / Harun', '1249', 'Muralhas, poços e arquitetura posterior']
+  ] } },
+  { img: 'clf-ia-gharb-lisboa', leg: 'Lisboa no século XI; reconstituição conjetural. Ilustração gerada por IA.' }
+];
+
+const sociedade = [
+  { h: 'Política e governo' },
+  'O **califa** (*khalifa*) era o chefe político e religioso da comunidade. A forma de escolha mudou muito: os primeiros quatro califas foram escolhidos por consulta entre os companheiros do Profeta; depois, o cargo tornou-se hereditário dentro de uma dinastia (os omíadas, os abássidas, os fatímidas). A administração era feita por um **vizir** (primeiro-ministro), por governadores (*emires*), por juízes (*cádis*) e por uma burocracia com **diwans** (repartições, o termo deu origem a «aduana» e «divã»). O correio de Estado (*barid*) servia para informar o califa e controlar as províncias.',
+  'O império, ao ser tão vasto, não conseguiu manter a unidade. A partir do século IX os abássidas dependeram de generais turcos e de governantes semiautónomos: **tulúnidas** e **ikhshididas** no Egito, **aglábidas** no Magrebe, **samânidas** na Ásia Central, **buídas** no Iraque e no Irão. Em Córdova e no Cairo houve califas rivais. O califa de Bagdade passou a ser uma figura simbólica, que conferia legitimidade aos sultões reais.',
+  { h: 'Uma sociedade em camadas' },
+  'Na época omíada, a elite era árabe e muçulmana. Os convertidos não árabes, os **mawali** («clientes»), sofriam discriminação fiscal e social, um agravo que alimentou a revolução abássida. Com os abássidas, persas e outros muçulmanos passaram a ocupar cargos importantes, e a identidade do império deixou de ser tribal e árabe para ser religiosa e cultural. A conversão da população foi **gradual**, ao longo de séculos: no Egito e no Irão, só no século IX–XI é que os muçulmanos se tornaram a maioria (as datas são discutidas).',
+  { tabela: { cab: ['Grupo', 'Quem eram', 'Estatuto e vida'], linhas: [
+    ['Califa e corte', 'Família reinante, vizires, secretários', 'Poder político e religioso; vida de corte, patrocínio das artes'],
+    ['Elites e notáveis', 'Chefes tribais, grandes proprietários, comerciantes ricos, juristas', 'Riqueza e influência local'],
+    ['Sábios e juristas', '*Ulama*, cádis, médicos, escribas', 'Respeitados; ensinam, julgam, aconselham'],
+    ['Artesãos e comerciantes', 'Habitantes das cidades, organizados em corporações e mercados', 'Rendimento urbano; fiscalizados pelo *muhtasib* (inspetor do mercado)'],
+    ['Camponeses', 'A maioria da população', 'Pagavam impostos sobre a terra; trabalhavam em canais de rega'],
+    ['Dhimmis', 'Cristãos, judeus e, em certas regiões, zoroastrianos e outros «povos do Livro»', 'Protegidos (*dhimma*), com liberdade de culto e leis próprias, mas pagando um imposto (*jizya*) e sujeitos a restrições'],
+    ['Escravos', 'Prisioneiros, comprados em África, na Europa Oriental e na Ásia Central', 'Trabalho doméstico, agrícola, militar; ver abaixo']
+  ] } },
+  { caixa: 'Os dhimmis: protegidos, mas não iguais', texto: [
+    'Judeus e cristãos tinham, segundo a lei islâmica, o estatuto de «povos do Livro» (*ahl al-kitab*), com liberdade de praticar a religião e de se governarem pelas suas próprias leis em assuntos civis, em troca de um imposto de capitação, a **jizya**. Era muito mais tolerância do que se via na Europa cristã para as minorias, mas **tolerância não é igualdade**: havia restrições à construção de templos, à cor de roupas, ao testemunho em tribunal, e períodos de perseguição (por exemplo, sob al-Hakim, no Egito, no início do século XI).',
+    'Em Al-Andalus, a literatura romântica criou o mito da *convivência* perfeita entre religiões. Os historiadores veem hoje um quadro misto: períodos de cooperação (judeus como Hasdai ibn Shaprut, médico e diplomata do califa Abd al-Rahman III) e períodos de tensão, como o dos **mártires de Córdova** (século IX) ou os massacres de judeus em Granada em 1066, e a pressão dos almorávidas e dos almóadas, que fecharam ou destruíram igrejas e sinagogas.'
+  ] },
+  { img: 'clf-qusayr-amra', leg: 'Fresco dos seis reis em Qusayr Amra, Jordânia.' },
+  { h: 'Religião: os cinco pilares' },
+  'O Islão é uma religião monoteísta, que reconhece Deus (*Allah*, em árabe «o Deus») como criador único e Muhammad como o último profeta. O livro sagrado é o **Alcorão**, e a conduta do Profeta (a *sunna*) é conhecida pelos *hadith*. A prática comum a todos os muçulmanos resume-se nos **cinco pilares**.',
+  { tabela: { cab: ['Pilar', 'Nome', 'Em que consiste'], linhas: [
+    ['1', 'Profissão de fé (*shahada*)', 'Declarar que não há deus senão Deus e que Muhammad é o seu mensageiro'],
+    ['2', 'Oração (*salat*)', 'Cinco orações por dia, voltado para Meca'],
+    ['3', 'Esmola (*zakat*)', 'Contribuição anual para os necessitados'],
+    ['4', 'Jejum (*sawm*)', 'Jejum de sol a sol no mês de Ramadão'],
+    ['5', 'Peregrinação (*hajj*)', 'Viagem a Meca, ao menos uma vez na vida, para quem puder']
+  ] } },
+  { h: 'Sunitas e xiitas' },
+  { caixa: 'Uma divisão que nasce da sucessão', texto: [
+    'A divisão entre **sunitas** e **xiitas** começou como uma questão política, a de quem devia liderar a comunidade depois de 632. A maioria aceitou a escolha dos companheiros do Profeta (os quatro primeiros califas); os que viriam a ser chamados **xiitas** (*shi’at Ali*, «partido de Ali») defendiam que a liderança pertencia a Ali e aos seus descendentes por designação do Profeta. A morte de Husayn em Karbala (680) deu à divisão uma dimensão religiosa e emocional.',
+    'Com o tempo, as duas correntes desenvolveram escolas jurídicas, teologias e práticas próprias. Os sunitas, a grande maioria (cerca de 85–90 % dos muçulmanos de hoje), formaram quatro escolas jurídicas principais; os xiitas, dos quais os mais numerosos são os **duodécimos**, seguem uma linha de imãs. Os **ismaelitas**, de que eram os fatímidas, são uma ramificação xiita. Existiram ainda os **ibaditas** (herdeiros dos primeiros kharijitas), hoje sobretudo em Omã. Não há aqui nenhum juízo sobre qual está certa; é a origem histórica que interessa.'
+  ] },
+  { h: 'Economia e comércio' },
+  'A economia dos califados assentava na **agricultura**, no **comércio** e no artesanato urbano. O império juntou regiões que antes estavam separadas por fronteiras, e o comércio expandiu-se: do Atlântico ao Índico, e do Sara à Ásia Central. Utilizava-se uma moeda estável de ouro (o **dinar**), de prata (o **dirham**) e instrumentos de crédito, como o *suftaja* (letra de câmbio) e o *sakk* (a palavra «cheque» é por vezes ligada a ele).',
+  { lista: [
+    '**Rotas terrestres:** a Rota da Seda, que ligava Bagdade e Samarcanda à China; as caravanas do Sara, que traziam **ouro** da África Ocidental (Gana) em troca de sal e tecidos.',
+    '**Rotas marítimas:** os **dhows**, barcos de vela latina, aproveitavam as monções entre Basra, a Índia, Ceilão, o Sueste Asiático, Cantão e a costa oriental africana.',
+    '**Produtos:** seda, algodão, papel, cerâmica vidrada, vidro, especiarias, perfumes, açúcar, tintas, ouro, marfim, âmbar e **escravos**.',
+    '**Agricultura:** a difusão de plantas como o arroz, a cana-de-açúcar, o algodão, os citrinos, a beringela e o espinafre, e de técnicas de rega (qanats, noras, açudes), conhecida como «revolução agrícola árabe», é um tema que os historiadores debatem, mas o seu efeito em Al-Andalus é claro.'
+  ] },
+  { img: 'clf-ia-dhow', leg: 'Porto perto de Baçorá, século IX; cena imaginada. Ilustração gerada por IA.' },
+  { img: 'clf-ia-souk', leg: 'Mercado abássida, século IX; cena imaginada. Ilustração gerada por IA.' },
+  { h: 'Língua e escrita' },
+  'O **árabe** era a língua do Alcorão e, a partir de Abd al-Malik (c. 696), da administração. Tornou-se a língua comum de cultura, de ciência e de comércio, do Atlântico ao Indo, como mais tarde o latim ou o francês na Europa. Não substituiu todas as línguas: o persa renasceu como língua literária a partir do século IX, e em Al-Andalus falava-se também o romance (o antepassado do português, do castelhano e do catalão), com os cristãos arabizados, os **moçárabes**, e o hebraico para os textos judaicos.',
+  'A escrita árabe, escrita da direita para a esquerda, evoluiu de uma escrita simples para estilos muito trabalhados. O estilo **cúfico**, angular, é o mais antigo; a partir do século X, com **Ibn Muqla** (m. 940), codificaram-se estilos cursivos, como o **naskh**. A caligrafia é considerada a arte suprema do Islão, porque é a forma de escrever a palavra de Deus.',
+  { img: 'clf-caligrafia', leg: 'Página de Alcorão em cúfico antigo.' },
+  { h: 'Casa, alimentação e vestuário' },
+  'A casa urbana típica era voltada para dentro, com um **pátio** central com fonte ou tanque, quartos à volta, a zona das mulheres separada da dos visitantes. As paredes exteriores eram simples; a riqueza ficava no interior, com azulejos, estuques, tapetes e almofadas. Os banhos públicos (*hammam*), herdados dos romanos, eram um espaço de higiene e de convívio.',
+  { img: 'clf-ia-patio', leg: 'Pátio de uma casa de Al-Andalus, século X; cena imaginada. Ilustração gerada por IA.' },
+  'Na mesa dos califados juntavam-se influências persas, árabes, indianas e mediterrânicas. O **arroz**, o **açúcar**, o açafrão, a beringela, o espinafre, os citrinos, as especiarias e as massas passaram a fazer parte da cozinha. Há livros de receitas desde o século X, como o *Kitab al-Tabikh* de Ibn Sayyar al-Warraq, em Bagdade. O vinho estava proibido aos muçulmanos, mas era produzido e consumido pelos cristãos, pelos judeus e, na prática, por alguns muçulmanos, como se vê na poesia. Come-se com a mão direita, em volta de uma travessa comum.',
+  'O vestuário era largo e leve, adaptado ao calor: túnicas (*thawb*), mantos, turbantes, véus. O Estado fazia produzir em oficinas reais tecidos com o nome do califa bordado, os **tiraz**, que se ofereciam como honra. As mulheres urbanas, em geral, cobriam a cabeça, e o uso do véu variava com a época, a classe e a região; entre as camponesas e as beduínas era menos habitual.',
+  { h: 'Música, poesia e jogos' },
+  'A **poesia** era a arte de maior prestígio: da *qasida* pré-islâmica aos poetas abássidas (**Abu Nuwas**, que cantava o vinho e o amor, **al-Mutanabbi**) e aos de Al-Andalus (**Ibn Zaydun**, **al-Mu’tamid**, a *muwashshaha*, poema estrófico com refrão em romance). A **música** teve um grande desenvolvimento: o alaúde (*al-ud*, de onde vem «alaúde»), cantores e cantoras, tratados teóricos de al-Kindi e de al-Farabi. O músico **Ziryab** (c. 789–857), que saiu de Bagdade para Córdova, introduziu ali modas, um ensino musical e hábitos à mesa.',
+  'Jogava-se o **xadrez** (*shatranj*), vindo da Pérsia e da Índia, o gamão (*nard*), a caça com falcões e o polo. Os contos das *Mil e Uma Noites*, compilados em árabe a partir de fontes persas, indianas e árabes, só tomaram a forma atual muito depois, mas refletem a vida urbana abássida.',
+  { img: 'clf-maqamat', leg: 'Cena de biblioteca nas Maqamat de al-Hariri, Yahya al-Wasiti, 1237.' },
+  { h: 'O saber: tradução e instituições' },
+  'Entre o século VIII e o X fez-se em Bagdade um grande movimento de **tradução**: obras gregas (Aristóteles, Euclides, Ptolomeu, Galeno, Hipócrates), persas, sírias e indianas foram vertidas para o árabe, por tradutores muitas vezes cristãos, como **Hunayn ibn Ishaq** (808–873), e financiados por califas e por ricos mecenas. Foi mais do que conservar: os sábios comentaram, corrigiram e acrescentaram. A «**Casa da Sabedoria**» de Bagdade foi o centro simbólico desse movimento, ainda que os historiadores discutam o seu tamanho e organização reais.',
+  { img: 'clf-ia-casa-sabedoria', leg: 'Biblioteca e centro de estudo em Bagdade cerca de 830; cena conjetural. Ilustração gerada por IA.' },
+  'O saber também circulava em instituições: as **mesquitas-universidades** (Al-Qarawiyyin, em Fez, fundada em 859, segundo a tradição, pela mulher Fatima al-Fihri; Al-Azhar, no Cairo), as **madrassas** (escolas de direito, mais comuns a partir do séc. XI), as bibliotecas (a de Al-Hakam II, em Córdova, teria centenas de milhares de volumes, segundo a tradição, número provavelmente exagerado) e os **hospitais**.',
+  { h: 'Matemática' },
+  'O matemático **al-Khwarizmi** (c. 780–850) escreveu o *Livro Resumido do Cálculo por Restauração e Balanceamento* (*al-Jabr*), onde sistematizou a resolução de equações, e de cujo título vem a palavra **álgebra**; do seu nome vem **algoritmo**. Outro livro seu, hoje perdido em árabe, divulgou o **sistema de numeração indiano** com o zero, as chamadas «cifras arábicas» ou **algarismos indo-arábicos**. Chegaram à Europa nos séculos X–XIII, em particular com o *Liber Abaci* de Leonardo de Pisa (Fibonacci, 1202). Seguiram-se a trigonometria (al-Battani, Abu al-Wafa), a geometria, a análise combinatória e as soluções de equações cúbicas de **Omar Khayyam** (1048–1131).',
+  { img: 'clf-astrolabio', leg: 'Astrolábio de al-Sahlī, Toledo, 1067, Museu Arqueológico Nacional, Madrid.' },
+  { h: 'Astronomia e geografia' },
+  'Os astrónomos de Bagdade e de Damasco mediram o tamanho da Terra (os sábios do tempo de al-Ma’mun e, mais tarde, **al-Biruni**, c. 1020), aperfeiçoaram o **astrolábio**, corrigiram as tabelas de Ptolomeu e construíram observatórios (Bagdade, Damasco, mais tarde Maragha). Muitos nomes de estrelas (Aldebarã, Rigel, Vega, Altair) e termos como **zénite**, **azimute** e **nadir** são de origem árabe. Na geografia, os viajantes e os geógrafos produziram descrições e mapas, como os de **al-Idrisi** (ver «Personalidades»).',
+  { img: 'clf-ia-observatorio', leg: 'Observações astronómicas perto de Bagdade, século IX; cena imaginada. Ilustração gerada por IA.' },
+  { h: 'Medicina e hospitais' },
+  'A medicina islâmica juntou a tradição grega (Hipócrates e Galeno), a persa e a indiana, com observação e experiência próprias. Os **hospitais** (*bimaristan*), financiados por califas e doadores, tinham alas separadas por tipos de doença, farmácia, biblioteca, escola de médicos e, em alguns casos, cuidados gratuitos. O de Bagdade, fundado c. 805 em tempo de Harun al-Rashid, o de **al-Adudi** (981) e o hospital de Ibn Tulun, no Cairo, tornaram-se modelos. A **cirurgia**, a farmacologia, a oftalmologia e a descrição de doenças infecciosas (varíola e sarampo, por al-Razi) foram campos de avanço.',
+  { img: 'clf-ia-hospital', leg: 'Hospital abássida cerca de 900; cena imaginada. Ilustração gerada por IA.' },
+  { img: 'clf-albucasis', leg: 'Instrumentos cirúrgicos no Kitab al-Tasrif de al-Zahrawi; cópia do século XV.' },
+  { h: 'Tecnologia' },
+  'O **papel**, conhecido da China, foi fabricado no mundo islâmico a partir do século VIII (Samarcanda, depois Bagdade, em 794–795). Foi uma revolução para os livros: mais barato do que o pergaminho, permitiu bibliotecas, livrarias e copistas em grande número. Houve engenharia hidráulica (as noras, os qanats, os açudes), relógios de água, autómatos (os irmãos **Banu Musa**, séc. IX) e a destilação (o alambique, *al-anbiq*). Os moinhos de vento mais antigos de que há registo aparecem no leste do Irão.',
+  { h: 'Arquitetura' },
+  'A arquitetura islâmica da época desenvolveu um conjunto de elementos reconhecíveis: a **mesquita hipostila**, com sala de oração de muitas colunas e pátio, o **mihrab** (nicho que indica a direção de Meca), o **minarete**, a **cúpula**, o arco em ferradura, o **muqarnas** (ornamento em «favos»), a decoração geométrica e vegetal (o **arabesco**) e a caligrafia. Como o Alcorão evita imagens do divino e a tradição religiosa desaconselha a figuração em contextos de culto, a decoração das mesquitas foi toda geométrica, vegetal ou epigráfica. Fora desse contexto, em palácios e livros, houve imagens de pessoas e animais.',
+  { h: 'Guerra e conquista' },
+  'Os primeiros exércitos eram de cavaleiros e camelos, móveis e mobilizados por tribos; aproveitaram a exaustão de Bizâncio e da Pérsia, após décadas de guerra mútua, o descontentamento de populações submetidas a impostos pesados, e acordos com as elites locais. Fundaram **cidades-guarnição** (Cufa, Basra, Fustate, Cairuão), onde viviam os soldados, pagos com o saque e depois com um salário (*ata*). Mais tarde, os abássidas recorreram a soldados profissionais, em especial escravos-soldados turcos (*ghilman*, mais tarde *mamelucos*). A marinha, que venceu os bizantinos na batalha dos Mastros (655), garantiu o controlo do Mediterrâneo oriental durante algum tempo. Os califas enfrentaram também Bizâncio (cerco de Constantinopla em 717–718, fracassado).',
+  { h: 'A escravatura: o que sabemos' },
+  'A escravatura existia em todas as sociedades da época, incluindo a bizantina, a persa e a europeia, e continuou no mundo islâmico. As fontes mostram escravos ao serviço doméstico (criados, concubinas, eunucos), no exército, na administração e na agricultura. Muitos vinham de **África** (o comércio do Sara, da costa oriental e do Nilo), da **Europa Oriental** (os *saqaliba*, «eslavos»), da **Ásia Central** (turcos) e de prisioneiros de guerra. A lei islâmica regulou o estatuto do escravo: protegeu certos direitos, **encorajou a alforria** como ato piedoso, e determinou que o filho de uma escrava reconhecido pelo senhor nascesse livre e a mãe (*umm walad*) não pudesse ser vendida. Mas aceitava a escravatura, e a prática era com frequência cruel, como mostra a revolta dos **Zanj** (869–883). Alguns escravos, os mamelucos e os eunucos, chegaram a poder e riqueza consideráveis.',
+  { h: 'As mulheres' },
+  'O Alcorão reconheceu às mulheres direitos que não existiam em muitas sociedades vizinhas (de herança, de possuir bens, de recusar o casamento), mas a sociedade era patriarcal, e o testemunho, a herança e o casamento tinham regras diferentes para homens e mulheres. Houve **mulheres sábias**: Fatima al-Fihri (fundadora da Al-Qarawiyyin, segundo a tradição), Rabia al-Adawiyya (mística de Basra, séc. VIII), juristas e transmissoras de *hadith*, poetisas como **Wallada** em Córdova, e rainhas e mães de califas com muita influência política. A vida de uma mulher dependia muito da classe e do lugar em que nascia.'
+];
+
+const personalidades = [
+  'As pessoas que se seguem existiram, e as suas obras sobreviveram, em manuscritos, em traduções latinas e em tradições. Os nomes árabes eram compostos (*nasab*): «ibn» é «filho de», e a nisba indica a origem (al-Khwarizmi, «de Corásmia»). Os nomes latinizados na Europa medieval vêm entre parênteses.',
+  { h: 'Abu Bakr (c. 573 – 634)' },
+  'Companheiro e sogro de Muhammad, foi eleito primeiro califa em 632. Enfrentou as revoltas de tribos que recusavam pagar o imposto religioso (as «guerras da Ridda») e unificou a Arábia. Segundo a tradição, mandou reunir as revelações dispersas, preparando a compilação do Alcorão que seria concluída sob Uthman.',
+  { h: 'Ali ibn Abi Talib (c. 600 – 661)' },
+  'Primo e genro de Muhammad, quarto califa e primeiro imã dos xiitas. O seu califado foi dominado pela guerra civil. É venerado por sunitas e xiitas, mas de modo diferente: para os primeiros, um dos quatro califas bem guiados; para os segundos, o legítimo sucessor do Profeta.',
+  { h: 'Tariq ibn Ziyad (m. c. 720)' },
+  'Chefe militar de origem berbere, lugar-tenente de Musa ibn Nusayr. Desembarcou em 711 e venceu o rei Rodrigo em Guadalete. A sua origem exata, o número de soldados e a identidade de quem o transportou são debatidos; o que as fontes dizem sobre o «discurso de Tariq» aos soldados é lenda tardia. O monte onde desembarcou ficou com o seu nome: Gibraltar.',
+  { h: 'Harun al-Rashid (763 ou 766 – 809)' },
+  'O mais famoso califa abássida. Reinou de 786 a 809, no auge da riqueza e do prestígio. As suas relações com Carlos Magno (troca de embaixadas e de presentes, entre os quais um elefante) são conhecidas, e o califa histórico mal se parece com o das *Mil e Uma Noites*. O império foi dividido, depois da sua morte, numa guerra entre os filhos, al-Amin e al-Ma’mun.',
+  { h: 'Al-Ma’mun (786 – 833)' },
+  'Califa de 813 a 833 e patrono do saber. Reuniu sábios em Bagdade, mandou traduzir obras gregas e promoveu observações astronómicas. Impôs a doutrina racionalista dos mutazilitas através de uma inquisição (a *mihna*), contestada pelo jurista Ibn Hanbal, um episódio menos brilhante do seu reinado.',
+  { h: 'Al-Khwarizmi (c. 780 – c. 850)' },
+  'Matemático, astrónomo e geógrafo de Bagdade, de origem persa (Corásmia). Escreveu o *Al-Jabr* (c. 820), o primeiro tratado sistemático de álgebra, e um livro sobre o cálculo com algarismos indianos, que, em tradução latina, difundiu o sistema decimal posicional. Do seu nome vem «algoritmo».',
+  { img: 'clf-al-jabr', leg: 'Páginas do tratado de álgebra de al-Khwarizmi com soluções geométricas; Bodleian Library, MS. Huntington 214.' },
+  { h: 'Al-Razi (Rhazes) (c. 865 – 925)' },
+  'Médico e filósofo, nascido em Rayy, no Irão. Dirigiu hospitais em Rayy e Bagdade. Escreveu uma enciclopédia médica, o *Kitab al-Hawi*, e um tratado sobre a **varíola e o sarampo**, distinguindo as duas doenças pela primeira vez com clareza. Defendeu a observação clínica e criticou Galeno quando a experiência o contrariava.',
+  { h: 'Abd al-Rahman III (891 – 961)' },
+  'Emir de Córdova desde 912 e califa a partir de 929. Terminou as revoltas internas, reforçou o exército e a marinha, enfrentou os fatímidas e os reinos cristãos, e fez de Córdova a maior cidade da Europa ocidental. Tinha por conselheiros cristãos e judeus, como Hasdai ibn Shaprut. Mandou construir Medina Azahara.',
+  { h: 'Al-Zahrawi (Albucasis) (c. 936 – c. 1013)' },
+  'Médico de Córdova, ao serviço do califa. A sua enciclopédia, o *Kitab al-Tasrif*, inclui um tratado de cirurgia com desenhos de dezenas de instrumentos (fórceps, cautérios, bisturis, agulhas) que foi traduzido para latim e usado na Europa durante séculos.',
+  { h: 'Ibn al-Haytham (Alhazen) (c. 965 – c. 1040)' },
+  'Nascido em Basra, trabalhou no Cairo fatímida. O seu *Livro da Ótica* (*Kitab al-Manazir*) explica a visão pelos raios de luz que entram no olho (e não saem dele, como defendiam Euclides e Ptolomeu), descreve a câmara escura e usa experiências repetidas para testar hipóteses, uma abordagem a que muitos historiadores chamam precursora do método científico.',
+  { img: 'clf-optica', leg: 'Diagrama do olho no Kitab al-Manazir de Ibn al-Haytham, MS Fatih 3212, vol. 1, fólio 81b.' },
+  { h: 'Ibn Sina (Avicena) (c. 980 – 1037)' },
+  'Médico e filósofo, nascido perto de Bucara. Escreveu o *Cânone da Medicina* (*al-Qanun*), uma enciclopédia que foi manual nas universidades europeias até aos séculos XVII e XVIII, e o *Livro da Cura* (*Kitab al-Shifa*), uma obra de filosofia e de ciência. Descreveu doenças infecciosas, a quarentena e a ação de muitos medicamentos.',
+  { img: 'clf-canon', leg: 'Página inicial do Cânone da Medicina de Ibn Sina; manuscrito copiado em 1597–1598.' },
+  { h: 'Al-Biruni (973 – depois de 1050)' },
+  'Polímata da Ásia Central. Mediu o raio da Terra com um método engenhoso, escreveu sobre astronomia, cronologia e farmacologia, e visitou a Índia, onde escreveu uma obra sobre a sua cultura e religiões, de uma curiosidade e rigor invulgares para a época.',
+  { h: 'Saladino (Salah al-Din) (1137/38 – 1193)' },
+  'De origem curda, vizir fatímida no Egito, pôs fim ao califado fatímida em 1171 e fundou a dinastia **ayúbida**. Reconquistou Jerusalém aos cruzados em 1187, depois da vitória de Hattin. Era visto, mesmo pelos adversários, como generoso e cavalheiresco, embora também tenha sido um político implacável. (Nota: nunca foi califa; reconhecia o califa abássida.)',
+  { h: 'Averróis (Ibn Rushd) (1126 – 1198)' },
+  'Juiz (cádi), médico e filósofo de Córdova. Escreveu comentários às obras de Aristóteles que se tornaram tão importantes na Europa latina que o chamavam «o Comentador». Defendeu que a filosofia e a religião não se contradizem. As suas ideias foram contestadas por teólogos e, no fim da vida, foi desterrado e os seus livros queimados, antes de ser reabilitado.',
+  { h: 'Al-Idrisi (c. 1100 – 1165)' },
+  'Geógrafo nascido em Ceuta, ao serviço do rei normando Rogério II da Sicília. Para ele fez um grande planisfério de prata e o livro conhecido por *Tabula Rogeriana* (1154), uma descrição do mundo conhecido, com mapas orientados com o sul no topo, em que descreve também Lisboa e o Algarve.',
+  { img: 'clf-tabula', leg: 'Tabula Rogeriana de al-Idrisi (1154), reconstrução de Konrad Miller de 1929, com o sul no topo.' }
+];
+
+const legado = [
+  { h: 'O que nos deixaram' },
+  { lista: [
+    '**Ciência e filosofia:** o cultivo da razão, da observação e do debate, e a preservação e o desenvolvimento do saber grego, persa e indiano, que, traduzido para latim em Toledo e na Sicília (séculos XII–XIII), alimentou as universidades europeias e a Renascença.',
+    '**Matemática:** os algarismos indo-arábicos, o zero, a álgebra, os algoritmos e a trigonometria.',
+    '**Medicina:** os hospitais organizados, a cirurgia, a farmacologia, os tratados de Ibn Sina e al-Razi.',
+    '**Palavras:** milhares de palavras portuguesas vêm do árabe: *açúcar, algodão, alface, aldeia, alfândega, almofada, armazém, arroz, azeite, azulejo, laranja, oxalá, zero, cifra, álgebra*. E topónimos como **Algarve, Alcácer, Almada, Alfama, Mértola**.',
+    '**Agricultura e paisagem:** noras, açudes, pomares de citrinos, o arroz, o algodão, a cana, as amendoeiras (a lenda do Algarve em flor é de origem romântica).',
+    '**Arquitetura e arte:** o arco em ferradura, o pátio com fonte, o azulejo (do árabe *al-zulayj*, «pequena pedra polida»), a caligrafia e o arabesco, que moldaram o estilo mudéjar e o manuelino, e a arte europeia.',
+    '**Direito e religião:** o Islão, com as suas escolas jurídicas, a sua teologia e a sua mística (o sufismo), é hoje a religião de cerca de dois mil milhões de pessoas.'
+  ] },
+  { h: 'Arte e arquitetura' },
+  'Os califados criaram um mundo visual que vai das mesquitas de Damasco e Córdova aos livros iluminados, aos vidros, às cerâmicas de reflexo metálico (**louça de lustro**), aos marfins de Córdova e aos tecidos. O **arco duplo da Mesquita de Córdova**, o **mihrab** e a decoração epigráfica de Medina Azahara são marcos da arte hispano-muçulmana. A caligrafia tornou-se uma arte própria, com mestres célebres, como Ibn Muqla e Ibn al-Bawwab (m. 1022).',
+  { img: 'clf-mesquita-cordoba', leg: 'Arcos da sala de oração da Mesquita de Córdova.' },
+  { img: 'clf-pixide', leg: 'Píxide de al-Mughira, marfim de Córdova, 968, Louvre.' },
+  { h: 'Vestígios islâmicos em Portugal' },
+  'O sul de Portugal conserva testemunhos de cinco séculos de presença islâmica (711 – c. 1249), muitos sob construções posteriores. Em **Silves**, o Castelo de arenito vermelho e a grande cisterna; em **Mértola**, a antiga mesquita (séc. XII–XIII), transformada em igreja matriz depois de 1238, com o seu mihrab, e o Museu Islâmico; em **Lisboa**, a Alfama, os troços da cerca moura e a alcáçova do Castelo de São Jorge, e o Museu de Lisboa; em **Beja**, **Évora** e **Faro**, troços de muralhas e traços urbanos; e no **Museu Nacional de Arqueologia**, objetos da época. Há ainda a herança em canções, em pratos (os doces com amêndoa e açúcar), em técnicas (a nora, a salina) e em nomes de lugares e de famílias.',
+  { img: 'clf-silves', leg: 'Castelo de Silves, Algarve.' },
+  { img: 'clf-mertola', leg: 'Igreja Matriz de Mértola, antiga mesquita.' },
+  { h: 'A queda de Bagdade e a continuidade' },
+  'O saque de Bagdade, em 1258, foi um desastre: houve muitos mortos (estimativas desde algumas dezenas de milhares até um milhão, com fontes contraditórias), destruição de bibliotecas e perda de manuscritos. Mas a civilização que Bagdade representava já não dependia de uma cidade: estava em Samarcanda, no Cairo, em Córdova (que caiu em 1236), em Sevilha, em Fez e em Delhi. O Egito mameluco recebeu um califa abássida «sombra» e foi uma potência intelectual até ao fim da Idade Média. A ciência islâmica continuou em Maragha, em Samarcanda e na Turquia otomana.',
+  { h: 'Onde visitar' },
+  { lista: [
+    '**Córdova (Espanha):** Mesquita-Catedral e Medina Azahara (Património Mundial).',
+    '**Jerusalém:** Cúpula da Rocha e Esplanada das Mesquitas.',
+    '**Damasco (Síria):** Grande Mesquita dos Omíadas (danos na guerra civil síria; informar-se sobre a segurança).',
+    '**Cairo (Egito):** Al-Azhar, a cidade fatímida e a Cidadela de Saladino.',
+    '**Cairuão (Tunísia):** Grande Mesquita.',
+    '**Granada e Sevilha (Espanha):** Alhambra (nasrida, posterior) e o Alcázar.',
+    '**Portugal:** Silves, Mértola, Lisboa (Museu de Lisboa e Castelo de São Jorge), Beja, o Museu Nacional de Arqueologia.',
+    '**Museus:** Museu do Louvre (Departamento das Artes do Islão), Museu Britânico, Metropolitan Museum (Nova Iorque), Museu de Arte Islâmica de Doha, Museu do Cairo.'
+  ] }
+];
+
+const quiz = [
+  { p: 'O que significa a palavra «califa»?', op: ['Conquistador', 'Sucessor ou representante', 'Sábio', 'Governador de província'], certa: 1, exp: 'Khalifa significa «sucessor»: o chefe da comunidade depois da morte de Muhammad.' },
+  { p: 'Que acontecimento, em 622, marca o início do calendário islâmico?', op: ['A conquista de Meca', 'A Hégira (migração para Medina)', 'A morte de Muhammad', 'A batalha do Yarmuk'], certa: 1, exp: 'A Hégira foi a migração de Muhammad e dos seus seguidores de Meca para Medina.' },
+  { p: 'Quais foram os quatro primeiros califas, chamados Rashidun?', op: ['Mu’awiya, Yazid, Marwan e Abd al-Malik', 'Abu Bakr, Umar, Uthman e Ali', 'Harun, al-Ma’mun, al-Mansur e al-Mu’tasim', 'Saladino, al-Hakim, al-Mu’izz e Jawhar'], certa: 1, exp: 'Os «bem guiados» governaram de 632 a 661 a partir de Medina.' },
+  { p: 'Qual foi a capital do Califado Omíada?', op: ['Meca', 'Bagdade', 'Damasco', 'Cairo'], certa: 2, exp: 'Mu’awiya fez de Damasco a capital em 661.' },
+  { p: 'Que monumento de Jerusalém foi mandado construir por Abd al-Malik (c. 691–692)?', op: ['Mesquita de Al-Azhar', 'Cúpula da Rocha', 'Grande Mesquita de Córdova', 'Caaba'], certa: 1, exp: 'A Cúpula da Rocha é um dos mais antigos monumentos do Islão.' },
+  { p: 'Quem comandou o exército muçulmano que atravessou o estreito de Gibraltar em 711?', op: ['Carlos Martel', 'Abd al-Rahman III', 'Tariq ibn Ziyad', 'Saladino'], certa: 2, exp: 'Tariq ibn Ziyad desembarcou no monte que ficou com o seu nome, Jabal Tariq (Gibraltar), e venceu o rei Rodrigo em Guadalete.' },
+  { p: 'Quem travou os muçulmanos entre Tours e Poitiers, em 732?', op: ['Carlos Magno', 'Carlos Martel', 'Pelágio', 'Afonso Henriques'], certa: 1, exp: 'Carlos Martel travou a força de Abd al-Rahman al-Ghafiqi; a importância do episódio é hoje relativizada.' },
+  { p: 'Que cidade fundou o califa al-Mansur em 762, como capital abássida?', op: ['Samarra', 'Bagdade', 'Cairo', 'Córdova'], certa: 1, exp: 'Bagdade, a «Cidade da Paz», no rio Tigre, foi construída em forma circular.' },
+  { p: 'Que livro de al-Khwarizmi deu o nome à «álgebra»?', op: ['Al-Qanun', 'Al-Jabr', 'Kitab al-Manazir', 'Al-Hawi'], certa: 1, exp: 'O título abreviado, *Al-Jabr*, deu o termo «álgebra»; do nome do autor vem «algoritmo».' },
+  { p: 'Qual foi o grande trabalho de Ibn al-Haytham (Alhazen)?', op: ['O Cânone da Medicina', 'O Livro da Ótica', 'A Tabula Rogeriana', 'O Comentário de Aristóteles'], certa: 1, exp: 'No *Kitab al-Manazir* explicou a visão e usou experiências para testar teorias.' },
+  { p: 'Que califa proclamou o Califado de Córdova em 929 e mandou construir Medina Azahara?', op: ['Abd al-Rahman I', 'Al-Hakam II', 'Abd al-Rahman III', 'Almançor'], certa: 2, exp: 'Abd al-Rahman III assumiu o título de califa em 929.' },
+  { p: 'Que dinastia xiita ismaelita fundou o Cairo em 969?', op: ['Omíada', 'Abássida', 'Fatímida', 'Almorávida'], certa: 2, exp: 'Os fatímidas fundaram Al-Qahira e a mesquita de Al-Azhar.' },
+  { p: 'Que nome árabe deu origem ao topónimo «Algarve»?', op: ['Al-Gharb («o poente»)', 'Al-Jabal («o monte»)', 'Al-Bahr («o mar»)', 'Al-Qasr («o castelo»)'], certa: 0, exp: 'O Gharb al-Andalus era o ocidente do mundo muçulmano peninsular.' },
+  { p: 'Que filósofo de Córdova ficou conhecido na Europa como «o Comentador» de Aristóteles?', op: ['Ibn Sina', 'Al-Farabi', 'Averróis (Ibn Rushd)', 'Al-Biruni'], certa: 2, exp: 'Os seus comentários influenciaram a escolástica latina.' },
+  { p: 'O que aconteceu a Bagdade em 1258?', op: ['Foi conquistada pelos cruzados', 'Foi tomada e saqueada pelos mongóis de Hulagu', 'Foi tomada pelos fatímidas', 'Foi abandonada por causa de uma epidemia'], certa: 1, exp: 'O califa al-Musta’sim foi morto e o califado abássida de Bagdade terminou.' }
+];
+
+export default {
+  id: 'califados',
+  cor: '#2f8a5a',
+  emblema: '../assets/img/califados.png',
+  nome:    { pt: 'Califados islâmicos', en: 'Islamic Caliphates' },
+  periodo: { pt: '632 – 1258', en: 'AD 632 – 1258' },
+  visao:          { pt: visao, en: EN.visao },
+  linha:          { pt: linha, en: EN.linha },
+  mapa:           { pt: mapa, en: EN.mapa },
+  sociedade:      { pt: sociedade, en: EN.sociedade },
+  personalidades: { pt: personalidades, en: EN.personalidades },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
+  quiz:           { pt: quiz, en: EN.quiz }
+};
