@@ -1,5 +1,6 @@
 // TIWANAKU E CHAVÍN — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Datas aproximadas, na cronologia mais usada pelos arqueólogos andinos (calibrada por radiocarbono); muitas são debatidas. a.C. = antes de Cristo. Nenhuma destas culturas deixou escrita decifrável: tudo o que se sabe vem da arqueologia, da arte e, mais tarde, de relatos coloniais.
 // Imagens: cada {img:'id'} procura o ficheiro  tiwanaku-chavin/img/id.jpg  (ver IMAGENS_TIWANAKU_CHAVIN.md para a lista e os prompts).
 
@@ -8,12 +9,12 @@ const visao = [
     'Esta página junta duas grandes tradições religiosas e políticas dos **Andes pré-incaicos**, separadas por mais de mil anos e por centenas de quilómetros. **Chavín de Huántar**, nos Andes do norte do Peru, foi entre c. 900 e 200 a.C. um santuário de peregrinação cuja arte, com jaguares, serpentes e aves de rapina, se espalhou por grande parte do Peru: os arqueólogos chamam-lhe o **Horizonte Inicial** ou «Horizonte Chavín». **Tiwanaku**, junto ao **lago Titicaca**, a quase 3.850 m de altitude, no atual território da Bolívia, foi entre c. 500 e 1000 d.C. a capital cerimonial de um estado que dominou o altiplano e enviou colónias a vales distantes.',
     'Nenhuma das duas usava escrita. Falam através de **pedra esculpida**: o **Lanzón** e as galerias subterrâneas de Chavín, onde a água e o som faziam parte do ritual; e a **Porta do Sol**, as pirâmides e os monólitos de Tiwanaku, com uma figura central que os arqueólogos chamam o **Deus dos Bastões**. Ambas as civilizações tiveram um declínio ligado a abalos naturais, às secas e às mudanças de poder, e ambas deixaram heranças que os Incas, muito mais tarde, recolheram e reinterpretaram.'
   ] },
-  { img: 'tch-mapa-andes', leg: 'Mapa dos Andes centrais com as áreas de Chavín (norte do Peru) e de Tiwanaku (altiplano do Titicaca).' },
+  { img: 'tch-mapa-andes', leg: 'Mapa esquemático dos Andes centrais com as áreas de Chavín (norte do Peru), Wari e Tiwanaku (altiplano do Titicaca).' },
   { h: 'Onde ficavam' },
   '**Chavín de Huántar** fica na região peruana de **Ancash**, no vale do rio **Mosna**, a cerca de 3.150 m de altitude, na vertente oriental da Cordilheira Branca. A localização é estratégica: o vale liga a costa do Pacífico às florestas húmidas da Amazónia, passando por passos de montanha, e os peregrinos e mercadores vindos de ambos os lados podiam ali encontrar-se. O santuário ergue-se na confluência do Mosna com o pequeno rio **Wacheqsa**, e a água, como se verá, foi um elemento central da sua arquitetura.',
   '**Tiwanaku** (também escrito Tiahuanaco, em espanhol) fica a cerca de 20 km do **lago Titicaca**, no altiplano boliviano, a cerca de 3.850 m de altitude: uma das capitais mais altas do mundo antigo. O Titicaca, com cerca de 8.300 km², é o maior lago da América do Sul pelo volume de água e costuma ser apontado como o lago navegável mais alto do mundo. O seu microclima, mais suave do que o do altiplano em redor, permitiu a agricultura e a criação de lamas e alpacas, e os Aymara e os Incas consideravam-no um lugar de origem do mundo.',
   { img: 'tch-lago-titicaca', leg: 'O lago Titicaca, no altiplano entre o Peru e a Bolívia.' },
-  { img: 'tch-chavin-aerea', leg: 'Vista aérea do sítio arqueológico de Chavín de Huántar, Ancash, Peru.' },
+  { img: 'tch-chavin-aerea', leg: 'Reconstituição imaginada do centro cerimonial de Chavín de Huántar, c. 500 a.C. (imagem ilustrativa gerada por IA).' },
   { h: 'Quando existiram' },
   'As duas civilizações não foram contemporâneas. **Chavín** pertence ao I milénio a.C., tem as suas raízes em tradições mais antigas dos Andes (como as da costa norte e as de **Kotosh**) e termina por volta de 200 a.C. **Tiwanaku** começou como aldeia agrícola perto do início da nossa era, tornou-se centro cerimonial nos séculos seguintes e atingiu o apogeu entre c. 500 e 1000 d.C. Entre uma e outra desenvolveram-se outras culturas andinas, de que se fala abaixo apenas de passagem. As datas variam de autor para autor e a cronologia de Chavín foi revista várias vezes.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -51,7 +52,7 @@ const linha = [
     { d: 'c. 900 a.C.', t: 'O Templo Antigo', x: 'Constrói-se o **Templo Antigo** de Chavín: uma estrutura de pedra em forma de **U**, aberta a nascente, com uma praça circular afundada e uma rede de galerias interiores. No centro, num corredor em cruz, ergue-se o **Lanzón**, uma estela granítica de c. 4,5 m. É o início do que se chama a fase **Urabarriu** (c. 900 – 500 a.C.).' },
     { d: 'c. 800 a.C.', t: 'Paracas, na costa sul', x: 'Na costa seca de Ica surge a cultura **Paracas**, célebre pelos **mantos bordados** que envolviam as múltiplas múmias de uma grande necrópole. A sua cerâmica e os seus têxteis mostram contacto com o estilo chavín (o dos têxteis «Karwa» é por vezes citado, com datação debatida).' },
   ] },
-  { img: 'tch-paracas-manto', leg: 'Manto funerário da cultura Paracas, c. 100 a.C. – 100 d.C., costa sul do Peru (contexto: cultura posterior e vizinha de Chavín).' },
+  { img: 'tch-paracas-manto', leg: 'Manto funerário da cultura Paracas, c. 250–100 a.C., costa sul do Peru (cultura vizinha e posterior a Chavín).' },
   { linha: [
     { d: 'c. 500 a.C.', t: 'O Templo Novo e o apogeu', x: 'O santuário é ampliado com o **Templo Novo**, com uma enorme praça e o **Portal Preto e Branco**, de granito e calcário de duas cores. É a fase **Janabarriu** (c. 400 – 200 a.C. segundo Burger), em que o estilo chavín se vê em cerâmica, ourivesaria e têxteis de locais muito distantes: Kuntur Wasi (Cajamarca), Chongoyape (Lambayeque), Paracas e outros. A população do próprio centro cresce, de alguns milhares de pessoas, segundo as estimativas, que são debatidas.' },
     { d: 'c. 500 – 200 a.C.', t: 'A ourivesaria chavín', x: 'Artesãos trabalham o **ouro** com técnicas avançadas (martelagem, repuxado, soldadura). Peças com iconografia chavín foram encontradas em **Chongoyape** (costa norte) e em **Kuntur Wasi** (Cajamarca). São das mais antigas obras de ourivesaria do continente americano.' },
@@ -106,7 +107,6 @@ const mapa = [
   { h: 'Chavín de Huántar' },
   'O santuário ocupa um terraço no vale do Mosna. O **Templo Antigo** é um edifício de pedra, de planta em **U**, com a abertura virada a nascente, para onde corre o rio. O **Templo Novo** acrescentou-lhe uma ala e uma grande plataforma. Entre eles está uma **praça circular afundada**, com cerca de 20 m de diâmetro, descoberta nos anos 1970 e decorada com relevos de figuras mascaradas em procissão. O interior do templo é um **labirinto de galerias**, sem janelas, estreitos e baixos, ligadas por escadas e rampas. São quilómetros de corredores, cuidadosamente pensados para a luz, a ventilação e a drenagem.',
   { img: 'tch-plaza-circular', leg: 'Praça circular afundada de Chavín de Huántar.' },
-  { img: 'tch-galeria-chavin', leg: 'Galeria interior de Chavín de Huántar, com paredes de pedra.' },
   'No centro do Templo Antigo, numa galeria em cruz, está o **Lanzón**. É uma estela granítica de cerca de **4,5 m** de altura, com a forma de uma lança ou de um grande instrumento de lavrar, esculpida com uma figura de **boca com presas**, olhos revirados para cima, **garras** e cabelo de serpentes: um ser que mistura traços de homem, de felino e de serpente. A mão direita está levantada e a esquerda baixada. A figura está encaixada no chão e atravessa o teto da galeria, onde um canal pode ter servido para derramar líquidos, ou para as vozes. Os arqueólogos pensam que era um **oráculo**: os peregrinos entravam na galeria, e uma voz, talvez a de um sacerdote escondido, falava por ele. Esta interpretação é plausível mas não demonstrada.',
   { img: 'tch-lanzon', leg: 'O Lanzón, estela de granito de c. 4,5 m, na galeria central do Templo Antigo de Chavín.' },
   'As paredes exteriores do Templo Antigo estavam decoradas com **cabeças-clavas**, cabeças de pedra encaixadas na parede por uma espécie de espigão. Mostram, em sequência, rostos humanos que se transformam, com olhos esbugalhados, nariz escorrendo e presas, em seres felinos: uma imagem possível do **transe** provocado por substâncias psicoativas. Apenas uma ainda está no lugar original. O **Portal Preto e Branco**, do Templo Novo, tem duas colunas, uma de granito branco e outra de calcário escuro, esculpidas com figuras de aves de rapina com cabeça de águia, e fazia da entrada uma encenação de contrastes.',
@@ -165,7 +165,6 @@ const sociedade = [
     ['Puma e condor', 'Animais sagrados; o Pumapunku e as esculturas', 'Mundo de cima e de baixo; poder'],
     ['Montanhas e lago', 'Akapana, Illimani, Titicaca', 'Entidades vivas (*apus*); origem da água e da vida']
   ] } },
-  { img: 'tch-pututu', leg: 'Búzio *Strombus*, usado como trombeta (*pututu*) em Chavín; Museu Nacional de Chavín.' },
   { h: 'A água e o som' },
   'Os arqueólogos descobriram que as galerias de Chavín tinham canais de drenagem por onde corria, sob pressão, a água desviada dos rios vizinhos, produzindo um **rugido** que se ouvia por todo o templo, como se o edifício «falasse». Escavações dos anos 2000 encontraram numa galeria, a das **Caracolas**, cerca de vinte **trombetas de búzio** (*pututus*), feitas com conchas de *Strombus* trazidas do oceano Pacífico equatorial. Estudos acústicos mostraram que as salas amplificam certos sons, e que o som de um pututu se ouve fora do templo. A experiência de entrar na escuridão, de ouvir água e trombetas, e de ver o Lanzón à luz de uma só abertura, era seguramente impressionante.',
   { img: 'tch-galeria-agua-som', leg: 'Reconstrução conjetural de um ritual numa galeria de Chavín, com água corrente e trombetas de búzio. Ilustração gerada por IA.' },
@@ -185,7 +184,6 @@ const sociedade = [
   'A **lã de lama e de alpaca** era o material principal, e a tecelagem é uma das artes mais refinadas dos Andes. Os homens usavam **túnicas** (*unku*) sem mangas e **faixas** na cabeça, as mulheres vestidos e **mantas** presas com alfinetes de metal (*tupus*). Em Tiwanaku, as elites usavam **chapéus de quatro pontas** de tecido, túnicas de padrões em tapeçaria, ornamentos de ouro e de cobre, e adornos de nariz e de orelhas. Têxteis de Chavín e de Tiwanaku sobreviveram sobretudo em túmulos de clima seco (como os de Paracas e do Atacama).',
   { h: '9. Música, dança e jogos' },
   'Os instrumentos mais comuns eram as **flautas de Pã** (*zampoñas*), as flautas de osso e de barro, os **tambores**, as **trombetas de búzio** (*pututus*) e as **ocarinas**. Em Chavín, os pututus fazem parte do ritual; em Tiwanaku, há flautas de osso de ave ou de lama, e as danças e os cortejos com máscaras são sugeridos pela arte. Os **jogos** e as competições não estão bem documentados para estes períodos; a comida, a bebida e a música em comum eram o centro das celebrações.',
-  { img: 'tch-incensario', leg: 'Incensário de cerâmica em forma de felino, Tiwanaku.' },
   { h: '10. Ciência e conhecimento' },
   'Os povos andinos observavam o céu com atenção: o **solstício** marcava o calendário agrícola. Em Tiwanaku, o alinhamento do Kalasasaya com o nascer do Sol é estudado como um possível observatório, embora as teorias de «astronomia extraordinária» do início do século XX (de Arthur Posnansky) tenham sido contestadas. A **medicina** usava plantas (coca, vilca, ervas) e a **trepanação**, cirurgia ao crânio, é conhecida nos Andes, e pratica-se desde a época pré-Inca. A **agronomia** era de alto nível: variedades de batata adaptadas a cada altitude, rotação de culturas e conservação por desidratação.',
   { h: '11. Tecnologia: campos elevados e metalurgia' },
@@ -249,7 +247,6 @@ const legado = [
   ] },
   { h: 'A redescoberta' },
   'Ver a secção «Redescoberta» da linha do tempo. Em resumo: os sítios nunca foram esquecidos pelas comunidades locais; os exploradores do século XIX e os arqueólogos do século XX trouxeram-nos para a ciência; e desde 1985 (Chavín) e 2000 (Tiwanaku) são Património Mundial, o que os protege, mas também os expõe ao turismo.',
-  { img: 'tch-ano-nuevo', leg: 'Celebração do Ano Novo aimará (solstício de inverno) em Tiwanaku, ao nascer do Sol.' },
   { img: 'tch-balsa-totora', leg: 'Balsa de totora no lago Titicaca, c. 800 d.C. Ilustração gerada por IA.' },
   { h: 'Onde visitar' },
   { lista: [
@@ -291,6 +288,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

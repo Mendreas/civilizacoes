@@ -2,17 +2,18 @@
 // Nota de rigor: Teotihuacan não deixou textos que saibamos ler. O nome original, a língua e a etnia dos habitantes, e os nomes dos governantes locais, são DESCONHECIDOS. O que sabemos vem da arqueologia, da arte (sobretudo murais), de inscrições maias que a mencionam e de relatos astecas muito posteriores. a.C./d.C.
 // Imagens: cada {img:'id'} procura o ficheiro  teotihuacan/img/id.jpg  (ver IMAGENS_TEOTIHUACAN.md para a lista e os prompts).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 
 const visao = [
   { caixa: 'Em resumo', texto: [
     '**Teotihuacan** foi a primeira grande cidade das Américas e uma das maiores do mundo no seu tempo. Ficava no **vale do México**, a cerca de 50 km a nordeste da atual Cidade do México, a mais de 2300 m de altitude. Entre o século I a.C. e o século VI d.C. passou de aldeias dispersas a uma metrópole planeada, de talvez **100 000 habitantes ou mais** (as estimativas vão de cerca de 100 000 a 200 000 e são debatidas), com uma avenida monumental, pirâmides gigantes e milhares de casas de pedra e cal.',
     'Não sabemos como a cidade se chamava a si própria, que língua falava a sua população, nem o nome de um único dos seus governantes. «Teotihuacan» é um nome **asteca**, dado por gente que viveu mil anos depois e que encontrou as ruínas já silenciosas. Mesmo assim, a influência da cidade chegou a **Monte Albán** (Oaxaca), às cidades **maias** (Tikal, Copán, Kaminaljuyu) e à costa do Golfo. Por volta de **550 d.C.** o centro cerimonial foi em parte queimado e a cidade entrou em declínio; por volta de 650–750 já era uma sombra do que fora.'
   ] },
-  { img: 'teo-mapa-mesoamerica', leg: 'Mapa da Mesoamérica com a localização de Teotihuacan e das regiões com as quais manteve contacto.' },
+  { img: 'teo-mapa-mesoamerica', leg: 'Mapa esquemático da Mesoamérica com Teotihuacan e as regiões com que manteve contacto (c. 100 a.C.–600 d.C.).' },
   { h: 'Onde ficava' },
   'Teotihuacan situava-se num pequeno vale lateral do **vale do México**, uma bacia alta, rodeada de vulcões e de montanhas, com lagos e nascentes. O sítio tem **água de nascente** abundante, solos férteis para o milho e, nas proximidades, jazidas de **obsidiana** (um vidro vulcânico, o melhor «aço» da Idade da Pedra), sobretudo a de **Pachuca**, a nordeste. Estas duas vantagens, água e obsidiana, estão entre as razões habitualmente apontadas para o seu sucesso.',
   'A cidade ocupava cerca de **20 km²** no seu auge (a área arqueológica protegida é muito maior). Foi traçada em **quadrícula**, com um eixo principal, a **Avenida dos Mortos**, desviado cerca de 15,5° para leste do norte, uma orientação que se repete em quase todos os edifícios e cuja razão exata (astronómica? ligada a uma montanha sagrada? ao calendário?) é debatida.',
-  { img: 'teo-vista-aerea', leg: 'Vista aérea de Teotihuacan, com a Avenida dos Mortos e a Pirâmide da Lua ao fundo.' },
+  { img: 'teo-vista-aerea', leg: 'Reconstituição imaginada de Teotihuacan vista de cima, c. 450 d.C.: a Avenida dos Mortos, as pirâmides e os conjuntos residenciais (imagem ilustrativa gerada por IA).' },
   { h: 'Quando existiu' },
   'A cronologia de Teotihuacan assenta numa sequência de fases de cerâmica estabelecida pelo arqueólogo **René Millon** e pela sua equipa, com nomes que não são teotihuacanos, mas sim palavras convencionais. As datas são aproximadas e há quem proponha ajustes com base em datações por radiocarbono.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -145,7 +146,7 @@ const sociedade = [
   { h: '3. Habitação: os conjuntos de apartamentos' },
   'A grande novidade urbana de Teotihuacan foram os **conjuntos habitacionais** (os arqueólogos chamam-lhes «apartment compounds»): cerca de **2000** edifícios em quadrado, de pedra e cal, **com paredes altas e sem janelas para a rua**, um pátio central com altar e várias casas e quartos à volta, para **60 a 100 pessoas** (famílias aparentadas ou colegas de ofício). Os pavimentos eram em cal e os pátios tinham **drenagem** para as águas da chuva. Os mais ricos tinham **murais**; os pobres, paredes lisas. A estrutura é única na Mesoamérica e levanta a questão de saber se foi **planeada** pelas autoridades.',
   { img: 'teo-conjunto-habitacional', leg: 'Reconstituição conjetural de um conjunto habitacional de Teotihuacan, séc. V d.C. Ilustração gerada por IA.' },
-  { img: 'teo-conjunto-tetitla', leg: 'Ruínas do conjunto de Tetitla, Teotihuacan.' },
+  { img: 'teo-conjunto-tetitla', leg: 'Mural do «Jaguar de rede» em Tetitla, Teotihuacan (Dumbarton Oaks).' },
   { h: '4. Religião e deuses' },
   'Não temos textos, só imagens. Os especialistas (como **Esther Pasztory**, **Karl Taube** e outros) identificam **símbolos que se repetem** e dão-lhes nomes provisórios. Não sabemos como se chamavam em Teotihuacan; os nomes que se usam abaixo vêm dos astecas, e a correspondência é uma hipótese.',
   { tabela: { cab: ['Figura (nome de estudo)', 'Papel provável', 'Onde aparece'], linhas: [
@@ -160,7 +161,7 @@ const sociedade = [
   ] } },
   { img: 'teo-mural-tepantitla', leg: 'Mural de Tepantitla, tradicionalmente chamado «Tlalocan» ou «paraíso de Tlaloc», Teotihuacan.' },
   { img: 'teo-tlaloc-vaso', leg: 'Vaso cerâmico com a figura do deus da tempestade, Teotihuacan.' },
-  { img: 'teo-braseiro', leg: 'Braseiro de cerâmica (o chamado «braseiro de teatro»), de Teotihuacan.' },
+  { img: 'teo-braseiro', leg: 'Adorno cerâmico de Teotihuacan, tipo de decoração usado em braseiros e vasos rituais.' },
   { h: 'O sacrifício' },
   'O sacrifício humano, associado à dedicação de grandes edifícios, é um fenómeno comprovado em Teotihuacan (Templo da Serpente Emplumada, Pirâmide da Lua). As vítimas parecem ter sido, em muitos casos, **guerreiros** ou **cativos**, sacrificados por decapitação, extração do coração ou outros meios, e enterrados com adornos. Além disso, sacrificaram-se e enterraram-se animais (pumas, águias, serpentes). O sentido destes atos, **política, religião e cosmologia misturadas**, é debatido, e não convém julgar com valores atuais nem tomar o que se sabe dos astecas como espelho fiel.',
   { img: 'teo-enterramento-serpente', leg: 'Reconstituição conjetural de um enterramento de dedicação sob o Templo da Serpente Emplumada. Ilustração gerada por IA.' },
@@ -168,15 +169,12 @@ const sociedade = [
   'Os **murais** de Teotihuacan são a melhor janela para o seu mundo. Pintados sobre estuque, em técnica de **fresco** ou de têmpera, com **ocres vermelhos**, **verdes** e **azuis** (e o vermelho de cinábrio, mineral de mercúrio, nas elites), mostram sacerdotes em procissão, deuses, animais e cenas de água. O de **Tepantitla** («Tlalocan») mostra um jardim de água, com figuras a nadar, jogar e cantar (a interpretação clássica, de **Alfonso Caso**, é a de um paraíso do deus da chuva; hoje é discutida). Em **Atetelco** há coiotes e sacerdotes de vermelho e preto, e em **Tetitla** e **Techinantitla** aparecem a Grande Deusa e jaguares.',
   { img: 'teo-mural-tetitla', leg: 'Pintura mural em Tetitla, Teotihuacan' },
   { img: 'teo-mural-atetelco', leg: 'Pintura mural em Atetelco, Teotihuacan' },
-  { img: 'teo-jaguar-rede', leg: 'Pintura mural de jaguar de rede, Teotihuacan' },
   { h: '6. Economia' },
   'A base era a **agricultura**: **milho**, **feijão**, **abóbora**, pimentos, tomates, **amaranto**, nopais (cato) e o **agave** (o maguey, de que se fazia o pulque e se tiravam fibras). O abastecimento tinha por base campos irrigados com canais e nascentes (e talvez campos elevados perto do lago, debatido). Criavam-se **perus** e **cães**, e caçavam-se coelhos, veados e aves. Não havia gado grande nem animais de tração, nem roda de transporte.',
   'A grande indústria era a **obsidiana**: os milhares de **oficinas** da cidade produziam lâminas, pontas de seta, facas e objetos rituais e exportavam-nos. A obsidiana verde de **Pachuca** era especialmente apreciada. Fabricava-se também cerâmica, **cerâmica Laranja Fino** (produzida, segundo a maioria dos autores, na região de Puebla), figuras, objetos de pedra verde, conchas e peles. Os comerciantes viajavam em caravanas de carregadores, e importavam **cacau**, plumas de quetzal, jade, algodão, conchas e mica de regiões distantes.',
   { img: 'teo-mercado', leg: 'Reconstituição conjetural de um mercado de Teotihuacan, séc. V d.C. Ilustração gerada por IA.' },
   { img: 'teo-oficina-obsidiana', leg: 'Reconstituição conjetural de uma oficina de obsidiana de Teotihuacan. Ilustração gerada por IA.' },
   { img: 'teo-obsidiana', leg: 'Objetos de obsidiana de Teotihuacan' },
-  { img: 'teo-vaso-tripode', leg: 'Vaso cilíndrico de três pés, típico de Teotihuacan, com decoração em talud-tablero.' },
-  { img: 'teo-laranja-fino', leg: 'Cerâmica Laranja Fino, produzida na região de Puebla e comerciada com Teotihuacan.' },
   { h: '7. Escrita, língua e calendário' },
   'Teotihuacan **não tem escrita decifrada**. Há sinais e símbolos (pintados em murais e cerâmicas, entre os quais cerca de trinta sinais descobertos em La Ventilla), e propostas recentes (de epigrafistas) sobre uma possível escrita ou protoescrita, mas **nenhuma foi confirmada**. A população usava, como outros mesoamericanos, um calendário de **260 dias**, e os arqueólogos têm descoberto **cruzes gravadas em círculos** no chão e nas paredes, talvez ligadas a medições, ao calendário e à orientação da cidade. A língua é desconhecida (ver «Quem eram?»).',
   { h: '8. Alimentação' },
@@ -203,7 +201,7 @@ const sociedade = [
   ] },
   { h: '12. Guerra' },
   'Teotihuacan não tinha **muralhas**, o que sugere confiança no seu poder, ou a ausência de ameaças próximas. Mas a **arte da guerra** está presente: guerreiros com **escudos**, **dardos**, **propulsores** e armaduras de algodão, e os sacrifícios de guerreiros. O que as cidades maias contam é que **guerreiros com o aspeto de Teotihuacan** estavam ligados a mudanças de poder. O papel real do exército é discutido.',
-  { img: 'teo-mascara-pedra', leg: 'Máscara de pedra de estilo teotihuacano, Museu Nacional de Antropologia, Cidade do México.' }
+  { img: 'teo-mascara-pedra', leg: 'Máscara de pedra de estilo teotihuacano, de Malinaltepec (Guerrero).' }
 ];
 
 const personalidades = [
@@ -252,7 +250,7 @@ const legado = [
   ] },
   { h: 'Arte' },
   'A arte de Teotihuacan é **geométrica, estilizada e muito disciplinada**: máscaras de pedra de rosto neutro e olhos de concha ou de obsidiana, figuras de cerâmica, vasos de três pés e braseiros de teatro, e, sobretudo, a **pintura mural**. As **máscaras de pedra** (de andesito, basalto e outras pedras) usadas talvez em funerais ou como oferendas são o seu ícone. A arte de Teotihuacan tem pouca preocupação com a individualidade: não há retratos, mas tipos e símbolos.',
-  { img: 'teo-museu-sala', leg: 'Sala Teotihuacan do Museu Nacional de Antropologia, Cidade do México.' },
+  { img: 'teo-museu-sala', leg: 'Escultura de Tlaloc na Sala Teotihuacan do Museu Nacional de Antropologia, Cidade do México.' },
   { h: 'Arquitetura: talud-tablero e espaço cerimonial' },
   'O **talud-tablero** (uma rampa e um painel saliente, repetidos em níveis) e a ideia de uma **avenida cerimonial** com templos e pirâmides alinhados são as grandes marcas arquitetónicas. A cidade tem um sentido de **ordem e de repetição** (em contraste com a variedade das cidades maias), e isso é uma das suas assinaturas.',
   { h: 'Porque desapareceu? Um debate' },
@@ -267,7 +265,6 @@ const legado = [
   'Nenhuma destas explicações é aceite por todos, e hoje muitos falam de um **processo longo** e não de uma queda súbita.',
   { h: 'A redescoberta de Teotihuacan' },
   'A cidade nunca foi esquecida: **os astecas** visitavam-na, e os espanhóis, depois da conquista (1519–1521), descreveram as pirâmides. A arqueologia científica começou no século XIX e consolidou-se com **Batres** (1905–1910), **Gamio** (1917–1922), o mapa de **Millon** (1962–1973) e as escavações dos anos 1980 e do túnel (2003 em diante). Hoje as tecnologias novas (radar de penetração no solo, tomografia de resistividade elétrica, análises de isótopos e de ADN) estão a mudar o que sabemos.',
-  { img: 'teo-batres-restauro', leg: 'Pirâmide do Sol durante o restauro de Batres, c. 1910, fotografia de época.' },
   { caixa: 'Uma nota sobre o século XX', texto: 'Durante muito tempo imaginou-se Teotihuacan como uma cidade **pacífica**, governada por sacerdotes. Os enterramentos de sacrificados e os murais de guerreiros, mostrados pelas escavações dos anos 1980 em diante, desfizeram essa ideia. Também se ligou com facilidade o local a mitos modernos (extraterrestres, civilizações perdidas). Nenhum deles tem fundamento arqueológico: Teotihuacan foi obra de pessoas, com os meios e as ideias do seu tempo.' },
   { caixa: 'Para visitar', texto: 'A **Zona Arqueológica de Teotihuacan** fica a cerca de **50 km** a nordeste da Cidade do México (autocarros saem do terminal Norte). Visite de manhã cedo, para evitar o calor e as multidões; tenha em conta a altitude (mais de 2000 m) e a falta de sombra. Em anos recentes a subida às pirâmides esteve **restringida**: confirme as regras antes de ir. Dentro do sítio estão o **Museo de la Cultura Teotihuacana** e o **Museo de los Murales Teotihuacanos «Beatriz de la Fuente»**. Na Cidade do México, a **Sala Teotihuacan** do **Museu Nacional de Antropologia** tem as peças mais importantes. Fora do México, há peças em museus como o **Museu Britânico** e o **de Young**, em São Francisco.' }
 ];
@@ -301,6 +298,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

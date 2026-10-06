@@ -9,9 +9,8 @@ const visao = [
   { img: 'con-mapa-reino', leg: 'Old map of the Kingdom of Kongo and neighbouring regions, drawn from Portuguese information (17th century).' },
   { h: 'Where it lay' },
   'The kingdom occupied the **lower Congo** region, between the Atlantic Ocean in the west and the **Kwango** river in the east, and between the Congo river (north) and the **Dande** or **Kwanza** (south), with limits that varied greatly over the centuries. It was a landscape of rolling plateaus, green valleys, savannah and forest, crossed by rivers navigable only in stretches and by two marked seasons, the rains and the dry season (*cacimbo*). The great river gave the kingdom its name to those who knew it from the coast: for the Portuguese it was the «river of the Padrão» or «Zaire» (the Portuguese form of Kikongo *nzadi*, «the river that swallows all rivers»).',
-  { img: 'con-rio-congo', leg: 'The Congo river in its lower course, near Matadi.' },
+  { img: 'con-rio-congo', leg: 'The Marshal Mobutu Bridge over the Congo River near Matadi, on the lower course of the river.' },
   'The capital, **Mbanza Kongo** (the «court of Kongo»), stood on a plateau in what is now northern Angola, in Zaire province. It was the symbolic heart of the kingdom, where the king was chosen and crowned, and where the Portuguese later built the stone church that gave the city the name **São Salvador do Congo**. It was also the meeting point of roads leading to the port of Mpinda (at the river mouth), to the great market of **Mpumbu** (on Malebo Pool, where Kinshasa and Brazzaville now stand) and to the lands of the interior.',
-  { img: 'con-mbanza-kongo-hoje', leg: 'Remains of Mbanza Kongo, now a UNESCO World Heritage Site (Angola).' },
   { h: 'When it existed' },
   'Oral tradition says the kingdom was founded by a conqueror named **Lukeni lua Nimi**, and archaeological and genealogical dates point to the late fourteenth century. The chronology below is, for the earliest phases, an approximation; from 1483 written sources give fairly secure dates.',
   { tabela: { cab: ['Phase', 'Approximate dates', 'What marks it'], linhas: [
@@ -49,7 +48,6 @@ const linha = [
   { linha: [
     { d: 'c. 1483', t: 'Diogo Cão reaches the river', x: 'The Portuguese navigator **Diogo Cão**, exploring the Atlantic coast of Africa on the orders of King João II, reaches the mouth of the Congo river and raises a **padrão** (a stone marker with Portugal’s arms). The Portuguese make contact with local chiefs; Cão takes some Kongo men to Lisbon, and returns with them on a second voyage (c. 1485–86). The details (dates, numbers, whether they were hostages or guests) are debated.' },
   ] },
-  { img: 'con-diogo-cao-padrao', leg: 'Replica of the padrão raised by Diogo Cão, now in the Museum in Berlin.' },
   { img: 'con-recepcao-diogo-cao', leg: 'Conjectural scene of first contact between Portuguese and Kongo people on the coast, c. 1483. AI-generated illustration.' },
   { linha: [
     { d: '1491', t: 'Baptism of King Nzinga a Nkuwu', x: 'A Portuguese mission, with priests, craftsmen and gifts, arrives at the river mouth. The governor of **Soyo** is baptised in April; on 3 May 1491 King **Nzinga a Nkuwu** is baptised, taking the name **João I**, together with his family. His son **Mvemba a Nzinga** receives the name **Afonso**. The conversion probably had political motives (alliances, prestige, techniques) as well as religious ones, and the king saw in the Portuguese a source of power.' },
@@ -59,7 +57,6 @@ const linha = [
     { d: 'c. 1516', t: 'The court school', x: 'According to Portuguese sources, the royal school at Mbanza Kongo comes to have more than a thousand pupils, children of nobles and others. Reading, writing, Latin and Christian doctrine are taught. Afonso I himself writes letters in Portuguese to the kings of Portugal.' },
     { d: '1518', t: 'First Kongo bishop', x: 'Afonso’s son **Henrique** is consecrated bishop (titular bishop of Utica) in Rome, with the approval of Pope Leo X. He returns to Kongo around 1521 and dies c. 1531. He is the first sub-Saharan African bishop on record.' },
   ] },
-  { img: 'con-afonso-i-gravura', leg: 'Portrait of Afonso I of Kongo (Mvemba a Nzinga), in a later engraving.' },
   { img: 'con-escola-real', leg: 'Conjectural scene of the court school at Mbanza Kongo, c. 1516. AI-generated illustration.' },
   { img: 'con-batismo-1491', leg: 'Conjectural scene of the baptism of King Nzinga a Nkuwu, 3 May 1491. AI-generated illustration.' },
   { linha: [
@@ -68,14 +65,11 @@ const linha = [
     { d: '1568', t: 'The «Jaga» invasion', x: 'A warrior group from the east, known in Portuguese sources as the **Jaga** (or Yaka; their exact identity is debated), invades the kingdom and sacks Mbanza Kongo. King **Álvaro I** flees to an island in the river and asks the king of Portugal for help. A Portuguese expedition led by **Francisco de Gouveia Sottomaior** helps restore the king (1571). In return Kongo becomes more dependent on Portugal.' },
     { d: '1575', t: 'Luanda and the kingdom of Angola', x: 'The Portuguese **Paulo Dias de Novais** founds **Luanda**, south of Kongo, and starts building the colony of Angola on the back of wars against the kingdom of Ndongo. Kongo loses its near monopoly on contact with Portugal and sees a rival grow that soon becomes the main source of enslaved people for Brazil.' },
   ] },
-  { img: 'con-carta-afonso-1526', leg: 'Letter from Afonso I to King João III, 1526 (Portuguese archive).' },
   { linha: [
     { d: '1608', t: 'Embassy to Rome', x: 'King **Álvaro II** sends **António Manuel (Nsaku ne Vunda)**, his ambassador, to **Pope Paul V**. Received in Rome with honours, he dies in the city in January 1608; he is buried in Santa Maria Maggiore. The aim was to obtain bishops and priests without going through Portugal.' },
     { d: '1622 – 1624', t: 'War with Angola and the first book in Kikongo', x: 'Kongo and the Portuguese forces of Luanda go to war over trade, borders and captives (**Mbumbi**, 1622). The war shows that Portugal no longer treated Kongo as an equal partner. In 1624 a bilingual *Doutrina Cristã* (Christian Doctrine) is published in Portuguese and Kikongo, one of the first books printed in a Bantu language.' },
     { d: '1641 – 1648', t: 'Garcia II and the Dutch', x: 'King **Garcia II** (Nkanga a Lukeni) allies with the Dutch, who occupy **Luanda** (1641–1648), to check Portuguese expansion. The Luso-Brazilian fleet of Salvador Correia de Sá retakes Luanda in 1648. In 1645 the first Italian **Capuchins** arrive and settle at court.' },
   ] },
-  { img: 'con-embaixador-eckhout', leg: 'Portrait of a Kongo envoy by Albert Eckhout, Dutch Brazil, c. 1641 (National Museum of Denmark).' },
-  { img: 'con-antonio-manuel-roma', leg: 'Memorial to António Manuel (Nsaku ne Vunda), Kongo ambassador in Rome, 1608.' },
   { linha: [
     { d: '29 October 1665', t: 'Battle of Mbwila (Ambuíla)', x: 'King **António I** (Nvita a Nkanga) refuses to recognise Portuguese claims over the territory of Mbwila (Ambuíla) and sends an army. A Portuguese force commanded by **Luís Lopes de Sequeira**, with firearms and African allies, defeats it. The king is killed and his head is taken. The Kongo crown is lost and is never again disputed peacefully.' },
     { d: '1665 – 1709', t: 'Civil war', x: 'After Mbwila the royal lineages (the **Kimpanzu** and **Kinlaza** houses, then other branches) fight over the throne. Mbanza Kongo is abandoned in 1678. Power fragments into rival fiefdoms, and the slave trade exploits the wars to recruit captives.' },
@@ -112,7 +106,6 @@ const mapa = [
   { h: 'Mbanza Kongo: the capital' },
   '**Mbanza Kongo** stood on a plateau, with water and good soil around, some 150 km from the coast. It was more a **group of districts** than a walled city: the quarter of the king and court, the quarter of the nobles, the «Portuguese town» (from the sixteenth century) and the vast area of villages around. In the seventeenth century travellers speak of tens of thousands of inhabitants, which made it one of the largest cities of Central Africa, though the figures are estimates. The place also had religious value: near the city were trees, springs and sacred places linked to the ancestors.',
   'With Christianity the Portuguese built a **stone church** (the future cathedral), a rarity in central and western Africa in the sixteenth century, and the city took the name **São Salvador**. In the seventeenth century the ruins of the cathedral, churches and stone houses were visible, and many can still be seen today. In 1678 the city was abandoned during the civil war and only retaken in 1709.',
-  { img: 'con-ruinas-se', leg: 'Ruins of the old cathedral of São Salvador, in Mbanza Kongo.' },
   { h: 'Mpinda and the river: the road to the sea' },
   'The coast was the point of contact with Europeans. The port of **Mpinda**, at the river mouth, was where Portuguese ships arrived in the sixteenth century. From there travellers walked or were carried in hammocks for days to Mbanza Kongo. Control of this port, and later of those that followed it, was vital to the king and the governors, because it gave access to weapons, European cloth and wine and, at the same time, the outlet for enslaved people.',
   { img: 'con-porto-mpinda', leg: 'Conjectural scene of the port of Mpinda, 16th century. AI-generated illustration.' },
@@ -123,7 +116,6 @@ const mapa = [
   'Kongo was not alone. To the north lay the kingdom of **Loango**, also with a coast and trade; to the south **Ndongo** and **Matamba** (ruled in the seventeenth century by Queen **Njinga**, who resisted the Portuguese). To the east lay the states of the **Luba** (16th c.), **Lunda** (17th c.) and **Kuba** (17th c.), known to Kongo through trade. They are independent histories, touched on here only in passing; they deserve chapters of their own.',
   { h: 'The division of the kingdom' },
   'At the end of the nineteenth century the Berlin Conference (1884–85) divided the territory among three colonial powers. The borders cut across families, clans and roads, and created the basis of the present borders of Angola, the DRC and the Republic of the Congo.',
-  { img: 'con-berlim-1885', leg: 'Engraving of the Berlin Conference, 1884–85.' }
 ];
 
 const sociedade = [
@@ -161,7 +153,6 @@ const sociedade = [
   'Slavery existed in Kongo before 1483, as in many societies of the world, but it was small in scale and tied to the household. With the arrival of the Portuguese, the **demand for labour** for the sugar plantations of **São Tomé** and, from the sixteenth century, for **Brazil**, created a market that changed everything. King Afonso I and his successors took part in the trade, selling prisoners of war, and tried to regulate it; but growing demand made it uncontrollable. Traders from São Tomé and Luanda, and later Dutch, French, English and Brazilians, bought captives across the territory, and many free Kongo people were kidnapped.',
   'The numbers are hard to establish and vary by source. The international *Slave Voyages* database estimates that **more than 5 million** Africans embarked, between the sixteenth and nineteenth centuries, in the vast region of **West Central Africa** (from Cabinda to Benguela), the largest region of departure of the Atlantic trade. How many came from the kingdom of Kongo proper is debated, and most captives came more and more from the interior. What is certain is the effect: depopulation, wars to obtain captives, insecurity and the weakening of royal power.',
   { cit: 'Every day the traders kidnap our nationals, children of our country, children of our nobles and vassals, even people of our own family. [...] So great is the corruption and licentiousness that our country is being completely depopulated.', fonte: 'Afonso I of Kongo, letter to King João III, 6 July 1526 (free translation, based on the edition by A. Brásio, *Monumenta Missionaria Africana*)' },
-  { img: 'con-navio-brookes', leg: 'Plan of the slave ship *Brookes*, 1788, used by abolitionists to show the conditions of the crossing.' },
   { caixa: 'How to read this subject', texto: 'The trade was the work of many actors: European crowns, merchants, African intermediaries, and the people and families who fought it. It is neither «African guilt» nor «only European guilt». What history shows is how a system of enormous external demand corrupted local balances, and how those who opposed it, like Afonso I, lacked the means to stop it. The victims, millions of people with names and histories, are the centre of the subject.' },
   { h: '6. Writing and languages' },
   'Kikongo was an **oral** language until the Europeans arrived; kings communicated through ambassadors, proverbs and elaborate rhetoric. With the court school the nobility began to write in **Portuguese**, and dozens of royal letters survive, some of great historical value. In 1624 the first catechism in Kikongo appeared. Oral tradition, proverbs, tales and songs remained the memory of the kingdom.',
@@ -212,7 +203,6 @@ const personalidades = [
   'The king who reunified the kingdom in 1709, after decades of civil war, and reoccupied the capital. He reigned with the support of the Capuchins and was responsible for the execution of Kimpa Vita.',
   { h: 'Cavazzi and other chroniclers' },
   'What we know of Kongo comes in large part from **European chroniclers**, such as the Italian priest **Giovanni Antonio Cavazzi da Montecuccolo**, whose seventeenth-century illustrations and accounts are a precious source, but with a missionary’s eye.',
-  { img: 'con-cavazzi-gravura', leg: 'Illustration from the manuscript of the Capuchin Cavazzi, c. 1668, on Kongo and Angola.' }
 ];
 
 const legado = [
@@ -226,9 +216,6 @@ const legado = [
   ] },
   { h: 'Art' },
   'Kongo art is famous for its **power figures (*nkisi*)**, wooden sculptures that receive active substances and, in some cases, nails and blades, each one to seal an oath or punish a crime. The *nkisi nkondi* figure, for example, was «activated» by a *nganga*. There are also **stone funerary sculptures (*ntadi*)** from Mboma and Yombe, **maternity figures (*phemba*)**, **brass crucifixes**, **raffia caps and cloths**, **carved ivories** from Loango and **basketry**.',
-  { img: 'con-mangaaka', leg: 'Nkisi Mangaaka, a large power figure of the Yombe people, Congo (museum).' },
-  { img: 'con-pfemba', leg: 'Kongo maternity figure (*phemba*), wood.' },
-  { img: 'con-ntadi', leg: 'Stone funerary sculpture (*ntadi*), Mboma region.' },
   { h: 'Architecture' },
   'Traditional Kongo architecture used perishable materials, which explains the scarcity of ruins. The stone buildings of Mbanza Kongo (churches, the cathedral) result from contact with Portugal. UNESCO protects the whole site, including traditional sacred places such as trees and springs.',
   { h: 'Rediscovery' },

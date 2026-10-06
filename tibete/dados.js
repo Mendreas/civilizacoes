@@ -3,6 +3,7 @@
 // Nota de neutralidade: as relações entre o Tibete e a China são tratadas como história, apresentando as leituras das diferentes historiografias, sem tomar posição política sobre o presente.
 // Imagens: cada {img:'id'} procura o ficheiro  tibete/img/id.jpg  (ver IMAGENS_TIBETE.md para a lista e os prompts).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 
 const visao = [
   { caixa: 'Em resumo', texto: [
@@ -13,7 +14,7 @@ const visao = [
   { h: 'Onde ficava' },
   'O Tibete histórico é o **planalto tibetano**, o mais alto e vasto do mundo: uma altitude média perto dos 4500 m, com montanhas, lagos salgados, estepes de erva rasa e vales profundos. A sul fica a muralha do **Himalaia** (com o Evereste, que os tibetanos chamam **Chomolungma**); a norte, o deserto do Taklamakan e as montanhas do Kunlun; a este, os desfiladeiros por onde correm os grandes rios da Ásia (o Yangtzé, o Mekong, o Salween). Daqui nascem também o **Yarlung Tsangpo** (que depois é o Brahmaputra), o Indo e o Sutlej. É por isso chamado, por vezes, a «torre de água» da Ásia.',
   'Os tibetanos viviam sobretudo em dois mundos: os **vales férteis do centro e do sul** (Yarlung, Lhasa, Shigatse), onde se cultivava cevada, e as **terras altas do norte e do oeste**, onde os **nómadas** criavam iaques, ovelhas e cabras. Ao longo da história, o território sob governo tibetano variou muito. As regiões de **Ü** e **Tsang** (centro) e **Kham** e **Amdo** (este) são tradicionalmente consideradas o espaço cultural tibetano, mas os limites políticos de cada período mudaram, e são debatidos.',
-  { img: 'tib-planalto', leg: 'Paisagem do planalto tibetano, com cadeia de montanhas e lago' },
+  { img: 'tib-planalto', leg: 'Imagem de satélite do planalto tibetano, com a sua multidão de lagos.' },
   { h: 'Quando existiu' },
   'A história do Tibete costuma dividir-se em **quatro grandes fases**: o império (séculos VII–IX), o tempo da fragmentação e da «segunda difusão» do budismo (séculos IX–XIII), o tempo das escolas e dos poderes regionais (séculos XIII–XVI) e o tempo dos Dalai Lamas (a partir do século XVII). As datas abaixo são aproximadas, e as mais antigas, as mais incertas.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -38,8 +39,8 @@ const visao = [
     '**Medicina, astrologia e artes de contemplação:** tradições próprias, hoje estudadas e praticadas em todo o mundo.',
     '**Um laboratório da história:** as relações do Tibete com a China, com os mongóis, com a Índia e com o Nepal são um caso de estudo sobre poder, religião e fronteiras, e continuam a ser debatidas.'
   ] },
-  { img: 'tib-potala-hoje', leg: 'Palácio de Potala, Lhasa' },
-  { img: 'tib-bandeiras-oracao', leg: 'Bandeiras de oração (lung ta) no Himalaia' },
+  { img: 'tib-potala-hoje', leg: 'Interior do Palácio de Potala, Lhasa.' },
+  { img: 'tib-bandeiras-oracao', leg: 'Bandeiras de oração (lung ta) junto às escadas de Swayambhunath, Nepal; o costume é comum a todo o mundo tibetano.' },
   { caixa: 'O Tibete hoje', texto: 'O Tibete histórico é hoje administrado pela **República Popular da China**, em grande parte como **Região Autónoma do Tibete** (criada em 1965), a que se somam áreas tibetanas em províncias vizinhas (Qinghai, Sichuan, Gansu, Yunnan). Vivem na China mais de seis milhões de tibetanos. O 14.º Dalai Lama, **Tenzin Gyatso**, vive no exílio, na Índia, desde 1959, e há uma importante diáspora tibetana. As **leituras sobre a história do Tibete e das suas relações com a China** são diferentes consoante os autores e os governos, e estão resumidas, com as suas fontes, na secção «Legado». Este site conta a história, sem tomar posição política sobre o presente.' }
 ];
 
@@ -71,7 +72,7 @@ const linha = [
     { d: '838 – 842', t: 'Langdarma e o fim do império', x: 'Depois da morte (ou assassinato) de Ralpachen, o seu irmão **Langdarma** (Ü Dumtsen) sobe ao trono e, segundo as crónicas tibetanas, perseguiu os mosteiros. Foi **assassinado em 842** por um monge, e o império dissolveu-se em guerras de sucessão entre os seus herdeiros. As fontes budistas posteriores pintam Langdarma como perseguidor, mas os historiadores notam que essas fontes são hostis e que a crise do império tinha causas políticas e económicas.' },
   ] },
   { img: 'tib-pilar-lhasa', leg: 'Pilar do tratado sino-tibetano, em frente do templo de Jokhang, Lhasa, inscrito em 821/822.' },
-  { img: 'tib-dunhuang-manuscrito', leg: 'Manuscrito tibetano de Dunhuang, séculos VIII–IX, British Library / Bibliothèque nationale de France.' },
+  { img: 'tib-dunhuang-manuscrito', leg: 'Fragmento de manuscrito tibetano de Dunhuang (o «Testamento de Ba»), séculos VIII–IX, British Library.' },
   { linha: [
     { d: '842 – c. 1000', t: 'A era da fragmentação', x: 'Sem poder central, o Tibete divide-se. Descendentes dos reis fundam reinos regionais, como o de **Guge-Purang**, no oeste. O budismo desaparece do centro, mas sobrevive em Kham e Amdo e no oeste. Os tibetanos chamam a este tempo «período da fragmentação» ou «período obscuro».' },
     { d: 'c. 958 – 1042', t: 'A segunda difusão do budismo', x: 'O rei de Guge envia jovens à Caxemira; o tradutor **Rinchen Zangpo** (958–1055) funda mosteiros e traduz textos. Em **1042**, o mestre indiano **Atisha** (c. 982–1054) chega ao oeste do Tibete e depois ao centro, e dá origem à escola **Kadam**. Mestres como **Marpa** e **Milarepa** estabelecem a linhagem **Kagyu**.' },
@@ -79,8 +80,7 @@ const linha = [
     { d: '1244 – 1247', t: 'Sakya Pandita e Godan', x: 'O príncipe mongol **Godan**, neto de Gengis Khan, convida **Sakya Pandita** para a sua corte (convite em 1244; o encontro dá-se c. 1247, na região de Liangzhou). O mestre sakya aceita a autoridade mongol sobre o Tibete e escreve cartas aos tibetanos a dizer-lhes para se submeterem. Foi o começo da ligação Sakya–Mongóis.' },
     { d: '1253 – 1280', t: 'Phagpa e Kublai Khan', x: 'O sobrinho de Sakya Pandita, **Phagpa** (1235–1280), conhece **Kublai Khan** em 1253. Em 1260 é nomeado **preceptor de estado** e depois preceptor imperial; em 1264 é criado o departamento que, renomeado em 1288, se chamou **Xuanzheng Yuan** («Departamento de Assuntos Budistas e Tibetanos»). Em 1269 Phagpa cria a **escrita ’phags-pa**, de uso oficial no império mongol. Os Sakya passam a governar o Tibete central com o apoio mongol.' },
   ] },
-  { img: 'tib-sakya-mosteiro', leg: 'Mosteiro de Sakya, Tibete' },
-  { img: 'tib-phagpa-kublai', leg: 'Phagpa e Kublai Khan: representação tibetana ou chinesa da época Yuan.' },
+  { img: 'tib-sakya-mosteiro', leg: 'Tanka dos quatro mandalas de Vajravali (Tibete Central, ordem Sakya, mosteiro de Ngor).' },
   { linha: [
     { d: '1290 – 1354', t: 'O fim do poder Sakya', x: 'Em 1285–1290 uma revolta do mosteiro **Drikung** é esmagada pelas tropas Yuan, com apoio sakya. Com o enfraquecimento do império Yuan, o poder dos Sakya diminui. Em **1354**, o chefe **Changchub Gyaltsen**, do clã Phagmodrupa, toma o poder e funda uma dinastia que governa o Tibete central por mais de um século e pretende restabelecer o antigo prestígio do tempo dos reis.' },
     { d: '1357 – 1419', t: 'Tsongkhapa e os Gelug', x: 'Nasce **Tsongkhapa** (1357), reformador que insiste na disciplina monástica e no estudo. Os seus discípulos fundam **Ganden** (1409), **Drepung** (1416) e **Sera** (1419), grandes mosteiros-universidade, e, em 1447, **Tashilhunpo**. A escola formada é a **Gelug** («virtuosos»).' },
@@ -115,12 +115,11 @@ const mapa = [
   { img: 'tib-lhasa-sec7', leg: 'Reconstituição conjetural de Lhasa no século VII, com o primeiro templo e o monte Marpori. Ilustração gerada por IA.' },
   { h: 'Lhasa e o Jokhang' },
   '**Lhasa** («lugar dos deuses», na tradução comum) é a capital desde Songtsen Gampo, e está a cerca de 3650 m de altitude. No seu centro fica o **Jokhang**, o templo mais sagrado do Tibete, fundado, segundo a tradição, no século VII para guardar a imagem de Buda trazida pela princesa Wencheng, o **Jowo Shakyamuni**. Nos séculos seguintes foi ampliado muitas vezes. À volta do templo corre o circuito de peregrinação, o **Barkhor**, que os fiéis percorrem no sentido dos ponteiros do relógio. O Jokhang foi inscrito pela UNESCO em 2000, como extensão do Património Mundial do Potala (1994).',
-  { img: 'tib-jokhang', leg: 'Templo de Jokhang, Lhasa' },
+  { img: 'tib-jokhang', leg: 'Peixe monstruoso (ornamento) no telhado do templo de Jokhang, Lhasa.' },
   { h: 'O Potala' },
   'O **Palácio de Potala** ergue-se sobre a colina de **Marpori**, com cerca de 115 m de altura, e tem treze andares. Foi reconstruído a partir de 1645, às ordens do Quinto Dalai Lama: o **Palácio Branco** (residência e administração) ficou pronto em 1648 e o **Palácio Vermelho** (salas religiosas e túmulos de Dalai Lamas) foi concluído em 1694. Tem, segundo a tradição, cerca de mil salas. Foi a residência dos Dalai Lamas até 1959, e é hoje museu e Património Mundial da UNESCO.',
   { h: 'Yarlung e Chongye' },
   'O vale de **Yarlung**, no sul, é o berço da dinastia dos reis. O **Yumbulakhang**, uma pequena fortaleza num esporão rochoso, é considerado o primeiro palácio dos reis tibetanos (o edifício atual foi reconstruído). Ali perto, no vale de **Chongye**, ficam os grandes montes funerários dos reis do império.',
-  { img: 'tib-yumbulakhang', leg: 'Yumbulakhang, Vale de Yarlung' },
   { h: 'Samye' },
   '**Samye** foi construído como mandala em pedra: no centro, o templo principal (**Utse**) representa o monte Meru, rodeado por templos dos quatro continentes, dos sóis e das luas, e por um muro circular. A tradição liga o plano ao mosteiro indiano de Odantapuri (a ligação é debatida). Foi parcialmente destruído e reconstruído várias vezes ao longo da sua história.',
   { img: 'tib-samye', leg: 'Mosteiro de Samye' },
@@ -131,7 +130,7 @@ const mapa = [
     '**Sera** (1419): famoso pelos seus debates filosóficos entre monges, num jardim, com palmas e gestos rituais.',
     '**Tashilhunpo** (1447, Shigatse): sede dos **Panchen Lamas**, a segunda grande linhagem dos Gelug.'
   ] },
-  { img: 'tib-ganden', leg: 'Mosteiro de Ganden' },
+  { img: 'tib-ganden', leg: 'Mosteiro de Ganden, com alguns edifícios destruídos em 1959 que ainda se mantinham em ruína.' },
   { img: 'tib-drepung', leg: 'Mosteiro de Drepung, perto de Lhasa' },
   { img: 'tib-tashilhunpo', leg: 'Mosteiro de Tashilhunpo, Shigatse' },
   { h: 'Gyantse' },
@@ -170,7 +169,7 @@ const sociedade = [
     ['Sakya', 'Fundada em 1073; família Khön', 'Estudo e erudição; poder político no séc. XIII'],
     ['Gelug («virtuosos»)', 'Tsongkhapa, séc. XIV–XV', 'Disciplina e debate filosófico; escola dos Dalai Lamas e dos Panchen Lamas']
   ] } },
-  { img: 'tib-padmasambhava-tanka', leg: 'Padmasambhava, tanka tibetano' },
+  { img: 'tib-padmasambhava-tanka', leg: 'Tanka com Guru Dragpur, uma forma irada de Padmasambhava.' },
   { h: 'Os lamas reencarnados' },
   'Uma das originalidades tibetanas é a sucessão por **reencarnação** (*tulku*): quando um grande lama morre, procuram-se, por sinais, sonhos e testes, uma criança que se acredita ser a sua renascença. A primeira linhagem desse tipo reconhecida pela tradição é a dos **Karmapas** (séc. XII–XIII), da escola Kagyu. Os **Dalai Lamas** são considerados manifestações do bodisatva da compaixão, **Avalokiteshvara** (Chenrezig); os **Panchen Lamas**, de Amitabha. A prática serviu também para resolver a sucessão em grandes mosteiros sem passar por herança familiar.',
   { h: 'A prática religiosa' },
@@ -181,7 +180,7 @@ const sociedade = [
     '**Debate filosófico:** os monges Gelug treinam-se em debates públicos, com gestos rituais, que testam a compreensão da lógica budista.',
     '**Retiro e meditação:** períodos longos de estudo e prática, que podem durar anos, em mosteiros e eremitérios.'
   ] },
-  { img: 'tib-mandala', leg: 'Mandala tibetano pintado sobre tecido (tanka)' },
+  { img: 'tib-mandala', leg: 'Monges Namgyal a preparar o mandala de Kalachakra, em areia colorida.' },
   { img: 'tib-debate-monastico', leg: 'Debate filosófico entre monges, num pátio de mosteiro Gelug; cena conjetural. Ilustração gerada por IA.' },
   { h: '4. Economia' },
   'A economia era **agropastoril**. Nos vales cultiva-se **cevada** (a base da alimentação), trigo, ervilhas e nabos; as colheitas são limitadas pela altitude e pelo frio. Nas terras altas criam-se **iaques**, ovelhas e cabras, de que se obtêm leite, manteiga, carne, lã e couro. Os mosteiros e os nobres eram grandes proprietários de terras, e recebiam parte da produção e de trabalho dos camponeses.',
@@ -189,7 +188,6 @@ const sociedade = [
   { img: 'tib-caravana-cha', leg: 'Caravana de iaques e mulas com chá em tijolo, num desfiladeiro; reconstituição conjetural. Ilustração gerada por IA.' },
   { h: '5. Escrita, língua e livros' },
   'O tibetano escreve-se com um alfabeto de **trinta consoantes** de origem indiana, criado no século VII (ver Thonmi Sambhota) e fixado no século IX por uma reforma da ortografia, que explica porque a escrita conserva sons que a língua falada já perdeu. Os textos mais antigos são os **Anais** e as **inscrições em pilares** do império, e os **manuscritos de Dunhuang**. Os tibetanos traduziram do sânscrito, do chinês e de outras línguas milhares de textos budistas, reunidos no **Kangyur** (as palavras de Buda) e no **Tengyur** (os comentários), com mais de trezentos volumes no total. Em 1269, o sakya Phagpa criou ainda uma escrita para os Mongóis, a **’phags-pa**.',
-  { img: 'tib-kangyur-manuscrito', leg: 'Folha de manuscrito do Kangyur, escrita em tibetano com tinta de ouro' },
   { img: 'tib-phagpa-escrita', leg: 'Exemplo de escrita ’phags-pa, criada por Phagpa em 1269, num salvo-conduto (paiza) mongol.' },
   { h: '6. Casa e família' },
   'Nas aldeias, as casas eram de **pedra e de taipa** (terra batida), de dois ou três pisos, com **telhado plano** e janelas pequenas, muitas vezes pintadas de branco, com adornos de cor à volta das janelas. No piso de baixo ficavam os animais, no de cima a família e o altar doméstico. Os **nómadas** viviam em grandes **tendas de pelo de iaque preto** (*ba*), que se montam e desmontam com facilidade. A família podia ser muito diversa: nalgumas regiões praticava-se a **poliandria fraterna** (vários irmãos casados com a mesma mulher), que evitava dividir a terra, e noutras o casamento monogâmico. As mulheres tinham um papel importante na economia e no comércio.',
@@ -243,7 +241,6 @@ const personalidades = [
   'Sobrinho de Sakya Pandita e preceptor de **Kublai Khan**. Recebeu o título de preceptor imperial e foi o criador da escrita ’phags-pa (1269). Governou o Tibete central, em nome dos Yuan, através de um sistema de funcionários locais, e morreu relativamente novo, aos 45 anos.',
   { h: 'Tsongkhapa (1357 – 1419)' },
   'Nascido em Amdo (na região de Tsongkha), reformador e escritor. Insistiu na disciplina monástica e no estudo da lógica, e escreveu o *Lamrim Chenmo* («Grande Exposição do Caminho Gradual»). Os seus discípulos fundaram Ganden, Drepung e Sera. É o fundador da escola Gelug.',
-  { img: 'tib-tsongkhapa', leg: 'Tsongkhapa, representação tibetana' },
   { h: 'Thangtong Gyalpo (séc. XIV – XV)' },
   'Mestre budista, engenheiro, poeta e, segundo a tradição, criador da ópera tibetana. É conhecido como o construtor das **pontes de ferro** do Tibete. As datas da sua vida são incertas (a tradição dá-lhe mais de cem anos), mas o seu nome é recordado por pontes, balsas e conventos.',
   { h: 'O Quinto Dalai Lama (1617 – 1682)' },
@@ -320,6 +317,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

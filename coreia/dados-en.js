@@ -79,7 +79,6 @@ const linha = [
     { d: '1170 – 1259', t: 'Military coup and Mongol invasions', x: 'In **1170** military officers seize power in a revolt against the civil elite; for nearly a century the king is a figurehead while the **Choe** family rules in fact. The **Mongols** invade six times between **1231 and 1259**; the government takes refuge on **Ganghwa** island (1232) and the country is devastated. In 1259 Goryeo submits and becomes a vassal of the Mongol (Yuan) empire.' },
     { d: '1236 – 1251', t: 'The Tripitaka Koreana', x: 'During the war, monks carved the complete Buddhist canon on **81,258** wooden blocks, as a prayer that the Buddha would protect the country. An earlier edition, begun in 1011, burned in 1232; the Ganghwa edition has been kept at **Haeinsa** since the late 14th century.' },
   ] },
-  { img: 'cor-tripitaka-haeinsa', leg: 'Woodblocks of the Tripitaka Koreana at Haeinsa (Janggyeong Panjeon).' },
   { linha: [
     { d: '1377', t: 'The Jikji', x: 'At **Heungdeoksa** temple in **Cheongju**, the **Jikji** is printed (the shortened title of an anthology of the teachings of great Seon, or Zen, masters, compiled by the monk **Baegun**). It is the oldest surviving book printed with **movable metal type**, 78 years before the Gutenberg Bible (c. 1455). A Korean source already records, around 1234, an edition printed this way (now lost).' },
   ] },
@@ -117,7 +116,7 @@ const mapa = [
     ['Hahoe and Andong', 'South-east interior', '14th – 19th c.', 'Yangban villages; World Heritage'],
     ['Jeju', 'Island to the south', 'Kingdom of Tamna; Joseon', 'Volcanic island with its own traditions; home of the haenyeo divers']
   ] } },
-  { img: 'cor-kangnido', leg: 'Kangnido map (1402), a Korean world map, 16th-century Japanese copy.' },
+  { img: 'cor-kangnido', leg: 'The Kangnido map (1402), a Korean world map, in a 16th-century Japanese copy; the image compares it with the Fra Mauro map.' },
   { h: 'Gyeongju: the thousand-year capital' },
   'Silla ruled from **Gyeongju** for almost a thousand years (57 BC – 935, according to tradition). The Samguk Sagi speaks of 178,936 households in the city in the 9th century (a figure that is hard to interpret), which would make Gyeongju one of the largest cities of East Asia. The great mounded **tombs** in the centre yielded the famous gold crowns. On the artificial lake of **Anapji** the king held banquets; the stone **Cheomseongdae** is traditionally seen as a 7th-century observatory.',
   { img: 'cor-gyeongju-reconstrucao', leg: 'Artistic reconstruction of Gyeongju, capital of Silla, in the 8th century.' },
@@ -173,7 +172,7 @@ const sociedade = [
   { img: 'cor-pintura-kim-hongdo', leg: 'Scene of everyday life (ssireum) by Kim Hong-do, 18th – 19th centuries.' },
   { h: '10. Science and technology' },
   'Sejong’s reign was an explosion of inventions. **Jang Yeong-sil**, of plebeian origin, whom Sejong promoted to official, built, with other technicians, the automatic water clock **Jagyeongnu** (1434), the **rain gauge** (**cheugugi**, 1441, one of the first in the world with regular measurements), sundials and armillary spheres. In 1395 the star chart **Cheonsang Yeolcha Bunyajido** was carved, and in **1402** the world map **Kangnido** was produced. The **Chiljeongsan** (1442) reconciled the calendar with the real position of the Sun and Moon at Seoul. The **Dongui Bogam** (1613), by **Heo Jun**, is a great medical treatise, on the Memory of the World register since 2009. **Gunpowder** was developed by **Choe Mu-seon** (1377), and the cannon and the rocket cart (**hwacha**) were used in war.',
-  { img: 'cor-chugugi', leg: 'Rain gauge (cheugugi) of Joseon, 15th century.' },
+  { img: 'cor-chugugi', leg: 'Replica rain gauges (cheugugi) of the Joseon period, in the Jang Yeong-sil Science Garden, Busan; the original dates from the 15th century.' },
   { h: '11. Architecture and construction' },
   'Korean architecture is of **wood**, without nails, with elaborate brackets under the eaves and gently curving roofs. Temples were placed in mountains, in harmony with the landscape. The oldest survivals are mostly works in **stone**: granite pagodas (Silla), grottoes (Seokguram) and fortresses. **Cheomseongdae**, **Bulguksa** and the walls of **Hwaseong** are examples from three eras.',
   { img: 'cor-silla-coroa', leg: 'Gold crown of Silla with jade pendants and leaves, 5th – 6th century, National Museum of Korea.' },
@@ -187,7 +186,7 @@ const sociedade = [
   'Goguryeo was a military power: armoured horsemen, archers and a network of mountain **fortresses** (**sanseong**) that halted the Chinese armies. Silla created the young elite of the **hwarang** (“flowering youths”), which combined military training, study and ethics, and whose code (the **Five Precepts**) is attributed to the monk Wongwang. Goryeo used walls and, against the Mongols, withdrew to fortresses and islands. In Joseon the great novelty was the **navy**: the **panokseon**, a warship with a combat deck, and the **geobukseon**, the **turtle ship**, with a covered deck, which Yi Sun-sin used in 1592. Archers were the core of the army; firearms (arquebuses, cannon) became essential in the 17th century.',
   { img: 'cor-guerreiros-goguryeo', leg: 'Armoured Goguryeo horsemen, 4th – 5th centuries (artistic reconstruction).' },
   { img: 'cor-hwarang', leg: 'Young hwarang of Silla in training (artistic reconstruction).' },
-  { img: 'cor-geobukseon', leg: 'Replica of a turtle ship (geobukseon), with its covered deck.' }
+  { img: 'cor-geobukseon', leg: 'Imagined reconstruction of one of Yi Sun-sin\'s turtle ships (geobukseon), 16th century (illustrative AI-generated image).' }
 ];
 
 const personalidades = [
@@ -246,7 +245,7 @@ const legado = [
   ] },
   { h: 'Art' },
   'Korean art is distinguished by an aesthetic of naturalness and restraint: Joseon **landscape painting** (Jeong Seon, 1676 – 1759, with his “true views” of Korea), **portraits**, the paintings of ordinary people by Kim Hong-do and Shin Yun-bok, and **calligraphy**. The Buddhist sculpture of Silla, with the Buddha of Seokguram, is among the greatest in Asia.',
-  { img: 'cor-seokguram', leg: 'Granite Buddha of Seokguram, Gyeongju, c. 774 (UNESCO).' },
+  { img: 'cor-seokguram', leg: 'Interior of the Buddhist temple beside the Seokguram Grotto, Gyeongju (UNESCO); the grotto holds a granite Buddha of c. AD 774.' },
   { h: 'Architecture' },
   'The Joseon palaces, mountain temples and fortresses are the best testimony. Much was destroyed in wars: Hwangnyongsa burned in 1238, in the Mongol invasions, and the wooden part of Bulguksa was burned in the war of 1592 – 1598 and rebuilt later. The most notable thing is the **attention to landscape**: house and palace fit into the mountains.',
   { h: 'The challenges of memory: what we know and what is debated' },

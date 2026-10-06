@@ -1,5 +1,6 @@
 // COREIA — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Datas aproximadas; as mais antigas vêm de crónicas escritas séculos depois (Samguk Sagi, 1145; Samguk Yusa, c. 1280) e misturam lenda e história. a.C./d.C.
 // Este dossiê termina em 1897, com a proclamação do Império Coreano; o século XX não entra.
 // Imagens: cada {img:'id'} procura o ficheiro  coreia/img/id.jpg  (ver IMAGENS_COREIA.md para a lista e os prompts).
@@ -81,7 +82,6 @@ const linha = [
     { d: '1170 – 1259', t: 'Golpe militar e invasões mongóis', x: 'Em **1170**, oficiais militares tomam o poder numa revolta contra a elite civil; durante quase um século o rei é uma figura simbólica, enquanto a família **Choe** governa de facto. Os **mongóis** invadem seis vezes entre **1231 e 1259**; o governo refugia-se na ilha de **Ganghwa** (1232) e o país é devastado. Em 1259 o Goryeo submete-se e torna-se vassalo do império mongol (Yuan).' },
     { d: '1236 – 1251', t: 'A Tripitaka Koreana', x: 'Durante a guerra, os monges gravaram em **81 258** placas de madeira o cânone budista completo, como oração para que o Buda protegesse o país. Uma primeira edição, iniciada em 1011, ardeu em 1232; a de Ganghwa guarda-se desde o final do século XIV em **Haeinsa**.' },
   ] },
-  { img: 'cor-tripitaka-haeinsa', leg: 'Placas de madeira da Tripitaka Koreana em Haeinsa (Janggyeong Panjeon).' },
   { linha: [
     { d: '1377', t: 'O Jikji', x: 'No templo de **Heungdeoksa**, em **Cheongju**, imprime-se o **Jikji** (título abreviado de uma antologia dos ensinamentos dos grandes monges do Seon, o Zen coreano, compilada pelo monge **Baegun**). É o mais antigo livro conservado impresso com **tipos móveis de metal**, 78 anos antes da Bíblia de Gutenberg (c. 1455). Já em c. 1234 há notícia, numa fonte coreana, de uma edição impressa assim (perdida).' },
   ] },
@@ -119,7 +119,7 @@ const mapa = [
     ['Hahoe e Andong', 'Interior sudeste', 'Séc. XIV – XIX', 'Aldeias de yangban; Património Mundial'],
     ['Jeju', 'Ilha a sul', 'Reino de Tamna; Joseon', 'Ilha vulcânica, com tradições próprias; terra das mergulhadoras haenyeo']
   ] } },
-  { img: 'cor-kangnido', leg: 'Mapa Kangnido (1402), mapa-múndi coreano, cópia japonesa do século XVI.' },
+  { img: 'cor-kangnido', leg: 'Mapa Kangnido (1402), mapa-múndi coreano, em cópia japonesa do século XVI; a imagem compara-o com o mapa de Fra Mauro.' },
   { h: 'Gyeongju: a capital de mil anos' },
   'Silla governou a partir de **Gyeongju** durante quase mil anos (57 a.C. – 935, segundo a tradição). O Samguk Sagi fala de 178 936 famílias na cidade no século IX (número de interpretação difícil), o que faria de Gyeongju uma das maiores cidades da Ásia Oriental. Os grandes **túmulos** em montículo do centro guardaram as famosas coroas de ouro. No lago artificial de **Anapji** o rei dava banquetes; o **Cheomseongdae**, em pedra, é tradicionalmente visto como um observatório do século VII.',
   { img: 'cor-gyeongju-reconstrucao', leg: 'Reconstrução artística de Gyeongju, capital de Silla, no século VIII.' },
@@ -175,7 +175,7 @@ const sociedade = [
   { img: 'cor-pintura-kim-hongdo', leg: 'Cena de quotidiano (ssireum) por Kim Hong-do, séculos XVIII–XIX.' },
   { h: '10. Ciência e tecnologia' },
   'O reinado de Sejong foi uma explosão de invenções. **Jang Yeong-sil**, de origem plebeia, que Sejong promoveu a funcionário, construiu, com outros técnicos, o relógio de água automático **Jagyeongnu** (1434), o **pluviómetro** (**cheugugi**, 1441, um dos primeiros do mundo com medições regulares), relógios de sol e esferas armilares. Em 1395 gravou-se o mapa estelar **Cheonsang Yeolcha Bunyajido**, e em **1402** produziu-se o mapa-múndi **Kangnido**. O **Chiljeongsan** (1442) reconciliou o calendário com a posição real do Sol e da Lua em Seul. O **Dongui Bogam** (1613), de **Heo Jun**, é um grande tratado de medicina, na Memória do Mundo desde 2009. A **pólvora** foi desenvolvida por **Choe Mu-seon** (1377), e o canhão e o carro de foguetes (**hwacha**) foram usados em guerra.',
-  { img: 'cor-chugugi', leg: 'Pluviómetro (cheugugi) do Joseon, século XV.' },
+  { img: 'cor-chugugi', leg: 'Réplicas de pluviómetros (cheugugi) do Joseon, no Jardim da Ciência Jang Yeong-sil, em Busan; o original é do século XV.' },
   { h: '11. Arquitetura e construção' },
   'A arquitetura coreana é de **madeira**, sem pregos, com consolas elaboradas sob os beirais e telhados de curvatura suave. Os templos foram colocados em montanhas, em harmonia com a paisagem. O que sobreviveu de mais antigo são sobretudo as obras em **pedra**: pagodes de granito (Silla), grutas (Seokguram) e fortalezas. O **Cheomseongdae**, **Bulguksa** e as muralhas de **Hwaseong** são exemplos de três épocas.',
   { img: 'cor-silla-coroa', leg: 'Coroa de ouro de Silla com pingentes de jade e folhas, século V–VI, Museu Nacional da Coreia.' },
@@ -189,7 +189,7 @@ const sociedade = [
   'Goguryeo era uma potência militar: cavaleiros com armadura, arqueiros e uma rede de **fortalezas** de montanha (**sanseong**) que travou os exércitos chineses. Silla criou a elite jovem dos **hwarang** («jovens flores»), que unia treino militar, estudos e ética, e cujo código (**Cinco Preceitos**) é atribuído ao monge Wongwang. O Goryeo usou muralhas e, contra os mongóis, retirou para fortalezas e ilhas. No Joseon, a grande novidade foi a **marinha**: o **panokseon**, navio de guerra com plataforma de combate, e o **geobukseon**, o **navio-tartaruga**, de convés coberto, que Yi Sun-sin usou em 1592. Os arqueiros eram o núcleo do exército; as armas de fogo (arcabuzes, canhões) tornaram-se essenciais no século XVII.',
   { img: 'cor-guerreiros-goguryeo', leg: 'Cavaleiros de Goguryeo com armadura, séculos IV–V (reconstrução artística).' },
   { img: 'cor-hwarang', leg: 'Jovens hwarang de Silla em treino (reconstrução artística).' },
-  { img: 'cor-geobukseon', leg: 'Réplica de um navio-tartaruga (geobukseon), com o convés coberto.' }
+  { img: 'cor-geobukseon', leg: 'Reconstituição imaginada de um navio-tartaruga (geobukseon) de Yi Sun-sin, séc. XVI (imagem ilustrativa gerada por IA).' }
 ];
 
 const personalidades = [
@@ -248,7 +248,7 @@ const legado = [
   ] },
   { h: 'Arte' },
   'A arte coreana distingue-se por uma estética de naturalidade e de contenção: a **pintura de paisagem** do Joseon (Jeong Seon, 1676 – 1759, com os «verdadeiros panoramas» da Coreia), os **retratos**, as pinturas de gente comum de Kim Hong-do e Shin Yun-bok, e a **caligrafia**. A escultura budista de Silla, com o Buda de Seokguram, é das maiores da Ásia.',
-  { img: 'cor-seokguram', leg: 'Buda de granito de Seokguram, Gyeongju, c. 774 (UNESCO).' },
+  { img: 'cor-seokguram', leg: 'Interior do templo budista junto à gruta de Seokguram, Gyeongju (UNESCO); a gruta guarda um Buda de granito de c. 774.' },
   { h: 'Arquitetura' },
   'Os palácios do Joseon, os templos de montanha e as fortalezas são o melhor testemunho. Muita coisa foi destruída nas guerras: o Hwangnyongsa ardeu em 1238, nas invasões mongóis, e a parte de madeira do Bulguksa foi queimada na guerra de 1592 – 1598, tendo sido reconstruída mais tarde. O mais notável é a **atenção à paisagem**: a casa e o palácio encaixam nas montanhas.',
   { h: 'Os desafios da memória: o que sabemos e o que é debatido' },
@@ -303,6 +303,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

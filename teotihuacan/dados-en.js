@@ -6,11 +6,11 @@ const visao = [
     '**Teotihuacan** was the first great city of the Americas and one of the largest in the world of its time. It stood in the **Valley of Mexico**, about 50 km north-east of present-day Mexico City, at over 2,300 m above sea level. Between the 1st century BC and the 6th century AD it grew from scattered villages into a planned metropolis of perhaps **100,000 people or more** (estimates range from about 100,000 to 200,000 and are debated), with a monumental avenue, giant pyramids and thousands of stone-and-lime houses.',
     'We do not know what the city called itself, what language its people spoke, or the name of a single one of its rulers. “Teotihuacan” is an **Aztec** name, given by people who lived a thousand years later and found the ruins already silent. Even so, the city’s influence reached **Monte Albán** (Oaxaca), the **Maya** cities (Tikal, Copán, Kaminaljuyu) and the Gulf coast. Around **AD 550** the ceremonial centre was partly burned and the city went into decline; by about 650–750 it was a shadow of what it had been.'
   ] },
-  { img: 'teo-mapa-mesoamerica', leg: 'Map of Mesoamerica showing Teotihuacan and the regions it was in contact with.' },
+  { img: 'teo-mapa-mesoamerica', leg: 'Schematic map of Mesoamerica showing Teotihuacan and the regions it was in contact with (c. 100 BC–AD 600).' },
   { h: 'Where it was' },
   'Teotihuacan lay in a small side valley of the **Valley of Mexico**, a high basin ringed by volcanoes and mountains, with lakes and springs. The site has plentiful **spring water**, fertile soil for maize and, nearby, deposits of **obsidian** (volcanic glass, the best “steel” of the Stone Age), above all the one at **Pachuca** to the north-east. These two advantages, water and obsidian, are among the reasons usually given for its success.',
   'At its height the city covered about **20 km²** (the protected archaeological zone is much larger). It was laid out on a **grid**, with a main axis, the **Avenue of the Dead**, skewed about 15.5° east of north, an orientation repeated in almost every building, whose exact reason (astronomical? a sacred mountain? the calendar?) is debated.',
-  { img: 'teo-vista-aerea', leg: 'Aerial view of Teotihuacan, with the Avenue of the Dead and the Pyramid of the Moon in the background.' },
+  { img: 'teo-vista-aerea', leg: 'Imagined reconstruction of Teotihuacan seen from above, c. AD 450: the Avenue of the Dead, the pyramids and the residential compounds (illustrative AI-generated image).' },
   { h: 'When it existed' },
   'The chronology of Teotihuacan rests on a sequence of pottery phases established by the archaeologist **René Millon** and his team, with names that are not Teotihuacan words but conventional labels. The dates are approximate, and some scholars propose adjustments based on radiocarbon dating.',
   { tabela: { cab: ['Phase', 'Approximate dates', 'What marks it'], linhas: [
@@ -143,7 +143,7 @@ const sociedade = [
   { h: '3. Housing: the apartment compounds' },
   'The great urban novelty of Teotihuacan was the **apartment compounds** (archaeologists call them that): about **2,000** square buildings of stone and lime, **with high walls and no windows onto the street**, a central courtyard with an altar and several houses and rooms around it, for **60 to 100 people** (related families or colleagues of a trade). The floors were of lime and the courtyards had **drainage** for rainwater. The richest had **murals**; the poorest had plain walls. The structure is unique in Mesoamerica and raises the question of whether it was **planned** by the authorities.',
   { img: 'teo-conjunto-habitacional', leg: 'Conjectural reconstruction of a Teotihuacan apartment compound, 5th century AD. AI-generated illustration.' },
-  { img: 'teo-conjunto-tetitla', leg: 'Ruins of the Tetitla compound, Teotihuacan.' },
+  { img: 'teo-conjunto-tetitla', leg: 'The «Net Jaguar» mural at Tetitla, Teotihuacan (Dumbarton Oaks).' },
   { h: '4. Religion and gods' },
   'We have no texts, only images. Specialists (such as **Esther Pasztory**, **Karl Taube** and others) identify **recurring symbols** and give them provisional names. We do not know what they were called in Teotihuacan; the names used below come from the Aztecs, and the match is a hypothesis.',
   { tabela: { cab: ['Figure (study name)', 'Probable role', 'Where it appears'], linhas: [
@@ -158,7 +158,7 @@ const sociedade = [
   ] } },
   { img: 'teo-mural-tepantitla', leg: 'Mural of Tepantitla, traditionally called “Tlalocan” or “paradise of Tlaloc”, Teotihuacan.' },
   { img: 'teo-tlaloc-vaso', leg: 'Ceramic vessel with the figure of the storm god, Teotihuacan.' },
-  { img: 'teo-braseiro', leg: 'Ceramic brazier (the so-called “theatre censer”) from Teotihuacan.' },
+  { img: 'teo-braseiro', leg: 'Ceramic ornament from Teotihuacan, a type of decoration used on braziers and ritual vessels.' },
   { h: 'Sacrifice' },
   'Human sacrifice, associated with the dedication of great buildings, is a proven phenomenon in Teotihuacan (Feathered Serpent Temple, Pyramid of the Moon). In many cases the victims seem to have been **warriors** or **captives**, sacrificed by decapitation, heart extraction or other means, and buried with adornments. In addition, animals (pumas, eagles, snakes) were sacrificed and buried. The meaning of these acts, **politics, religion and cosmology mixed together**, is debated, and one should neither judge by present-day values nor take what is known of the Aztecs as a faithful mirror.',
   { img: 'teo-enterramento-serpente', leg: 'Conjectural reconstruction of a dedication burial beneath the Feathered Serpent Temple. AI-generated illustration.' },
@@ -166,15 +166,12 @@ const sociedade = [
   'The **murals** of Teotihuacan are the best window onto its world. Painted on stucco, in **fresco** or tempera technique, with **red ochres**, **greens** and **blues** (and cinnabar red, a mercury mineral, among the elites), they show priests in procession, gods, animals and water scenes. The one at **Tepantitla** (“Tlalocan”) shows a water garden with figures swimming, playing and singing (the classic interpretation, by **Alfonso Caso**, is of a paradise of the rain god; today it is debated). At **Atetelco** there are coyotes and priests in red and black, and at **Tetitla** and **Techinantitla** the Great Goddess and jaguars appear.',
   { img: 'teo-mural-tetitla', leg: 'Mural painting at Tetitla, Teotihuacan' },
   { img: 'teo-mural-atetelco', leg: 'Mural painting at Atetelco, Teotihuacan' },
-  { img: 'teo-jaguar-rede', leg: 'Mural painting of a netted jaguar, Teotihuacan' },
   { h: '6. Economy' },
   'The base was **agriculture**: **maize**, **beans**, **squash**, chillies, tomatoes, **amaranth**, prickly pear (nopal) and **agave** (maguey, from which pulque was made and fibres drawn). Supply relied on fields irrigated with canals and springs (and perhaps raised fields near the lake, debated). **Turkeys** and **dogs** were raised, and rabbits, deer and birds were hunted. There were no large livestock or draught animals, and no transport wheel.',
   'The great industry was **obsidian**: the city’s thousands of **workshops** produced blades, arrowheads, knives and ritual objects and exported them. The green obsidian of **Pachuca** was especially prized. Also made were pottery, **Thin Orange ware** (produced, according to most authors, in the Puebla region), figurines, objects of green stone, shells and hides. Merchants travelled in caravans of porters, and imported **cacao**, quetzal feathers, jade, cotton, shells and mica from distant regions.',
   { img: 'teo-mercado', leg: 'Conjectural reconstruction of a Teotihuacan market, 5th century AD. AI-generated illustration.' },
   { img: 'teo-oficina-obsidiana', leg: 'Conjectural reconstruction of a Teotihuacan obsidian workshop. AI-generated illustration.' },
   { img: 'teo-obsidiana', leg: 'Obsidian objects from Teotihuacan' },
-  { img: 'teo-vaso-tripode', leg: 'Cylindrical tripod vessel, typical of Teotihuacan, with talud-tablero decoration.' },
-  { img: 'teo-laranja-fino', leg: 'Thin Orange ware, produced in the Puebla region and traded with Teotihuacan.' },
   { h: '7. Writing, language and calendar' },
   'Teotihuacan has **no deciphered writing**. There are signs and symbols (painted on murals and ceramics, among them about thirty signs found at La Ventilla), and recent proposals (by epigraphers) about a possible writing or proto-writing, but **none has been confirmed**. The population used, like other Mesoamericans, a **260-day** calendar, and archaeologists have found **pecked crosses in circles** on floors and walls, perhaps tied to measurement, the calendar and the orientation of the city. The language is unknown (see “Who were they?”).',
   { h: '8. Food' },
@@ -201,7 +198,7 @@ const sociedade = [
   ] },
   { h: '12. War' },
   'Teotihuacan had no **walls**, which suggests confidence in its power, or the absence of nearby threats. But the **art of war** is present: warriors with **shields**, **darts**, **spear-throwers** and cotton armour, and the sacrifices of warriors. What the Maya cities tell us is that **warriors in Teotihuacan guise** were tied to changes of power. The real role of the army is debated.',
-  { img: 'teo-mascara-pedra', leg: 'Stone mask in Teotihuacan style, National Museum of Anthropology, Mexico City.' }
+  { img: 'teo-mascara-pedra', leg: 'Stone mask in Teotihuacan style, from Malinaltepec (Guerrero).' }
 ];
 
 const personalidades = [
@@ -250,7 +247,7 @@ const legado = [
   ] },
   { h: 'Art' },
   'Teotihuacan art is **geometric, stylised and very disciplined**: stone masks with neutral faces and eyes of shell or obsidian, ceramic figures, tripod vessels and theatre censers, and above all **mural painting**. The **stone masks** (of andesite, basalt and other stones), perhaps used in funerals or as offerings, are its icon. Teotihuacan art shows little concern for individuality: there are no portraits, but types and symbols.',
-  { img: 'teo-museu-sala', leg: 'Teotihuacan Hall of the National Museum of Anthropology, Mexico City.' },
+  { img: 'teo-museu-sala', leg: 'Sculpture of Tlaloc in the Teotihuacan Hall of the National Museum of Anthropology, Mexico City.' },
   { h: 'Architecture: talud-tablero and ceremonial space' },
   'The **talud-tablero** (a ramp and a projecting panel, repeated in tiers) and the idea of a **ceremonial avenue** with aligned temples and pyramids are the great architectural hallmarks. The city has a sense of **order and repetition** (in contrast to the variety of the Maya cities), and this is one of its signatures.',
   { h: 'Why did it disappear? A debate' },
@@ -265,7 +262,6 @@ const legado = [
   'None of these explanations is accepted by everyone, and today many speak of a **long process** rather than a sudden fall.',
   { h: 'The rediscovery of Teotihuacan' },
   'The city was never forgotten: **the Aztecs** visited it, and the Spaniards, after the conquest (1519–1521), described the pyramids. Scientific archaeology began in the 19th century and consolidated with **Batres** (1905–1910), **Gamio** (1917–1922), **Millon’s** map (1962–1973) and the excavations of the 1980s and of the tunnel (2003 onwards). Today new technologies (ground-penetrating radar, electrical resistivity tomography, isotope and DNA analyses) are changing what we know.',
-  { img: 'teo-batres-restauro', leg: 'Pyramid of the Sun during Batres’s restoration, c. 1910, period photograph.' },
   { caixa: 'A note on the 20th century', texto: 'For a long time Teotihuacan was imagined as a **peaceful** city, governed by priests. The burials of sacrificed people and the warrior murals revealed by excavations from the 1980s on dispelled that idea. The site has also easily been tied to modern myths (extraterrestrials, lost civilisations). None of these has any archaeological basis: Teotihuacan was the work of people, with the means and ideas of their time.' },
   { caixa: 'Visiting', texto: 'The **Teotihuacan Archaeological Zone** lies about **50 km** north-east of Mexico City (buses leave from the Terminal Norte). Go early in the morning to avoid the heat and the crowds; bear in mind the altitude (over 2,000 m) and the lack of shade. In recent years climbing the pyramids has been **restricted**: check the rules before you go. Inside the site are the **Museo de la Cultura Teotihuacana** and the **Museo de los Murales Teotihuacanos “Beatriz de la Fuente”**. In Mexico City, the **Teotihuacan Hall** of the **National Museum of Anthropology** has the most important pieces. Outside Mexico, there are pieces in museums such as the **British Museum** and the **de Young** in San Francisco.' }
 ];

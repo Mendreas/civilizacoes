@@ -1,5 +1,6 @@
 // REINO DO CONGO (KONGO) — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Datas aproximadas: a história kongo anterior ao contacto com os portugueses (c. 1483) assenta em tradição oral e em arqueologia, e é muito debatida. A partir do século XVI há cartas dos reis, relatos portugueses, italianos e holandeses. a.C./d.C.
 // Imagens: cada {img:'id'} procura o ficheiro  congo/img/id.jpg  (ver IMAGENS_CONGO.md para a lista e os prompts).
 // Nota de método: «Kongo» designa o reino e o povo (bakongo); «Congo» é a forma portuguesa tradicional, usada no título.
@@ -12,9 +13,8 @@ const visao = [
   { img: 'con-mapa-reino', leg: 'Mapa antigo do Reino do Congo e das regiões vizinhas, desenhado a partir de informações portuguesas (século XVII).' },
   { h: 'Onde ficava' },
   'O reino ocupava a região do **baixo Congo**, entre o oceano Atlântico a oeste e o rio **Kwango** a leste, e entre o rio Congo (ao norte) e o rio **Dande** ou o **Kwanza** (ao sul), com limites que variaram muito ao longo dos séculos. Era uma paisagem de planaltos ondulados, vales verdes, savana e floresta, atravessada por rios navegáveis só em troços e por duas estações bem marcadas, a das chuvas e a seca (*cacimbo*). O grande rio dava o nome ao reino e a quem o conhecia pela costa: para os portugueses, o «rio do Padrão» ou «rio Zaire» (a forma portuguesa do quicongo *nzadi*, «o rio que engole todos os rios»).',
-  { img: 'con-rio-congo', leg: 'O rio Congo no seu curso inferior, na região de Matadi.' },
+  { img: 'con-rio-congo', leg: 'A ponte Marechal Mobutu sobre o rio Congo, junto a Matadi, no curso inferior do rio.' },
   'A capital, **Mbanza Kongo** (a «corte do Kongo»), situava-se num planalto no atual norte de Angola, na província do Zaire. Era o centro simbólico do reino, onde se escolhia e se coroava o rei, e onde os portugueses depois construíram a igreja de pedra, que deu à cidade o nome de **São Salvador do Congo**. Era também o ponto de encontro de caminhos que levavam ao porto de Mpinda (na foz do rio), ao grande mercado de **Mpumbu** (no Malebo Pool, onde hoje estão Kinshasa e Brazzaville) e às terras do interior.',
-  { img: 'con-mbanza-kongo-hoje', leg: 'Vestígios de Mbanza Kongo, hoje Património Mundial da UNESCO (Angola).' },
   { h: 'Quando existiu' },
   'A tradição oral conta que o reino foi fundado por um conquistador chamado **Lukeni lua Nimi**, e as datas arqueológicas e genealógicas apontam para o fim do século XIV. A cronologia a seguir é, para as fases mais antigas, uma aproximação; a partir de 1483 as fontes escritas dão datas bastante seguras.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -52,7 +52,6 @@ const linha = [
   { linha: [
     { d: 'c. 1483', t: 'Diogo Cão chega ao rio', x: 'O navegador português **Diogo Cão**, em viagem de exploração da costa atlântica de África por ordem de D. João II, chega à foz do rio Congo e levanta um **padrão** (marco de pedra com as armas de Portugal). Os portugueses fazem contacto com chefes locais; Cão leva alguns congoleses para Lisboa, e regressa com eles numa segunda viagem (c. 1485–86). Os detalhes (datas, número de pessoas, se foram reféns ou convidados) são debatidos.' },
   ] },
-  { img: 'con-diogo-cao-padrao', leg: 'Réplica do padrão erguido por Diogo Cão, hoje no Museu de Berlim.' },
   { img: 'con-recepcao-diogo-cao', leg: 'Cena conjetural do primeiro contacto entre portugueses e congoleses na costa, c. 1483. Ilustração gerada por IA.' },
   { linha: [
     { d: '1491', t: 'Batismo do rei Nzinga a Nkuwu', x: 'Uma missão portuguesa, com padres, artesãos e presentes, chega à foz do rio. O governador de **Soyo** é batizado em abril; a 3 de maio de 1491 é batizado o rei **Nzinga a Nkuwu**, que passa a chamar-se **João I**, juntamente com a sua família. O seu filho **Mvemba a Nzinga** recebe o nome de **Afonso**. A conversão terá tido motivos políticos (alianças, prestígio, técnicas) e religiosos, e que o rei viu nos portugueses uma fonte de poder.' },
@@ -62,7 +61,6 @@ const linha = [
     { d: 'c. 1516', t: 'Escola da corte', x: 'Segundo fontes portuguesas, a escola real de Mbanza Kongo chega a ter mais de mil alunos, filhos de nobres e de outros. Ensinam-se leitura, escrita, latim e doutrina cristã. Afonso I escreve ele próprio cartas em português aos reis de Portugal.' },
     { d: '1518', t: 'Primeiro bispo congolês', x: 'O filho de Afonso, **Henrique**, é sagrado bispo (titular de Útica) em Roma, com a aprovação do papa Leão X. Regressa ao Congo por volta de 1521 e morre c. 1531. É o primeiro bispo da África subsariana de que há registo.' },
   ] },
-  { img: 'con-afonso-i-gravura', leg: 'Retrato de Afonso I do Congo (Mvemba a Nzinga), numa gravura posterior.' },
   { img: 'con-escola-real', leg: 'Cena conjetural da escola da corte de Mbanza Kongo, c. 1516. Ilustração gerada por IA.' },
   { img: 'con-batismo-1491', leg: 'Cena conjetural do batismo do rei Nzinga a Nkuwu, 3 de maio de 1491. Ilustração gerada por IA.' },
   { linha: [
@@ -71,14 +69,11 @@ const linha = [
     { d: '1568', t: 'Invasão dos «Jaga»', x: 'Um grupo guerreiro vindo do leste, conhecido nas fontes portuguesas como **Jaga** (ou Yaka; a identidade exata é debatida), invade o reino e saqueia Mbanza Kongo. O rei **Álvaro I** foge para uma ilha do rio e pede ajuda ao rei de Portugal. Uma expedição portuguesa chefiada por **Francisco de Gouveia Sottomaior** ajuda a restaurar o rei (1571). Em troca, o Congo fica mais dependente de Portugal.' },
     { d: '1575', t: 'Luanda e o reino de Angola', x: 'O português **Paulo Dias de Novais** funda **Luanda**, a sul do Congo, e começa a construir a colónia de Angola, apoiada em guerras contra o reino do Ndongo. O Congo perde o quase monopólio do contacto com Portugal e vê crescer um rival, que depressa se torna a grande fonte de escravos para o Brasil.' },
   ] },
-  { img: 'con-carta-afonso-1526', leg: 'Carta de Afonso I ao rei D. João III, 1526 (arquivo português).' },
   { linha: [
     { d: '1608', t: 'Embaixada a Roma', x: 'O rei **Álvaro II** envia **António Manuel (Nsaku ne Vunda)**, seu embaixador, ao papa **Paulo V**. Recebido em Roma com honras, morre na cidade em janeiro de 1608; está sepultado em Santa Maria Maior. O objetivo era obter bispos e padres sem passar por Portugal.' },
     { d: '1622 – 1624', t: 'Guerra com Angola e o primeiro livro em quicongo', x: 'O Congo e as forças portuguesas de Luanda entram em guerra por causa de comércio, de limites e de escravos (**Mbumbi**, 1622). A guerra mostra que Portugal já não considerava o Congo um parceiro de igual a igual. Em 1624 publica-se a *Doutrina Cristã* bilingue, português e quicongo, um dos primeiros livros impressos numa língua bantu.' },
     { d: '1641 – 1648', t: 'Garcia II e os holandeses', x: 'O rei **Garcia II** (Nkanga a Lukeni) alia-se aos holandeses, que ocupam **Luanda** (1641–1648), para travar a expansão portuguesa. A frota luso-brasileira de Salvador Correia de Sá retoma Luanda em 1648. Em 1645 chegam os primeiros **capuchinhos** italianos, que se instalam na corte.' },
   ] },
-  { img: 'con-embaixador-eckhout', leg: 'Retrato de um enviado congolês, por Albert Eckhout, Brasil holandês, c. 1641 (Museu Nacional da Dinamarca).' },
-  { img: 'con-antonio-manuel-roma', leg: 'Memória de António Manuel (Nsaku ne Vunda), embaixador do Congo em Roma, 1608.' },
   { linha: [
     { d: '29 outubro 1665', t: 'Batalha de Ambuíla (Mbwila)', x: 'O rei **António I** (Nvita a Nkanga) recusa reconhecer as pretensões portuguesas sobre o território de Mbwila (Ambuíla) e envia um exército. Uma força portuguesa, comandada por **Luís Lopes de Sequeira**, com armas de fogo e aliados africanos, derrota-o. O rei é morto e a sua cabeça é levada. A coroa do Congo é perdida e não volta a ser disputada em paz.' },
     { d: '1665 – 1709', t: 'Guerra civil', x: 'Depois de Ambuíla, as linhagens reais (as casas **Kimpanzu** e **Kinlaza**, e depois outros ramos) disputam o trono. Mbanza Kongo é abandonada em 1678. O poder fragmenta-se em feudos, ou reinos concorrentes, e o tráfico de escravos aproveita-se das guerras para recrutar cativos.' },
@@ -115,7 +110,6 @@ const mapa = [
   { h: 'Mbanza Kongo: a capital' },
   '**Mbanza Kongo** ficava num planalto, com água e boas terras à volta, a uns 150 km da costa. Era mais um **conjunto de bairros** do que uma cidade de muralhas: o bairro do rei e da corte, o bairro dos nobres, a «cidade dos portugueses» (a partir do século XVI) e a vasta área de aldeias à volta. No século XVII, os viajantes falam de dezenas de milhares de habitantes, o que a tornava uma das maiores cidades da África Central, embora os números sejam estimativas. O lugar tinha também um valor religioso: junto à cidade havia árvores, nascentes e lugares sagrados ligados aos antepassados.',
   'Com o cristianismo, os portugueses construíram uma **igreja de pedra** (a futura catedral), um facto raro na África central e ocidental do século XVI, e a cidade ganhou o nome de **São Salvador**. No século XVII, as ruínas da catedral, das igrejas e das casas de pedra eram visíveis, e muitas ainda se veem hoje. Em 1678, a cidade foi abandonada durante a guerra civil e só foi retomada em 1709.',
-  { img: 'con-ruinas-se', leg: 'Ruínas da antiga catedral de São Salvador, em Mbanza Kongo.' },
   { h: 'Mpinda e o rio: o caminho para o mar' },
   'A costa era o ponto de contacto com os europeus. O porto de **Mpinda**, na foz do rio, era o ponto de chegada dos navios portugueses no século XVI. Daí os viajantes seguiam a pé ou em redes, durante dias, para Mbanza Kongo. O controlo deste porto, e depois dos que lhe sucederam, era vital para o rei e para os governadores, porque dele dependia o acesso a armas, a tecidos europeus, a vinho e, ao mesmo tempo, o escoamento de escravos.',
   { img: 'con-porto-mpinda', leg: 'Cena conjetural do porto de Mpinda, século XVI. Ilustração gerada por IA.' },
@@ -126,7 +120,6 @@ const mapa = [
   'O Congo não estava sozinho. A norte ficava o reino de **Loango**, também com costa e comércio; a sul, o **Ndongo** e o **Matamba** (governados, no século XVII, pela rainha **Njinga**, que resistiu aos portugueses). A leste ficavam os estados dos **Luba** (séc. XVI), **Lunda** (séc. XVII) e **Kuba** (séc. XVII), que o Congo conhecia pelo comércio. São histórias independentes, só tocadas aqui de passagem; o seu estudo exige capítulos próprios.',
   { h: 'A divisão do reino' },
   'No fim do século XIX, a Conferência de Berlim (1884–85) dividiu o território entre três potências coloniais. As fronteiras cortaram famílias, clãs e estradas, e criaram a base das atuais fronteiras de Angola, da RDC e da República do Congo.',
-  { img: 'con-berlim-1885', leg: 'Gravura da Conferência de Berlim, 1884–85.' }
 ];
 
 const sociedade = [
@@ -164,7 +157,6 @@ const sociedade = [
   'A escravatura existia no Congo antes de 1483, como em muitas sociedades do mundo, mas era de pequena escala e de integração familiar. Com a chegada dos portugueses, a **procura de mão de obra** para as plantações de açúcar de **São Tomé** e, a partir do século XVI, para o **Brasil**, criou um mercado que mudou tudo. O rei Afonso I e os seus sucessores participaram no comércio, vendendo prisioneiros de guerra, e tentaram regulá-lo; mas a procura crescente tornou-o incontrolável. Mercadores de São Tomé e de Luanda, e depois holandeses, franceses, ingleses e brasileiros, compraram cativos em todo o território, e muitos congoleses livres foram raptados.',
   'Os números são difíceis, e variam conforme as fontes. A base de dados internacional *Slave Voyages* estima que **mais de 5 milhões** de africanos embarcaram, entre os séculos XVI e XIX, na vasta região da **África Centro-Ocidental** (de Cabinda a Benguela), a maior região de partida do tráfico atlântico. Quantos vieram do reino do Congo propriamente dito é debatido, e a maioria dos cativos vinha cada vez mais do interior. O que é seguro é o efeito: despovoamento, guerras para obter cativos, insegurança e enfraquecimento do poder real.',
   { cit: 'Todos os dias os mercadores raptam os nossos nacionais, filhos da nossa terra, filhos dos nossos nobres e vassalos, e até gente da nossa família. [...] É tanta a corrupção e a depravação que o nosso país está a ficar completamente despovoado.', fonte: 'Afonso I do Congo, carta a D. João III, 6 de julho de 1526 (tradução livre, a partir da edição de A. Brásio, *Monumenta Missionaria Africana*)' },
-  { img: 'con-navio-brookes', leg: 'Plano do navio negreiro *Brookes*, 1788, usado pelos abolicionistas para mostrar as condições da travessia.' },
   { caixa: 'Como ler este tema', texto: 'O tráfico foi obra de vários agentes: coroas europeias, comerciantes, intermediários africanos, e pessoas e famílias que o combateram. Não é «culpa africana» nem «culpa só europeia». O que a história mostra é como um sistema de enorme procura externa corrompeu os equilíbrios locais, e como os que o contestaram, como Afonso I, não tinham meios para o parar. As vítimas, milhões de pessoas com nome e história, são o centro do assunto.' },
   { h: '6. Escrita e línguas' },
   'O quicongo era uma língua **oral** até à chegada dos europeus; os reis comunicavam através de embaixadores, de provérbios e de uma retórica elaborada. Com a escola da corte, a nobreza passou a escrever em **português**, e há dezenas de cartas dos reis, algumas de grande valor histórico. Em 1624 surge o primeiro catecismo em quicongo. A tradição oral, os provérbios, os contos e os cantos mantiveram-se como memória do reino.',
@@ -215,7 +207,6 @@ const personalidades = [
   'Rei que reunificou o reino em 1709, depois de décadas de guerra civil, e voltou a ocupar a capital. Reinou com apoio dos capuchinhos e foi responsável pela execução de Kimpa Vita.',
   { h: 'Cavazzi e outros cronistas' },
   'O que sabemos do Congo vem em grande parte de **cronistas europeus**, como o padre italiano **Giovanni Antonio Cavazzi da Montecuccolo**, cujas ilustrações e relatos do século XVII são uma fonte preciosa, mas com o olhar de um missionário.',
-  { img: 'con-cavazzi-gravura', leg: 'Ilustração do manuscrito do capuchinho Cavazzi, c. 1668, sobre o Congo e Angola.' }
 ];
 
 const legado = [
@@ -229,9 +220,6 @@ const legado = [
   ] },
   { h: 'Arte' },
   'A arte kongo é famosa pelas **figuras de poder (*nkisi*)**, esculturas de madeira que recebem substâncias ativas e, em alguns casos, pregos e lâminas, cada um para selar um juramento ou punir um crime. A figura *nkisi nkondi*, por exemplo, era «ativada» por um *nganga*. Há também **esculturas funerárias de pedra (*ntadi*)** de Mboma e Yombe, **estatuetas maternais (*phemba*)**, **crucifixos de latão**, **chapéus e panos de ráfia**, **marfins esculpidos** em Loango e **cestaria**.',
-  { img: 'con-mangaaka', leg: 'Nkisi Mangaaka, grande figura de poder do povo Yombe, Congo (museu).' },
-  { img: 'con-pfemba', leg: 'Figura maternal kongo (*phemba*), madeira.' },
-  { img: 'con-ntadi', leg: 'Escultura funerária de pedra (*ntadi*), região de Mboma.' },
   { h: 'Arquitetura' },
   'A arquitetura kongo tradicional era de materiais perecíveis, o que explica a escassez de ruínas. Os edifícios de pedra de Mbanza Kongo (igrejas, a catedral) são resultado do contacto com Portugal. A UNESCO protege o conjunto, incluindo lugares sagrados tradicionais, como árvores e nascentes.',
   { h: 'Redescoberta' },
@@ -281,6 +269,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

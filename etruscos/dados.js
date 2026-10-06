@@ -1,5 +1,6 @@
 // ETRUSCOS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Datas na «cronologia média»; muitas datas da Roma arcaica são tradição transmitida por autores tardios (Lívio, Dionísio de Halicarnasso) e não factos seguros. a.C./d.C.
 // Imagens: cada {img:'id'} procura o ficheiro  etruscos/img/id.jpg  (ver IMAGENS_ETRUSCOS.md para a lista e os prompts).
 
@@ -50,7 +51,6 @@ const linha = [
     { d: 'c. 775 – 740 a.C.', t: 'Os gregos chegam à Itália', x: 'Colonos gregos da Eubeia instalam-se em **Pitecusa** (ilha de Ísquia) e depois em **Cumas**, na baía de Nápoles. Os contactos com os etruscos trazem vinho, vasos, mitos e, sobretudo, a **escrita**: o alfabeto etrusco derivará de uma variante do alfabeto grego eubeu.' },
     { d: 'c. 700 a.C.', t: 'As primeiras inscrições', x: 'Aparecem as primeiras inscrições etruscas. Uma tabuinha de marfim de **Marsiliana d’Albegna** (c. 700) traz o alfabeto completo, copiado como modelo de escrita. A língua está atestada de c. 700 a.C. ao século I d.C.' },
   ] },
-  { img: 'etr-marsiliana-abecedario', leg: 'Tabuinha de escrita com o alfabeto, Marsiliana d’Albegna, c. 700 a.C., Museu Arqueológico Nacional de Florença.' },
   { linha: [
     { d: 'c. 700 – 650 a.C.', t: 'O período orientalizante e os túmulos principescos', x: 'Uma riqueza súbita, vinda do comércio de metais, vê-se em túmulos com ouro, marfim, bronzes e objetos do Oriente. O mais célebre é o **túmulo Regolini-Galassi** (c. 650, Cerveteri), descoberto em **1836**, com uma mulher de alto estatuto e um grande conjunto de joias de ouro. Em Palestrina (Preneste), cidade latina muito aberta à influência etrusca, os túmulos Bernardini e Barberini (c. 675 – 650) mostram a mesma riqueza.' },
   ] },
@@ -130,7 +130,6 @@ const mapa = [
   { img: 'etr-volterra-porta-arco', leg: 'Porta all’Arco, Volterra, séc. IV–III a.C.' },
   { h: 'Marzabotto: uma cidade planeada' },
   '**Marzabotto**, junto ao rio Reno, foi fundada por volta de 500 a.C. e dispõe de um traçado em **quadrícula** (ruas principais e perpendiculares, quarteirões regulares, um sistema de águas e esgotos), um planeamento que os gregos usavam e que os romanos, mais tarde, adotarão. Foi abandonada depois das invasões gaulesas, em meados do século IV a.C. Hoje é um parque arqueológico.',
-  { img: 'etr-marzabotto', leg: 'Ruínas do traçado urbano de Marzabotto, c. 500 a.C.' },
   { h: 'Populónia: a cidade do ferro' },
   '**Populónia** (*Pupluna*) é a única cidade etrusca construída à beira-mar, num promontório em frente da ilha de Elba. O minério de ferro de Elba era fundido ali, e os montes de escória, depois recuperados na época moderna, chegavam a cobrir as necrópoles. O ferro foi a grande fonte de riqueza da Etrúria, e Populónia, a sua porta para o Tirreno.',
   { img: 'etr-populonia', leg: 'Promontório de Populónia e necrópole de São Cerbone, Toscana.' },
@@ -171,7 +170,7 @@ const sociedade = [
     ['Aita e Phersipnai', 'Hades e Perséfone', 'Senhores do mundo dos mortos'],
     ['Charun e Vanth', '—', 'Figuras do além que acompanham os mortos: o demónio Charun, com um martelo, e a figura feminina Vanth']
   ] } },
-  { img: 'etr-figado-piacenza', leg: 'Fígado de Placência, bronze, c. 100 a.C., com os nomes de divindades gravados, Museu Cívico de Placência.' },
+  { img: 'etr-figado-piacenza', leg: 'Desenho do fígado de bronze de Placência, c. 100 a.C., com os nomes de divindades gravados; o original está no Museu Cívico de Placência.' },
   { h: 'Os harúspices e o fígado' },
   'O **harúspice** examinava o **fígado de um animal** sacrificado (**hepatoscopia**) e lia, nas suas marcas, a vontade dos deuses. O **Fígado de Placência**, um modelo de bronze de um fígado de carneiro dividido em regiões, cada uma com o nome de um deus, serviu talvez de manual de ensino. A lenda dizia que a *disciplina* tinha sido ditada a um lavrador de Tarquínia por **Tages**, um menino-sábio que saiu de um sulco do campo, e, segundo outra tradição, uma ninfa, **Vegoia**, que revelou as regras das fronteiras. Os romanos continuaram a consultar harúspices etruscos durante séculos, e, segundo Zósimo, ainda em 408 d.C. adivinhos da Etrúria disseram ter afastado Alarico de Narni com raios e ofereceram-se para o fazer em Roma.',
   { img: 'etr-aruspice-cena', leg: 'Harúspice etrusco a examinar um fígado, c. 400 a.C.; reconstituição conjetural. Ilustração gerada por IA.' },
@@ -200,7 +199,7 @@ const sociedade = [
   { img: 'etr-tumulo-triclinio', leg: 'Banquete na Túmulo do Triclínio, Tarquínia, c. 470 a.C.' },
   { h: '8. Vestuário' },
   'Os homens usavam uma **túnica** curta e um manto semicircular, a **tebenna**, que é considerada antepassada da **toga** romana. As mulheres vestiam túnicas compridas e mantos, e usavam penteados elaborados e **toucados** (o *tutulus*, um chapéu cónico). Os sapatos, de bico revirado (**calcei repandi**), eram típicos. A **joalharia** etrusca de ouro, com a técnica do **granulado** (pequeníssimas esferas de ouro soldadas) e da filigrana, é das mais finas da Antiguidade.',
-  { img: 'etr-ouro-granulado', leg: 'Joia etrusca de ouro com granulado, séc. VII–VI a.C.' },
+  { img: 'etr-ouro-granulado', leg: 'Placa de ouro etrusca para roupa, com granulado, séc. VII–VI a.C. (Walters Art Museum, Baltimore).' },
   { img: 'etr-familia-vestuario', leg: 'Casal e filhos em trajes etruscos, c. 500 a.C.; reconstituição conjetural. Ilustração gerada por IA.' },
   { h: '9. Música, dança e jogos' },
   'A música era omnipresente: o **aulos** (flauta dupla) acompanhava banquetes, procissões, jogos e até o trabalho (segundo alguns autores gregos, até se chicoteavam escravos ao som da flauta); também se usavam a **lira** e instrumentos de sopro de bronze, como a trombeta. As danças e as corridas de **carros** e os combates de **pugilato** aparecem nas pinturas dos túmulos. Os romanos receberam dos etruscos os **jogos fúnebres** e muitos espetáculos, e os atores romanos (*histriones*) têm nome de origem etrusca; a ligação direta dos gladiadores com os etruscos é debatida, porque muitos autores modernos a procuram antes na Campânia.',
@@ -208,7 +207,7 @@ const sociedade = [
   { h: '10. Metalurgia e artes' },
   'O **bronze** foi talvez a maior arte etrusca. Fundiam pela técnica da **cera perdida** estátuas, vasos, **espelhos** gravados (muito apreciados, com cenas de mitos), candelabros e armas, e exportaram-nos para todo o Mediterrâneo. O *bucchero*, cerâmica negra e polida, com paredes finas e formas elegantes, é a cerâmica mais típica (c. 675 – 500 a.C.). Em escultura, os etruscos preferiram a **terracota**, para decorar templos, e deixaram retratos de vivos e de mortos de grande realismo.',
   { img: 'etr-espelho-bronze', leg: 'Espelho etrusco de bronze gravado com cena mitológica, séc. IV a.C.' },
-  { img: 'etr-bucchero', leg: 'Vaso de bucchero, cerâmica negra etrusca, séc. VII–VI a.C.' },
+  { img: 'etr-bucchero', leg: 'Vaso de bucchero em forma de galo, cerâmica negra etrusca, séc. VII–VI a.C.' },
   { img: 'etr-oficina-bronze', leg: 'Oficina etrusca de fundição de bronze, séc. VI a.C.; reconstituição conjetural. Ilustração gerada por IA.' },
   { h: '11. Arquitetura e urbanismo' },
   'Os etruscos construíam com **madeira, tijolo cru e pedra**. O seu **templo**, que o romano Vitrúvio descreve e que se chama «tuscânico», era um edifício alto e largo, com **podium** (plataforma), uma escadaria só na frente, um pórtico de colunas na fachada e três **celas** (salas) lado a lado, e um grande telhado de beiral saliente decorado com terracotas coloridas. As muralhas eram de grandes blocos, e as portas, em arco, são das primeiras da Itália (o **arco** foi usado pelos etruscos, embora não o tenham inventado). As cidades planeadas, como Marzabotto, orientavam as ruas segundo os pontos cardeais, por razões religiosas, e o ritual de fundação da cidade (traçar um sulco com um arado) foi herdado por Roma.',
@@ -264,7 +263,7 @@ const legado = [
   { h: 'Arte' },
   'A arte etrusca é uma mistura de influências (do Oriente, da Grécia, de Roma) e de estilo próprio: a expressividade das figuras, o gosto pelo **retrato**, o movimento e a ligação com o além. Entre as obras mais famosas estão o **Sarcófago dos Esposos**, a **Quimera de Arezzo** (bronze do séc. V–IV a.C.), o **Apolo de Veios**, a «**Sombra da Tarde**» (*Ombra della sera*, bronze alongado de Volterra, séc. III–II a.C., que lembra Giacometti) e a bronzeira do **Arengador**. A célebre **Loba Capitolina**, símbolo de Roma, foi durante muito tempo tida por etrusca, mas a sua datação é hoje muito debatida (alguns estudos sugerem uma origem medieval); só os gémeos foram acrescentados no Renascimento.',
   { img: 'etr-quimera-arezzo', leg: 'Quimera de Arezzo, bronze, c. 400 a.C., Museu Arqueológico Nacional de Florença.' },
-  { img: 'etr-arringatore', leg: 'O «Arengador» (Aule Metele), bronze, c. 100 a.C., Museu Arqueológico Nacional de Florença.' },
+  { img: 'etr-arringatore', leg: 'Pormenor da inscrição etrusca (Aule Metele) do «Arengador», bronze, c. 100 a.C., Museu Arqueológico Nacional de Florença.' },
   { img: 'etr-sombra-da-tarde', leg: 'Estatueta votiva de bronze, a «Sombra da Tarde» (Ombra della sera), Volterra, c. séc. III a.C., Museu Guarnacci.' },
   { h: 'Arquitetura' },
   'Quase tudo o que construíram para viver era de materiais perecíveis, e por isso o que resta são **túmulos**, muralhas e fundações. Os túmulos de Cerveteri e Tarquínia mostram, em pedra, interiores de casas; os templos deixaram bases e coberturas de terracota. A forma do templo etrusco e a do arco influenciaram a arquitetura romana, e, no Renascimento, os arquitetos recuperaram a «ordem toscana».',
@@ -313,6 +312,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

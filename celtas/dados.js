@@ -1,5 +1,6 @@
 // OS CELTAS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura e mesmos ids de imagem).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Os «celtas» não foram um estado nem um «povo» único: o termo designa, com rigor, falantes de línguas celtas e, por extensão, as culturas materiais de Hallstatt e La Tène. Ver as secções «O que significa celta?» (visão) e «Os celtas existiram? Um debate» (legado).
 // Datas aproximadas (cronologia média); «c.» e «debatido» assinalam incerteza. a.C./d.C.
 // Imagens: cada {img:'id'} procura o ficheiro  celtas/img/id.jpg  (ver IMAGENS_CELTAS.md para a lista e os prompts).
@@ -55,7 +56,7 @@ const visao = [
     '**Stonehenge, Newgrange e os dólmens** são muito anteriores aos celtas (Stonehenge atingiu a forma principal por volta de 2500 a.C.). **Os druidas não construíram Stonehenge**, e a ligação popular entre os dois é uma invenção dos séculos XVII e XVIII. **Os vikings** eram escandinavos, de língua germânica, tal como os **anglo-saxões**. E os **pictos** do nordeste da Escócia são um caso aberto: a sua língua é debatida e só parte do que escreveram se conhece.'
   ] },
   { img: 'cel-stonehenge', leg: 'Stonehenge (Inglaterra), na sua forma principal por volta de 2500 a.C.: muito anterior aos celtas da Idade do Ferro.' },
-  { img: 'cel-mapa-linguas', leg: 'Mapa das regiões de línguas celtas na Europa atlântica hoje.' },
+  { img: 'cel-mapa-linguas', leg: 'Mapa esquemático dos núcleos Hallstatt e La Tène e da expansão céltica, c. 800–50 a.C.' },
   { caixa: 'Os celtas hoje', texto: 'Das línguas celtas ainda se falam seis: o **irlandês**, o **gaélico escocês** e o **manx** (o ramo «goidélico»), e o **galês**, o **córnico** e o **bretão** (o ramo «britónico»). O galês é o mais vivo (cerca de meio milhão de falantes) e o único que a UNESCO não considera em perigo. O manx perdeu o último falante nativo em 1974 e o córnico deixou de ser língua materna no século XVIII ou inícios do XIX, mas ambos foram revitalizados. As «nações celtas» modernas são a Irlanda, a Escócia, o País de Gales, a Cornualha, a Ilha de Man e a Bretanha; a Galiza e as Astúrias reivindicam uma herança celta cultural, mas já não falam nenhuma língua celta. Em Portugal, o legado é sobretudo arqueológico e toponímico (ver o legado).' }
 ];
 
@@ -65,14 +66,12 @@ const linha = [
     { d: 'c. 1300 – 800 a.C.', t: 'Antecedentes: Campos de Urnas e Bronze atlântico', x: 'Na Europa central, a cultura dos **Campos de Urnas** (os mortos são cremados e as cinzas guardadas em urnas) e, ao longo da costa atlântica, uma rede de trocas de bronze ligam regiões muito distantes. Onde e quando se falou pela primeira vez uma língua «proto-celta» é debatido: alguns procuram-no aqui, outros mais a oeste.' },
     { d: 'c. 800 a.C.', t: 'Começa Hallstatt', x: 'Com a difusão do **ferro**, surge a cultura de **Hallstatt** (nome de uma localidade austríaca). Os mineiros do sal de Hallstatt, na Áustria, enriquecem; os chefes são enterrados com espadas, carros de quatro rodas e belos vasos de bronze. A necrópole foi explorada a partir de **1846** por **Johann Georg Ramsauer**, que abriu cerca de mil sepulturas.' },
   ] },
-  { img: 'cel-espada-hallstatt', leg: 'Espada de ferro de tipo Hallstatt, séc. VII–VI a.C., Museu de História Natural de Viena.' },
   { img: 'cel-mineiros-sal', leg: 'Mineiros do sal de Hallstatt, c. 600 a.C.; reconstituição conjetural. Ilustração gerada por IA.' },
   { linha: [
     { d: 'séc. VI a.C.', t: 'As primeiras inscrições celtas', x: 'A mais antiga escrita em língua celta conhecida é o **lepôntico**, escrito com um alfabeto de origem etrusca no norte da Itália (região dos lagos, em torno de Lugano e Como), a partir do século VI a.C. Na mesma altura, os **gregos de Foceia** fundam **Massália** (Marselha, c. 600 a.C.) e abrem uma porta de comércio com o interior da Gália.' },
     { d: 'c. 600 – 500 a.C.', t: 'As «sedes principescas»', x: 'Em colinas fortificadas como a **Heuneburg** (Alemanha), o **Mont Lassois** (França) ou o **Hohenasperg**, vivem chefes que importam vinho, cerâmica e bronze dos gregos e etruscos. Na Heuneburg, uma muralha de **tijolo cru** à maneira mediterrânea (c. 600 a.C.) é um caso notável de imitação, e as fontes gregas falam de uma cidade celta, **Pyrene**, junto à nascente do Danúbio (Heródoto), que alguns identificam com ela (debatido).' },
     { d: 'c. 530 a.C.', t: 'O túmulo de Hochdorf', x: 'Em Hochdorf (Alemanha), um chefe de cerca de 40 anos e 1,87 m é enterrado deitado num **leito de bronze**, com um caldeirão de c. 500 litros cheio de hidromel, um **torque de ouro**, sapatos revestidos de ouro e um carro. Foi encontrado intacto em **1977**. É um dos túmulos celtas mais ricos e mais completos.' },
   ] },
-  { img: 'cel-hochdorf-kline', leg: 'Reconstituição do túmulo principesco de Hochdorf (c. 530 a.C.), com o leito de bronze; Landesmuseum Württemberg, Estugarda.' },
   { linha: [
     { d: 'c. 500 a.C.', t: 'Vix e os primeiros «celtas» escritos', x: 'No túmulo de uma mulher de elite em **Vix** (Borgonha) pôs-se uma enorme **cratera de bronze** grega ou do sul de Itália, de **1,64 m** e **208 kg**, com capacidade para cerca de **1100 litros**, ao lado de um torque de ouro. Por volta de 500 a.C., o geógrafo **Hecateu de Mileto** menciona os **Keltoi**, e **Heródoto**, meio século depois, diz que vivem à nascente do Danúbio e para lá das Colunas de Hércules (a sua geografia é confusa).' },
   ] },
@@ -148,7 +147,7 @@ const mapa = [
   { h: 'A Europa central: sal, ferro e poder' },
   'A região de **Hallstatt**, nos Alpes, é um bom ponto de partida. Havia ali minas de sal já na Idade do Bronze, e o sal, que conservava a carne e o peixe, foi a base da riqueza. Os mineiros trabalharam em galerias profundas durante séculos (o sal conservou até roupas de lã, sapatos de couro e ferramentas de madeira). A necrópole de Hallstatt mostra uma sociedade com muitas diferenças de riqueza.',
   'Mais a oeste, entre os séculos VII e V a.C., aparecem as **sedes principescas**: povoados fortificados em colinas, de onde um chefe controlava as rotas do comércio. A **Heuneburg**, junto ao Danúbio superior, e o **Mont Lassois**, junto ao Sena, são dos mais conhecidos. Os túmulos dos chefes e das suas famílias nas redondezas (**Hochdorf**, **Vix**, **Glauberg**) estão cheios de objetos importados e de torques, mas também de peças locais.',
-  { img: 'cel-bibracte', leg: 'Mont Beuvray, o local do oppidum de Bibracte, capital dos Éduos.' },
+  { img: 'cel-bibracte', leg: 'Mont Beuvray: o grande tanque de Bibracte, capital dos Éduos, durante as escavações de 1988.' },
   { h: 'A Gália e os oppida' },
   'Na Gália, os romanos descreveram dezenas de tribos: **Éduos**, **Arvernos**, **Sequanos**, **Helvécios**, **Belgas** (ao norte), **Aquitanos** (no sudoeste, de língua diferente, talvez ancestral do basco), entre outras. Muitas tinham um **oppidum**, uma povoação fortificada de grande área. As suas muralhas eram do tipo chamado **murus gallicus**, descrito por César: uma estrutura de troncos cruzados e pedras, com um paramento de pedra, que resistia bem aos aríetes. **Bibracte** (Mont Beuvray) tinha uma muralha de cinco quilómetros e foi a capital dos Éduos; depois da conquista foi substituída pela cidade romana de **Autun**, fundada por Augusto.',
   { img: 'cel-oppidum-reconstrucao', leg: 'Reconstituição conjetural de um oppidum gaulês com muralha de tipo murus gallicus, séc. I a.C. Ilustração gerada por IA.' },
@@ -166,8 +165,8 @@ const mapa = [
     '**O que é debatido:** a **língua lusitana**, conhecida por poucas inscrições, entre elas a do **Cabeço das Fráguas** (Guarda), a de **Lamas de Moledo** (Viseu) e a de Arroyo de la Luz (Cáceres), todas aproximadamente do século I d.C. É indo-europeia, mas **a maioria dos linguistas não a considera celta**: conserva o *p* inicial (como na palavra *porcom*, «porco»), que as línguas celtas perderam. Também se discute a «língua do sudoeste», das **estelas do Sudoeste** do Algarve e do Baixo Alentejo (c. séc. VII – V a.C.), que Koch considera celta e outros não. **Heródoto**, no século V a.C., diz que os **Keltoi** viviam para lá das Colunas de Hércules, junto dos **Cinetes**, o povo mais ocidental da Europa, e há quem os situe no Algarve.',
     'Em suma: as populações do centro e do norte do que é hoje Portugal pertenciam a um mundo indo-europeu com muitos traços celtas, mas **não há provas claras de uma identidade «celta»** (os lusitanos e os galaicos não se chamam celtas em nenhuma fonte antiga, salvo os **Celtici**). Os romanos conquistaram o território entre 218 e 19 a.C.; **Viriato** (m. 139 a.C.), o chefe dos Lusitanos, é uma figura da resistência, de filiação cultural discutida.'
   ] },
-  { img: 'cel-conimbriga', leg: 'Ruínas de Conímbriga (Condeixa-a-Nova), cidade romana com um nome de formação céltica (-briga).' },
-  { img: 'cel-numancia', leg: 'O sítio de Numância (Soria), que resistiu aos romanos até 133 a.C.' },
+  { img: 'cel-conimbriga', leg: 'Mosaico das ruínas de Conímbriga (Condeixa-a-Nova), cidade romana com um nome de formação céltica (-briga).' },
+  { img: 'cel-numancia', leg: 'Fíbula em forma de cavalinho da necrópole celtibérica de Numância (Soria); a cidade resistiu aos romanos até 133 a.C.' },
   { h: 'Itália e a Galácia' },
   { lista: [
     '**Gália Cisalpina:** a partir de c. 400 a.C., Boios, Ínsubros, Senones e outros ocupam a planície do Pó. Fundaram ou conquistaram cidades como Milão (**Mediolanum**) e Bolonha (**Felsina**). Roma conquistou a região entre 225 e 191 a.C. e depois romanizou-a de tal modo que Virgílio e Catulo, nascidos ali, já são poetas latinos.',
@@ -231,7 +230,6 @@ const sociedade = [
     ['Picto', 'Debatido', 'Nordeste da Escócia, séc. III – IX d.C.', 'Extinta; talvez britónica, o ponto é discutido']
   ] } },
   { img: 'cel-coligny', leg: 'Fragmento do calendário de Coligny, em bronze e em gaulês, séc. II d.C.; Museu Galo-Romano de Lyon.' },
-  { img: 'cel-botorrita', leg: 'Bronze de Botorrita I (c. 100 a.C.), com texto em celtibérico; Museu de Saragoça.' },
   { h: '6. Casa e família' },
   'Na Britânia e na Irlanda, a casa típica era a **casa redonda**, de paredes de vime e barro ou de pedra, com telhado cónico de colmo e uma lareira no centro. Na Gália e na Europa central havia também casas retangulares de madeira. No noroeste da Península, os castros tinham casas de pedra, redondas ou ovais, e muitos pátios. Os povoados incluíam celeiros, fossas de armazenamento e, nos oppida, bairros de artesãos.',
   'A família era alargada e dominada por pais e irmãos mais velhos, mas as **mulheres** tinham em muitas sociedades mais direitos do que em Roma: nas leis irlandesas medievais podiam ter propriedade, divorciar-se em certos casos e, nos relatos romanos, há rainhas guerreiras (**Boudica**, **Cartimandua**). Os filhos da nobreza eram frequentemente criados por outra família (o **fosterage** irlandês), uma forma de criar alianças. A **hospitalidade** era uma obrigação sagrada.',
@@ -262,7 +260,6 @@ const sociedade = [
   { img: 'cel-escudo-battersea', leg: 'Escudo de Battersea (rio Tamisa), em bronze com decoração em vidro vermelho, c. 350–50 a.C.; Museu Britânico.' },
   { h: '12. Guerra' },
   'A guerra era central para as elites celtas. Os romanos descrevem-nos como corajosos, mas desordenados: Políbio e Lívio falam de uma carga furiosa, de grandes espadas mal temperadas que se dobravam (em partes verdadeiro, mas talvez exagerado). A infantaria usava **lança, espada longa e escudo** oval ou retangular (e, nos mais ricos, capacete e cota de malha); os **cavaleiros**, ricos, eram tidos como os melhores do tempo, e foram recrutados para o exército romano. Os **carros de guerra**, usados na Itália e na Britânia, impressionaram César. Havia **mercenários** celtas por todo o Mediterrâneo (no Egito dos Ptolomeus, na Grécia, em Cartago). As cabeças-troféu e o ruído do **carnyx** completavam o efeito psicológico.',
-  { img: 'cel-guerreiro-galaico', leg: 'Estátua de guerreiro galaico, do noroeste peninsular (c. séc. I a.C. – I d.C.), com escudo redondo e torque.' },
   { h: '13. Morte e túmulos' },
   'Na primeira Idade do Ferro, os chefes eram enterrados sob **grandes tumuli** (túmulos de terra), com carros, armas, e vasos para um banquete no além (Hochdorf, Vix). Em La Tène, passam a ser sepultados em necrópoles planas, com espadas e, em certas regiões (como o Yorkshire, na Britânia), em carros desmontados. Na Gália do século II–I a.C., a **cremação** é comum. Os mais pobres deixaram poucos vestígios. A crença na imortalidade da alma, segundo César e Diodoro, explicaria a coragem na guerra, e alguns dizem que os celtas emprestavam dinheiro para ser pago no outro mundo (Valério Máximo), uma curiosidade que ninguém consegue verificar.'
 ];
@@ -364,6 +361,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };
