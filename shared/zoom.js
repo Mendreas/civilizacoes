@@ -83,7 +83,7 @@ function abre(origem) {
   caixa.querySelector('.zoom-mais').setAttribute('aria-label', tx.mais);
   caixa.querySelector('.zoom-repor').setAttribute('aria-label', tx.repor);
   const fig = origem.closest('figure'), c = fig && fig.querySelector('figcaption');
-  img.src = origem.currentSrc || origem.src; img.alt = origem.alt || '';
+  img.src = origem.dataset.full || origem.currentSrc || origem.src; img.alt = origem.alt || '';
   leg.textContent = c ? c.textContent : ''; leg.hidden = !c; dica.textContent = tx.dica;
   s = 1; x = 0; y = 0; img.style.transform = ''; ponteiros.clear();
   foco = document.activeElement; caixa.hidden = false; aberta = true;

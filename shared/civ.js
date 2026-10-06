@@ -64,12 +64,19 @@ export function iniciar(d) {
     const img = document.createElement('img');
     img.loading = 'lazy'; img.alt = b.leg || b.img;
     img.addEventListener('error', () => {
+      if (img.hasAttribute('srcset')) { img.removeAttribute('srcset'); img.removeAttribute('sizes'); img.src = base || `img/${b.img}.${exts[i]}`; return; }
       if (!base && ++i < exts.length) { img.src = `img/${b.img}.${exts[i]}`; return; }
       const falta = el('div', 'img-falta');
       falta.append(el('strong', null, t.falta), el('span', null, b.leg || ''), el('code', null, `${t.ficheiro}: img/${b.img}.jpg`));
       img.replaceWith(falta);
     });
+    img.decoding = 'async';
     img.src = base || `img/${b.img}.${exts[0]}`;
+    if (!base) { // versão leve (800 px, webp) para ecrãs pequenos; a original serve o zoom
+      img.dataset.full = img.src;
+      img.srcset = `img/m/${b.img}.webp 800w, img/${b.img}.jpg 1600w`;
+      img.sizes = '(max-width: 900px) 100vw, 860px';
+    }
     f.appendChild(img);
     if (b.leg) f.appendChild(el('figcaption', null, b.leg));
     return f;

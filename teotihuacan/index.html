@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0e16">
+<title>Teotihuacan (c. 100 a.C. – c. 550–650 d.C.) — Civilizações</title>
+<link rel="stylesheet" href="../shared/civ.css">
+<!--seo-->
+<meta name="description" content="Teotihuacan situava-se num pequeno vale lateral do vale do México, uma bacia alta, rodeada de vulcões e de montanhas, com lagos e nascentes. O sítio tem água de…">
+<link rel="canonical" href="https://worldcivs.netlify.app/teotihuacan/">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Civilizações">
+<meta property="og:title" content="Teotihuacan — Civilizações"><meta property="og:description" content="Teotihuacan situava-se num pequeno vale lateral do vale do México, uma bacia alta, rodeada de vulcões e de montanhas, com lagos e nascentes. O sítio tem água de…">
+<meta property="og:url" content="https://worldcivs.netlify.app/teotihuacan/"><meta property="og:image" content="https://worldcivs.netlify.app/assets/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.png"><link rel="manifest" href="../manifest.json">
+<!--/seo-->
+</head>
+<body>
+<header class="cabecalho" id="cabecalho">
+<div class="topo">
+  <a id="voltar" class="voltar" href="../">← Voltar ao globo</a>
+  <div class="idiomas" role="group" aria-label="Idioma / Language">
+    <button id="l-pt" aria-pressed="true">PT</button>
+    <button id="l-en" aria-pressed="false">EN</button>
+  </div>
+</div>
+<nav id="abas" class="abas" role="tablist"></nav>
+</header>
+<div class="capa">
+  <img id="emblema" class="emblema" alt="">
+  <div>
+    <span id="etiqueta" class="etiqueta"></span>
+    <h1 id="nome"></h1>
+    <div id="periodo" class="periodo"></div>
+  </div>
+</div>
+<main><section id="painel" class="painel"></section></main>
+<script type="module">
+  import dados from './dados.js';
+  import { iniciar } from '../shared/civ.js';
+  iniciar(dados);
+</script>
+</body>
+</html>

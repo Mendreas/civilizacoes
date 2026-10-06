@@ -13,7 +13,8 @@ html, body { margin:0; background:var(--fundo); color:var(--texto);
 .idiomas button[aria-pressed="true"] { background:var(--ouro); color:#1a1405; }
 .capa { padding:38px 20px 26px; max-width:860px; margin:0 auto; border-left:0; }
 .capa .etiqueta { display:inline-block; font-size:12px; letter-spacing:1.5px; text-transform:uppercase; color:var(--cor); font-weight:700; }
-.capa h1 { margin:6px 0 4px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(34px,7vw,56px); line-height:1.1; color:var(--ouro); }
+.capa > div { min-width:0; }
+.capa h1 { overflow-wrap:anywhere; hyphens:auto; margin:6px 0 4px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,56px); line-height:1.1; color:var(--ouro); }
 .capa .periodo { color:var(--suave); font-size:17px; }
 .abas { display:flex; gap:6px; overflow-x:auto; padding:0 14px 2px; max-width:860px; margin:0 auto; scrollbar-width:none; }
 .abas::-webkit-scrollbar { display:none; }

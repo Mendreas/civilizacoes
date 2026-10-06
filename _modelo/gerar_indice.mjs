@@ -29,6 +29,7 @@ for (const f of sjs.sort()) {
   let d; try { d = (await import(pathToFileURL(f).href)).default; } catch (e) { console.log('ignorado', path.relative(R, f), e.message.slice(0, 60)); continue; }
   if (!d || !d.nome) continue;
   const rel = path.relative(R, path.dirname(f)).split(path.sep).join('/');
+  { const t = CIVS.find(c => c.id === rel.split('/')[0]); if (t && !t.pronta) continue; } // civilizações ainda não publicadas
   const url = '/' + (rel ? rel + '/' : '');
   const civ = CIVS.find(c => c.id === d.id);
   for (const L of ['pt', 'en']) {
