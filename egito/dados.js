@@ -1,0 +1,351 @@
+// EGITO ANTIGO — PÁGINA-MÃE, conteúdo em português. A versão inglesa está em dados-en.js (mesma estrutura e mesmos ids de imagem).
+// Cronologia: segue-se a de Ian Shaw (ed.), «The Oxford History of Ancient Egypt», 2000, arredondada. Antes do Reino Médio as datas são aproximadas («c.»); outros autores (por exemplo Hornung, Krauss e Warburton, 2006) diferem por décadas ou, nas épocas mais antigas, por séculos.
+// Imagens: cada {img:'id'} procura o ficheiro  egito/img/id.jpg  (ver IMAGENS_EGITO.md para a lista e os prompts).
+import EN from './dados-en.js';
+import CRED from './creditos.js';
+import { GRUPO } from './grupo.js';
+
+const visao = [
+  { caixa: 'Em resumo', texto: [
+    'O **Egito Antigo** foi uma civilização que viveu ao longo do rio **Nilo**, no nordeste de África, durante cerca de três mil anos (do fim do IV milénio a.C. à conquista romana, em 30 a.C.). Sem as cheias do Nilo, o país seria deserto; com elas, uma estreita faixa de terra negra alimentou um dos Estados mais estáveis, ricos e duradouros da história.',
+    'À frente do Estado estava o **faraó**, rei e figura divina, garante da ordem do mundo (a **maat**). Os egípcios deixaram a escrita hieroglífica, as pirâmides, templos colossais como Karnak e Abu Simbel, a mumificação, uma medicina e uma matemática práticas e uma arte reconhecível à primeira vista. Esta página é o **panorama geral**; cada grande tema tem a sua página própria (ver mais abaixo).'
+  ] },
+  { img: 'egi-mapa-egito', leg: 'Mapa do Egito Antigo: Delta, vale do Nilo e Núbia.' },
+  { h: 'Onde ficava' },
+  'O Egito Antigo ocupava o **vale e o delta do Nilo**, o único rio que atravessa o Saara de sul para norte. Do primeiro rápido (a primeira catarata, em Assuão) até ao Mediterrâneo são cerca de 1 000 km de rio. O **Alto Egito** é o vale estreito, a sul; o **Baixo Egito** é o delta, em forma de leque, a norte. Os egípcios chamavam-lhe «as Duas Terras» e o rei usava as duas coroas.',
+  'Os egípcios davam ao país dois nomes: **Kemet**, a «terra negra» (do limo fértil das cheias), e **Deshret**, a «terra vermelha» do deserto, que protegia o país de invasões e onde se enterravam os mortos. O nome «Egito» vem do grego *Aigyptos*, que parece derivar de Hut-ka-Ptah, «a casa do espírito de Ptah», um dos nomes de Mênfis. A palavra «faraó» vem de **per-aa**, «a grande casa», o palácio, que mais tarde passou a designar o próprio rei.',
+  { img: 'egi-nilo-satelite', leg: 'Vale e Delta do Nilo vistos do espaço, NASA.' },
+  { h: 'Quando existiu' },
+  'A história egípcia divide-se, desde os historiadores antigos, em **reinos** (épocas de poder central) separados por **períodos intermédios** (épocas de fragmentação). As datas abaixo seguem a cronologia de Shaw (2000); antes de c. 2000 a.C. são aproximadas.',
+  { tabela: { cab: ['Período', 'Datas aproximadas', 'O que o marca'], linhas: [
+    ['Pré-dinástico', 'até c. 3100 a.C.', 'Aldeias agrícolas, culturas Badariana e Naqada; primeiros chefes e primeiros sinais de escrita'],
+    ['Período Arcaico (Dinastias 1–2)', 'c. 3100 – 2686 a.C.', 'Unificação do país; capital em Mênfis; túmulos reais em Abidos'],
+    ['Reino Antigo (3.ª–6.ª)', 'c. 2686 – 2181 a.C.', 'A «idade das pirâmides»: Djoser, Snefru, Quéops; Estado forte e centralizado'],
+    ['1.º Período Intermédio (7.ª–11.ª, em parte)', 'c. 2181 – 2055 a.C.', 'Poder real enfraquecido; governadores locais; reis rivais em Heracleópolis e Tebas'],
+    ['Reino Médio (11.ª–13.ª)', 'c. 2055 – 1650 a.C.', 'Reunificação por Mentuhotep II; 12.ª dinastia; literatura clássica; Núbia controlada'],
+    ['2.º Período Intermédio (14.ª–17.ª)', 'c. 1650 – 1550 a.C.', 'Os hicsos governam o Delta; os reis de Tebas resistem'],
+    ['Reino Novo (18.ª–20.ª)', 'c. 1550 – 1069 a.C.', 'Império no Médio Oriente e na Núbia; Hatshepsut, Tutmés III, Akhenaton, Tutankhamon, Ramsés II'],
+    ['3.º Período Intermédio (21.ª–25.ª)', 'c. 1069 – 664 a.C.', 'País dividido; reis líbios e depois núbios (25.ª dinastia); invasões assírias'],
+    ['Época Tardia (26.ª–31.ª)', '664 – 332 a.C.', 'Renascimento saíta; dois domínios persas; últimos reis nativos'],
+    ['Época Ptolemaica', '332 – 30 a.C.', 'Alexandre e os Ptolemeus; Alexandria; fim com Cleópatra VII'],
+    ['Egito romano e bizantino', '30 a.C. – c. 641 d.C.', 'Província romana, depois cristã; o Egito copta; conquista árabe']
+  ] } },
+  { caixa: 'Uma nota sobre as datas', texto: 'A cronologia absoluta do Egito é um trabalho em curso. Para os reinados mais antigos há diferenças de décadas, ou mesmo de séculos, entre autores. O que se pode afirmar é a **ordem** dos acontecimentos e dos reis; os números são sempre aproximados, sobretudo antes do Reino Médio. A partir de 664 a.C. as datas são praticamente seguras.' },
+  { h: 'Quem eram os egípcios?' },
+  'Os egípcios eram um povo africano do vale do Nilo, descendente das comunidades agrícolas e pastoris que se fixaram junto ao rio quando o Saara secou, depois de c. 5000 a.C. Falavam uma língua da família **afro-asiática** (o egípcio, depois o copta). Durante a sua longa história receberam e assimilaram gente da Núbia, da Líbia, do Levante e da Grécia, e o país foi governado, em diferentes épocas, por reis estrangeiros (hicsos, líbios, núbios, persas, gregos e romanos) que quase sempre adotaram a realeza, a religião e as tradições egípcias.',
+  { h: 'As nove páginas desta civilização' },
+  'Esta página-mãe apresenta o conjunto e não repete os pormenores. Para aprofundar, use o menu de navegação ou as indicações «veja a página…» ao longo do texto:',
+  { lista: [
+    '**Pré-dinástico e Reino Antigo** (c. 5000 – 2181 a.C.): as origens, a unificação e as pirâmides.',
+    '**1.º Intermédio e Reino Médio** (c. 2181 – 1650 a.C.): o colapso, a reunificação e a idade clássica.',
+    '**2.º Intermédio e Reino Novo** (c. 1650 – 1069 a.C.): os hicsos, o império, Amarna e os Ramessidas.',
+    '**3.º Intermédio e Época Tardia** (c. 1069 – 332 a.C.): líbios, núbios, saítas e persas.',
+    '**Época Ptolemaica e Romana** (332 a.C. – c. 641 d.C.): Alexandre, Cleópatra, Roma e o Egito cristão.',
+    '**Os faraós**: realeza, titulatura, coroas, as dinastias e as biografias dos grandes reis e rainhas.',
+    '**Monumentos e sítios**: Gizé, Sacará, Karnak, Abu Simbel e como se construíam.',
+    '**Deuses, escrita e vida quotidiana**: religião, hieróglifos, ciência e o dia a dia.'
+  ] },
+  { h: 'Porque importam' },
+  { lista: [
+    '**Estabilidade:** o Estado egípcio durou cerca de três mil anos, mais do que Roma e do que qualquer império posterior; a sua cultura reconhece-se ao longo de todo esse tempo.',
+    '**Escrita e administração:** os hieróglifos, o papiro e uma burocracia de escribas permitiram governar um país longo e estreito, cobrar impostos e organizar grandes obras.',
+    '**Monumentos:** as pirâmides de Gizé são a única das Sete Maravilhas do mundo antigo que ainda subsiste.',
+    '**Religião e morte:** a mumificação, o julgamento dos mortos e a esperança numa vida eterna marcaram as religiões e a imaginação do Mediterrâneo.',
+    '**Conhecimento:** uma medicina empírica, uma matemática prática, um calendário de 365 dias (o antepassado do nosso) e técnicas de construção em pedra sem paralelo na época.',
+    '**Fascínio:** desde Heródoto, passando pela expedição de Napoleão, pela decifração dos hieróglifos em 1822 e pela descoberta do túmulo de Tutankhamon em 1922, o Egito é o ponto de partida da arqueologia moderna e da «egiptomania».'
+  ] },
+  { caixa: 'O Egito hoje', texto: 'O Egito Antigo continua a ser escavado: todos os anos aparecem túmulos, templos e papiros. Em 2025 foi inaugurado oficialmente, junto às pirâmides de Gizé, o **Grande Museu Egípcio**, com o maior conjunto do mundo dedicado a uma só civilização antiga e a coleção completa do túmulo de Tutankhamon reunida pela primeira vez.' },
+  { img: 'egi-grande-museu-egipcio', leg: 'Vista das pirâmides de Gizé a partir do Grande Museu Egípcio.' }
+];
+
+const linha = [
+  'Esta linha do tempo percorre os três mil anos do Egito Antigo e remete, em cada fase, para a página dedicada. As datas seguem a cronologia de Shaw (2000); as anteriores a c. 2000 a.C. são aproximadas.',
+  { linha: [
+    { d: 'c. 4400 – 3100 a.C.', t: 'As culturas pré-dinásticas', x: 'Ao longo do vale do Nilo desenvolvem-se as culturas **Badariana** e, depois, **Naqada**, com cerâmica, cobre, comércio a longa distância e chefes cada vez mais poderosos. Em Hieracômpolis e Abidos aparecem os primeiros túmulos de elite. (veja a página «Pré-dinástico e Reino Antigo»)' },
+    { d: 'c. 3250 a.C.', t: 'Os sinais de escrita mais antigos', x: 'Etiquetas de osso e argila do túmulo U-j, em **Abidos**, têm sinais que se aproximam dos hieróglifos. É a escrita egípcia mais antiga conhecida; a data exata é discutida.' },
+    { d: 'c. 3100 a.C.', t: 'A unificação do país', x: 'Segundo a tradição, um rei do Alto Egito unifica as Duas Terras. Os egípcios recordavam-no como **Menés**; nos documentos da época o nome mais forte é **Narmer**, da Paleta de Narmer. Se Menés e Narmer são a mesma pessoa, ou se foi o sucessor Aha, é debatido. O país nasce como Estado, com capital em **Mênfis**.' },
+    { d: 'c. 2670 a.C.', t: 'Djoser e a primeira pirâmide', x: 'Em **Sacará**, o arquiteto **Imhotep**, vizir de Djoser, constrói em pedra um monumento de seis degraus, a primeira grande construção em pedra talhada do mundo.' }
+  ] },
+  { img: 'egi-piramide-degraus-djoser', leg: 'Pirâmide de degraus de Djoser, Sacará.' },
+  { linha: [
+    { d: 'c. 2600 a.C.', t: 'Snefru e as pirâmides de Dahshur', x: 'O rei **Snefru** manda construir pelo menos duas pirâmides de grandes dimensões em Dahshur (a «Curva» e a «Vermelha»), a primeira com lados lisos, e acabou talvez a de Meidum. É o momento em que se inventa a pirâmide «verdadeira».' },
+    { d: 'c. 2589 – 2566 a.C.', t: 'Quéops e a Grande Pirâmide', x: 'Em Gizé o filho de Snefru, **Quéops** (Khufu), ergue a maior das pirâmides, com cerca de 146 m de altura original. Foi o edifício mais alto do mundo durante mais de três mil anos.' },
+    { d: 'c. 2500 a.C.', t: 'Quéfren, Miquerinos e a Esfinge', x: 'Os sucessores constroem as duas pirâmides menores de Gizé. A **Grande Esfinge**, escavada na rocha, é geralmente atribuída ao reinado de **Quéfren**.' }
+  ] },
+  { img: 'egi-estatua-quefren', leg: 'Estátua de Quéfren em diorito, Museu Egípcio, Cairo (JE 10062).' },
+  { img: 'egi-gize-piramides', leg: 'As três grandes pirâmides de Gizé.' },
+  { linha: [
+    { d: 'c. 2350 a.C.', t: 'Os Textos das Pirâmides', x: 'O rei **Unas**, da 5.ª dinastia, é o primeiro a mandar gravar nas paredes interiores da sua pirâmide feitiços e hinos para o além. É o mais antigo conjunto de textos religiosos longos da humanidade.' },
+    { d: 'c. 2181 a.C.', t: 'O fim do Reino Antigo', x: 'Após o muito longo reinado de **Pepi II** (cuja duração exata é debatida), o poder central enfraquece, os governadores das províncias ganham independência e o país entra no **1.º Período Intermédio**. As causas são discutidas: crise política, mas também, possivelmente, cheias baixas e seca.' },
+    { d: 'c. 2055 a.C.', t: 'Mentuhotep II reunifica o Egito', x: 'O rei tebano **Mentuhotep II** vence os rivais do norte e começa o **Reino Médio**. (veja a página «1.º Intermédio e Reino Médio»)' },
+    { d: 'c. 1985 – 1795 a.C.', t: 'A 12.ª dinastia: a idade clássica', x: 'Os reis **Amenemhat** e **Sesóstris** reorganizam o Estado, abrem o Fayum à agricultura e levantam fortalezas na Núbia. A literatura (o *Conto de Sinuhe*) e a joalharia atingem o seu auge. A dinastia acaba com a rainha **Sobekneferu**.' },
+    { d: 'c. 1650 a.C.', t: 'Os hicsos no Delta', x: 'Governantes de origem do Levante (os **hicsos**, «chefes de países estrangeiros») dominam o norte a partir de **Avaris**; os reis tebanos governam o sul. É o **2.º Período Intermédio**.' },
+    { d: 'c. 1550 a.C.', t: 'Ahmés I expulsa os hicsos', x: 'Após os combates iniciados por seu pai Seqenenré e, ao que parece, por seu irmão **Kamose**, **Ahmés I** toma Avaris e reunifica o país: começa o **Reino Novo**. Quanto papel coube a Kamose e a Ahmés I é discutido. (veja a página «2.º Intermédio e Reino Novo»)' },
+    { d: 'c. 1473 – 1458 a.C.', t: 'Hatshepsut, rainha e faraó', x: 'Primeiro regente do jovem Tutmés III, depois reinando com todos os títulos de rei, **Hatshepsut** manda erguer o templo de Deir el-Bahari e uma expedição à terra de **Punt**.' },
+    { d: 'c. 1457 a.C.', t: 'Tutmés III e o império', x: 'Na batalha de **Megido** (c. 1457 a.C.), **Tutmés III** vence uma coligação de cidades do Levante. As suas campanhas levam as fronteiras do Egito ao Eufrates e à quarta catarata do Nilo: é o maior alcance do poder egípcio.' }
+  ] },
+  { img: 'egi-hatshepsut-templo', leg: 'Templo funerário de Hatshepsut, Deir el-Bahari.' },
+  { linha: [
+    { d: 'c. 1352 – 1336 a.C.', t: 'Akhenaton e Amarna', x: '**Amenófis IV**, que muda o nome para **Akhenaton**, privilegia o culto do disco solar **Aton**, funda uma nova capital (Akhetaton, hoje Amarna) e muda a arte. É um dos reinados mais debatidos da história do Egito.' },
+    { d: 'c. 1336 – 1327 a.C.', t: 'Tutankhamon', x: 'O jovem rei restaura os deuses tradicionais e morre aos cerca de dezanove anos. O seu túmulo, quase intacto, será descoberto em 1922. As causas da sua morte não são conhecidas com certeza.' },
+    { d: 'c. 1274 a.C.', t: 'Kadesh e Ramsés II', x: 'O reinado de **Ramsés II** (c. 1279 – 1213 a.C.), de sessenta e seis anos, vê a batalha de **Kadesh** contra os hititas e, cerca de 1259 a.C., o mais antigo tratado de paz de que se conserva o texto.' },
+    { d: 'c. 1177 a.C.', t: 'Os Povos do Mar', x: '**Ramsés III** derrota, no Delta, grupos de invasores marítimos que, na mesma época, desorganizam o Mediterrâneo oriental. O Egito sobrevive, mas sai enfraquecido.' },
+    { d: 'c. 1069 a.C.', t: 'O fim do Reino Novo', x: 'Com a 20.ª dinastia termina o Reino Novo. O país divide-se: reis em **Tânis**, no Delta, e sumos sacerdotes de Amon em Tebas. Começa o **3.º Período Intermédio**. (veja a página «3.º Intermédio e Época Tardia»)' },
+    { d: 'c. 728 – 664 a.C.', t: 'Os faraós núbios', x: 'O rei de Cuxe **Piye** conquista o Egito e funda a **25.ª dinastia**, que governa até à invasão assíria. **Taharqa** é o mais conhecido. Em 664 a.C. **Psamético I** reunifica o país e funda a 26.ª dinastia, com capital em Sais.' },
+    { d: '525 a.C.', t: 'Cambises e os persas', x: 'O rei persa **Cambises II** conquista o Egito: é o início do primeiro domínio persa (27.ª dinastia). Há um segundo domínio persa de 343 a 332 a.C., depois do último rei nativo, **Nectanebo II**.' },
+    { d: '332 – 305 a.C.', t: 'Alexandre e os Ptolemeus', x: '**Alexandre Magno** entra no Egito em 332 a.C. e, em 331 a.C., funda **Alexandria**. Depois da sua morte, o general **Ptolemeu** fica com o país e proclama-se rei em 305 a.C. (veja a página «Época Ptolemaica e Romana»)' },
+    { d: '30 a.C.', t: 'Cleópatra VII e a conquista romana', x: 'Derrotados em Áccio (31 a.C.), **Cleópatra VII** e Marco António suicidam-se em Alexandria. O Egito torna-se província de Roma, propriedade pessoal do imperador.' },
+    { d: '394 d.C. – c. 641 d.C.', t: 'Fim da escrita hieroglífica; conquista árabe', x: 'A última inscrição hieroglífica datada, em **Filas**, é de 394 d.C. O cristianismo torna-se religião dominante; o Egito passa para o Império Bizantino e, entre 639 e 642 d.C., é conquistado pelos exércitos árabes de Amr ibn al-As.' }
+  ] },
+  { h: 'A redescoberta' },
+  { linha: [
+    { d: '1798 – 1799', t: 'Napoleão e a Pedra de Roseta', x: 'A expedição francesa ao Egito leva dezenas de sábios que registam monumentos (a *Description de l’Égypte*). Em 1799 um soldado encontra em Roseta a pedra com o mesmo decreto em três escritas.' },
+    { d: '1822', t: 'Champollion decifra os hieróglifos', x: 'O francês **Jean-François Champollion** anuncia, a 27 de setembro de 1822, que os hieróglifos escrevem sons e ideias. A egiptologia nasce como ciência.' },
+    { d: '1922', t: 'O túmulo de Tutankhamon', x: 'Howard Carter e Lord Carnarvon encontram, em novembro de 1922, o túmulo quase intacto de **Tutankhamon**, no Vale dos Reis (KV62), e dão ao mundo uma imagem do Egito faraónico que ainda hoje persiste.' }
+  ] }
+];
+
+const mapa = [
+  { img: 'egi-mapa-egito', leg: 'Mapa do Egito Antigo: Delta, vale do Nilo e Núbia.' },
+  { h: 'O Nilo e as Duas Terras' },
+  'O Nilo nasce no coração de África e atravessa o Sudão antes de entrar no Egito. As suas cheias anuais, de julho a outubro, vinham da chuva das montanhas da Etiópia e depositavam um limo escuro que fertilizava a terra. Os egípcios dividiam o ano em três estações (Akhet, a cheia; Peret, a sementeira; Shemu, a colheita) e dividiam o país em duas partes, que representavam com plantas: o junco do Alto Egito e o papiro do Baixo Egito.',
+  { tabela: { cab: ['Região', 'Nome egípcio / grego', 'Cidades e sítios principais'], linhas: [
+    ['Baixo Egito (Delta)', 'Ta-Mehu, «terra do papiro»', 'Mênfis (na junção com o vale), Heliópolis, Avaris, Pi-Ramessés, Tânis, Sais, Bubástis, Alexandria (mais tarde)'],
+    ['Médio Egito', 'Divisão moderna entre o Delta e Tebas', 'Fayum, Meidum, Heracleópolis, Hermópolis, Amarna, Beni Hassan'],
+    ['Alto Egito (vale)', 'Ta-Shemau, «terra do junco»', 'Abidos, Dendera, Tebas (Luxor, Karnak), Hierakonpolis, Edfu, Kom Ombo'],
+    ['A fronteira sul', 'Elefantina, Assuão', 'Primeiro rápido do Nilo; pedreiras de granito; Filas'],
+    ['Baixa Núbia (Uauat)', 'Terra a sul do primeiro rápido', 'Fortalezas do Reino Médio (Buhen, Mirgissa, Semna); Abu Simbel'],
+    ['Alta Núbia (Cuxe)', 'Reino de Cuxe, hoje Sudão', 'Kerma, Napata, Kawa, Meroé'],
+    ['Oásis e desertos', 'Deserto Ocidental e Oriental', 'Oásis de Baharia, Farafra, Dakhla, Kharga e Siwa; Sinai (minas de turquesa); portos do Mar Vermelho'],
+  ] } },
+  { img: 'egi-nilo-feluca-assuao', leg: 'O Nilo em Assuão, com falucas.' },
+  { h: 'Mênfis, a primeira capital' },
+  'Mênfis ficava na junção entre o vale e o Delta, uns 25 km a sul do Cairo atual, e segundo a tradição foi fundada pelo rei Menés, no momento da unificação. Foi capital do Reino Antigo e continuou a ser, durante milénios, um dos grandes centros administrativos e religiosos do país, com o templo de **Ptah**. Hoje restam sobretudo campos e uma colossal estátua de Ramsés II; as suas necrópoles, porém, estão entre as mais famosas do mundo.',
+  { h: 'Gizé, Sacará e Dahshur' },
+  'A oeste de Mênfis, na margem do deserto, estendem-se as necrópoles: **Sacará** (a pirâmide de Djoser e centenas de mastabas), **Dahshur** (as pirâmides de Snefru) e **Gizé** (as pirâmides de Quéops, Quéfren e Miquerinos, e a Esfinge). Foram inscritas na lista do Património Mundial da UNESCO como «Mênfis e a sua necrópole», em 1979. (veja a página «Monumentos e sítios»)',
+  { h: 'Heliópolis, a cidade do Sol' },
+  'Heliópolis (em egípcio Iunu) ficava a nordeste do Cairo atual e era o grande centro do culto de **Rá**, o deus-sol, e de uma teologia que explicava a criação do mundo. Dela restam poucas ruínas e um único obelisco, mas teve um papel decisivo na religião: os reis do Reino Antigo diziam-se «filhos de Rá».',
+  { h: 'Tebas, a cidade de Amon' },
+  'Tebas (em egípcio Waset), a atual Luxor, foi capital do Reino Médio e, sobretudo, do Reino Novo. Na margem leste ergueram-se os grandes templos de **Karnak** e de **Luxor**, dedicados a Amon; na margem oeste, a «cidade dos mortos»: o **Vale dos Reis**, o **Vale das Rainhas**, os templos funerários e a aldeia dos artesãos de **Deir el-Medina**. Tebas foi inscrita pela UNESCO em 1979.',
+  { img: 'egi-karnak-sala-hipostila', leg: 'Sala hipostila do templo de Amon-Rá, Karnak.' },
+  { img: 'egi-cena-karnak-reconstrucao', leg: 'Reconstituição artística conjectural do templo de Amon em Karnak no Reino Novo. Ilustração gerada por IA.' },
+  { h: 'Abidos, a cidade de Osíris' },
+  'Abidos, no Alto Egito, foi o cemitério dos primeiros reis (Dinastia 0 e Dinastia 1) e passou a ser, depois do Reino Antigo, o grande lugar de peregrinação de **Osíris**, onde se celebravam os seus mistérios. O templo de Seti I e o seu famoso quadro com os nomes dos antecessores (a Lista de Abidos) são das fontes mais importantes para a ordem dos reis.',
+  { h: 'Amarna, a cidade de um só deus' },
+  'Amarna, no Médio Egito, é o nome moderno da cidade que Akhenaton fundou por volta de 1347 a.C. com o nome de **Akhetaton**, «horizonte de Aton». Foi capital durante cerca de quinze anos e, após a morte do rei, foi abandonada. Por isso é uma das raras cidades egípcias com plano visível: palácios, casas, oficinas, como a do escultor Tutmés, onde se encontrou o busto de Nefertiti.',
+  { h: 'Pi-Ramessés e Tânis' },
+  'No leste do Delta, junto à antiga Avaris, Ramsés II construiu **Pi-Ramessés**, uma capital com palácios, templos e quartéis, de onde se organizavam as campanhas na Ásia. Quando o ramo do Nilo que a servia assoreou, os reis da 21.ª dinastia deslocaram-se para **Tânis**, onde se encontraram túmulos reais intactos, de Psusenes I e de outros, só descobertos em 1939–1940.',
+  { h: 'Sais e a Época Tardia' },
+  'Sais, no Delta ocidental, foi capital da 26.ª dinastia (664 – 525 a.C.) e centro do culto da deusa **Neit**. Da cidade, destruída ao longo dos séculos, pouco resta, mas os historiadores gregos, como Heródoto, descreveram-na com admiração.',
+  { img: 'egi-cena-pi-ramesses', leg: 'Reconstituição artística conjectural de Pi-Ramesses no Delta oriental, c. 1250 a.C. Ilustração gerada por IA.' },
+  { h: 'Alexandria, a cidade grega' },
+  'Alexandria, fundada por Alexandre Magno em 331 a.C. na costa mediterrânica, foi capital dos Ptolemeus e durante séculos uma das maiores cidades do mundo, famosa pela **Biblioteca**, pelo **Museion** e pelo **Farol** de Faros, uma das Sete Maravilhas. As suas ruínas estão hoje, em grande parte, debaixo de água ou de edifícios modernos. (veja a página «Época Ptolemaica e Romana»)',
+  { img: 'egi-cena-alexandria-farol', leg: 'Reconstituição artística conjectural do porto de Alexandria e do Farol, século III a.C.; disposição dos edifícios imaginada. Ilustração gerada por IA.' },
+  { h: 'O Fayum e o oásis' },
+  'A sudoeste do Cairo, o **Fayum** é uma depressão com um grande lago (o Moeris dos gregos) que os reis do Reino Médio e os Ptolemeus transformaram numa das regiões agrícolas mais ricas. Mais longe, no deserto ocidental, os oásis de **Baharia, Farafra, Dakhla, Kharga** e **Siwa** foram pontos de passagem para as caravanas e fontes de vinho, fruta e sal.',
+  { h: 'Elefantina e Assuão, a porta do sul' },
+  'A ilha de **Elefantina**, junto ao primeiro rápido, era a fronteira sul do Egito e um posto comercial com a Núbia; perto de Assuão ficavam as pedreiras de **granito**, de onde vieram obeliscos e estátuas. Foi aqui, segundo a tradição, que os egípcios situavam as nascentes do Nilo, e o deus carneiro Khnum.',
+  { img: 'egi-templo-filas', leg: 'Templo de Ísis em Filas, ilha de Agilkia.' },
+  { h: 'A Núbia e Cuxe' },
+  'Ao sul, o vale do Nilo continua pela **Núbia**, hoje repartida entre o sul do Egito e o norte do Sudão. Foi fonte de ouro, ébano e marfim e de soldados (os arqueiros núbios). O Egito ocupou-a em vários períodos, e o reino de **Cuxe**, com capital em Napata e depois Meroé, chegou, no século VIII a.C., a governar o próprio Egito com a 25.ª dinastia.',
+  { h: 'O Sinai, o Mar Vermelho e Punt' },
+  'No Sinai e no deserto oriental os egípcios exploravam minas de cobre e de turquesa e pedreiras; do Mar Vermelho partiam navios para **Punt**, a «terra do deus», fonte de incenso, mirra e ébano, cuja localização (provavelmente na costa do atual Sudão, da Eritreia ou da Etiópia) é discutida.',
+  { h: 'As rotas' },
+  { lista: [
+    '**O Nilo:** a grande «autoestrada» do país. A corrente leva para norte, o vento dominante sopra para sul: os barcos desciam a remos e subiam à vela.',
+    '**A «Via de Hórus»:** a estrada militar que ligava o Delta a Gaza e ao Levante.',
+    '**As rotas do deserto:** pistas que ligavam o vale aos oásis, às minas do deserto oriental (como o Uadi Hammamat) e ao Mar Vermelho.',
+    '**As rotas para Sul:** o Nilo para a Núbia e pistas de caravanas que contornavam as cataratas.',
+    '**O Mediterrâneo:** ligações marítimas com Biblos, Chipre, Creta e o mundo grego.'
+  ] }
+];
+
+const sociedade = [
+  { h: '1. O faraó e a organização política' },
+  'O Egito era uma **monarquia**. O rei (que só a partir do Reino Novo é chamado «faraó») era um ser divino, filho de Rá e encarnação de **Hórus** em vida, e depois de morrer unia-se a **Osíris**. A sua função era manter a **maat**, a ordem, a justiça e a harmonia do cosmos, pela guerra, pelo culto e pelo bom governo. (veja a página «Os faraós»)',
+  'Abaixo do rei, o **vizir** chefiava a administração (o Reino Novo chegou a ter dois, um para o Alto e outro para o Baixo Egito). O país estava dividido em cerca de 42 províncias, os **nomos** (os gregos chamavam-lhes assim), governadas por **nomarcas**. Havia um tesouro, um celeiro do Estado, tribunais e um exército profissional.',
+  { h: '2. Classes sociais' },
+  { lista: [
+    '**O rei e a família real.**',
+    '**Os altos funcionários e sacerdotes:** vizires, governadores, chefes do exército, sumos sacerdotes; os cargos tendiam a passar de pai para filho.',
+    '**Os escribas:** uma classe média letrada, indispensável ao Estado e muito prestigiada.',
+    '**Os artesãos:** escultores, pintores, ourives, carpinteiros, pedreiros, muitas vezes ao serviço de templos e do palácio.',
+    '**Os camponeses:** a grande maioria da população, que trabalhava a terra e pagava impostos em produtos e em trabalho (a **corveia**).',
+    '**Os servos e estrangeiros:** prisioneiros de guerra e escravos, em número limitado, sobretudo a partir do Reino Novo.'
+  ] },
+  { img: 'egi-cena-quotidiano-mercado', leg: 'Mercado imaginado numa cidade egípcia do Reino Novo, c. 1300 a.C. Ilustração gerada por IA.' },
+  { h: '3. Religião' },
+  'A religião egípcia era **politeísta**: havia centenas de deuses, muitos com forma humana, animal ou mista, e cada cidade tinha o seu. Os deuses misturavam-se, fundiam-se (Amon-Rá) e mudavam de importância ao longo dos séculos. Os egípcios não tinham um livro sagrado único; a religião vivia nos mitos, nos rituais e nos textos funerários. (veja a página «Deuses, escrita e vida quotidiana»)',
+  { tabela: { cab: ['Divindade', 'Função', 'Representação'], linhas: [
+    ['Rá', 'Deus-sol; criador; rei dos deuses', 'Homem com cabeça de falcão e disco solar'],
+    ['Amon (Amon-Rá)', 'Deus de Tebas; rei dos deuses no Reino Novo', 'Homem com coroa de duas penas altas'],
+    ['Osíris', 'Deus dos mortos e da ressurreição, rei do além', 'Homem mumificado, coroa atef'],
+    ['Ísis', 'Deusa da magia e da maternidade; esposa de Osíris', 'Mulher com trono na cabeça'],
+    ['Hórus', 'Deus do céu e da realeza, filho de Ísis e Osíris', 'Falcão ou homem com cabeça de falcão'],
+    ['Set', 'Deus do caos, do deserto e da tempestade', 'Animal fabuloso de focinho curvo'],
+    ['Ptah', 'Deus criador e patrono dos artesãos (Mênfis)', 'Homem com barrete e cetro'],
+    ['Anúbis', 'Deus da mumificação e guia dos mortos', 'Homem com cabeça de chacal'],
+    ['Thot', 'Deus da escrita, da sabedoria e da lua', 'Íbis ou babuíno'],
+    ['Hathor', 'Deusa do amor, da música e da alegria', 'Vaca ou mulher com chifres e disco'],
+    ['Maat', 'Deusa da verdade, da justiça e da ordem', 'Mulher com pena de avestruz'],
+    ['Sekhmet', 'Deusa-leoa da guerra e da cura', 'Mulher com cabeça de leoa'],
+    ['Aton', 'Disco solar, único deus no tempo de Akhenaton', 'Disco com raios que terminam em mãos']
+  ] } },
+  { img: 'egi-livro-dos-mortos-hunefer', leg: 'Pesagem do coração no papiro de Hunefer, Museu Britânico (EA 9901).' },
+  { h: 'O mito de Osíris' },
+  'Segundo o mito (que chegou a nós sobretudo em textos tardios e no relato do grego Plutarco), **Osíris** foi rei do Egito e foi morto e esquartejado pelo irmão **Set**. A sua mulher **Ísis** reuniu-lhe o corpo, e Anúbis mumificou-o. Osíris tornou-se rei dos mortos, e o filho **Hórus** venceu Set e herdou o trono. O mito explica a morte, a renovação e a sucessão do rei.',
+  { h: '4. A morte e o além' },
+  'Os egípcios acreditavam que a morte não era o fim, desde que o corpo fosse conservado (a **mumificação**) e os ritos e as oferendas fossem cumpridos. A pessoa tinha vários elementos: o corpo, o **ka** (força vital), o **ba** (a personalidade, representada como ave com cabeça humana) e o nome. No além, o coração do morto era pesado contra a pena de Maat; quem passava a prova vivia no «Campo de Juncos» (Aaru); quem falhava era devorado por Ammit. Os textos que acompanhavam o morto são os **Textos das Pirâmides**, os **Textos dos Sarcófagos** e o **Livro dos Mortos** (que os egípcios chamavam «Livro para sair para o dia»).',
+  'A **mumificação** durava cerca de setenta dias: retiravam-se os órgãos internos (o cérebro, extraído pelo nariz, era descartado), secava-se o corpo com **natrão** (uma mistura de sais) durante cerca de quarenta dias, untava-se e enfaixava-se em linho, com amuletos. Eram mumificados também animais sagrados, como gatos, íbis e crocodilos. (veja a página «Deuses, escrita e vida quotidiana»)',
+  { img: 'egi-cena-mumificacao', leg: 'Oficina de embalsamadores imaginada no Reino Novo. Ilustração gerada por IA.' },
+  { h: '5. A economia e a agricultura' },
+  'A economia assentava na **agricultura**: trigo-espelta e cevada (para pão e cerveja), linho, papiro, legumes e fruta. A terra era do rei, dos templos e de particulares; o excedente era armazenado em celeiros e servia para pagar funcionários e trabalhadores. Não havia moeda: as trocas faziam-se por **escambo**, com medidas fixas (o *deben*, uma unidade de peso de cobre ou de prata) até aos Persas e aos gregos, que introduziram a moeda.',
+  { img: 'egi-cena-cheia-nilo', leg: 'Agricultores imaginados a lavrar e semear após o recuo da cheia do Nilo, Reino Novo. Ilustração gerada por IA.' },
+  'O comércio externo trazia **madeira** de cedro do Líbano, **ouro** da Núbia, **incenso** de Punt, **cobre** do Sinai, **lápis-lazúli** do Afeganistão (por intermediários) e **ébano** e marfim de África. O Egito exportava trigo, linho, papiro, ouro e objetos de luxo.',
+  { h: '6. A escrita e os escribas' },
+  'Os egípcios tiveram, ao longo da história, várias escritas: os **hieróglifos** (monumentais, sagrados, com mais de setecentos sinais comuns), o **hierático** (uma escrita cursiva para o dia a dia), o **demótico** (uma escrita ainda mais rápida, a partir de c. 650 a.C.) e, já na época cristã, o **copta**, que usa o alfabeto grego com alguns sinais acrescentados. Escrevia-se sobretudo em **papiro**, feito com a medula da planta, e em ostraca (cacos de cerâmica).',
+  'Os **escribas** aprendiam a ler e a escrever desde crianças, em escolas ligadas a templos e a palácios, copiando textos clássicos. A função era muito prestigiada: um texto de ensino do Reino Médio, a *Sátira dos Ofícios*, compara todos os outros trabalhos, desfavoravelmente, ao do escriba. Só talvez 1 a 5% da população sabia ler e escrever (as estimativas variam).',
+  { img: 'egi-pedra-roseta', leg: 'Pedra de Roseta, Museu Britânico (EA 24).' },
+  { img: 'egi-cena-escriba-escola', leg: 'Escola de escribas imaginada no Reino Médio; sinais ilustrativos sem transcrição legível. Ilustração gerada por IA.' },
+  { h: '7. Casa e família' },
+  'As casas comuns eram de **tijolo de adobe**, com poucos quartos, terraço e pátio; as de elite tinham jardim, tanque e muitos criados. A família era o centro da vida. O casamento era monogâmico entre a população comum (os reis podiam ter várias esposas) e as **mulheres** tinham, em comparação com outras sociedades da época, direitos notáveis: podiam possuir bens, herdar, fazer contratos, divorciar-se e ir a tribunal. Havia mulheres escribas, sacerdotisas, médicas e rainhas que governaram.',
+  'As crianças brincavam com bolas, bonecas, piões e animais de madeira. Os rapazes aprendiam o ofício do pai ou o de escriba; as raparigas aprendiam a gerir a casa. O Egito é notável pelo número de textos de **conselhos** aos filhos, como a *Instrução de Ptahhotep*.',
+  { h: '8. Alimentação' },
+  'A base da alimentação era o **pão** e a **cerveja** (de cevada ou de trigo-espelta, grossa e nutritiva, bebida por todos, inclusive crianças). Acrescentavam-se cebola, alho, lentilhas, favas, pepino, alface, tâmaras, figos, uvas, melão e mel. A carne (boi, ganso, pato, peixe) era mais frequente nas mesas ricas. O **vinho** era sobretudo bebida de elite e de cerimónias.',
+  { h: '9. Vestuário, cosmética e joias' },
+  'O clima favorecia roupas leves de **linho**: saiotes para os homens, vestidos justos de alças para as mulheres, mantos nos dias frios. As crianças andavam muitas vezes nuas. Homens e mulheres usavam **perucas**, *kohl* nos olhos (também para proteger do sol e das moscas), unguentos e perfumes. As **joias** (colares largos, braceletes, anéis) eram de ouro, prata, cornalina, turquesa e lápis-lazúli, e eram também amuletos.',
+  { h: '10. Música, jogos e festas' },
+  'Tocavam-se harpas, flautas, alaúdes, liras, pandeiretas e sistros (chocalhos rituais da deusa Hathor). Há muitas cenas de músicos e dançarinos em banquetes. Jogava-se **senet**, um jogo de tabuleiro de trinta casas, cujas regras exatas se perderam e se reconstroem em parte, e **mehen**, o jogo da serpente. As grandes festas religiosas, como a **Opet** em Tebas, eram momentos de procissão, música e distribuição de comida.',
+  { h: '11. Ciência: matemática, medicina e astronomia' },
+  'A **matemática** egípcia era prática: calculava áreas, volumes (incluindo o da pirâmide truncada), reparte pão e cerveja e usa frações com numerador 1. O papiro **Rhind** (c. 1550 a.C., cópia de um texto mais antigo) é o principal manual conservado. A **medicina** combinava observação com magia: o papiro **Edwin Smith** (c. 1600 a.C.) descreve com rigor o tratamento de feridas; o papiro **Ebers** (c. 1550 a.C.) reúne receitas e encantamentos. Os médicos egípcios eram famosos no mundo antigo.',
+  'A **astronomia** servia o calendário e o culto. O ano civil tinha **365 dias** (12 meses de 30 dias e 5 dias extra), sem anos bissextos, pelo que se afastava lentamente das estações. A estrela **Sótis** (Sírio), cujo reaparecimento antes do amanhecer anunciava a cheia, regulava o calendário religioso. As pirâmides eram orientadas com grande precisão para os pontos cardeais.',
+  { h: '12. Tecnologia e construção' },
+  'Os egípcios construíam com **tijolo** de adobe (casas e palácios), e com **pedra** (calcário, arenito, granito) para templos e túmulos. Usavam rampas, trenós, alavancas, cordas e ferramentas de cobre, de bronze e, mais tarde, de ferro, e sabiam transportar blocos de centenas de toneladas pelo Nilo. Trabalhavam o vidro, a faiança, o ouro e o cobre; faziam barcos de cedro e de papiro. O cavalo e o carro de guerra chegaram com os hicsos, c. 1650 a.C. (veja a página «Monumentos e sítios»)',
+  { img: 'egi-cena-construcao-piramide', leg: 'Cena imaginada da construção de uma pirâmide em Gizé, c. 2550 a.C.; o sistema de rampas é conjectural. Ilustração gerada por IA.' },
+  { caixa: 'Quem construiu as pirâmides?', texto: 'Não foram escravos, ao contrário do que se diz. Os trabalhadores de Gizé eram egípcios que recebiam pão, cerveja e carne, viviam em aldeias organizadas e eram enterrados em túmulos junto às pirâmides. As escavações de Mark Lehner e Zahi Hawass nos anos 1990 mostraram-no, e os diários de Merer, descobertos em Wadi al-Jarf em 2013, contam como as equipas transportavam pedra para a Grande Pirâmide. A ideia de «escravos» vem de Heródoto e de leituras da Bíblia que não têm apoio na arqueologia. Também **não há nenhuma base** para as teorias de extraterrestres ou de «civilizações perdidas».' },
+  { h: '13. Guerra' },
+  'Durante o Reino Antigo o Egito teve poucas guerras externas e um exército pequeno. No Reino Médio e no Reino Novo organizou exércitos profissionais, com infantaria, arqueiros e, depois dos hicsos, **carros de guerra**, e conquistou a Núbia e partes do Levante. A arma mais característica era o arco composto; os inimigos mais temidos foram os hicsos, os hititas, os Povos do Mar e os assírios. A batalha de Kadesh, c. 1274 a.C., é a primeira de que se conhecem pormenores táticos.',
+  { img: 'egi-cena-batalha-carros', leg: 'Cena imaginada de carros de guerra egípcios e hititas, c. 1274 a.C. Ilustração gerada por IA.' },
+  { img: 'egi-kadesh-relevo', leg: 'Ramsés II no carro na batalha de Kadesh, relevo do Ramesseum, Tebas.' },
+  { h: '14. Leis e justiça' },
+  'Os egípcios não deixaram um código de leis conservado como o de Hamurabi, mas há milhares de documentos judiciais. A justiça cabia ao rei, ao vizir e a tribunais locais (os **kenbet**), e tinha por princípio a **maat**. Os castigos iam da multa e do espancamento à mutilação e à morte. O papiro de Turim regista, por exemplo, o processo contra os conspiradores da morte de Ramsés III, c. 1155 a.C. Em 1157 a.C., os operários de Deir el-Medina fizeram a primeira greve de que há registo, por atraso nos pagamentos.',
+  { h: '15. Arte' },
+  'A arte egípcia tem regras de representação muito estáveis (o **cânone**): a figura humana mostrava-se com a cabeça e as pernas de perfil, o olho e o tronco de frente, e o tamanho das figuras indicava a sua importância. A arte tinha uma função religiosa e mágica: garantir a vida eterna. Houve variações: a ousada arte de Amarna, o realismo dos retratos do Reino Médio, a delicadeza do Reino Novo.',
+  { img: 'egi-nefertiti-busto', leg: 'Busto de Nefertiti, Neues Museum, Berlim.' }
+];
+
+const personalidades = [
+  'Escolhemos catorze figuras entre as milhares que a história egípcia conserva. Os faraós e as rainhas têm a sua página própria («Os faraós»), onde há muitas outras biografias.',
+  { h: 'Narmer (c. 3100 a.C.)' },
+  'Rei do Alto Egito cujo nome aparece na **Paleta de Narmer**, onde surge a usar a coroa do Alto e a do Baixo Egito. É geralmente associado à unificação do país, embora a tradição egípcia atribuísse esse feito a «Menés», e os historiadores discutam se são a mesma pessoa.',
+  { img: 'egi-paleta-narmer', leg: 'Verso da Paleta de Narmer, Museu Egípcio, Cairo (CG 14716).' },
+  { h: 'Imhotep (c. 2650 a.C.)' },
+  'Vizir do rei **Djoser** e, segundo a inscrição na base de uma estátua do rei, «chanceler do rei do Baixo Egito» e chefe dos escultores. A tradição atribui-lhe o plano da pirâmide de degraus de Sacará. Séculos depois foi venerado como deus da medicina e identificado pelos gregos com Asclépio. Não há fonte contemporânea que o diga médico: essa fama é tardia.',
+  { h: 'Quéops (Khufu, c. 2589 – 2566 a.C.)' },
+  'Segundo rei da 4.ª dinastia e construtor da **Grande Pirâmide**. Só se conserva dele uma pequena estatueta de marfim; a imagem de «tirano» vem de Heródoto, escrevendo mais de dois mil anos depois, e não tem base nas fontes egípcias. Junto à pirâmide foi encontrado um barco solar desmontado.',
+  { h: 'Mentuhotep II (c. 2055 – 2004 a.C.)' },
+  'Rei de Tebas que, após décadas de guerra com os reis de Heracleópolis, reunificou o Egito e iniciou o **Reino Médio**. Construiu um templo funerário original em Deir el-Bahari.',
+  { img: 'egi-mentuhotep-ii-estatua', leg: 'Estátua sentada de Mentuhotep II, Museu Egípcio, Cairo.' },
+  { h: 'Sesóstris III (século XIX a.C.)' },
+  'Rei da 12.ª dinastia que reforçou o poder real sobre os governadores, fixou a fronteira sul no Nilo com fortalezas e abriu canais nas cataratas. Os seus retratos, de rosto sério e cansado, são dos mais célebres da arte egípcia.',
+  { img: 'egi-sesostris-iii-cabeca', leg: 'Fragmento do rosto de Sesóstris III, Metropolitan Museum (26.7.1394).' },
+  { h: 'Hatshepsut (c. 1473 – 1458 a.C.)' },
+  'Filha de Tutmés I e esposa de Tutmés II, foi regente do enteado Tutmés III e depois reinou como **faraó**, com títulos masculinos e representada com barba cerimonial. O seu reinado foi pacífico e próspero (expedição a Punt, templo de Deir el-Bahari). Mais tarde, muitas imagens suas foram apagadas. Durante muito tempo atribuiu-se isso à vingança de Tutmés III, mas os estudos recentes sugerem que a destruição foi mais tardia e mais política.',
+  { img: 'egi-hatshepsut-estatua', leg: 'Estátua colossal ajoelhada de Hatshepsut, Metropolitan Museum.' },
+  { h: 'Tutmés III (c. 1479 – 1425 a.C.)' },
+  'Reinou cerca de 54 anos e foi o maior conquistador do Egito. Liderou pelo menos dezassete campanhas no Levante e na Núbia, a mais famosa em Megido. É frequentemente chamado o «Napoleão do Egito» (um rótulo moderno, mais popular do que rigoroso).',
+  { img: 'egi-tutmes-iii-estatua', leg: 'Estátua de Tutmés III em grauvaque, Museu de Luxor.' },
+  { h: 'Akhenaton (c. 1352 – 1336 a.C.)' },
+  'Rei que elevou o culto de **Aton**, o disco solar, acima dos outros deuses, fechou templos de Amon e mudou a capital para Amarna. Se foi monoteísta no sentido estrito e se influenciou a religião judaica (como propôs Freud) é muito debatido, e a maioria dos egiptólogos é cética quanto à segunda ideia. A sua arte, de corpos alongados, é uma das mais estranhas do Egito.',
+  { img: 'egi-akhenaton-estatua', leg: 'Estátua colossal de Akhenaton, Museu Egípcio, Cairo.' },
+  { h: 'Nefertiti (século XIV a.C.)' },
+  'Grande Esposa Real de Akhenaton, foi uma das mulheres mais poderosas do Egito: aparece nos relevos ao lado do rei, com o mesmo tamanho. O célebre **busto** foi descoberto em 1912 pelo arqueólogo alemão Ludwig Borchardt. Não se sabe o que lhe aconteceu depois do ano 12 ou 14 do reinado do marido, nem se foi corregente com outro nome; o seu túmulo não foi encontrado.',
+  { h: 'Tutankhamon (c. 1336 – 1327 a.C.)' },
+  'Subiu ao trono com cerca de nove anos e restaurou o culto de Amon. O seu túmulo (KV62), descoberto por **Howard Carter** em 1922, tinha mais de cinco mil objetos, entre eles a **máscara de ouro**. Estudos de ADN publicados em 2010 sugeriram que era filho de Akhenaton, mas a identificação das múmias é debatida. A «maldição do faraó» é um mito de imprensa.',
+  { img: 'egi-tutankhamon-mascara', leg: 'Máscara funerária de Tutankhamon, Museu Egípcio, Cairo.' },
+  { h: 'Ramsés II (c. 1279 – 1213 a.C.)' },
+  'Reinou sessenta e seis anos e teve uma enorme descendência. Construiu mais do que qualquer outro rei: Abu Simbel, o Ramesseum, partes de Karnak e de Luxor, e a cidade de Pi-Ramessés. Depois de Kadesh, apresentou-a nos seus templos como uma grande vitória, embora tenha sido, na prática, um impasse; o tratado de paz de c. 1259 a.C. com os hititas é o mais antigo conhecido.',
+  { img: 'egi-ramses-ii-abu-simbel', leg: 'Fachada do Grande Templo de Abu Simbel.' },
+  { h: 'Taharqa (reinou c. 690 – 664 a.C.)' },
+  'Rei núbio da 25.ª dinastia, nascido em Cuxe. Foi construtor em Karnak e em Cuxe e travou as primeiras guerras contra a Assíria. Acabou expulso do Egito pelos assírios (Assaradão e depois Assurbanípal), mas a 25.ª dinastia deixou uma marca profunda no renascimento cultural egípcio.',
+  { img: 'egi-taharqa-esfinge', leg: 'Esfinge de carneiro de Amon protegendo Taharqa, de Kawa, Museu Britânico (EA 1779).' },
+  { h: 'Cleópatra VII (69 – 30 a.C.)' },
+  'Última rainha ativa da dinastia ptolemaica. Falava várias línguas, foi a primeira da dinastia a aprender egípcio e governou o Egito com inteligência política. Aliou-se a **Júlio César** e depois a **Marco António**, e foi derrotada por Otaviano em Áccio. A sua imagem de sedutora vem sobretudo dos autores romanos, que a viam como inimiga; sabemos pouco do que ela pensava.',
+  { img: 'egi-cleopatra-busto', leg: 'Busto de Cleópatra VII, Altes Museum, Berlim.' },
+  { h: 'Jean-François Champollion (1790 – 1832)' },
+  'Linguista francês que decifrou os hieróglifos, o seu maior feito, anunciado em 1822 na *Lettre à M. Dacier*. Dominava copta, grego e outras línguas e usou a Pedra de Roseta e os nomes de reis (Ptolemeu e Cleópatra) em cartuchos. Tinha-se baseado também no trabalho do inglês Thomas Young. Foi o primeiro professor de Egiptologia (Collège de France, 1831).',
+  { img: 'egi-champollion-retrato', leg: 'Retrato de Champollion por Léon Cogniet (1831), Louvre.' }
+];
+
+const legado = [
+  { h: 'O que nos deixaram' },
+  { lista: [
+    '**A escrita hieroglífica** e uma literatura que inclui contos, sabedoria, poesia de amor e hinos.',
+    '**A arquitetura monumental em pedra:** pirâmides, templos, obeliscos.',
+    '**O calendário de 365 dias**, ancestral do calendário juliano e, por ele, do nosso.',
+    '**Práticas médicas e farmacológicas**, algumas eficazes, outras mágicas.',
+    '**A mumificação** e a fixação de uma ideia de vida depois da morte com julgamento moral.',
+    '**Uma arte** de cânones estáveis, que influenciou a Grécia e, mais tarde, o mundo inteiro.'
+  ] },
+  { h: 'Arte' },
+  'A estatuária, os relevos pintados, a joalharia e os objetos funerários egípcios estão em museus de todo o mundo. Os princípios da arte egípcia (frontalidade, simetria, hierarquia) mantiveram-se por três mil anos e marcaram a arte arcaica grega.',
+  { h: 'Arquitetura' },
+  'As pirâmides, os pilones, as colunas papiriformes e a luz controlada dos templos influenciaram o neoclassicismo e o historicismo egipcizante dos séculos XVIII e XIX. O obelisco da Place de la Concorde, em Paris (1836), e as «Agulhas de Cleópatra» de Londres (1878) e de Nova Iorque (1881) são exemplos de monumentos egípcios transportados para o Ocidente.',
+  { h: 'Palavras e ideias herdadas' },
+  { lista: [
+    '**Papel**, do grego *papyros* (papiro), vindo de uma palavra egípcia de origem incerta.',
+    '**Oásis**, do grego, vindo do egípcio *wehat*.',
+    '**Ébano**, do egípcio *hbny*, pelo grego.',
+    '**Egito**, **faraó**, **pirâmide**, **múmia** (esta, do persa/árabe *mumiya*, «betume»): palavras de uso corrente.',
+    'O Egito também influenciou a Grécia (Heródoto, Platão e outros reconheceram essa dívida) e, de modo discutido e matizado, textos bíblicos (por exemplo, a semelhança entre o Salmo 104 e o hino a Aton). A Bíblia não é uma fonte histórica segura para o Egito, e a historicidade do Êxodo não tem confirmação arqueológica.'
+  ] },
+  { h: 'A egiptomania' },
+  'Desde os romanos, que levaram obeliscos para Roma, e depois da expedição de Napoleão (1798), o Ocidente teve vagas de **egiptomania**: móveis, edifícios, túmulos (os cemitérios do século XIX estão cheios de pirâmides e obeliscos), a ópera *Aida* de Verdi (1871) e as exposições de Tutankhamon (a de 1972, no Museu Britânico, foi uma das de maior sucesso). O cinema e a literatura de aventuras acrescentaram a «maldição das múmias», uma invenção moderna.',
+  { img: 'egi-esfinge', leg: 'Grande Esfinge de Gizé.' },
+  { h: 'A redescoberta do Egito' },
+  'Os gregos e os romanos visitavam o Egito e escreveram sobre ele (Heródoto, c. 450 a.C.; Diodoro; Estrabão). Depois da queda do paganismo, o sentido dos hieróglifos perdeu-se. Foi **Napoleão**, em 1798, que reabriu o Egito à Europa; em 1799 foi encontrada a **Pedra de Roseta**, que **Champollion** usou para decifrar os hieróglifos em 1822. Seguiram-se Belzoni, Mariette (fundador do Serviço de Antiguidades, em 1858), **Flinders Petrie** (o pai da arqueologia científica egípcia) e **Howard Carter** (Tutankhamon, 1922).',
+  { img: 'egi-vale-dos-reis', leg: 'Vale dos Reis, margem ocidental de Tebas.' },
+  { caixa: 'Mitos e pseudoarqueologia', texto: 'Há muitas ideias populares sobre o Egito que **não têm base científica**: pirâmides construídas por extraterrestres ou por uma civilização perdida (Atlântida), pirâmides como «centrais de energia», os escravos hebreus como construtores, a «maldição de Tutankhamon». A arqueologia mostra, com abundância de provas (ferramentas, pedreiras, aldeias de operários, papiros administrativos), que as pirâmides foram obra dos egípcios, em prazos conhecidos e com técnicas que já se conhecem em boa parte.' },
+  { h: 'O Grande Museu Egípcio e a conservação' },
+  'O **Grande Museu Egípcio**, em Gizé, foi inaugurado oficialmente em 2025, depois de duas décadas de obras, e reúne mais de cem mil peças, incluindo todo o espólio de Tutankhamon. Veio aliviar o velho Museu Egípcio da Praça Tahrir (1902). A conservação é um desafio: o aumento do nível freático ameaça os templos, o turismo de massa desgasta os túmulos, e a urbanização cresce junto aos sítios. O mais famoso salvamento do século XX foi o de **Abu Simbel** e dos templos da Núbia, desmontados e reconstruídos em lugar mais alto entre 1964 e 1968, antes de a barragem de Assuão formar o Lago Nasser, numa campanha internacional da UNESCO.',
+  { h: 'Onde visitar' },
+  { lista: [
+    '**No Egito:** Gizé e o Grande Museu Egípcio, o Museu Egípcio no Cairo, Sacará, Luxor e Karnak, o Vale dos Reis, Abu Simbel, Filas, Edfu e Kom Ombo.',
+    '**Fora do Egito:** Museu Britânico (Londres), Louvre (Paris), Museu Egípcio e Papirológico (Turim), o Neues Museum (Berlim), o Metropolitan Museum of Art (Nova Iorque) e o Museu de Leiden.',
+    '**Em Portugal:** objetos egípcios no Museu Nacional de Arqueologia, em Lisboa, que tem uma coleção de antiguidades egípcias.'
+  ] }
+];
+
+const quiz = [
+  { p: 'Que rio sustentou a civilização egípcia?', op: ['O Congo', 'O Tigre', 'O Nilo', 'O Eufrates'], certa: 2, exp: 'As cheias anuais do Nilo fertilizavam uma faixa estreita de terra no meio do deserto.' },
+  { p: 'Quem é geralmente associado à unificação do Alto e do Baixo Egito, por volta de 3100 a.C.?', op: ['Narmer (ou Menés)', 'Ramsés II', 'Djoser', 'Quéops'], certa: 0, exp: 'A Paleta de Narmer e a tradição de «Menés» ligam-se à unificação, embora a identificação seja debatida.' },
+  { p: 'Qual foi a primeira grande construção egípcia em pedra, em forma de degraus?', op: ['Abu Simbel', 'O templo de Karnak', 'A Grande Pirâmide', 'A pirâmide de Djoser, em Sacará'], certa: 3, exp: 'A pirâmide de degraus de Djoser, atribuída a Imhotep, foi construída c. 2670 a.C.' },
+  { p: 'Quem construiu as pirâmides de Gizé?', op: ['Extraterrestres', 'Trabalhadores egípcios pagos e alimentados pelo Estado', 'Soldados gregos', 'Escravos hebreus'], certa: 1, exp: 'As aldeias e os cemitérios de operários descobertos junto a Gizé mostram trabalhadores egípcios.' },
+  { p: 'O que significa «maat»?', op: ['A ordem, a verdade e a justiça do cosmos', 'O nome de uma pirâmide', 'Uma moeda', 'O deus-sol'], certa: 0, exp: 'Manter a maat era a principal função do faraó.' },
+  { p: 'Que faraó fez a primeira tentativa conhecida de mudar a religião para o culto do disco solar Aton?', op: ['Tutmés III', 'Tutankhamon', 'Akhenaton', 'Ramsés III'], certa: 2, exp: 'Akhenaton (c. 1352 – 1336 a.C.) fundou Amarna e promoveu o culto de Aton.' },
+  { p: 'Quem foi Hatshepsut?', op: ['Uma deusa', 'Uma mulher que reinou como faraó, c. 1473 – 1458 a.C.', 'A mãe de Cleópatra', 'Uma escriba'], certa: 1, exp: 'Hatshepsut governou com todos os títulos de rei e construiu o templo de Deir el-Bahari.' },
+  { p: 'Em que ano Howard Carter descobriu o túmulo de Tutankhamon?', op: ['1972', '1822', '1899', '1922'], certa: 3, exp: 'Em novembro de 1922, no Vale dos Reis. O túmulo (KV62) estava quase intacto.' },
+  { p: 'Qual era a escrita monumental dos egípcios?', op: ['Os hieróglifos', 'O alfabeto latino', 'O linear B', 'O cuneiforme'], certa: 0, exp: 'Os hieróglifos escreviam-se em templos e túmulos; no dia a dia usava-se o hierático e, mais tarde, o demótico.' },
+  { p: 'O que permitiu a Champollion decifrar os hieróglifos em 1822?', op: ['O Livro dos Mortos', 'As cartas de Amarna', 'A Pedra de Roseta, com o mesmo texto em três escritas', 'Uma estátua de Ramsés II'], certa: 2, exp: 'A Pedra de Roseta tem um decreto de 196 a.C. em hieróglifos, demótico e grego.' },
+  { p: 'Quem eram os hicsos?', op: ['Piratas gregos', 'Os construtores de Abu Simbel', 'Um povo núbio', 'Governantes de origem do Levante que dominaram o Delta'], certa: 3, exp: 'Os hicsos governaram o norte, com capital em Avaris, durante o 2.º Período Intermédio.' },
+  { p: 'Que batalha, c. 1274 a.C., opôs Ramsés II aos hititas?', op: ['Megido', 'Kadesh', 'Termópilas', 'Actium'], certa: 1, exp: 'Kadesh foi seguida, c. 1259 a.C., pelo mais antigo tratado de paz conhecido.' },
+  { p: 'Em que ano o Egito se tornou província romana, após a morte de Cleópatra VII?', op: ['30 a.C.', '1 d.C.', '641 d.C.', '332 a.C.'], certa: 0, exp: 'Em 30 a.C., depois da derrota de Cleópatra e António em Áccio (31 a.C.).' },
+  { p: 'Quanto durava, aproximadamente, a mumificação?', op: ['Um dia', 'Uma semana', 'Cerca de setenta dias', 'Dois anos'], certa: 2, exp: 'Cerca de quarenta dias de secagem com natrão e o restante em preparação e enfaixamento.' },
+  { p: 'Que famoso salvamento da UNESCO, nos anos 1960, moveu um templo antes de a Barragem de Assuão inundar a região?', op: ['A Esfinge', 'Abu Simbel', 'O Vale dos Reis', 'Karnak'], certa: 1, exp: 'Os templos de Abu Simbel foram cortados em blocos e remontados mais alto, entre 1964 e 1968.' }
+];
+
+export default {
+  id: 'egito',
+  cor: '#d9b44a',
+  emblema: '../assets/img/egito.png',
+  grupo: { ...GRUPO, aqui: '' },
+  nome:    { pt: 'Egito Antigo', en: 'Ancient Egypt' },
+  periodo: { pt: 'c. 3100 a.C. – 30 a.C.', en: 'c. 3100 BC – 30 BC' },
+  visao:          { pt: visao, en: EN.visao },
+  linha:          { pt: linha, en: EN.linha },
+  mapa:           { pt: mapa, en: EN.mapa },
+  sociedade:      { pt: sociedade, en: EN.sociedade },
+  personalidades: { pt: personalidades, en: EN.personalidades },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
+  quiz:           { pt: quiz, en: EN.quiz }
+};

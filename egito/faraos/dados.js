@@ -1,0 +1,425 @@
+// OS FARAÓS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
+// Cronologia de referência: Ian Shaw (ed.), The Oxford History of Ancient Egypt, 2000, para as grandes fases e dinastias; datas de reinados arredondadas e dadas com «c.».
+// Imagens: cada {img:'id'} procura o ficheiro  egito/faraos/img/id.jpg  (ver IMAGENS_EGITO_FARAOS.md).
+import EN from './dados-en.js';
+import CRED from './creditos.js';
+import { GRUPO } from '../grupo.js';
+
+const visao = [
+  { caixa: 'Em resumo', texto: [
+    'O **faraó** era o rei do Egito: o chefe do Estado, comandante do exército, juiz supremo e, sobretudo, o intermediário entre os deuses e os homens. Durante cerca de três mil anos, de c. 3100 a.C. até à morte de Cleópatra VII em 30 a.C., o Egito foi governado por uma sucessão de reis que os historiadores, seguindo o sacerdote egípcio Manethon, agrupam em **31 dinastias**, mais a época dos reis macedónios e ptolemaicos.',
+    'Esta página não conta a história do país época a época (para isso vá às páginas do Reino Antigo, Médio, Novo, da Época Tardia e dos Ptolemeus e romanos), mas explica **o que era um faraó**: como se chamava, que coroas usava, que cerimónias o legitimavam, como se sucedia, como se apagava a memória de um rei, e depois apresenta 30 faraós e rainhas que marcaram a história do Egito.'
+  ] },
+  { img: 'efa-mascara-tutankhamon', leg: 'Máscara funerária de ouro de Tutankhamon, fotografada no Museu Egípcio do Cairo (JE 60672).' },
+  { h: 'A palavra «faraó»' },
+  'A palavra «faraó» vem do egípcio **per-aa**, «a Grande Casa», que designava o palácio, isto é, a instituição real. Só no **Reino Novo** (a partir da Dinastia 18) passou a ser usada também para a pessoa do rei, e só muito mais tarde se tornou o nome corrente. Passou ao hebraico (*Par’oh*) e ao grego (*Pharaó*), e dali às línguas europeias. Os próprios egípcios chamavam ao rei **nesut-bity**, «aquele do junco e da abelha», isto é, rei do Alto e do Baixo Egito, ou ainda «Sua Majestade» (*hem-ef*).',
+  { h: 'Um rei-deus?' },
+  'O faraó não era um deus como os outros, mas também não era um simples mortal. Os egípcios diziam que o rei vivo era a encarnação do deus **Hórus**, filho de Osíris, e que era «filho de Rá» (o deus Sol). Depois de morrer, identificava-se com **Osíris**, senhor do além, e o seu sucessor passava a ser o novo Hórus. Os egiptólogos discutem até que ponto os egípcios o consideravam divino: os textos mostram que ele era visto como um ser de natureza especial, ponte entre a esfera divina e a humana, mas obrigado, tal como os homens, a cumprir o seu dever para com os deuses.',
+  { img: 'efa-serekh-djet', leg: 'Estela de Djet, falcão sobre o serekh, Louvre (E 11007).' },
+  { h: 'Ma’at: a ordem que o faraó mantém' },
+  'A tarefa central do faraó era manter a **ma’at**: a ordem, a verdade e a justiça do universo, personificadas numa deusa com uma pena na cabeça. A ma’at era o oposto da **isfet**, o caos, a mentira e a desordem. O rei mantinha-a de três maneiras: **realizando o culto** aos deuses (construindo templos, fazendo oferendas), **defendendo o Egito** dos inimigos e **fazendo justiça** aos seus súbditos. Nos relevos, ele é representado a oferecer a ma’at aos deuses, e vence sempre os inimigos, mesmo quando, na realidade, houve empate ou derrota.',
+  { img: 'efa-corte-faraonica', leg: 'Audiência numa corte faraónica do Reino Novo, c. 1350 a.C.: faraó com coroa azul, vizir, escribas e atendentes. Ilustração gerada por IA.' },
+  { h: 'O que o faraó fazia' },
+  { lista: [
+    '**Chefe religioso:** em teoria, o único sacerdote de todos os templos; na prática, os sacerdotes agiam em seu nome.',
+    '**Chefe do Estado:** nomeava o vizir, os governadores dos nomos (as províncias) e os altos funcionários; era a fonte da lei, embora os egípcios não tivessem um código de leis escrito que se conheça.',
+    '**Chefe militar:** comandava o exército; nas inscrições, é ele quem derrota os inimigos, e alguns reis, como Tutmés III e Ramsés II, lideraram de facto as campanhas.',
+    '**Proprietário simbólico da terra:** o Egito era a «propriedade» do rei, que a administrava através de funcionários e templos; as terras e os rendimentos pagavam os impostos em cereais, gado e trabalho.',
+    '**Garante da cheia do Nilo:** o êxito das colheitas dependia da cheia anual, e uma má cheia era sinal de que a ma’at fora quebrada.'
+  ] },
+  { h: 'O faraó na prática' },
+  'A imagem do rei todo-poderoso é a que aparece nas inscrições oficiais, mas na prática o faraó dependia de uma burocracia (o **vizir**, os escribas, os governadores), dos sacerdotes (cujo poder cresceu enormemente no Reino Novo) e do exército. Houve reis fortes, que reorganizaram o país, e reis fracos, a quem os funcionários governaram; houve reis assassinados, golpes de palácio e usurpações. A teoria era a de um poder absoluto; a realidade era um equilíbrio entre o rei, a corte, os templos e as províncias.',
+  { h: 'Mulheres no trono' },
+  'O trono era normalmente ocupado por um homem, mas houve mulheres que governaram: **Merneith** (Dinastia 1, provavelmente regente), **Sobekneferu** (fim da Dinastia 12), **Hatshepsut** (Dinastia 18), **Twosret** (fim da Dinastia 19) e **Cleópatra VII** (Época Ptolemaica). Algumas outras, como Nitócris, que Heródoto menciona, são figuras lendárias ou de existência duvidosa. As rainhas, mesmo sem reinar, tiveram muito poder, em especial as **Grandes Esposas Reais**.',
+  { h: 'Como se conta o tempo dos faraós' },
+  'Os egípcios não numeravam os anos a partir de um acontecimento fixo: contavam-nos pelos **anos de reinado** de cada rei («ano 5 do rei X»). Manethon, um sacerdote de Sebenito que escreveu em grego, no século III a.C., sob Ptolemeu II (o seu livro, a *Aegyptiaca*, perdeu-se, mas chegou até nós em resumos), dividiu os reis em **30 dinastias** (os persas da Dinastia 31 foram acrescentados mais tarde). Os egiptólogos conservam este esquema, juntando-lhe períodos como o Reino Antigo, o Médio e o Novo, e os Períodos Intermédios, que são épocas de divisão política.',
+  { caixa: 'Cronologia: uma nota de cautela', texto: 'As datas desta página seguem a cronologia de **Ian Shaw** (*The Oxford History of Ancient Egypt*, 2000), em particular para os limites dos grandes períodos, e vêm sempre com **«c.»**. Outras cronologias aceites (Hornung, Krauss e Warburton, 2006; von Beckerath, 1997) diferem **alguns anos** no Reino Novo e **décadas, ou mais, antes do Reino Médio**. Depois de 664 a.C., as datas são muito mais firmes, porque há fontes gregas e babilónicas que as cruzam.' },
+  { h: 'Porque importam' },
+  { lista: [
+    '**A monarquia mais longa da história:** uma instituição com 3000 anos de continuidade, só interrompida por períodos de divisão e pela dominação de estrangeiros (que, em geral, adotaram os títulos e o cerimonial do faraó).',
+    '**Um modelo de poder sagrado:** a ideia de um rei que é também figura religiosa influenciou o Mediterrâneo antigo, de Alexandre aos imperadores romanos.',
+    '**Monumentos e arte:** das pirâmides aos templos de Karnak e de Abu Simbel, quase tudo o que se visita no Egito foi mandado erguer por um faraó.',
+    '**Registos escritos:** as listas reais, os anais e as estelas permitem uma cronologia que não existe, com este pormenor, para quase nenhuma outra civilização antiga.'
+  ] },
+  { caixa: 'Os faraós hoje', texto: 'Quase todos os faraós conhecidos foram sepultados em pirâmides ou em túmulos escavados na rocha, e muitos foram saqueados na própria Antiguidade. Os corpos de cerca de vinte reis e rainhas sobreviveram e estão hoje no **Museu Nacional da Civilização Egípcia**, no Cairo, para onde foram transferidos num cortejo solene em abril de 2021. O tesouro de Tutankhamon, o único túmulo real do Reino Novo encontrado quase intacto, está no **Grande Museu Egípcio**, inaugurado em Gizé em 2025.' }
+];
+
+const linha = [
+  'Esta linha do tempo segue a história política do Egito através dos reis mais importantes. As datas são aproximadas, na cronologia de Shaw (2000); antes do Reino Médio a margem de erro é de décadas, e mesmo no Reino Novo pode chegar a alguns anos. Para o detalhe de cada época, veja as páginas respetivas.',
+  { linha: [
+    { d: 'c. 3200 – 3100 a.C.', t: 'Dinastia 0: os primeiros reis', x: 'Em Abidos, no túmulo U-j, foram achadas etiquetas com sinais que são das mais antigas escritas do Egito, e o túmulo de um governante poderoso. Os nomes de alguns chefes («Escorpião», «Crocodilo») são conhecidos, mas **não se sabe** se eram reis de um Egito já unificado, e a sua ordenação é debatida. Os egiptólogos chamam-lhe «Dinastia 0».' },
+    { d: 'c. 3100 a.C.', t: 'Narmer e a unificação', x: 'A **paleta de Narmer** mostra o rei com a coroa branca do sul e com a vermelha do norte. A tradição egípcia atribuiu a unificação a um rei chamado **Menés**, que pode ser Narmer ou o seu sucessor Aha: a questão é debatida. A unificação foi, muito provavelmente, um processo gradual e não uma conquista única.' }
+  ] },
+  { img: 'efa-narmer-paleta', leg: 'Verso da Paleta de Narmer, Museu Egípcio, Cairo (JE 32169).' },
+  { linha: [
+    { d: 'c. 3100 – 2686 a.C.', t: 'Dinastias 1 e 2: o Período Tinita', x: 'Os reis (Aha, Djer, Den, Khasekhemwy e outros) são sepultados em **Abidos**, no Alto Egito, e mandam construir a capital em **Mênfis**, na junção das duas terras. Neste período surgem a titulatura real, o **serekh** e o primeiro Estado administrado por escribas. Na Dinastia 2, houve rivalidades religiosas entre o culto de Hórus e o de Seth (o rei Peribsen usou o nome de Seth).' },
+    { d: 'c. 2667 – 2648 a.C.', t: 'Djoser e a pirâmide de degraus', x: '**Djoser**, da Dinastia 3, manda o arquiteto **Imhotep** erguer em Saqqara a primeira grande construção em pedra do Egito, a **pirâmide de degraus**, rodeada por um complexo de templos e de edifícios para a festa Heb-Sed.' }
+  ] },
+  { img: 'efa-djoser-estatua', leg: 'Estátua de Djoser do serdab de Saqqara, Museu Egípcio (JE 49158).' },
+  { linha: [
+    { d: 'c. 2613 – 2589 a.C.', t: 'Snefru, o construtor de pirâmides', x: '**Snefru**, fundador da Dinastia 4, constrói (ou termina) várias pirâmides: a de Meidum, a **Pirâmide Curvada** e a **Pirâmide Vermelha**, em Dahshur, a primeira pirâmide verdadeira de lados lisos. Foi lembrado, séculos depois, como um bom rei.' },
+    { d: 'c. 2589 – 2566 a.C.', t: 'Khufu e a Grande Pirâmide', x: '**Khufu** (Quéops, em grego) constrói a **Grande Pirâmide de Gizé**, com cerca de 146 m de altura original, o monumento mais alto do mundo durante quase quatro mil anos. Não foi construída por escravos: era uma obra do Estado com trabalhadores pagos e alimentados (veja a página «Monumentos e sítios»).' }
+  ] },
+  { img: 'efa-gize-piramides', leg: 'As três grandes pirâmides de Gizé.' },
+  { linha: [
+    { d: 'c. 2558 – 2503 a.C.', t: 'Khafre e Menkaure', x: 'O filho (**Khafre**) e o neto (**Menkaure**) de Khufu constroem as outras duas pirâmides de Gizé. A **Esfinge** costuma ser atribuída a Khafre, embora a atribuição não seja absolutamente certa. Menkaure faz uma pirâmide bem mais pequena, mas com revestimento de granito.' },
+    { d: 'c. 2494 – 2345 a.C.', t: 'Dinastia 5: o culto de Rá', x: 'Os reis passam a construir **templos solares** em Abusir e a acrescentar «filho de Rá» ao nome. No fim da dinastia, as paredes da pirâmide do rei **Unas** (c. 2345 a.C.) são as primeiras a ter os **Textos das Pirâmides**, fórmulas rituais para a vida no além.' },
+    { d: 'c. 2345 – 2181 a.C.', t: 'Dinastia 6 e Pepi II', x: 'Os governadores locais ganham poder. **Pepi II** sobe ao trono ainda criança e a tradição dá-lhe um reinado de mais de noventa anos, o mais longo da história egípcia, mas os documentos da época só chegam ao ano 62 e muitos egiptólogos propõem cerca de 64 anos. À sua morte, c. 2184 a.C., o Estado desfaz-se.' },
+    { d: 'c. 2181 – 2055 a.C.', t: 'O Primeiro Período Intermédio', x: 'O poder real enfraquece. Reis efémeros em Mênfis (Dinastias 7 e 8), uma dinastia em **Heracleópolis** (9 e 10) e outra em **Tebas** (11) disputam o país. Fome, cheias baixas e guerras civis marcam os textos, mas a verdadeira dimensão da «crise» é debatida.' },
+    { d: 'c. 2055 – 2004 a.C.', t: 'Mentuhotep II reunifica o país', x: '**Mentuhotep II**, de Tebas, derrota os reis de Heracleópolis e reúne o Egito por volta de 2055 a.C., fundando o **Reino Médio**. A sua tumba-templo em Deir el-Bahari é um modelo para os monumentos seguintes.' }
+  ] },
+  { img: 'efa-mentuhotep-ii-estatua', leg: 'Estátua de Mentuhotep II com coroa vermelha, Museu Egípcio (JE 36195).' },
+  { linha: [
+    { d: 'c. 1985 – 1956 a.C.', t: 'Amenemhat I e a Dinastia 12', x: 'O antigo vizir **Amenemhat I** funda a Dinastia 12 e muda a capital para **Itjtawy**, perto do Faium. Foi provavelmente assassinado, e o seu sucessor **Senusret I**, que governava já com ele numa **corregência**, assumiu o poder sem problemas. A «História de Sinuhe» e os «Ensinamentos de Amenemhat» podem referir-se a estes acontecimentos.' },
+    { d: 'c. 1870 – 1831 a.C.', t: 'Senusret III', x: 'Reorganiza a administração, reduz o poder dos governadores locais e fortifica a fronteira da **Núbia** com enormes fortalezas em Buhen e Semna. As suas estátuas, de rosto grave e cansado, são das mais célebres da arte egípcia.' },
+    { d: 'c. 1831 – 1786 a.C.', t: 'Amenemhat III', x: 'Um dos reinados mais longos (cerca de 45 anos) e mais prósperos do Reino Médio: grandes obras de irrigação no **Faium**, minas no Sinai, e duas pirâmides (Dahshur e **Hawara**). Os Gregos chamaram «Labirinto» ao seu templo funerário, em Hawara.' },
+    { d: 'c. 1777 – 1773 a.C.', t: 'Sobekneferu e o fim da Dinastia 12', x: '**Sobekneferu**, provável filha de Amenemhat III, é a primeira mulher que se sabe com segurança ter reinado como faraó. Com ela acaba a Dinastia 12; a Dinastia 13 ainda mantém o país unido durante um tempo, mas o poder central desagrega-se até ao Segundo Período Intermédio.' },
+    { d: 'c. 1650 – 1550 a.C.', t: 'Os hicsos', x: 'Chefes de origem asiática, os **hicsos** (Dinastia 15), dominam o Delta a partir de **Avaris**, enquanto reis egípcios, em Tebas (Dinastia 17), mantêm o sul. A palavra «hicsos» vem do egípcio *heqa-khasut*, «governantes de terras estrangeiras». Foram eles que trouxeram ao Egito o carro de guerra e o cavalo.' },
+    { d: 'c. 1550 – 1525 a.C.', t: 'Ahmés I expulsa os hicsos', x: '**Ahmés I** toma Avaris e reunifica o Egito, fundando a Dinastia 18 e o **Reino Novo**. O seu irmão **Kamose** já iniciara a guerra, e há quem o considere o verdadeiro começo da reconquista: a divisão do mérito entre ambos é debatida.' },
+    { d: 'c. 1473 – 1458 a.C.', t: 'Hatshepsut, rei do Egito', x: 'Primeiro regente do jovem Tutmés III, **Hatshepsut** assume o título de rei por volta de 1473 a.C., e governa durante cerca de 15 anos, num reinado pacífico e de grandes obras, como o templo de **Deir el-Bahari** e a expedição ao país de **Punt**.' },
+    { d: 'c. 1479 – 1425 a.C.', t: 'Tutmés III, o rei guerreiro', x: 'Sozinho no poder desde c. 1458 a.C., conduz cerca de **17 campanhas** na Síria-Palestina, com a vitória de **Megido** (c. 1457 a.C.). O Egito atinge a maior extensão da sua história, do Eufrates à quarta catarata do Nilo.' }
+  ] },
+  { img: 'efa-hatshepsut-estatua', leg: 'Estátua colossal ajoelhada de Hatshepsut, Metropolitan Museum.' },
+  { linha: [
+    { d: 'c. 1390 – 1352 a.C.', t: 'Amenófis III, o rei da paz e da riqueza', x: 'Reinado pacífico e de esplendor: **Luxor**, os **Colossos de Mémnon**, centenas de estátuas, uma correspondência diplomática com os reis de Babilónia, Mitani e Arzawa (as «cartas de Amarna») e três festas Heb-Sed.' },
+    { d: 'c. 1352 – 1336 a.C.', t: 'Akhenaton e Amarna', x: '**Amenófis IV**, que muda o nome para **Akhenaton**, impõe o culto do disco solar **Aton**, funda uma nova capital, **Akhetaton** (Amarna), e muda por completo o estilo da arte. Depois da sua morte, a cidade é abandonada e o seu nome apagado.' }
+  ] },
+  { img: 'efa-akhenaton-colosso', leg: 'Colosso de Akhenaton de Karnak, Museu Egípcio do Cairo.' },
+  { linha: [
+    { d: 'c. 1336 – 1295 a.C.', t: 'De Tutankhamon a Horemheb', x: '**Tutankhamon** (c. 1336 – 1327 a.C.) restaura o culto de Amon e regressa a Mênfis e Tebas. Depois de **Ay** (c. 1327 – 1323 a.C.), o general **Horemheb** (c. 1323 – 1295 a.C.) reorganiza o Estado e apaga a memória dos reis de Amarna, fechando a Dinastia 18.' },
+    { d: 'c. 1294 – 1213 a.C.', t: 'Seti I e Ramsés II', x: 'A Dinastia 19 inicia-se com **Ramsés I** e continua com **Seti I** (c. 1294 – 1279 a.C.), que recupera territórios na Síria, e com **Ramsés II** (c. 1279 – 1213 a.C.), que reina 66 anos, trava a batalha de **Qadesh** (c. 1274 a.C.) e assina com os hititas o mais antigo tratado de paz de que se conserva o texto (c. 1259 a.C.).' }
+  ] },
+  { img: 'efa-ramses-ii-estatua', leg: 'Estátua de Ramsés II, Museo Egizio, Turim (C. 1380).' },
+  { linha: [
+    { d: 'c. 1184 – 1153 a.C.', t: 'Ramsés III e os Povos do Mar', x: 'O último grande rei do Reino Novo derrota os **Povos do Mar** e os líbios, mas o Estado enfraquece, com greves, inflação e uma **conspiração do harém** que o terá custado a vida. Os sucessores (Ramsés IV a XI) vão perdendo poder.' },
+    { d: 'c. 1069 – 945 a.C.', t: 'Dinastias 21 e 22: Tânis, Tebas e os líbios', x: 'Com o fim do Reino Novo, o país divide-se: reis em **Tânis** (Dinastia 21), no Delta, e sumos sacerdotes de Amon em **Tebas**. Por volta de 945 a.C., **Xeshonq I**, descendente de chefes líbios, reunifica o país e funda a Dinastia 22.' },
+    { d: 'c. 747 – 656 a.C.', t: 'Os reis núbios (Dinastia 25)', x: 'Os reis de Kush (a Núbia), vindos de **Napata**, com **Piye** (rei desde c. 747 a.C.), conquistam o Egito e governam-no durante cerca de 90 anos. **Taharqa** (c. 690 – 664 a.C.) é o mais importante, até ser expulso pelos assírios.' }
+  ] },
+  { img: 'efa-taharqa-esfinge', leg: 'Esfinge de Taharqa de Kawa, Museu Britânico.' },
+  { linha: [
+    { d: '664 – 332 a.C.', t: 'Saítas, persas e últimos reis nativos', x: '**Psamtik I** (664 – 610 a.C.) funda a Dinastia 26 em Sais e reúne o país. Os persas conquistam o Egito em 525 a.C. (Dinastia 27). Depois de uma curta independência (Dinastias 28 a 30), com **Nectanebo II** (360 – 343 a.C.) como último rei egípcio nativo, regressam em 343 a.C. (Dinastia 31) até à chegada de Alexandre, em 332 a.C.' },
+    { d: '305 – 30 a.C.', t: 'Ptolemeus e Cleópatra VII', x: 'Depois da morte de Alexandre, o general **Ptolemeu** (rei desde 305 a.C.) funda uma dinastia macedónia que reina durante 275 anos a partir de Alexandria. A última, **Cleópatra VII**, morre em 30 a.C., e o Egito torna-se província de Roma. Os imperadores romanos continuam a ser representados como faraós nos templos.' }
+  ] },
+  { img: 'efa-cleopatra-busto', leg: 'Busto de Cleópatra VII com diadema, Altes Museum, Berlim.' }
+];
+
+const mapa = [
+  'Os faraós não tinham uma única capital: mudavam de residência conforme a dinastia, a política e a defesa do reino. Em geral, havia uma **capital administrativa** (junto ao vértice do Delta, perto de Mênfis, ou no Delta oriental), uma **cidade religiosa** (Tebas, com o deus Amon) e **necrópoles reais** onde os reis eram sepultados.',
+  { img: 'efa-mapa-egito', leg: 'Mapa do Egito Antigo com as cidades principais.' },
+  { tabela: { cab: ['Cidade', 'Nome egípcio / grego', 'Período principal', 'Local hoje'], linhas: [
+    ['Hieracômpolis', 'Nekhen', 'Pré-dinástico', 'Kom el-Ahmar, Alto Egito'],
+    ['Abidos / Tinis', 'Abdju / Tjeni', 'Dinastias 1 e 2 (túmulos)', 'Abydos (Umm el-Qa’ab)'],
+    ['Mênfis', 'Ineb-hedj, «Muralhas Brancas»; Men-nefer', 'Dinastias 1 a 8 e depois, de forma intermitente', 'Mit Rahina, perto do Cairo'],
+    ['Heracleópolis', 'Henen-nesut', 'Dinastias 9 e 10', 'Ihnasya el-Medina, Médio Egito'],
+    ['Tebas', 'Waset; Diospolis Magna', 'Dinastias 11, 17 e 18 a 20 (residência ocasional)', 'Luxor e Karnak'],
+    ['Itjtawy', '«Conquistadora das Duas Terras»', 'Dinastia 12', 'Perto de Lisht, junto ao Faium'],
+    ['Avaris', 'Hut-waret', 'Dinastia 15 (hicsos)', 'Tell el-Dab’a, Delta oriental'],
+    ['Akhetaton', '«Horizonte de Aton»', 'c. 1346 – 1332 a.C. (Akhenaton)', 'Tell el-Amarna, Médio Egito'],
+    ['Pi-Ramessés', '«Casa de Ramsés»', 'Dinastias 19 e 20', 'Qantir, Delta oriental'],
+    ['Tânis', 'Djanet', 'Dinastias 21 e 22', 'San el-Hagar, Delta oriental'],
+    ['Sais', 'Sau', 'Dinastia 26 (saíta)', 'Sa el-Hagar, Delta ocidental'],
+    ['Alexandria', 'Rhakotis / Alexandreia', '331 a.C. – 641 d.C. (capital ptolemaica)', 'Alexandria, Egito']
+  ] } },
+  { h: 'Hieracômpolis e Abidos: o berço' },
+  'Antes das dinastias, **Hieracômpolis** (*Nekhen*, «Cidade do Falcão») era um grande centro do Alto Egito, onde foi achada a paleta de Narmer. **Abidos** foi a necrópole dos primeiros reis (Dinastias 0, 1 e 2), em Umm el-Qa’ab, a «mãe dos potes», e tornou-se, mais tarde, o lugar sagrado de Osíris, onde muitos reis (como Seti I) mandaram construir templos ou cenotáfios, túmulos simbólicos, para participarem na sua ressurreição.',
+  { h: 'Mênfis: a capital das Duas Terras' },
+  'Fundada, segundo a tradição, pelo rei Menés no limite entre o Alto e o Baixo Egito, **Mênfis** foi a capital do Reino Antigo e, em muitos períodos, a principal sede administrativa do país. O seu deus era **Ptah**, o deus-criador e dos artesãos. Dali partiam os reis para as necrópoles do deserto ocidental. Os monumentos de Mênfis desapareceram em grande parte (foram reaproveitados como pedreira pelo Cairo medieval), mas as pirâmides de Saqqara, Gizé, Abusir e Dahshur, junto a ela, ainda existem.',
+  { img: 'efa-menfis-reconstrucao', leg: 'Reconstrução artística conjetural de Mênfis no Reino Novo, c. 1300 a.C., com templo de Ptah, palácio e porto no Nilo. Ilustração gerada por IA.' },
+  { h: 'As necrópoles do Reino Antigo e Médio' },
+  'As pirâmides alinham-se na margem ocidental do Nilo, o lado do pôr do sol e do reino dos mortos: **Saqqara** (Djoser, Unas, Teti e Pepi II), **Dahshur** (Snefru e Senusret III), **Meidum**, **Gizé** (Khufu, Khafre e Menkaure), **Abusir** (Dinastia 5), **Lisht** (Amenemhat I e Senusret I), **Hawara** e **Lahun** (Amenemhat III e Senusret II), no Faium. No Reino Novo deixaram de se construir pirâmides reais: os reis passaram a ser sepultados em túmulos escavados na rocha, em Tebas.',
+  { h: 'Tebas e o Vale dos Reis' },
+  '**Tebas** (*Waset*) foi a cidade de **Amon** e, desde a Dinastia 18, a «capital religiosa» do império. Na margem oriental ficam os templos de **Karnak** e de **Luxor**; na margem ocidental, a «cidade dos mortos»: o **Vale dos Reis** (cerca de 63 túmulos numerados KV1 a KV63, desde Tutmés I ou pouco depois, até Ramsés XI), o **Vale das Rainhas**, os grandes templos funerários («templos de milhões de anos») de Hatshepsut, Amenófis III, Ramsés II (Ramesseu) e Ramsés III (Medinet Habu), e a aldeia de **Deir el-Medina**, dos artesãos que decoravam os túmulos.',
+  { img: 'efa-vale-reis', leg: 'Vale dos Reis, Tebas Ocidental.' },
+  { h: 'Itjtawy, o Faium e os últimos reis do Reino Médio' },
+  'A Dinastia 12 mudou a capital para **Itjtawy** («Conquistadora das Duas Terras»), que ainda não foi localizada com certeza; ficaria perto de **Lisht**, onde estão as pirâmides de Amenemhat I e de Senusret I. Os reis fizeram do **Faium**, um oásis fértil, uma região agrícola através de obras de drenagem e irrigação (Amenemhat III), e ergueram ali as pirâmides de Hawara e de Lahun.',
+  { h: 'Avaris: a capital dos hicsos' },
+  '**Avaris** (*Hut-waret*), hoje **Tell el-Dab’a**, no Delta oriental, era uma grande cidade de população do Levante, com templos de estilo sírio e sepulturas de guerreiros. Foi a capital dos reis hicsos e foi tomada por Ahmés I (c. 1550 a.C.). Foram também achados ali frescos de estilo minoico, com touros e acrobatas, que sugerem contactos com o Egeu.',
+  { h: 'Akhetaton (Amarna): a cidade de um só deus' },
+  'Em c. 1346 a.C., Akhenaton fundou numa baía no Nilo uma capital inteiramente nova, **Akhetaton**, «o Horizonte de Aton», hoje **Tell el-Amarna**. Foi construída em poucos anos e abandonada pouco depois da sua morte. Foram achados os palácios, os templos abertos ao sol, os bairros de habitação, os túmulos dos nobres e o arquivo de tabuinhas de argila com a correspondência diplomática (cartas de Amarna). Ali estava a oficina do escultor **Tutmés (Thutmose)**, onde foi achado o busto de Nefertiti.',
+  { img: 'efa-amarna-reconstrucao', leg: 'Reconstrução artística conjetural de Akhetaton (Amarna), c. 1340 a.C.: templo aberto de Aton, Estrada Real e palácios; disco de Aton com raios terminados em mãos como motivo religioso simbólico. Ilustração gerada por IA.' },
+  { h: 'Pi-Ramessés: a capital de Ramsés II' },
+  'A «Casa de Ramsés», no Delta oriental, perto da fronteira asiática, foi a nova residência de Ramsés II e dos reis da Dinastia 19, e a base para as campanhas contra os hititas. A Bíblia fala de uma cidade chamada «Ramessés», que alguns ligam ao Êxodo, mas essa ligação é muito discutida. Foi identificada em **Qantir** e, depois de um braço do Nilo mudar de curso, no fim do Reino Novo, a cidade foi desmantelada e os monumentos levados para **Tânis**.',
+  { img: 'efa-pi-ramesses-reconstrucao', leg: 'Reconstrução artística conjetural de Pi-Ramesses, c. 1250 a.C., com cais, templos, palácios e instalações para carros de guerra. Ilustração gerada por IA.' },
+  { h: 'Tânis: a capital e os túmulos de ouro' },
+  '**Tânis** (*San el-Hagar*) foi a capital das Dinastias 21 e 22. Ali, em 1939, o arqueólogo francês Pierre Montet descobriu **túmulos reais intactos**, entre os quais o de **Psusennes I**, com a máscara de ouro e o sarcófago de prata, hoje no Museu Egípcio do Cairo. Muitos dos obeliscos e estátuas de Ramsés II que aqui se encontraram foram, na verdade, levados de Pi-Ramessés.',
+  { h: 'Napata, El-Kurru e Nuri: a Núbia dos faraós' },
+  'Os reis da Dinastia 25, saídos de **Napata**, na Núbia (atual Sudão), junto à quarta catarata, foram sepultados em pirâmides pequenas e íngremes em **El-Kurru** (Piye) e **Nuri** (Taharqa). A região aprendeu com o Egito a arte, os cultos e os títulos, mas conservou a sua identidade: os reis núbios usavam uma coroa com dois uraei (cobras).',
+  { h: 'Sais, Mendes, Sebenito e as capitais dos últimos reis nativos' },
+  'No Delta, **Sais** (Dinastia 26), **Mendes** (Dinastia 29) e **Sebenito** (Dinastia 30) foram sucessivamente capitais dos últimos reis egípcios. Quase nada resta: o solo é húmido e foi muito remexido, e as pedras foram reutilizadas. Mas os textos gregos de Heródoto descrevem Sais, e na necrópole de Sais foram enterrados os reis saítas.',
+  { h: 'Alexandria: a capital dos Ptolemeus' },
+  'Fundada por Alexandre Magno em 331 a.C., **Alexandria** foi a capital dos Ptolemeus durante 275 anos, uma grande cidade grega no limite do Delta, com um porto, o **Farol de Faros**, o **Museu** e a **Biblioteca**. Perdeu o estatuto de capital política no fim dos Ptolemeus e continuou a ser uma das maiores cidades do Mediterrâneo. Do palácio de Cleópatra, hoje, só restam vestígios submersos no porto oriental.',
+  { h: 'Rotas e fronteiras' },
+  'O **Nilo**, que corre de sul para norte, foi a «estrada» principal do Egito, e o vento, em sentido contrário, dava a viagem de volta à vela. O Egito defendeu-se do deserto com **fortalezas na fronteira**: a nordeste, os «Muros do Governante»; a sul, as fortalezas da Núbia, de Buhen a Semna; a leste, a «Via de Hórus», que ia por Tjaru (Sile) para Gaza e a Síria-Palestina, e ao longo da qual os faraós marcharam para as campanhas.'
+];
+
+const sociedade = [
+  'Esta secção explica a «máquina» da realeza: os cinco nomes do rei, as suas insígnias e coroas, as cerimónias que o legitimavam, as regras da sucessão e a tabela das dinastias.',
+  { h: 'A titulatura real: os cinco nomes' },
+  'Cada faraó tinha uma titulatura oficial de **cinco nomes**, que se consolidou no Reino Médio. Cada um sublinhava um aspeto da realeza. Os dois últimos, escritos dentro de uma argola alongada, o **cartucho**, são os nomes pelos quais os reis são hoje conhecidos.',
+  { tabela: { cab: ['Nome', 'Em egípcio', 'O que significa', 'Exemplo (Ramsés II)'], linhas: [
+    ['1. Nome de Hórus', 'Hor', 'O rei como Hórus vivo; escrito no *serekh*, a fachada do palácio, com um falcão por cima. É o nome mais antigo.', 'Touro vigoroso, amado de Ma’at'],
+    ['2. Nome das Duas Senhoras', 'Nebty', 'O rei protegido pelas deusas-abutre Nekhbet (Alto Egito) e cobra Wadjet (Baixo Egito).', 'Protetor do Egito que subjuga os países estrangeiros'],
+    ['3. Nome de Hórus de Ouro', 'Hor-nebu', 'O rei como Hórus eterno, ligado ao ouro, símbolo do divino. O seu significado exato é debatido.', 'Rico em anos, grande em vitórias'],
+    ['4. Nome de trono (prenome)', 'Nesut-bity', 'Escolhido na coroação; «aquele do junco e da abelha». Em cartucho; costuma conter o nome de Rá.', 'Usermaatra-Setepenra («Poderosa é a Ma’at de Rá, escolhido de Rá»)'],
+    ['5. Nome de nascimento (nomen)', 'Sa-Ra', '«Filho de Rá». Em cartucho; o nome que a pessoa tinha ao nascer.', 'Ramessu-meryamun («Rá o gerou, amado de Amon»)']
+  ] } },
+  { img: 'efa-titulatura-esquema', leg: 'Esquema dos cinco nomes reais: Hórus, Nebty, Hórus de Ouro, prenome e nome. Serekh e cartuchos vazios, sem transcrição dos nomes de Ramsés II.' },
+  'Os cartuchos aparecem a partir da Dinastia 4 (com Snefru, talvez antes com Huni). Eram uma proteção mágica («aquilo que o sol circunda»), e foram a chave para a decifração dos hieróglifos por Champollion, em 1822, ao reconhecer neles os nomes de **Ptolemeu** e de **Cleópatra** (e depois o de Ramsés).',
+  { img: 'efa-cartucho', leg: 'Cartuchos de Ramsés II num obelisco em Tânis.' },
+  { h: 'As coroas e as insígnias' },
+  { tabela: { cab: ['Insígnia', 'Egípcio', 'Descrição e significado'], linhas: [
+    ['Coroa Branca', 'Hedjet', 'Alta e cónica, do Alto Egito, associada à deusa-abutre Nekhbet.'],
+    ['Coroa Vermelha', 'Deshret', 'Com uma espiral na frente, do Baixo Egito, associada à deusa-cobra Wadjet e a Neith.'],
+    ['Coroa Dupla', 'Pschent / Sekhemty', 'União das duas, símbolo do domínio sobre as Duas Terras; atestada desde a Dinastia 1.'],
+    ['Lenço real', 'Nemes', 'Tecido de listas, que cobria a cabeça e caía de cada lado do rosto; a Esfinge e a máscara de Tutankhamon usam-no.'],
+    ['Coroa Azul («de guerra»)', 'Khepresh', 'Coroa de couro ou tecido azul, com pontos dourados, usada nas batalhas e nas cerimónias a partir do Reino Novo.'],
+    ['Coroa Atef', 'Atef', 'Coroa branca com plumas e discos, ligada a Osíris e às cerimónias religiosas.'],
+    ['Uraeus', 'Iaret', 'Cobra erguida na testa do rei, que cospe fogo contra os inimigos; protege o rei.'],
+    ['Cajado e mangual', 'Heka e nekhakha', 'Os dois cetros reais, que se cruzam sobre o peito; o cajado (de pastor) e o mangual simbolizam o governo e a proteção do povo.'],
+    ['Barba postiça', '—', 'Atada ao queixo, com a ponta curva nos deuses e reta nos reis; usada pelos faraós, incluindo mulheres como Hatshepsut.']
+  ] } },
+  { img: 'efa-coroas-esquema', leg: 'Coroas e toucado faraónicos, da esquerda para a direita: Hedjet, Deshret, Pschent, Khepresh, Atef e nemes.' },
+  { img: 'efa-cajado-mangual', leg: 'Cajado, mangual e cetro sekhem do túmulo de Tutankhamon, fotografados no Museu Egípcio do Cairo.' },
+  { h: 'A coroação' },
+  'A coroação era um processo com várias etapas, mais do que um dia. O rei era escolhido (pelo pai, por oráculos do deus ou por força), purificado, vestido com as insígnias, e **«entronizado»** no templo; recebia o nome de trono e os cinco nomes, e erguia-se simbolicamente sobre os inimigos. Havia a cerimónia da «União das Duas Terras» (*sema-tawy*), em que o rei se apresentava com as duas coroas. O templo de Hatshepsut, em Deir el-Bahari, mostra cenas da sua coroação.',
+  { img: 'efa-coroacao-cena', leg: 'Cena imaginada de coroação no Reino Novo: sacerdotes colocam a coroa dupla no jovem faraó dentro de um templo. Ilustração gerada por IA.' },
+  { h: 'A festa Heb-Sed' },
+  'A **Heb-Sed** (ou «festa do jubileu») era uma cerimónia de **renovação** do rei, que devia reafirmar a sua capacidade de reinar. Por tradição, celebrava-se no 30.º ano do reinado e, depois, a cada três ou quatro anos. O rei corria, simbolicamente, num recinto ritual, percorrendo os limites do território, e sentava-se em tronos duplos para receber de novo as coroas. Há indícios dela já no Período Tinita (sob **Den**), e o complexo de **Djoser** tem o recinto Heb-Sed mais conhecido; **Amenófis III** celebrou três e **Ramsés II**, que reinou 66 anos, celebrou mais de uma dezena. Nem todos os reis chegaram ao 30.º ano: alguns celebraram-na mais cedo.',
+  { img: 'efa-hebsed-cena', leg: 'Corrida ritual do Heb-Sed no complexo de Djoser, c. 2650 a.C.: rei com coroa branca entre marcos cerimoniais. Ilustração gerada por IA.' },
+  { h: 'A sucessão' },
+  'Não havia uma lei única de sucessão. O princípio mais comum era que o trono passasse ao **filho mais velho da Grande Esposa Real**, mas muitos reis eram filhos de esposas secundárias, e os que não tinham filhos legítimos escolhiam, ou impunham, outro candidato. Para reforçar a pretensão, os reis podiam casar com uma **princesa da linhagem anterior**, incluindo a irmã ou a meia-irmã, e, em alguns casos, afirmavam que o deus Amon tomara a forma do pai para os gerar (os chamados «textos da nascença divina», de Hatshepsut e Amenófis III). Mas houve usurpadores, generais (Horemheb), sumos sacerdotes que assumiram a titulatura real (Herihor) e chefes estrangeiros (líbios, núbios, persas, macedónios) que subiram ao trono.',
+  { h: 'A corregência' },
+  'Em vários períodos, o faraó mais velho associava o herdeiro ao trono em vida, numa **corregência**, para garantir a passagem do poder. O caso mais seguro é o de **Amenemhat I e Senusret I**, na Dinastia 12. Outros, como **Hatshepsut e Tutmés III**, são situações de co-governo, mais do que corregências no sentido estrito. A existência de corregências entre **Amenófis III e Akhenaton**, entre **Akhenaton e Smenkhkare** e entre **Seti I e Ramsés II** (que já era príncipe regente) é debatida pelos egiptólogos, e muda a cronologia do período de Amarna.',
+  { h: 'O harém e a Grande Esposa Real' },
+  'O rei tinha uma **esposa principal**, a «Grande Esposa Real» (*hemet-nesut-weret*), e várias outras esposas e concubinas. O **harém** (*per-khener*, «casa dos recintos») não era só um lugar de mulheres: era uma instituição com terras, oficinas de tecelagem e pessoal. Os faraós casavam com princesas estrangeiras para selar alianças, vindas de Mitani, da Babilónia e dos hititas, mas, segundo uma carta de Amenófis III ao rei da Babilónia, as filhas do faraó **não eram dadas em casamento a reis estrangeiros**. Ramsés II foi uma exceção: casou com uma princesa hitita, no seu 34.º ano de reinado.',
+  { h: 'Conspirações, assassínios e usurpações' },
+  'Apesar da imagem de poder absoluto, houve faraós assassinados. Amenemhat I terá sido morto por conspiradores do palácio. No tempo de Ramsés III, uma **conspiração do harém**, em que uma esposa secundária (Tiye) e o filho (Pentaweret) tentaram colocá-lo no trono, está documentada no **Papiro Judicial de Turim**, com os nomes e as penas dos conspiradores. Em 2012, um estudo com tomografia à múmia de Ramsés III mostrou um corte profundo na garganta, que explica a sua morte; mas não se sabe se o faraó morreu imediatamente.',
+  { h: 'Damnatio memoriae: apagar um rei' },
+  'Apagar o nome e a imagem de alguém era, para os egípcios, destruir a sua existência no além. Os casos mais conhecidos são os de **Hatshepsut**, cujas imagens e nome foram martelados e removidos, não logo após a morte, mas cerca de 20 anos depois, no reinado de Tutmés III (ou depois); e de **Akhenaton** e dos reis de Amarna, que ficaram de fora das listas reais de Abidos e de Saqqara. As razões de cada caso são discutidas: no de Hatshepsut, hoje pensa-se mais numa questão de **sucessão** (garantir os direitos de Amenófis II) do que numa vingança pessoal.',
+  { img: 'efa-akhenaton-familia', leg: 'Estela de Akhenaton, Nefertiti e três filhas, Neues Museum, Berlim (ÄM 14145).' },
+  { h: 'A morte e o funeral do rei' },
+  'A morte do rei era um acontecimento de Estado. O corpo era embalsamado (a mumificação durava cerca de 70 dias), e o funeral incluía um cortejo, a cerimónia da **abertura da boca** (um ritual em que se devolviam ao morto os sentidos, para poder comer, falar e respirar no além) e a colocação no túmulo, com o mobiliário, as joias e a comida para a eternidade. Do Reino Antigo ao Reino Médio, o túmulo real era normalmente uma **pirâmide**; no Reino Novo, os reis passaram a ser sepultados no **Vale dos Reis**, em túmulos escavados na rocha, com os templos funerários separados, na planície.',
+  { img: 'efa-funeral-real', leg: 'Cortejo funerário real do Reino Novo na necrópole tebana: santuário dourado sobre um trenó puxado por bois, sacerdotes, carpideiras e oferendas. Ilustração gerada por IA.' },
+  { h: 'Os faraós na guerra' },
+  'Muitas das cenas dos relevos mostram o rei a **golpear um inimigo** de cabelo agarrado, imagem que vem da paleta de Narmer. Ela é mais ritual do que descritiva: o rei triunfa sempre. Na prática, os faraós do Reino Novo comandaram exércitos com infantaria, arqueiros e **carros de guerra**; conduziram campanhas na Núbia, na Líbia e na Síria-Palestina; e formaram um exército profissional mais numeroso do que o de épocas anteriores, em que os estrangeiros tinham um papel importante.',
+  { h: 'A administração: o vizir e os funcionários' },
+  'O braço direito do faraó era o **vizir** (*tjaty*), que chefiava a justiça, a administração e as obras; no Reino Novo havia dois (Alto e Baixo Egito). Havia ainda o «Tesoureiro», o «Chefe dos Celeiros», os governadores de cada **nomo** (província), os escribas e os comandantes do exército. Os funcionários eram recompensados com terras, cargos e túmulos.',
+  { h: 'A economia do faraó' },
+  'O Estado cobrava **impostos em espécie** (cereais, linho, gado, trabalho) e armazenava-os em celeiros e armazéns do palácio e dos templos. Não havia moeda até à Época Tardia (as primeiras moedas egípcias surgem sob os persas e os gregos): as trocas faziam-se por **medidas de peso** (o *deben*, de cobre ou prata). A riqueza do faraó vinha da agricultura, do ouro da Núbia, das minas do Sinai e do deserto oriental, do comércio e, no Reino Novo, do tributo estrangeiro.',
+  { h: 'Os faraós e os estrangeiros' },
+  'Os reis egípcios receberam ou combateram vizinhos: núbios, líbios, asiáticos, hititas, assírios, persas. Também houve faraós **estrangeiros** que se tornaram egípcios no cerimonial: os **hicsos** (de origem asiática), os **líbios**, os **núbios** (Dinastia 25), os **persas** (Dinastias 27 e 31) e os **macedónios** (Ptolemeus). Cada grupo adotou a titulatura e as insígnias do faraó, o que mostra a força da instituição.',
+  { h: 'O faraó, a religião e os templos' },
+  'O rei era responsável por **construir e manter os templos**: era o seu dever e o seu meio de propaganda. Os relevos mostram-no a oferecer aos deuses, e as inscrições registam as suas doações de terras, gado e escravos. Os templos, por sua vez, tinham grande riqueza e poder, e no Reino Novo o clero de **Amon** em Tebas tornou-se quase um rival do rei. No fim do Reino Novo, os sumos sacerdotes de Amon governavam o sul.',
+  { h: 'Imagem e retrato do rei' },
+  'Os retratos reais são **idealizados**: o rei é sempre jovem, forte e sereno. Mas há exceções: as estátuas de **Senusret III** mostram um rosto grave e cansado; as de **Akhenaton**, com rosto alongado, ventre e ancas largas, são de um estilo único; as de **Ramsés II**, que viveu quase 90 anos, mostram sempre um rei jovem. Para identificar um rei, o que conta é o **nome inscrito**, mais do que o rosto.',
+  { h: 'A tabela das 31 dinastias (cronologia de Shaw, 2000)' },
+  'A lista seguinte segue a cronologia de **Ian Shaw (2000)**. Todas as datas são aproximadas e a numeração das dinastias é a de Manethon. Algumas dinastias foram contemporâneas (por exemplo, as 14.ª, 15.ª, 16.ª e 17.ª, e as 22.ª, 23.ª, 24.ª e 25.ª), por isso as datas não se somam.',
+  { h: 'Período Pré-dinástico, Tinita e Reino Antigo' },
+  { tabela: { cab: ['Dinastia', 'Datas (a.C.)', 'Capital', 'Reis e acontecimentos importantes'], linhas: [
+    ['Dinastia 0', 'c. 3200 – 3100', 'Abidos, Hieracômpolis', 'Chefes como «Escorpião»; formação do Estado'],
+    ['Dinastia 1', 'c. 3100 – 2890', 'Mênfis / Abidos', 'Narmer, Aha, Djer, Den, Qaa; escrita hieroglífica; Merneith'],
+    ['Dinastia 2', 'c. 2890 – 2686', 'Mênfis / Abidos', 'Peribsen e Khasekhemwy, rivalidade Hórus–Seth'],
+    ['Dinastia 3', 'c. 2686 – 2613', 'Mênfis', 'Djoser e Imhotep; pirâmide de degraus; Huni'],
+    ['Dinastia 4', 'c. 2613 – 2494', 'Mênfis', 'Snefru, Khufu, Djedefre, Khafre, Menkaure; pirâmides de Gizé'],
+    ['Dinastia 5', 'c. 2494 – 2345', 'Mênfis', 'Userkaf, Sahure, Niuserre, Unas; templos solares; Textos das Pirâmides'],
+    ['Dinastia 6', 'c. 2345 – 2181', 'Mênfis', 'Teti, Pepi I, Merenre, Pepi II; fim do Reino Antigo'],
+    ['Dinastias 7 e 8', 'c. 2181 – 2160', 'Mênfis', 'Reis efémeros, de que se sabe pouco; início do 1.º Intermédio']
+  ] } },
+  { h: 'Primeiro Período Intermédio e Reino Médio' },
+  { tabela: { cab: ['Dinastia', 'Datas (a.C.)', 'Capital', 'Reis e acontecimentos importantes'], linhas: [
+    ['Dinastias 9 e 10', 'c. 2160 – 2025', 'Heracleópolis', 'Khety (Aktoy); rivalidade com Tebas'],
+    ['Dinastia 11', 'c. 2125 – 1985', 'Tebas', 'Intef I a III; Mentuhotep II reunifica (c. 2055)'],
+    ['Dinastia 12', 'c. 1985 – 1773', 'Itjtawy', 'Amenemhat I, Senusret I a III, Amenemhat III, Sobekneferu'],
+    ['Dinastia 13', 'c. 1773 – c. 1650', 'Itjtawy, depois Tebas', 'Mais de 50 reis, muitos efémeros; Sobekhotep e Neferhotep'],
+    ['Dinastia 14', 'c. 1773 – c. 1650', 'Xois (Delta)', 'Reis locais do Delta, contemporâneos da 13.ª']
+  ] } },
+  { h: 'Segundo Período Intermédio e Reino Novo' },
+  { tabela: { cab: ['Dinastia', 'Datas (a.C.)', 'Capital', 'Reis e acontecimentos importantes'], linhas: [
+    ['Dinastia 15 (hicsos)', 'c. 1650 – 1550', 'Avaris', 'Apófis, Khyan; reis de origem asiática'],
+    ['Dinastia 16', 'c. 1650 – 1580', 'Tebas', 'Reis do sul, pouco documentados'],
+    ['Dinastia 17', 'c. 1580 – 1550', 'Tebas', 'Seqenenre Tao, Kamose; início da guerra contra os hicsos'],
+    ['Dinastia 18', 'c. 1550 – 1295', 'Tebas (depois Amarna)', 'Ahmés I, Hatshepsut, Tutmés III, Amenófis III, Akhenaton, Tutankhamon, Ay, Horemheb'],
+    ['Dinastia 19', 'c. 1295 – 1186', 'Pi-Ramessés', 'Ramsés I, Seti I, Ramsés II, Merneptah, Twosret'],
+    ['Dinastia 20', 'c. 1186 – 1069', 'Pi-Ramessés', 'Setnakht, Ramsés III a XI; fim do Reino Novo']
+  ] } },
+  { h: 'Terceiro Período Intermédio e Época Tardia' },
+  { tabela: { cab: ['Dinastia', 'Datas (a.C.)', 'Capital', 'Reis e acontecimentos importantes'], linhas: [
+    ['Dinastia 21', 'c. 1069 – 945', 'Tânis', 'Smendes, Psusennes I; sumos sacerdotes de Amon em Tebas'],
+    ['Dinastia 22 (líbia)', 'c. 945 – 715', 'Tânis, Bubástis', 'Xeshonq I, Osorkon I, Osorkon II'],
+    ['Dinastia 23', 'c. 818 – 715', 'Leontópolis, Tebas', 'Reis rivais da 22.ª'],
+    ['Dinastia 24', 'c. 727 – 715', 'Sais', 'Tefnakht, Bakenrenef'],
+    ['Dinastia 25 (núbia)', 'c. 747 – 656', 'Napata, Mênfis, Tebas', 'Piye, Shabaka, Shebitku, Taharqa, Tanutamon'],
+    ['Dinastia 26 (saíta)', '664 – 525', 'Sais', 'Psamtik I, Neco II, Apries, Amásis (Ahmés II), Psamtik III'],
+    ['Dinastia 27 (persa)', '525 – 404', 'Mênfis (satrapia)', 'Cambises, Dario I, Xerxes, Artaxerxes; Egito como satrapia'],
+    ['Dinastia 28', '404 – 399', 'Sais', 'Amirteu, único rei desta dinastia'],
+    ['Dinastia 29', '399 – 380', 'Mendes', 'Neferites I, Hácoris'],
+    ['Dinastia 30', '380 – 343', 'Sebenito', 'Nectanebo I e Nectanebo II, o último rei egípcio nativo'],
+    ['Dinastia 31 (persa)', '343 – 332', 'Mênfis', 'Artaxerxes III, Dario III; segunda dominação persa'],
+    ['Reis macedónios e Ptolemeus', '332 – 30', 'Alexandria', 'Alexandre, Ptolemeu I a XV, Cleópatra VII; fora das 31 dinastias de Manethon']
+  ] } },
+  { caixa: 'Debates e divergências nesta tabela', texto: 'A existência e a ordem de alguns reis da Dinastia 0, das Dinastias 7 a 8 e das Dinastias 13 a 17 são **muito incertas**. A Dinastia 16 pode ser um grupo de reis tebanos e outros reis do sul. A divisão entre as 22.ª, 23.ª e 24.ª também é debatida, e alguns egiptólogos juntam ou separam dinastias de forma diferente. Os limites de datas aqui dados podem ser **de décadas** antes do Reino Médio e de **alguns anos** no Reino Novo. A Dinastia 1 é aqui datada de c. 3100 a.C. (Narmer, segundo a datação corrente); Shaw (2000) fá-la começar por volta de 3000 a.C.' }
+];
+
+const personalidades = [
+  'Estes 30 faraós e rainhas foram escolhidos por terem marcado a história do Egito ou a memória dos modernos. As datas são aproximadas (cronologia de Shaw, 2000); quando algo é lenda, tradição ou debate, diz-se.',
+  { h: 'Narmer (c. 3100 a.C.)' },
+  'Rei do final do Período Pré-dinástico, conhecido sobretudo pela **paleta de Narmer**, achada em Hieracômpolis em 1898, que o mostra com a coroa branca e com a vermelha. Foi sepultado, provavelmente, em Abidos. A tradição egípcia atribuiu a unificação a um «Menés» que pode ser Narmer ou o seu sucessor Aha: debate-se, e a unificação foi provavelmente um processo mais longo.',
+  { h: 'Djoser (c. 2667 – 2648 a.C.)' },
+  'Rei da Dinastia 3 (o segundo ou o primeiro, conforme a lista adotada). Com o seu arquiteto **Imhotep**, ergueu em Saqqara a **pirâmide de degraus**, o primeiro grande edifício de pedra do mundo. Uma inscrição tardia (a Estela da Fome, escrita já na época ptolemaica) liga-o a uma lendária seca de sete anos: é tradição e não história.',
+  { h: 'Snefru (c. 2613 – 2589 a.C.)' },
+  'Fundador da Dinastia 4. Construiu em Meidum, em Dahshur (a **Pirâmide Curvada** e a **Pirâmide Vermelha**, a primeira de lados lisos): foi o rei que mais pedra levantou no Egito, e o que descobriu como fazer uma pirâmide verdadeira. O Papiro Westcar, escrito muito depois, apresenta-o como um rei amável. Foi o pai de Khufu.',
+  { h: 'Khufu, «Quéops» (c. 2589 – 2566 a.C.)' },
+  'Construtor da **Grande Pirâmide de Gizé**, de cerca de 146 m, com cerca de 2,3 milhões de blocos. A única imagem sua que chegou até nós é uma **estatueta de marfim** com 7,5 cm. Heródoto, cerca de dois mil anos depois, descreveu-o como um tirano que fechou os templos e usou escravos; é uma tradição sem fundamento arqueológico, e os achados em Gizé mostram trabalhadores pagos. Em 2013 foram achados no **Wadi el-Jarf** papiros de um funcionário, **Merer**, que registam o transporte de calcário para a pirâmide, os papiros inscritos mais antigos que se conhecem, e o testemunho escrito mais direto sobre a sua construção.',
+  { img: 'efa-queops-estatueta', leg: 'Estatueta de marfim de Khufu, Museu Egípcio (JE 36143).' },
+  { h: 'Khafre, «Quéfren» (c. 2558 – 2532 a.C.)' },
+  'Filho de Khufu e construtor da segunda pirâmide de Gizé, que parece a maior por estar numa elevação. A **Esfinge** costuma ser-lhe atribuída, embora a identificação, tal como a data, seja debatida. A sua estátua em diorito, com o falcão Hórus a protegê-lo, é uma obra-prima da escultura egípcia.',
+  { img: 'efa-quefren-estatua', leg: 'Estátua de Khafre em diorito, Museu Egípcio (JE 10062).' },
+  { h: 'Menkaure, «Miquerinos» (c. 2532 – 2503 a.C.)' },
+  'Filho de Khafre. A sua pirâmide é a mais pequena das três de Gizé (cerca de 65 m), mas com um revestimento de granito. As suas estátuas de grupo são famosas: as **tríades** (o rei acompanhado da deusa Hathor e de divindades dos nomos) e a **díade** do **Museu de Belas-Artes de Boston**, com o rei e a sua rainha. Heródoto fez dele um rei bom, em contraste com o pai.',
+  { img: 'efa-miquerinos-triade', leg: 'Menkaure e a rainha, Museum of Fine Arts, Boston (11.1738).' },
+  { h: 'Pepi II (c. 2278 – 2184 a.C.)' },
+  'Subiu ao trono ainda criança e, segundo o Cânone de Turim, reinou mais de 90 anos, o que seria o reinado mais longo da história egípcia; mas os documentos da época só chegam ao ano 62 e muitos egiptólogos propõem cerca de 64 anos. Uma carta sua, a um chefe de expedição, a pedir que lhe traga do sul um «anão dançarino», é famosa. No seu tempo, o poder dos governadores locais cresceu e, depois da morte, o Estado do Reino Antigo desfez-se.',
+  { h: 'Mentuhotep II (c. 2055 – 2004 a.C.)' },
+  'Rei tebano que, depois de uma guerra civil, derrotou Heracleópolis e **reunificou o Egito** por volta de 2055 a.C., iniciando o **Reino Médio**. Mandou construir, em Deir el-Bahari, um templo funerário novo, que serviu de modelo ao de Hatshepsut. Nas suas estátuas aparece com a coroa vermelha e o rosto pintado de negro, a cor de Osíris e da fertilidade.',
+  { h: 'Senusret III (c. 1870 – 1831 a.C.)' },
+  'Rei da Dinastia 12 que reforçou o poder central, reduziu a autonomia dos governadores e fortificou a fronteira da Núbia, com fortalezas em Buhen e Semna. Uma estela sua, em Semna, avisa que nenhum núbio deve passar. É lembrado pelos seus retratos de **rosto grave, olhos pesados e boca firme**, que se afastam da juventude eterna dos reis anteriores. Mandou construir uma pirâmide em Dahshur e um cenotáfio em Abidos.',
+  { img: 'efa-sesostris-iii-cabeca', leg: 'Fragmento do rosto de Senusret III, Metropolitan Museum (26.7.1394).' },
+  { h: 'Amenemhat III (c. 1831 – 1786 a.C.)' },
+  'Um dos reis de reinado mais longo (cerca de 45 anos) e mais próspero do Reino Médio. Fez grandes obras de irrigação no **Faium**, enviou expedições às minas de turquesa do Sinai e construiu duas pirâmides: uma em Dahshur, que rachou, e outra em **Hawara**. O seu templo funerário, a que os Gregos chamaram «Labirinto», não chegou até nós em bom estado. Com os seus sucessores imediatos (Amenemhat IV e Sobekneferu) terminou a Dinastia 12.',
+  { h: 'Sobekneferu (c. 1777 – 1773 a.C.)' },
+  'Provavelmente filha de Amenemhat III e **primeira mulher de que se sabe com segurança ter reinado como faraó**. Governou apenas cerca de quatro anos, o fim da Dinastia 12. Usava uma mistura de insígnias masculinas e femininas. Dela restam poucos monumentos e algumas estátuas, sem cabeça. O seu nome significa «a beleza de Sobek», o deus-crocodilo.',
+  { h: 'Ahmés I (c. 1550 – 1525 a.C.)' },
+  'Fundador da Dinastia 18 e do **Reino Novo**. Tomou Avaris e expulsou os hicsos, depois estendeu o poder egípcio à Núbia e ao sul do Levante. O irmão **Kamose** já iniciara a guerra e pode ter merecido mais mérito do que a tradição lhe dá, o que se debate. A sua múmia foi achada no esconderijo de Deir el-Bahari. A mãe, **Ahhotep I**, e a esposa, **Ahmés-Nefertari**, foram figuras de muito prestígio, esta última venerada como deusa em Tebas.',
+  { h: 'Hatshepsut (c. 1473 – 1458 a.C.)' },
+  'Filha de Tutmés I e viúva de Tutmés II, foi regente do jovem Tutmés III e, c. 1473 a.C., fez-se coroar **rei**, com a titulatura completa e a barba postiça. Reinou cerca de 15 anos, num tempo de paz e prosperidade, com a expedição ao país de **Punt**, a construção do templo de **Deir el-Bahari** e dos obeliscos de Karnak. Contou com o apoio do funcionário **Senenmut**. Imagens e nome foram apagados, mas décadas depois da sua morte. A identificação da sua múmia (KV60), proposta em 2007, é aceite por muitos mas não por todos.',
+  { h: 'Tutmés III (c. 1479 – 1425 a.C.)' },
+  'Rei durante 54 anos, mas só governou sozinho a partir de c. 1458 a.C. Conduziu cerca de **17 campanhas** na Síria-Palestina, a mais célebre em **Megido**, descrita nos anais do templo de Karnak. Criou o maior império egípcio, e foi um grande construtor. Os historiadores chamaram-lhe, por vezes, o «Napoleão do Egito», comparação que mais mostra o gosto do tempo do que informa. Dois obeliscos seus estão hoje em Londres e Nova Iorque (as «Agulhas de Cleópatra»).',
+  { img: 'efa-tutmes-iii-estatua', leg: 'Estátua de Tutmés III em grauvaque, Museu de Luxor.' },
+  { h: 'Amenófis III (c. 1390 – 1352 a.C.)' },
+  'Reinou perto de 38 anos, no período de maior esplendor e riqueza do Egito. Construiu o templo de **Luxor**, o seu templo funerário (de que restam os **Colossos de Mémnon**), o palácio de **Malqata** e deixou centenas de estátuas, entre elas as da deusa leoa **Sekhmet**. Casou com **Tiye**, que teve grande poder, e com princesas estrangeiras. A sua correspondência com os reis de Mitani e da Babilónia nas **cartas de Amarna** mostra a diplomacia da Idade do Bronze.',
+  { h: 'Akhenaton (c. 1352 – 1336 a.C.)' },
+  'Filho de Amenófis III, chamou-se Amenófis IV até ao 5.º ano de reinado, quando mudou o nome para **Akhenaton** («Aquele que serve Aton») e fundou a cidade de **Akhetaton**. Elevou o disco solar **Aton** acima dos outros deuses e fechou os cultos tradicionais, o que muitos descrevem, de forma discutível, como «monoteísmo». Mudou a arte, que ficou mais naturalista (e, em alguns casos, extremamente estilizada). Depois da morte, o culto foi abandonado e o seu nome apagado. As teorias que o ligam a Moisés ou ao monoteísmo bíblico não têm base histórica sólida.',
+  { h: 'Nefertiti (século XIV a.C.)' },
+  'Grande Esposa Real de Akhenaton, representada ao lado dele em pé de igualdade, e uma das mulheres mais conhecidas da Antiguidade, graças ao **busto** encontrado em Amarna, em dezembro de 1912, pela expedição alemã de Ludwig Borchardt, na oficina do escultor Tutmés. O seu nome significa «a bela chegou». Os pais não são conhecidos com certeza. Desaparece das inscrições por volta do ano 12 a 14 de Akhenaton, e discute-se se morreu ou se se tornou corregente com o nome de Neferneferuaten. A sua tumba ainda não foi encontrada, e a identificação de uma múmia como sua (a «Jovem Senhora» da KV35) é rejeitada pela maioria dos egiptólogos.',
+  { img: 'efa-nefertiti-busto', leg: 'Busto de Nefertiti, Neues Museum, Berlim (ÄM 21300).' },
+  { h: 'Tutankhamon (c. 1336 – 1327 a.C.)' },
+  'Subiu ao trono com cerca de 9 anos e morreu por volta dos 18 ou 19. Restaurou o culto de Amon e mudou o nome (inicialmente Tutankhaton). Era quase desconhecido até que **Howard Carter** encontrou o seu túmulo (**KV62**), em 4 de novembro de 1922, praticamente intacto, com cerca de 5400 objetos. Estudos de ADN (2010) sugerem que era filho do rei da múmia KV55 (provavelmente Akhenaton) e de uma irmã deste; a causa da morte é debatida (fratura da perna infetada, malária, doença óssea). A «maldição do faraó» é uma invenção da imprensa.',
+  { img: 'efa-tutankhamon-trono', leg: 'Pormenor do encosto do trono de ouro de Tutankhamon, fotografado no Museu Egípcio do Cairo (JE 62028).' },
+  { h: 'Horemheb (c. 1323 – 1295 a.C.)' },
+  'Antes de ser rei foi general sob Tutankhamon e Ay. Subiu ao trono sem ser da família real e fechou a Dinastia 18, restaurando a ordem depois de Amarna, e reformando a justiça e a administração com o seu **Édito**. Demoliu os monumentos de Akhenaton e reaproveitou-os como entulho para os seus pilares. Como não teve filhos, escolheu o general **Ramsés I** para lhe suceder. Tem um túmulo em Saqqara (de general) e outro no Vale dos Reis (KV57).',
+  { h: 'Seti I (c. 1294 – 1279 a.C.)' },
+  'Segundo rei da Dinastia 19, restaurou o poder egípcio na Síria e nas campanhas contra os hititas e líbios. Concluiu a grande **Sala Hipostila de Karnak** e construiu o templo de **Abidos**, onde está a **Lista dos Reis de Abidos**. O seu túmulo no Vale dos Reis (**KV17**) é um dos mais longos e mais belos do vale, descoberto por Giovanni Belzoni em 1817. A sua múmia é das mais bem conservadas.',
+  { img: 'efa-seti-i-abidos', leg: 'Relevo de Seti I no templo de Abidos.' },
+  { h: 'Ramsés II, «o Grande» (c. 1279 – 1213 a.C.)' },
+  'Reinou 66 anos e viveu quase 90. Travou contra os hititas a batalha de **Qadesh** (c. 1274 a.C.), que ele apresentou como vitória, mas que foi mais um empate; depois, c. 1259 a.C., assinou com o rei hitita **Hattusili III** o mais antigo **tratado de paz** de que se conserva o texto. Fundou **Pi-Ramessés**, construiu o **Ramesseu**, os templos de **Abu Simbel** e acabou a sala de Karnak. Teve muitas esposas e mais de 100 filhos. A sua múmia foi enviada a Paris em 1976 para tratar um fungo, e, segundo uma história muito repetida, entrou em França com passaporte egípcio, com a profissão de «rei (falecido)». O poema *Ozymandias* de Shelley (1818) é uma evocação de Ramsés II, cujo nome de trono, Usermaatra, os Gregos transcreveram como «Ozymandias».',
+  { h: 'Nefertari (século XIII a.C.)' },
+  'Grande Esposa Real de Ramsés II e a mais honrada das suas esposas: para ela foi construído o pequeno templo de Abu Simbel, dedicado à deusa Hathor, e o seu túmulo no Vale das Rainhas (**QV66**), um dos mais belos do Egito, com pinturas muito bem conservadas. O seu nome significa «a bela de companhia». Escreveu cartas à rainha hitita Puduhepa. Não se conhecem os seus pais; o seu túmulo foi restaurado de 1986 a 1992.',
+  { img: 'efa-nefertari-tumba', leg: 'Pintura do túmulo de Nefertari (QV66), Vale das Rainhas.' },
+  { h: 'Ramsés III (c. 1184 – 1153 a.C.)' },
+  'O último grande rei do Reino Novo. Derrotou os **Povos do Mar** e os líbios, e construiu o templo de **Medinet Habu**. No seu reinado houve uma das primeiras **greves** documentadas da história: os artesãos de Deir el-Medina, por falta de rações. Foi alvo de uma conspiração do harém (Papiro Judicial de Turim). Um estudo de 2012 com tomografia mostrou um corte profundo na garganta da sua múmia. O **Grande Papiro Harris** é um longo documento do seu reinado.',
+  { h: 'Xeshonq I (c. 945 – 924 a.C.)' },
+  'Descendente de chefes líbios, fundou a **Dinastia 22**, reunificou o Egito e nomeou o filho como sumo sacerdote em Tebas, para controlar o sul. Por volta de 925 a.C., liderou uma campanha no Levante, registada nas paredes do templo de Karnak (o **Portal Bubastita**), com uma lista de cidades conquistadas. É geralmente identificado com o rei **Shishak** da Bíblia, que atacou Jerusalém, mas a identificação tem sido discutida.',
+  { h: 'Piye (c. 747 – 716 a.C.)' },
+  'Rei de Napata (Núbia), saiu do sul e conquistou o Egito por volta de 730 a.C., segundo a sua estela da vitória. Fundou a Dinastia 25. Preferiu voltar a Napata, deixando os governadores no Egito. Era devoto de Amon e restaurou os templos. Foi sepultado numa pirâmide em El-Kurru.',
+  { h: 'Taharqa (c. 690 – 664 a.C.)' },
+  'O mais importante rei núbio da Dinastia 25. Reinou 26 anos e construiu em Karnak, Kawa e Napata. Defendeu o Egito dos assírios: foi derrotado por **Esarhadão** em 671 a.C. (Mênfis tomada) e por **Assurbanípal** pouco depois. Retirou-se para o sul e morreu em 664 a.C., e foi sepultado numa pirâmide em Nuri. Na Bíblia é o «Tirhaca», rei de Cuxe.',
+  { h: 'Psamtik I (664 – 610 a.C.)' },
+  'Fundador da Dinastia 26 (saíta). Começou como vassalo dos assírios, e c. 656 a.C. unificou o país e expulsou-os, aproveitando as guerras de Assíria. Recrutou mercenários **gregos e cários**, e abriu o Egito ao comércio grego (a cidade de **Naucratis**). Reinou 54 anos, e o seu tempo foi de renascimento da arte e da cultura antigas, com estilos que imitavam o Reino Antigo.',
+  { h: 'Nectanebo II (c. 360 – 343 a.C.)' },
+  'O **último faraó egípcio nativo**. Fez grandes obras em templos (por exemplo, em Filas e em Sebenito). Em 343 a.C. perdeu a guerra contra o rei persa Artaxerxes III e fugiu para o sul, provavelmente para a Núbia. Mais tarde, uma lenda, o *Romance de Alexandre*, fez dele o pai verdadeiro de Alexandre Magno, o que não tem base histórica.',
+  { img: 'efa-nectanebo-ii-falcao', leg: 'Nectanebo II protegido pelo falcão Hórus, Metropolitan Museum (34.2.1).' },
+  { h: 'Ptolemeu I Sóter (c. 367 – 283 a.C.)' },
+  'General de Alexandre Magno, tornou-se **sátrapa do Egito** em 323 a.C., trouxe o corpo de Alexandre para o Egito e proclamou-se rei em 305 a.C., fundando a dinastia **ptolemaica**. Escolheu **Alexandria** como capital e favoreceu o desenvolvimento do **Museu**, a que se liga a Biblioteca (a fundação da Biblioteca é atribuída a ele ou ao seu filho, e é debatida). Escreveu uma história das campanhas de Alexandre, que se perdeu. Aparece nas moedas e nos templos, com o cerimonial de faraó.',
+  { img: 'efa-ptolemeu-moeda', leg: 'Reverso de um tetradracma de prata de Ptolemeu I Sóter, com águia sobre um raio.' },
+  { h: 'Cleópatra VII (69 – 30 a.C.)' },
+  'Rainha de origem macedónia, a última dos Ptolemeus e a última a reinar sobre o Egito como faraó. Subiu ao trono em 51 a.C., primeiro com os irmãos, e foi expulsa por eles; com o apoio de **Júlio César** recuperou o poder em 47 a.C., e teve dele um filho, **Ptolemeu César** (Cesarião). Depois de César, aliou-se a **Marco António**, com quem teve três filhos. Foram derrotados por Octávio, o futuro Augusto, em Áccio (31 a.C.). Cleópatra morreu em 30 a.C., provavelmente por suicídio (a história da áspide é da tradição romana); o seu túmulo nunca foi encontrado. Segundo Plutarco, foi a primeira rainha ptolemaica a falar egípcio.',
+  { h: 'E os outros?' },
+  'Ficaram por contar muitos outros reis importantes: Userkaf, Amenemhat I, Senusret I, Kamose, Amenófis II, Tutmés IV, Merneptah, Twosret, Osorkon II, Neco II, Dario I, Ptolemeu II e outros. A história do Egito conhece **centenas de nomes de reis**, e muitos só são conhecidos por uma inscrição ou por uma entrada nas listas.'
+];
+
+const legado = [
+  { h: 'O que nos deixaram' },
+  { lista: [
+    '**Monumentos:** as pirâmides, os templos de Karnak, Luxor e Abu Simbel, o Vale dos Reis e os colossos foram, quase todos, mandados erguer pelos faraós.',
+    '**Arte oficial:** a convenção do rei de perfil e de frente, de proporções ideais e de gesto ritual, manteve-se durante três mil anos.',
+    '**Listas e anais:** as listas reais permitem reconstruir a cronologia, e os anais de Tutmés III ou de Ramsés II dão-nos descrições de guerras e de política.',
+    '**Ideias de realeza sagrada:** o rei como pastor do seu povo, como filho do deus e mediador, influenciou os Ptolemeus, os imperadores romanos e, de forma indireta, a ideia de realeza cristã.',
+    '**A palavra «faraó»,** que passou às línguas europeias, e a fama dos reis, de Tutankhamon a Cleópatra.'
+  ] },
+  { h: 'As listas de reis e Manethon' },
+  'O que sabemos da ordem dos reis vem de **listas reais** egípcias, que se complementam e nem sempre concordam. A **Pedra de Palermo** (Dinastia 5, em fragmentos) regista os reis do Período Pré-dinástico e do Reino Antigo, com a altura da cheia do Nilo em cada ano. O **Papiro de Turim** (ou Cânone Real de Turim), do tempo de Ramsés II, listava mais de 300 nomes e a duração dos reinados, mas está muito fragmentado. A **Lista de Abidos**, no templo de Seti I, mostra 76 nomes, onde faltam, por exemplo, Hatshepsut e os reis de Amarna. A **Lista de Karnak** e a **Lista de Saqqara** são outras.',
+  { img: 'efa-pedra-palermo', leg: 'Pedra de Palermo, Museo Archeologico Regionale Antonio Salinas.' },
+  { img: 'efa-lista-turim', leg: 'Fragmento do Papiro Real de Turim, Museo Egizio (Cat. 1874).' },
+  { img: 'efa-lista-abidos', leg: 'Lista de Reis de Abidos, templo de Seti I.' },
+  'O sacerdote **Manethon** escreveu, no século III a.C., a *Aegyptiaca*, uma história do Egito em grego, dividida em 30 dinastias. O texto perdeu-se e só se conhece por resumos de autores posteriores (Josefo, Africano, Eusébio), com erros e variantes. Mas a sua divisão em dinastias continua a ser a base da egiptologia.',
+  { h: 'As múmias reais' },
+  'Dos cerca de 60 túmulos do Vale dos Reis, quase todos tinham sido saqueados já na Antiguidade. Por volta de 1000 a.C., os sacerdotes de Amon recolheram as múmias dos reis do Reino Novo e esconderam-nas em esconderijos. O mais famoso foi o de **Deir el-Bahari** (TT320), achado em 1881, com mais de 40 múmias reais e de sacerdotes, entre elas Ahmés I, Tutmés III, Seti I e Ramsés II. Em 1898, **Victor Loret** achou outro esconderijo, no túmulo de **Amenófis II** (KV35), com outros reis, entre eles Amenófis III, Merneptah e Ramsés IV a VI.',
+  { img: 'efa-mumia-ramses-ii', leg: 'Múmia de Ramsés II, fotografia histórica; atualmente no Museu Nacional da Civilização Egípcia, Cairo.' },
+  { h: 'O túmulo de Tutankhamon' },
+  'Em 4 de novembro de 1922, **Howard Carter**, financiado por Lord Carnarvon, achou a entrada do túmulo **KV62**. Foi o único túmulo de faraó do Reino Novo encontrado quase intacto, com cerca de **5400 objetos**, e deu origem à «**Tutmania**», uma moda mundial. Pela primeira vez, a coleção completa do túmulo ficou reunida num só lugar, no Grande Museu Egípcio. A «maldição» é fruto da imprensa da época.',
+  { h: 'DNA e tomografia: os faraós como pacientes' },
+  'Desde os anos 2000, tomografias computadorizadas e testes de ADN permitiram estudar as múmias reais sem as abrir. Em **2010**, um estudo liderado por Zahi Hawass sugeriu as relações de parentesco da família de Tutankhamon (pai, mãe e avós) e doenças do rei, como a malária. Esses resultados, tal como os trabalhos de 2012 sobre **Ramsés III**, são muito debatidos pelos especialistas, que apontam as dificuldades do ADN antigo.',
+  { h: 'O cortejo dos faraós (2021)' },
+  'Em **3 de abril de 2021**, 22 múmias reais (18 reis e 4 rainhas) foram transportadas em procissão do Museu Egípcio, na Praça Tahrir, para o **Museu Nacional da Civilização Egípcia**, em Fustat, no Cairo, num evento transmitido em todo o mundo, conhecido como o «Cortejo Dourado dos Faraós».',
+  { h: 'A decifração dos hieróglifos e os nomes dos reis' },
+  'Foram os **cartuchos** que permitiram a **Jean-François Champollion**, em 1822, decifrar os hieróglifos: ao comparar os nomes de **Ptolemeu** e **Cleópatra** num obelisco de Filas e na Pedra de Roseta, reconheceu os sons de cada sinal, e depois lê os nomes de Ramsés e de Tutmés. A partir daí foi possível ler os nomes dos reis nos monumentos.',
+  { h: 'O faraó na cultura moderna' },
+  'Os faraós são parte da imaginação ocidental desde o século XIX: o poema *Ozymandias* de Shelley (1818), a ópera *Aida* de Verdi (1871), a «Egiptomania» das exposições universais, o cinema (as várias versões de *Cleópatra*) e, mais recentemente, a Tutmania das exposições. Quase sempre simplificam: os faraós raramente foram os tiranos do cinema, e as pirâmides não foram construídas por escravos nem por extraterrestres, hipótese de pseudoarqueologia **sem qualquer base**.',
+  { h: 'Questões abertas' },
+  { lista: [
+    'Onde está o túmulo de **Nefertiti**? As buscas por radar na KV62, em 2015 a 2018, não confirmaram câmaras escondidas.',
+    'Quem foi **Neferneferuaten**, o rei que governou depois de Akhenaton: Nefertiti, outra figura ou duas pessoas diferentes?',
+    'Como foi a relação entre **Amenófis III** e **Akhenaton**: houve corregência? Se sim, de que duração?',
+    'Onde está o túmulo de **Cleópatra VII** e de **Marco António**?',
+    'Quem foi, de facto, o «**Menés**» da tradição, e como se deu a unificação do Egito?'
+  ] },
+  { h: 'Onde ver os faraós' },
+  { lista: [
+    '**Cairo:** o Museu Egípcio, na Praça Tahrir (Narmer, Djoser, Khufu, Khafre, Mentuhotep II); o Museu Nacional da Civilização Egípcia (múmias reais); e o **Grande Museu Egípcio**, em Gizé, com todo o tesouro de Tutankhamon.',
+    '**Luxor:** o Museu de Luxor (Tutmés III, Amenófis III), os templos de Karnak e de Luxor, o Vale dos Reis e das Rainhas.',
+    '**Berlim:** o Neues Museum (Nefertiti e a família de Akhenaton).',
+    '**Turim:** o Museo Egizio (Ramsés II, o Papiro Real).',
+    '**Paris, Londres e Nova Iorque:** o Louvre, o Museu Britânico e o Metropolitan (Hatshepsut, Nectanebo II e outros).'
+  ] },
+  { h: 'Leitura recomendada' },
+  { lista: [
+    '**Ian Shaw (ed.),** *The Oxford History of Ancient Egypt* (2000), a cronologia de referência desta página.',
+    '**Toby Wilkinson,** *The Rise and Fall of Ancient Egypt* (2010), uma história política dos faraós.',
+    '**Aidan Dodson e Dyan Hilton,** *The Complete Royal Families of Ancient Egypt* (2004), uma obra de consulta sobre os reis e as suas famílias.',
+    '**Erik Hornung, Rolf Krauss e David Warburton (eds.),** *Ancient Egyptian Chronology* (2006), o estudo mais completo sobre a cronologia.'
+  ] }
+];
+
+const quiz = [
+  { p: 'O que significa originalmente a palavra egípcia «per-aa», de onde vem «faraó»?', op: ['Filho de Rá', 'A Grande Casa (o palácio)', 'Senhor das Duas Terras', 'O Pastor'], certa: 1, exp: 'Per-aa designava o palácio; só no Reino Novo passou a ser usada também para o rei.' },
+  { p: 'Qual era o deus de que o faraó vivo era a encarnação?', op: ['Osíris', 'Anúbis', 'Hórus', 'Seth'], certa: 2, exp: 'O rei vivo era Hórus; depois de morrer, identificava-se com Osíris.' },
+  { p: 'Que conceito representa a ordem, a verdade e a justiça que o faraó devia manter?', op: ['Ka', 'Ma’at', 'Isfet', 'Ba'], certa: 1, exp: 'A ma’at era o oposto da isfet, o caos.' },
+  { p: 'Quantos nomes compunham a titulatura real completa?', op: ['Dois', 'Três', 'Cinco', 'Sete'], certa: 2, exp: 'Nome de Hórus, das Duas Senhoras, de Hórus de Ouro, de trono (prenome) e de nascimento (nomen).' },
+  { p: 'Que coroa era a do Alto Egito?', op: ['A vermelha (Deshret)', 'A branca (Hedjet)', 'A azul (Khepresh)', 'A Atef'], certa: 1, exp: 'A Hedjet, branca e cónica; a vermelha era a do Baixo Egito.' },
+  { p: 'O que é a Heb-Sed?', op: ['Uma batalha famosa', 'A festa de jubileu de renovação do rei', 'Um tipo de túmulo', 'Um deus'], certa: 1, exp: 'Celebrada por tradição ao 30.º ano e depois a cada três ou quatro anos.' },
+  { p: 'Qual é o rei associado à primeira pirâmide, a de degraus de Saqqara?', op: ['Khufu', 'Snefru', 'Djoser', 'Pepi II'], certa: 2, exp: 'Djoser (Dinastia 3), com o arquiteto Imhotep.' },
+  { p: 'Quem foi a primeira mulher que se sabe, com segurança, ter reinado como faraó?', op: ['Hatshepsut', 'Cleópatra VII', 'Nefertiti', 'Sobekneferu'], certa: 3, exp: 'Sobekneferu, no fim da Dinastia 12, c. 1777 – 1773 a.C.' },
+  { p: 'Que faraó expulsou os hicsos e fundou o Reino Novo?', op: ['Ahmés I', 'Mentuhotep II', 'Tutmés III', 'Ramsés II'], certa: 0, exp: 'Ahmés I tomou Avaris, c. 1550 a.C.' },
+  { p: 'Que faraó fundou a cidade de Akhetaton (Amarna) e impôs o culto de Aton?', op: ['Tutankhamon', 'Amenófis III', 'Horemheb', 'Akhenaton'], certa: 3, exp: 'Akhenaton, c. 1346 a.C., fundou a cidade, abandonada pouco depois da sua morte.' },
+  { p: 'Quem descobriu o túmulo de Tutankhamon, em 1922?', op: ['Howard Carter', 'Champollion', 'Belzoni', 'Mariette'], certa: 0, exp: 'Howard Carter, com o apoio financeiro de Lord Carnarvon, em 4 de novembro de 1922.' },
+  { p: 'Com que povo assinou Ramsés II o mais antigo tratado de paz de que se conserva o texto?', op: ['Os assírios', 'Os hititas', 'Os líbios', 'Os núbios'], certa: 1, exp: 'Por volta de 1259 a.C., com Hattusili III, depois da batalha de Qadesh.' },
+  { p: 'Quem foi o último faraó egípcio nativo?', op: ['Psamtik III', 'Nectanebo II', 'Taharqa', 'Amásis'], certa: 1, exp: 'Nectanebo II, Dinastia 30, que fugiu dos persas em 343 a.C.' },
+  { p: 'Que sacerdote egípcio dividiu os reis em 30 dinastias, no século III a.C.?', op: ['Imhotep', 'Heródoto', 'Manethon', 'Hecateu'], certa: 2, exp: 'Manethon escreveu a Aegyptiaca em grego, sob Ptolemeu II.' },
+  { p: 'Quem morreu em 30 a.C., depois da derrota de Áccio, e foi a última a reinar como faraó?', op: ['Hatshepsut', 'Cleópatra VII', 'Twosret', 'Arsínoe II'], certa: 1, exp: 'Cleópatra VII; depois, o Egito tornou-se província romana.' }
+];
+
+export default {
+  id: 'egito',
+  cor: '#d9b44a',
+  emblema: '../../assets/img/egito.png',
+  grupo: { ...GRUPO, aqui: 'faraos' },
+  nome:    { pt: 'Os faraós', en: 'The pharaohs' },
+  periodo: { pt: 'c. 3100 a.C. – 30 a.C.', en: 'c. 3100 BC – 30 BC' },
+  visao:          { pt: visao, en: EN.visao },
+  linha:          { pt: linha, en: EN.linha },
+  mapa:           { pt: mapa, en: EN.mapa },
+  sociedade:      { pt: sociedade, en: EN.sociedade },
+  personalidades: { pt: personalidades, en: EN.personalidades },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
+  quiz:           { pt: quiz, en: EN.quiz }
+};
