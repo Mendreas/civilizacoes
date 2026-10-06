@@ -1,0 +1,287 @@
+// SUMÉRIOS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
+import EN from './dados-en.js';
+// Datas aproximadas, na «cronologia média». a.C. = antes de Cristo. Os acádios são tratados aqui como parte desta civilização.
+// Imagens: cada {img:'id'} procura o ficheiro  sumerios/img/id.jpg  (ver IMAGENS_SUMERIOS.md para a lista e os prompts).
+
+const visao = [
+  { caixa: 'Em resumo', texto: [
+    'Os **Sumérios** foram o povo que, no sul da Mesopotâmia (hoje o sul do Iraque), criou as primeiras cidades-estado conhecidas, inventou a escrita (a escrita cuneiforme, c. 3300 a.C.) e deixou à humanidade invenções que ainda usamos: o registo escrito de contas e contratos, as escolas, o código de leis, a divisão do tempo em múltiplos de 60 e muito do que conhecemos como vida urbana.',
+    'Nunca formaram um país único. Eram dezenas de cidades independentes, cada uma com o seu deus protetor, o seu governante e os seus campos, quase sempre em rivalidade pelas terras e pela água.'
+  ] },
+  { img: 'sum-mapa-regiao', leg: 'A Suméria no sul da Mesopotâmia, entre o Tigre e o Eufrates, junto ao Golfo Pérsico (legendas em inglês).' },
+  { h: 'Onde ficava' },
+  'A Suméria ocupava a **Baixa Mesopotâmia**, a planície aluvial formada pelos rios **Tigre** e **Eufrates** entre a zona da atual Bagdade e o Golfo Pérsico. Na época sumérica a linha de costa estava mais para o interior do que hoje, e as cidades de Eridu e Ur ficavam junto a pântanos e lagoas ligados ao mar. Os próprios Sumérios chamavam à sua terra **Ki-en-gi** e a si mesmos «os cabeças negras» (ùĝ saĝ gíg-ga). O nome «Suméria» vem da forma acádia Šumerum, usada pelos povos vizinhos.',
+  'Era um lugar difícil e generoso ao mesmo tempo. Quase não chovia (menos de 200 mm por ano), não havia pedra, madeira de qualidade nem metais. Mas os rios traziam limo fértil e, com canais de irrigação, a terra produzia grandes colheitas de cevada. Esse paradoxo explica quase tudo: sem chuva era preciso organizar canais e diques em comum, o que exigia chefes, escribas, registos e templos que guardassem os excedentes. As cheias do Tigre e do Eufrates eram violentas e imprevisíveis, e a memória delas está por trás dos mitos do dilúvio.',
+  { img: 'sum-paisagem-pantanais', leg: 'Interior de um mudhif, a casa tradicional de caniço dos pântanos do sul do Iraque, construção que lembra as casas de caniço dos selos sumérios.' },
+  { h: 'Quando existiu' },
+  'Nas fontes arqueológicas e textuais, a história suméria divide-se em fases. As datas são aproximadas e variam conforme a cronologia usada; aqui segue-se a mais comum, a «cronologia média».',
+  { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
+    ['Período de Ubaid', 'c. 6500 – 3800 a.C.', 'Primeiras aldeias do sul; Eridu fundada c. 5400 a.C.; templos sobre plataformas; irrigação'],
+    ['Período de Uruk', 'c. 4000 – 3100 a.C.', 'Primeiras cidades verdadeiras; Uruk gigante; tabuinhas contabilísticas e escrita; selos cilíndricos; roda e olaria rápida'],
+    ['Jemdet Nasr', 'c. 3100 – 2900 a.C.', 'Consolidação das cidades e da escrita; aumento das trocas'],
+    ['Dinástico Arcaico (I–III)', 'c. 2900 – 2350 a.C.', 'Cidades-estado em guerra; reis como Gilgamesh, Eannatum; Cemitério Real de Ur'],
+    ['Império Acádio', 'c. 2334 – 2154 a.C.', 'Sargão de Acad une a Mesopotâmia; Enheduana; Naram-Sin'],
+    ['Gútios e Gudea', 'c. 2154 – 2112 a.C.', 'Domínio dos montanheses gútios; renascimento sumério em Lagash com Gudea'],
+    ['Terceira Dinastia de Ur (Ur III)', 'c. 2112 – 2004 a.C.', 'Estado burocrático; Ur-Nammu e Shulgi; Código de Ur-Nammu; Grande Zigurate de Ur'],
+    ['Depois de Ur III', 'depois de c. 2000 a.C.', 'Queda de Ur; o sumério deixa de ser falado; Isin, Larsa e depois Babilónia herdam a cultura']
+  ] } },
+  { img: 'sum-tabuinha-uruk', leg: 'Tabuinha administrativa proto-cuneiforme (c. 3100–2900 a.C.): contas de cereais e animais, com sinais ainda em forma de desenho.' },
+  { h: 'De onde vieram?' },
+  'Não se sabe ao certo. A língua suméria não pertence a nenhuma família conhecida: é uma **língua isolada**, o que alimentou durante décadas a ideia de um povo chegado de fora. Hoje muitos arqueólogos defendem que os Sumérios descendem das populações que já viviam no sul da Mesopotâmia desde o período de Ubaid, e que a «invenção» da Suméria foi um processo local, de séculos, em que se misturaram gentes de língua suméria e semita (a que pertencem os acádios). Esta questão continua em aberto.',
+  { h: 'Porque importam' },
+  { lista: [
+    '**Escrita:** a mais antiga escrita conhecida surgiu em Uruk para contar cereais, cerveja e ovelhas.',
+    '**Cidade:** viveram nas primeiras cidades verdadeiras, com milhares de habitantes, templos, muralhas e bairros especializados.',
+    '**Estado e leis:** criaram a administração escrita, os impostos e o mais antigo código de leis conhecido.',
+    '**Escola e literatura:** fundaram as primeiras escolas e produziram a primeira literatura escrita, incluindo o mais antigo autor conhecido pelo nome.',
+    '**Ciência prática:** matemática de base 60, calendário lunar, medicina com receitas escritas, astronomia observacional.',
+    '**Tecnologia:** olaria de roda, veículos com rodas, arado semeador, barcos de vela, bronze.'
+  ] },
+  { caixa: 'A Suméria hoje', texto: 'As ruínas de **Ur, Uruk e Eridu** fazem parte, desde 2016, do sítio Património Mundial da UNESCO «Ahwar do Sul do Iraque». O Grande Zigurate de Ur ainda se vê de longe na planície.' },
+  { img: 'sum-ziggurat-ur', leg: 'O Grande Zigurate de Ur, construído por Ur-Nammu c. 2100 a.C., parcialmente reconstruído no século XX.' }
+];
+
+const linha = [
+  'Esta linha do tempo segue os acontecimentos principais da história suméria. As datas são aproximadas, sobretudo as mais antigas.',
+  { linha: [
+    { d: 'c. 6500 – 5400 a.C.', t: 'Período de Ubaid: as primeiras aldeias do sul', x: 'Pequenas comunidades agrícolas começam a ocupar o sul da Mesopotâmia, praticando irrigação simples. Constroem casas de tijolo cru e primeiros templos. Por volta de 5400 a.C. surge **Eridu**, que os Sumérios consideravam a mais antiga das cidades, ligada ao deus Enki.' },
+    { d: 'c. 4000 – 3500 a.C.', t: 'Os templos crescem e Uruk cresce com eles', x: 'Os templos passam a ser grandes edifícios sobre plataformas e centros económicos que guardam e distribuem cereais e lã. Uruk torna-se o maior núcleo urbano do mundo da época.' },
+    { d: 'c. 3500 a.C.', t: 'Olaria de roda e veículos com rodas', x: 'A roda de oleiro e, pouco depois, os carros de rodas aparecem na Mesopotâmia. A origem da roda é discutida, porque surge em regiões diferentes na mesma época.' },
+    { d: 'c. 3350 – 3200 a.C.', t: 'Nascem as contas escritas', x: 'Em Uruk, escribas usam fichas de argila e depois sinais gravados em tabuinhas para registar cereais, cerveja, têxteis e gado. É a **escrita proto-cuneiforme**, a mais antiga conhecida. Os primeiros sinais são desenhos de objetos; o idioma escrito é ainda difícil de ler.' },
+    { d: 'c. 3200 – 3000 a.C.', t: 'Vaso de Uruk e primeiros selos cilíndricos', x: 'A arte suméria produz o Vaso de Uruk (Warka), com a procissão de oferendas à deusa Inanna. Os selos cilíndricos, rolados sobre argila, servem como assinatura e autenticação de mercadorias.' },
+    { d: 'c. 2900 a.C.', t: 'Muralha de Uruk', x: 'Uruk é cercada por uma muralha de cerca de 9 km. A tradição atribui-a a Gilgamesh. É um sinal de que a guerra entre cidades se tornou normal.' },
+    { d: 'c. 2900 – 2600 a.C.', t: 'Dinástico Arcaico I–II: reis e guerras', x: 'As cidades-estado de Kish, Uruk, Ur, Lagash, Umma e outras disputam terras e canais. Governantes como **Enmebaragesi de Kish** (c. 2600 a.C.) e **Gilgamesh de Uruk** são os primeiros reis que a tradição regista. A Lista Suméria dos Reis, compilada séculos depois, junta nomes históricos e figuras lendárias.' },
+    { d: 'c. 2600 – 2500 a.C.', t: 'Os túmulos reais de Ur', x: 'Em Ur, soberanos e a rainha **Puabi** são enterrados com ouro, lápis-lazúli, liras, o «Estandarte de Ur» e dezenas de acompanhantes sacrificados. É o maior conjunto de arte suméria conhecido.' },
+    { d: 'c. 2600 a.C.', t: 'Primeira literatura e escolas', x: 'Tabuinhas de Shuruppak e Abu Salabikh mostram textos de sabedoria, listas de palavras e exercícios de escolares. A literatura suméria escrita começa a existir.' },
+    { d: 'c. 2450 a.C.', t: 'Eannatum de Lagash vence Umma', x: 'A guerra entre Lagash e Umma pela fronteira e pelos canais é documentada na **Estela dos Abutres**, o primeiro grande relato de guerra com imagens e texto.' },
+    { d: 'c. 2350 a.C.', t: 'Reformas de Urukagina', x: 'O rei de Lagash corta abusos de funcionários e do templo, protege viúvas e órfãos. É considerado um dos primeiros textos de reforma social. Contém a mais antiga ocorrência conhecida da palavra sumérica **ama-gi** (liberdade, ou «regresso à mãe»).' },
+    { d: 'c. 2340 a.C.', t: 'Lugalzagesi une as cidades do sul', x: 'O rei de Umma conquista Lagash e Uruk e proclama domínio do «mar de baixo» ao «mar de cima», isto é, do Golfo ao Mediterrâneo. O seu poder dura pouco.' },
+    { d: 'c. 2334 – 2279 a.C.', t: 'Sargão de Acad conquista a Suméria', x: 'Sargão, de língua semita, derrota Lugalzagesi e cria o **primeiro império da Mesopotâmia**, com capital em Acad (localização ainda desconhecida). O acádio passa a ser língua de poder, mas o sumério mantém prestígio religioso e cultural.' },
+    { d: 'c. 2285 – 2250 a.C.', t: 'Enheduana, a primeira autora', x: 'A filha de Sargão é sumo-sacerdotisa de Nanna em Ur e compõe hinos em sumério. É a **primeira pessoa conhecida pelo nome** a assinar obras literárias.' },
+    { d: 'c. 2254 – 2218 a.C.', t: 'Naram-Sin', x: 'O neto de Sargão leva o império ao auge e declara-se deus em vida. A Estela da Vitória de Naram-Sin é uma das grandes obras da arte da Mesopotâmia.' },
+    { d: 'c. 2154 – 2112 a.C.', t: 'Colapso de Acad e domínio dos gútios', x: 'O império cai sob pressão de montanheses gútios, e talvez de uma seca prolongada por volta de 2200 a.C. (a «crise de 4200 anos», debatida). As cidades do sul recuperam autonomia.' },
+    { d: 'c. 2144 – 2124 a.C.', t: 'Gudea de Lagash', x: 'O governante de Lagash reconstrói templos e deixa estátuas e os **Cilindros de Gudea**, o maior texto sumério conhecido, sobre a construção do templo de Ningirsu.' },
+    { d: 'c. 2112 a.C.', t: 'Utu-hengal expulsa os gútios', x: 'O rei de Uruk vence os gútios. Pouco depois, Ur-Nammu de Ur toma o poder.' },
+    { d: 'c. 2112 – 2095 a.C.', t: 'Ur-Nammu funda a Terceira Dinastia de Ur', x: 'Reconstrói a ordem, constrói o Grande Zigurate de Ur e promulga o **Código de Ur-Nammu**, o mais antigo código de leis conhecido.' },
+    { d: 'c. 2094 – 2047 a.C.', t: 'Shulgi e o estado burocrático', x: 'Durante quase meio século, Shulgi cria um aparelho de estado muito centralizado, com pesos e medidas padronizados, arquivos enormes e impostos regulares. Declara-se deus. Escolas de escribas multiplicam-se.' },
+    { d: 'c. 2047 – 2004 a.C.', t: 'Declínio de Ur III', x: 'Com Amar-Sin, Shu-Sin e Ibbi-Sin, o estado enfrenta fome, pressão de amorreus e ataques de Elam. Por volta de 2004 a.C., os elamitas saqueiam Ur e levam o rei prisioneiro. A «Lamentação sobre a destruição de Ur» chora o acontecimento.' },
+    { d: 'c. 2000 – 1700 a.C.', t: 'O sumério deixa de ser língua falada', x: 'Isin, Larsa e depois a Babilónia herdam a cultura. O sumério continua a ser copiado e ensinado como língua sagrada e erudita, como o latim na Europa, durante mais de mil anos.' },
+    { d: 'c. 75 d.C.', t: 'O último texto cuneiforme datado', x: 'As últimas tabuinhas cuneiformes conhecidas são astronómicas, de c. 75 d.C. A escrita inventada em Uruk terminou depois de mais de 3000 anos de uso.' }
+  ] },
+  { img: 'sum-tokens-bullae', leg: 'Fichas de argila de várias formas, usadas para contar mercadorias antes da escrita (c. 3500 a.C.).' },
+  { img: 'sum-vaso-warka', leg: 'O Vaso de Uruk (Warka), c. 3200–3000 a.C., numa vitrine de museu.' },
+  { img: 'sum-estandarte-ur', leg: 'O Estandarte de Ur, c. 2600–2400 a.C.: o lado da «Guerra», com carros de combate e prisioneiros.' },
+  { img: 'sum-estela-abutres', leg: 'Estela dos Abutres (Eannatum de Lagash, c. 2450 a.C.), Louvre.' },
+  { img: 'sum-sargao-cabeca', leg: 'Cabeça de bronze de um rei acádio, tradicionalmente associada a Sargão ou a Naram-Sin.' },
+  { img: 'sum-codigo-urnammu', leg: 'Tabuinha com o Código de Ur-Nammu, de Nipur, 2112–2095 a.C. (Museu Arqueológico de Istambul).' }
+];
+
+const mapa = [
+  'A Suméria era um mosaico de cidades-estado, cada uma com o seu centro religioso, a sua muralha, os seus campos e canais. Este mapa mostra onde estavam as principais. Em cada uma, o deus protetor era visto como o verdadeiro dono da cidade.',
+  { img: 'sum-mapa-cidades-estado', leg: 'A Suméria c. 3000 a.C. e as suas principais cidades, entre elas Eridu, Ur, Uruk, Larsa, Lagash, Girsu, Nipur (Nippur), Isin e Kish (legendas em inglês).' },
+  { tabela: { cab: ['Cidade', 'Deus protetor', 'Local hoje', 'Para que ficou conhecida'], linhas: [
+    ['Eridu', 'Enki (Ea)', 'Abu Shahrain, sul do Iraque', 'A mais antiga cidade segundo a tradição; sede do deus da água doce e da sabedoria'],
+    ['Ur', 'Nanna (Lua)', 'Tell el-Muqayyar', 'Túmulos reais, o Estandarte de Ur, o Grande Zigurate, capital de Ur III'],
+    ['Uruk', 'Inanna e An', 'Warka', 'Primeira grande cidade, berço da escrita, cidade de Gilgamesh'],
+    ['Larsa', 'Utu (Sol)', 'Tell as-Senkereh', 'Centro de culto solar; potência após a queda de Ur III'],
+    ['Lagash e Girsu', 'Ningirsu', 'Tell al-Hiba e Tello', 'Estela dos Abutres, Urukagina, Gudea, arquivos enormes'],
+    ['Umma', 'Shara', 'Tell Jokha', 'Rival constante de Lagash; terra de Lugalzagesi'],
+    ['Shuruppak', 'Sud', 'Fara', 'Terra de Ziusudra, o herói do dilúvio; textos de escolares antigos'],
+    ['Nipur', 'Enlil', 'Nuffar', 'Centro religioso de toda a Suméria; escola e biblioteca; milhares de tabuinhas'],
+    ['Isin', 'Nininsina', 'Ishan al-Bahriyat', 'Sucede a Ur III; Código de Lipit-Ishtar'],
+    ['Kish', 'Zababa', 'Tell Uhaimir', 'Título de rei de Kish prestigiado em toda a Mesopotâmia']
+  ] } },
+  { h: 'Eridu e o começo' },
+  'Eridu foi fundada por volta de 5400 a.C. junto a pântanos próximos do Golfo. Os Sumérios diziam que ali começou a realeza, vinda do céu. Enki, deus da água doce e da sabedoria, vivia no **Abzu**, o abismo de água doce debaixo da terra, e o seu templo era um dos mais antigos. As escavações encontraram camadas de templos sobrepostos, cada vez maiores, durante milénios.',
+  { img: 'sum-eridu-ruinas', leg: 'Restos de tijolo crus e cozido em Eridu, no sul do Iraque: uma das cidades mais antigas da Suméria.' },
+  { h: 'Uruk, a primeira cidade' },
+  'Uruk (a Erech da Bíblia) foi, por volta de 3200 a.C., o maior aglomerado urbano do mundo, com dezenas de milhares de habitantes (as estimativas habituais variam de 25 000 a 50 000). A muralha, c. 2900 a.C., tinha cerca de 9 km e cercava uma área de cerca de 6 km². Tinha dois grandes centros religiosos: o setor de **Eanna**, de Inanna, e o de **Anu**, com o Templo Branco sobre uma plataforma de cerca de 12 m. Foi em Eanna que se encontraram as primeiras tabuinhas escritas.',
+  { img: 'sum-uruk-ruinas', leg: 'Ruínas de Uruk (Warka).' },
+  { h: 'Ur, cidade da Lua' },
+  'Ur ficava junto ao Eufrates, com portos e canais. Foi capital da Terceira Dinastia de Ur. Ficou célebre pelos **túmulos reais** descobertos por Leonard Woolley (1922–1934) e pelo Grande Zigurate. Segundo a tradição bíblica, foi também a cidade de Abraão (Ur dos Caldeus), embora sem confirmação arqueológica.',
+  { img: 'sum-ur-vista-aerea', leg: 'Ruínas escavadas de uma cidade da Suméria, fotografia da coleção Matson (c. 1930).' },
+  { h: 'Lagash e Girsu' },
+  'O estado de Lagash tinha várias cidades, entre elas Girsu (Tello), onde se encontraram milhares de tabuinhas administrativas. Foi o primeiro sítio sumério escavado em grande escala, por Ernest de Sarzec, a partir de 1877. Dali vieram a Estela dos Abutres e as estátuas de Gudea.',
+  { img: 'sum-lagash-girsu', leg: 'Montículo de ruínas na planície salgada do sul do Iraque, na região de Lagash.' },
+  { h: 'Nipur, a cidade de Enlil' },
+  'Nipur nunca foi capital política, mas era o centro religioso de toda a Suméria. Quem controlava o templo de Enlil legitimava-se como rei. Ali ficou também uma das grandes escolas de escribas, e as escavações da Universidade da Pensilvânia, a partir de 1889, encontraram dezenas de milhares de tabuinhas.',
+  { img: 'sum-nipur-ruinas', leg: 'Escavações em Nipur (Nuffar): fotografia antiga do monte, com as zonas numeradas.' },
+  { h: 'As rotas de comércio' },
+  'A Suméria não tinha pedra, metais nem madeira, e por isso dependia de comércio de longa distância: **cobre** de Magan (a atual Omã) e da Anatólia, **lápis-lazúli** do Badakhshan (Afeganistão), **cornalina** e outros bens de Meluhha (o vale do Indo), **cedro** do Líbano, **prata** do Tauro. A ilha de **Dilmun** (Bahrein) era o grande entreposto no Golfo. Os selos do Indo encontrados em Ur mostram que havia contacto direto com a civilização do Indo.',
+  { img: 'sum-rotas-comercio', leg: 'A rota marítima entre a Mesopotâmia e o vale do Indo, pelo Golfo Pérsico e pelo mar da Arábia.' }
+];
+
+const sociedade = [
+  { h: '1. Organização política' },
+  'A unidade política era a **cidade-estado**: uma cidade, os campos à volta, os canais, o templo. Cada uma era governada por um **en** (sumo-sacerdote), um **lugal** («grande homem», rei) ou um **ensi** (governador), e funcionava como propriedade do seu deus. Em momentos de crise, as fontes falam de assembleias de homens livres e de anciãos que decidiam sobre a guerra, como nos poemas de Gilgamesh. A realeza era vista como dom dos deuses: segundo a Lista Suméria dos Reis, «a realeza desceu do céu».',
+  'A guerra por canais e fronteiras era constante. Os exércitos tinham lanceiros em falange com escudos e capacetes de cobre, e carros de quatro rodas puxados por onagros (burros selvagens).',
+  { img: 'sum-selo-cilindrico', leg: 'Selo cilíndrico e a sua impressão em argila: serviam de assinatura e de identificação.' },
+  { h: '2. Classes sociais' },
+  { lista: [
+    '**Reis, sacerdotes e altos funcionários:** governantes e administradores do templo e do palácio.',
+    '**Homens livres:** proprietários de terras, artesãos, mercadores, escribas, soldados.',
+    '**Dependentes do templo e do palácio:** trabalhadores que recebiam rações de cevada, lã e cerveja em troca de trabalho.',
+    '**Escravos:** sobretudo prisioneiros de guerra e pessoas entregues por dívidas. Em geral, tinham alguns direitos e podiam, em certos casos, comprar a liberdade.'
+  ] },
+  { h: '3. Religião' },
+  'A religião era **politeísta e antropomórfica**: os deuses eram imaginados com forma e comportamento humanos, mas imortais e com poderes enormes. Os principais eram:',
+  { tabela: { cab: ['Deus', 'Domínio', 'Cidade'], linhas: [
+    ['An', 'Céu, pai dos deuses', 'Uruk'],
+    ['Enlil', 'Ar, vento, destino; chefe do panteão', 'Nipur'],
+    ['Enki (Ea)', 'Água doce, sabedoria, magia, artes', 'Eridu'],
+    ['Ninhursag', 'Mãe-terra, montanha', 'vários centros'],
+    ['Inanna (Ishtar)', 'Amor, guerra, fertilidade, estrela da manhã e da tarde', 'Uruk'],
+    ['Nanna (Suen)', 'Lua', 'Ur'],
+    ['Utu (Shamash)', 'Sol e justiça', 'Larsa e Sippar'],
+    ['Ereshkigal', 'Rainha do mundo dos mortos', 'Kur / Irkalla'],
+    ['Dumuzi', 'Pastor e marido de Inanna, morre e regressa', 'Bad-tibira']
+  ] } },
+  'Cada cidade era a «casa» do seu deus. O **templo** era o centro da vida económica e religiosa: possuía terras, oficinas e armazéns, e distribuía rações. Todos os dias os sacerdotes vestiam, alimentavam e honravam as estátuas dos deuses. O universo era regido por centenas de normas divinas chamadas **me**, e um mito conta como Inanna as roubou a Enki para Uruk. O culto incluía festas anuais e, segundo alguns estudiosos, um rito de «casamento sagrado» entre o rei e a sacerdotisa de Inanna (assunto debatido).',
+  { img: 'sum-templo-ritual', leg: 'Cena de culto num templo: oferendas e a estátua do deus.' },
+  { h: 'A vida depois da morte' },
+  'Os mortos iam para **Kur** ou **Irkalla**, um mundo sombrio debaixo da terra, onde comiam pó e barro. Não havia recompensas nem castigos morais como mais tarde noutras religiões; a vida depois da morte era a mesma para todos, embora os deuses dos infernos julgassem os atos. Os mortos eram enterrados sob o chão das casas ou em cemitérios, com cerâmica, joias e, nos túmulos reais, dezenas de acompanhantes. Os descendentes faziam oferendas regulares de água e comida para garantir o descanso dos antepassados.',
+  { h: '4. Economia e agricultura' },
+  'A economia assentava na agricultura de irrigação. Cultivavam **cevada** (a base da alimentação e da moeda de troca), trigo, legumes, cebola, alho, alface, pepino, linho e tamareiras. Criavam ovelhas, cabras, bois e burros, pescavam nos canais e pântanos. A terra pertencia em grande parte aos templos e aos palácios, mas havia também propriedade privada.',
+  'A irrigação intensiva trouxe um problema: a **salinização do solo**. Segundo estudos clássicos, o trigo, mais sensível ao sal, foi sendo substituído pela cevada, e a produtividade terá caído no sul entre 3500 e 2100 a.C. A importância deste fator na queda das cidades é hoje debatida.',
+  { img: 'sum-campos-irrigacao', leg: 'Campos de cevada irrigados por canais, com camponeses e burros.' },
+  'Não havia moeda, mas existiam padrões de valor: a cevada e a prata, medidas em **gur** (capacidade) e em **siclos** (peso). Um siclo pesava cerca de 8,3 g; 60 siclos faziam uma **mina** (cerca de 500 g); 60 minas faziam um **talento** (cerca de 30 kg). Os contratos de venda, empréstimo e arrendamento escreviam-se em tabuinhas, testemunhados e selados.',
+  { h: '5. Escrita, escribas e escolas' },
+  'A escrita nasceu da contabilidade. Antes dela, usavam-se pequenas fichas de argila para contar mercadorias. Por volta de 3350–3200 a.C., em Uruk, passaram a imprimir ou gravar sinais em tabuinhas. Os primeiros sinais eram desenhos (um pé, uma cabeça, um peixe); com o tempo, escritos com um **cálamo de cana** em argila húmida, ficaram em forma de cunha, daí o nome **cuneiforme** (do latim *cuneus*, «cunha»). Usavam algumas centenas de sinais, que valiam por palavras ou por sílabas. O mesmo sistema foi depois adotado para escrever acádio, elamita, hitita e outras línguas.',
+  { img: 'sum-escrita-evolucao', leg: 'De desenho a cunha: evolução de um sinal ao longo de mais de mil anos.' },
+  'Os escribas aprendiam na **edubba**, a «casa das tabuinhas». Copiavam listas de palavras, de deuses, de profissões, de animais, de cidades; depois, hinos, provérbios e poemas. Textos escolares conservados falam de professores severos e de castigos com a vara. Ser escriba era um privilégio, quase sempre de famílias com recursos, e abria as portas à administração do templo e do palácio.',
+  { img: 'sum-escriba-escola', leg: 'Aula numa edubba: alunos a copiar sinais em tabuinhas de argila.' },
+  { img: 'sum-cuneiforme-estilete', leg: 'Cálamo de cana e tabuinha: como se escrevia em cuneiforme.' },
+  { h: '6. Casa e família' },
+  'As casas eram de **tijolo de argila** crua, com pátio central, telhado plano e poucas janelas, para fugir ao calor. Os mais pobres viviam em casas de **caniço**, sobretudo nos pântanos. A família era patriarcal, mas as mulheres podiam ter propriedade, fazer negócios e ir a tribunal. Algumas eram sacerdotisas e, mais raramente, escribas. O casamento era um contrato entre famílias, com preço da noiva e dote. As fontes falam de divórcio e de adoção.',
+  { img: 'sum-casa-sumeria', leg: 'Casa suméria de tijolo com pátio central.' },
+  { caixa: 'Kug-Bau, a taberneira que foi rainha', texto: 'A Lista Suméria dos Reis inclui uma só mulher: **Kug-Bau** (Ku-Baba) de Kish, descrita como taberneira, que terá reinado c. 2500 a.C. É uma tradição, não um facto confirmado, mas mostra que a ideia de uma mulher governante não era impensável.' },
+  { h: '7. Alimentação' },
+  'A dieta baseava-se em **pão** e papas de cevada, legumes (lentilhas, grão, favas), cebola, alho, queijo, manteiga, peixe e tâmaras. A carne era mais rara: carneiro e cabra, sobretudo em festas e oferendas. A **cerveja** era a bebida de todos, feita de cevada e pão, e era bebida por palhinhas de cana de grandes vasos, como se vê em selos. Os trabalhadores recebiam rações diárias de cerveja. Um hino a **Ninkasi**, deusa da cerveja (c. 1800 a.C.), é também uma receita.',
+  { img: 'sum-cerveja-palhinhas', leg: 'Banquete sumério: cerveja bebida por palhinhas de um vaso comum.' },
+  { h: '8. Vestuário e joias' },
+  'No início, homens e mulheres usavam saias de lã com franjas e tufos, chamadas **kaunakes**. Os homens andavam muitas vezes com o torso nu; as mulheres usavam vestidos que deixavam um ombro descoberto. O cabelo e a barba eram cuidados e, em alguns períodos, rapados. As elites usavam joias de ouro, prata, lápis-lazúli, cornalina e conchas, como se vê nos túmulos reais de Ur.',
+  { img: 'sum-vestuario', leg: 'Estatuetas de oradores de Tell Asmar (c. 2800–2600 a.C.): olhos grandes, saia de kaunakes, mãos em prece.' },
+  { h: '9. Música e jogos' },
+  'Os Sumérios tocavam **liras**, harpas, flautas, tambores e sistros, em cerimónias religiosas, banquetes e funerais. As liras de Ur, com cabeças de touro de ouro e conchas, são das mais antigas conhecidas. Jogavam o **Jogo Real de Ur**, em tabuleiro de vinte casas, de que se conhecem exemplares dos túmulos de Ur (c. 2600 a.C.) e regras escritas muito mais tarde, numa tabuinha babilónica. Havia também jogos de dados e de pedras.',
+  { img: 'sum-lira-ur', leg: 'Lira de Ur com cabeça de touro, c. 2500 a.C.' },
+  { img: 'sum-jogo-real-ur', leg: 'Tabuleiro do Jogo Real de Ur, c. 2600 a.C.' },
+  { h: '10. Ciência, matemática e medicina' },
+  'Os Sumérios criaram um sistema numérico **sexagesimal** (base 60) combinado com a base 10, com valor de posição. Dele vêm os 60 minutos da hora, os 60 segundos do minuto e os 360° do círculo, que os babilónios aperfeiçoaram. As tabuinhas de Shuruppak (c. 2500 a.C.) mostram exercícios de medição de áreas e de repartição de cereais; nos séculos finais (c. 2100–1900 a.C.) há tabelas de multiplicação, de inversos, de quadrados e de raízes.',
+  { img: 'sum-relogio-60', leg: 'Uma hipótese para a base 60: contar até 12 nas falanges de uma mão e levar as dúzias com os dedos da outra (5 × 12 = 60).' },
+  'O **calendário** era lunar: doze meses de 29 ou 30 dias (354 dias), com um mês extra de tempos a tempos. Cada ano recebia o nome de um acontecimento importante. Observavam estrelas e planetas para fins religiosos.',
+  'Na medicina, a tabuinha farmacológica de Nipur (c. 2100 a.C.) é um dos mais antigos receituários conhecidos, com cerca de quinze fórmulas à base de plantas, sal e minerais. Havia dois tipos de especialistas: o **asu**, que usava drogas e curativos, e o **ashipu**, que fazia exorcismos e rituais.',
+  { h: '11. Tecnologia' },
+  { lista: [
+    '**Roda de oleiro** (c. 3500 a.C.) e **veículos de rodas** (uma das representações mais antigas é uma tabuinha de Uruk, c. 3200 a.C.).',
+    '**Arado semeador**, que enterrava a semente em fila, poupando cereal.',
+    '**Barcos de vela** e de remo para rios e Golfo.',
+    '**Bronze:** primeiro cobre com arsénio, depois cobre com estanho (c. 2500 a.C.), importado de longe.',
+    '**Tijolo cozido, abóbada e arco** em edifícios públicos e túmulos.',
+    '**Selo cilíndrico:** gravado em pedra, rolava-se em argila para assinar e selar.',
+    '**Lista de profissões, de sinais e de palavras:** primeiras obras de referência.'
+  ] },
+  { img: 'sum-mercado-cidade', leg: 'Mercado de uma cidade suméria: cevada, lã, cerâmica, mercadores e escribas a registar.' }
+];
+
+const personalidades = [
+  'Os Sumérios não escreveram biografias como hoje, mas deixaram nomes, inscrições e histórias. Estas são as figuras mais importantes, reais ou parcialmente lendárias.',
+  { h: 'Gilgamesh, rei de Uruk' },
+  'Rei de Uruk, c. 2700–2600 a.C. A Lista dos Reis diz que reinou 126 anos e foi o quinto rei da primeira dinastia de Uruk; a tradição fez dele um herói. Pensa-se que existiu de facto. Nos poemas sumérios (c. 2100 a.C.) e depois na **Epopeia de Gilgamesh** (versão acádia, c. 1800 a.C. e padronizada mais tarde), ele procura a imortalidade depois da morte do amigo Enkidu e acaba por aceitar a condição humana. Foi o primeiro grande herói literário.',
+  { img: 'sum-gilgamesh', leg: 'Gilgamesh dominando um leão, relevo assírio do século VIII a.C. (Louvre): imagem posterior, inspirada na lenda.' },
+  { img: 'sum-gilgamesh-tab11', leg: 'Tabuinha da Epopeia de Gilgamesh com o relato do dilúvio, em escrita cuneiforme.' },
+  { h: 'Enmebaragesi, rei de Kish' },
+  'Rei de Kish por volta de 2600 a.C., o primeiro governante cuja existência é confirmada por inscrições da época (fragmentos de vasos). A Lista dos Reis diz que venceu Elam.',
+  { h: 'Puabi, rainha de Ur' },
+  'Mulher de alto estatuto, enterrada no cemitério real de Ur c. 2600–2500 a.C., com um toucado de folhas de ouro e contas de lápis-lazúli e cornalina, e com dezenas de acompanhantes. Um selo cilíndrico com o seu nome permitiu conhecê-la pelo nome.',
+  { img: 'sum-puabi', leg: 'Toucado de folhas de ouro, flores e contas da rainha Puabi, de Ur, c. 2500 a.C.' },
+  { h: 'Eannatum, rei de Lagash' },
+  'Governou c. 2470–2450 a.C. Venceu Umma e fixou a fronteira com marcos. Ficou na **Estela dos Abutres**, onde os abutres levam os mortos inimigos.',
+  { h: 'Urukagina, reformador de Lagash' },
+  'Governou c. 2350 a.C. e fez reformas: limitou os abusos de funcionários, protegeu os mais pobres e garantiu justiça. Foi vencido por Lugalzagesi de Umma, que o derrubou.',
+  { h: 'Lugalzagesi, de Umma' },
+  'Conquistou Lagash e Uruk e quis governar todo o sul. Foi derrotado por Sargão de Acad, que o levou preso para Nipur, c. 2334 a.C.',
+  { h: 'Sargão de Acad' },
+  'Fundador do primeiro império da Mesopotâmia, c. 2334–2279 a.C., de língua semita acádia. Uma lenda conta que foi abandonado num cesto de junco, achado por um jardineiro e criado por ele, e tornou-se copeiro do rei de Kish antes de lhe tomar o poder. Gerações depois, ele era modelo de rei.',
+  { img: 'sum-sargao-cabeca', leg: 'Cabeça de bronze de um rei acádio, de Nínive.' },
+  { h: 'Enheduana, sacerdotisa e poeta' },
+  'Filha de Sargão e sumo-sacerdotisa de Nanna em Ur, c. 2285–2250 a.C. Compôs hinos a Inanna (entre eles «A Exaltação de Inanna») e uma coletânea de hinos de templos. É a **primeira pessoa conhecida por nome a escrever obras literárias**. Chegou até nós um disco de alabastro com o seu retrato, encontrado em Ur.',
+  { img: 'sum-enheduana', leg: 'Disco de calcário de Enheduana, c. 2300 a.C.: a figura de saia de camadas é a sacerdotisa.' },
+  { h: 'Gudea de Lagash' },
+  'Governou c. 2144–2124 a.C. enquanto os gútios dominavam. Foi um governante piedoso que reconstruiu templos e deixou numerosas estátuas de si próprio em diorito. Os **Cilindros de Gudea**, com mais de 1300 linhas, são o maior texto sumério conhecido.',
+  { img: 'sum-gudea-estatua', leg: 'Estátua sentada de Gudea de Lagash, sem cabeça, com inscrição cuneiforme no regaço (c. 2120 a.C.).' },
+  { h: 'Ur-Nammu, fundador de Ur III' },
+  'Reinou c. 2112–2095 a.C. Construiu o Grande Zigurate e muitos templos e canais, e promulgou o código de leis mais antigo conhecido (a autoria é por vezes atribuída ao filho, Shulgi). Foi morto em combate, e a sua morte inspirou um poema de lamento.',
+  { img: 'sum-urnammu-estela', leg: 'Estela de Ur-Nammu, reconstruída a partir de fragmentos (Museu da Pensilvânia): o rei que construiu o zigurate de Ur.' },
+  { h: 'Shulgi, rei de Ur' },
+  'Reinou c. 2094–2047 a.C. Criou um estado centralizado com pesos e medidas padronizados, um calendário comum, arquivos enormes e uma frota de funcionários. Declarou-se deus em vida e fundou escolas de escribas.',
+  { h: 'Ziusudra, o herói do dilúvio' },
+  'Figura lendária de Shuruppak, que sobrevive ao dilúvio num barco. É o ancestral dos heróis do dilúvio de textos posteriores, o babilónico Atrahasis e Utnapishtim, e muitos estudiosos veem nele uma influência na história bíblica de Noé.'
+];
+
+const legado = [
+  { h: 'O que nos deixaram' },
+  { lista: [
+    '**A escrita:** a ideia de guardar a palavra num suporte durável. O cuneiforme foi usado durante mais de 3000 anos.',
+    '**A cidade e a administração:** registos, impostos, arquivos, funcionários e orçamento.',
+    '**A lei escrita:** o Código de Ur-Nammu (c. 2100 a.C.) precede em três séculos o de Hamurabi.',
+    '**A escola e a biblioteca:** a edubba e as coleções de textos copiados e ensinados.',
+    '**A literatura:** poemas, hinos, provérbios, lamentos e a lenda de Gilgamesh.',
+    '**A base 60:** ainda dividimos horas e ângulos assim.',
+    '**Mitos:** o dilúvio e o paraíso (Dilmun, Eridu) deixaram marca nas tradições do Génesis. As relações são debatidas.',
+    '**Os zigurates:** inspiraram o Etemenanki da Babilónia, a provável origem da Torre de Babel.'
+  ] },
+  { img: 'sum-babel-etemenanki', leg: 'Reconstrução artística de um zigurate com o topo revestido de azulejos azuis vidrados, como o Etemenanki da Babilónia, associado à Torre de Babel.' },
+  { h: 'Arte' },
+  'A arte suméria é sobretudo religiosa e comemorativa. Destacam-se: o **Vaso de Uruk** (c. 3200 a.C.), os **selos cilíndricos**, as estatuetas de orantes de **Tell Asmar**, o **Estandarte de Ur** (mosaico em concha, lápis-lazúli e calcário vermelho, com cenas de guerra e de paz), a **lira de touro** e o **«Carneiro no arbusto»** de Ur, a **Estela dos Abutres** e as estátuas de **Gudea**.',
+  { h: 'Arquitetura: o zigurate' },
+  'O zigurate era uma torre em degraus com núcleo de tijolo cru e revestimento de tijolo cozido com betume. Nele havia um templo no topo, onde o deus «descia». O **Grande Zigurate de Ur**, de Ur-Nammu, tinha três níveis. Foi restaurado por Nabonido no século VI a.C. e parcialmente reconstruído nos anos 1980. No Templo Branco de Uruk (c. 3500–3000 a.C.), a tradição de templos sobre plataformas começa a tomar forma.',
+  { h: 'A redescoberta da Suméria' },
+  { linha: [
+    { d: '1850 – 1869', t: 'Reconhecer uma língua esquecida', x: 'Estudiosos como Edward Hincks e Jules Oppert concluem que o cuneiforme foi inventado por um povo de língua não semita. O nome «sumério» consolida-se em 1869.' },
+    { d: '1877', t: 'De Sarzec em Girsu', x: 'Ernest de Sarzec começa a escavar Tello e encontra as primeiras estátuas e inscrições sumérias.' },
+    { d: '1889 – 1900', t: 'Nipur', x: 'A Universidade da Pensilvânia escava Nipur e recupera dezenas de milhares de tabuinhas.' },
+    { d: '1912 até hoje', t: 'Uruk', x: 'Escavações alemãs, que continuam, revelam o berço da escrita.' },
+    { d: '1922 – 1934', t: 'Woolley em Ur', x: 'Leonard Woolley descobre os túmulos reais, o Estandarte de Ur e os jogos reais.' },
+    { d: '1956', t: 'A história começa na Suméria', x: 'Samuel Noah Kramer publica o livro que divulgou ao grande público a literatura suméria.' },
+    { d: '2003', t: 'Saque do Museu do Iraque', x: 'Milhares de peças desaparecem do Museu de Bagdade, incluindo o Vaso de Uruk, que foi depois recuperado.' },
+    { d: '2016', t: 'Património Mundial', x: 'Ur, Uruk e Eridu são inscritas pela UNESCO no sítio «Ahwar do Sul do Iraque».' }
+  ] },
+  { img: 'sum-museu-iraque', leg: 'Museu Nacional do Iraque, em Bagdade, com a maior coleção de arte suméria.' },
+  { img: 'sum-woolley-ur', leg: 'Equipa de escavação em Ur com operários locais, fotografia dos anos 1920–1930.' },
+  { img: 'sum-decifracao', leg: 'A inscrição de Behistun (Irão), copiada por Rawlinson no século XIX, permitiu decifrar o cuneiforme acádio.' },
+  { img: 'sum-reconstrucao-ur', leg: 'Reconstrução artística de uma cidade suméria com o seu zigurate e o porto fluvial, como seria Ur na época de Ur-Nammu.' },
+  { caixa: 'Para visitar', texto: 'O **Museu Britânico** (Londres), o **Louvre** (Paris), o **Museu da Pensilvânia** (Filadélfia), o **Museu de Pérgamo** (Berlim) e o **Museu Nacional do Iraque** (Bagdade) têm as grandes coleções sumérias.' }
+];
+
+const quiz = [
+  { p: 'Onde ficava a Suméria?', op: ['No vale do Nilo', 'No sul da Mesopotâmia, entre o Tigre e o Eufrates', 'Na costa do Mediterrâneo', 'No planalto do Irão'], certa: 1, exp: 'A Suméria ocupava a Baixa Mesopotâmia, hoje o sul do Iraque.' },
+  { p: 'Qual é a escrita mais antiga conhecida, surgida em Uruk?', op: ['Hieróglifos', 'Alfabeto fenício', 'Escrita cuneiforme (proto-cuneiforme)', 'Escrita chinesa'], certa: 2, exp: 'A escrita proto-cuneiforme de Uruk, c. 3350–3200 a.C., nasceu para fazer contas.' },
+  { p: 'Para que servia, no início, a escrita?', op: ['Para escrever poemas', 'Para contas e registos de mercadorias', 'Para cartas de amor', 'Para escrever leis'], certa: 1, exp: 'As primeiras tabuinhas registam cereais, cerveja, têxteis e gado.' },
+  { p: 'Porque se chama «cuneiforme»?', op: ['Pela forma de cunha dos sinais', 'Pelo nome de um rei', 'Pela cor da argila', 'Por vir de uma cidade chamada Cune'], certa: 0, exp: 'Do latim cuneus, «cunha»: os sinais eram feitos com um cálamo de cana na argila.' },
+  { p: 'O que é um zigurate?', op: ['Um tipo de barco', 'Uma torre em degraus com um templo no topo', 'Um código de leis', 'Um jogo de tabuleiro'], certa: 1, exp: 'Era uma torre escalonada de tijolo, com o templo do deus no cimo.' },
+  { p: 'Qual era a base do sistema numérico sumério que ainda usamos no tempo e nos ângulos?', op: ['Base 10 apenas', 'Base 12', 'Base 60 (sexagesimal)', 'Base 100'], certa: 2, exp: 'A base 60 está na hora de 60 minutos e no círculo de 360 graus.' },
+  { p: 'Quem foi Gilgamesh?', op: ['Um deus do mar', 'Um rei de Uruk que se tornou herói de uma epopeia', 'O fundador de Ur', 'Um escriba de Nipur'], certa: 1, exp: 'Gilgamesh foi rei de Uruk, c. 2700–2600 a.C., e herói da mais antiga epopeia conhecida.' },
+  { p: 'Quem é considerada a primeira autora conhecida pelo nome?', op: ['Sapho', 'Cleópatra', 'Enheduana', 'Puabi'], certa: 2, exp: 'Enheduana, filha de Sargão, sacerdotisa de Nanna em Ur, assinou hinos a Inanna.' },
+  { p: 'Que rei deu nome ao mais antigo código de leis conhecido?', op: ['Hamurabi', 'Ur-Nammu', 'Sargão', 'Gudea'], certa: 1, exp: 'O Código de Ur-Nammu (c. 2100 a.C.) é anterior em três séculos ao de Hamurabi.' },
+  { p: 'Quem unificou a Mesopotâmia criando o primeiro império?', op: ['Sargão de Acad', 'Gilgamesh', 'Shulgi', 'Eannatum'], certa: 0, exp: 'Sargão de Acad, c. 2334 a.C., derrotou Lugalzagesi e uniu as cidades do sul e do norte.' },
+  { p: 'Qual era a cidade do deus Enlil, centro religioso de toda a Suméria?', op: ['Ur', 'Eridu', 'Nipur', 'Lagash'], certa: 2, exp: 'Nipur era o centro religioso: quem controlava o templo de Enlil legitimava-se como rei.' },
+  { p: 'O que bebiam os Sumérios por palhinhas de cana de grandes vasos?', op: ['Vinho', 'Leite', 'Cerveja', 'Água do rio'], certa: 2, exp: 'A cerveja de cevada era a bebida de todos e era bebida por palhinhas.' },
+  { p: 'Qual destes metais era importado, porque a Suméria não tinha?', op: ['Nenhum', 'Cobre', 'Barro', 'Cevada'], certa: 1, exp: 'Cobre, lápis-lazúli e madeira vinham de longe, de Magan, do Afeganistão e do Líbano.' },
+  { p: 'Quem descobriu os túmulos reais de Ur nos anos 1920?', op: ['Howard Carter', 'Heinrich Schliemann', 'Leonard Woolley', 'Henry Rawlinson'], certa: 2, exp: 'Leonard Woolley escavou Ur entre 1922 e 1934 e encontrou o Estandarte de Ur e a rainha Puabi.' },
+  { p: 'O que acabou por acontecer ao sumério como língua?', op: ['É falado ainda hoje no Iraque', 'Deixou de ser falado, mas continuou a ser ensinado como língua erudita', 'Foi proibido por Sargão', 'Nunca chegou a ser escrito'], certa: 1, exp: 'Deixou de ser língua falada por volta de 2000–1700 a.C., mas foi copiado durante mais de mil anos, como o latim.' }
+];
+
+export default {
+  id: 'sumerios',
+  cor: '#c9a24b',
+  emblema: '../assets/img/sumerios.png',
+  nome:    { pt: 'Sumérios', en: 'Sumerians' },
+  periodo: { pt: 'c. 4500 a.C. – 2000 a.C.', en: 'c. 4500 BC – 2000 BC' },
+  visao:          { pt: visao, en: EN.visao },
+  linha:          { pt: linha, en: EN.linha },
+  mapa:           { pt: mapa, en: EN.mapa },
+  sociedade:      { pt: sociedade, en: EN.sociedade },
+  personalidades: { pt: personalidades, en: EN.personalidades },
+  legado:         { pt: legado, en: EN.legado },
+  quiz:           { pt: quiz, en: EN.quiz }
+};

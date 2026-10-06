@@ -1,0 +1,519 @@
+[
+  {
+    "ficheiro": "zimbabue/img/zim-mapa-regiao.jpg",
+    "titulo_commons": "File:Africa relief location map-no borders.jpg",
+    "autor": "Eric Gaba (Sting - fr:Sting)",
+    "licenca": "CC BY-SA 3.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/3.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Africa_relief_location_map-no_borders.jpg",
+    "revisao": 977518890,
+    "descricao_original": "Blank physical map of Africa, without international boundaries, for geo-location purposes.",
+    "credito_original": "Based upon File:Africa_map_blank.svg created by myself\nSources of data:\n\nVMap-0\nNGDC World Data Bank II\nCleanTOPO2\nSRTM30 Plus",
+    "resolucao_original": [
+      1525,
+      1440
+    ],
+    "resolucao_entrega": [
+      540,
+      420
+    ],
+    "transformacoes": "Recorte regional e adição de três marcadores geográficos segundo a projeção Lambert azimutal de área equivalente da base; CC BY-SA 3.0. Fórmulas: https://en.wikipedia.org/wiki/Module:Location_map/data/Africa"
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-cerco-grande.jpg",
+    "titulo_commons": "File:Great-zim-aerial-looking-West.JPG",
+    "autor": "Janice Bell",
+    "licenca": "CC BY-SA 4.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Great-zim-aerial-looking-West.JPG",
+    "revisao": 1278270710,
+    "descricao_original": "Aerial view of Great Zimbabwe's Great Enclosure (circumference 250 m, maximum height 11 m)[1] and adjacent ruins looking southeast from the Hill Fort.",
+    "credito_original": "Own work",
+    "resolucao_original": [
+      4672,
+      3104
+    ],
+    "resolucao_entrega": [
+      1920,
+      1276
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-rinoceronte-ouro.jpg",
+    "titulo_commons": "File:UP rhino.JPG",
+    "autor": "Sian Tiley-Nel",
+    "licenca": "CC BY-SA 4.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:UP_rhino.JPG",
+    "revisao": 1009995454,
+    "descricao_original": "Golden Rhinoceros at w:en:Mapungubwe Collection, SA",
+    "credito_original": "Photo provided by Sian Tiley-Nel, Manager & Chief Curator, University of Pretoria Museums as part of the m:Research:Wikipedia Primary School SSAJRP programme",
+    "resolucao_original": [
+      800,
+      571
+    ],
+    "resolucao_entrega": [
+      800,
+      571
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-mapungubwe-ceptro.jpg",
+    "titulo_commons": "File:African Gold art.jpg",
+    "autor": "Cool Art",
+    "licenca": "CC BY-SA 2.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:African_Gold_art.jpg",
+    "revisao": 935302460,
+    "descricao_original": "gold statuettes and objects made by African artisans from the Ashanti Empire and the Kingdom of Mapungubwe",
+    "credito_original": "https://www.flickr.com/photos/cool-art/6664034387/",
+    "resolucao_original": [
+      6936,
+      2008
+    ],
+    "resolucao_entrega": [
+      1422,
+      783
+    ],
+    "transformacoes": "Recorte da secção inferior do mosaico African Gold art, isolando o ceptro de Mapungubwe. CC BY-SA 2.0."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-porcelana-celadon.jpg",
+    "titulo_commons": "File:Southern Song Bowl, Longquan Ware.jpg",
+    "autor": "Gary Todd",
+    "licenca": "CC0",
+    "url_licenca": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Southern_Song_Bowl,_Longquan_Ware.jpg",
+    "revisao": 956057220,
+    "descricao_original": "Ceramics of China special exhibit, Benaki Museum, Athens, Greece. Complete indexed photo collection at WorldHistoryPics.com.",
+    "credito_original": "https://www.flickr.com/photos/101561334@N08/28502380851/",
+    "resolucao_original": [
+      5184,
+      3456
+    ],
+    "resolucao_entrega": [
+      1920,
+      1280
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-moeda-kilwa.jpg",
+    "titulo": "Kilwa copper coin",
+    "autor": "T. Huffman",
+    "copyright": "British Institute in Eastern Africa; John Sutton",
+    "licenca": "CC BY 4.0",
+    "url_licenca": "https://creativecommons.org/licenses/by/4.0/",
+    "pagina": "https://archaeologydataservice.ac.uk/archives/collections/view/object.cfm?object_id=2601607",
+    "doi_colecao": "https://doi.org/10.5284/1117706",
+    "ficheiro_original": "BIEA_Sutton_226.jpg",
+    "md5_original": "7f8bd952cafab25410b3196f55b49a78",
+    "transformacoes": "Redimensionamento e conversão JPEG.",
+    "resolucao_entrega": [
+      1920,
+      1113
+    ]
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-acropole.jpg",
+    "titulo_commons": "File:Hill Complex - Great Zimbabwe I.jpg",
+    "autor": "andryn2006",
+    "licenca": "CC BY-SA 2.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Hill_Complex_-_Great_Zimbabwe_I.jpg",
+    "revisao": 893135156,
+    "descricao_original": "Great Zimbabwe",
+    "credito_original": "https://www.flickr.com/photos/84985982@N00/47614230731/",
+    "resolucao_original": [
+      3450,
+      5076
+    ],
+    "resolucao_entrega": [
+      1740,
+      2560
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-torre-conica.jpg",
+    "titulo_commons": "File:Conical Tower - Great Enclosure III (33736918448).jpg",
+    "autor": "Andrew Moore from Johannesburg, South Africa",
+    "licenca": "CC BY-SA 2.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Conical_Tower_-_Great_Enclosure_III_(33736918448).jpg",
+    "revisao": 1131986253,
+    "descricao_original": "Great Zimbabwe",
+    "credito_original": "Conical Tower - Great Enclosure III",
+    "resolucao_original": [
+      5472,
+      3648
+    ],
+    "resolucao_entrega": [
+      1920,
+      1280
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-muralha-granito.jpg",
+    "titulo_commons": "File:Wall of the great enclosure, Great Zimbabwe.JPG",
+    "autor": "Jens Klinzing",
+    "licenca": "CC BY 3.0",
+    "url_licenca": "https://creativecommons.org/licenses/by/3.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Wall_of_the_great_enclosure,_Great_Zimbabwe.JPG",
+    "revisao": 1272686251,
+    "descricao_original": "Outside view (close) of the wall of the great enclosure of Great Zimbabwe.",
+    "credito_original": "Own work",
+    "resolucao_original": [
+      2000,
+      1500
+    ],
+    "resolucao_entrega": [
+      1920,
+      1440
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-vale.jpg",
+    "titulo_commons": "File:Gr Zimb View 1.jpg",
+    "autor": "Thomas Wozniak",
+    "licenca": "CC BY 3.0",
+    "url_licenca": "https://creativecommons.org/licenses/by/3.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Gr_Zimb_View_1.jpg",
+    "revisao": 1276040695,
+    "descricao_original": "View from hill komplex to the valley in Great Zimbabwe Ruins",
+    "credito_original": "Own work",
+    "resolucao_original": [
+      1767,
+      1188
+    ],
+    "resolucao_entrega": [
+      1767,
+      1188
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-khami-muros.jpg",
+    "titulo_commons": "File:Khami Main Platform.jpg",
+    "autor": "Robert Stewart Burrett",
+    "licenca": "CC BY-SA 4.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Khami_Main_Platform.jpg",
+    "revisao": 1017722607,
+    "descricao_original": "A view of the stone terraces that constitute the artificial stone platform at the centre of Khami World Heritage Site near Bulawayo. Built from granite blocks and with out cement, i.e dry stone walling, it would have been the residence of main members of the Royal elite of the Torwa or Butua State - a centralised political entity that arose in southwestern Zimbabwe after the decline of the Great Zimbabwe State. Probably dates to between fifteenth to seventeenth centuries.",
+    "credito_original": "Own work",
+    "resolucao_original": [
+      2189,
+      1459
+    ],
+    "resolucao_entrega": [
+      1920,
+      1280
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-ave-zimbabue.jpg",
+    "titulo_commons": "File:Soapstone birds on pedestals.jpg",
+    "autor": "James Theodore Bent",
+    "licenca": "Public domain",
+    "url_licenca": "",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Soapstone_birds_on_pedestals.jpg",
+    "revisao": 1208385368,
+    "descricao_original": "Zimbabwe Birds",
+    "credito_original": "The Ruined Cities of Mashonaland - https://archive.org/details/ruinedcitiesofma00jthe",
+    "resolucao_original": [
+      958,
+      538
+    ],
+    "resolucao_entrega": [
+      958,
+      538
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-ouro-objetos.jpg",
+    "titulo_commons": "File:Mapungubwe gold beads and jewellery - Museum of Gems and Jewellery.jpg",
+    "autor": "Vassia Atanassova - Spiritia",
+    "licenca": "CC BY-SA 4.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Mapungubwe_gold_beads_and_jewellery_-_Museum_of_Gems_and_Jewellery.jpg",
+    "revisao": 1185035397,
+    "descricao_original": "Mapungubwe gold beads and jewellery - Museum of Gems and Jewellery, Cape Town",
+    "credito_original": "Own work",
+    "resolucao_original": [
+      4608,
+      3456
+    ],
+    "resolucao_entrega": [
+      1920,
+      1440
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-lingotes-cobre.jpg",
+    "titulo_commons": "File:Cruz de Katanga (52390935503).jpg",
+    "autor": "Ángel M. Felicísimo from Mérida, España",
+    "licenca": "CC BY 2.0",
+    "url_licenca": "https://creativecommons.org/licenses/by/2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Cruz_de_Katanga_(52390935503).jpg",
+    "revisao": 1052885631,
+    "descricao_original": "Lingotes de cobre y aleaciones en forma de cruz usados como moneda en Congo y Zambia. Fotografiado en la exposición temporal sobre dinero tribal africano en el Museo Casa de la Moneda, Madrid.",
+    "credito_original": "Cruz de Katanga",
+    "resolucao_original": [
+      1150,
+      2500
+    ],
+    "resolucao_entrega": [
+      1150,
+      2500
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-contas-vidro.jpg",
+    "titulo_commons": "File:Mutisalah necklace from Timor. Pendant detail. From the collection of Veronica Hazzard,.JPG",
+    "autor": "Chris Hazzard",
+    "licenca": "CC BY-SA 3.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/3.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Mutisalah_necklace_from_Timor._Pendant_detail._From_the_collection_of_Veronica_Hazzard,.JPG",
+    "revisao": 1282049571,
+    "descricao_original": "Central pendant of low grade silver and a copper bead with predominantly Indo-pacific mutisalah. A few coil beads can be seen.",
+    "credito_original": "Own work",
+    "resolucao_original": [
+      592,
+      737
+    ],
+    "resolucao_entrega": [
+      592,
+      737
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-mbira.jpg",
+    "titulo_commons": "File:Mbira dzavadzimu.jpg",
+    "autor": "Autor não identificado",
+    "licenca": "CC BY-SA 3.0",
+    "url_licenca": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Mbira_dzavadzimu.jpg",
+    "revisao": 1270938249,
+    "descricao_original": "",
+    "credito_original": "",
+    "resolucao_original": [
+      1722,
+      1660
+    ],
+    "resolucao_entrega": [
+      1722,
+      1660
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-gongo-ferro.jpg",
+    "titulo_commons": "File:Iron double gong.jpg",
+    "autor": "Stephanie cheks",
+    "licenca": "CC BY-SA 4.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Iron_double_gong.jpg",
+    "revisao": 1199624056,
+    "descricao_original": "Used by members of Ekpo society during initiation",
+    "credito_original": "Own work",
+    "resolucao_original": [
+      3024,
+      4032
+    ],
+    "resolucao_entrega": [
+      1920,
+      2560
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-barros.jpg",
+    "titulo_commons": "File:João de Barros (cropped).jpg",
+    "autor": "Victor Couto",
+    "licenca": "Public domain",
+    "url_licenca": "",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Jo%C3%A3o_de_Barros_(cropped).jpg",
+    "revisao": 1270571572,
+    "descricao_original": "portrait de João de Barros, in Décadas da Ásia, Lisboa 1777-1778",
+    "credito_original": "Own work",
+    "resolucao_original": [
+      1878,
+      2959
+    ],
+    "resolucao_entrega": [
+      1625,
+      2560
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-silveira.jpg",
+    "titulo_commons": "File:Father Gonçalo da Silveira (cropped).png",
+    "autor": "Author : Adrien Melaer",
+    "licenca": "Public domain",
+    "url_licenca": "",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Father_Gon%C3%A7alo_da_Silveira_(cropped).png",
+    "revisao": 1283622428,
+    "descricao_original": "Martyrdom by strangulation of Jesuit Father Gonçalo da Silveira",
+    "credito_original": "Kerckelycke historie van de gheheele werelt by Cornelius Hazart",
+    "resolucao_original": [
+      83,
+      128
+    ],
+    "resolucao_entrega": [
+      83,
+      128
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-mauch.jpg",
+    "titulo_commons": "File:Karl Mauch Portrait 1867.jpg",
+    "autor": "Unknown authorUnknown author",
+    "licenca": "Public domain",
+    "url_licenca": "",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Karl_Mauch_Portrait_1867.jpg",
+    "revisao": 1183835250,
+    "descricao_original": "Karl Mauch Portrait.",
+    "credito_original": "https://www.s2a3.org.za/bio/Biograph_final.php?serial=1867",
+    "resolucao_original": [
+      211,
+      279
+    ],
+    "resolucao_entrega": [
+      211,
+      279
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-caton-thompson.jpg",
+    "titulo_commons": "File:Close-up of the inscription (OpenBenches 4385).jpg",
+    "autor": "AnonymousUnknown author",
+    "licenca": "CC BY-SA 4.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Close-up_of_the_inscription_(OpenBenches_4385).jpg",
+    "revisao": 955961128,
+    "descricao_original": "IN MEMORY OF DOROTHY DE NAVARRO AND GERTRUDE CATON THOMPSON",
+    "credito_original": "Gallery Photo archive copy at the Wayback Machine",
+    "resolucao_original": [
+      6016,
+      4016
+    ],
+    "resolucao_entrega": [
+      1920,
+      1282
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-bandeira.jpg",
+    "titulo_commons": "File:Flag of Zimbabwe.svg",
+    "autor": "See File history below for details.",
+    "licenca": "Public domain",
+    "url_licenca": "",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Zimbabwe.svg",
+    "revisao": 1247759438,
+    "descricao_original": "Flag of Zimbabwe",
+    "credito_original": "Own work. \n\nBased on: FOTW;\nSee also:\n\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n",
+    "resolucao_original": [
+      1200,
+      600
+    ],
+    "resolucao_entrega": [
+      1920,
+      960
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-ave-museu.jpg",
+    "titulo_commons": "File:Zimbabwebird1.jpg",
+    "autor": "The original uploader was Brian.gratwicke at English Wikipedia.",
+    "licenca": "CC BY 2.5",
+    "url_licenca": "https://creativecommons.org/licenses/by/2.5",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Zimbabwebird1.jpg",
+    "revisao": 1256127659,
+    "descricao_original": "Zimbabwe bird bannister, Brian Gratwicke",
+    "credito_original": "Transferred from en.wikipedia to Commons by Mario1952 using CommonsHelper.",
+    "resolucao_original": [
+      401,
+      650
+    ],
+    "resolucao_entrega": [
+      401,
+      650
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-rhodes.jpg",
+    "titulo_commons": "File:Portrait of Cecil John Rhodes signed.jpg",
+    "autor": "William Thomas Stead",
+    "licenca": "Public domain",
+    "url_licenca": "",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Portrait_of_Cecil_John_Rhodes_signed.jpg",
+    "revisao": 1032315182,
+    "descricao_original": "Plate from p. 116 of The Last Will and Testament of Cecil John Rhodes (1902), Cecil John Rhodes",
+    "credito_original": "This image has been extracted from another file",
+    "resolucao_original": [
+      1627,
+      2545
+    ],
+    "resolucao_entrega": [
+      1627,
+      2545
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-mapungubwe-paisagem.jpg",
+    "titulo_commons": "File:Mapungubwe hill limpopo.jpg",
+    "autor": "Marius Loots",
+    "licenca": "CC BY-SA 3.0",
+    "url_licenca": "https://creativecommons.org/licenses/by-sa/3.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Mapungubwe_hill_limpopo.jpg",
+    "revisao": 1224123264,
+    "descricao_original": "Mapungubwe Hill viewed from the north",
+    "credito_original": "Own work",
+    "resolucao_original": [
+      2362,
+      1887
+    ],
+    "resolucao_entrega": [
+      1920,
+      1534
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  },
+  {
+    "ficheiro": "zimbabue/img/zim-mapa-mutapa.jpg",
+    "titulo_commons": "File:Empire Monomotapa Map 1746.jpg",
+    "autor": "Abbé Prévost [1697-1763]",
+    "licenca": "Public domain",
+    "url_licenca": "",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Empire_Monomotapa_Map_1746.jpg",
+    "revisao": 1228904984,
+    "descricao_original": "1746 map of the Empire of the Monomotapa / Mutapa / Mwenemutapa / Munhumutapa.\nFrom the Internet Archive book,\nHistoire Générale des Voyages \nou Nouvelle Collection \nde toutes les relations de voyages \npar mer et par terre, \nBook 5, 1746.\nhttps://archive.org/details/histoiregnralede05prvo/page/n283/mode/1up\n\nAlso in WikiCommons here",
+    "credito_original": "Internet Archive book \nHistoire Générale des Voyages, Book 5, 1746.\n\nhttps://archive.org/details/histoiregnralede05prvo/",
+    "resolucao_original": [
+      4277,
+      3422
+    ],
+    "resolucao_entrega": [
+      1920,
+      1536
+    ],
+    "transformacoes": "Conversão JPEG e redução quando necessária; orientação EXIF."
+  }
+]

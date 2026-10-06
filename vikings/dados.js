@@ -1,0 +1,310 @@
+// VIKINGS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
+import EN from './dados-en.js';
+import CRED from './creditos.js';
+// Datas aproximadas; «c.» assinala o que é incerto. As fontes escritas sobre os vikings são, em geral, de quem foi atacado (cronistas cristãos e muçulmanos) ou de autores islandeses muito posteriores (séculos XII–XIII): lêem-se com cautela.
+// Imagens: cada {img:'id'} procura o ficheiro  vikings/img/id.jpg  (ver IMAGENS_VIKINGS.md para a lista e os prompts).
+
+const visao = [
+  { caixa: 'Em resumo', texto: [
+    'Os **vikings** foram os marinheiros, mercadores, guerreiros e colonos da Escandinávia (hoje Dinamarca, Noruega e Suécia) que, entre o fim do século VIII e meados do século XI, atacaram, comerciaram e se instalaram da Gronelândia ao Mar Cáspio e do Canadá a Bizâncio. Convencionou-se chamar «Era Viking» ao período que vai do ataque a **Lindisfarne** (793) à batalha de **Hastings** (1066).',
+    'Não foram só piratas: foram também fazendeiros, artesãos e exploradores. Fundaram reinos (a Normandia, o Danelaw, os reinos de Dublin e de York, a **Rus’** de Kiev), povoaram a Islândia e a Gronelândia, chegaram à América do Norte cerca de cinco séculos antes de Colombo e deixaram-nos navios admiráveis, as sagas islandesas e uma mitologia que ainda hoje está viva.',
+    '**Uma advertência:** quase tudo o que sabemos vem de textos escritos por quem sofreu os ataques (monges ingleses e francos, cronistas árabes) ou por islandeses cristãos que puseram a escrito, séculos depois, tradições orais pagãs. Os próprios vikings quase não escreveram história: deixaram inscrições em runas, curtas, e objetos. Por isso a arqueologia é tão importante, e por isso há tanto debate.'
+  ] },
+  { img: 'vik-mapa-expansao', leg: 'Mapa das viagens, rotas e áreas de influência dos vikings, séculos VIII a XI.' },
+  { h: 'Onde viviam' },
+  'A pátria dos vikings foi a **Escandinávia** e a península da Jutlândia: os atuais territórios da Dinamarca (terra plana, fértil, voltada para o Báltico e o Mar do Norte), da Noruega (costa recortada de fiordes, com pouca terra arável) e da Suécia (florestas e lagos, com a região do lago Mälaren como centro). Eram regiões frias, com invernos longos, onde o mar era o caminho mais fácil entre povoações separadas por montanhas e florestas.',
+  'A palavra **viking** (em nórdico antigo *víkingr*) quer dizer, ao certo, «o que anda em expedição marítima», e só por extensão passou a designar o povo. O próprio povo não se chamava assim: os ingleses falavam em «dinamarqueses» ou «homens do norte», os francos em *Normanni* («homens do Norte»), os irlandeses em *Gaill* («estrangeiros»), os eslavos e os bizantinos em *Rus’* e *Varangoi*, e os árabes em *Majus* (nome que significa «magos», isto é, pagãos). Quanto à origem da palavra, discute-se se vem de *vík* («baía»), de *vig* («batalha») ou de outra raiz.',
+  { img: 'vik-oseberg-navio', leg: 'O navio de Oseberg, construído c. 820 e usado como sepultura em 834 (Noruega). Museu dos Navios Vikings, Oslo.' },
+  { h: 'Quando existiram' },
+  'A «Era Viking» é uma convenção de historiadores: começa em 793, com o saque do mosteiro de Lindisfarne, e termina em 1066, com a derrota do rei Harald Hardrada em Stamford Bridge e a conquista normanda de Inglaterra. Na Escandinávia, o fim costuma pôr-se um pouco antes, em c. 1050, com a cristianização e a criação de reinos de tipo europeu. Antes disto havia já séculos de comércio, guerra e navegação na região, e há sinais de ataques anteriores (ver linha do tempo).',
+  { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
+    ['Antecedentes (Era Vendel)', 'c. 550 – 793', 'Chefes ricos com túmulos de barco (Vendel, Valsgärde) e capacetes decorados; comércio com Frísios e Francos; vastos contactos no Báltico'],
+    ['Primeiros ataques', '793 – c. 850', 'Lindisfarne, Iona, Irlanda, costa franca; primeiras bases (longphorts) na Irlanda; Dublin (841); Lisboa e Sevilha (844)'],
+    ['Grande Exército e Danelaw', 'c. 865 – 954', 'Conquista de York, Mercia e Ânglia Oriental; resistência de Alfredo; reino viking de York até 954'],
+    ['Expansão atlântica', 'c. 870 – c. 1000', 'Islândia, Gronelândia, Vinland; Faroé, Órcades e Shetland; Man e Hébridas'],
+    ['A Rus’ e Bizâncio', 'c. 860 – 1050', 'Rurik, Oleg e Kiev; comércio pelos rios; a Guarda Varangiana (a partir de 988)'],
+    ['Normandia', 'c. 911 em diante', 'Rollo e o ducado da Normandia; os «normandos» já falavam francês no tempo de Hastings'],
+    ['Reinos e Império do Mar do Norte', 'c. 950 – 1042', 'Harald Dente Azul, cristianização; Sueno e Canuto reinam em Inglaterra, Dinamarca e Noruega'],
+    ['Fim convencional', '1066', 'Stamford Bridge (25 setembro) e Hastings (14 outubro)']
+  ] } },
+  { h: 'Quem eram os vikings?' },
+  'Eram escandinavos, de língua nórdica antiga (o antepassado do islandês, do norueguês, do sueco e do dinamarquês), com religião, leis e costumes comuns, mas sem um Estado único. Dividiam-se em reinos pequenos que só no fim da época se consolidaram em três, e muitas das expedições eram iniciativas privadas de um chefe e dos seus homens. Os estudos genéticos mostram que os grupos viking eram mais diversos do que se pensava, com mistura de populações locais e de gente da Escandinávia e do Báltico.',
+  'Nem todos eram «vikings» no sentido de saqueadores: a maioria da população eram lavradores, pescadores, ferreiros e mercadores, que ficavam em casa. «Ir viking» era uma atividade sazonal, a que muitos jovens se dedicavam por algum tempo.',
+  { img: 'vik-capacete-gjermundbu', leg: 'O capacete de Gjermundbu, c. 950, o único capacete quase completo da Era Viking. Não tem cornos. Museu de História Cultural, Oslo.' },
+  { h: 'Porque importam' },
+  { lista: [
+    '**Exploração:** foram os primeiros europeus a chegar à América do Norte (L’Anse aux Meadows, c. 1000 d.C., confirmado pela arqueologia).',
+    '**Construção naval:** o navio viking, rápido, flexível e de pouco calado, foi uma das grandes realizações técnicas da Idade Média.',
+    '**Estados e cidades:** contribuíram para a formação da Rus’, da Normandia, de Inglaterra, da Dinamarca, da Noruega, da Suécia e da Islândia; e para a fundação de cidades como Dublin.',
+    '**Direito e política:** o Thing, a assembleia de homens livres, e o Althing islandês (930) são das mais antigas assembleias legislativas da Europa que ainda têm continuidade de memória.',
+    '**Literatura e mito:** a Edda e as sagas islandesas são das grandes obras literárias medievais, e Odin, Thor e Freya passaram à cultura popular.'
+  ] },
+  { h: 'Hoje' },
+  'Os vikings deixaram marcas na língua (inglês *sky*, *egg*, *knife*, *window*; nomes de terras acabados em *-by* em Inglaterra; o dia *Thursday*, de Thor), nos apelidos (Johnson, Olsen), em topónimos de Inglaterra, Irlanda e Normandia, nas ruínas de Jelling e de L’Anse aux Meadows (ambas Património Mundial da UNESCO) e na imaginação popular, que muitas vezes os deforma: foram um povo complexo, e não apenas o bárbaro de cornos na cabeça das ilustrações do século XIX.'
+];
+
+const linha = [
+  'Esta linha do tempo segue os acontecimentos principais. As datas dos primeiros séculos são aproximadas e muitas vêm de crónicas de gente atacada ou de sagas tardias; indica-se quando é assim.',
+  { linha: [
+    { d: 'c. 550 – 793', t: 'A Era Vendel', x: 'Antes da Era Viking, a Escandinávia, sobretudo a Suécia central, tem chefes ricos, sepultados em barcos com armas e capacetes decorados (**Vendel**, **Valsgärde**, Uppland) e túmulos monumentais em Gamla Uppsala. Há contactos com a Inglaterra anglo-saxónica, a Frísia e o mundo báltico; a vela, que chega ao Norte talvez nos séculos VII–VIII, abre novas possibilidades de viagem.' },
+  ] },
+  { img: 'vik-vendel-elmo', leg: 'Capacete da era Vendel de um túmulo de barco de Valsgärde (Uppland, Suécia), século VII.' },
+  { linha: [
+    { d: 'c. 750', t: 'Os barcos de Salme', x: 'Em Salme, na ilha estónia de Saaremaa, foram encontrados dois barcos de sepultura com cerca de quarenta guerreiros mortos em combate, datados de c. 750. Análises sugerem origem na Suécia central. Seria um ataque ao Báltico, anterior em quatro décadas a Lindisfarne, uma prova de que a Era Viking não começou do nada.' },
+    { d: '789 (ou 787–792)', t: 'Portland', x: 'A *Crónica Anglo-Saxónica* regista que três navios de «homens do norte» aportaram em Portland, no Dorset; o magistrado que os foi receber foi morto. A data é discutida (as versões da crónica variam). Pode ser a primeira notícia de um ataque viking em Inglaterra.' },
+    { d: '8 junho 793', t: 'Lindisfarne', x: 'Os vikings saqueiam o mosteiro de **Lindisfarne**, na costa da Nortúmbria. O monge **Alcuíno de York**, que vivia na corte de Carlos Magno, escreve uma carta de horror e diz, em tradução livre, que nunca em Inglaterra se vira tal terror. A notícia chocou a Europa cristã e tornou-se a data de abertura da Era Viking.' },
+  ] },
+  { img: 'vik-lindisfarne-ia', leg: 'Cena imaginada do ataque a Lindisfarne em 793; não representa um pormenor documentado. Ilustração gerada por IA.' },
+  { linha: [
+    { d: '793 – c. 800', t: 'Iona, Jarrow, Irlanda', x: 'Seguem-se ataques em Jarrow (794), em Iona (795 e 802, 806) e em mosteiros irlandeses. Os monges refugiam-se, e os livros e as relíquias são levados para outras casas, como Kells, na Irlanda.' },
+    { d: '841', t: 'Dublin, um *longphort*', x: 'Os vikings instalam um acampamento fortificado e invernada, um *longphort*, junto à «poça negra» (*dubh linn*) do rio Liffey. Daqui nasce **Dublin**, a principal cidade viking da Irlanda, que seria durante séculos um centro de comércio e de tráfico de escravos.' },
+    { d: '844', t: 'Galiza, Lisboa e Sevilha', x: 'Uma frota viking ataca a costa das Astúrias e da Galiza (onde o rei Ramiro I os combate) e desce o litoral. Segundo autores árabes muito posteriores (**Ibn Idhari**, **Ibn Hayyan**), chegou a Lisboa em agosto ou setembro e esteve cerca de treze dias, saqueando; depois seguiu para o sul e atacou Sevilha, onde foi derrotada pelo emir Abd al-Rahman II.' },
+  ] },
+  { img: 'vik-lisboa-844-ia', leg: 'Cena imaginada de navios vikings diante de Lisboa em 844, com a cidade muçulmana no monte. Não representa um pormenor documentado. Ilustração gerada por IA.' },
+  { linha: [
+    { d: '845', t: 'Paris e o resgate de prata', x: 'Uma frota liderada por um chefe a que as fontes chamam **Reginherus** (por vezes identificado com o lendário Ragnar) sobe o Sena até Paris. O rei Carlos, o Calvo, paga **7000 libras de prata** para que partam. Seria a primeira de muitas vezes: pagar dinheiro aos atacantes (mais tarde chamado *Danegeld* em Inglaterra) tornou-se prática comum.' },
+    { d: 'c. 860 – 862', t: 'Os Rus’ e Rurik', x: 'Em c. 860, uma frota de **Rus’** ataca Constantinopla. Segundo a *Crónica dos Tempos Passados* (compilada c. 1113 em Kiev), em 862 as tribos eslavas e finlandesas do norte convidam o chefe varangiano **Rurik** a governá-las. A história tem muito de lenda, mas retrata uma verdade: escandinavos instalaram-se e fizeram política em torno de Ladoga e de Novgorod.' },
+    { d: '865', t: 'O Grande Exército Pagão', x: 'Desembarca na Ânglia Oriental um grande exército de escandinavos, em que as fontes inglesas põem como chefes **Ivar** e **Halfdan** (tradicionalmente filhos de Ragnar Lodbrok, figura mais lendária do que histórica). Aqui o objetivo já não é só saquear, mas conquistar e ficar.' },
+    { d: '866 – 874', t: 'York, Ânglia Oriental e Mércia', x: 'Os vikings tomam **York** (866), derrotam o rei Edmundo da Ânglia Oriental (c. 869 – 870) e passam a Mércia (Repton, 873 – 874). Dos quatro grandes reinos anglo-saxónicos, só o de Wessex resiste.' },
+    { d: 'c. 870 – 874', t: 'A colonização da Islândia', x: 'Segundo o *Landnámabók* («Livro dos Povoamentos», séc. XII), o noruego Ingólfr Arnarson instala-se em Reykjavík c. 874. A arqueologia (cinzas vulcânicas de c. 877) confirma a chegada de povoadores na década de 870.' },
+    { d: '871', t: 'Alfredo sobe ao trono', x: 'Alfredo, o Grande, torna-se rei de Wessex, em plena guerra contra os dinamarqueses. Em 871 houve nove batalhas, e o novo rei compra uma trégua. Mais tarde, em 878, a sorte vira.' },
+    { d: 'maio 878', t: 'Edington', x: 'Depois de se refugiar nos pântanos de Somerset, Alfredo reúne um exército e derrota o chefe dinamarquês **Guthrum** em Edington (Ethandun). Guthrum aceita o batismo; e um tratado (c. 886 – 890) divide a Inglaterra: o Oeste para Alfredo, o Leste e o Norte para os dinamarqueses, o futuro **Danelaw**.' },
+  ] },
+  { img: 'vik-danelaw-mapa', leg: 'Mapa aproximado do Danelaw e dos reinos anglo-saxónicos, c. 886.' },
+  { linha: [
+    { d: 'c. 882', t: 'Oleg toma Kiev', x: 'Segundo a *Crónica dos Tempos Passados*, **Oleg**, sucessor de Rurik, desce o Dnipro, toma Kiev e faz dela a capital da Rus’. A tradição diz ainda que em 907 pregou o seu escudo às portas de Constantinopla; é provável que o episódio seja lendário, mas os tratados com Bizâncio (911, 944) são reais.' },
+    { d: '885 – 886', t: 'O cerco de Paris', x: 'Uma grande frota viking cerca Paris durante um ano. A cidade resiste sob o conde **Odo** (Eudes), que mais tarde se tornou rei. O imperador Carlos, o Gordo, em vez de combater, paga e deixa os vikings seguir para a Borgonha. O episódio custou-lhe o prestígio, e foi destituído em 887.' },
+    { d: 'c. 911', t: 'Rollo e a Normandia', x: 'No tratado de **Saint-Clair-sur-Epte**, o rei franco Carlos, o Simples, entrega ao chefe viking **Rollo** a região de Rouen, em troca do batismo e de que defenda a foz do Sena. Nasce a Normandia, «terra dos homens do Norte». Os pormenores (e a própria data) vêm de cronistas posteriores.' },
+  ] },
+  { img: 'vik-rollo-estatua', leg: 'Estátua de Rollo em Falaise (Normandia), obra do século XIX; retrato imaginado.' },
+  { linha: [
+    { d: 'c. 930', t: 'O Althing', x: 'Os chefes islandeses criam o **Althing**, assembleia nacional que se reunia em **Þingvellir**, uma planície a nordeste de Reykjavík, durante duas semanas por ano. Era uma república de chefes sem rei, que durou até 1262.' },
+    { d: '954', t: 'Erik Machado Sangrento', x: 'O último rei viking de York, **Erik** (chamado «Machado Sangrento»), é expulso e morto. A Inglaterra passa a ser dominada por reis de Wessex, e o Danelaw perde a autonomia política, mas a presença cultural, linguística e legal fica.' },
+    { d: 'c. 965', t: 'Harald Dente Azul converte os dinamarqueses', x: 'O rei **Harald Dente Azul** faz erguer a grande pedra rúnica de **Jelling**, onde se diz que «fez cristãos os dinamarqueses». Constrói fortalezas circulares (Trelleborg e outras) e consolida o reino da Dinamarca.' },
+    { d: 'c. 982 – 986', t: 'Erik, o Ruivo, e a Gronelândia', x: 'Banido da Islândia por homicídio, **Erik o Ruivo** explora a costa sudoeste da Gronelândia e, em 985 ou 986, lidera uma frota de colonos. Fundam o Povoamento do Leste e o do Oeste. A colónia durará quase meio milénio.' },
+    { d: '988', t: 'A Guarda Varangiana', x: 'Depois do batismo do príncipe Vladimir de Kiev (988), cerca de seis mil guerreiros da Rus’ são enviados ao imperador bizantino Basílio II. Estes homens estão na origem da **Guarda Varangiana**, a escolta pessoal dos imperadores, onde serviram muitos escandinavos durante mais de dois séculos.' },
+    { d: 'c. 1000', t: 'Leif Eriksson e Vinland', x: 'Segundo as sagas, **Leif Eriksson**, filho de Erik, chega a uma terra de vinhas e trigo selvagem, a que chama **Vinland**. A arqueologia confirma uma presença nórdica na ilha da Terra Nova (L’Anse aux Meadows), com datação por anéis de árvores para c. **1021**. As duas sagas que a contam divergem nos pormenores.' },
+  ] },
+  { img: 'vik-vinland-chegada-ia', leg: 'Cena imaginada da chegada de navegadores nórdicos à costa da Terra Nova, c. 1000. Ilustração gerada por IA.' },
+  { linha: [
+    { d: '1014 – 1016', t: 'Clontarf e o Império do Mar do Norte', x: 'Em 1014 a batalha de **Clontarf**, perto de Dublin, põe fim ao poder viking na Irlanda como força política (embora Dublin continue nórdica durante muito tempo). Entretanto, **Sueno Barba Bifurcada** conquista a Inglaterra (1013) e o seu filho **Canuto** torna-se rei em 1016. Mais tarde reuniu Inglaterra, Dinamarca e Noruega (1028).' },
+    { d: '1030', t: 'Stiklestad', x: 'Morre em Stiklestad, na Noruega, o rei **Olavo II Haraldsson**, mais tarde canonizado (S. Olavo). Entre os que lutaram ao seu lado estava o seu meio-irmão mais novo, Harald Sigurdsson, de quinze anos, o futuro **Harald Hardrada**. Olavo é o santo padroeiro da Noruega.' },
+    { d: '25 setembro 1066', t: 'Stamford Bridge', x: 'O rei da Noruega, **Harald Hardrada**, que desembarcara no Norte de Inglaterra com cerca de trezentos navios e o inglês renegado Tostig, é derrotado e morto pelo rei **Haroldo Godwinson** em Stamford Bridge. Dizem as fontes que só uma pequena parte dos navios regressou.' },
+  ] },
+  { img: 'vik-escudo-muralha-ia', leg: 'Cena imaginada de uma parede de escudos anglo-escandinava em 1066, sem pretender reproduzir uma batalha concreta. Ilustração gerada por IA.' },
+  { linha: [
+    { d: '14 outubro 1066', t: 'Hastings', x: 'Três semanas depois, **Guilherme, duque da Normandia**, descendente de Rollo, derrota e mata Haroldo em Hastings e conquista Inglaterra. É este o fim convencional da Era Viking: os normandos eram já cristãos e de língua francesa, e passaram a governar Inglaterra.' },
+  ] },
+  { img: 'vik-hastings-tapecaria', leg: 'Cena da Tapeçaria de Bayeux (c. 1070), com a batalha de Hastings. Bayeux, Normandia.' }
+];
+
+const mapa = [
+  'A «geografia viking» não é um território contínuo: é uma rede de portos, rios e ilhas ligados por mar. Quase todos os vikings viajavam pelo mar ou pelos rios, e as suas cidades ficavam em baías abrigadas, estuários ou margens de rios navegáveis. Há quatro grandes eixos: o **Oeste** (Ilhas Britânicas e Atlântico Norte), o **Sul** (Frância, Península Ibérica, Mediterrâneo), o **Leste** (Báltico, Rus’ e Bizâncio) e o **Noroeste** (Islândia, Gronelândia, Vinland).',
+  { img: 'vik-rotas-comercio', leg: 'Principais rotas comerciais e de expedição dos vikings e dos Rus’.' },
+  { tabela: { cab: ['Local', 'Onde fica hoje', 'Para que ficou conhecido'], linhas: [
+    ['Birka', 'Lago Mälaren, Suécia', 'Cidade comercial c. 750 – 970; túmulos com guerreiros; o túmulo Bj 581'],
+    ['Hedeby (Haithabu)', 'Perto de Schleswig, Alemanha', 'Grande porto dinamarquês, entreposto entre o Báltico e o Mar do Norte'],
+    ['Ribe', 'Jutlândia, Dinamarca', 'Mais antiga cidade da Dinamarca (c. 710); mercado anterior à Era Viking'],
+    ['Kaupang', 'Vestfold, Noruega', 'Mercado norueguês do século IX, no fiorde de Oslo'],
+    ['Jelling', 'Jutlândia, Dinamarca', 'Pedras rúnicas e túmulos reais; Património Mundial (UNESCO, 1994)'],
+    ['Gamla Uppsala', 'Suécia', 'Grande santuário pagão e túmulos reais; descrito por Adão de Bremen'],
+    ['Staraya Ladoga e Novgorod', 'Noroeste da Rússia', 'Primeiros pontos de fixação dos escandinavos na Rússia; Rurik'],
+    ['Kiev', 'Ucrânia', 'Capital da Rus’ desde c. 882; fim da rota dos Varangianos aos Gregos'],
+    ['Miklagard (Constantinopla)', 'Istambul, Turquia', '«A Grande Cidade»: os vikings iam lá como mercadores e como guardas imperiais'],
+    ['York (Jorvik)', 'Inglaterra', 'Capital do reino viking de Nortúmbria; Coppergate'],
+    ['Dublin', 'Irlanda', 'Fundada como *longphort* em 841; reino nórdico e mercado de escravos'],
+    ['Rouen', 'Normandia, França', 'Capital do ducado de Rollo'],
+    ['Þingvellir', 'Sudoeste da Islândia', 'Sede do Althing desde c. 930'],
+    ['Brattahlíð', 'Sul da Gronelândia', 'Quinta de Erik o Ruivo, no Povoamento do Leste'],
+    ['L’Anse aux Meadows', 'Terra Nova, Canadá', 'Único sítio nórdico confirmado na América do Norte']
+  ] } },
+  { h: 'Jorvik: a York dos vikings' },
+  'York, nome romano *Eboracum*, tornou-se em 866 a capital do reino viking de **Jorvik**. Escavações na rua Coppergate (1976 – 1981) revelaram casas de madeira bem conservadas, oficinas de ourives, de pentes e de couro, com milhares de objetos do quotidiano: mostram uma cidade ativa, comerciante e artesã, com talvez 10 000 habitantes no século X, e não apenas uma base de guerra.',
+  { img: 'vik-jorvik-ia', leg: 'Reconstrução imaginada de uma rua de Jorvik (York), no século X, com casas de madeira, oficinas e comerciantes. Ilustração gerada por IA.' },
+  { h: 'Dublin e o Mar da Irlanda' },
+  'Dublin começou como acampamento (841) e tornou-se um dos principais portos do Atlântico Norte. Foi também um grande mercado de escravos, capturados na Irlanda e nas ilhas vizinhas. O reino nórdico de Dublin dominou o Mar da Irlanda: tinha ligações com York, com a Ilha de Man (onde o parlamento *Tynwald* tem origem nórdica) e com as Hébridas. A batalha de Clontarf (1014) opôs o rei supremo **Brian Boru** (que morreu) a uma coligação de nórdicos de Dublin e rebeldes do Leinster, e deixou a Irlanda irlandesa, mas Dublin continuou a ser uma cidade nórdica e comercial.',
+  { h: 'A Islândia' },
+  'Depois dos eremitas irlandeses, a Islândia foi povoada a partir de c. 870, sobretudo por noruegueses e por escravos e mulheres de origem céltica (a genética mostra uma forte componente das Ilhas Britânicas, sobretudo no lado materno). Criaram uma sociedade de quintas dispersas, sem cidades e sem rei. O **Althing**, a assembleia anual de homens livres, fazia as leis e julgava casos; o *lögsögumaður* («o que diz a lei») recitava de cor um terço das leis em cada ano. Em c. 999 ou 1000, o Althing decidiu converter-se ao cristianismo, mas permitiu o culto pagão em privado, durante algum tempo.',
+  { img: 'vik-thingvellir', leg: 'A planície de Þingvellir, Islândia, onde se reunia o Althing a partir de c. 930.' },
+  { h: 'A Gronelândia' },
+  'A Gronelândia nórdica teve dois núcleos: o **Povoamento do Leste** (perto do atual Qaqortoq), com alguns milhares de pessoas no auge, e o **do Oeste**, menor. Viviam de pastorícia (ovelhas, cabras, gado) e da caça de focas e rena, exportando marfim de morsa, peles e dentes de narval para a Europa. Tiveram uma sé episcopal em Garðar, igrejas de pedra e uma vida social de tipo europeu. Do último registo escrito, um casamento na igreja de Hvalsey em 1408, o rasto perde-se, e no século XV a colónia desapareceu. A causa continua em discussão: o arrefecimento do clima (a «Pequena Idade do Gelo»), a queda do preço do marfim de morsa, a falta de contactos com a Europa e talvez conflitos ou doenças; não houve um só motivo claro.',
+  { img: 'vik-quinta-groenlandia-ia', leg: 'Reconstrução imaginada de uma quinta nórdica na Gronelândia, c. 1100, com casas de turfa e pedra. Ilustração gerada por IA.' },
+  { img: 'vik-hvalsey', leg: 'Ruínas da igreja de Hvalsey, Gronelândia, c. séc. XIV; o último registo escrito dos nórdicos da Gronelândia é um casamento aqui, em 1408.' },
+  { h: 'Vinland e L’Anse aux Meadows' },
+  'As sagas islandesas (*Saga dos Gronelandeses* e *Saga de Erik o Ruivo*, séc. XIII) contam várias expedições à terra a oeste da Gronelândia: o navegador **Bjarni Herjólfsson** avistou-a por acaso (c. 986), **Leif Eriksson** explorou-a (c. 1000), e **Thorfinn Karlsefni** e a sua mulher **Gudrid** tentaram fundar uma colónia, entre a hostilidade dos povos indígenas, a que os nórdicos chamaram *Skrælingar*. As duas sagas contradizem-se em pormenores.',
+  'Em 1960, o norueguês **Helge Ingstad** e a arqueóloga **Anne Stine Ingstad** encontraram em **L’Anse aux Meadows**, no norte da ilha da Terra Nova (Canadá), os restos de oito edifícios de turfa, uma forja e objetos de fabrico nórdico (um alfinete de bronze, um fuso de pedra). Estudos de 2021, que usam um pico de radiação solar registado nos anéis das árvores em 993, dataram o corte de madeira em **1021 d.C.**: é a prova de que os europeus atravessaram o Atlântico quase quinhentos anos antes de Colombo. O local seria um acampamento de exploração e de reparação de barcos, e não uma colónia grande. Nozes de butternut encontradas lá, que não crescem tão a norte, sugerem que os nórdicos foram mais para sul. Onde ficava exatamente «Vinland» continua discutido. O célebre **Mapa de Vinland**, da Universidade de Yale, é hoje considerado falso.',
+  { img: 'vik-lanse-aux-meadows', leg: 'Casas de turfa reconstruídas junto às ruínas nórdicas de L’Anse aux Meadows, Terra Nova, Canadá (Património Mundial, 1978).' },
+  { h: 'O Báltico, a Rus’ e Bizâncio' },
+  'No Leste, os escandinavos (chamados **Rus’** pelos eslavos e **Varangianos** pelos bizantinos) usavam os rios da Rússia, arrastando os barcos por terra de um rio a outro, para ir do Báltico ao Mar Negro e ao Cáspio. A **rota dos Varangianos aos Gregos** seguia o Neva, o lago Ladoga, o Volkhov, o Dnipro; a **rota do Volga** levava ao Mar Cáspio e a Bagdade. Vendiam peles, mel, cera, âmbar e escravos, e voltavam com **prata islâmica** (dirhams), seda e vidro. O viajante árabe **Ibn Fadlan**, que encontrou mercadores Rus’ no Volga em 922, deixou uma descrição famosa (e pouco lisonjeira) dos seus costumes, incluindo um funeral de chefe.',
+  { img: 'vik-mercado-rus-ia', leg: 'Cena imaginada de um mercado de mercadores Rus’ e eslavos num rio do Leste, século X. Ilustração gerada por IA.' },
+  { img: 'vik-novgorod-monumento', leg: 'Monumento ao Milénio da Rússia (1862), Veliky Novgorod, com a figura de Rurik entre as personalidades representadas.' },
+  { h: 'Hedeby e as fortalezas da Dinamarca' },
+  'A Dinamarca tinha **Hedeby**, uma cidade fortificada e comercial, e **Ribe**. Sob Harald Dente Azul (c. 958 – 986), construíram-se grandes fortalezas circulares de terra e madeira, como **Trelleborg** e **Fyrkat**, com casas dispostas em quatro quadrantes, tradicionalmente atribuídas ao rei e de datação dendrocronológica c. 980.',
+  { img: 'vik-haithabu', leg: 'Casas reconstruídas junto ao museu de Haithabu (Hedeby), perto de Schleswig, Alemanha.' }
+];
+
+const sociedade = [
+  'As sociedades vikings eram sociedades de lavradores e de mercadores, com chefes guerreiros, leis próprias e uma religião pagã. Variavam de país para país e com o tempo. O que se segue é uma síntese: lembre-se de que as fontes escritas são de vítimas ou de autores muito posteriores.',
+  { h: 'Política: reis, jarls e o Thing' },
+  'A Escandinávia não tinha um Estado único. Havia **reis** (*konungr*) e **jarls** (condes ou governadores), cuja autoridade dependia de lealdades pessoais, de riqueza, de dádivas e de sucessos militares. O poder central só se consolidou no século X, com Harald Dente Azul na Dinamarca, Harald Cabelo-Belo (tradicionalmente) na Noruega e, no século XI, na Suécia.',
+  'A instituição-chave era o **Thing** (*þing*), assembleia dos homens livres de uma região, onde se faziam as leis, se resolviam litígios, se escolhiam reis (em teoria) e se faziam acordos. O Thing de nível mais alto era o **Althing** da Islândia. As penas incluíam multas (*wergild*, o «preço de um homem»), exílio (a «proscrição») e, em caso de homicídio, vingança regulada, para evitar ciclos de violência.',
+  { img: 'vik-thing-ia', leg: 'Cena imaginada de uma assembleia do Thing ao ar livre, com homens livres armados e o «falador da lei». Ilustração gerada por IA.' },
+  { h: 'Classes sociais' },
+  { lista: [
+    '**Jarls:** a aristocracia, chefes ricos com séquito de guerreiros, grandes quintas e barcos.',
+    '**Karls:** os homens livres, lavradores e artesãos com terra própria; a maioria da população, com direito a participar no Thing e a levar armas.',
+    '**Thralls (*þrælar*):** escravos, sem direitos, de origem estrangeira (capturados em razias) ou filhos de escravos. Faziam o trabalho duro da quinta e do pastoreio.'
+  ] },
+  'Havia mobilidade: um karl que fizesse fortuna numa expedição podia tornar-se grande senhor, e um escravo podia ser libertado. As mulheres livres tinham um estatuto relativamente forte, ver abaixo.',
+  { h: 'Religião nórdica' },
+  'Os escandinavos eram politeístas, com uma religião de muitos deuses, de espíritos da natureza (*landvættir*), de ritos sacrificiais e de banquetes rituais (*blót*), conduzidos pelo chefe da casa ou da comunidade, sem uma classe sacerdotal organizada. O que sabemos da mitologia vem de **fontes tardias e cristãs**: a **Edda Poética** (manuscrito Codex Regius, c. 1270, com poemas mais antigos) e a **Edda em Prosa** de **Snorri Sturluson** (c. 1220), e as sagas. Por isso não sabemos bem o que os vikings da Era Viking acreditavam: o que lemos já passou pelo filtro de autores cristãos.',
+  { tabela: { cab: ['Deus ou figura', 'Papel', 'Símbolos'], linhas: [
+    ['Odin (*Óðinn*)', 'Chefe dos Æsir; deus da sabedoria, da poesia, da guerra e dos mortos; deu um olho por conhecimento', 'Lanças (Gungnir), corvos (Hugin e Munin), lobos, o cavalo de oito patas Sleipnir'],
+    ['Thor (*Þórr*)', 'Deus do trovão, protetor de humanos e dos deuses contra os gigantes', 'O martelo Mjölnir; os amuletos em forma de martelo são dos objetos viking mais frequentes'],
+    ['Freyja', 'Deusa do amor, da fertilidade e da magia (*seiðr*); recebe metade dos mortos em combate', 'Colar Brísingamen, gatos'],
+    ['Freyr', 'Deus da fertilidade, da paz e das colheitas', 'Javali de ouro, o navio Skíðblaðnir'],
+    ['Tyr', 'Deus da guerra e da justiça; perdeu uma mão a prender o lobo Fenrir', 'Mão, lobo'],
+    ['Loki', 'Trapaceiro, pai de monstros; está por trás da morte de Baldr', 'Mudanças de forma'],
+    ['Valquírias', 'Figuras femininas que escolhem os guerreiros mortos em combate e os levam ao Valhalla', 'Escudos, lanças, cavalos alados (nas fontes tardias)']
+  ] } },
+  'Os mortos em combate podiam ir para o **Valhalla**, o salão de Odin, onde se preparavam para o **Ragnarök**, o fim dos deuses, em que o mundo é destruído e renasce. Outros iam para o reino de Hel. As sepulturas, com barcos, armas, animais (e, nalguns casos, seres humanos sacrificados), mostram uma crença numa vida depois da morte, mas variam muito. Adão de Bremen descreve, c. 1075, o grande templo de Uppsala, com sacrifícios de homens e animais de nove em nove anos, mas é um relato de segunda mão e escrito por um clérigo hostil: o historiador toma-o com cautela. Quando os escandinavos se tornaram cristãos (séculos X e XI), a antiga religião deixou de ser praticada, mas elementos da cultura persistiram.',
+  { img: 'vik-thor-martelo', leg: 'Pendente em forma de martelo de Thor (Mjölnir), prata, da época viking.' },
+  { img: 'vik-odin-tjangvide', leg: 'Pedra de imagem de Tjängvide, Gotlândia (séculos VIII – IX), com um cavaleiro de um cavalo de oito patas, tradicionalmente interpretado como Odin e Sleipnir; a leitura é debatida.' },
+  { h: 'Economia e comércio' },
+  'A economia assentava na **agricultura e pastorícia** (cevada, aveia, centeio, vacas, ovelhas, porcos), na pesca e caça, na exploração do ferro dos pântanos e da pedra-sabão. Mas os vikings são conhecidos pelo **comércio de longa distância**: peles, marfim de morsa, âmbar, ferro, pedra de afiar, escravos e cera, em troca de prata, seda, vidro, vinho e cerâmica. Não havia moeda própria até ao século X: usava-se **prata ao peso** (moedas inteiras, joias, barras e lascas cortadas, a *hacksilver*), pesada em balanças portáteis. Foram encontrados dezenas de milhares de **dirhams** árabes na Escandinávia (as estimativas chegam a mais de cem mil), sobretudo na ilha sueca de Gotlândia, prova de que a ligação ao mundo islâmico era enorme.',
+  { img: 'vik-cuerdale', leg: 'Parte do Tesouro de Cuerdale (Lancashire), enterrado c. 903 – 910, com mais de 8600 peças de prata. British Museum.' },
+  { h: 'Escravos' },
+  'A escravatura era uma parte da economia viking, tanto dentro da Escandinávia (os *thralls*) como no comércio. Os vikings capturavam gente nas Ilhas Britânicas, na Frância e no Leste e vendiam-na em Dublin, em Hedeby e, através da Rus’, no mundo islâmico e bizantino. Alguns cativos eram irlandeses, escoceses, eslavos. Não é possível quantificar, mas era um comércio muito rentável.',
+  { h: 'Escrita e runas' },
+  'Os vikings usavam o alfabeto rúnico, o ***futhark***, o nome vem das seis primeiras letras. O *futhark* antigo tinha 24 sinais; na Era Viking passou a ter só 16 (*futhark* novo, ou «recente»). Escrevia-se em pedra (as pedras rúnicas, muitas de memória de mortos), em madeira, em osso e em objetos; as inscrições são curtas: nomes, dedicatórias, fórmulas. A maior inscrição rúnica é a **pedra de Rök**, na Suécia, do século IX. Há centenas de pedras rúnicas, e há até um grafito de runas em Santa Sofia, em Constantinopla, atribuído a um guarda varangiano. Os textos longos (sagas, poemas) foram escritos mais tarde, em alfabeto latino.',
+  { img: 'vik-jelling-pedra', leg: 'A grande pedra de Jelling, c. 965, erguida por Harald Dente Azul (Dinamarca, UNESCO). Tem a mais antiga imagem de Cristo da Escandinávia.' },
+  { h: 'Sagas e poesia' },
+  'A literatura escandinava mais importante foi a **islandesa**, escrita nos séculos XII e XIII: as **sagas** (prosa narrativa sobre famílias e reis, como a *Saga de Egil*, a *Saga de Njál* e a *Heimskringla* de Snorri) e a **poesia escáldica** (poemas de louvor a reis, em métrica complexa). São obras literárias, e não crónicas, mas reúnem tradições antigas. Os investigadores comparam-nas com a arqueologia, para ver o que é facto e o que é invenção.',
+  { h: 'A casa' },
+  'A casa típica era o **salão comprido** (*langhús*), uma construção alongada de madeira, com paredes de tábuas ou de pau-a-pique e telhado de colmo ou de turfa. Dentro havia um grande espaço, com uma lareira ao centro, bancos corridos ao longo das paredes (onde também se dormia) e, nas casas mais ricas, um salão de festas. Na Islândia e na Gronelândia, onde faltava madeira, usavam-se paredes de turfa e pedra. Junto à casa ficavam estábulos, celeiros e oficinas, e as casas de ferreiros eram pequenas e afastadas por causa do fogo.',
+  { img: 'vik-longhouse-ia', leg: 'Reconstrução imaginada do interior de um salão comprido viking, com lareira central e bancos corridos. Ilustração gerada por IA.' },
+  { h: 'Alimentação' },
+  'Comia-se pão chato de cevada ou de centeio, papas de cereais, queijo, manteiga e **skyr** (um produto lácteo ainda comum na Islândia), carne de vaca, de porco, de carneiro e de cavalo, caça, aves, ovos, peixe fresco, seco ou salgado (o bacalhau seco, ***stockfish***, era essencial), frutos silvestres, nozes e maçãs. Bebia-se **cerveja** e **hidromel** (mel fermentado); o vinho era um luxo importado. As festas eram grandes ocasiões de bebida, e a hospitalidade, uma obrigação social.',
+  { h: 'Vestuário e aparência' },
+  'Os homens usavam túnica de lã até ao joelho, calças, meias, capa presa ao ombro por um alfinete e, para o frio, peles. As mulheres vestiam um vestido de linho ou lã e, por cima, um vestido de avental, preso por duas fíbulas de bronze (as famosas «fíbulas tartaruga»), com um colar de contas entre elas. Os cabelos eram cuidados: encontraram-se muitos **pentes** de osso. Segundo um cronista inglês, os dinamarqueses pentearem-se todos os dias e tomarem banho aos sábados, o que atraía as mulheres inglesas; é um relato tardio, mas as pinças e os pentes confirmam uma preocupação com a higiene. As cores eram vivas, graças a corantes vegetais. Os homens ricos podiam usar seda importada, mas a maioria usava lã e linho.',
+  { img: 'vik-vestuario-ia', leg: 'Reconstrução imaginada de uma família viking do século X, com vestuário de lã e linho e fíbulas de bronze. Ilustração gerada por IA.' },
+  { h: 'Música, jogos e festas' },
+  'Fazia-se música com flautas de osso, liras, tambores e cornos, e cantava-se poesia. Jogava-se **hnefatafl**, um jogo de tabuleiro em que um rei, cercado de defensores, tenta fugir de atacantes, e xadrez, mais tarde. Havia lutas, corridas, jogos de bola e competições de natação e de tiro com arco. Os contadores de histórias, os **escaldos**, eram figuras muito apreciadas nas cortes.',
+  { h: 'Mulheres' },
+  'As mulheres vikings tinham direitos que as contemporâneas europeias muitas vezes não tinham: podiam possuir e herdar propriedade, gerir a quinta enquanto o marido estava fora, pedir o divórcio e, nalguns casos, tornar-se chefes (*Aud, a de Mente Profunda*, no *Landnámabók*). Eram sobretudo mães, tecedeiras e responsáveis pela casa. O casamento era um acordo entre famílias.',
+  'Quanto às **mulheres guerreiras**, é um tema debatido. As sagas e **Saxo Grammaticus** falam de «donzelas de escudo», mas são figuras literárias. Em 1878, no túmulo **Bj 581** de **Birka**, na Suécia, foi encontrado um guerreiro sepultado com espada, machado, lança, flechas, escudo e cavalos, interpretado durante um século como um homem. Em 2017, um estudo de ADN (Hedenstierna-Jonson e colegas) mostrou que o esqueleto é de uma **mulher**. Alguns especialistas contestaram: o esqueleto pode ser de uma mulher de alto estatuto sepultada com os objetos de um chefe, e as armas não provam que combatesse. É um caso único, e a questão continua em aberto.',
+  { img: 'vik-birka-guerreira', leg: 'Ilustração do túmulo Bj 581 de Birka (Suécia), por Evald Hansen, 1889; o esqueleto é de uma mulher, como mostrou o ADN em 2017.' },
+  { h: 'Guerra e armas' },
+  'Os guerreiros combatiam sobretudo a pé, em **parede de escudos**. Armas: lança (a mais comum), **espada** (cara, de dois gumes, com punho trabalhado), **machado** (de uso agrícola e de guerra; o grande machado «dinamarquês» de cabo longo), arco e escudo redondo de madeira. Só os mais ricos tinham **cota de malha** (*brynja*) e **capacete**. As lâminas de espada marcadas com o nome **+VLFBERH+T** (*Ulfberht*), feitas de aço de excelente qualidade, provavelmente da Frância ou do Leste, eram muito apreciadas; muitas cópias de pior qualidade, também marcadas, circulavam.',
+  { img: 'vik-ulfberht', leg: 'Lâmina de espada do tipo Ulfberht, com a inscrição +VLFBERH+T, séculos IX – XI.' },
+  'Os **berserkir** («camisas de urso») e os **úlfhéðnar** («peles de lobo») aparecem nas sagas como guerreiros em fúria; se existiram como grupo organizado é debatido. Quanto à famosa **«águia de sangue»**, um suposto método de execução em que se abririam as costas da vítima, aparece apenas em fontes tardias (sagas dos séculos XII – XIII, como a *Saga dos Órcades*); há quem pense que é uma leitura errada de poemas escáldicos. A maioria dos historiadores duvida de que tenha sido praticada como se descreve.',
+  { h: 'Navios e navegação' },
+  'O **navio viking** era feito com tábuas de carvalho sobrepostas (construção «de tábuas trincadas» ou *clinker*), unidas por rebites de ferro e calafetadas com lã e alcatrão. Era leve, flexível e de pouco calado, o que permitia navegar em mar aberto e subir rios. Tinha **vela quadrada** de lã e remos. Havia vários tipos: o **navio de guerra** (*langskip*, «navio comprido», comprido, estreito e rápido, a que a literatura francesa do século XIX chamou *drakkar*, de *dreki*, «dragão»), e o **knarr**, navio de carga largo e fundo, usado para o comércio e para as viagens para a Islândia e a Gronelândia.',
+  { img: 'vik-skuldelev-knarr', leg: 'Skuldelev 1, um knarr (navio de carga) do século XI, Museu dos Navios Vikings, Roskilde.' },
+  'Em c. 1070, os habitantes de Roskilde, na Dinamarca, afundaram cinco navios no fiorde para bloquear o canal contra inimigos; foram escavados entre 1957 e 1962 (**Skuldelev**). Um deles, o Skuldelev 2, é um navio de guerra de c. 30 metros, construído em c. 1042 na região de Dublin; uma réplica, o *Havhingsten fra Glendalough* («Garanhão do Mar»), cruzou o Mar do Norte até Dublin em 2007. Os navios de **Oseberg** (c. 820) e **Gokstad** (c. 890), sepulturas de pessoas de alto estatuto, estão no museu de Oslo.',
+  { img: 'vik-gokstad-navio', leg: 'O navio de Gokstad, c. 890, sepultura em Vestfold (Noruega). Museu dos Navios Vikings, Oslo.' },
+  { img: 'vik-drakkar-mar-ia', leg: 'Reconstrução imaginada de um navio de guerra viking em mar aberto, com vela de lã e escudos ao longo do bordo. Ilustração gerada por IA.' },
+  'Como navegavam sem bússola? Seguiam a costa e usavam o **sol, as estrelas, o voo das aves, a cor da água e a forma das ondas**. Os guias escritos (as «instruções de navegação» no *Landnámabók*) davam direções em dias de viagem. Uma «**pedra solar**» (*sólarsteinn*) de cristal, que mostraria a posição do Sol em tempo nublado, é mencionada numa saga; um cristal desses foi encontrado num naufrágio inglês de 1592, mas se os vikings o usaram é discutido.',
+  { img: 'vik-navegacao-ia', leg: 'Cena imaginada de navegação viking ao amanhecer, com o timoneiro a orientar-se pelo Sol e por uma pedra de cristal. Ilustração gerada por IA.' },
+  { h: 'Tecnologia' },
+  'Os vikings eram muito hábeis em **trabalho do ferro**, da madeira, do osso e do metal. Extraíam ferro dos pântanos e fundiam-no em pequenos fornos. Os ferreiros faziam machados, espadas, rebites, ferramentas; os ourives, joias de prata e de bronze com os motivos de animais entrelaçados que definem o seu estilo. Fiava-se e tecia-se lã em teares verticais; as velas de lã eram feitas por mulheres e levavam meses a fazer.',
+  { img: 'vik-forja-ia', leg: 'Reconstrução imaginada de uma forja viking, com ferreiro, fole e forno. Ilustração gerada por IA.' },
+  { h: 'Mitos e realidade' },
+  { lista: [
+    '**Capacetes com cornos:** não existem provas. O único capacete viking quase completo (Gjermundbu) é redondo, de ferro. Os cornos vêm de capacetes rituais da Idade do Bronze (mil anos antes) e dos figurinos que **Carl Emil Doepler** desenhou para a ópera de Wagner em 1876.',
+    '**«Os vikings eram só selvagens»:** eram também mercadores, artesãos, legisladores e colonos, com uma cultura material muito rica.',
+    '**Funerais em barco a arder:** Ibn Fadlan (922) descreve a cremação de um chefe Rus’ dentro de um barco, em terra, no Volga; mas a maioria dos casos conhecidos pela arqueologia é de enterro em túmulo, com ou sem barco. Não há provas de que se lançassem barcos a arder ao mar.',
+    '**Os vikings eram todos louros:** havia gente de cabelo escuro e claro; os estudos de ADN mostram uma população variada.',
+    '**«Valhalla para todos»:** só uma parte dos mortos, os que morriam em combate, iam para o Valhalla, segundo as fontes tardias.'
+  ] }
+];
+
+const personalidades = [
+  'Muitas das figuras da Era Viking são conhecidas por sagas escritas séculos depois, e a linha entre história e lenda é fina. Indica-se, quando é o caso, o que é duvidoso.',
+  { h: 'Ragnar Lodbrok (lendário)' },
+  'O herói mais famoso das sagas: um chefe que teria atacado Inglaterra e França e morrido num fosso de serpentes, e cujos filhos (Ivar, Halfdan, Ubba, Björn Ferro-Costelas) lideraram o Grande Exército. É uma figura **mais lendária do que histórica**: há um chefe chamado Reginherus em Paris em 845, mas a ligação com a saga é incerta. A série de televisão *Vikings* (2013) popularizou-o.',
+  { h: 'Ivar, o Sem-Ossos (século IX)' },
+  'Chefe do Grande Exército, tradicionalmente filho de Ragnar. O apelido «Sem-Ossos» tem muitas explicações (uma doença dos ossos, impotência, flexibilidade como guerreiro) e é debatido. Esteve em Inglaterra e em Dublin, e pode ter sido a mesma pessoa que o rei de Dublin Ímar.',
+  { h: 'Alfredo, o Grande (c. 849 – 899)' },
+  'Rei de Wessex (871 – 899), derrotou Guthrum em Edington (878) e salvou o único reino anglo-saxónico que ainda existia. Reorganizou o exército, fundou **burhs** (cidades fortificadas), criou uma marinha, promoveu a educação e a tradução de obras latinas para inglês antigo. É o único rei inglês de nascimento a quem se chama «o Grande» (Canuto, de origem dinamarquesa, também recebeu esse apelido). A lenda dos bolos queimados é do século XI e não é fiável.',
+  { img: 'vik-alfredo-estatua', leg: 'Estátua de Alfredo, o Grande, por Hamo Thornycroft (1901), Winchester, Inglaterra.' },
+  { h: 'Rollo (c. 860 – c. 930)' },
+  'Chefe viking, primeiro governante da Normandia (c. 911). A sua origem é discutida: as sagas islandesas dizem que era norueguês (Hrólfr Göngu-Hrólfr, «o Caminhante»), o cronista normando Dudo de Saint-Quentin diz que era dinamarquês. Foi batizado com o nome de Roberto. É o antepassado de **Guilherme, o Conquistador**, e por isso de muitos reis ingleses posteriores.',
+  { h: 'Rurik e Oleg (séc. IX – X)' },
+  'Rurik, chefe varangiano que, segundo a *Crónica dos Tempos Passados*, governou Novgorod a partir de 862, é o ancestral da dinastia dos **Ruríquidas**, que reinou na Rus’ e depois na Rússia até 1598. O seu sucessor **Oleg** (c. 879 – 912) transferiu a capital para Kiev. Os historiadores discutem até que ponto os relatos são históricos, mas a presença de escandinavos no comando da Rus’ é aceite pela maioria.',
+  { h: 'Olga de Kiev (c. 890 – 969)' },
+  'Princesa da Rus’, regente do filho Sviatoslav depois de assassinado o marido Igor (945). Na crónica, vinga-se cruelmente dos assassinos. Converteu-se ao cristianismo em Constantinopla (c. 957) e é santa na Igreja Ortodoxa. O seu nome (Helga) é nórdico, e o neto Vladimir converteu a Rus’ em 988.',
+  { h: 'Erik, o Ruivo (c. 950 – c. 1003)' },
+  'Nascido na Noruega, foi para a Islândia com o pai e acabou banido por homicídios. Explorou a Gronelândia e fundou a colónia (c. 985). A sua história chega-nos nas sagas (*Saga de Erik o Ruivo*, séc. XIII). A tradição diz que escolheu o nome «Gronelândia» («terra verde») para atrair colonos.',
+  { img: 'vik-erik-ruivo-ms', leg: 'Erik o Ruivo, num manuscrito islandês de 1688 (AM 738 4to); retrato imaginado, séculos posterior à sua vida.' },
+  { h: 'Leif Eriksson (c. 970 – c. 1020)' },
+  'Filho de Erik, navegou da Gronelândia para oeste e, segundo a saga, explorou e batizou Vinland. Teria também levado o cristianismo à Gronelândia a pedido do rei Olavo Tryggvason. Fala-se dele como o «descobridor da América», mas o que a arqueologia confirma é uma presença nórdica na Terra Nova, e as sagas divergem sobre quem foi o primeiro a avistar a costa (Bjarni Herjólfsson, segundo uma delas).',
+  { h: 'Gudrid (séc. XI)' },
+  'Islandesa, mulher de Thorfinn Karlsefni, foi com ele a Vinland, onde teve um filho, Snorri, o primeiro europeu nascido na América de que há notícia (segundo as sagas). Mais tarde, diz a tradição, fez uma peregrinação a Roma. É uma das poucas mulheres viking de que sabemos o nome e a vida, embora só pelas sagas.',
+  { h: 'Harald Dente Azul (c. 910 – c. 986)' },
+  'Rei da Dinamarca (c. 958 – c. 986) e de parte da Noruega. Converteu-se ao cristianismo, em data discutida (c. 965), e fez gravar a pedra de Jelling. O apelido «Bluetooth» deu o nome à tecnologia sem fios (o símbolo junta as runas H e B), por ter «unido» a Dinamarca e a Noruega. Foi derrubado pelo seu filho Sueno Barba Bifurcada.',
+  { h: 'Olavo Tryggvason (c. 960 – 1000)' },
+  'Rei da Noruega (995 – 1000), pretendente que veio de Inglaterra e da Rus’ e se converteu ao cristianismo. Tentou, muitas vezes à força, cristianizar o país e a Islândia, e morreu na batalha naval de **Svolder** (c. 1000), contra a Dinamarca e a Suécia. As sagas fazem dele um herói, mas são do século XIII.',
+  { h: 'Canuto, o Grande (c. 990 – 1035)' },
+  'Filho de Sueno, rei de Inglaterra (1016 – 1035), da Dinamarca (1018 – 1035) e da Noruega (1028 – 1035): é o criador do chamado **Império do Mar do Norte**. Casou com Ema da Normandia, viajou a Roma (1027), governou Inglaterra com bom senso e promulgou leis. A história do rei a ordenar que a maré recuasse, dos cronistas do século XII, significava, na versão original, que os reis são impotentes diante de Deus; não é um episódio documentado.',
+  { img: 'vik-canuto-emma', leg: 'Canuto e a rainha Ema oferecem uma cruz ao New Minster de Winchester; Liber Vitae, c. 1031 (British Library).' },
+  { h: 'Harald Hardrada (c. 1015 – 1066)' },
+  'Meio-irmão de Olavo II. Lutou em Stiklestad, fugiu para a Rus’, serviu na **Guarda Varangiana** de Constantinopla (c. 1034 – 1042), acumulou uma grande fortuna e voltou para ser rei da Noruega (1046 – 1066). Morreu em Stamford Bridge, tentando conquistar Inglaterra. É muitas vezes visto como o «último grande viking». Hardrada significa «o duro governante» ou «o severo».',
+  { img: 'vik-guarda-varangiana', leg: 'Guardas varangianos, na Crónica de Escílitzes (Madrid), manuscrito siciliano do século XII sobre história bizantina.' },
+  { h: 'Snorri Sturluson (1179 – 1241)' },
+  'Chefe e poeta islandês, autor da **Edda em Prosa** e da **Heimskringla** (história dos reis da Noruega). Sem ele, sabíamos muito menos da mitologia nórdica. Foi morto por ordem do rei da Noruega, em 1241. Convém lembrar que escreveu duzentos anos depois do fim da Era Viking, como cristão.'
+];
+
+const legado = [
+  { h: 'O que nos deixaram' },
+  { lista: [
+    '**Língua:** muitas palavras inglesas (*sky*, *skin*, *knife*, *window*, *they*, *are*), nomes de lugares em *-by*, *-thorpe* e *-thwaite* (Inglaterra) e os dias *Tuesday*, *Wednesday*, *Thursday* e *Friday* (Tyr, Odin, Thor, Frigg).',
+    '**Sagas e mitologia:** a Edda e as sagas, fonte de Tolkien, de Wagner, de filmes, de jogos e de séries.',
+    '**Normandia e Inglaterra normanda:** a conquista de 1066 foi obra de descendentes de vikings, e mudou para sempre a língua e as instituições inglesas.',
+    '**Assembleias e direito:** o Thing e o Althing, o parlamento da Ilha de Man (Tynwald) e o direito islandês.',
+    '**Rus’:** a ligação entre escandinavos e eslavos está nas origens da Rússia, da Ucrânia e da Bielorrússia, com leituras políticas hoje sensíveis.',
+    '**Exploração:** a primeira presença europeia na América do Norte.'
+  ] },
+  { h: 'Arte e arquitetura' },
+  'A arte viking é sobretudo **arte decorativa**: animais entrelaçados, serpentes e dragões em madeira, osso e metal (estilos de **Oseberg**, **Borre**, **Jelling**, **Mammen**, **Ringerike** e **Urnes**). Na arquitetura sobrevivem as **igrejas de madeira de mastros** (*stavkirke*), como a de **Urnes**, na Noruega (século XII, Património Mundial), cujos entalhes continuam o estilo viking. As pedras rúnicas, com imagens pintadas em vermelho, azul e preto, eram monumentos coloridos.',
+  { img: 'vik-lewis-xadrez', leg: 'Peças de xadrez de Lewis, de marfim de morsa, c. 1150 – 1200, provavelmente feitas na Noruega; British Museum e Museu Nacional da Escócia. São posteriores à Era Viking.' },
+  { h: 'Os vikings na imaginação' },
+  'A imagem dos vikings foi reinventada no século XIX pelo **Romantismo** e pelo nacionalismo escandinavo e alemão: **Wagner** pôs cornos nos capacetes, e os vikings tornaram-se símbolos de vigor e de liberdade. O século XX trouxe usos políticos negativos (alguns movimentos extremistas apropriaram-se de símbolos nórdicos, o que os historiadores rejeitam). Hoje, a cultura popular (livros, séries, jogos, festivais) tem mais presença do que nunca, e nem sempre respeita os factos.',
+  { img: 'vik-wagner-doepler', leg: 'Figurino de Carl Emil Doepler para a ópera O Anel do Nibelungo (Bayreuth, 1876), origem dos capacetes de cornos.' },
+  { h: 'A redescoberta' },
+  'A arqueologia moderna começou com as escavações dos navios: **Oseberg** (1904) e **Gokstad** (1880) na Noruega, **Skuldelev** (1962) na Dinamarca. Em 1960, os Ingstad descobriram L’Anse aux Meadows. Em York, as escavações de Coppergate (1976 – 1981) deram origem ao Jorvik Viking Centre. A análise de ADN, de isótopos e de anéis de árvores está a mudar muito do que se pensava (a origem dos povoadores da Islândia, a data de Vinland, o caso Birka).',
+  { caixa: 'Para visitar', texto: 'O **Museu dos Navios Vikings** (Oslo) e o **Museu dos Navios Vikings** de **Roskilde** (Dinamarca) são os principais. Em Jelling (Dinamarca) estão as pedras e os túmulos, e em **Þingvellir** (Islândia), o local do Althing. **L’Anse aux Meadows** (Terra Nova, Canadá), **Birka** e **Hedeby** são Património Mundial. Em Dublin há o museu *Dublinia*, e em York o Jorvik Viking Centre. Na Normandia, Rouen e a Tapeçaria de Bayeux contam a herança de Rollo. Em Portugal, não há vestígios materiais de vikings confirmados, só referências em fontes árabes e cristãs.' }
+];
+
+const quiz = [
+  { p: 'Que acontecimento marca, por convenção, o início da Era Viking?', op: ['A conquista da Normandia', 'O saque do mosteiro de Lindisfarne, em 793', 'A chegada à América', 'A batalha de Hastings'], certa: 1, exp: 'O ataque a Lindisfarne, em 8 de junho de 793, chocou a Europa cristã e é a data de abertura convencional.' },
+  { p: 'Os vikings usavam capacetes com cornos?', op: ['Sim, todos', 'Só os chefes', 'Não há provas disso', 'Só nas cerimónias religiosas'], certa: 2, exp: 'O único capacete viking quase completo (Gjermundbu) não tem cornos; a imagem vem de figurinos do século XIX.' },
+  { p: 'Quem liderou o Grande Exército Pagão que desembarcou em Inglaterra em 865, segundo as fontes?', op: ['Ivar e Halfdan', 'Rollo', 'Erik o Ruivo', 'Leif Eriksson'], certa: 0, exp: 'Ivar e Halfdan, tradicionalmente filhos de Ragnar Lodbrok, que é uma figura mais lendária do que histórica.' },
+  { p: 'Que rei saxão derrotou os dinamarqueses em Edington (878)?', op: ['Canuto', 'Alfredo, o Grande', 'Haroldo Godwinson', 'Guilherme, o Conquistador'], certa: 1, exp: 'Alfredo de Wessex venceu Guthrum, que aceitou o batismo.' },
+  { p: 'Quem recebeu, em c. 911, a região de Rouen e fundou a Normandia?', op: ['Rurik', 'Oleg', 'Rollo', 'Harald Dente Azul'], certa: 2, exp: 'Rollo, pelo tratado de Saint-Clair-sur-Epte, com Carlos, o Simples.' },
+  { p: 'Como se chamava o grupo de escandinavos que se estabeleceu na atual Rússia e na Ucrânia?', op: ['Rus’ (ou Varangianos)', 'Normandos', 'Jutos', 'Godos'], certa: 0, exp: 'Os eslavos chamavam-lhes Rus’; os bizantinos, Varangianos.' },
+  { p: 'Qual é o nome da assembleia de homens livres que fazia as leis na Islândia?', op: ['Senado', 'Althing', 'Cortes', 'Duma'], certa: 1, exp: 'O Althing reunia-se em Þingvellir desde c. 930.' },
+  { p: 'Quem fundou a colónia nórdica na Gronelândia?', op: ['Leif Eriksson', 'Olavo Tryggvason', 'Erik o Ruivo', 'Harald Hardrada'], certa: 2, exp: 'Erik o Ruivo, banido da Islândia, explorou a Gronelândia e levou colonos em 985 ou 986.' },
+  { p: 'Onde se encontrou a prova arqueológica de uma presença viking na América do Norte?', op: ['Em Plymouth, Massachusetts', 'Em L’Anse aux Meadows, na Terra Nova', 'Em Cuba', 'No Labrador'], certa: 1, exp: 'L’Anse aux Meadows, descoberto em 1960 por Helge e Anne Stine Ingstad, com datação de c. 1021.' },
+  { p: 'Que tipo de navio viking servia sobretudo para transportar carga?', op: ['O knarr', 'O langskip', 'O drakkar de guerra', 'A galera'], certa: 0, exp: 'O knarr era largo e fundo; o langskip era o navio de guerra, comprido e rápido.' },
+  { p: 'Quem eram os thralls?', op: ['Aristocratas', 'Escravos', 'Homens livres', 'Sacerdotes'], certa: 1, exp: 'Os thralls eram escravos, sem direitos; os karls eram os homens livres.' },
+  { p: 'Quem foi o rei que reuniu Inglaterra, Dinamarca e Noruega, no Império do Mar do Norte?', op: ['Canuto, o Grande', 'Harald Dente Azul', 'Alfredo', 'Guilherme'], certa: 0, exp: 'Canuto reinou em Inglaterra (1016), na Dinamarca (1018) e na Noruega (1028).' },
+  { p: 'Em que batalha morreu Harald Hardrada, em 1066?', op: ['Hastings', 'Clontarf', 'Stamford Bridge', 'Edington'], certa: 2, exp: 'A 25 de setembro de 1066, derrotado por Haroldo Godwinson, três semanas antes de Hastings.' },
+  { p: 'Segundo fontes árabes, em que ano os vikings atacaram Lisboa?', op: ['793', '844', '911', '1066'], certa: 1, exp: 'Em 844, a frota saqueou Lisboa durante cerca de treze dias e seguiu para Sevilha, mas as fontes (Ibn Idhari, Ibn Hayyan) são muito posteriores.' },
+  { p: 'O que revelou o ADN do túmulo Bj 581, de Birka?', op: ['Que era um rei', 'Que era um jovem', 'Que o esqueleto era de uma mulher', 'Que era um escravo'], certa: 2, exp: 'O estudo de 2017 identificou uma mulher; alguns investigadores discutem se era guerreira.' }
+];
+
+export default {
+  id: 'vikings',
+  cor: '#4a5a8a',
+  emblema: '../assets/img/vikings.png',
+  nome:    { pt: 'Vikings', en: 'Vikings' },
+  periodo: { pt: '793 – 1066', en: 'AD 793 – 1066' },
+  visao:          { pt: visao, en: EN.visao },
+  linha:          { pt: linha, en: EN.linha },
+  mapa:           { pt: mapa, en: EN.mapa },
+  sociedade:      { pt: sociedade, en: EN.sociedade },
+  personalidades: { pt: personalidades, en: EN.personalidades },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
+  quiz:           { pt: quiz, en: EN.quiz }
+};
