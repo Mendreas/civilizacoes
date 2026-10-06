@@ -85,7 +85,7 @@ const linha = [
     { d: '1905 – 1909', t: 'O Arthashastra reaparece', x: 'O bibliotecário **R. Shamasastry** encontra em Mysore um manuscrito do *Arthashastra*, até então conhecido só por citações. Publica-o em 1909 e traduz-o para inglês em 1915.' }
   ] },
   { img: 'imu-chandragupta-chanakya', leg: 'Reconstrução artística: Chandragupta e o seu conselheiro Chanakya a planear a tomada de Pataliputra. Pintura de imaginação (não há retratos fiéis).' },
-  { img: 'imu-moeda-seleuco', leg: 'Moeda de Seleuco I Nicator, o rei que cedeu territórios do Indo a Chandragupta e recebeu 500 elefantes de guerra.' },
+  { img: 'imu-moeda-seleuco', leg: 'Moeda selêucida de Seleuco VI Epifanes Nicator (séc. I a.C.), rei bastante posterior; ilustra a cunhagem do reino fundado por Seleuco I, que cedeu territórios do Indo a Chandragupta e recebeu 500 elefantes de guerra.' },
   { img: 'imu-kalinga-depois', leg: 'Reconstrução artística: o campo de batalha de Kalinga, depois da guerra, c. 261 a.C.' },
   { img: 'imu-dhauli-elefante', leg: 'O elefante esculpido na rocha em Dhauli (Odisha), junto dos éditos de Ashoka sobre Kalinga, séc. III a.C.' },
   { img: 'imu-mahinda-ceilao', leg: 'Reconstrução artística: o monge Mahinda a ensinar o rei Devanampiya Tissa e a corte do Sri Lanka, segundo as crónicas da ilha.' },
@@ -205,7 +205,7 @@ const sociedade = [
   { img: 'imu-mercado', leg: 'Reconstrução artística: mercado de Pataliputra, com tecidos de algodão, especiarias e mercadores de várias terras.' },
   { h: '5. A escrita e os éditos' },
   'Os éditos são os **primeiros documentos datáveis em escrita indiana** depois da civilização do Indo. Usam sobretudo a escrita **brahmi** (da esquerda para a direita), em várias formas de **prácrito** próximas da língua da corte de Magadha, adaptadas aos dialetos locais; no noroeste usam **kharosthi** (da direita para a esquerda, derivada do aramaico), e em Kandahar, o **grego** e o **aramaico**. A origem da brahmi (invenção indiana ou inspirada no aramaico) é um dos grandes debates; é provável que fosse conhecida antes de Ashoka, mas os éditos são o primeiro testemunho datável claro. Quase todas as escritas da Índia, do Sudeste Asiático e do Tibete derivam dela.',
-  { img: 'imu-brahmi-alfabeto', leg: 'Quadro das letras da escrita brahmi, tal como aparecem nos éditos de Ashoka.' },
+  { img: 'imu-brahmi-alfabeto', leg: 'Quadro com a teoria da origem pictográfica das letras brahmi; a escrita é conhecida sobretudo pelos éditos de Ashoka.' },
   'Os éditos foram **gravados** em três suportes: **rochas naturais** (os Éditos de Pedra, 14 maiores, repetidos em cerca de dez lugares e vários menores), **pilares monolíticos polidos** (os Éditos de Pilar, 7 maiores) e **paredes de grutas**. Ashoka diz-se «Devanampiya Piyadasi» e termina quase sempre pedindo que a mensagem seja **gravada para durar** «enquanto durarem o sol e a lua» (fórmula comum). Escribas e leitores eram necessários para a ler ao povo; os éditos eram provavelmente **lidos em voz alta** por funcionários.',
   { img: 'imu-edito-girnar', leg: 'A rocha de Girnar, no Gujarat, com os 14 Éditos de Pedra Maiores de Ashoka; a mesma rocha tem uma inscrição de Rudradaman (c. 150 d.C.).' },
   { img: 'imu-edito-kandahar', leg: 'Édito de Ashoka em grego, de Kandahar (Afeganistão); o texto usa vocabulário da filosofia grega para traduzir o *dhamma*.' },

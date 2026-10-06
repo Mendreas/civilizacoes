@@ -80,7 +80,7 @@ const linha = [
     { d: '1905 – 1909', t: 'The Arthashastra reappears', x: 'The librarian **R. Shamasastry** finds a manuscript of the *Arthashastra* in Mysore, until then known only from quotations. He publishes it in 1909 and translates it into English in 1915.' }
   ] },
   { img: 'imu-chandragupta-chanakya', leg: 'Artist’s reconstruction: Chandragupta and his adviser Chanakya planning the capture of Pataliputra. An imagined scene (no faithful portraits exist).' },
-  { img: 'imu-moeda-seleuco', leg: 'Coin of Seleucus I Nicator, the king who ceded territory on the Indus to Chandragupta and received 500 war elephants.' },
+  { img: 'imu-moeda-seleuco', leg: 'Seleucid coin of Seleucus VI Epiphanes Nicator (1st century BC), a much later king; it illustrates the coinage of the kingdom founded by Seleucus I, who ceded territory on the Indus to Chandragupta and received 500 war elephants.' },
   { img: 'imu-kalinga-depois', leg: 'Artist’s reconstruction: the battlefield of Kalinga after the war, c. 261 BC.' },
   { img: 'imu-dhauli-elefante', leg: 'The elephant carved into the rock at Dhauli (Odisha), beside Ashoka’s edicts on Kalinga, 3rd century BC.' },
   { img: 'imu-mahinda-ceilao', leg: 'Artist’s reconstruction: the monk Mahinda teaching King Devanampiya Tissa and the court of Sri Lanka, according to the island’s chronicles.' },
@@ -200,7 +200,7 @@ const sociedade = [
   { img: 'imu-mercado', leg: 'Artist’s reconstruction: a market at Pataliputra, with cotton cloth, spices and merchants from many lands.' },
   { h: '5. Writing and the edicts' },
   'The edicts are the **earliest datable documents in Indian script** after the Indus civilization. They mostly use the **Brahmi** script (written left to right), in several forms of **Prakrit** close to the language of the court of Magadha, adapted to local dialects; in the north-west they use **Kharosthi** (right to left, derived from Aramaic), and at Kandahar, **Greek** and **Aramaic**. The origin of Brahmi (Indian invention or Aramaic-inspired) is one of the great debates; it was probably known before Ashoka, but the edicts are the first clear datable evidence. Almost all the scripts of India, South-East Asia and Tibet descend from it.',
-  { img: 'imu-brahmi-alfabeto', leg: 'Table of the letters of the Brahmi script, as they appear in the edicts of Ashoka.' },
+  { img: 'imu-brahmi-alfabeto', leg: 'Chart of the theory of the pictographic origin of the Brahmi letters; the script is known chiefly from the edicts of Ashoka.' },
   'The edicts were **carved** on three kinds of surface: **natural rocks** (the Rock Edicts, 14 major ones, repeated at about ten sites and several minor ones), **polished monolithic pillars** (the Pillar Edicts, 7 major ones) and **cave walls**. Ashoka calls himself “Devanampiya Piyadasi” and almost always ends by asking that the message be **carved to last** “as long as the sun and the moon” (a common formula). Scribes and readers were needed to read it to the people; the edicts were probably **read aloud** by officials.',
   { img: 'imu-edito-girnar', leg: 'The rock at Girnar, in Gujarat, with Ashoka’s 14 Major Rock Edicts; the same rock bears an inscription of Rudradaman (c. AD 150).' },
   { img: 'imu-edito-kandahar', leg: 'Edict of Ashoka in Greek, from Kandahar (Afghanistan); the text uses the vocabulary of Greek philosophy to render *dhamma*.' },
