@@ -26,7 +26,7 @@ const visao = [
     ['Phagmodrupa e Rinpung', '1354 – c. 1565', 'Changchub Gyaltsen; Tsongkhapa e a escola Gelug; mosteiros de Ganden, Drepung e Sera; rivalidades de príncipes e escolas'],
     ['Tsangpa e Dalai Lamas', 'c. 1565 – séc. XVIII', 'Título de Dalai Lama (1578); Güshi Khan e o Quinto Dalai Lama (1642); Potala; intervenção da dinastia Qing a partir de 1720']
   ] } },
-  { img: 'tib-esquema-poderes', leg: 'Esquema desenhado das grandes fases do poder no Tibete, do império aos Dalai Lamas; a cronologia é simplificada.' },
+  { img: 'tib-esquema-poderes', leg: 'Esquema desenhado das grandes fases do poder no Tibete, do império aos Dalai Lamas; a cronologia é simplificada. (Imagem ilustrativa gerada por IA.)' },
   { h: 'Quem eram os tibetanos?' },
   'Os **tibetanos** são o povo que fala as línguas e dialetos do tibetano, da família **tibeto-birmanesa**. Na sua própria língua chamam ao país **Bod** (o nome «Tibete» vem de formas em turco e em árabe, de origem debatida). Os seus antepassados eram caçadores, pastores e agricultores do planalto, e os antropólogos têm mostrado que se adaptaram genética e culturalmente, ao longo de milénios, à vida em altitude, com menos oxigénio. A língua tibetana escrita, formalizada no século VII, deu-lhes uma **identidade comum**, apesar da diversidade de dialetos e de poderes locais.',
   { h: 'Porque importam' },

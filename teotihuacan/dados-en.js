@@ -10,7 +10,6 @@ const visao = [
   { h: 'Where it was' },
   'Teotihuacan lay in a small side valley of the **Valley of Mexico**, a high basin ringed by volcanoes and mountains, with lakes and springs. The site has plentiful **spring water**, fertile soil for maize and, nearby, deposits of **obsidian** (volcanic glass, the best “steel” of the Stone Age), above all the one at **Pachuca** to the north-east. These two advantages, water and obsidian, are among the reasons usually given for its success.',
   'At its height the city covered about **20 km²** (the protected archaeological zone is much larger). It was laid out on a **grid**, with a main axis, the **Avenue of the Dead**, skewed about 15.5° east of north, an orientation repeated in almost every building, whose exact reason (astronomical? a sacred mountain? the calendar?) is debated.',
-  { img: 'teo-vista-aerea', leg: 'Imagined reconstruction of Teotihuacan seen from above, c. AD 450: the Avenue of the Dead, the pyramids and the residential compounds (illustrative AI-generated image).' },
   { h: 'When it existed' },
   'The chronology of Teotihuacan rests on a sequence of pottery phases established by the archaeologist **René Millon** and his team, with names that are not Teotihuacan words but conventional labels. The dates are approximate, and some scholars propose adjustments based on radiocarbon dating.',
   { tabela: { cab: ['Phase', 'Approximate dates', 'What marks it'], linhas: [
@@ -97,7 +96,7 @@ const mapa = [
     ['Merchants’ Barrio', 'Neighbourhood to the north-east with Gulf links', 'c. 300 – 550', 'Pottery from several regions; circular houses'],
     ['La Ventilla', 'Neighbourhood with workshops and apartment compounds', 'c. 200 – 550', 'Graphic signs found on walls']
   ] } },
-  { img: 'teo-esquema-urbano', leg: 'Simplified diagram of the layout of Teotihuacan, with the Avenue of the Dead and the quadrants. Drawn diagram.' },
+  { img: 'teo-esquema-urbano', leg: 'Simplified diagram of the layout of Teotihuacan, with the Avenue of the Dead and the quadrants. Drawn diagram. (Illustrative AI-generated image.)' },
   { h: 'The Pyramid of the Sun' },
   'The **Pyramid of the Sun** is the largest building in the city and one of the largest in ancient America. It measures about **225 m** on a side and **65 m** in height (measurements vary, and before Batres’s restoration it may have been taller, with a temple on top). It is made of earth and stone, in five stages, and was covered in painted stucco. In **1971** a passage of some **100 m** was discovered leading to a **cave** under the pyramid; it is debated whether the cave is natural or artificial and whether it tied the place to the cult of water and of ancestors. The name “of the Sun” is Aztec and we do not know to whom it was dedicated.',
   { img: 'teo-piramide-sol', leg: 'Pyramid of the Sun, Teotihuacan' },
@@ -107,7 +106,7 @@ const mapa = [
   'The **Ciudadela** is a vast compound with a central courtyard and temples around it. Its name is Spanish and misleading: it is not a military citadel but a ceremonial and political complex (perhaps a residence of the rulers, a debated point). Within it, the **Feathered Serpent Temple** has a façade covered in **sculpted heads** of feathered serpents and of another creature with a snout (sometimes read as the “war serpent” or as Tlaloc, an open question), alternating with shells, and it was painted in bright colours. Beneath it, excavations found **collective graves of sacrificed people**, mostly men with war regalia: a display of collective power and, perhaps, of the renewal of time.',
   { img: 'teo-ciudadela', leg: 'Ciudadela and Feathered Serpent Temple, Teotihuacan' },
   { img: 'teo-serpente-emplumada', leg: 'Façade of the Feathered Serpent Temple, with serpent heads in relief.' },
-  { img: 'teo-esquema-tunel', leg: 'Simplified and conjectural diagram of the tunnel beneath the Feathered Serpent Temple, c. 100 m long. Drawn diagram.' },
+  { img: 'teo-esquema-tunel', leg: 'Simplified and conjectural diagram of the tunnel beneath the Feathered Serpent Temple, c. 100 m long. Drawn diagram. (Illustrative AI-generated image.)' },
   { h: 'The tunnel under the Feathered Serpent' },
   'The discovery of **2003** is one of the most important of recent decades. A tunnel of about **100 m**, **14–18 m deep**, was **sealed** around AD 200, probably on purpose. Inside, archaeologists found **chambers at the far end**, with thousands of objects: carved green stone, shells, seeds, pottery, balls of **pyrite** that gleam like small suns, and **liquid mercury** (a rare and dangerous substance) that perhaps simulated a lake of the underworld. The current interpretation is of a representation of the **underworld**. Some researchers think it may have been the tomb of a ruler; so far no body has been found to prove it.',
   { h: 'The Quetzalpapalotl Palace' },

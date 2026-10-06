@@ -13,7 +13,6 @@ const visao = [
   { h: 'Onde ficava' },
   'Teotihuacan situava-se num pequeno vale lateral do **vale do México**, uma bacia alta, rodeada de vulcões e de montanhas, com lagos e nascentes. O sítio tem **água de nascente** abundante, solos férteis para o milho e, nas proximidades, jazidas de **obsidiana** (um vidro vulcânico, o melhor «aço» da Idade da Pedra), sobretudo a de **Pachuca**, a nordeste. Estas duas vantagens, água e obsidiana, estão entre as razões habitualmente apontadas para o seu sucesso.',
   'A cidade ocupava cerca de **20 km²** no seu auge (a área arqueológica protegida é muito maior). Foi traçada em **quadrícula**, com um eixo principal, a **Avenida dos Mortos**, desviado cerca de 15,5° para leste do norte, uma orientação que se repete em quase todos os edifícios e cuja razão exata (astronómica? ligada a uma montanha sagrada? ao calendário?) é debatida.',
-  { img: 'teo-vista-aerea', leg: 'Reconstituição imaginada de Teotihuacan vista de cima, c. 450 d.C.: a Avenida dos Mortos, as pirâmides e os conjuntos residenciais (imagem ilustrativa gerada por IA).' },
   { h: 'Quando existiu' },
   'A cronologia de Teotihuacan assenta numa sequência de fases de cerâmica estabelecida pelo arqueólogo **René Millon** e pela sua equipa, com nomes que não são teotihuacanos, mas sim palavras convencionais. As datas são aproximadas e há quem proponha ajustes com base em datações por radiocarbono.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -100,7 +99,7 @@ const mapa = [
     ['Barrio dos Comerciantes', 'Bairro a nordeste com ligações ao Golfo', 'c. 300 – 550', 'Cerâmica de várias regiões; casas circulares'],
     ['La Ventilla', 'Bairro com oficinas e conjuntos de habitação', 'c. 200 – 550', 'Sinais gráficos descobertos nos muros']
   ] } },
-  { img: 'teo-esquema-urbano', leg: 'Esquema simplificado do traçado de Teotihuacan, com a Avenida dos Mortos e os quadrantes. Esquema desenhado.' },
+  { img: 'teo-esquema-urbano', leg: 'Esquema simplificado do traçado de Teotihuacan, com a Avenida dos Mortos e os quadrantes. Esquema desenhado. (Imagem ilustrativa gerada por IA.)' },
   { h: 'A Pirâmide do Sol' },
   'A **Pirâmide do Sol** é o maior edifício da cidade e um dos maiores da América antiga. Mede cerca de **225 m** de lado e **65 m** de altura (as medidas variam, e antes do restauro de Batres pode ter sido mais alta, com um templo no topo). É feita de terra e de pedra, em cinco corpos, e estava coberta de estuque pintado. Em **1971**, foi descoberta uma passagem, de uns **100 m**, que leva a uma **caverna** sob a pirâmide; discute-se se a caverna é natural ou artificial e se ligou o lugar ao culto da água e dos antepassados. O nome «do Sol» é dos astecas e não sabemos a quem era dedicada.',
   { img: 'teo-piramide-sol', leg: 'Pirâmide do Sol, Teotihuacan' },
@@ -110,7 +109,7 @@ const mapa = [
   'A **Ciudadela** é um vasto recinto com um pátio central e templos em redor. O seu nome é espanhol e engana: não é uma cidadela militar, mas um conjunto cerimonial e político (talvez uma residência dos governantes, o ponto é debatido). Dentro dela, o **Templo da Serpente Emplumada** tem a fachada coberta de **cabeças esculpidas** de serpente emplumada e de outro ser com focinho (por vezes interpretado como a «serpente da guerra» ou como Tlaloc, uma questão em aberto), alternando com conchas, e foi pintado de cores vivas. Por baixo, as escavações encontraram **sepulturas coletivas de sacrificados**, a maioria homens com adornos de guerra: uma demonstração de poder coletivo e, talvez, de renovação do tempo.',
   { img: 'teo-ciudadela', leg: 'Ciudadela e Templo da Serpente Emplumada, Teotihuacan' },
   { img: 'teo-serpente-emplumada', leg: 'Fachada do Templo da Serpente Emplumada, com cabeças de serpente em relevo.' },
-  { img: 'teo-esquema-tunel', leg: 'Esquema simplificado e conjetural do túnel sob o Templo da Serpente Emplumada, c. 100 m de comprimento. Esquema desenhado.' },
+  { img: 'teo-esquema-tunel', leg: 'Esquema simplificado e conjetural do túnel sob o Templo da Serpente Emplumada, c. 100 m de comprimento. Esquema desenhado. (Imagem ilustrativa gerada por IA.)' },
   { h: 'O túnel sob a Serpente Emplumada' },
   'A descoberta de **2003** é uma das mais importantes das últimas décadas. Um túnel de cerca de **100 m**, a **14–18 m de profundidade**, foi **selado** por volta de 200 d.C., provavelmente de propósito. No interior, os arqueólogos encontraram **câmaras ao fundo**, com milhares de objetos: pedra verde esculpida, conchas, sementes, cerâmica, bolas de **pirite** que brilham como pequenos sóis, e **mercúrio líquido** (um mineral raro e perigoso) que talvez simulasse um lago do mundo subterrâneo. A interpretação corrente é a de uma representação do **submundo**. Alguns investigadores pensam que poderia ter sido o túmulo de um governante; até agora não se encontrou um corpo que o prove.',
   { h: 'O Palácio de Quetzalpapalotl' },

@@ -135,7 +135,7 @@ const mapa = [
   { img: 'etr-populonia', leg: 'Promontório de Populónia e necrópole de São Cerbone, Toscana.' },
   { h: 'Rotas e comércio' },
   'Os etruscos eram navegadores. Os seus barcos, de remos e de vela, circulavam entre o Tirreno e o Adriático, e as rotas ligavam os portos da Etrúria (Pirgos, Gravisca, Populónia) a **Cartago**, à **Sardenha**, à **Córsega**, a **Marselha**, ao sul de França e à **Grécia**. Exportavam **ferro**, **cobre**, **bronze**, **vinho** e **azeite**; importavam cerâmica grega, perfumes, marfim, ouro, âmbar do Báltico (por vias terrestres através dos Alpes) e produtos do Egito e do Oriente. Os gregos chamavam-lhes **piratas** (o *Hino Homérico a Dioniso* conta como piratas tirrenos foram transformados em golfinhos), mas a fama tem o tom do rival; a atividade era, antes de mais, comércio.',
-  { img: 'etr-rotas-comercio', leg: 'Esquema simplificado das rotas comerciais etruscas no Mediterrâneo ocidental, séculos VII–V a.C. Mapa gerado por IA.' },
+  { img: 'etr-rotas-comercio', leg: 'Esquema simplificado das rotas comerciais etruscas no Mediterrâneo ocidental, séculos VII–V a.C. Mapa gerado por IA. (Imagem ilustrativa gerada por IA.)' },
   { img: 'etr-navio-etrusco', leg: 'Navio mercante etrusco, séc. VI a.C.; reconstituição conjetural. Ilustração gerada por IA.' }
 ];
 
@@ -179,7 +179,7 @@ const sociedade = [
   { h: '4. Economia' },
   'A base era a **agricultura** (cereais como a espelta, vinha, oliveira, legumes, linho, gado), a **mineração** e a **metalurgia**. O ferro, o cobre e o estanho da Toscana e de Elba eram trabalhados em Populónia, Vetulónia e Vulci; o bronze era trabalhado em grande escala e exportado, e a **cerâmica**, o **marfim** e o **ouro** completavam a riqueza. Houve também sistemas de **drenagem** dos solos: os etruscos escavaram uma rede de túneis subterrâneos (*cuniculi*) para controlar a água e secar terras, sobretudo no sul da Etrúria.',
   'A moeda foi tardia: cunharam-se moedas em cidades como Populónia a partir dos séculos V–IV a.C., mas durante muito tempo o comércio fez-se por troca e por barras de metal.',
-  { img: 'etr-cuniculos-esquema', leg: 'Esquema de uma rede de túneis de drenagem (cuniculi) etruscos; interpretação conjetural. Esquema gerado por IA.' },
+  { img: 'etr-cuniculos-esquema', leg: 'Esquema de uma rede de túneis de drenagem (cuniculi) etruscos; interpretação conjetural. Esquema gerado por IA. (Imagem ilustrativa gerada por IA.)' },
   { h: '5. Escrita e língua' },
   'Os etruscos escreviam da **direita para a esquerda**, num alfabeto derivado do grego eubeu. Esse alfabeto passou depois para o latim, e é por isso que as letras que lemos descendem, em parte, das etruscas. Conhecem-se cerca de **13 mil inscrições**, quase todas curtas (nomes em túmulos, dedicatórias). Podemos **ler** o etrusco, porque as letras são conhecidas, mas só em parte o **compreendemos**: sabemos, por exemplo, os numerais *thu, zal, ci, śa* (de um a quatro) e muitas palavras de família e de religião, mas a gramática é pouco clara.',
   'Os textos longos são raros. O **Liber Linteus** («livro de linho»), hoje em Zagreb, é um calendário ritual de cerca de 1200 palavras legíveis, escrito em tiras de linho que acabaram, por um acaso curioso, a embrulhar uma múmia egípcia. A *Tabula Cortonensis* (descoberta em 1992) tem cerca de 200 palavras e é, aparentemente, um contrato sobre terras. As lâminas de Pirgos (c. 500) são um texto bilingue com o fenício, o que ajuda muito. Não restam obras de literatura, e a história etrusca, escrita por etruscos, perdeu-se.',
