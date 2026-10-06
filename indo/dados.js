@@ -9,11 +9,11 @@ const visao = [
     'A **civilização do Vale do Indo** (também chamada **civilização de Harappa**, do nome do primeiro sítio escavado) foi uma das três grandes civilizações urbanas da Idade do Bronze, a par do Egito e da Mesopotâmia. Entre c. 2600 e 1900 a.C. (fase «Madura») espalhou-se por uma área de mais de meio milhão de quilómetros quadrados no que é hoje o Paquistão, o noroeste da Índia e o nordeste do Afeganistão, com mais de mil sítios conhecidos e cidades de dezenas de milhares de habitantes.',
     'Distingue-se por cidades **planeadas em quadrícula**, casas de tijolo cozido com casa de banho e **esgotos cobertos**, poços e reservatórios, **pesos e medidas padronizados**, e por milhares de pequenos **selos de pedra** com uma escrita que **ninguém consegue ler**. Também se distingue por aquilo que não se encontra com clareza: palácios, templos, túmulos de reis, retratos de governantes. Não sabemos como se chamavam a si próprios, que língua falavam, quem os governava, nem ao certo porque as cidades se esvaziaram. Este texto separa sempre o que se sabe do que se supõe.'
   ] },
-  { img: 'ido-mapa-regiao', leg: 'Mapa da civilização do Indo, com a extensão aproximada da fase Madura e os principais sítios.' },
+  { img: 'ido-mapa-regiao', leg: 'Mapa dos sítios da fase Madura da civilização do Indo, c. 2600–1900 a.C.; distribuição aproximada.' },
   { h: 'Onde ficava' },
   'O coração da civilização estendia-se pela **planície aluvial do rio Indo** e dos seus afluentes (o Panjabe), e por uma segunda bacia hoje quase seca, a do **Ghaggar-Hakra**, no noroeste da Índia e no Cholistão paquistanês. Tinha ainda postos avançados na costa de Makran e do Gujarate, e um entreposto no norte do Afeganistão (Shortugai, junto ao rio Oxus, perto das minas de lápis-lazúli). Mohenjo-daro e Harappa, as duas cidades mais conhecidas, ficam no Paquistão (Sind e Panjabe); Dholavira, Lothal, Rakhigarhi e Kalibangan, na Índia.',
   'O nome «Indo» vem do rio (do sânscrito *Sindhu*, «rio»), que também deu «Índia» e «hindu». Os próprios habitantes não nos deixaram nome legível. Alguns investigadores indianos preferem «civilização Indo-Sarasvati», por causa do Ghaggar-Hakra, identificado por alguns com o rio Sarasvati dos hinos védicos. Essa identificação é debatida e tem carga política, e a maior parte da comunidade científica usa «Indo» ou «Harappa».',
-  { img: 'ido-mohenjo-panoramica', leg: 'Ruínas de Mohenjo-daro (Sind, Paquistão), com o montículo da cidadela e, no topo, o estupa budista construído muito depois (período Kushan, c. século II d.C. ou mais tarde).' },
+  { img: 'ido-mohenjo-panoramica', leg: 'Ruínas de Mohenjo-daro com o montículo da cidadela e o estupa budista' },
   { h: 'Quando existiu' },
   'Os arqueólogos dividem a história desta civilização em fases, com datas aproximadas e fronteiras que variam de região para região. A cronologia assenta sobretudo em datações por radiocarbono; as datas exatas são sempre debatidas.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -23,7 +23,7 @@ const visao = [
     ['Harappa Tardia (Localização)', 'c. 1900 – 1300 a.C.', 'Abandono gradual das grandes cidades e da escrita; mais povoação rural e deslocação para leste e para sul'],
     ['Depois', 'depois de c. 1300 a.C.', 'Culturas regionais da Idade do Bronze Final e do Ferro; as cidades voltam à Índia só no I milénio a.C.']
   ] } },
-  { img: 'ido-cidade-reconstrucao', leg: 'Reconstrução artística, vista de cima, de uma cidade da fase Madura, com cidadela elevada e quarteirões em quadrícula. Ilustração gerada por IA; baseada nas plantas conhecidas, os pormenores são hipotéticos.' },
+  { img: 'ido-cidade-reconstrucao', leg: 'Reconstrução hipotética de uma cidade harappense da fase Madura, c. 2400 a.C. Ilustração gerada por IA.' },
   { h: 'Quem eram?' },
   'Não sabemos como se chamavam, que língua falavam nem de onde vinham. A ideia de que uma população estrangeira trouxe a civilização não tem apoio: o desenvolvimento local, desde Mehrgarh e as aldeias do Baluchistão e do Indo, está bem documentado. A língua é desconhecida. Os candidatos propostos (uma língua da família dravídica, uma língua indo-ariana, uma língua da família munda ou uma língua hoje extinta e sem parentes) são hipóteses, nenhuma demonstrada. O mais certo é que se falassem várias línguas numa área tão vasta.',
   'A análise de ADN antigo é ainda escassa. O estudo mais citado, de 2019, analisou um único esqueleto de Rakhigarhi e não encontrou ancestralidade das estepes da Ásia Central (que só chegou ao subcontinente mais tarde); isso é um indício, mas um só indivíduo não representa uma civilização inteira.',
@@ -38,7 +38,7 @@ const visao = [
   ] },
   { caixa: 'O que não sabemos', texto: 'Não lemos a escrita. Não conhecemos nenhum nome de rei, de deus ou de cidade (os nomes «Harappa» e «Mohenjo-daro» são modernos). Não sabemos se havia um estado único, vários ou nenhum. Não sabemos o que cada símbolo religioso significava. Não sabemos ao certo porque as cidades declinaram. Tudo o que sabemos vem de ruínas, objetos, esqueletos, plantas e de textos mesopotâmicos que falam de um país distante chamado Meluhha.' },
   { caixa: 'O Vale do Indo hoje', texto: 'A maior parte dos sítios está no Paquistão e na Índia. **Mohenjo-daro** é Património Mundial da UNESCO desde 1980, e **Dholavira** desde 2021. O Indo continua a ser o eixo de um país inteiro, mas as ruínas estão ameaçadas por sais do solo, cheias e restauros mal feitos. Escavou-se só uma pequena parte de cada cidade, e cada campanha continua a trazer surpresas.' },
-  { img: 'ido-mehrgarh-ruinas', leg: 'Restos de casas de tijolo cru em Mehrgarh (Baluchistão, Paquistão), onde viveram agricultores desde, pelo menos, o VI milénio a.C.' }
+  { img: 'ido-mehrgarh-ruinas', leg: 'Restos de casas de tijolo cru em Mehrgarh, Baluchistão' }
 ];
 
 const linha = [
@@ -47,8 +47,8 @@ const linha = [
     { d: 'c. 7000 a.C. (debatido)', t: 'Mehrgarh: as primeiras aldeias agrícolas', x: 'No Baluchistão (Paquistão), junto à passagem de Bolan, o arqueólogo **Jean-François Jarrige** descobriu em 1974 o sítio de **Mehrgarh**: casas de tijolo cru, celeiros de compartimentos, trigo e cevada cultivados, ovelhas, cabras e gado. O início é tradicionalmente situado em c. 7000 a.C.; datações recentes sugerem datas mais tardias para as primeiras camadas, e a discussão continua. Ainda se debate se a agricultura aqui nasceu localmente ou veio do Próximo Oriente, e a resposta mais provável é uma mistura.' },
     { d: 'c. 5500 – 3500 a.C.', t: 'Cerâmica, contas e comércio', x: 'Em Mehrgarh aparecem cerâmica, **figuras femininas de terracota**, contas de turquesa, lápis-lazúli (vindo do Badakhshan, no Afeganistão) e conchas do mar. Em alguns dentes de adultos, de há 7500 a 9000 anos, há **furos feitos com brocas de sílex**, uma das mais antigas evidências de dentisteria do mundo (estudo de 2006). Os objetos de cobre surgem antes de 3500 a.C.' }
   ] },
-  { img: 'ido-mehrgarh-aldeia', leg: 'Reconstrução artística de uma aldeia agrícola do tipo de Mehrgarh, com casas de tijolo cru, celeiros e rebanhos. Ilustração gerada por IA; os pormenores são hipotéticos.' },
-  { img: 'ido-mehrgarh-figurina', leg: 'Figura feminina de terracota de Mehrgarh, estilo dos períodos mais recentes do sítio (milénios V–III a.C.).' },
+  { img: 'ido-mehrgarh-aldeia', leg: 'Aldeia agrícola hipotética do tipo Mehrgarh, c. 6000 a.C. Ilustração gerada por IA.' },
+  { img: 'ido-mehrgarh-figurina', leg: 'Figura feminina de terracota de Mehrgarh' },
   { linha: [
     { d: 'c. 3300 a.C.', t: 'Fase Ravi: começa o Harappa Inicial', x: 'Em Harappa e noutros sítios do Panjabe surgem aldeias maiores, cerâmica pintada característica e **sinais em vasos** que alguns consideram os primeiros passos da escrita do Indo.' },
     { d: 'c. 2900 a.C.', t: 'Kalibangan: arado e planta urbana', x: 'No Rajastão, **Kalibangan** conserva um **campo lavrado** com sulcos cruzados, considerado dos mais antigos do mundo (c. 2800 a.C.), e uma planta de cidade fortificada.' },
@@ -58,7 +58,7 @@ const linha = [
     { d: 'c. 2400 – 2300 a.C.', t: 'Lothal e os portos', x: 'Em **Lothal** (Gujarate) surge uma pequena cidade com **oficina de contas** e um grande tanque de tijolo a que se chamou «doca». É um centro de produção e de troca com o litoral e o interior.' },
     { d: 'c. 2334 – 2279 a.C.', t: 'Sargão e os navios de Meluhha', x: 'Uma inscrição do rei **Sargão de Acad** gaba-se de que os navios de **Meluhha, Magan e Dilmun** atracavam no seu porto. A maior parte dos especialistas identifica **Meluhha** com a civilização do Indo (a ideia é muito provável, mas não é demonstrada por uma inscrição que o diga).' }
   ] },
-  { img: 'ido-selo-shuilishu', leg: 'Selo cilíndrico acádio com a inscrição do tradutor de Meluhha Shu-ilishu (Louvre): prova escrita da presença de gente de Meluhha na Mesopotâmia, c. 2200–2000 a.C. (datação debatida).' },
+  { img: 'ido-selo-shuilishu', leg: 'Reprodução histórica do selo cilíndrico acádio de Shu-ilishu, intérprete de Meluhha; Louvre AO 22310.' },
   { linha: [
     { d: 'c. 2200 a.C.', t: 'O «evento de 4,2 mil anos» e o intérprete de Meluhha', x: 'Nesta altura, registos climáticos de várias regiões mostram um **enfraquecimento da monção e uma seca prolongada**. É também a época aproximada (c. 2200–2000 a.C., datação debatida) de um selo cilíndrico mesopotâmico em que um «intérprete de Meluhha», chamado **Shu-ilishu**, mostra que havia gente do Indo (ou intérpretes da sua língua) na Mesopotâmia. A relação entre a seca e a civilização do Indo, que ainda prosperou 300 anos, é debatida.' },
     { d: 'c. 2120 a.C.', t: 'Gudea de Lagash e os mercadores de Meluhha', x: 'O rei **Gudea** de Lagash escreve que traz da terra de Meluhha a cornalina e o ouro em pó para o seu templo; durante o período de **Ur III** existiu junto a **Girsu** uma «aldeia de Meluhha» com gente vinda dessa terra.' },
@@ -83,7 +83,7 @@ const linha = [
 
 const mapa = [
   'A civilização do Indo é conhecida por cerca de **mil e tal sítios** da fase Madura, dos quais só uma pequena parte foi escavada. Há cinco grandes centros urbanos reconhecidos (**Harappa, Mohenjo-daro, Dholavira, Ganweriwala e Rakhigarhi**) e muitas cidades médias, vilas, aldeias, portos e entrepostos. Os nomes antigos de todos eles são desconhecidos; os que usamos são os das aldeias modernas junto às ruínas.',
-  { img: 'ido-mapa-cidades', leg: 'Principais sítios da civilização do Indo: Harappa, Mohenjo-daro, Dholavira, Lothal, Rakhigarhi, Kalibangan, Ganweriwala e outros.' },
+  { img: 'ido-mapa-cidades', leg: 'Mapa dos principais sítios do Indo (Harappa, Mohenjo-daro, Dholavira, Lothal, Rakhigarhi, Kalibangan)' },
   { tabela: { cab: ['Sítio', 'Local hoje', 'Datas / dimensão', 'Para que ficou conhecido'], linhas: [
     ['Mohenjo-daro', 'Sind, Paquistão', 'c. 2500–1700 a.C.; 250–300 ha; talvez 40 000 habitantes (estimativa frágil)', 'Grande Banho, cidadela, esgotos, centenas de poços; Sacerdote-Rei; selo «Pashupati»'],
     ['Harappa', 'Panjabe, Paquistão', 'c. 3300–1300 a.C.; c. 150 ha; até c. 23 000 habitantes', 'Sítio que deu o nome à civilização; os grandes «celeiros»; cemitérios R37 e H'],
@@ -98,21 +98,21 @@ const mapa = [
   { h: 'Harappa' },
   'Situada no Panjabe paquistanês, junto a um antigo leito do rio Ravi, **Harappa** é a cidade que deu o nome à civilização. Foi ocupada durante mais de dois mil anos, das aldeias da fase Ravi (c. 3300 a.C.) até à fase Tardia, e na fase Madura teria c. 150 hectares e talvez cerca de 23 000 habitantes. O sítio tem vários montículos: **AB** (a cidadela, com os edifícios públicos), **E**, **F** e outros. Foi muito danificado nos anos 1850, quando os construtores da linha de caminho de ferro Lahore–Multan usaram os seus tijolos como balastro.',
   'Entre os achados estão os selos de esteatite, esqueletos de dois cemitérios (o **R37**, da fase Madura, e o **H**, da fase Tardia), oficinas e uma série de plataformas de tijolo que Wheeler chamou «celeiros». Desde 1986, o **Harappa Archaeological Research Project** (dirigido por Richard Meadow e Jonathan Mark Kenoyer) usa métodos modernos, e a sua conclusão é que a vida urbana era mais complexa e menos «uniforme» do que se pensava.',
-  { img: 'ido-harappa-ruinas', leg: 'Ruínas de Harappa (Panjabe, Paquistão): muros de tijolo cozido numa das áreas escavadas.' },
+  { img: 'ido-harappa-ruinas', leg: 'Muros de tijolo cozido em Harappa' },
   { h: 'Mohenjo-daro e o Grande Banho' },
   'O nome moderno **Mohenjo-daro** significa, em sindi, «monte dos mortos» (tradução habitual, mas discutida); o nome antigo é desconhecido. Foi construída c. 2500 a.C. e abandonada por volta de 1700 a.C. Tem uma **cidadela** num montículo elevado (c. 12 m de altura) e uma **cidade baixa** com ruas retas. A cidade teve talvez dezenas de milhares de habitantes, mas essa estimativa é frágil, porque só parte da cidade foi escavada e o nível do lençol freático impede escavar as camadas mais antigas.',
   'O monumento mais célebre é o **Grande Banho**: um tanque de tijolo de c. 12 m de comprimento, 7 m de largura e 2,4 m de profundidade, com escadas nas duas pontas, revestido de betume (asfalto) para ser impermeável e rodeado de salas e de corredores. O nome «Banho» é moderno. É natural pensar em banhos rituais (como em templos indianos posteriores), mas **não há prova**: pode ter sido um tanque cerimonial, um balneário público ou outra coisa. Ao lado fica um grande edifício de blocos que Wheeler chamou «celeiro», interpretação que investigadores como Kenoyer põem em dúvida por não terem encontrado grão. Marshall deu o nome de «Colégio dos Sacerdotes» a outra construção, sem prova de qual era a sua função.',
-  { img: 'ido-grande-banho', leg: 'O Grande Banho de Mohenjo-daro, c. 2500 a.C.: tanque de tijolo cozido, hoje sem água, com degraus em dois lados.' },
-  { img: 'ido-grande-banho-uso', leg: 'Reconstrução imaginada de pessoas junto ao Grande Banho. Ilustração gerada por IA; a função do tanque (ritual, higiénica ou outra) é desconhecida e a cena é só uma hipótese.' },
+  { img: 'ido-grande-banho', leg: 'O Grande Banho de Mohenjo-daro' },
+  { img: 'ido-grande-banho-uso', leg: 'Cena hipotética no Grande Banho de Mohenjo-daro, c. 2500 a.C. Ilustração gerada por IA.' },
   { h: 'Dholavira, a cidade da água' },
   'Em **Khadir Bet**, uma ilha no Rann de Kutch (Gujarate), **Dholavira** foi escavada por **R. S. Bisht** entre 1990 e 2005 (o sítio fora identificado por J. P. Joshi em 1967–68). Tinha c. 47 hectares e uma planta única: **cidadela, cidade média e cidade baixa**, cada uma com muralha, num desenho de proporções geométricas. Num clima árido e com água salgada à volta, os seus habitantes construíram cerca de **dezasseis reservatórios** talhados na rocha ou em tijolo, ligados por canais e por barragens em dois ribeiros sazonais.',
   'Na porta norte encontrou-se um **letreiro** com **dez grandes sinais** do Indo (c. 37 cm de altura cada, em gesso sobre madeira que desapareceu), uma das inscrições mais longas e mais visíveis conhecidas. Há ainda um grande espaço aberto retangular, chamado «estádio» (o nome é moderno; a função, talvez cerimonial, é desconhecida). É Património Mundial da UNESCO desde 2021.',
-  { img: 'ido-dholavira-reservatorio', leg: 'Um dos reservatórios de Dholavira, escavados na rocha e usados para armazenar a água das chuvas, c. 2500 a.C.' },
-  { img: 'ido-dholavira-reconstrucao', leg: 'Reconstrução imaginada de Dholavira, com a cidadela, os reservatórios e os muros. Ilustração gerada por IA; os alçados são hipotéticos.' },
+  { img: 'ido-dholavira-reservatorio', leg: 'Reservatório talhado na rocha em Dholavira' },
+  { img: 'ido-dholavira-reconstrucao', leg: 'Reconstrução hipotética de Dholavira, c. 2300 a.C. Ilustração gerada por IA.' },
   { h: 'Lothal e a «doca»' },
   'Escavada por **S. R. Rao** (Serviço Arqueológico da Índia) de 1955 a 1960, **Lothal** (Gujarate) é uma cidade pequena, mas rica em objetos: uma **oficina de contas** de cornalina e esteatite, selos (inclusive um de tipo do Golfo Pérsico), e uma **régua de marfim** com divisões de c. 1,7 mm. O seu grande tanque retangular de tijolo (c. 215 × 35 m) foi interpretado por Rao como **doca** de um porto ligado ao rio Sabarmati. Outros investigadores (Leshnik, Yule) acham que era um **reservatório de irrigação**, porque a entrada parece estreita demais para navios; microfósseis marinhos (foraminíferos) nos sedimentos foram invocados a favor da doca, mas a discussão está por fechar.',
-  { img: 'ido-lothal-doca', leg: 'O grande tanque de tijolo de Lothal (Gujarate): doca ou reservatório? A interpretação continua em debate.' },
-  { img: 'ido-lothal-reconstrucao', leg: 'Reconstrução imaginada de um barco carregado de contas e de mercadorias num cais de Lothal. Ilustração gerada por IA; a hipótese da doca é só uma das interpretações do tanque.' },
+  { img: 'ido-lothal-doca', leg: 'Tanque de tijolo de Lothal, tradicionalmente interpretado como doca; interpretação debatida.' },
+  { img: 'ido-lothal-reconstrucao', leg: 'Barco e atividade portuária hipotéticos em Lothal, c. 2300 a.C.; a interpretação do tanque como doca é debatida. Ilustração gerada por IA.' },
   { h: 'Rakhigarhi e Kalibangan' },
   '**Rakhigarhi** (Haryana, a c. 150 km a noroeste de Deli) é descrita pelo Serviço Arqueológico da Índia como o **maior sítio** da civilização, com 300 a 350 hectares em sete montículos. Muitos arqueólogos calculam só 80 a 100 hectares para a cidade da fase Madura, e outros pensam que os montículos eram aglomerados distintos. Escavações dirigidas por Amarendra Nath (1997–2000), Vasant Shinde (2011–2016) e novas equipas (desde 2021) encontraram fases desde a pré-Harappa até à fase Madura, dezenas de enterramentos, e o **ADN de 2019**. Só uma pequena parte do sítio foi escavada.',
   '**Kalibangan** («pulseiras pretas», em hindi, por causa das pulseiras de terracota encontradas) fica junto ao leito do Ghaggar, no Rajastão. Foi identificada como sítio Harappa por Amalananda Ghosh (1953) e escavada por B. B. Lal e B. K. Thapar (1960–1969). Tem um **campo lavrado** com sulcos cruzados da fase Inicial, uma cidade em quadrícula com cidadela e cidade baixa, e estruturas com fossas de cinzas que alguns chamam **altares de fogo** (outros veem fornos ou lareiras domésticas).',
@@ -120,14 +120,14 @@ const mapa = [
   '**Ganweriwala**, no Cholistão, é um dos grandes centros, mas nunca foi escavado. **Chanhudaro**, no Sind, tinha oficinas de contas, de conchas e de selos. **Shortugai**, no norte do Afeganistão, parece um entreposto harappiano junto às minas de lápis-lazúli do Badakhshan. Nas costas de Makran e do Gujarate há pequenas povoações portuárias (como Sutkagen-dor e Sotka-koh), e na região do Gujarate há sítios como Surkotada e Kuntasi.',
   { h: 'Uma cidade planeada' },
   'O que mais impressiona nas grandes cidades é o **plano**. Em Mohenjo-daro e Harappa, as ruas principais, de 6 a 10 metros de largura, cruzam-se quase em ângulo reto, orientadas aproximadamente para os pontos cardeais; entre elas, becos estreitos. A cidade divide-se em duas partes: a **cidadela**, mais alta, com edifícios públicos, e a **cidade baixa**, de casas. Os tijolos, cozidos ou crus, seguem a proporção **4:2:1** (cerca de 28 × 14 × 7 cm) em toda a civilização, desde o Afeganistão ao Gujarate. Quem decidiu este plano e como se impôs, não sabemos.',
-  { img: 'ido-planta-mohenjo', leg: 'Esquema da planta de uma cidade do Indo: cidadela elevada, ruas em quadrícula, casas com pátio e esgotos. Ilustração gerada por IA; baseada nas plantas de Mohenjo-daro e Harappa, é um esquema geral, não uma planta exata.' },
+  { img: 'ido-planta-mohenjo', leg: 'Esquema isométrico hipotético de uma cidade do Indo; não é uma planta arqueológica à escala. Ilustração gerada por IA.' },
   { h: 'Água, poços e esgotos' },
   'Mohenjo-daro tinha **centenas de poços** (se calcula mais de 700, talvez um por cada poucas casas) de tijolo, com a boca arredondada. Muitas casas tinham uma **casa de banho** com chão de tijolo, ligada por um tubo de barro a **esgotos cobertos** que corriam sob as ruas e levavam as águas a fossas ou ao rio, com bocas de visita para limpeza. É um dos sistemas de saneamento mais antigos e mais elaborados do mundo antigo. As casas voltam as costas à rua (sem janelas para fora), o que dava privacidade e protegia do calor e do pó.',
-  { img: 'ido-drenagem-mohenjo', leg: 'Uma rua de Mohenjo-daro com o esgoto de tijolo, descoberto, ao lado das casas.' },
-  { img: 'ido-poco-mohenjo', leg: 'Poço de tijolo em Mohenjo-daro; a cidade teve centenas de poços.' },
+  { img: 'ido-drenagem-mohenjo', leg: 'Rua perto do montículo do estupa em Mohenjo-daro; a fotografia não identifica um esgoto específico.' },
+  { img: 'ido-poco-mohenjo', leg: 'Poço de tijolo em Mohenjo-daro' },
   { h: 'As rotas de comércio' },
   'As cidades estavam ligadas por rios e por caminhos de terra, e por vias marítimas. Para o **norte e o oeste**: lápis-lazúli do Badakhshan (Afeganistão), turquesa e cobre do planalto iraniano e de Omã. Para o **leste e o sul**: cobre do Rajastão (Khetri), conchas e cornalina do Gujarate, ouro do sul da Índia. Pelo **Golfo Pérsico**: o contacto com **Dilmun** (Bahrein), **Magan** (Omã) e a Mesopotâmia. Barcos e carros de bois transportavam as mercadorias. O que os indianos recebiam em troca (lã, prata, estanho, óleos?) deixou poucos vestígios.',
-  { img: 'ido-rotas-comercio', leg: 'Esquema das rotas de comércio entre o vale do Indo, o Afeganistão, o Golfo Pérsico e a Mesopotâmia, c. 2300 a.C. Ilustração gerada por IA; esquemática, não é mapa arqueológico exato.' }
+  { img: 'ido-rotas-comercio', leg: 'Mapa esquemático de rotas indicativas entre o Indo, o golfo Pérsico e a Mesopotâmia; desenho cartográfico, sem fronteiras modernas.' }
 ];
 
 const sociedade = [
@@ -139,7 +139,7 @@ const sociedade = [
     '**Uma organização sem rei**, em que o poder estava repartido entre comerciantes, chefes de linhagem, sacerdotes e conselhos das cidades;',
     '**Uma rede de grupos de artesãos e de comerciantes** que partilhavam regras, sem um centro político.'
   ] },
-  { img: 'ido-selo-unicornio', leg: 'Selo de esteatite com o «unicórnio» e inscrição, Mohenjo-daro, c. 2500–2000 a.C. Os selos serviam para marcar mercadorias e, talvez, para identificar donos ou grupos.' },
+  { img: 'ido-selo-unicornio', leg: 'Selo de esteatite com o «unicórnio» do Indo, Museu Indiano, Calcutá.' },
   { caixa: 'E as armas e os palácios?', texto: 'Já se disse que a civilização do Indo era «pacífica». Há de facto poucos sinais de **guerra organizada**: poucas armas (pontas de seta, lanças, machados e maças de cobre ou de pedra existem, mas em número modesto), nenhuma cena de combate na arte e nenhuma camada de destruição. Mas há **muralhas, torres e portas** em quase todas as cidades (que podem proteger de cheias, ladrões, gado ou inimigos) e **traumatismos** em alguns esqueletos (em Harappa, por exemplo). A conclusão prudente é que houve violência, mas que a guerra não era o centro da sua imagem pública. E a ausência de palácios e de templos pode ser uma verdadeira ausência ou só uma dificuldade nossa em reconhecê-los: os edifícios públicos podem estar entre aqueles que as escavações ainda não alcançaram.' },
   { h: '2. Classes sociais' },
   'Sabemos pouco. Pelas casas (de dimensões muito variadas, mas sem uma grande diferença como a que há noutras civilizações), pelos bairros de artesãos, pelo acesso a objetos de luxo e pelas escassas oferendas funerárias, parece ter havido **agricultores, pastores, artesãos especializados (oleiros, contas, metal, conchas), comerciantes e uma elite**, mas uma desigualdade menos visível do que na Mesopotâmia ou no Egito. Não há provas de escravatura, nem de castas (a ideia de que o sistema de castas hindu vem do Indo é uma projeção, sem apoio nos dados). Também não há provas do estatuto das mulheres: as figuras de terracota são em maioria femininas, mas isso não diz nada sobre o poder.',
@@ -155,20 +155,20 @@ const sociedade = [
     ['Estruturas com fossas de cinzas («altares de fogo»)', 'Kalibangan, Lothal', 'Ritos de fogo; fornos ou lareiras', 'Baixa'],
     ['Grande Banho', 'Mohenjo-daro', 'Banhos rituais', 'Hipótese']
   ] } },
-  { img: 'ido-selo-pashupati', leg: 'O selo «Pashupati» (Mohenjo-daro, achado em 1928–29; Museu Nacional, Deli): figura sentada, com toucado de cornos, rodeada de animais. Marshall chamou-lhe «proto-Shiva»; essa leitura é muito contestada.' },
-  { img: 'ido-deusa-mae', leg: 'Figura feminina de terracota do Indo, com colares e toucado elaborado. Muitas vezes chamadas «deusas-mães», mas a sua função é desconhecida.' },
+  { img: 'ido-selo-pashupati', leg: 'Selo dito «Pashupati», Museu Nacional de Nova Deli; interpretação debatida.' },
+  { img: 'ido-deusa-mae', leg: 'Figura feminina de terracota do Indo, Museu de Lahore; a identificação como «deusa-mãe» é incerta.' },
   { h: 'A morte' },
   'Os mortos eram normalmente **enterrados**, deitados e quase sem oferendas (alguns vasos, pulseiras ou espelhos de cobre), em cemitérios fora da cidade, como o **R37** de Harappa. Os enterros em Mohenjo-daro são quase desconhecidos, e isso é um mistério (talvez houvesse cremação ou outros ritos que não deixaram vestígios). Na fase Tardia, o **Cemitério H** de Harappa tem enterros secundários em urnas pintadas com pavões e outros motivos. Não há tumbas com tesouros como em Ur ou no Egito: a ideia de uma «civilização sem culto dos grandes mortos» vem desta ausência.',
-  { img: 'ido-enterro', leg: 'Reconstrução imaginada de um enterro numa necrópole do Indo: o corpo deitado, com vasos e pulseiras. Ilustração gerada por IA; os ritos de que temos prova são sobretudo os de inumação simples.' },
+  { img: 'ido-enterro', leg: 'Enterro hipotético num cemitério do Indo, c. 2400 a.C. Ilustração gerada por IA.' },
   { h: '4. Economia e agricultura' },
   'A economia assentava na **agricultura de duas estações**: trigo, cevada, ervilhas, lentilhas, grão-de-bico e mostarda no inverno, e milhos, sésamo e **algodão** no verão (em algumas zonas, arroz). Criavam-se **vacas de bossa (zebus), búfalos, ovelhas e cabras**; havia cães, e o cavalo é, no mínimo, raro (os supostos achados de cavalo são muito discutidos). Não sabemos ao certo como se irrigava: não há canais de irrigação claros, e as cheias dos rios, a água de reservatórios e a chuva de monção bastavam em muitos locais.',
-  { img: 'ido-agricultura', leg: 'Reconstrução imaginada de uma cena agrícola: lavra com arado de madeira puxado por bois, junto a um rio. Ilustração gerada por IA; é um quadro hipotético, baseado no campo lavrado de Kalibangan e em estatuetas.' },
+  { img: 'ido-agricultura', leg: 'Agricultura hipotética na planície do Indo, c. 2400 a.C. Ilustração gerada por IA.' },
   'O **artesanato** era de alto nível e muito especializado (ver mais abaixo). O comércio era feito sobretudo por **troca**, com pesos padronizados e selos; **não há moedas** nem sinais de dinheiro. As mercadorias circulavam por rios, estradas e pelo mar até Meluhha.',
-  { img: 'ido-mercado', leg: 'Reconstrução imaginada de um mercado de uma cidade do Indo, com cereais, cerâmica, contas e mercadores com balanças. Ilustração gerada por IA; baseada em achados, mas os pormenores (cores, tecidos, gestos) são hipotéticos.' },
+  { img: 'ido-mercado', leg: 'Mercado hipotético numa cidade do Indo, c. 2400 a.C. Ilustração gerada por IA.' },
   { h: '5. Escrita e selos: o grande mistério' },
   'Existem cerca de **5000 inscrições**, quase todas em **selos de esteatite** (pequenas placas de 2 a 4 cm, quadradas, com um animal e alguns sinais), mas também em cerâmica, tabuinhas, objetos de cobre, pulseiras e ferramentas. Conhecem-se **entre 400 e 600 sinais diferentes** (os números variam conforme se contam variantes). A inscrição média tem **cerca de cinco sinais**, e as mais longas não chegam a quarenta. O letreiro de Dholavira, com dez sinais, é uma das mais longas em grande formato. A escrita lia-se geralmente **da direita para a esquerda** (os sinais apertam-se à esquerda quando falta espaço). Cerca de 90% das inscrições foram encontradas em sítios do Paquistão.',
-  { img: 'ido-selos-escrita', leg: 'Selos do Indo com sinais da escrita, Museu Britânico, Londres.' },
-  { img: 'ido-dholavira-letreiro', leg: 'Reprodução do letreiro de dez sinais encontrado na porta norte de Dholavira (c. 2500 a.C.).' },
+  { img: 'ido-selos-escrita', leg: 'Selos do Indo com sinais da escrita (Museu Britânico)' },
+  { img: 'ido-dholavira-letreiro', leg: 'Reprodução gráfica moderna dos dez sinais do letreiro de Dholavira.' },
   { h: 'Porque não se decifra' },
   { lista: [
     '**As inscrições são curtíssimas.** Não há textos longos, como as tabuinhas da Mesopotâmia: cinco sinais não bastam para estudar a gramática.',
@@ -179,18 +179,18 @@ const sociedade = [
   ] },
   { h: '6. Casa e família' },
   'As casas eram de **tijolo cozido**, com **pátio central** e salas à volta, e por vezes **dois andares**, com escada de tijolo e telhado plano. Variavam de pequenas casas de duas salas a grandes mansões. A casa de banho e o poço eram comuns. Sobre a **família** não há provas diretas: não sabemos se os casamentos eram arranjados, quantas pessoas viviam em cada casa nem como se herdava.',
-  { img: 'ido-casa-indo', leg: 'Reconstrução imaginada do pátio de uma casa de tijolo do Indo: família, forno, vasos e escada para o andar de cima. Ilustração gerada por IA; baseada nas plantas das casas, os móveis e as roupas são hipotéticos.' },
+  { img: 'ido-casa-indo', leg: 'Casa com pátio numa cidade do Indo; reconstrução hipotética, c. 2400 a.C. Ilustração gerada por IA.' },
   { h: '7. Alimentação' },
   'Comia-se **pão achatado** (cozido em fornos de barro), papas de cereais, leguminosas, vegetais, frutos (tâmaras, melões, uvas), **carne** de vaca, de carneiro e de cabra, **peixe** (também seco) e aves. Estudos de grãos de amido em Farmana (Haryana) apontam para o uso de **gengibre, açafrão-da-Índia (cúrcuma) e alho**, o que sugere uma cozinha com especiarias, embora o tema seja ainda discutido. O consumo de lacticínios é provável (os vasos furados podem ter servido para coalhar). Não se conhecem bebidas alcoólicas com certeza.',
   { h: '8. Vestuário e joias' },
   'Os tecidos eram de **algodão** (cultivado no subcontinente desde, pelo menos, o IV milénio a.C.: restos de fio e de tecido encontraram-se, por exemplo, em Mohenjo-daro) e de lã. As estatuetas mostram roupas simples: panos à volta da cintura, saias e mantos (o do Sacerdote-Rei tem padrão de trevo, com restos de tinta vermelha). O penteado era elaborado, com carrapitos, tranças e toucados em leque nas figuras femininas. As joias eram o ponto forte: **colares, braceletes, pulseiras de conchas, anéis e fitas para a cabeça**, de cornalina, esteatite, faiança e ouro, e **espelhos de cobre** e bastonetes de maquilhagem (kohl).',
-  { img: 'ido-contas-cornalina', leg: 'Contas de cornalina e outras pedras semipreciosas do Indo, algumas longas e perfuradas com grande habilidade.' },
+  { img: 'ido-contas-cornalina', leg: 'Contas de cornalina do Indo encontradas em Susa, Museu do Louvre.' },
   { h: '9. Música e jogos' },
   'Há poucos vestígios de **música**: chocalhos e assobios de terracota (alguns com forma de pássaro), e possivelmente tambores, mas nenhum instrumento certo. A **Dançarina** de bronze sugere dança, mas é só uma sugestão. Havia **jogos**: dados cúbicos, peças e tabuleiros, mas as regras são desconhecidas. As crianças tinham **brinquedos** de terracota (animais com cabeça móvel, bonecas, carros de bois e de rodas).',
-  { img: 'ido-carrinho-boi', leg: 'Brinquedo de terracota: um carro de bois do Indo, com duas rodas e um boi, c. 2500 a.C.' },
+  { img: 'ido-carrinho-boi', leg: 'Figuras e modelos de brinquedos de terracota de Harappa, incluindo um carrinho, Brooklyn Museum, c. 2500 a.C.' },
   { h: '10. Ciência, medidas e medicina' },
   'A prova mais clara de conhecimento matemático são os **pesos**: cubos de **sílex (chert)** em séries regulares (1, 2, 4, 8, 16, 32, 64, e depois múltiplos decimais), com uma unidade de cerca de 13,7 g (valor mais citado, com margem). Estão em todos os sítios, de Lothal a Harappa. O comprimento era medido com **réguas** de marfim e de concha (em Lothal, a escala de marfim tem divisões de c. 1,7 mm) e a proporção constante dos tijolos mostra um sistema de medida. Não há tábuas de matemática nem textos científicos, e não sabemos como contavam. Em **Mehrgarh** (milénios VII–V a.C.) há as mais antigas provas de dentisteria, com molares furados por brocas de sílex.',
-  { img: 'ido-pesos', leg: 'Pesos cúbicos de pedra do Indo, de várias dimensões, em série regular.' },
+  { img: 'ido-pesos', leg: 'Pesos cúbicos de pedra harappenses, Museu Nacional de Nova Deli.' },
   { h: '11. Tecnologia' },
   { lista: [
     '**Tijolo cozido** em fornos a mais de 1000 °C, em grandes quantidades, com proporções iguais em toda a civilização.',
@@ -200,32 +200,32 @@ const sociedade = [
     '**Transporte:** carros de rodas puxados por bois (modelos de terracota; marcas de rodados em ruas), barcos fluviais e marítimos (representados em selos e modelos).',
     '**Água e saneamento:** poços, casas de banho, esgotos, reservatórios e barragens (Dholavira).'
   ] },
-  { img: 'ido-oficina-contas', leg: 'Reconstrução imaginada de uma oficina de contas, com artesãos a furar e a polir cornalina. Ilustração gerada por IA; baseada nas oficinas de Chanhudaro e de Lothal, os gestos e as ferramentas são hipotéticos.' },
+  { img: 'ido-oficina-contas', leg: 'Oficina de contas de cornalina; cena hipotética, c. 2300 a.C. Ilustração gerada por IA.' },
   { h: '12. Comércio com a Mesopotâmia: Meluhha' },
   'Os escribas da Mesopotâmia, desde Sargão (c. 2334 a.C.), falam de **Meluhha**, «a terra de onde vêm» a cornalina, o lápis-lazúli, o marfim, madeiras raras, o ouro e animais exóticos. A maioria dos especialistas identifica **Meluhha com o Vale do Indo**, por causa dos produtos e dos achados. Há **selos do Indo** em Ur, Kish, Susa, Babilónia e Bahrein (poucas dezenas ao todo), pesos de tipo indiano no Golfo, **contas de cornalina gravada** nos túmulos de Ur (c. 2600–2500 a.C.) e, em Lagash, uma **«aldeia de Meluhha»** no tempo de Ur III. O rei Gudea (c. 2120 a.C.) diz que os homens de Meluhha vinham ao seu templo. Os mercadores do Indo viajavam por **Dilmun** (Bahrein) e **Magan** (Omã), que serviam de escalas. O comércio direto diminui desde o período de Ur III, e a última menção conhecida de Meluhha é de c. 1760 a.C.',
-  { img: 'ido-barco-meluhha', leg: 'Reconstrução imaginada de um barco de mercadores de Meluhha num cais mesopotâmico, c. 2200 a.C. Ilustração gerada por IA; baseada em modelos e selos, mas o aspeto dos barcos e das roupas é hipotético.' }
+  { img: 'ido-barco-meluhha', leg: 'Chegada hipotética de um barco de Meluhha à Mesopotâmia, c. 2200 a.C. Ilustração gerada por IA.' }
 ];
 
 const personalidades = [
   'A civilização do Indo **não nos deixou nenhum nome**: nenhum rei, nenhum sacerdote, nenhum mercador. Não temos Gilgamesh nem Hamurabi. As «figuras» que se seguem são, por isso, de dois tipos: **as duas esculturas mais famosas**, que parecem representar pessoas (mas sem nome), e **os investigadores que descobriram e interpretaram esta civilização**.',
   { h: 'O «Sacerdote-Rei»' },
   'Estatueta de esteatite de 17,5 cm, encontrada em Mohenjo-daro em 1925–26 (K. N. Dikshit). Representa um homem barbado, de olhos semicerrados, com uma fita na cabeça, uma braçadeira e um manto sobre o ombro esquerdo, decorado com trevos e círculos que tinham tinta vermelha. O nome é moderno: Mackay chamou-lhe «sacerdote», Marshall «rei-sacerdote», e Wheeler fixou «Sacerdote-Rei». **Não há prova** de que fosse um sacerdote, um rei ou, sequer, um homem real; podem ser antepassados ou chefes de linhagem. Está no Museu Nacional do Paquistão, em Carachi.',
-  { img: 'ido-sacerdote-rei', leg: 'O «Sacerdote-Rei» de Mohenjo-daro, esteatite, c. 2500 a.C. (Museu Nacional do Paquistão, Carachi).' },
+  { img: 'ido-sacerdote-rei', leg: 'Estatueta dita «Sacerdote-Rei» de Mohenjo-daro; o título é convencional e não uma identidade comprovada.' },
   { h: 'A «Dançarina»' },
   'Estatueta de bronze de c. 10,5 cm, feita pelo método da cera perdida e encontrada em Mohenjo-daro em 1926. Mostra uma jovem nua, com o braço esquerdo carregado de pulseiras, um colar, o cabelo atado e a mão direita na anca. Chamamos-lhe «Dançarina» por causa da pose, mas isso é uma impressão: pode ser uma dançarina, uma figura de culto ou outra coisa. Está no Museu Nacional de Nova Deli, e há quem defenda que devia estar no Paquistão, como o Sacerdote-Rei.',
-  { img: 'ido-dancarina', leg: 'A «Dançarina» de Mohenjo-daro, bronze, c. 2500 a.C. (Museu Nacional, Nova Deli).' },
+  { img: 'ido-dancarina', leg: 'Estatueta de bronze «Dançarina» (Museu Nacional, Nova Deli)' },
   { h: 'Charles Masson e Alexander Cunningham' },
   '**Charles Masson** (pseudónimo de James Lewis, 1800–1853) foi um desertor do exército inglês, e depois explorador e colecionador; visitou Harappa na década de 1820 e descreveu as ruínas. **Alexander Cunningham** (1814–1893), primeiro diretor do Serviço Arqueológico da Índia, esteve em Harappa em 1853 e 1856 e, em 1875, publicou um dos selos do Indo (com um touro e sinais por ler). Pensou que fosse de origem posterior e não percebeu que era uma civilização, mas foi o primeiro a publicar um selo harappiano.',
   { h: 'Daya Ram Sahni e Rakhal Das Banerji' },
   '**Daya Ram Sahni** (1879–1939) escavou Harappa a partir de 1920–21. **Rakhal Das Banerji** (1885–1930), arqueólogo de Bengala, visitou Mohenjo-daro em 1919 e voltou em 1922–23, em busca de um estupa budista, e encontrou selos iguais aos de Harappa. Foi a ligação entre as duas cidades, a que Marshall deu o resultado público. Só mais tarde o seu papel foi plenamente reconhecido.',
   { h: 'John Marshall' },
   'O arqueólogo inglês **John Marshall** (1876–1958), diretor do Serviço Arqueológico da Índia (1902–1928), reconheceu a importância dos achados e anunciou a descoberta no *Illustrated London News* a 20 de setembro de 1924. Dirigiu a escavação de Mohenjo-daro e publicou o grande estudo de 1931. A sua leitura do selo «Pashupati» como «proto-Shiva» marcou o estudo da religião do Indo, mas é hoje muito contestada.',
-  { img: 'ido-marshall', leg: 'Sir John Marshall (1876–1958), diretor do Serviço Arqueológico da Índia, que anunciou a descoberta da civilização do Indo em 1924.' },
+  { img: 'ido-marshall', leg: 'Imagem comemorativa associada ao arqueólogo Sir John Marshall, Museu de Taxila.' },
   { h: 'Ernest Mackay' },
   'O arqueólogo inglês **Ernest Mackay** (1880–1943) dirigiu as escavações de Mohenjo-daro em 1926–1931 e depois as de Chanhudaro (1935–36). Encontrou o selo «Pashupati» (1928–29) e a «Dançarina». Foi dos primeiros a notar a ligação entre o Indo e a Mesopotâmia, e escreveu o primeiro livro sobre «a civilização do Indo» para o grande público (1935).',
   { h: 'Mortimer Wheeler' },
   'O arqueólogo inglês **Mortimer Wheeler** (1890–1976), diretor-geral do Serviço Arqueológico da Índia (1944–48), trouxe rigor à escavação por camadas e escavou Harappa (1946). Foi também o autor da teoria da «invasão ariana» (1947), que **hoje está abandonada**: Dales e outros mostraram que os esqueletos não vinham de um massacre. Ficou, mesmo assim, o grande divulgador desta civilização, e o seu livro de 1953 é um clássico.',
-  { img: 'ido-wheeler', leg: 'Sir Mortimer Wheeler (1890–1976), que escavou Harappa e foi diretor-geral do Serviço Arqueológico da Índia.' },
+  { img: 'ido-wheeler', leg: 'Retrato de Sir Mortimer Wheeler' },
   { h: 'George Dales' },
   'O arqueólogo americano **George F. Dales** (1927–1992) publicou em 1964 «O mítico massacre de Mohenjo-daro», onde mostrou que os esqueletos que Wheeler usara para a sua hipótese vinham de camadas diferentes, sem sinais de destruição. Escavou Mohenjo-daro em 1964–65 e Balakot. O seu artigo é um exemplo de como a arqueologia corrige as suas próprias ideias.',
   { h: 'Jean-François Jarrige' },
@@ -252,8 +252,8 @@ const legado = [
   'A arquitetura do Indo é **funcional**: muralhas, casas de pátio, tanques, poços, reservatórios e esgotos, sem palácios nem templos reconhecíveis. O Grande Banho e os reservatórios de Dholavira são as obras de maior prestígio. Em Dholavira há ainda blocos de pedra talhada (em vez de tijolo) e portas monumentais.',
   { h: 'A redescoberta da civilização do Indo' },
   'A civilização do Indo foi **esquecida durante quase 4000 anos**: não há memória dela nas tradições indianas posteriores, até onde se sabe. Foi redescoberta aos poucos, entre 1826 (Masson) e 1924 (Marshall), e depois com as escavações do Serviço Arqueológico da Índia e, após 1947, dos arqueólogos paquistaneses, indianos e de equipas estrangeiras. A partilha da Índia em 1947 deixou a maioria dos grandes sítios no Paquistão e levou a arqueologia indiana a procurar outros (Kalibangan, Lothal, Dholavira, Rakhigarhi). As esculturas de Mohenjo-daro foram divididas entre os dois países, e há ainda debate sobre onde devia estar a «Dançarina».',
-  { img: 'ido-escavacao', leg: 'Escavação de Mohenjo-daro nos anos 1920–1930, em fotografia do Serviço Arqueológico da Índia.' },
-  { img: 'ido-selo-ur', leg: 'Selo do tipo do Indo encontrado em Ur (Mesopotâmia), no Museu Britânico: prova material do contacto entre o Indo e a Suméria.' },
+  { img: 'ido-escavacao', leg: 'Escavações de Mohenjo-daro em 1924; fotografia histórica, autor não identificado no Commons.' },
+  { img: 'ido-selo-ur', leg: 'Selo de esteatite do Indo, British Museum 1932,0308.1, comprado em Bagdade; provável origem iraquiana, sem proveniência comprovada em Ur.' },
   { h: 'O declínio: o que se sabe e o que não se sabe' },
   'Por volta de 1900 a.C., as grandes cidades começam a perder população; a escrita, os selos e os pesos padronizados desaparecem; as ligações com a Mesopotâmia e o Golfo cessam; a vida passa a ser mais **rural e regional**. **Não houve queda súbita nem destruição por guerra.** As hipóteses principais são:',
   { lista: [
@@ -273,7 +273,7 @@ const legado = [
     '**Conservação:** Mohenjo-daro sofre com a salinização do solo, as cheias (como as de 2010 e 2022 no Paquistão) e restauros discutíveis. O sítio, escavado sem proteção adequada, está em risco.'
   ] },
   { h: 'Onde visitar' },
-  { img: 'ido-dholavira-portao', leg: 'A porta norte de Dholavira (Gujarate), onde se encontrou o letreiro de dez sinais.' },
+  { img: 'ido-dholavira-portao', leg: 'Porta oriental de Dholavira; substitui a porta norte, para a qual não foi localizada fotografia livre verificada.' },
   { caixa: 'Para visitar', texto: '**Mohenjo-daro** (Sind, Paquistão; Património Mundial) e **Harappa** (Panjabe, Paquistão, com museu no local); **Dholavira** (Gujarate, Índia; Património Mundial desde 2021), **Lothal** (Gujarate, com museu), **Kalibangan** (Rajastão) e **Rakhigarhi** (Haryana). Em museus: o **Museu Nacional do Paquistão** (Carachi: Sacerdote-Rei), o **Museu Nacional de Nova Deli** (Dançarina, selos), o **Museu Britânico** (Londres: selos, contas e achados de Ur), e o **Louvre** (Paris: o selo de Shu-ilishu).' }
 ];
 

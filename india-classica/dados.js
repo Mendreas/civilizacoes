@@ -1,5 +1,6 @@
 // ÍNDIA CLÁSSICA — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from './grupo.js';
 // Datas aproximadas; a cronologia da Índia antiga é frágil e muitas datas são debatidas (assinaladas no texto). a.C. = antes de Cristo, d.C. = depois de Cristo.
 // Imagens: cada {img:'id'} procura o ficheiro  india-classica/img/id.jpg  (ver IMAGENS_INDIA_CLASSICA.md para a lista e os prompts).
@@ -9,11 +10,11 @@ const visao = [
     'Chamamos **Índia clássica** ao longo período, de c. 600 a.C. a c. 550 d.C., em que o subcontinente indiano passou das cidades-reino do vale do Ganges aos grandes impérios **Máuria** e **Gupta**. Foi o tempo do **Buda** e de **Mahavira**, de **Ashoka** e dos seus éditos gravados na pedra, de **Chanakya** e do *Arthashastra*, das grutas pintadas de **Ajanta**, da universidade de **Nalanda**, de **Kalidasa** e de **Aryabhata**, e da invenção do sistema decimal de posição com o **zero**.',
     'Não foi um país único, mas um mosaico de reinos, repúblicas, cidades e tradições religiosas (vedismo e bramanismo, budismo, jainismo, o que mais tarde se chamará hinduísmo). Os impérios uniram, por períodos curtos, grande parte do subcontinente; entre eles, a Índia foi quase sempre plural. É essa pluralidade, e não uma unidade política, que dá a esta civilização a sua continuidade.'
   ] },
-  { img: 'ind-mapa-mahajanapadas', leg: 'Mapa dos Mahajanapadas, os «grandes reinos» do norte da Índia, c. 500 a.C.' },
+  { img: 'ind-mapa-mahajanapadas', leg: 'Mapa dos Mahajanapadas e de outros lugares da Índia antiga, cerca de 500 a.C.' },
   { h: 'Onde ficava' },
   'O palco principal foi o **norte da Índia**, em especial a planície do **Ganges** e dos seus afluentes (os atuais Uttar Pradesh e Bihar), e o noroeste, o **Punjab** e o vale do **Indo** (hoje repartidos entre a Índia e o Paquistão). Foi a bacia do Ganges, rica em arroz, em ferro e em rios navegáveis, que deu origem aos primeiros Estados. O **Decão**, o planalto do centro e do sul, e a costa do **Tamil Nadu** e do **Kerala** tiveram uma história própria, ligada ao norte, mas com línguas e reinos diferentes (dravídicos).',
   'O nome «Índia» vem do persa e do grego, a partir do rio **Sindhu** (Indo); em sânscrito, a terra era chamada *Bharata* ou *Jambudvipa*, e o mundo cultural onde se falava sânscrito, *Aryavarta* no norte. Usamos aqui «Índia clássica» por comodidade: os próprios habitantes não tinham um nome único e político para todo o território.',
-  { img: 'ind-mapa-maurya', leg: 'Mapa da extensão aproximada do Império Máuria no tempo de Ashoka, século III a.C.' },
+  { img: 'ind-mapa-maurya', leg: 'Mapa do Império Máuria após a conquista de Kalinga por Ashoka.' },
   { h: 'Quando existiu' },
   'A cronologia da Índia antiga assenta mais em inscrições, moedas e fontes estrangeiras (gregas, chinesas) do que em crónicas indianas, por isso muitas datas são aproximadas. As fases principais:',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -23,7 +24,7 @@ const visao = [
     ['Kushanas', 'c. séc. I – III d.C.', 'Império da Ásia Central ao norte da Índia; Kanishka; escolas de Gandhara e de Mathura; rota da Seda'],
     ['Império Gupta', 'c. 320 – 550 d.C.', 'A chamada «idade de ouro»: Kalidasa, Aryabhata, Ajanta, Nalanda; zero e sistema decimal; invasões hunas e fim do império']
   ] } },
-  { img: 'ind-mapa-gupta', leg: 'Mapa da extensão aproximada do Império Gupta, por volta de 400 d.C.' },
+  { img: 'ind-mapa-gupta', leg: 'Mapa do Império Gupta no seu apogeu, cerca de 400 d.C.' },
   { h: 'Quem eram os indianos antigos?' },
   'A população do subcontinente era muito diversa: falantes de línguas **indo-arianas** (ligadas ao sânscrito) no norte, de línguas **dravídicas** (tâmil, telugu, kannada, malaiala) no sul, de línguas austro-asiáticas e tibeto-birmanesas em zonas do leste e do norte, e comunidades florestais e tribais por todo o lado. A origem dos falantes do sânscrito (migração do noroeste ou desenvolvimento local) é um tema de debate académico, muitas vezes marcado por questões políticas modernas; a maioria dos investigadores aceita que línguas e rituais indo-arianos chegaram ao noroeste da Índia no II milénio a.C. e se foram espalhando, misturando-se com as populações locais.',
   'A história desta fase não é a de «um povo», mas a de reinos, cidades e comunidades religiosas que partilharam textos, rotas e ideias sem terem uma identidade política comum.',
@@ -35,10 +36,10 @@ const visao = [
     '**Arte e arquitetura:** o estupa, o pilar, as grutas pintadas e esculpidas, a imagem do Buda; formas que correram a Ásia com o budismo.',
     '**Comércio de longa distância:** da rota da Seda ao oceano Índico, as especiarias, o algodão e as pedras preciosas da Índia ligaram-na a Roma, à China e ao Sudeste Asiático.'
   ] },
-  { img: 'ind-sanchi-estupa', leg: 'O Grande Estupa de Sanchi (Madhya Pradesh), iniciado no tempo de Ashoka e ampliado depois.' },
+  { img: 'ind-sanchi-estupa', leg: 'Grande Estupa de Sanchi, em Madhya Pradesh, Índia.' },
   { caixa: 'A Índia clássica hoje', texto: 'O **Pilar de Ashoka em Sarnath** deu ao país o emblema nacional (os quatro leões) e a **roda de Ashoka** (*chakra*) está no centro da bandeira da Índia. Sanchi, Ajanta, Nalanda e o templo de Mahabodhi em Bodh Gaya são Património Mundial da UNESCO. O budismo, quase extinto na Índia durante séculos, vive hoje sobretudo noutros países asiáticos, mas continua a ser a mais forte ponte cultural entre a Índia e a Ásia.' },
-  { img: 'ind-pilar-sarnath', leg: 'O capitel dos quatro leões de Sarnath, século III a.C., hoje no Museu de Sarnath.' },
-  { img: 'ind-ajanta-pintura', leg: 'Pintura mural do Bodisatva (Padmapani) na Gruta 1 de Ajanta, séc. V d.C.' }
+  { img: 'ind-pilar-sarnath', leg: 'Capitel dos leões de Ashoka no Museu de Sarnath.' },
+  { img: 'ind-ajanta-pintura', leg: 'Pintura do Bodisatva Padmapani na Gruta 1 de Ajanta.' }
 ];
 
 const linha = [
@@ -72,14 +73,14 @@ const linha = [
     { d: 'c. 455 – 500', t: 'As invasões hunas', x: 'O imperador **Skandagupta** repele os primeiros ataques dos Hunas (c. 455), mas as invasões repetem-se. Por volta de 500 os chefes **Toramana** e depois **Mihirakula** dominam partes do norte e do centro. Mihirakula é derrotado por uma coligação (c. 528).' },
     { d: 'c. 550 d.C.', t: 'Fragmentação do Império Gupta', x: 'Sem recursos, atacado pelos Hunas e minado por governadores que se tornam independentes, o império desfaz-se. Os últimos reis gupta são pouco mais que senhores regionais. Segue-se um período de reinos rivais, até ao tempo de **Harsha** (606 – 647).' }
   ] },
-  { img: 'ind-rigveda-ms', leg: 'Manuscrito do Rigveda em escrita devanágari (cópia tardia: os hinos foram transmitidos oralmente durante séculos).' },
+  { img: 'ind-rigveda-ms', leg: 'Página de uma cópia manuscrita do Rigveda em sânscrito, em escrita devanágari.' },
   { img: 'ind-buda-ensinamento', leg: 'Reconstrução artística: o Buda a ensinar os primeiros discípulos no Parque das Gazelas, em Sarnath.' },
   { img: 'ind-alexandre-poro', leg: 'Reconstrução artística: a batalha do Hidaspes entre o exército de Alexandre e o de Poro, com elefantes de guerra, 326 a.C.' },
-  { img: 'ind-edito-rocha', leg: 'Um dos Éditos de Pedra de Ashoka, gravado em rocha em escrita brahmi, século III a.C.' },
+  { img: 'ind-edito-rocha', leg: 'Édito de Ashoka inscrito em escrita brahmi em Erragudi, Andhra Pradesh.' },
   { img: 'ind-ashoka-kalinga', leg: 'Reconstrução artística: Ashoka no campo de batalha de Kalinga, depois da guerra, c. 261 a.C.' },
-  { img: 'ind-buda-gandhara', leg: 'Estátua do Buda em estilo de Gandhara, séculos I – III d.C., com influência da escultura greco-romana.' },
-  { img: 'ind-moeda-kanishka', leg: 'Moeda de ouro de Kanishka, imperador kushana, com a imagem do rei e de uma divindade no reverso.' },
-  { img: 'ind-moeda-gupta', leg: 'Moeda de ouro (dinar) do imperador gupta Samudragupta ou de Chandragupta II, séculos IV – V d.C.' }
+  { img: 'ind-buda-gandhara', leg: 'Buda de pé em xisto cinzento de Gandhara, no Museu de Arte Matsuoka, Tóquio.' },
+  { img: 'ind-moeda-kanishka', leg: 'Moeda de ouro de Kanishka I.' },
+  { img: 'ind-moeda-gupta', leg: 'Moeda de ouro do rei gupta Samudragupta.' }
 ];
 
 const mapa = [
@@ -103,19 +104,19 @@ const mapa = [
   { h: 'Pataliputra' },
   'A capital dos Máurias ficava na confluência do Ganges com o Son, no atual Patna. Megástenes descreveu-a no século III a.C.: uma cidade alongada, de cerca de 15 km de comprimento, rodeada por uma paliçada de madeira com 570 torres e 64 portas, e um fosso largo. As escavações em Kumhrar encontraram vestígios de uma grande sala com colunas de pedra polida, que se julga ter sido de um palácio ou de uma sala de assembleia. A cidade foi capital também no tempo dos Guptas e foi visitada por Faxian, que admirou o palácio (que dizia ser obra de espíritos).',
   { img: 'ind-pataliputra-reconstrucao', leg: 'Reconstrução artística de Pataliputra no tempo máuria, com a paliçada de madeira e o palácio de pilares.' },
-  { img: 'ind-pataliputra-ruinas', leg: 'Vestígios da sala de colunas em Kumhrar, Patna, perto do local da antiga Pataliputra.' },
+  { img: 'ind-pataliputra-ruinas', leg: 'Fragmento de coluna da sala máuria de 80 colunas, preservado em Kumhrar, Patna.' },
   { h: 'Os lugares do Buda' },
   'A vida do Buda ficou ligada a quatro lugares: **Lumbini** (nascimento, hoje no Nepal), **Bodh Gaya** (iluminação), **Sarnath** (primeiro sermão) e **Kushinagar** (morte, ou *parinirvana*). Ashoka visitou-os e erigiu pilares. Em Bodh Gaya, junto à figueira-sagrada sob a qual o Buda meditou, ergueu-se o templo de **Mahabodhi**, cuja forma atual data em grande parte do período Gupta (séc. V – VI d.C.), embora tenha sido muito restaurado.',
-  { img: 'ind-bodh-gaya', leg: 'O Templo de Mahabodhi, em Bodh Gaya (Bihar), Património Mundial da UNESCO.' },
+  { img: 'ind-bodh-gaya', leg: 'Templo de Mahabodhi em Bodh Gaya, Bihar, Índia.' },
   { h: 'Mathura e o noroeste' },
   'Mathura, junto ao rio Yamuna, foi um segundo centro do Império Kushana e uma grande oficina de escultura em arenito vermelho. O Buda sentado, o Buda de pé, divindades hindus e jainistas e retratos de reis saíram dali. No noroeste, **Taxila** e o vale de **Gandhara** (Peshawar, Swat) formaram a outra escola, de estilo mais helenístico, resultado de séculos de contacto com gregos, persas e povos da Ásia Central.',
-  { img: 'ind-buda-mathura', leg: 'Buda sentado em arenito vermelho, de Mathura, período kushana, séculos I – II d.C.' },
+  { img: 'ind-buda-mathura', leg: 'Buda sentado do período kushana, proveniente de Katra Keshav Dev, no Museu de Mathura.' },
   { h: 'Nalanda' },
   'Nalanda, perto de Rajagriha, era um grande mosteiro budista com salas de aula, templos, bibliotecas e residências, cujo apogeu se segue ao fim do Império Gupta (séculos VI – VII). O monge chinês **Xuanzang** (século VII) refere cerca de 10 000 estudantes e 1500 mestres (números talvez exagerados). A sua fundação é atribuída pela tradição a Kumaragupta I (c. 427). Foi destruída no fim do século XII.',
-  { img: 'ind-nalanda-ruinas', leg: 'Ruínas do mosteiro de Nalanda (Bihar), Património Mundial da UNESCO.' },
+  { img: 'ind-nalanda-ruinas', leg: 'Ruínas de Nalanda, em Bihar, Índia.' },
   { h: 'As rotas e o comércio com Roma' },
   'A estrada principal era a «**Rota do Norte**» (*Uttarapatha*), do Gandhara a Pataliputra, e a «**Rota do Sul**» (*Dakshinapatha*), do Ganges ao Decão. Para oeste ia-se do Punjab ao Irão e à Ásia Central, em ligação com a rota da Seda. Por mar, a partir do século I a.C., os marinheiros usaram as **monções** (ventos alternados, para o Oriente no verão e para o Ocidente no inverno), para ir do mar Vermelho à costa do Malabar em cerca de 40 dias. Em **Muziris** e em **Arikamedu**, os romanos trocavam ouro e vinho por pimenta, pérolas, marfim, algodão, pedras preciosas e seda (vinda da China).',
-  { img: 'ind-mapa-comercio', leg: 'Mapa das rotas comerciais do oceano Índico e da rota da Seda, séculos I – II d.C.' },
+  { img: 'ind-mapa-comercio', leg: 'Mapa das rotas comerciais terrestres e marítimas da Ásia no século I d.C.' },
   { img: 'ind-porto-muziris', leg: 'Reconstrução artística do porto de Muziris, no Kerala, com navios romanos e barcos locais, século I d.C.' },
   { h: 'O Sul: Sangam' },
   { caixa: 'Nota sobre o sul', texto: 'Esta página concentra-se no norte e no centro. No extremo sul, os reinos **Chera**, **Chola** e **Pandya** têm uma história própria. A **literatura Sangam**, em tâmil, composta entre c. 300 a.C. e 300 d.C. (datas muito debatidas), reúne poemas de amor e de guerra, e fala dos mercadores gregos («yavanas») que vinham a Muziris «com navios de ouro e voltavam com pimenta». É uma das mais antigas literaturas vivas do mundo.' }
@@ -166,7 +167,7 @@ const sociedade = [
   { h: '4. Economia e comércio' },
   'A base era a **agricultura**: arroz, trigo e cevada, no norte; milho miúdo, algodão e cana-de-açúcar; o gado era um bem muito valioso. O ferro permitiu desbravar as florestas do Ganges. A economia monetária desenvolveu-se com as **moedas de prata com marca de punção** (*karshapana*), dos séculos VI – V a.C., entre as mais antigas do mundo; depois vieram as moedas gregas, kushanas (ouro) e gupta (dinares de ouro, de grande qualidade).',
   'As **guildas** (*shreni*) de artesãos e mercadores eram poderosas, emprestavam dinheiro e doavam a mosteiros. A Índia exportava **pimenta**, canela, **pérolas**, **marfim**, **tecidos de algodão** (mussolinas de Bengala), anil, **pedras preciosas** (berilo, ágata, cornalina) e ferro e **aço** (o famoso aço *wootz*, de crisol). Os romanos pagavam em ouro e prata: Plínio, o Velho, queixava-se (c. 77 d.C.) de que a Índia, a China e a Arábia levavam do império, todos os anos, cerca de **100 milhões de sestércios**, 50 deles só para a Índia.',
-  { img: 'ind-moeda-romana', leg: 'Moedas de ouro romanas do tempo de Augusto, do tipo encontrado em depósitos no sul da Índia.' },
+  { img: 'ind-moeda-romana', leg: 'Áureo de Augusto cunhado em Lyon, da coleção da Biblioteca Nacional de França.' },
   { img: 'ind-mercado-gupta', leg: 'Reconstrução artística: rua de mercado numa cidade gupta, com tecidos, especiarias e mercadores.' },
   { h: '5. Escrita e línguas' },
   'A escrita desapareceu da Índia com o fim da civilização do Indo (c. 1900 a.C.) e só reaparece em c. 300 a.C. Os Vedas foram guardados **oralmente** com uma técnica de memorização extraordinária. As primeiras escritas são a **brahmi** (de que descendem quase todas as escritas indianas e do Sudeste Asiático; a sua origem, indígena ou inspirada no aramaico, é debatida) e a **kharosthi** (do noroeste, de origem aramaica). Escreviam-se em folhas de palmeira, casca de bétula, cobre e pedra. As línguas eram o **sânscrito** (da religião, da literatura e, mais tarde, da corte), o **pali** e outras formas de **prácrito** (de uso comum, e dos éditos de Ashoka), e o **tâmil** no sul.',
@@ -183,7 +184,7 @@ const sociedade = [
   'O jogo de tabuleiro **chaturanga** («quatro membros do exército»: infantaria, cavalaria, elefantes e carros) é considerado o antepassado do xadrez. Os testemunhos mais seguros datam de c. 600 d.C. (séculos VI – VII), em fontes persas e indianas (o jogo passou ao Irão como *chatrang*); a ideia de que se jogava já no tempo dos Guptas é muito provável, mas as primeiras fontes sobre as regras são mais tardias. Jogavam-se também os dados, que têm um papel central no Mahabharata, e outros jogos de percurso.',
   { h: 'As epopeias' },
   'O **Mahabharata** (a guerra entre dois ramos da família Kuru, com o episódio do *Bhagavad Gita*, o diálogo entre Krishna e Arjuna) e o **Ramayana** (a história de Rama, de Sita e do demónio Ravana, atribuída a Valmiki) foram compostos, ao longo de séculos, entre c. 400 a.C. e 400 d.C. Têm origens orais e muitas camadas. O Mahabharata é o poema mais longo do mundo, com cerca de 100 000 versos. Estas epopeias são ao mesmo tempo literatura, religião e lição de dharma, e continuam a ser contadas em toda a Ásia.',
-  { img: 'ind-ramayana-ms', leg: 'Folha ilustrada de um manuscrito do Ramayana (obra de época bem posterior ao período clássico).' },
+  { img: 'ind-ramayana-ms', leg: 'Rama, Sita e Lakshmana numa folha ilustrada do Ramayana, no Los Angeles County Museum of Art.' },
   { h: '10. Matemática' },
   'Os indianos antigos tinham a matemática ligada à religião (os *Sulba Sutras*, c. 800 – 500 a.C., dão regras de geometria para construir altares, incluindo o que chamamos teorema de Pitágoras) e à astronomia. A grande contribuição é o **sistema decimal de posição**: um sistema em que o valor de um algarismo depende da posição, com **dez símbolos** e o **zero**. O zero como ponto ou círculo que marca uma posição vazia aparece no **manuscrito de Bakhshali**, cujas folhas mais antigas foram datadas pelo método do carbono-14 em c. séc. III – IV d.C. (datação disputada); o primeiro zero numa inscrição datada é de Gwalior, 876 d.C. **Brahmagupta** (628 d.C.), logo a seguir ao período aqui tratado, foi o primeiro a dar regras de cálculo com o zero e com números negativos. Estes algarismos chegaram à Europa através dos árabes («algarismos árabes», que são de origem indiana).',
   { h: 'Aryabhata' },
@@ -197,7 +198,7 @@ const sociedade = [
   'O *Ashtadhyayi* de **Panini** (c. 5.º – 4.º séc. a.C.) é uma gramática formal do sânscrito, com cerca de 4000 regras muito concisas que geram todas as palavras da língua. É considerado precursor das linguagens formais da lógica e da informática. A filosofia deu seis grandes «escolas» (*darshanas*) e, fora do bramanismo, as escolas budistas, jainistas e materialistas (*Charvaka*).',
   { h: '14. Tecnologia e construção' },
   'A Índia dominou a **metalurgia do ferro**. O **Pilar de Ferro de Delhi** (c. 400 d.C., habitualmente ligado a Chandragupta II), com cerca de 7 metros e mais de 6 toneladas, quase não enferruja, graças ao alto teor de fósforo e a uma película protetora. O aço **wootz** do sul era exportado. Os Máurias poliram o arenito a ponto de ter brilho de espelho (o chamado «polimento máuria») e os construtores aprenderam a esculpir **templos na rocha** (Barabar, Karli, Ajanta), copiando em pedra as formas da madeira. Depois do século V aparecem os primeiros **templos hindus de pedra**, como o de Dashavatara em Deogarh. Fizeram-se também **poços escalonados**, canais de irrigação e reservatórios.',
-  { img: 'ind-karli', leg: 'O grande salão (chaitya) da gruta de Karli, escavado na rocha no século I d.C., com apoio de reis satavahanas e kshatrapas e de mercadores.' },
+  { img: 'ind-karli', leg: 'Interior do grande salão chaitya das grutas de Karli, em Maharashtra.' },
   { h: '15. Guerra' },
   'Os exércitos clássicos indianos tinham quatro «braços» (*chaturanga*): infantaria, cavalaria, **carros** e **elefantes de guerra**, os tanques da época. Os elefantes impressionaram Alexandre e Seleuco, e as fontes gregas descrevem o enorme exército máuria (600 000 soldados de infantaria, 30 000 cavaleiros e 9 000 elefantes, segundo Plínio, e portanto um número exagerado). Os principais arcos eram de bambu e os cavalos vinham da Ásia Central, o que dava às potências do noroeste uma vantagem. Os manuais (*Arthashastra*) tratam de forças, de cercos, de espionagem e de «guerra justa» (*dharmayuddha*).',
   { img: 'ind-exercito-elefantes', leg: 'Reconstrução artística: o exército máuria, com elefantes de guerra e infantaria, em marcha.' }
@@ -227,7 +228,7 @@ const personalidades = [
   'O mais famoso imperador kushana. A data do seu reinado é muito discutida (a sua era começa em 78 ou em 127 d.C., conforme os autores). Cunhou moedas com o Buda e com divindades gregas, persas e indianas, e é lembrado como protetor do budismo e das artes. Terá convocado um concílio budista (tradição).',
   { h: 'Samudragupta (c. 335 – 375 d.C.)' },
   'O «Napoleão da Índia», como lhe chamou um historiador do século XX (expressão de V. A. Smith, hoje criticada). A inscrição de Harisena, no pilar de Allahabad, enumera vitórias e reis submetidos, com algum exagero oficial. Foi também poeta e músico, e deixou moedas em que toca a vina. Realizou o sacrifício do cavalo (*ashvamedha*).',
-  { img: 'ind-pilar-allahabad', leg: 'O pilar de Allahabad (Prayagraj), com éditos de Ashoka e a inscrição de Samudragupta.' },
+  { img: 'ind-pilar-allahabad', leg: 'Pilar de Ashoka em Allahabad, atual Prayagraj.' },
   { h: 'Chandragupta II Vikramaditya (c. 375 – 415 d.C.)' },
   'Filho de Samudragupta. O império atingiu a maior extensão e riqueza. Foi mecenas das artes; a tradição indiana reúne à sua volta «nove joias» da corte, incluindo Kalidasa. A ligação é lendária.',
   { h: 'Kalidasa (c. séc. IV – V d.C., datas muito incertas)' },
@@ -236,7 +237,7 @@ const personalidades = [
   'Monge chinês que viajou pela Ásia Central e pela Índia (c. 399 – 412) à procura de textos budistas. O seu relato é uma das melhores fontes sobre a Índia gupta: descreve cidades prósperas, hospitais gratuitos, poucas penas severas e a situação dos *chandalas*.',
   { h: 'Aryabhata (476 – c. 550 d.C.)' },
   'Astrónomo e matemático nascido, segundo ele, em 476 d.C. e que trabalhou em Kusumapura (provavelmente Pataliputra). O seu *Aryabhatiya* foi estudado durante séculos na Índia, no mundo árabe (que o traduziu) e influenciou a astronomia posterior.',
-  { img: 'ind-buda-gupta-sarnath', leg: 'O Buda a pregar, escultura em arenito de Sarnath, período Gupta, séc. V d.C., Museu de Sarnath.' },
+  { img: 'ind-buda-gupta-sarnath', leg: 'Fotografia histórica do Buda a pregar o primeiro sermão, do período Gupta, no catálogo do Museu de Sarnath de 1914.' },
   { h: 'Skandagupta (c. 455 – 467 d.C.)' },
   'O último grande imperador gupta, enfrentou e travou os primeiros ataques dos Hunas, mas as despesas esvaziaram o tesouro, e as moedas da época mostram menos ouro. Depois dele, o império perdeu força.'
 ];
@@ -254,19 +255,19 @@ const legado = [
   ] },
   { h: 'Arte' },
   'A arte indiana antiga é essencialmente religiosa. As formas principais são o **estupa** e as suas portas esculpidas (os *toranas*), os **pilares** e os **relevos** que contam as vidas do Buda (os *Jatakas*), as **imagens do Buda**, de estilo helenístico em Gandhara e mais indiano em Mathura, e a escultura **Gupta**, de grande serenidade, com Budas de olhos semicerrados e túnicas colantes. As moedas gupta e as miniaturas em folha de palmeira são outras formas.',
-  { img: 'ind-sanchi-torana', leg: 'A porta oriental (torana) do Grande Estupa de Sanchi, com relevos esculpidos, séc. I a.C. – I d.C.' },
-  { img: 'ind-ajanta-gruta', leg: 'As grutas de Ajanta, em Maharashtra, escavadas numa falésia em forma de ferradura.' },
+  { img: 'ind-sanchi-torana', leg: 'Porta oriental do Grande Estupa de Sanchi, em Madhya Pradesh.' },
+  { img: 'ind-ajanta-gruta', leg: 'Vista panorâmica das grutas de Ajanta, em Maharashtra.' },
   { img: 'ind-ajanta-pintores', leg: 'Reconstrução artística: pintores a trabalhar à luz de lamparinas nas paredes de uma gruta de Ajanta, séc. V d.C.' },
   { h: 'Arquitetura' },
   'O **estupa** é um monte hemisférico que guarda relíquias e simboliza o Buda e o cosmos. Em Sanchi, o estupa tem cerca de 16 m de altura e uma balaustrada com quatro portas. Os **chaityas** (salões de oração) e os **viharas** (mosteiros) foram escavados na rocha, em Karli, Ajanta, Ellora. No tempo dos Guptas surgem os primeiros **templos de pedra** com santuário e torre, como o de Deogarh, que se tornam, séculos depois, os grandes templos do hinduísmo.',
-  { img: 'ind-deogarh', leg: 'O templo de Dashavatara, em Deogarh (Uttar Pradesh), c. 500 d.C., um dos primeiros templos hindus em pedra.' },
-  { img: 'ind-pilar-ferro', leg: 'O Pilar de Ferro, no complexo de Qutb, em Delhi, c. 400 d.C., que quase não enferruja.' },
+  { img: 'ind-deogarh', leg: 'Vista lateral do templo de Dashavatara, em Deogarh.' },
+  { img: 'ind-pilar-ferro', leg: 'Pilar de Ferro no complexo Qutb, Deli.' },
   { h: 'Nalanda' },
   'O mosteiro de Nalanda, que tinha, segundo Xuanzang (século VII), cerca de 10 000 estudantes e 1500 mestres (números talvez exagerados), ensinava teologia budista, lógica, gramática, medicina e matemática. Estudantes vinham da China, da Coreia e do Tibete. Foi destruído em c. 1200, por Bakhtiyar Khilji (tradição), e as suas ruínas foram escavadas no século XX. Uma nova universidade com o mesmo nome foi criada por lei em 2010.',
   { img: 'ind-nalanda-reconstrucao', leg: 'Reconstrução artística do mosteiro-universidade de Nalanda, com pátios, templos e salas de aula, c. século V – VII.' },
   { h: 'Um manuscrito de matemática' },
   'O manuscrito de **Bakhshali** (descoberto em 1881, hoje na Biblioteca Bodleian, em Oxford) é um dos mais antigos livros de matemática indiana, em casca de bétula. Em 2017, a datação por radiocarbono das suas folhas deu datas entre os séculos III e X d.C. (três grupos de folhas de épocas diferentes), o que é debatido, mas o texto mostra o zero como ponto.',
-  { img: 'ind-bakhshali', leg: 'Folha do manuscrito de Bakhshali, em casca de bétula, Biblioteca Bodleian, Oxford.' },
+  { img: 'ind-bakhshali', leg: 'Folha do manuscrito matemático de Bakhshali, conservado na Biblioteca Bodleiana.' },
   { h: 'Depois de 550' },
   { caixa: 'O que veio depois', texto: [
     'O fim do Império Gupta (c. 550) não foi o fim da civilização indiana. No norte, **Harsha** (606 – 647) reuniu brevemente um reino em Kannauj. No Decão e no sul, os **Chalukyas** (Pulakeshin II) e os **Pallavas** ergueram grandes templos (Mamallapuram), e depois os **Cholas** (séc. IX – XIII) construíram um império marítimo que chegou ao Sudeste Asiático. A partir do século VIII, o islão chegou ao Sind e, mais tarde, ao norte, com os sultanatos de Deli (1206) e o Império Mogol (1526).',
@@ -315,6 +316,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

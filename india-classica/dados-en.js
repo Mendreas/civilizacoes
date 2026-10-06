@@ -6,11 +6,11 @@ const visao = [
     'By **Classical India** we mean the long period, c. 600 BC to c. AD 550, in which the Indian subcontinent passed from the city-kingdoms of the Ganges valley to the great **Mauryan** and **Gupta** empires. It was the age of the **Buddha** and **Mahavira**, of **Ashoka** and his edicts carved in stone, of **Chanakya** and the *Arthashastra*, of the painted caves of **Ajanta**, the university of **Nalanda**, **Kalidasa** and **Aryabhata**, and of the invention of the decimal place-value system with the **zero**.',
     'It was not a single country but a mosaic of kingdoms, republics, cities and religious traditions (Vedism and Brahmanism, Buddhism, Jainism, and what would later be called Hinduism). The empires united much of the subcontinent for short periods; between them, India was almost always plural. It is that plurality, rather than political unity, that gives this civilisation its continuity.'
   ] },
-  { img: 'ind-mapa-mahajanapadas', leg: 'Map of the Mahajanapadas, the “great realms” of northern India, c. 500 BC.' },
+  { img: 'ind-mapa-mahajanapadas', leg: 'Map of the Mahajanapadas and other places in ancient India, around 500 BCE.' },
   { h: 'Where it was' },
   'The main stage was **northern India**, above all the plain of the **Ganges** and its tributaries (today’s Uttar Pradesh and Bihar), and the northwest, the **Punjab** and the **Indus** valley (now divided between India and Pakistan). It was the Ganges basin, rich in rice, iron and navigable rivers, that gave rise to the first states. The **Deccan**, the central and southern plateau, and the coasts of **Tamil Nadu** and **Kerala** had their own history, linked to the north but with different languages and kingdoms (Dravidian).',
   'The name “India” comes from Persian and Greek, from the river **Sindhu** (Indus); in Sanskrit the land was called *Bharata* or *Jambudvipa*, and the cultural world where Sanskrit was spoken, *Aryavarta* in the north. We use “Classical India” here for convenience: its inhabitants had no single political name for the whole territory.',
-  { img: 'ind-mapa-maurya', leg: 'Map of the approximate extent of the Mauryan Empire under Ashoka, 3rd century BC.' },
+  { img: 'ind-mapa-maurya', leg: 'Map of the Mauryan Empire after Ashoka\'s conquest of Kalinga.' },
   { h: 'When it existed' },
   'The chronology of ancient India rests more on inscriptions, coins and foreign sources (Greek, Chinese) than on Indian chronicles, so many dates are approximate. The main phases:',
   { tabela: { cab: ['Phase', 'Approximate dates', 'What marks it'], linhas: [
@@ -20,7 +20,7 @@ const visao = [
     ['Kushanas', 'c. 1st – 3rd century AD', 'Empire from Central Asia to northern India; Kanishka; the schools of Gandhara and Mathura; the Silk Road'],
     ['Gupta Empire', 'c. AD 320 – 550', 'The so-called “golden age”: Kalidasa, Aryabhata, Ajanta, Nalanda; zero and the decimal system; Hun invasions and the end of the empire']
   ] } },
-  { img: 'ind-mapa-gupta', leg: 'Map of the approximate extent of the Gupta Empire, around AD 400.' },
+  { img: 'ind-mapa-gupta', leg: 'Map of the Gupta Empire at its height, around 400 CE.' },
   { h: 'Who were the ancient Indians?' },
   'The population of the subcontinent was very diverse: speakers of **Indo-Aryan** languages (related to Sanskrit) in the north, of **Dravidian** languages (Tamil, Telugu, Kannada, Malayalam) in the south, of Austroasiatic and Tibeto-Burman languages in parts of the east and north, and forest and tribal communities everywhere. The origin of Sanskrit speakers (migration from the northwest or local development) is a matter of scholarly debate, often coloured by modern politics; most researchers accept that Indo-Aryan languages and rituals reached northwest India in the 2nd millennium BC and spread gradually, mixing with local populations.',
   'The history of this period is not that of “a people” but of kingdoms, cities and religious communities that shared texts, routes and ideas without a common political identity.',
@@ -32,10 +32,10 @@ const visao = [
     '**Art and architecture:** the stupa, the pillar, painted and sculpted caves, the image of the Buddha; forms that travelled across Asia with Buddhism.',
     '**Long-distance trade:** from the Silk Road to the Indian Ocean, India’s spices, cotton and gems linked it to Rome, China and Southeast Asia.'
   ] },
-  { img: 'ind-sanchi-estupa', leg: 'The Great Stupa of Sanchi (Madhya Pradesh), begun in Ashoka’s time and enlarged later.' },
+  { img: 'ind-sanchi-estupa', leg: 'The Great Stupa at Sanchi, Madhya Pradesh, India.' },
   { caixa: 'Classical India today', texto: 'The **Ashoka Pillar at Sarnath** gave the country its national emblem (the four lions) and the **Ashoka wheel** (*chakra*) is at the centre of India’s flag. Sanchi, Ajanta, Nalanda and the Mahabodhi temple at Bodh Gaya are UNESCO World Heritage sites. Buddhism, almost extinct in India for centuries, lives today mainly in other Asian countries, but remains the strongest cultural bridge between India and Asia.' },
-  { img: 'ind-pilar-sarnath', leg: 'The four-lion capital of Sarnath, 3rd century BC, now in the Sarnath Museum.' },
-  { img: 'ind-ajanta-pintura', leg: 'Wall painting of the Bodhisattva (Padmapani) in Cave 1 at Ajanta, 5th century AD.' }
+  { img: 'ind-pilar-sarnath', leg: 'Ashoka’s Lion Capital in the Sarnath Museum.' },
+  { img: 'ind-ajanta-pintura', leg: 'Painting of the Bodhisattva Padmapani in Cave 1 at Ajanta.' }
 ];
 
 const linha = [
@@ -69,14 +69,14 @@ const linha = [
     { d: 'c. 455 – 500', t: 'The Hun invasions', x: 'Emperor **Skandagupta** repels the first Hun attacks (c. 455), but the invasions recur. Around 500 the chiefs **Toramana** and then **Mihirakula** dominate parts of the north and centre. Mihirakula is defeated by a coalition (c. 528).' },
     { d: 'c. AD 550', t: 'Fragmentation of the Gupta Empire', x: 'Short of resources, attacked by the Huns and undermined by governors who become independent, the empire falls apart. The last Gupta kings are little more than regional lords. A period of rival kingdoms follows, until the time of **Harsha** (606 – 647).' }
   ] },
-  { img: 'ind-rigveda-ms', leg: 'Manuscript of the Rigveda in Devanagari script (a late copy: the hymns were transmitted orally for centuries).' },
+  { img: 'ind-rigveda-ms', leg: 'A page from a manuscript copy of the Rigveda in Sanskrit, written in Devanagari script.' },
   { img: 'ind-buda-ensinamento', leg: 'Artist’s reconstruction: the Buddha teaching his first disciples in the Deer Park at Sarnath.' },
   { img: 'ind-alexandre-poro', leg: 'Artist’s reconstruction: the battle of the Hydaspes between the armies of Alexander and Porus, with war elephants, 326 BC.' },
-  { img: 'ind-edito-rocha', leg: 'One of Ashoka’s Rock Edicts, carved in Brahmi script, 3rd century BC.' },
+  { img: 'ind-edito-rocha', leg: 'An Ashokan rock edict in Brahmi script at Erragudi, Andhra Pradesh.' },
   { img: 'ind-ashoka-kalinga', leg: 'Artist’s reconstruction: Ashoka on the battlefield of Kalinga after the war, c. 261 BC.' },
-  { img: 'ind-buda-gandhara', leg: 'Statue of the Buddha in Gandhara style, 1st – 3rd centuries AD, showing Greco-Roman influence.' },
-  { img: 'ind-moeda-kanishka', leg: 'Gold coin of Kanishka, Kushana emperor, with the king’s image and a deity on the reverse.' },
-  { img: 'ind-moeda-gupta', leg: 'Gold coin (dinar) of the Gupta emperor Samudragupta or Chandragupta II, 4th – 5th centuries AD.' }
+  { img: 'ind-buda-gandhara', leg: 'Standing Buddha in grey schist from Gandhara, in the Matsuoka Museum of Art, Tokyo.' },
+  { img: 'ind-moeda-kanishka', leg: 'A gold coin of Kanishka I.' },
+  { img: 'ind-moeda-gupta', leg: 'A gold coin of the Gupta king Samudragupta.' }
 ];
 
 const mapa = [
@@ -100,19 +100,19 @@ const mapa = [
   { h: 'Pataliputra' },
   'The Mauryan capital stood at the confluence of the Ganges and the Son, in present-day Patna. Megasthenes described it in the 3rd century BC: an elongated city some 15 km long, surrounded by a wooden palisade with 570 towers and 64 gates, and a wide moat. Excavations at Kumhrar found remains of a large hall with polished stone columns, believed to have belonged to a palace or assembly hall. The city was also a capital under the Guptas and was visited by Faxian, who admired the palace (which he said was the work of spirits).',
   { img: 'ind-pataliputra-reconstrucao', leg: 'Artist’s reconstruction of Pataliputra in Mauryan times, with the wooden palisade and the pillared palace.' },
-  { img: 'ind-pataliputra-ruinas', leg: 'Remains of the pillared hall at Kumhrar, Patna, near the site of ancient Pataliputra.' },
+  { img: 'ind-pataliputra-ruinas', leg: 'A surviving column fragment from the Mauryan eighty-pillared hall at Kumhrar, Patna.' },
   { h: 'The places of the Buddha' },
   'The Buddha’s life was tied to four places: **Lumbini** (birth, now in Nepal), **Bodh Gaya** (enlightenment), **Sarnath** (first sermon) and **Kushinagar** (death, or *parinirvana*). Ashoka visited them and raised pillars. At Bodh Gaya, beside the sacred fig tree under which the Buddha meditated, rose the **Mahabodhi** temple, whose present form dates largely from the Gupta period (5th – 6th century AD), though it has been heavily restored.',
-  { img: 'ind-bodh-gaya', leg: 'The Mahabodhi Temple at Bodh Gaya (Bihar), a UNESCO World Heritage site.' },
+  { img: 'ind-bodh-gaya', leg: 'The Mahabodhi Temple at Bodh Gaya, Bihar, India.' },
   { h: 'Mathura and the northwest' },
   'Mathura, on the Yamuna, was a second centre of the Kushana Empire and a great workshop of sculpture in red sandstone. The seated Buddha, the standing Buddha, Hindu and Jain deities and portraits of kings came from there. In the northwest, **Taxila** and the **Gandhara** valley (Peshawar, Swat) formed the other school, in a more Hellenistic style, the result of centuries of contact with Greeks, Persians and Central Asian peoples.',
-  { img: 'ind-buda-mathura', leg: 'Seated Buddha in red sandstone from Mathura, Kushana period, 1st – 2nd centuries AD.' },
+  { img: 'ind-buda-mathura', leg: 'A seated Buddha from the Kushan period, from Katra Keshav Dev, in the Mathura Museum.' },
   { h: 'Nalanda' },
   'Nalanda, near Rajagriha, was a great Buddhist monastery with classrooms, temples, libraries and residences, whose heyday follows the end of the Gupta Empire (6th – 7th centuries). The Chinese monk **Xuanzang** (7th century) reports some 10,000 students and 1,500 teachers (figures perhaps exaggerated). Tradition attributes its foundation to Kumaragupta I (c. 427). It was destroyed at the end of the 12th century.',
-  { img: 'ind-nalanda-ruinas', leg: 'Ruins of the monastery of Nalanda (Bihar), a UNESCO World Heritage site.' },
+  { img: 'ind-nalanda-ruinas', leg: 'The ruins of Nalanda, Bihar, India.' },
   { h: 'Routes and trade with Rome' },
   'The main road was the “**Northern Route**” (*Uttarapatha*), from Gandhara to Pataliputra, and the “**Southern Route**” (*Dakshinapatha*), from the Ganges to the Deccan. To the west one went from the Punjab to Iran and Central Asia, joining the Silk Road. By sea, from the 1st century BC, sailors used the **monsoons** (alternating winds, eastward in summer and westward in winter) to go from the Red Sea to the Malabar coast in about 40 days. At **Muziris** and **Arikamedu**, the Romans traded gold and wine for pepper, pearls, ivory, cotton, gems and silk (from China).',
-  { img: 'ind-mapa-comercio', leg: 'Map of the Indian Ocean trade routes and the Silk Road, 1st – 2nd centuries AD.' },
+  { img: 'ind-mapa-comercio', leg: 'Map of overland and maritime trade routes across Asia in the first century CE.' },
   { img: 'ind-porto-muziris', leg: 'Artist’s reconstruction of the port of Muziris, in Kerala, with Roman ships and local boats, 1st century AD.' },
   { h: 'The South: Sangam' },
   { caixa: 'A note on the south', texto: 'This page concentrates on the north and centre. In the far south the **Chera**, **Chola** and **Pandya** kingdoms have a history of their own. The **Sangam literature**, in Tamil, composed between c. 300 BC and AD 300 (dates much debated), collects love and war poems, and speaks of Greek merchants (“yavanas”) who came to Muziris “with ships of gold and returned with pepper”. It is one of the oldest living literatures in the world.' }
@@ -163,7 +163,7 @@ const sociedade = [
   { h: '4. Economy and trade' },
   'The base was **agriculture**: rice, wheat and barley in the north; millet, cotton and sugarcane; cattle were a very valuable asset. Iron made it possible to clear the Ganges forests. The monetary economy developed with **punch-marked silver coins** (*karshapana*), from the 6th – 5th centuries BC, among the oldest in the world; then came Greek, Kushana (gold) and Gupta coins (gold dinars of high quality).',
   'The **guilds** (*shreni*) of craftsmen and merchants were powerful, lent money and gave to monasteries. India exported **pepper**, cinnamon, **pearls**, **ivory**, **cotton cloth** (Bengal muslins), indigo, **gems** (beryl, agate, carnelian) and iron and **steel** (the famous crucible *wootz* steel). The Romans paid in gold and silver: Pliny the Elder complained (c. AD 77) that India, China and Arabia took from the empire, every year, some **100 million sesterces**, 50 million of them for India alone.',
-  { img: 'ind-moeda-romana', leg: 'Roman gold coins from the time of Augustus, of the type found in hoards in southern India.' },
+  { img: 'ind-moeda-romana', leg: 'An aureus of Augustus minted at Lyon, from the collection of the National Library of France.' },
   { img: 'ind-mercado-gupta', leg: 'Artist’s reconstruction: a market street in a Gupta city, with cloth, spices and merchants.' },
   { h: '5. Writing and languages' },
   'Writing vanished from India with the end of the Indus civilisation (c. 1900 BC) and reappears only c. 300 BC. The Vedas were kept **orally** by an extraordinary memorisation technique. The first scripts are **Brahmi** (from which almost all Indian and Southeast Asian scripts descend; whether its origin is indigenous or inspired by Aramaic is debated) and **Kharosthi** (of the northwest, of Aramaic origin). They were written on palm leaves, birch bark, copper and stone. The languages were **Sanskrit** (of religion, of literature and, later, of the court), **Pali** and other forms of **Prakrit** (in everyday use, and of Ashoka’s edicts), and **Tamil** in the south.',
@@ -180,7 +180,7 @@ const sociedade = [
   'The board game **chaturanga** (“four limbs of the army”: infantry, cavalry, elephants and chariots) is considered the ancestor of chess. The surest evidence dates from c. AD 600 (6th – 7th centuries), in Persian and Indian sources (the game passed to Iran as *chatrang*); that it was played already in Gupta times is very likely, but the earliest sources on the rules are later. Dice were also played, and have a central role in the Mahabharata, along with other race games.',
   { h: 'The epics' },
   'The **Mahabharata** (the war between two branches of the Kuru family, with the episode of the *Bhagavad Gita*, the dialogue between Krishna and Arjuna) and the **Ramayana** (the story of Rama, Sita and the demon Ravana, attributed to Valmiki) were composed over centuries, between c. 400 BC and AD 400. They have oral origins and many layers. The Mahabharata is the longest poem in the world, with some 100,000 verses. These epics are at once literature, religion and a lesson in dharma, and are still told across Asia.',
-  { img: 'ind-ramayana-ms', leg: 'Illustrated folio from a Ramayana manuscript (a work of a period much later than the classical age).' },
+  { img: 'ind-ramayana-ms', leg: 'Rama, Sita and Lakshmana in an illustrated Ramayana folio, in the Los Angeles County Museum of Art.' },
   { h: '10. Mathematics' },
   'The ancient Indians had mathematics tied to religion (the *Sulba Sutras*, c. 800 – 500 BC, give geometric rules for building altars, including what we call the Pythagorean theorem) and to astronomy. The great contribution is the **decimal place-value system**: a system in which the value of a digit depends on its position, with **ten symbols** and the **zero**. Zero as a dot or circle marking an empty position appears in the **Bakhshali manuscript**, whose oldest leaves were dated by carbon-14 to c. 3rd – 4th century AD (a disputed dating); the first zero in a dated inscription is from Gwalior, AD 876. **Brahmagupta** (AD 628), just after the period treated here, was the first to give rules for calculating with zero and negative numbers. These numerals reached Europe through the Arabs (“Arabic numerals”, which are of Indian origin).',
   { h: 'Aryabhata' },
@@ -194,7 +194,7 @@ const sociedade = [
   'The *Ashtadhyayi* of **Panini** (c. 5th – 4th century BC) is a formal grammar of Sanskrit, with some 4,000 very concise rules that generate all the words of the language. It is regarded as a precursor of the formal languages of logic and computing. Philosophy produced six great “schools” (*darshanas*) and, outside Brahmanism, the Buddhist, Jain and materialist (*Charvaka*) schools.',
   { h: '14. Technology and building' },
   'India mastered **iron metallurgy**. The **Iron Pillar of Delhi** (c. AD 400, usually linked to Chandragupta II), about 7 metres tall and over 6 tonnes, hardly rusts, thanks to its high phosphorus content and a protective film. The **wootz** steel of the south was exported. The Mauryas polished sandstone to a mirror shine (the so-called “Mauryan polish”) and builders learned to carve **temples in the rock** (Barabar, Karli, Ajanta), copying wooden forms in stone. After the 5th century the first **Hindu stone temples** appear, such as the Dashavatara at Deogarh. **Stepwells**, irrigation canals and reservoirs were also built.',
-  { img: 'ind-karli', leg: 'The great hall (chaitya) of the Karli cave, cut into the rock in the 1st century AD, with the support of Satavahana and Kshatrapa rulers and merchants.' },
+  { img: 'ind-karli', leg: 'Interior of the great chaitya hall at the Karla Caves, Maharashtra.' },
   { h: '15. War' },
   'Classical Indian armies had four “arms” (*chaturanga*): infantry, cavalry, **chariots** and **war elephants**, the tanks of the age. Elephants impressed Alexander and Seleucus, and Greek sources describe the enormous Mauryan army (600,000 foot soldiers, 30,000 cavalry and 9,000 elephants, according to Pliny, and therefore an exaggerated figure). The main bows were of bamboo and the horses came from Central Asia, which gave the northwestern powers an advantage. The manuals (*Arthashastra*) deal with forces, sieges, espionage and “righteous war” (*dharmayuddha*).',
   { img: 'ind-exercito-elefantes', leg: 'Artist’s reconstruction: the Mauryan army, with war elephants and infantry, on the march.' }
@@ -224,7 +224,7 @@ const personalidades = [
   'The most famous Kushana emperor. The date of his reign is much discussed (his era begins in AD 78 or 127, depending on the author). He minted coins with the Buddha and with Greek, Persian and Indian deities, and is remembered as a protector of Buddhism and the arts. He is said to have convened a Buddhist council (tradition).',
   { h: 'Samudragupta (c. AD 335 – 375)' },
   'The “Napoleon of India”, as a 20th-century historian called him (an expression of V. A. Smith, now criticised). Harisena’s inscription on the Allahabad pillar lists victories and subjugated kings, with some official exaggeration. He was also a poet and musician, and left coins in which he plays the vina. He performed the horse sacrifice (*ashvamedha*).',
-  { img: 'ind-pilar-allahabad', leg: 'The Allahabad (Prayagraj) pillar, with edicts of Ashoka and the inscription of Samudragupta.' },
+  { img: 'ind-pilar-allahabad', leg: 'Ashoka\'s pillar at Allahabad, now Prayagraj.' },
   { h: 'Chandragupta II Vikramaditya (c. AD 375 – 415)' },
   'Son of Samudragupta. The empire reached its greatest extent and wealth. He was a patron of the arts; Indian tradition gathers around him “nine jewels” of the court, including Kalidasa. The link is legendary.',
   { h: 'Kalidasa (c. 4th – 5th century AD, dates very uncertain)' },
@@ -233,7 +233,7 @@ const personalidades = [
   'A Chinese monk who travelled through Central Asia and India (c. 399 – 412) in search of Buddhist texts. His account is one of the best sources on Gupta India: he describes prosperous cities, free hospitals, few harsh punishments and the situation of the *chandalas*.',
   { h: 'Aryabhata (AD 476 – c. 550)' },
   'An astronomer and mathematician born, by his own account, in AD 476, who worked at Kusumapura (probably Pataliputra). His *Aryabhatiya* was studied for centuries in India and in the Arab world (which translated it) and influenced later astronomy.',
-  { img: 'ind-buda-gupta-sarnath', leg: 'The Buddha preaching, sandstone sculpture from Sarnath, Gupta period, 5th century AD, Sarnath Museum.' },
+  { img: 'ind-buda-gupta-sarnath', leg: 'Historical photograph of the Gupta-period Buddha preaching his first sermon, from the 1914 Sarnath Museum catalogue.' },
   { h: 'Skandagupta (c. AD 455 – 467)' },
   'The last great Gupta emperor, he faced and halted the first Hun attacks, but the expense drained the treasury, and coins of the period show less gold. After him, the empire lost strength.'
 ];
@@ -251,19 +251,19 @@ const legado = [
   ] },
   { h: 'Art' },
   'Ancient Indian art is essentially religious. The main forms are the **stupa** and its carved gateways (the *toranas*), **pillars** and **reliefs** that tell the lives of the Buddha (the *Jatakas*), **images of the Buddha**, Hellenistic in style in Gandhara and more Indian in Mathura, and **Gupta** sculpture, of great serenity, with Buddhas with half-closed eyes and clinging robes. Gupta coins and palm-leaf miniatures are other forms.',
-  { img: 'ind-sanchi-torana', leg: 'The east gateway (torana) of the Great Stupa of Sanchi, with carved reliefs, 1st century BC – 1st century AD.' },
-  { img: 'ind-ajanta-gruta', leg: 'The Ajanta caves, in Maharashtra, cut into a horseshoe-shaped cliff.' },
+  { img: 'ind-sanchi-torana', leg: 'The eastern gateway of the Great Stupa at Sanchi, Madhya Pradesh.' },
+  { img: 'ind-ajanta-gruta', leg: 'Panoramic view of the Ajanta Caves, Maharashtra.' },
   { img: 'ind-ajanta-pintores', leg: 'Artist’s reconstruction: painters working by lamplight on the walls of an Ajanta cave, 5th century AD.' },
   { h: 'Architecture' },
   'The **stupa** is a hemispherical mound that holds relics and symbolises the Buddha and the cosmos. At Sanchi, the stupa is about 16 m high with a railing and four gateways. **Chaityas** (prayer halls) and **viharas** (monasteries) were cut into the rock, at Karli, Ajanta, Ellora. In Gupta times the first **stone temples** appear, with sanctuary and tower, such as the one at Deogarh, which become, centuries later, the great temples of Hinduism.',
-  { img: 'ind-deogarh', leg: 'The Dashavatara temple at Deogarh (Uttar Pradesh), c. AD 500, one of the first Hindu temples in stone.' },
-  { img: 'ind-pilar-ferro', leg: 'The Iron Pillar, in the Qutb complex in Delhi, c. AD 400, which hardly rusts.' },
+  { img: 'ind-deogarh', leg: 'Side view of the Dashavatara Temple at Deogarh.' },
+  { img: 'ind-pilar-ferro', leg: 'The Iron Pillar in the Qutb complex, Delhi.' },
   { h: 'Nalanda' },
   'The monastery of Nalanda, which had, according to Xuanzang (7th century), some 10,000 students and 1,500 teachers (figures perhaps exaggerated), taught Buddhist theology, logic, grammar, medicine and mathematics. Students came from China, Korea and Tibet. It was destroyed c. 1200, by Bakhtiyar Khilji (tradition), and its ruins were excavated in the 20th century. A new university of the same name was created by law in 2010.',
   { img: 'ind-nalanda-reconstrucao', leg: 'Artist’s reconstruction of the monastery-university of Nalanda, with courtyards, temples and classrooms, c. 5th – 7th century.' },
   { h: 'A mathematics manuscript' },
   'The **Bakhshali** manuscript (found in 1881, now in the Bodleian Library, Oxford) is one of the oldest books of Indian mathematics, on birch bark. In 2017, radiocarbon dating of its leaves gave dates between the 3rd and 10th centuries AD (three groups of leaves from different periods), which is debated, but the text shows zero as a dot.',
-  { img: 'ind-bakhshali', leg: 'Leaf of the Bakhshali manuscript, on birch bark, Bodleian Library, Oxford.' },
+  { img: 'ind-bakhshali', leg: 'A leaf of the Bakhshali mathematical manuscript, held in the Bodleian Library.' },
   { h: 'After 550' },
   { caixa: 'What came next', texto: [
     'The end of the Gupta Empire (c. 550) was not the end of Indian civilisation. In the north, **Harsha** (606 – 647) briefly united a kingdom at Kannauj. In the Deccan and the south, the **Chalukyas** (Pulakeshin II) and the **Pallavas** raised great temples (Mamallapuram), and later the **Cholas** (9th – 13th centuries) built a maritime empire that reached Southeast Asia. From the 8th century Islam reached Sind and, later, the north, with the Delhi sultanates (1206) and the Mughal Empire (1526).',
