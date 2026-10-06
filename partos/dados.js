@@ -1,5 +1,6 @@
 // PARTOS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Datas na «cronologia média»; a história parta tem muitas datas debatidas (sobretudo antes de 57 a.C.), porque quase não restam fontes escritas pelos próprios partos: a maior parte do que sabemos vem de gregos, romanos e chineses, que eram vizinhos ou inimigos. a.C./d.C.
 // Aquemênidas e Sassânidas (tratados na civilização Persa) só de passagem.
 // Imagens: cada {img:'id'} procura o ficheiro  partos/img/id.jpg  (ver IMAGENS_PARTOS.md para a lista e os prompts).
@@ -9,7 +10,7 @@ const visao = [
     'Os **partos** foram o povo que, de cerca de **247 a.C.** a **224 d.C.**, construiu o segundo grande império iraniano depois dos Aqueménidas e o único rival de Roma que esta nunca conseguiu conquistar. A dinastia chamava-se **arsácida**, de **Arsaces I**, o chefe dos **parnos**, um povo de cavaleiros iranófonos vindos das estepes da Ásia Central, que se instalou na região de **Pártia**, no nordeste do atual Irão e no sul do Turquemenistão, então uma satrapia do império selêucida. A partir daí os arsácidas foram tomando o planalto iraniano, a Mesopotâmia e territórios que iam do **Eufrates** ao **Indo**, e os seus reis adotaram o título de **«Rei dos Reis»**.',
     'Governaram a partir de **Ctesifonte**, no Tigre, com um poder partilhado entre o rei, as grandes casas nobres e reinos vassalos, e sem uma administração tão centralizada como a persa. Lutavam com **arqueiros a cavalo** e **cavaleiros couraçados (catafractos)**, e em **Carras** (53 a.C.) destruíram um exército romano. Controlaram o troço central da **Rota da Seda**, cobrando portagens entre a China e o Mediterrâneo. Eram uma cultura de síntese: usavam o grego nas moedas e na diplomacia, mas foram deixando crescer a língua, a religião e as tradições iranianas. O império acabou quando um vassal do sul, **Ardashir I**, de Fars, derrotou o último rei arsácida e fundou o Império Sassânida, em **224 d.C.**'
   ] },
-  { img: 'par-mapa-imperio', leg: 'Mapa do Império Parta na sua maior extensão, séc. I a.C., entre o Eufrates e o Indo.' },
+  { img: 'par-mapa-imperio', leg: 'Mapa do Império Parta (e do vizinho Império Cuchana), que na sua maior extensão, no séc. I a.C., ia aproximadamente do Eufrates ao Indo.' },
   { h: 'Onde ficava' },
   'O berço dos partos era a **Pártia**, uma região de planaltos e de oásis a sul das montanhas de Kopet Dag, que hoje é dividida entre o **nordeste do Irão** (Khorasan e Golestão) e o **sul do Turquemenistão**. É uma terra de cavalos: os antigos celebravam os cavalos «nisaianos», criados na planície de Nisa, perto da atual Ashgabat, como os melhores da Ásia. De lá o império cresceu para sul e para oeste, com o planalto iraniano (**Média** e **Fars**), a **Mesopotâmia** (o Tigre e o Eufrates), a **Arménia** como reino aliado ou disputado, e, a leste, **Margiana** (Merv), a **Báctria** e o **Seistão**, onde confinava com povos nómadas e depois com os kushans.',
   'As capitais mudaram com o tempo. **Hecatompylos** (identificada com Shahr-e Qumis, no Irão) foi uma das primeiras residências dos reis; **Nisa** era uma fortaleza real e centro religioso; **Ecbatana** (Hamadã) servia de residência de verão; e, a partir do séc. II a.C., **Ctesifonte** (junto à grande cidade helenística de **Selêucia do Tigre**) tornou-se, passo a passo, a capital de inverno e o centro do império. O poder dos arsácidas estava, de facto, onde estavam o rei e a sua corte, que se deslocava consoante as estações.',
@@ -23,7 +24,6 @@ const visao = [
     ['Maturidade e guerras romanas', 'c. 1 – 191 d.C.', 'Vologases I e a Arménia; Trajano (114–117), Vero (161–166); riqueza da Rota da Seda; cidades como Hatra e Dura-Europos'],
     ['Declínio e queda', 'c. 191 – 224 d.C.', 'Guerras civis arsácidas; Septímio Severo saqueia Ctesifonte (197); Caracala; Ardashir I vence em Hormozdgan (224)']
   ] } },
-  { img: 'par-dracma-arsacida', leg: 'Dracma de prata parta, com o busto do rei e, no reverso, o primeiro arsácida sentado com um arco; as moedas são das fontes mais importantes para esta história.' },
   { h: 'Quem eram os partos?' },
   'Os **parnos** eram um povo nómada de língua iraniana, ligado, segundo o geógrafo grego **Estrabão**, à confederação dos **dahas**, que vivia a leste do mar Cáspio. Ao ocuparem a Pártia, tornaram-se os «partos» para os gregos e para os romanos, nome que vem do persa antigo *Parthava*, designação da região. A sua língua, o **parta**, é uma língua iraniana do noroeste, parente (mas diferente) do persa, que é do sudoeste; veio a ter muita influência no arménio, que ainda hoje guarda muitas palavras de origem parta.',
   'Um problema de fontes: **não sobrevive nenhuma história escrita por um parto**. Temos moedas, inscrições curtas, milhares de **ostraca** (cacos de cerâmica com texto) de Nisa, documentos de Dura-Europos e os relatos de gregos, de romanos e de chineses, que escreveram sobre um adversário temido ou de um vizinho distante. Os romanos descrevem-nos às vezes com admiração, outras com desprezo («traiçoeiros», «efeminados»), e esses retratos dizem mais sobre Roma do que sobre os partos. A história que aqui se conta é, por isso, em muitos pontos, uma reconstrução.',
@@ -73,7 +73,6 @@ const linha = [
   { linha: [
     { d: '51 – 38 a.C.', t: 'Os partos invadem a Síria', x: 'O príncipe **Pacoro I**, filho de Orodes, ataca a Síria romana em 51 a.C. e volta em força em 40 a.C., juntamente com o general romano rebelde **Labieno** (que apoiara Bruto e Cássio): ocupam a Síria e parte da Ásia Menor. Em **38 a.C.**, o general romano **Ventídio** vence e mata Pacoro em **Gindaro**, e os partos recuam. Orodes, abalado, abdica, e acaba morto, segundo as fontes romanas, às mãos do filho **Fraates IV**.' },
   ] },
-  { img: 'par-marco-antonio', leg: 'Busto de Marco António, que invadiu a Pártia em 36 a.C.' },
   { linha: [
     { d: '36 a.C.', t: 'António contra Fraates IV', x: 'O triúnviro **Marco António** invade a Média Atropatene com cerca de 100 000 homens (aliados incluídos, segundo Plutarco), mas os partos, comandados por **Fraates IV** (c. 38 – 2 a.C.), destroem o comboio de máquinas de cerco perto de **Fraaspa** e a sua retaguarda; o aliado arménio, Artavasdes II, abandona-o. A retirada, no inverno, custa-lhe, segundo Plutarco, cerca de 24 000 homens (20 000 de infantaria e 4 000 de cavalaria). Foi a última grande tentativa romana contra a Pártia no tempo da República.' },
   ] },
@@ -91,7 +90,7 @@ const linha = [
   { linha: [
     { d: '113 – 117 d.C.', t: 'Trajano chega ao Golfo', x: 'O imperador **Trajano** mata o candidato parto ao trono da Arménia (114) e transforma-a em província romana; em 115 – 116 invade a Mesopotâmia, toma **Ctesifonte** e **Selêucia**, e desce o Tigre até ao **Golfo Pérsico**, onde, segundo **Cássio Dio**, ao ver um navio a partir para a Índia, lamentou não ser jovem como Alexandre. É a maior expansão romana para leste. Revoltas nas cidades conquistadas e um cerco falhado a **Hatra** obrigam-no a recuar; morre em agosto de 117 e o seu sucessor **Adriano** devolve o território.' },
   ] },
-  { img: 'par-trajano', leg: 'Busto do imperador Trajano, que chegou ao Golfo Pérsico em 116 d.C.' },
+  { img: 'par-trajano', leg: 'Cabeça atribuída ao imperador Trajano (Museu Arqueológico de Veneza), que chegou ao Golfo Pérsico em 116 d.C.' },
   { linha: [
     { d: '161 – 166 d.C.', t: 'Vero e Avídio Cássio', x: 'O rei **Vologases IV** invade a Arménia e a Síria romanas; Marco Aurélio envia o co-imperador **Lúcio Vero**, e o general **Avídio Cássio** invade a Mesopotâmia, destruindo parte de **Selêucia** e **Ctesifonte** (c. 164 – 165). Dura-Europos passa para Roma. As tropas regressam com uma epidemia (a «peste antonina», possivelmente varíola) que devasta o império romano.' },
   ] },
@@ -142,8 +141,8 @@ const mapa = [
   { img: 'par-hatra-reconstrucao', leg: 'Hatra no séc. II d.C.: a muralha circular, o recinto sagrado e os iwans, com caravanas à porta; reconstituição conjetural. Ilustração gerada por IA.' },
   { h: 'Dura-Europos e Palmira' },
   '**Dura-Europos** foi fundada pelos Selêucidas, passou para os partos por volta de **113 a.C.** e ficou sob domínio romano em 165 d.C.; foi tomada pelos Sassânidas em 256 e abandonada. Por estar quase intacta sob a areia, deu aos arqueólogos templos de vários deuses, uma sinagoga com pinturas bíblicas e uma igreja cristã primitiva (as duas já da época romana) e centenas de papiros e pergaminhos; é fundamental para conhecer a cultura de fronteira. **Palmira**, no deserto sírio, era uma cidade de caravanas, que servia de intermediária entre o Eufrates (zona parta) e o Mediterrâneo (zona romana), e mostra a mistura de influências que a Rota da Seda atravessava.',
-  { img: 'par-dura-europos', leg: 'Ruínas de Dura-Europos, junto ao Eufrates, na Síria.' },
-  { img: 'par-palmira', leg: 'Colunata de Palmira, no deserto sírio, cidade de caravanas na fronteira entre o mundo romano e o parto.' },
+  { img: 'par-dura-europos', leg: 'Planta das escavações de Dura-Europos, cidade junto ao Eufrates (Síria), com os principais edifícios assinalados.' },
+  { img: 'par-palmira', leg: 'O teatro romano de Palmira, no deserto sírio: cidade de caravanas na fronteira entre o mundo romano e o parto.' },
   { h: 'A Rota da Seda e as estradas do império' },
   'A grande via partida da China atravessava a Ásia Central, chegava a **Merv**, passava por **Hecatompylos**, subia a **Ecbatana**, descia a **Ctesifonte** e seguia para o Eufrates, onde a mercadoria passava para o lado romano por **Zeugma**, **Dura-Europos** ou **Palmira**. O percurso está descrito em **«As Estações Partas»**, uma espécie de guia de viagem do geógrafo **Isidoro de Carax** (c. séc. I a.C. – I d.C.), que enumera as paragens, com as distâncias, do Eufrates até à Aracósia (hoje Kandahar). Havia também uma **rota marítima**, a partir do porto de **Carax Espasinu**, no Golfo, em direção à Índia. Os partos não produziam a seda (vinha da China), mas controlavam o caminho e **cobravam portagens**, e, segundo os autores chineses, procuravam manter os intermediários de que viviam: o enviado chinês **Gan Ying**, em 97 d.C., teria sido convencido pelos partos a desistir de chegar a Roma por mar, dizendo-lhe que a travessia podia demorar até dois anos (episódio contado só pelas fontes chinesas).',
   { img: 'par-mapa-rota-seda', leg: 'Mapa da Rota da Seda, com o território parta no centro, entre a China e o Mediterrâneo.' },
@@ -154,7 +153,7 @@ const sociedade = [
   { h: '1. Organização política' },
   'O estado parto era uma **monarquia hereditária dentro da família arsácida**: só um arsácida podia ser rei. Mas o rei não era um monarca absoluto como o persa; segundo Estrabão, existia um **conselho de parentes do rei e de magos** (Estrabão fala de um *synedrion*), que podia depor o rei que não servisse; os historiadores modernos usam a palavra grega *megistanes* («os grandes») para os nobres que o integravam. As sucessões eram frequentes fontes de guerra civil, e vários reis (Vonones I, Fraates V) foram depostos por não agradarem à nobreza.',
   'O território dividia-se em **satrapias** (com sátrapas em menor número do que no império aqueménida) e em **reinos vassalos**, governados por dinastias locais: **Elímaida** (sudoeste do Irão), **Carácene** (sul do Iraque), **Média Atropatene**, **Adiabene**, **Osroena** (Edessa), a Pérsia de Fars (da família de Ardashir) e **Hatra**. Estes vassalos pagavam tributo e davam soldados, e aceitavam o título de «Rei dos Reis» do arsácida, mas tinham as suas moedas e os seus exércitos; é por isso que muitos historiadores falam de um sistema «feudal» (palavra discutível, por ser tirada da Europa medieval). A vantagem era a flexibilidade; o problema, a fraqueza, porque um vassal podia revoltar-se e criar um novo poder, como Ardashir.',
-  { img: 'par-moeda-fraates4', leg: 'Dracma de Fraates IV (c. 38 – 2 a.C.), rei que derrotou Marco António e devolveu as insígnias de Carras.' },
+  { img: 'par-moeda-fraates4', leg: 'Tetradracma de Fraates IV (c. 38 – 2 a.C.), rei que derrotou Marco António e devolveu as insígnias de Carras; no reverso, a deusa Tique.' },
   { h: '2. Classes sociais' },
   { lista: [
     '**A família real e as grandes casas:** a nobreza era dominada por sete grandes casas (as fontes sassânidas falam de «sete grandes casas»), entre as quais os **Suren** (de onde saiu Surena, o vencedor de Carras) e os **Karen**, que possuíam terras, castelos e exércitos pessoais e sustentavam o rei, ou o derrubavam.',
@@ -217,7 +216,7 @@ const sociedade = [
   { img: 'par-akhal-teke', leg: 'Cavalo Akhal-Teke, raça do Turquemenistão, por vezes ligada aos cavalos nisaianos dos partos (ligação debatida).' },
   { h: '12. Arte' },
   'A arte parta mistura Grécia e Irão. Os primeiros reis usam **modelos helenísticos** (rítons de marfim de Nisa, estátuas de mármore de tipo grego, inscrições em grego); depois ganham espaço **as formas iranianas e mesopotâmicas**. Uma característica nova é a **frontalidade**: as figuras olham de frente, para o espectador, e não para o objeto da ação, como nas esculturas de **Hatra** e nas pinturas de **Dura-Europos**, solução que mais tarde passaria para a arte bizantina e medieval. O famoso **bronze do Príncipe de Shami**, achado numa zona de montanha do sudoeste do Irão, mostra um nobre parto de calças e punhal, enquanto as esculturas de pedra de Hatra mostram deuses e reis com trajes ricamente decorados.',
-  { img: 'par-hatra-estatua', leg: 'Estátua de pedra de um nobre de Hatra, norte do Iraque, séc. II d.C.: figura de frente, com traje parto.' },
+  { img: 'par-hatra-estatua', leg: 'Estátua de Sanatruq, rei de Hatra, norte do Iraque (Museu do Iraque), séc. II d.C.: figura de frente, com traje parto.' },
   { h: '13. Os reinos indo-partos' },
   'A leste, no séc. I d.C., formou-se um reino de dinastia de origem parta no atual Paquistão e no noroeste da Índia, o dos **indo-partos**, fundado por **Gondofares** (c. 20 – 46 d.C., datas debatidas). Embora se tenham autonomizado do rei de Ctesifonte, mantiveram a cultura e o título «Rei dos Reis». Gondofares é também o rei que a tradição cristã associa ao apóstolo **Tomé**, nos *Atos de Tomé* (texto tardio, de valor histórico duvidoso).',
   { img: 'par-gondofares', leg: 'Moeda de Gondofares, fundador do reino indo-parto (séc. I d.C.), com legenda em grego.' }
@@ -309,6 +308,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

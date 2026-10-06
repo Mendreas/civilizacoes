@@ -1,5 +1,6 @@
 // POVOS BANTU (EXPANSÃO BANTU) — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Nota de método: «bantu» designa uma família de LÍNGUAS (e, por extensão, os povos que as falam), não uma «raça» nem um estado. Não há um «império bantu»: é a história de uma expansão de línguas, de agricultores, de criadores de gado e de ferreiros, ao longo de milhares de anos. Quase tudo o que sabemos vem da linguística comparada, da arqueologia e, mais recentemente, da genética; as datas são aproximadas e muito debatidas. a.C./d.C.
 // Imagens: cada {img:'id'} procura o ficheiro  bantu/img/id.jpg  (ver IMAGENS_BANTU.md para a lista e os prompts).
 
@@ -12,7 +13,6 @@ const visao = [
   { h: 'Onde ficava' },
   'Não há uma «terra bantu» fixa: o espaço histórico é toda a metade sul do continente. O **berço** (a região onde se terá falado o proto-bantu, a língua-mãe reconstruída pelos linguistas) situa-se na fronteira entre o **sudeste da Nigéria** e o **sudoeste dos Camarões**: planaltos de pastagens e floresta, com vales férteis e vulcões, cortados por rios que correm para o golfo da Guiné e, mais a sul, para o Congo. A localização exata é uma hipótese, apoiada no facto de ser ali que se encontram os ramos mais antigos e diversos da família a que o bantu pertence.',
   'A partir daí, o mapa da expansão tem duas grandes massas: a **floresta equatorial** da bacia do Congo (Gabão, Congo, República Democrática do Congo), e as **savanas e matas de miombo** da África oriental e austral, atravessadas por lagos, rios e planaltos. Houve ainda uma terceira dimensão, a do tempo: muitas das regiões onde hoje se fala bantu só foram atingidas ao fim de séculos, e algumas (o Quénia litoral, o Natal, o vale do Limpopo) só nos primeiros séculos da nossa era.',
-  { img: 'ban-camaroes-monte', leg: 'O monte Camarões, vulcão no sudoeste dos Camarões, na região geral onde se situa a origem das línguas bantu.' },
   { h: 'Quando existiu' },
   'Pelas estimativas linguísticas, o proto-bantu começou a distinguir-se das línguas vizinhas há **cerca de 5000 a 4000 anos** (c. 3000 – 2000 a.C.); as primeiras dispersões e o ferro mais seguro vêm a partir do 1.º milénio a.C.; e a expansão principal estende-se, grosso modo, até ao 1.º milénio d.C. O limite final deste capítulo é c. 1000 d.C., mas o «legado» chega, claro, aos nossos dias. As datas abaixo são aproximadas, e várias delas (sobretudo as mais antigas) são hipóteses.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -59,7 +59,6 @@ const linha = [
     { d: 'c. 500 a.C. – 500 d.C.', t: 'Os fornos de ferro de Buhaya', x: 'Na região de **Buhaya**, a oeste do lago Vitória (Tanzânia), os arqueólogos **Peter Schmidt** e **Donald Avery** estudaram, nos anos 1970, fornos de argila que, segundo eles, chegavam a temperaturas elevadas, com ar pré-aquecido, e produziam **aço de carbono**. A interpretação é discutida, e há quem a considere exagerada, mas o conjunto mostra uma metalurgia desenvolvida e original, muito antes do contacto com a Europa.' },
   ] },
   { img: 'ban-forno-ferro', leg: 'Fundição de ferro num forno de argila, Grandes Lagos, c. 300 a.C.; reconstituição conjetural. Ilustração gerada por IA.' },
-  { img: 'ban-bloomery', leg: 'Reconstituição moderna de um forno de redução direta («bloomery»); ilustra o princípio da técnica, não um achado deste período.' },
   { linha: [
     { d: 'c. 500 – 0 a.C.', t: 'A floresta abre-se: o corredor de savana', x: 'Dados de pólen e de sedimentos de lagos sugerem que, c. **2500 a 2000 anos atrás**, a floresta equatorial sofreu uma perturbação, com a abertura de uma faixa de savana (o chamado **Intervalo do Sangha**, entre o Camarões e o Congo). A hipótese de **Koen Bostoen** e colegas (2015) é que esta faixa de savana facilitou a passagem de populações para sul e para leste. Mas os estudos genéticos e linguísticos mais recentes (Koile, 2022; Fortes-Lima, 2024) sugerem que a floresta foi atravessada **primeiro**, e as savanas só depois. A discussão está aberta.' },
     { d: 'c. 300 a.C. – 500 d.C.', t: 'Encontros com os caçadores-recoletores', x: 'Em todo o percurso, os agricultores de língua bantu encontraram **caçadores-recoletores** (na floresta, os povos hoje chamados Twa, Aka, Baka e Mbuti; na savana, ancestrais de grupos khoe e san). Em muitas regiões houve convivência de séculos, trocas de mel, carne, ferro e cerâmica, casamentos e adoção de palavras. A genética mostra misturas, sobretudo de **mulheres** dos grupos locais com homens bantu, e as línguas, empréstimos (os cliques das línguas nguni são o exemplo mais conhecido). A ideia de que os bantu «varreram» os caçadores é, em grande parte, um **mito**.' },
@@ -79,7 +78,7 @@ const linha = [
     { d: 'séc. VIII – XV d.C.', t: 'Cidades suaílis (referência cruzada)', x: 'Ao longo da costa oriental, comunidades de língua bantu em contacto intenso com comerciantes do Índico formam as cidades da **costa suaíli** (Kilwa, Mombaça, Lamu, Zanzibar e outras). O suaíli é uma língua bantu, com muitas palavras emprestadas do árabe. Tem página própria: ver **Cidades-Estado Suaílis**.' },
     { d: 'c. 1000 – 1300 d.C.', t: 'K2 e Mapungubwe', x: 'No vale do Limpopo, a aldeia de **K2** e depois a colina de **Mapungubwe** (c. 1220 – 1290) revelam uma elite de língua bantu com ouro, marfim e contas de vidro vindas do Índico. Entre as peças mais conhecidas está o **rinoceronte de ouro**, encontrado em 1933. Este sítio é tratado também na página do **Grande Zimbabué**.' },
   ] },
-  { img: 'ban-mapungubwe', leg: 'Mapungubwe, no vale do Limpopo (África do Sul): centro de uma elite de falantes bantu, c. 1220 – 1290 (Património Mundial, 2003).' },
+  { img: 'ban-mapungubwe', leg: 'Mapungubwe, no vale do Limpopo (África do Sul): exposição sobre o sítio, centro de uma elite de falantes bantu, c. 1220 – 1290 (Património Mundial, 2003).' },
   { linha: [
     { d: 'séc. XI – XV d.C.', t: 'O Grande Zimbabué (referência cruzada)', x: 'No planalto do Zimbabué, uma sociedade de língua bantu (antepassados dos Shona) ergue as grandes muralhas de granito do Grande Zimbabué. Tem página própria: ver **Grande Zimbabué**.' },
     { d: 'c. 1390 d.C.', t: 'O Reino do Congo (referência cruzada)', x: 'Na bacia do baixo rio Congo, a tradição situa a fundação de um reino por Lukeni lua Nimi. É um dos estados bantu mais bem documentados, com contacto com Portugal a partir de c. 1483. Tem página própria: ver **Reino do Congo**.' },
@@ -112,12 +111,10 @@ const mapa = [
   'A hipótese dominante coloca o berço no **sudoeste dos Camarões e no sudeste da Nigéria**, uma região de planaltos de pastos (os **Grassfields**), de floresta, de vulcões e de rios, e uma das de maior diversidade linguística do mundo. Os argumentos vêm da própria língua: as línguas mais próximas do bantu (as «bantoides») concentram-se ali, e os ramos mais antigos da família bantu também. O abrigo de **Shum Laka** mostra que a região era habitada há muito tempo por caçadores-recoletores e oleiros, mas, como vimos, o ADN de lá não é o dos falantes bantu atuais, o que lembra que **língua, cultura e genes não coincidem**.',
   { h: 'A rota ocidental: a floresta equatorial' },
   'Uma parte dos falantes de bantu seguiu para sul pela **floresta tropical** do Gabão, do Congo e da República Democrática do Congo, usando como estradas os grandes **rios** (Sangha, Ogooué, Congo, Kasai) e as suas margens, onde havia luz e solo bom. Faziam clareiras para as suas aldeias e para os campos de inhame e de bananas, pescavam, colhiam **dendê** e **frutos da floresta** (como o *Canarium*) e mantinham contactos com os caçadores-recoletores. A ocupação da floresta foi lenta e muito irregular, e, como se viu, houve uma crise grave de c. 400 – 600 d.C.',
-  { img: 'ban-rio-congo', leg: 'O rio Congo, a grande via de circulação da floresta equatorial.' },
-  { img: 'ban-floresta-equatorial', leg: 'Floresta equatorial da bacia do Congo, o ambiente da rota ocidental.' },
+  { img: 'ban-rio-congo', leg: 'O rio Congo em Kinshasa, a grande via de circulação da floresta equatorial.' },
   { h: 'A rota oriental: lagos, savanas e costa' },
   'O outro grande ramo, o «oriental», aparece a leste da floresta: no **lago Vitória**, no **Kivu**, no **Tanganica**, na Zâmbia e, depois, na costa do Índico. Aqui as comunidades juntaram ao ferro e à olaria os **cereais (sorgo, milheto)** e o **gado**, que terão obtido, em parte, de vizinhos de outras famílias linguísticas (nilo-saarianos e cuxitas), numa mistura que explica a diversidade das línguas dos Grandes Lagos. A partir daí, a expansão desceu a costa oriental e entrou na África austral.',
-  { img: 'ban-lago-vitoria', leg: 'O lago Vitória, centro da tradição Urewe.' },
-  { img: 'ban-miombo', leg: 'Mata de miombo, tipo de savana arborizada que cobre grande parte da África central e austral.' },
+  { img: 'ban-miombo', leg: 'Mapa da ecorregião das matas húmidas de miombo da África Zambeziana central, um tipo de savana arborizada que cobre grande parte da África central e austral.' },
   { h: 'O sul: Zambeze, Limpopo e planalto' },
   'A expansão chegou à África austral no início da nossa era. As comunidades seguiram os **vales dos rios** (Zambeze, Limpopo, Save) e a faixa húmida da costa oriental até ao Natal, e subiram depois ao planalto interior, onde o gado e os cereais permitiram uma ocupação densa. Nas zonas mais secas do Kalahari, a agricultura não era possível e os caçadores-recoletores san continuaram a viver durante muito tempo, em contacto com os criadores de gado vizinhos.',
   { img: 'ban-victoria-falls', leg: 'O Zambeze nas cataratas Vitória (Zâmbia e Zimbabué): um dos grandes rios que serviram de via e de fronteira natural na África austral.' },
@@ -167,15 +164,14 @@ const sociedade = [
   'Os primeiros bantu viviam de uma **economia mista**: pesca em rios e lagos, caça, recoleção (dendê, frutos, mel), pequenos cultivos de **inhame** e leguminosas, e cabras. Com o tempo, e conforme as regiões, a mistura mudou. Na floresta, o centro de gravidade manteve-se no **inhame**, na **banana**, na **palmeira-de-dendê** e no peixe. Na savana e nos planaltos do leste e do sul, ganharam peso os **cereais (sorgo e milheto)**, as leguminosas e o **gado**, cabras e ovelhas. O sistema agrícola era a **agricultura itinerante**: queimava-se e desbravava-se um campo, cultivava-se alguns anos e movia-se a aldeia ou o campo quando a terra cansava, o que explica, em parte, o ritmo da expansão.',
   { img: 'ban-campo-cultivo', leg: 'Mulheres a preparar um campo de cultivo itinerante, com enxadas de ferro; reconstituição conjetural. Ilustração gerada por IA.' },
   { img: 'ban-inhame', leg: 'Tubérculos de inhame, base alimentar da floresta e da savana do oeste africano.' },
-  { img: 'ban-palmeira-dende', leg: 'Palmeira-de-dendê (*Elaeis guineensis*), fonte de óleo e de vinho de palma.' },
-  { img: 'ban-banana', leg: 'Bananeiras (género *Musa*), de origem asiática; a data da chegada a África é debatida (ver linha do tempo).' },
-  { img: 'ban-sorgo', leg: 'Campo de sorgo, cereal domesticado nas savanas africanas a norte do equador.' },
+  { img: 'ban-palmeira-dende', leg: 'Frutos da palmeira-de-dendê (*Elaeis guineensis*), fonte de óleo e de vinho de palma (fotografia no Equador).' },
+  { img: 'ban-sorgo', leg: 'Campo de sorgo (fotografado nas Filipinas), cereal domesticado nas savanas africanas a norte do equador.' },
   { img: 'ban-milheto', leg: 'Milheto-pérola, cereal das savanas e do Sael, resistente à seca.' },
   { img: 'ban-ankole', leg: 'Gado de Ankole, de grandes cornos, criado na região dos Grandes Lagos (Uganda, Ruanda e Burundi).' },
   'O **comércio** a curta e a longa distância completava a economia (ver «Rotas e comércio»). As formas de riqueza eram o gado, o ferro, o cobre e as pessoas (parentes, dependentes), e não o dinheiro tal como o concebemos. No Reino do Congo, por exemplo, a moeda eram conchas e tecidos de ráfia (ver a página do **Congo**).',
   { h: '5. Línguas e escrita' },
   'As línguas bantu são **aglutinantes**: juntam prefixos e sufixos a uma raiz para formar palavras e frases. As sílabas são, em geral, abertas (consoante mais vogal: *ma-ta-ba-la*), o que lhes dá um som muito característico, e a maioria tem **tons** (a altura da voz distingue significados). A característica mais marcante é o sistema de **classes nominais**: todos os nomes pertencem a uma «classe», marcada por um **prefixo**, e as palavras que se ligam ao nome (adjetivos, verbos, pronomes) **concordam** com ela. Em muitas línguas há de 10 a 20 classes, geralmente em pares singular/plural.',
-  { img: 'ban-bleek', leg: 'Wilhelm Bleek (1827 – 1875), filólogo alemão que propôs o termo «bantu» para este grupo de línguas.' },
+  { img: 'ban-bleek', leg: 'Túmulo de Wilhelm Bleek (1827 – 1875), no cemitério de Wynberg, Cidade do Cabo: filólogo alemão que propôs o termo «bantu» para este grupo de línguas.' },
   { tabela: { cab: ['Classe (par)', 'Prefixos (suaíli)', 'Sentido típico', 'Exemplo (suaíli)'], linhas: [
     ['1 / 2', 'm- / wa-', 'Pessoas', 'mtu / watu, «pessoa / pessoas»'],
     ['3 / 4', 'm- / mi-', 'Árvores, plantas, coisas «vivas»', 'mti / miti, «árvore / árvores»'],
@@ -214,7 +210,7 @@ const sociedade = [
   'Poucos têxteis se conservam. Pelos relatos e pela etnografia, vestia-se pele, **casca de árvore batida** (*tapa*; no Uganda, ainda hoje), **fibras de ráfia** na bacia do Congo e algodão onde havia. Os adornos incluíam **contas** de casca de ovo de avestruz e de conchas, depois contas de vidro vindas do Índico, pulseiras de **ferro** e de **cobre**, penteados e **escarificações** (cortes decorativos na pele). A cerâmica era decorada com impressões de pente, de cordas e de fossetas, e os arqueólogos usam estes estilos para distinguir as comunidades.',
   { h: '9. Música, dança e jogos' },
   'A música é um dos traços mais fortes da herança bantu. Os instrumentos mais comuns eram os **tambores**, os **chocalhos**, os **sinos de ferro**, os **xilofones** e os **lamelofones** (como a **mbira**, com lâminas de metal que se dedilham). As músicas organizam-se em **ritmos sobrepostos** (polirritmia), em padrões de resposta entre solista e coro, e em danças ligadas a ciclos agrícolas, a funerais e à iniciação. Os **xilofones de Moçambique** (*timbila*, dos Chopi) são Património Imaterial da UNESCO. A idade exata de cada instrumento é incerta; os mais antigos documentados em contexto datam de séculos recentes.',
-  { img: 'ban-mbira', leg: 'Mbira, lamelofone tradicional da região do Zimbabué.' },
+  { img: 'ban-mbira', leg: 'Esquema das lâminas de uma mbira, lamelofone tradicional da região do Zimbabué (cada cor corresponde a uma nota).' },
   'Os **jogos de semeadura** (tipo *mancala*, como o *bao* da África oriental) são comuns entre muitos povos bantu; a sua antiguidade, porém, é debatida.',
   { h: '10. Metalurgia, olaria e técnica' },
   'O **ferro** é a técnica que mais define a imagem tradicional dos bantu. Fazia-se por **redução direta**: o minério e o carvão de madeira eram aquecidos num forno de argila (de chaminé), com ar soprado por **foles** e por **tubos de argila** (*tuyères*), até se formar uma massa porosa de ferro (a *bloom*), que se batia depois na forja para tirar a escória. Os produtos eram **enxadas**, **machados**, **facas**, pontas de **lança** e de **flecha**, e adornos. O ofício estava cheio de **ritos**: muitas sociedades associavam a fundição ao nascimento e à fertilidade, com regras sexuais e tabus para o ferreiro e o forno, e liam a forja como uma metáfora do poder.',
@@ -270,14 +266,14 @@ const legado = [
   { h: 'Arte rupestre' },
   'A arte rupestre da África central e austral conta-se entre as maiores do mundo, mas **não é só dos bantu**. Em muitos abrigos há camadas de épocas e de autores diferentes: as pinturas **vermelhas** mais antigas são, em geral, de **caçadores-recoletores** (Twa, San), e as **brancas**, mais recentes, de **agricultores** de língua bantu. O exemplo clássico é **Chongoni**, no Malawi: 127 sítios, Património Mundial (2006), com pinturas vermelhas dos caçadores Twa e pinturas brancas dos agricultores Chewa, ligadas à **iniciação** das raparigas e ao culto da chuva, e ainda hoje usadas em cerimónias. Na região central de África há outros estilos, como a chamada «arte esquemática», de círculos, linhas e figuras abstratas.',
   { img: 'ban-chongoni', leg: 'Pinturas rupestres de Chongoni, Malawi (Património Mundial, 2006).' },
-  { img: 'ban-tsodilo', leg: 'Pintura rupestre nas colinas de Tsodilo, Botsuana, sobretudo obra de caçadores-recoletores san; exemplo da diversidade da arte rupestre africana.' },
+  { img: 'ban-tsodilo', leg: 'As colinas de Tsodilo, no Botsuana, com milhares de pinturas rupestres, sobretudo obra de caçadores-recoletores san; exemplo da diversidade da arte rupestre africana.' },
   { img: 'ban-pintor-rupestre', leg: 'Uma pintora a decorar um abrigo rochoso com argila branca, c. 1500 d.C.; reconstituição conjetural. Ilustração gerada por IA.' },
   { h: 'Arquitetura' },
   'A arquitetura da expansão é feita de materiais perecíveis (madeira, barro, capim), pelo que o que sobrou são sobretudo **pavimentos de barro cozido**, fossos, fornos e **muros de pedra** das fases posteriores. A grande tradição de **construção em pedra seca** da África austral (Mapungubwe, Grande Zimbabué, Khami) pertence a sociedades de língua bantu da Idade do Ferro Tardia, e vem descrita nas páginas respetivas. As ruínas do Grande Zimbabué foram atribuídas durante décadas a fenícios ou à rainha de Sabá por quem recusava admitir uma origem africana, uma ideia falsa, desmentida pela arqueologia.',
   { img: 'ban-great-zimbabwe', leg: 'Muralhas do Grande Zimbabué (séculos XI – XV); ver a página própria.' },
   { h: 'Referências cruzadas' },
   'Três grandes histórias nascidas desta herança têm página própria neste projeto, e não se repetem aqui: o **Grande Zimbabué** (planalto do Zimbabué; o ouro, a pedra e o Índico), o **Reino do Congo** (o baixo Congo, o contacto com Portugal e o tráfico) e as **Cidades-Estado Suaílis** (a costa oriental, entre o Índico e o interior). A **Cultura Nok**, no centro da Nigéria, tem também página própria, mas é só um contexto: não há prova de ligação direta aos falantes de bantu.',
-  { img: 'ban-mbanza-kongo', leg: 'Mbanza Kongo, Angola, local da capital do Reino do Congo (Património Mundial, 2017); ver a página própria.' },
+  { img: 'ban-mbanza-kongo', leg: 'Gravura da capital do Reino do Congo, Mbanza Kongo (São Salvador), em 1668; ver a página própria.' },
   { img: 'ban-kilwa', leg: 'Ruínas de Kilwa Kisiwani, Tanzânia, cidade suaíli medieval (Património Mundial); ver a página própria.' },
   { h: 'Música e dança' },
   'O legado musical é, talvez, o mais vivo: os ritmos sobrepostos e as respostas entre solista e coro, os tambores, os xilofones e as mbiras estão no coração de muita música africana e, por via da diáspora, do jazz, do samba, da rumba e de outros estilos americanos. As ligações são reais, mas complexas, e não se podem reduzir a uma só origem.',
@@ -340,6 +336,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

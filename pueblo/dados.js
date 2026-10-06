@@ -1,5 +1,6 @@
 // POVOS PUEBLO ANCESTRAIS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Datas aproximadas, a partir da cronologia por anéis de árvores (dendrocronologia) e do radiocarbono; as «fases» (Basketmaker, Pueblo I–III) são uma classificação dos arqueólogos (Conferência de Pecos, 1927), não nomes que o povo desse tempo usasse. a.C./d.C.
 // Imagens: cada {img:'id'} procura o ficheiro  pueblo/img/id.jpg  (ver IMAGENS_PUEBLO.md para a lista e os prompts).
 
@@ -8,7 +9,7 @@ const visao = [
     'Os **Povos Pueblo ancestrais** (em inglês, *Ancestral Pueblo peoples* ou *Ancestral Puebloans*) foram as comunidades agricultoras que, durante cerca de treze séculos, viveram na região dos **Quatro Cantos** (*Four Corners*), o ponto onde se encontram os atuais estados norte-americanos do **Novo México, Arizona, Utah e Colorado**. Em termos clássicos, a sua história corre desde o **Basketmaker** (c. 100 d.C., na cronologia tradicional; os arqueólogos recuam hoje as primeiras aldeias agrícolas muito mais atrás) até c. **1300 d.C.**, quando as grandes povoações do planalto do Colorado foram deixadas. Mas não é uma história que acabe aí: os seus descendentes vivem hoje nos **Pueblos** do Novo México e do Arizona, entre eles os **Hopi**, os **Zuni**, os **Acoma** e as povoações do **Rio Grande**.',
     'Cultivavam **milho, feijão e abóbora**, criaram **perus**, fizeram cestaria e cerâmica de grande beleza, e construíram em pedra e adobe aldeias de muitos andares, as «casas grandes» e as aldeias nas falésias. O seu momento de maior brilho foi o **Chaco Canyon** (c. 850 – 1140), com edifícios monumentais como o **Pueblo Bonito**, uma rede de **estradas** e alinhamentos com o Sol e a Lua; depois, no século XIII, vieram as povoações de **Mesa Verde**, escavadas nas falésias. Uma sequência de **secas** e de mudanças sociais levou as pessoas a mudarem-se para sul e para leste, em direção a rios e a nascentes mais seguros. Não «desapareceram»: **mudaram de sítio** e continuaram.'
   ] },
-  { img: 'pue-mapa-sudoeste', leg: 'Mapa do sudoeste dos Estados Unidos, com a região dos Quatro Cantos, o coração do mundo Pueblo ancestral.' },
+  { img: 'pue-mapa-sudoeste', leg: 'Habitações na falésia em Spruce Tree Point, Mesa Verde (Colorado): casas de pedra dos Pueblo ancestrais sob uma abóbada de arenito.' },
   { caixa: 'Um nome que se evita: «Anasazi»', texto: 'Durante todo o século XX, os livros chamaram a estes povos **«Anasazi»**. A palavra vem do **navajo** (*Anaasází*) e costuma traduzir-se por «antepassados dos inimigos» ou «antigos inimigos»; os Navajo chegaram à região séculos depois da partida dos construtores de Mesa Verde. Os descendentes (Hopi, Zuni e outros Pueblos) consideram o termo **ofensivo** e inadequado, porque lhes foi dado por um povo vizinho e não pela sua própria língua, e por isso a arqueologia atual prefere **«Ancestral Pueblo»** (ou «Pueblo ancestral»). Cada comunidade tem, aliás, os seus nomes próprios para os antepassados: os Hopi dizem *Hisatsinom*, «povo de há muito tempo». É por isso que neste projeto se usa «Ancestral Pueblo», e não «Anasazi».' },
   { h: 'Onde ficava' },
   'O território é o do **planalto do Colorado**: uma paisagem de **mesas** (planaltos de topo plano), de **canhões** profundos e de **semi-deserto**, a uma altitude de cerca de 1500 a 2300 m, com chuvas escassas e muito irregulares. Os rios principais são o **San Juan**, o **Colorado** e o **Rio Grande**, e os afluentes sazonais (*washes*) só correm depois das chuvas. Parece uma terra pouco amiga da agricultura, e é nisso que está o espanto: foi com **água de chuva e de escorrência**, com solos bem escolhidos e com muito conhecimento do clima que estas comunidades sustentaram milhares de pessoas.',
@@ -59,7 +60,6 @@ const linha = [
     { d: 'c. 1000 – 1125 d.C.', t: 'O auge da construção', x: 'Entre cerca de 1000 e 1125 constrói-se o essencial dos edifícios do Chaco: **Pueblo Bonito**, **Chetro Ketl**, **Pueblo Alto**, **Kin Kletso**, **Pueblo del Arroyo**. Foram necessárias cerca de **200 000 árvores** (pinheiros e abetos), trazidas a pé, por homens e mulheres, de serras como as **Chuska**, a mais de 70 km (as vigas são hoje datadas por anéis). A população residente, segundo muitos autores, era bastante pequena, e a maioria das pessoas apareceria apenas em ocasiões de festa e de peregrinação (o tema é debatido).' },
     { d: 'c. 1076 d.C.', t: 'Chimney Rock', x: 'Em **Chimney Rock** (sul do Colorado) constrói-se, segundo os anéis das vigas, uma grande casa em cima de um morro, em frente de dois pilares de rocha. Por essa época ocorreu um **lunistício máximo** (extremo do ciclo lunar de 18,6 anos): vista da grande casa, a Lua nasce então entre os pilares. A coincidência tem sido apontada por vários estudiosos como intencional (debatido).' },
   ] },
-  { img: 'pue-chimney-rock', leg: 'Os dois pilares de rocha de Chimney Rock, no Colorado, sítio periférico do mundo chacoano.' },
   { linha: [
     { d: 'c. 1100 – 1125 d.C.', t: 'Aztec Ruins', x: 'A cerca de 90 km a norte do Chaco, no rio Animas, constrói-se um grande edifício que os colonos do século XIX, enganados, chamaram «Aztec» (nada tem a ver com os Astecas do México). Será, mais tarde (séculos XII e XIII), um centro importante do mundo Pueblo, com grandes kivas e uma **Grande Kiva** reconstruída no século XX.' },
     { d: 'c. 1130 – 1180 d.C.', t: 'Seca e fim do Chaco como centro', x: 'Os anéis das árvores mostram, a partir de c. 1130, uma **seca prolongada**, de cerca de meio século. A construção monumental no Chaco pára por volta de 1140 e, nas décadas seguintes, a população deixa o canhão, em direções diversas. A causa não terá sido só o clima: houve também mudanças políticas e religiosas, e movimentos para regiões com mais água (discutido).' },
@@ -73,7 +73,7 @@ const linha = [
     { d: '1540', t: 'Chegam os espanhóis', x: 'A expedição de **Francisco Vázquez de Coronado** chega ao sudoeste à procura das «Sete Cidades de Cíbola», e encontra, em vez de ouro, as aldeias dos **Zuni**, a começar por Hawikuh. É o primeiro contacto prolongado entre Europeus e Pueblos. Em 1598 Juan de Oñate funda a colónia do Novo México, e em 1599 destrói a povoação de Acoma, depois de um confronto violento.' },
     { d: '1680', t: 'A Revolta dos Pueblos', x: 'Perante o trabalho forçado, a perseguição religiosa e a fome, os Pueblos revoltam-se em conjunto, sob a liderança de **Popé**, de San Juan Pueblo (hoje Ohkay Owingeh), e expulsam os espanhóis do Novo México. É considerada a revolta indígena mais bem-sucedida na América do Norte colonial. Os espanhóis regressam em 1692, em 1693 e depois, mas as comunidades conservam a sua religião e as suas línguas.' },
   ] },
-  { img: 'pue-pueblo-revolt', leg: 'Representação da Revolta dos Pueblos de 1680, no Novo México.' },
+  { img: 'pue-pueblo-revolt', leg: 'A Revolta dos Pueblos de 1680, em mural de Loren Mozley (1936), Albuquerque, Novo México.' },
   { img: 'pue-seca-migracao', leg: 'Famílias a deixar uma aldeia do planalto do Colorado, séc. XIII; reconstituição conjetural. Ilustração gerada por IA.' },
   { linha: [
     { d: '1849', t: 'Os primeiros registos científicos', x: 'O tenente **James H. Simpson**, do exército norte-americano, visita o Chaco Canyon durante uma expedição contra os Navajo e descreve as ruínas, com desenhos de Richard Kern. O interesse dos viajantes e dos colecionadores cresce, e muitos objetos são levados.' },
@@ -82,7 +82,6 @@ const linha = [
     { d: '1921 – 1929', t: 'Judd, Pecos e os anéis das árvores', x: 'A **National Geographic Society** financia a escavação do Pueblo Bonito (Neil Judd, 1921–1927). Em 1927, a **Conferência de Pecos**, reunida por Alfred V. Kidder, propõe a classificação de Basketmaker a Pueblo. O astrónomo **Andrew E. Douglass**, com vigas recolhidas pelas expedições, data as ruínas pelos anéis das árvores e, em 1929, uma viga carbonizada de Show Low (Arizona) fecha a sequência: pela primeira vez, as ruínas do sudoeste têm datas ao ano.' },
     { d: '1977', t: 'O «punhal de sol»', x: 'A artista **Anna Sofaer** repara em Fajada Butte, no Chaco, em feixes de luz que, junto de duas espirais gravadas na rocha, marcam o solstício e o equinócio: o **Sun Dagger** (punhal de sol). As lajes de pedra que formavam o efeito moveram-se desde então e o local está fechado ao público para o proteger.' },
   ] },
-  { img: 'pue-wetherill', leg: 'Richard Wetherill (1858–1910), explorador e escavador do Mesa Verde e do Chaco.' },
   { img: 'pue-fajada-butte', leg: 'Fajada Butte, no Chaco Canyon, onde se encontra o Sun Dagger.' },
   { linha: [
     { d: '1978 – 1987', t: 'Património Mundial', x: 'Mesa Verde é inscrito na lista do Património Mundial da UNESCO em **1978**, e o **Chaco Culture** (com Aztec Ruins e outros sítios) em **1987**.' },
@@ -108,7 +107,7 @@ const mapa = [
     ['Sand Canyon Pueblo', 'Sudoeste do Colorado', 'c. 1250 – 1280', 'Grande aldeia murada, dos últimos anos antes do abandono'],
     ['Acoma, Taos, Zuni, Hopi…', 'Novo México e Arizona', 'séc. XIII até hoje', 'Pueblos atuais; continuidade viva']
   ] } },
-  { img: 'pue-mapa-chaco', leg: 'Esquema do Chaco Canyon e das suas estradas.' },
+  { img: 'pue-mapa-chaco', leg: 'Ruínas no Chaco Canyon, Novo México (Património Mundial): paredes de arenito de grandes edifícios.' },
   { h: 'Chaco Canyon' },
   'O **Chaco Canyon** fica num vale seco e árido do noroeste do Novo México, sem árvores grandes e com apenas cerca de 22 cm de chuva por ano, e mesmo assim foi, durante cerca de três séculos (c. 850 – 1140), o centro do mundo Pueblo. Ao longo do canhão ergueram-se **15 grandes edifícios** de pedra: o **Pueblo Bonito** (com pelo menos 650 salas, em quatro andares, e em forma de «D», com uma grande praça e dezenas de kivas), o **Chetro Ketl**, o **Pueblo del Arroyo**, o **Una Vida**, o **Kin Kletso** e outros. Cada parede é de **núcleo e revestimento**: um miolo de entulho e barro entre duas faces de pedras cuidadosamente lavradas, desenhadas, ao que parece, a partir de um plano antes de se construir.',
   'A **Casa Rinconada**, a maior grande kiva do canhão, com cerca de 19 m de diâmetro, está fora das grandes casas. Na orla do vale, **Pueblo Alto** olha para o norte, para o início da **Grande Estrada do Norte**. A sul e a nascente erguem-se as mesas e, ao lado do canhão, **Fajada Butte**, onde está o Sun Dagger.',
@@ -123,8 +122,7 @@ const mapa = [
   { img: 'pue-aztec-kiva', leg: 'Grande Kiva reconstruída em Aztec Ruins, Novo México.' },
   { h: 'Mesa Verde' },
   '**Mesa Verde** («mesa verde» em espanhol) é um planalto de arenito no sudoeste do Colorado, cortado por canhões. Foi habitado durante cerca de **setecentos anos**, e há ali mais de **5000 sítios**, dos quais cerca de **600 são habitações em falésia**. No século XIII, as pessoas passaram dos topos das mesas para os **nichos** na rocha, protegidos da chuva e do sol, e construíram em pedra, argamassa e madeira. **Cliff Palace**, o maior, tem cerca de **150 salas e 23 kivas**, e terá sido a casa de cerca de cem a cento e vinte e cinco pessoas (a população é uma estimativa). **Spruce Tree House**, com cerca de 130 salas, é uma das mais bem conservadas; **Balcony House**, de acesso por escadas e túneis, é das mais fáceis de defender.',
-  { img: 'pue-cliff-palace', leg: 'Cliff Palace, Mesa Verde, Colorado, construído sobretudo no século XIII.' },
-  { img: 'pue-spruce-tree', leg: 'Spruce Tree House, Mesa Verde.' },
+  { img: 'pue-cliff-palace', leg: 'Cliff Palace, Mesa Verde, Colorado, numa fotografia de 1891; foi construído sobretudo no século XIII.' },
   { img: 'pue-balcony-house', leg: 'Balcony House, Mesa Verde, com o seu acesso por escadas de madeira e túnel.' },
   { h: 'Hovenweep, Cedar Mesa e Kayenta' },
   '**Hovenweep**, na fronteira entre o Utah e o Colorado, tem torres de pedra de formas variadas (quadradas, redondas, em D), junto a nascentes e canhões: o nome é uma palavra ute, que significa «vale deserto». Em **Cedar Mesa** (sudeste do Utah) há milhares de sítios, da fase Basketmaker à Pueblo III, entre os quais cestos e sandálias que a aridez conservou. No **Canyon de Chelly**, no Arizona, e em **Betatakin** e **Keet Seel** (Navajo National Monument), as aldeias da região **Kayenta** estão em nichos de falésia, com as suas casas de pedra e vigas ainda visíveis.',
@@ -162,7 +160,6 @@ const sociedade = [
   ] } },
   { h: 'As kivas e o céu' },
   'A **kiva** é, entre os Pueblos de hoje, um espaço de oração, de ensino e de reuniões. As antigas kivas têm **banco** em redor, **lareira**, um canal de ventilação e o **sipapu**; as **grandes kivas** (como a Casa Rinconada, com 19 m, ou a de Aztec) acolhiam cerimónias de muita gente. Os alinhamentos com o Sol e a Lua foram objeto de muita investigação: em **Fajada Butte**, o Sun Dagger marcava solstícios e equinócios; no **Pueblo Bonito** e na **Casa Rinconada** têm-se proposto alinhamentos solares e lunares; em **Chimney Rock**, a Lua, no lunistício máximo (ciclo de 18,6 anos), nasce entre os dois pilares. Alguns destes alinhamentos são largamente aceites, outros são debatidos, e é preciso lembrar que a arquitetura segue também a forma do terreno.',
-  { img: 'pue-sun-temple', leg: 'Sun Temple, Mesa Verde: edifício em forma de D, do séc. XIII, de função cerimonial.' },
   { img: 'pue-chimney-lunar', leg: 'Observadores a seguir o nascer da Lua entre os pilares de Chimney Rock, c. 1076; reconstituição conjetural. Ilustração gerada por IA.' },
   { h: '4. Economia e agricultura' },
   'A economia assentava na **agricultura de sequeiro**: **milho** (muitas variedades, de cores diferentes), **feijão** e **abóbora**, e também algodão nas zonas mais quentes. Para cultivar com 20 a 40 cm de chuva por ano, as comunidades escolhiam campos junto à foz de cursos de água secos, construíam **pequenas barragens**, **socalcos**, **valas de derivação** e **jardins de pedras** (*grid gardens*). Em Mesa Verde havia **reservatórios** de água; no Chaco, **canais** que levavam a água de escorrência das mesas. Os grãos eram guardados em **celeiros** e em cistas, para os anos maus. A caça (veado, coelho, antílope) e a recolha (pinhões, iúca, ervas) completavam a dieta, e os **perus** eram criados em cercados.',
@@ -170,8 +167,7 @@ const sociedade = [
   { img: 'pue-milho', leg: 'Milho azul, uma das muitas variedades cultivadas nos Pueblos.' },
   { h: 'Comércio e bens de prestígio' },
   'O comércio de longa distância (ver «Rotas e comércio») fez circular **turquesa, conchas, araras e cobre**. No Pueblo Bonito foram encontrados dezenas de esqueletos de **araras** (em enterramentos e em salas), e as suas penas coloridas tinham uso cerimonial. As vasilhas cilíndricas com resíduos de teobromina (o composto do cacau) são o indício mais claro de contactos com o México.',
-  { img: 'pue-arara', leg: 'Arara-vermelha (Ara macao), ave tropical cujos esqueletos foram encontrados no Pueblo Bonito.' },
-  { img: 'pue-turquesa', leg: 'Turquesa em bruto, a pedra preciosa mais característica do mundo chacoano.' },
+  { img: 'pue-arara', leg: 'Arara-vermelha (*Ara macao*), ave tropical, fotografada em Copán, Honduras: esqueletos desta ave foram encontrados no Pueblo Bonito.' },
   { h: '5. Escrita e comunicação' },
   'Os Pueblos ancestrais **não tinham escrita**. O conhecimento passava por **tradição oral**, por canto e por dança, e por **símbolos** gravados ou pintados na rocha (petroglifos e pictogramas): espirais, figuras humanas, animais, mãos, sinais de caça e de clã, imagens de katsinas. Os significados são, em grande parte, **conhecidos apenas pelos descendentes**; os arqueólogos que os «leem» sem os consultar arriscam-se a erros graves. As histórias dos clãs, dos locais e das migrações conservam-se, ainda hoje, na boca dos mais velhos.',
   { h: '6. Casa e família' },
@@ -190,7 +186,7 @@ const sociedade = [
   { h: '9. Cerâmica, cestaria e artes' },
   'A **cestaria** do Basketmaker já era de qualidade extrema, e a **cerâmica** apareceu por volta do século V. Primeiro, vasos cinzentos, depois **pintados a preto sobre branco**, com desenhos geométricos de grande precisão (linhas, triângulos, escadas, espirais), e **cerâmica corrugada** para cozinha. No Chaco e em Mesa Verde fizeram-se **canecas**, jarros e **tigelas** de muitas formas. A **cultura Mimbres**, vizinha a sul (sudoeste do Novo México, c. 1000 – 1130), é célebre pelas suas tigelas pretas sobre branco com **figuras de animais e de pessoas**, muitas vezes enterradas com os mortos, com um pequeno furo no fundo; não eram Pueblos ancestrais dos Quatro Cantos, mas são um exemplo da riqueza artística da região.',
   { img: 'pue-ceramista', leg: 'Ceramista Pueblo ancestral a moldar um vaso com rolos de barro, séc. XII; reconstituição conjetural. Ilustração gerada por IA.' },
-  { img: 'pue-cerami-mesa-verde', leg: 'Cerâmica pintada a preto sobre branco do estilo Mesa Verde, séc. XII–XIII.' },
+  { img: 'pue-cerami-mesa-verde', leg: 'Fragmento de cerâmica pintada a preto sobre branco, em Mesa Verde (estilo desta tradição, séc. XII–XIII).' },
   { img: 'pue-mimbres', leg: 'Tigela Mimbres, preto sobre branco, c. 1000–1130, sudoeste do Novo México (cultura vizinha).' },
   { h: '10. Música, jogos e festas' },
   'Há **flautas** de osso e de madeira, **chocalhos** de cabaça e de casco, **tambores**, **trombetas de concha** (do mar!) e **sinos de cobre** vindos do México. As danças ocupam um lugar central: acompanham o calendário agrícola e invocam a chuva, como nos dias de hoje. Havia também jogos de pernas, de bola e de dados de madeira e de osso. Em Wupatki (Arizona, cultura Sinagua, vizinha), há mesmo um campo de jogo de bola de estilo mesoamericano, sinal de influências do sul.',
@@ -244,8 +240,8 @@ const legado = [
   { h: 'Arte' },
   'A arte dos Pueblos ancestrais é sobretudo **funcional e simbólica**: cerâmica pintada com padrões geométricos, cestaria, joias de turquesa e de concha, e **arte rupestre** com espirais, mãos, figuras humanas e animais. A pintura mural nas kivas, mais tardia (séculos XIII–XV, por exemplo em Kuaua e em Awat’ovi), mostra figuras ligadas aos katsinas. A cerâmica de **Maria Martinez** e dos ceramistas de Acoma, de Zia, de Santa Clara e de Hopi, que se vende hoje em museus e galerias de todo o mundo, é uma continuidade direta dessa tradição.',
   { img: 'pue-taos', leg: 'Taos Pueblo, Novo México, habitado há cerca de mil anos, Património Mundial da UNESCO (1992).' },
-  { img: 'pue-walpi', leg: 'Walpi, aldeia hopi na Primeira Mesa, Arizona; o sítio atual data do final do século XVII.' },
-  { img: 'pue-zuni', leg: 'Zuni Pueblo, Novo México, uma das maiores comunidades Pueblo.' },
+  { img: 'pue-walpi', leg: 'Casa hopi em Walpi, Arizona, pintura de Carl Borg (1879–1947), fotografada; o sítio atual data do final do século XVII.' },
+  { img: 'pue-zuni', leg: 'Diorama da vida numa aldeia de Zuni Pueblo, Novo México (Milwaukee Public Museum); Zuni é uma das maiores comunidades Pueblo.' },
   { h: 'Arquitetura' },
   'Os Pueblos ancestrais deixaram **blocos de habitação de vários andares**, com terraços e kivas, e **edifícios monumentais** como o Pueblo Bonito, que se mantiveram, em pé, quase um milénio sem manutenção. A sua influência é visível no **Pueblo Revival** do século XX, estilo que domina Santa Fé e Albuquerque, e no uso do adobe e das vigas como símbolo regional.',
   { h: '«Mistério» e «desaparecimento»: um mito' },
@@ -292,6 +288,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

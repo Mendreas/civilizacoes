@@ -1,5 +1,6 @@
 // POLINÉSIOS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Datas na «cronologia média»; a cronologia do povoamento da Polinésia Oriental é debatida (cronologia «curta», por radiocarbono, vs. datas mais antigas). Tradições orais (Kupe, Hotu Matuʻa, Māui) são identificadas como tal. a.C./d.C.
 // Imagens: cada {img:'id'} procura o ficheiro  polinesios/img/id.jpg  (ver IMAGENS_POLINESIOS.md para a lista e os prompts).
 
@@ -12,7 +13,6 @@ const visao = [
   { h: 'Onde viviam' },
   'A Polinésia («muitas ilhas», em grego) ocupa o **Pacífico central e oriental**: de um lado, os arquipélagos de **Tonga, Samoa, Tuvalu** e **Wallis e Futuna**, que formam a Polinésia Ocidental; do outro, os da **Polinésia Oriental**, como as **Ilhas Cook, as Ilhas da Sociedade** (Taiti, Raiatea), as **Marquesas, Tuamotu, Mangareva** e as ilhas Austrais. Nas pontas do triângulo estão o **Havai** (a norte), a **Nova Zelândia** (a sudoeste) e **Rapa Nui** (a sueste), a ilha habitada mais isolada do mundo, a cerca de 3500 km da costa do Chile.',
   'Quase tudo é **mar**: as terras emersas somam uma fração minúscula do triângulo. Há ilhas vulcânicas altas, com solos férteis e rios (Taiti, Havai), e **atóis** de coral, pobres em água doce e em terra, onde se vive do coco, do peixe e do que se planta com cuidado. Cada ilha é um pequeno mundo, e a viagem entre mundos foi, durante séculos, a forma normal de manter laços de família, de comércio e de poder. A Nova Zelândia é a exceção: duas grandes ilhas de clima temperado, com florestas, montanhas e fauna própria.',
-  { img: 'pol-canoa-outrigger', leg: 'Canoa de balancim (outrigger), a embarcação mais comum nas ilhas do Pacífico, aqui numa lagoa tropical.' },
   { h: 'Quando existiram' },
   'A cronologia é **debatida**, sobretudo para a Polinésia Oriental. Durante décadas aceitaram-se datas muito antigas (no primeiro milénio d.C., para as Marquesas e o Havai); desde 2010, a datação por radiocarbono de amostras de vida curta (sementes, cascas de frutos) sugere uma «cronologia curta»: toda a Polinésia Oriental povoada depois de c. **1000 d.C.**, e a Nova Zelândia por volta de **1250–1300**. É a leitura mais aceite hoje, mas continua em discussão.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -67,11 +67,11 @@ const linha = [
     { d: '1722', t: 'Roggeveen em Rapa Nui', x: 'O holandês **Jacob Roggeveen** chega à ilha no domingo de Páscoa, daí o nome «Ilha de Páscoa». Os seus relatos descrevem estátuas ainda de pé e uma população pequena.' },
     { d: '1769', t: 'Cook, Tupaia e a Nova Zelândia', x: 'Depois de **Samuel Wallis** (1767) e de **Bougainville** (1768), **James Cook**, na primeira viagem, observa o trânsito de Vénus no Taiti (3 de junho de 1769) e leva a bordo **Tupaia**, sacerdote e navegador de Raiatea, que desenha uma carta de dezenas de ilhas. Nos meses seguintes, Cook contorna e cartografa a Nova Zelândia.' },
   ] },
-  { img: 'pol-cook-retrato', leg: 'Retrato de James Cook (1728–1779), pintado por Nathaniel Dance, c. 1776.' },
+  { img: 'pol-cook-retrato', leg: 'Retrato de James Cook (1728–1779), pintado por John Webber, c. 1776 (National Portrait Gallery, Londres).' },
   { linha: [
     { d: '1778 – 1779', t: 'Cook no Havai e a sua morte', x: 'Cook chega ao Havai em janeiro de 1778. Regressa em janeiro de 1779 à baía de **Kealakekua** durante o festival do *Makahiki*, e é recebido com grande cerimónia. Uma disputa por um barco roubado degenera, a 14 de fevereiro de 1779, numa escaramuça em que Cook e quatro fuzileiros morrem.' },
   ] },
-  { img: 'pol-morte-cook', leg: 'A morte do capitão Cook em Kealakekua, 14 de fevereiro de 1779, segundo uma pintura da época (versão europeia do episódio).' },
+  { img: 'pol-morte-cook', leg: 'A morte do capitão Cook em Kealakekua, 14 de fevereiro de 1779, pintura de Johann Zoffany: versão europeia do episódio.' },
   { linha: [
     { d: '1795 – 1810', t: 'Kamehameha unifica o Havai', x: 'O chefe **Kamehameha**, da ilha do Havai, conquista as ilhas, com o auxílio de armas de fogo e de conselheiros europeus, e funda o **Reino do Havai** em 1810, quando o chefe de Kauaʻi aceita a sua autoridade.' },
     { d: '1819', t: 'A abolição do kapu no Havai', x: 'Morto Kamehameha, a rainha viúva **Kaʻahumanu** e o novo rei Liholiho (Kamehameha II) quebram publicamente o sistema do *kapu* ao comerem juntos, homens e mulheres. Meses depois chegam os primeiros missionários americanos (1820).' },
@@ -105,11 +105,11 @@ const mapa = [
   { img: 'pol-taputapuatea', leg: 'O marae de Taputapuatea, Raiatea, Ilhas da Sociedade; Património Mundial da UNESCO desde 2017.' },
   { h: 'Havai' },
   'O arquipélago do Havai (oito ilhas principais) é o ponto mais setentrional do triângulo, a cerca de 3900 km do continente mais próximo. Cada ilha tinha os seus chefes (*aliʻi*); a terra dividia-se em faixas, as **ahupuaʻa**, do cume da montanha ao recife, para que cada comunidade tivesse acesso a madeira, alimentos e peixe. Os templos eram os *heiau*, plataformas de pedra com estátuas de madeira. A ilha do Havai tem o vulcão **Kīlauea**, a casa da deusa **Pele**.',
-  { img: 'pol-kilauea', leg: 'O vulcão Kīlauea, no Havai, morada da deusa Pele na tradição havaiana.' },
+  { img: 'pol-kilauea', leg: 'O vulcão Kīlauea, no Havai, em imagem de satélite (mosaico Landsat): morada da deusa Pele na tradição havaiana.' },
   { h: 'Rapa Nui' },
   '**Rapa Nui** (Ilha de Páscoa), com apenas cerca de **164 km²**, está a mais de **3500 km** do Chile continental. Foi povoada por voltas dos séculos XII–XIII e ficou famosa pelos quase **mil moai**, estátuas monolíticas de pedra vulcânica talhadas na pedreira de **Rano Raraku** e transportadas por vezes por vários quilómetros para plataformas cerimoniais (*ahu*) à beira-mar. Os moai representam provavelmente antepassados importantes e olham, em geral, para o interior da terra, a proteger as comunidades. O sítio de **Orongo**, sobre o vulcão Rano Kau, foi o centro do culto do **Homem-Pássaro** (*tangata manu*), uma competição anual para recolher o primeiro ovo da andorinha-do-mar (a sua cronologia, a partir de c. século XVII, é debatida).',
   { img: 'pol-ahu-akivi', leg: 'Ahu Akivi, com sete moai voltados para o mar, no interior de Rapa Nui; a ilha é Património Mundial desde 1995.' },
-  { img: 'pol-orongo', leg: 'Orongo, sobre a cratera do Rano Kau, em Rapa Nui: o centro do culto do Homem-Pássaro.' },
+  { img: 'pol-orongo', leg: 'Cerimónia rapanui em Orongo, sobre a cratera do Rano Kau, em Rapa Nui: o centro do culto do Homem-Pássaro.' },
   { h: 'Aotearoa' },
   '**Aotearoa** («terra da longa nuvem branca», na tradição maori) é a maior massa de terra da Polinésia, com duas ilhas principais: a **Ilha do Norte** (*Te Ika-a-Māui*, «o peixe de Māui») e a **Ilha do Sul**. Os Maoris organizam-se em **iwi** (tribos), **hapū** (subtribos) e **whānau** (famílias alargadas). A paisagem tem fortalezas de colina (**pā**), terraços para o cultivo do *kūmara* e as **casas comunitárias** (*wharenui*) com madeira entalhada. Os Maoris contam a sua origem a partir de **Hawaiki**, e a ideia de uma «Grande Frota» de sete canoas, que muitos conhecem, é uma síntese tardia, do final do século XIX, de várias tradições, e não história linear.',
   { img: 'pol-casa-reuniao', leg: 'Casa comunitária maori (wharenui), com a fachada entalhada de madeira; local de reunião e de memória de uma comunidade.' },
@@ -146,7 +146,6 @@ const sociedade = [
   ] } },
   { img: 'pol-marae-ritual', leg: 'Cerimónia num marae das Ilhas da Sociedade, com sacerdotes, chefes e oferendas; cena imaginada. Ilustração gerada por IA.' },
   'Os templos eram, quase sempre, espaços **ao ar livre**: o **marae** (Taiti, Cook, Maori), o **heiau** (Havai) e o **ahu** (Rapa Nui, onde designa a plataforma dos moai) eram recintos de pedra, com plataformas, altares e estátuas. Os rituais incluíam oferendas de comida, danças e, em algumas ilhas (Taiti, Havai, Marquesas), em tempos de crise ou de guerra, **sacrifícios humanos**: a prática está atestada em relatos de europeus (Cook assistiu a um no Taiti, em 1777) e em tradições locais, mas a sua frequência varia e é difícil de medir.',
-  { img: 'pol-heiau-puukohola', leg: 'Puʻukoholā Heiau, na ilha do Havai, templo de pedra construído por Kamehameha em 1790–1791.' },
   { h: '4. Economia' },
   'A economia assentava na **agricultura**, na **pesca** e na troca. Os colonos trouxeram nas canoas as chamadas «**plantas de canoa**»: taro, inhame, árvore-do-pão, banana, cana-de-açúcar, coco, amoreira-do-papel (para o tapa) e kava, além de **porcos, cães e galinhas** (e, sem querer, o rato do Pacífico). Na Nova Zelândia, mais fria, só o *kūmara* e alguns inhames sobreviveram, por isso a caça, a pesca e a recolha de raízes de feto tiveram um papel maior.',
   'No **Havai** havia uma agricultura intensiva, com **terraços irrigados de taro** (*loʻi*) e **viveiros de peixe** (*loko iʻa*) de pedra, que produziam peixe em grande quantidade; muitos estão ainda em recuperação. A terra pertencia aos chefes, que a distribuíam, e o sistema das *ahupuaʻa* garantia a cada comunidade acesso a todos os recursos. Não havia **moeda**, nem metais, nem roda: a troca fazia-se por dádivas e redistribuição, e por circuitos de prestígio (esteiras e tapa em Samoa e Tonga).',
@@ -163,9 +162,9 @@ const sociedade = [
   { img: 'pol-umu-cena', leg: 'Preparação de um forno de terra (umu) numa praia polinésia, com pedras quentes e folhas de bananeira; cena imaginada. Ilustração gerada por IA.' },
   { h: '8. Vestuário, ornamentos e tatuagem' },
   'Os tecidos eram de **tapa**, uma casca batida da amoreira-do-papel, decorada com padrões estampados (*kapa* no Havai, *siapo* em Samoa), e de **esteiras** de pandano e linho. Os Maoris usavam capas de fibra de **linho-da-nova-zelândia** (*kākahu*), por vezes com penas. No Havai, os chefes vestiam mantos e capacetes de **penas** (*ʻahuʻula*), feitos com milhares de penas de aves, vermelhas e amarelas, um sinal máximo de estatuto.',
-  { img: 'pol-tapa', leg: 'Tapa, tecido de casca batida decorado com padrões, tradicional em toda a Polinésia.' },
+  { img: 'pol-tapa', leg: 'Tapa, tecido de casca batida, aqui um fragmento atribuído a Mauatua, a mulher polinésia de Fletcher Christian: técnica tradicional em toda a Polinésia.' },
   'A **tatuagem** é uma das artes mais importantes: a própria palavra *tattoo* vem do taitiano e do samoano **tatau**, registada por Joseph Banks e Cook em 1769. Os homens samoanos recebiam o **peʻa** (do ventre aos joelhos), as mulheres o *malu*; nas Marquesas, a tatuagem cobria quase todo o corpo; os Maoris faziam o ***tā moko***, não por picada, mas por **entalhe** com cinzéis de osso, deixando sulcos na pele. Os rostos tatuados de chefes maoris eram únicos e funcionavam como assinatura. É um processo doloroso, ritual e com significado de identidade; não é simples decoração.',
-  { img: 'pol-moko', leg: 'Retrato de um chefe maori com tā moko facial, séc. XIX.' },
+  { img: 'pol-moko', leg: 'Retrato de uma jovem maori com tā moko no queixo, pintado por Louis John Steele (séc. XIX).' },
   { img: 'pol-hei-tiki', leg: 'Hei-tiki, pendente maori de pounamu (jade da Nova Zelândia), símbolo de linhagem e de prestígio.' },
   { h: '9. Música, dança e jogos' },
   'A dança era uma forma de contar a história: o **hula** havaiano, a **ʻōteʻa** taitiana, a **siva** samoana, a **haka** maori. Esta última, hoje famosa nos jogos de râguebi, era uma dança de desafio e de boas-vindas, com gritos e gestos de força. Usavam-se **tambores** (*pahu* no Havai, *tōʻere* no Taiti), **flautas de nariz**, trombetas de concha e muita música cantada. O **ukulele** é uma invenção posterior: nasceu no Havai, em 1879, a partir de um instrumento português, o **cavaquinho**, trazido por emigrantes da Madeira.',
@@ -189,7 +188,7 @@ const sociedade = [
   { h: '12. Guerra' },
   'A guerra era frequente, sobretudo entre chefados rivais: a disputa de terra, de prestígio e de vingança. Combatia-se com **clavas** (*patu*, *mere*), lanças, fundas e, no Havai, com armas de dentes de tubarão e lutas corpo a corpo. Os Maoris construíam **pā**, fortalezas em colinas com paliçadas e fossos; as grandes canoas de guerra (*waka taua*) podiam levar mais de cem guerreiros. As canoas de guerra de duplo casco do Taiti formavam frotas de mais de uma centena, como Cook viu em 1774.',
   { img: 'pol-pa-reconstrucao', leg: 'Reconstrução de um pā maori, fortaleza de colina com paliçadas e terraços, séc. XVIII; cena imaginada. Ilustração gerada por IA.' },
-  { img: 'pol-waka-taua', leg: 'Waka taua, grande canoa de guerra maori, com a proa e a popa entalhadas.' },
+  { img: 'pol-waka-taua', leg: 'Waka taua, grande canoa de guerra maori, no desfile do Jubileu de Diamante no Tamisa (Londres, 2012).' },
   'Há provas arqueológicas e relatos europeus de **canibalismo ritual** de inimigos em algumas sociedades (Maoris, Marquesas, Fiji), um ato de guerra e de ritual, e não uma prática quotidiana; os relatos europeus foram por vezes exagerados. A chegada das **armas de fogo** mudou tudo: entre 1807 e 1837, as **guerras dos mosquetes** na Nova Zelândia, desencadeadas pela corrida às armas de fogo, causaram dezenas de milhares de mortes, e no Havai Kamehameha usou canhões e conselheiros europeus para unificar o reino.',
   { h: '13. Rapa Nui e o debate do «ecocídio»' },
   'Durante anos, a versão mais popular (de Jared Diamond, no livro *Colapso*, 2005) dizia que os habitantes de Rapa Nui destruíram a floresta de palmeiras para erguer moai, provocaram a fome e uma guerra e levaram a sociedade ao colapso: um «ecocídio». Hoje a tese está **fortemente contestada**. A arqueologia mostra que a floresta foi atingida, sobretudo, pelo **rato polinésio**, trazido nas canoas, que comia as sementes das palmeiras; os investigadores Terry Hunt e Carl Lipo propuseram que a população nunca foi enorme e se manteve estável. Em **2024**, um estudo de genomas antigos publicado na *Nature* (Moreno-Mayar e colegas, com 15 indivíduos) não encontrou sinais de uma quebra demográfica repentina antes do contacto europeu.',
@@ -221,7 +220,7 @@ const personalidades = [
   'Médico, político e antropólogo maori (Ngāti Mutunga), diretor do Museu Bishop em Honolulu. No livro *Vikings of the Sunrise* (1938) defendeu que os polinésios eram navegadores deliberados vindos da Ásia, e não náufragos, e usou a sua herança maori para estudar o Pacífico por dentro. Foi um dos primeiros investigadores polinésios com formação ocidental, e uma referência para os estudos modernos.',
   { h: 'Mau Piailug (1932 – 2010)' },
   'Mestre navegador de Satawal, nas Ilhas Carolinas (na Micronésia, e não na Polinésia), que mantinha viva a navegação tradicional. Em 1976 aceitou guiar a **Hōkūle’a** do Havai ao Taiti, sem instrumentos, e ensinou depois os havaianos a recuperar a técnica. É considerado o «pai» do renascimento da navegação polinésia.',
-  { img: 'pol-mau-piailug', leg: 'Mau Piailug (1932–2010), mestre navegador de Satawal, que guiou a Hōkūle’a em 1976.' },
+  { img: 'pol-mau-piailug', leg: 'Mau Piailug (1932–2010), mestre navegador de Satawal, durante uma cerimónia de navegação Pwo; guiou a Hōkūle’a em 1976.' },
   { h: 'Nainoa Thompson (n. 1953)' },
   'Navegador havaiano, aluno de Mau Piailug. Em 1980 navegou a Hōkūle’a de ida e volta entre o Havai e o Taiti, sem instrumentos, o primeiro havaiano a fazê-lo em séculos. Preside à Sociedade de Navegação Polinésia e liderou a viagem **Mālama Honua** (2014–2017), uma circum-navegação do planeta com uma mensagem de proteção do oceano.'
 ];
@@ -238,12 +237,11 @@ const legado = [
   ] },
   { h: 'Arte' },
   'A arte polinésia é, sobretudo, **escultura** (madeira e pedra), **tecido** (tapa, esteiras), **tatuagem** e **ornamento** (penas, conchas, jade). As esculturas de figuras humanas, os **tiki**, representam antepassados e deuses, e variam muito: as figuras de Rapa Nui são esbeltas, as marquesanas quadradas, as maoris cobertas de espirais. A arte maori de **entalhe** em madeira, osso e *pounamu* (como o **hei-tiki**) liga-se à genealogia e à identidade. Os mantos de penas havaianos são das obras têxteis mais notáveis do mundo.',
-  { img: 'pol-hula', leg: 'Dançarina de hula; a dança foi suprimida por missionários no século XIX e recuperada no reinado de Kalākaua (1874–1891).' },
   { h: 'Arquitetura' },
   'Sem cidades, a arquitetura polinésia é **cerimonial e doméstica**: os **marae**, **heiau** e **ahu** de pedra; os *langi* e o trilitão de Tonga; as **casas comunitárias** de entalhe maori; as **fortalezas pā**; as **casas de barco invertido** de Rapa Nui; e as **plataformas** de pedra com grandes moai. A engenharia hidráulica dos *loʻi* e dos viveiros de peixe do Havai também é uma forma de arquitetura da paisagem.',
   { h: 'A redescoberta e a recuperação' },
   'A ciência ocidental «descobriu» a Polinésia com Cook e os naturalistas Joseph Banks e Georg Forster, no século XVIII; o termo «Polinésia» foi criado em 1756 por Charles de Brosses, e Dumont d’Urville fixou em 1831 a divisão em Polinésia, Melanésia e Micronésia (uma classificação hoje criticada). No século XX, a arqueologia, a linguística e a genética reconstruíram o povoamento. Mas a recuperação mais importante foi cultural: o **renascimento havaiano** dos anos 1970, a **Hōkūle’a**, o ensino da língua havaiana e da língua maori, e a devolução de objetos sagrados e restos humanos por museus. O moai **Hoa Hakananai’a**, levado de Rapa Nui em 1868 e guardado no Museu Britânico, é objeto de um pedido de restituição pela comunidade de Rapa Nui.',
-  { img: 'pol-te-papa', leg: 'Museu Te Papa Tongarewa, em Wellington, Nova Zelândia, com grandes coleções de arte e de cultura maori e do Pacífico.' },
+  { img: 'pol-te-papa', leg: 'Waka de casco duplo (catamarã) exposta no museu Te Papa Tongarewa, em Wellington, Nova Zelândia.' },
   { h: 'Onde visitar' },
   { lista: [
     '**Parque Nacional Rapa Nui (Chile):** moai, Rano Raraku, Ahu Tongariki, Orongo; Património Mundial (1995).',
@@ -288,6 +286,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

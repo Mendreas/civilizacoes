@@ -152,7 +152,7 @@ export function iniciar(d) {
     $('etiqueta').textContent = t.civ;
     $('nome').textContent = d.nome[lang];
     $('periodo').textContent = d.periodo[lang];
-    const em = $('emblema'); if (d.emblema) { em.src = d.emblema; em.alt = d.nome[lang]; em.style.display = 'block'; } else em.style.display = 'none';
+    const em = $('emblema'); if (d.emblema) { em.onerror = () => { em.style.display = 'none'; }; em.src = d.emblema; em.alt = d.nome[lang]; em.style.display = 'block'; } else em.style.display = 'none';
     $('l-pt').setAttribute('aria-pressed', lang === 'pt');
     $('l-en').setAttribute('aria-pressed', lang === 'en');
 

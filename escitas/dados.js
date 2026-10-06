@@ -1,5 +1,6 @@
 // CITAS (ESCITAS) — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 // Datas na «cronologia média». Quase tudo o que se sabe sobre a vida dos citas vem de duas fontes muito desiguais: os túmulos (kurgans), que são factos, e Heródoto (Livro IV das *Histórias*, c. 430 a.C.), que é uma fonte preciosa mas de segunda mão, e que mistura observação, boatos e lendas. Os citas não deixaram literatura própria. a.C./d.C.
 // Imagens: cada {img:'id'} procura o ficheiro  escitas/img/id.jpg  (ver IMAGENS_ESCITAS.md para a lista e os prompts).
 
@@ -8,11 +9,11 @@ const visao = [
     'Os **citas** (ou **escitas**; em grego *Skythai*, em persa *Saka*) foram um conjunto de povos **nómadas de língua iraniana** que dominaram a **estepe** entre o delta do Danúbio e o rio Don, no sul da atual Ucrânia e da Rússia, desde cerca do século VII até ao século III a.C., e cujos parentes e vizinhos, designados pelos persas como **sacas**, percorriam a estepe da Ásia Central até ao Altai. Foram dos primeiros povos a fazer da **cavalaria** e do **arco** a base do poder, e deixaram uma das mais notáveis artes em **ouro** do mundo antigo: animais enroscados, veados, panteras e grifos, trabalhados com um estilo inconfundível, o **estilo animal**.',
     'Nunca construíram cidades monumentais nem escreveram livros: o que sabemos deles vem dos **túmulos gigantes** (*kurgans*), das descrições gregas, sobretudo de **Heródoto**, e, mais tarde, das escavações. Derrotaram, segundo a tradição, o rei persa **Dario I** (c. 513 a.C.) sem uma única batalha decisiva, negociaram com as cidades gregas do mar Negro, tiveram reis célebres, como **Ateias**, e foram, por fim, empurrados pelos **sármatas** e destruídos ou absorvidos por godos, hunos e eslavos. Quase tudo o que se diz sobre eles tem de ser lido com cuidado: este texto assinala sempre o que é **facto** e o que é **lenda** ou relato tardio.'
   ] },
-  { img: 'esc-mapa-citia', leg: 'Mapa da Cítia e dos povos da estepe, com as colónias gregas do mar Negro.' },
+  { img: 'esc-mapa-citia', leg: 'Mapa da Cítia Menor (Dobruja), no litoral ocidental do mar Negro: uma das regiões a que os autores antigos chamaram «Cítia».' },
   { h: 'Onde ficava' },
   'O mundo cita é, antes de mais, uma **paisagem**: a grande **estepe euro-asiática**, uma faixa quase contínua de pradaria que vai do Danúbio à Mongólia, com poucas árvores, rios largos (Danúbio, Dniester, Bug, Dniepre, Don, Volga) e invernos duros. Era um território ideal para **cavalos**, rebanhos e carroças, e muito mau para cidades. A **Cítia** de Heródoto é o espaço entre o Danúbio e o Don, com o mar Negro e a península da **Crimeia** a sul; os arqueólogos chamam-lhe a «Cítia europeia».',
   'Mais a leste, na Ásia Central, o mesmo mundo de nómadas a cavalo estende-se pelo Cazaquistão e pelo Altai, e inclui o povo que os persas chamavam **Saka**, em todo o arco que vai do mar de Aral à Sibéria do sul. Estes grupos partilham tipo de túmulo, armas, arreios e arte, mas **não eram um único estado**: eram confederações de tribos e chefes, com línguas aparentadas e identidades próprias. Uma parte do debate académico gira à volta da pergunta «de onde vieram os primeiros?», e a resposta ainda é incerta (Sibéria do sul, Cazaquistão, estepe pôntica).',
-  { img: 'esc-estepe', leg: 'A estepe pôntica: pradaria quase sem árvores, entre o mar Negro e o Don.' },
+  { img: 'esc-estepe', leg: 'Localização da estepe pôntica no mapa da Europa: pradaria quase sem árvores, entre o mar Negro e o Don.' },
   { h: 'Quando existiu' },
   'As datas dos citas dependem do que se chama «cita». Os arqueólogos distinguem a **cultura cita** (a que partilha a «tríade»: armas, arreios e arte animal) e os **citas históricos** (os de Heródoto, no mar Negro). Em termos gerais:',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -45,13 +46,12 @@ const linha = [
     { d: 'c. 900 – 800 a.C.', t: 'Os primeiros kurgans', x: 'Na região de **Tuva** (sul da Sibéria), o túmulo de **Arzhan 1**, um enorme kurgan circular de pedra e madeira com cerca de 110 m de diâmetro, escavado nos anos 1970 por Mikhail Gryaznov, é datado por radiocarbono de c. 800 a.C. Tem armas de bronze, arreios e peças com animais (cervo, javali, felino): a «tríade cita» já aparece. É o mais antigo túmulo deste tipo conhecido, mas a posição de Tuva como «berço» dos citas é debatida.' },
     { d: 'c. 720 – 650 a.C.', t: 'Cimérios e citas', x: 'Segundo Heródoto (IV.11–12), os citas, empurrados para oeste, tomaram a estepe aos **cimérios**, que fugiram para a Anatólia. Fontes assírias falam dos «*Ishkuzai*» (citas): o chefe **Ishpakaya** surge como adversário do rei **Asarhadon** (c. 679), e o rei **Bartatua** (o *Protótias* de Heródoto), aliado de Assíria, pediu em casamento uma filha do rei (c. 670). É a primeira vez que os citas aparecem em documentos escritos.' },
   ] },
-  { img: 'esc-arzhan', leg: 'Kurgan de Arzhan, em Tuva (sul da Sibéria): o grande túmulo de pedra do período inicial da cultura cita.' },
+  { img: 'esc-arzhan', leg: 'Vista da planície de Arzhan, em Tuva (sul da Sibéria), onde estão os kurgans de Arzhan, entre os mais antigos do mundo cita.' },
   { linha: [
     { d: 'c. 650 – 600 a.C.', t: 'Arzhan 2 e a «Cítia asiática»', x: 'No vale de Tuva, o kurgan de **Arzhan 2** (escavado pela equipa russo-alemã de Konstantin Chugunov e Hermann Parzinger, em 2000–2004) guardava um casal real e dezasseis acompanhantes sacrificados, com cerca de **5700 objetos de ouro** (c. 20 kg), âmbar do Báltico e armas. A datação é c. 650–600 a.C. A riqueza mostra um poder já organizado.' },
     { d: 'c. 650 – 590 a.C. (tradição)', t: 'Os citas na Média e no Levante', x: 'Segundo Heródoto (I.103–106), os citas, liderados por **Madies**, filho de Protótias, dominaram a Ásia durante **28 anos**, invadiram a Média, chegaram à Palestina (até **Ascalon**) e foram contidos pelo faraó Psamético com presentes. Heródoto conta que **Ciaxares**, rei da Média, os embebedou num banquete e os matou (lenda ou exagero). Uma pequena presença cita no Próximo Oriente é provável; o domínio de 28 anos é, quase certamente, uma simplificação.' },
     { d: 'c. 650 – 500 a.C.', t: 'As colónias gregas e o comércio', x: 'Colonos gregos de **Mileto** fundam **Olbia** (c. 647, no estuário do Bug e do Dniepre) e **Panticapeu** (c. 600, em Kerch), e, mais tarde, **Quersoneso**, na Crimeia (422/421). Os gregos compram aos citas trigo, peles, escravos, peixe e mel, e vendem vinho, azeite, cerâmica e metais trabalhados. É aqui que nasce o **ouro greco-cita**.' },
   ] },
-  { img: 'esc-olbia', leg: 'Ruínas de Olbia, colónia grega de Mileto no estuário do Bug, onde gregos e citas comerciavam.' },
   { linha: [
     { d: 'séc. VI a.C.', t: 'Os kurgans de Kelermes', x: 'No Cáucaso do Norte, os kurgans de **Kelermes** (c. 600 – 550 a.C.), escavados a partir de 1903, revelaram um **espelho de ouro**, uma espada de bainha de ouro e uma **pantera** de ouro, num estilo que mistura temas assírios, gregos e das estepes: provam que a elite cita estava ligada a todo o Oriente.' },
     { d: 'c. 530 a.C. (tradição)', t: 'Tomíris e Ciro', x: 'Segundo Heródoto (I.205–214), o rei persa **Ciro, o Grande**, ao atacar os **massagetas**, povo aparentado dos sacas a leste do mar Cáspio, é derrotado e morto pela rainha **Tomíris**, que lhe teria metido a cabeça num odre de sangue. Heródoto reconhece que há outras versões (Xenofonte diz que Ciro morreu na cama), mas a de Tomíris é a mais célebre. A morte de Ciro em combate no Norte é plausível; o resto, lenda.' },
@@ -65,22 +65,22 @@ const linha = [
     { d: 'c. 480 a.C.', t: 'O reino do Bósforo', x: 'No estreito de Kerch nasce o **reino do Bósforo**, estado de cidades gregas e de populações locais, com capital em Panticapeu, que durante séculos será o grande parceiro e vizinho dos citas, fornecendo trigo a Atenas. Os reis e chefes citas compram obras de ourives gregos.' },
     { d: 'séc. IV a.C.', t: 'O auge dos kurgans reais', x: 'Os grandes túmulos reais do baixo Dniepre: **Solokha** (c. 400, escavado em 1912–13), **Kul-Oba**, em Kerch (c. 350, aberto em 1830), **Chertomlyk** (c. 350 – 320, 1863) e **Tovsta Mohyla** (c. 350 – 300, escavado em 1971, com o **peitoral de ouro** hoje em Kiev). Estão cheios de ouro, de armas e de objetos feitos por gregos para clientes citas.' },
   ] },
-  { img: 'esc-kul-oba-vaso', leg: 'Vaso de eletro de Kul-Oba, séc. IV a.C., Hermitage: citas a tratar de um dente, a esticar um arco, a ligar uma ferida.' },
+  { img: 'esc-kul-oba-vaso', leg: 'Desenho do vaso de eletro de Kul-Oba (séc. IV a.C.): citas a tratar um dente, a esticar um arco e a ligar uma ferida; gravura moderna.' },
   { img: 'esc-pectoral-tovsta', leg: 'Peitoral de ouro de Tovsta Mohyla (Dnipropetrovsk), c. 350–300 a.C., Museu dos Tesouros Históricos da Ucrânia, Kiev.' },
   { linha: [
     { d: 'c. 340 – 339 a.C.', t: 'Ateias e Filipe II', x: 'O rei cita **Ateias**, já muito idoso (os autores falam de uns 90 anos), domina as terras entre o Dniepre e o Danúbio. Entra em conflito com **Filipe II da Macedónia**, que o derrota em 339 a.C., perto do Danúbio; Ateias morre em combate. Segundo o historiador romano Justino, Filipe levou 20 mil jovens cativos e outras tantas éguas de raça. É o fim da última grande monarquia cita da Europa.' },
     { d: 'c. 331 a.C.', t: 'O desastre de Zopírio', x: 'Zopírio, governador da Trácia por Alexandre Magno, ataca Olbia com um exército e é morto, com os seus homens, pelos citas, segundo Justino (a data, c. 331, varia). Em 329, Alexandre venceu os **sacas** (a que os gregos chamavam citas «do outro lado do Tanais») junto ao rio **Jaxartes** (Sir Daria).' },
     { d: 'séc. V – III a.C.', t: 'Pazyryk e os túmulos de gelo', x: 'No **Altai**, os kurgans de **Pazyryk** (escavados por Sergei Rudenko, 1929 e 1947–49) e do planalto de **Ukok** conservaram, com o gelo, tecidos, tapetes, madeira esculpida e **corpos tatuados**. Não são «citas» no sentido estrito, mas ilustram o mesmo mundo de nómadas a cavalo, e provam relações comerciais com a Pérsia e a China (sedas, bronzes).' },
   ] },
-  { img: 'esc-pazyryk-tapete', leg: 'Tapete de Pazyryk, c. séc. V–IV a.C., Hermitage: o mais antigo tapete de nós que se conserva.' },
+  { img: 'esc-pazyryk-tapete', leg: 'Reprodução de um tapete de Pazyryk (fabricante Megerian, Arménia): o original, c. séc. V–IV a.C., Hermitage, é o mais antigo tapete de nós que se conserva.' },
   { linha: [
     { d: 'séc. IV – III a.C.', t: 'O «Homem de Ouro» de Issyk', x: 'Perto de Almaty, no Cazaquistão, o kurgan de **Issyk** (escavado em 1969 por Kemal Akishev) guardava um jovem sepultado com um traje coberto de cerca de **quatro mil peças de ouro**, e um chapéu alto e pontiagudo, em linha com as representações persas dos sacas. É um dos símbolos nacionais do Cazaquistão (a identidade do morto, homem ou mulher, é debatida).' },
     { d: 'c. 300 – 200 a.C.', t: 'Chegam os sármatas', x: 'Os **sármatas**, nómadas de língua iraniana vindos de leste do Don, avançam para ocidente e ocupam a estepe pôntica. Os citas ficam reduzidos a um estado menor, na **Crimeia** e na Dobruja (Cítia Menor). Heródoto contava que os sármatas descendiam de amazonas e citas.' },
     { d: 'c. 200 – 110 a.C.', t: 'Skilouros e Neápolis', x: 'Na Crimeia (perto de Simferopol), a capital **Neápolis cita** é um centro fortificado, com casas de pedra e mausoléus, e os reis **Skilouros** e **Palakos** (séc. II a.C.) deixaram moedas e monumentos. Em c. 110 a.C., o general **Diofanto**, de Mitridates VI do Ponto, derrota os citas da Crimeia, que ficam sob domínio do Ponto.' },
   ] },
-  { img: 'esc-issyk', leg: 'Réplica do «Homem de Ouro» de Issyk, Cazaquistão, séc. IV–III a.C.: traje coberto de milhares de placas de ouro.' },
+  { img: 'esc-issyk', leg: 'Réplica do toucado do «Homem de Ouro» de Issyk, Cazaquistão, séc. IV–III a.C.: o traje estava coberto de milhares de placas de ouro.' },
   { img: 'esc-neapolis', leg: 'Neápolis cita, perto de Simferopol, na Crimeia: capital dos últimos reis citas (séc. III a.C. – III d.C.).' },
-  { img: 'esc-escilurus-relevo', leg: 'Relevo funerário do reino de Skilouros, Neápolis cita, séc. II a.C. (Museu de Simferopol).' },
+  { img: 'esc-escilurus-relevo', leg: 'O rei cita Cílero e o feixe de varas (anedota de Plutarco): medalha gravada de época moderna.' },
   { linha: [
     { d: 'c. 175 d.C.', t: 'Sármatas no exército romano', x: 'Segundo Díon Cássio, o imperador **Marco Aurélio**, no fim das guerras marcomânicas, impôs aos sármatas **iáziges** que fornecessem 8 mil cavaleiros, dos quais 5500 foram enviados para a Britânia. É dos primeiros usos de cavalaria pesada da estepe no exército romano. Segundo uma hipótese controversa, estaria aqui uma das origens das lendas arturianas.' },
     { d: 'c. 250 – 260 d.C.', t: 'Os godos destroem Neápolis', x: 'Os **godos**, vindos do norte do mar Negro, tomam a Crimeia e incendeiam Neápolis cita, que não será reconstruída. Os últimos citas misturam-se com os recém-chegados e com os gregos do Bósforo. Nos anos 370, os **hunos** esmagam por fim os alanos e a estepe passa a outro povo.' },
@@ -112,7 +112,6 @@ const mapa = [
   { h: 'O Bósforo e a Crimeia' },
   'No estreito de **Kerch**, **Panticapeu** foi a capital do **reino do Bósforo**, estado greco-cita que exportava **trigo** para Atenas. Nos kurgans à volta da cidade, os ricos enterravam-se com ouro feito por ourives gregos, como o vaso de **Kul-Oba**. Mais a sul, **Quersoneso** (hoje Sebastopol) foi uma colónia dórica, fundada c. 422 a.C. Do lado de dentro, as montanhas da Crimeia eram dos tauros e, depois, das últimas tribos citas.',
   { img: 'esc-panticapeu', leg: 'Panticapeu, hoje Kerch, na Crimeia: capital do reino do Bósforo, vista do monte Mitridates.' },
-  { img: 'esc-quersoneso', leg: 'Ruínas de Quersoneso, colónia grega no sudoeste da Crimeia (Património Mundial da UNESCO).' },
   { h: 'Neápolis cita' },
   'A **Neápolis cita** («cidade nova»), perto de Simferopol, foi a capital do último reino cita, entre o século III a.C. e c. 260 d.C. É uma verdadeira **cidade fortificada**, com muralhas de pedra, casas, ofícios e dois mausoléus de nobres (um deles, c. 115 a.C., guardava o corpo de um rei, possivelmente **Skilouros**, com uma touca de ouro). Mostra uma sociedade já sedentária e muito helenizada, bem diferente dos nómadas de Heródoto.',
   { img: 'esc-neapolis-reconstrucao', leg: 'Neápolis cita no séc. II a.C., com muralhas, casas de pedra e mausoléu; reconstituição conjetural. Ilustração gerada por IA.' },
@@ -180,8 +179,7 @@ const sociedade = [
   { img: 'esc-persepolis-saka', leg: 'Relevo da escada do Apadana, em Persépolis (c. 500 a.C.): delegações do império; algumas têm sido identificadas como de sacas, de chapéu pontiagudo.' },
   { h: '9. Arte: o ouro e o estilo animal' },
   'O **estilo animal** cita é a assinatura da cultura: figuras de **veados**, **cavalos**, **panteras**, **grifos**, **aves de rapina** e animais enroscados, com os corpos torcidos e os membros dobrados, em ouro, bronze, madeira, couro e feltro. Servia para decorar arreios, armas, vasos, roupas e túmulos. Entre os melhores exemplos estão o **cervo de ouro** de Kostromskaya (c. 600 a.C., Hermitage), o **pente de Solokha**, o **peitoral de Tovsta Mohyla** e o **vaso de eletro de Kul-Oba**, trabalho de **ourives gregos** para clientes citas, com cenas realistas de citas, em que se vê o rosto, o cabelo, o vestuário e o arco.',
-  { img: 'esc-cervo-ouro', leg: 'Cervo de ouro de estilo cita, séc. VII–VI a.C., Hermitage, São Petersburgo.' },
-  { img: 'esc-vaso-chertomlyk', leg: 'Vaso de prata dourada de Chertomlyk, c. séc. IV a.C., Hermitage, São Petersburgo: cena de domadores de cavalos.' },
+  { img: 'esc-cervo-ouro', leg: 'Cervo de ouro de estilo cita, séc. VII–VI a.C., achado em Tápiószentmárton (Hungria).' },
   { img: 'esc-ourives', leg: 'Ourives gregos de Panticapeu a trabalhar uma peça de ouro para um cliente cita, séc. IV a.C.; reconstituição conjetural. Ilustração gerada por IA.' },
   { h: '10. Tatuagens, feltro e tapetes: Pazyryk' },
   'Em **Pazyryk** e **Ukok**, a combinação do clima e do gelo conservou tudo o que normalmente se perde: **tapetes**, feltros bordados, tecidos de seda chinesa, carros de madeira, selas, máscaras de cavalo e **corpos tatuados**. O tapete de Pazyryk (c. séc. V–IV a.C.) é o **mais antigo tapete de nós** que se conserva; a sua origem (persa, arménia ou da Ásia Central) é debatida. As **tatuagens** de homens e de mulheres (animais fantásticos, cervos, grifos e felinos, feitos com fuligem, aplicados com agulhas de osso) provam que a **arte animal** não era só dos objetos, mas também da pele: eram sinais de estatuto e, talvez, de proteção. A **«Princesa de Ukok»**, descoberta por **Natalia Polosmak** em 1993, tinha uns 25 anos, tatuagens nos ombros e nos braços, e foi sepultada com seis cavalos; o seu corpo foi, desde então, também um assunto político, e o povo altai reivindica o seu regresso à terra.',
@@ -189,7 +187,7 @@ const sociedade = [
   { h: '11. Guerra' },
   'Os citas foram **cavaleiros e arqueiros**. O seu **arco composto** (de madeira, osso e tendão, curto e potente) era disparado a cavalo, e as setas, de **bronze trilobado**, saíam de uma aljava especial, o **gorytos**, que guardava também o arco. Usavam o **machado** (*sagaris*), a **espada curta** (*akinakes*), couraças de escamas e capacetes de bronze. Não tinham estribos (só chegarão mais tarde), mas conseguiam montar e manobrar com selas de feltro. Os gregos acreditavam que as setas eram **envenenadas**, e há alguma base nisto, embora os pormenores sejam discutidos.',
   'A sua **tática** era a do recuo e do desgaste: atacar de longe, retirar-se, queimar a terra, tapar os poços e deixar o inimigo morrer de fome e de sede, tal como Heródoto descreve (IV.120–127) com Dario. Os citas foram, por isso, **invencíveis na sua estepe**, e vulneráveis quando se tentava combatê-los de frente, como mostra o destino de Ateias.',
-  { img: 'esc-arco-composto', leg: 'Arco composto, de tipo estepário, de madeira, osso e tendão.' },
+  { img: 'esc-arco-composto', leg: 'Arco composto reconstruído (Museu do Kremlin de Novgorod): arma de madeira, osso e tendão, de tipo estepário.' },
   { h: '12. Ciência e técnica' },
   'Os citas não deixaram ciência escrita, mas dominaram uma série de **técnicas**: a **doma e a criação de cavalos**, o **feltro**, a **metalurgia** (bronze fundido em moldes, ferro, ouro com filigrana e granulado), a **construção de carroças** e a **engenharia de túmulos**, com câmaras de madeira, falsos túmulos e saídas escondidas contra os ladrões (Arzhan 2). O grego **Anacársis** é, segundo a tradição, um sábio cita, e **Hipócrates** escreveu em *Ares, águas e lugares* um dos primeiros retratos médicos do corpo cita, atribuindo-lhe um carácter «mole» e húmido, explicado pelo clima e pelo hábito de andar a cavalo. É um texto de grande valor histórico, mas de ciência médica fraca.'
 ];
@@ -198,7 +196,7 @@ const personalidades = [
   'Quase nenhum cita nos deixou o seu nome por escrito: os nomes que se conhecem vêm de gregos e persas, e muitas das figuras abaixo vivem na fronteira entre a história e a lenda. As figuras reais e lendárias estão assinaladas.',
   { h: 'Heródoto de Halicarnasso (c. 484 – c. 425 a.C.)' },
   'O «pai da história» e a principal fonte sobre os citas. O seu **Livro IV** descreve o território, os rios, as tribos, os deuses, os funerais e a campanha de Dario. É preciso lê-lo com cuidado: usava informantes gregos, e tinha tendência para o espanto e para o pitoresco. Muito do que escreve foi confirmado pela arqueologia (o cânhamo, os sacrifícios nos funerais, as armas), e outras partes não passam de boatos.',
-  { img: 'esc-herodoto', leg: 'Busto de Heródoto, cópia romana de um original grego (Museu de Nápoles).' },
+  { img: 'esc-herodoto', leg: 'Busto de Heródoto (Galeria Cameron, Tsarskoe Selo, Rússia).' },
   { h: 'Targitau (lenda)' },
   'Primeiro rei dos citas, segundo a lenda que Heródoto (IV.5) recolheu entre os citas do Ponto: filho de Zeus e da filha do rio Borístenes. Dele nasceram três filhos, **Lipoxais**, **Arpoxais** e **Colaxais**, e, quando caíram do céu um arado, um jugo, um machado e uma taça de ouro, só o mais novo conseguiu tocar-lhes sem que ardessem, tornando-se o rei. É uma lenda de fundação, sem valor histórico, mas que mostra que os citas ligavam a realeza ao ouro.',
   { h: 'Idantirso (c. 513 a.C.)' },
@@ -243,7 +241,6 @@ const legado = [
   'A arte cita divide-se em dois mundos que se tocam: a **arte animal da estepe**, mais abstrata e estilizada (placas de cavalos e cervos, enfeites de feltro e de madeira) e a **arte greco-cita**, mais naturalista, de ourives gregos (Kul-Oba, Solokha, Tovsta Mohyla, Chertomlyk) para a elite cita. O **peitoral de Tovsta Mohyla** (c. 350 – 300 a.C.), com cerca de 1,1 kg de ouro, tem três registos: no de baixo, animais de estepe em luta, no do meio, flores e aves, e no de cima, citas a coser uma pele, dois homens a cuidar de cavalos e vacas e ovelhas a serem mungidas (cenas do dia a dia, de uma delicadeza rara).',
   { h: 'Arquitetura' },
   'Os citas deixaram poucos edifícios, mas **monumentos de terra**: os **kurgans**, montes que podiam ter 20 m de altura, com câmaras de madeira ou de pedra, corredores, nichos e galerias. O Chertomlyk tem câmaras em forma de cruz; Arzhan 2, um conjunto de falsos túmulos. Em Neápolis cita, os mausoléus e as muralhas são já de tipo grego. Nas estepes, há ainda as **estelas de pedra** (*kamennye baby*), com figuras humanas, em parte ligadas a povos posteriores.',
-  { img: 'esc-kurgan', leg: 'Kurgan na estepe ucraniana: um monte funerário de terra, de tipo cita.' },
   { h: 'O fim dos citas' },
   'Os citas não foram exterminados: foram **absorvidos**. A pressão dos **sármatas** (a partir do século III a.C.), da expansão do **Ponto** de Mitridates VI e dos **godos** (séc. III d.C.), e, finalmente, dos **hunos** (séc. IV d.C.), reduziu o seu território a nada. Os últimos citas misturaram-se com sármatas, godos, gregos e, mais tarde, eslavos. Os **alanos**, um ramo dos sármatas, andaram pela Europa até à Península Ibérica, onde, em 409, entraram com suevos e vândalos; os **osetas** do Cáucaso são hoje os seus herdeiros linguísticos.',
   { h: 'Os sármatas, os sucessores' },
@@ -283,6 +280,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

@@ -3,6 +3,7 @@
 // Imagens: cada {img:'id'} procura o ficheiro  hunos/img/id.jpg  (ver IMAGENS_HUNOS.md para a lista e os prompts).
 
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 
 const visao = [
   { caixa: 'Em resumo', texto: [
@@ -14,7 +15,6 @@ const visao = [
   'Os Hunos vieram da **estepe eurasiática**, a imensa faixa de pradaria que vai da Mongólia ao Danúbio e onde a vida assenta no cavalo, no gado e na mobilidade. Quando aparecem nas fontes, por volta de 370, estão a leste do Don e do Volga; poucos anos depois, ultrapassam o Don, o Dniepre e o Dniester e chegam ao baixo Danúbio. Nas primeiras décadas do século V, os seus chefes dominam a **planície húngara**, sobretudo a **Panónia** (a oeste do Danúbio) e as terras entre o Danúbio e o **Tisza**, onde a estepe continua, em ponto pequeno, no meio da Europa.',
   'No tempo de Átila, o poder huno ia, grosso modo, do **Reno** (através de vassalos germânicos) às planícies da atual **Ucrânia**, e do Danúbio romano às margens do mar Negro, mas os limites exatos nunca foram definidos: era um domínio sobre **povos e chefes**, não sobre um território com fronteiras. O centro era a corte de Átila, algures entre o Danúbio e o Tisza; a sua localização exata nunca foi identificada.',
   { img: 'hun-estepe', leg: 'Estepe eurasiática, o mundo de onde vieram os cavaleiros hunos.' },
-  { img: 'hun-hortobagy', leg: 'Planície húngara (Hortobágy): a estepe «europeia» onde os Hunos se estabeleceram no século V.' },
   { h: 'Quando existiram' },
   'A história dos Hunos na Europa é curta, cerca de um século, mas intensa. As datas abaixo são aproximadas e seguem a cronologia habitual; as fases têm nomes convencionais, não nomes que os Hunos usassem.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
@@ -38,7 +38,7 @@ const visao = [
     '**Lenda e memória:** de Átila nasceram o rei Etzel dos *Nibelungos*, o «flagelo de Deus» e a ideia de «huno» como insulto, e é preciso separar o que é facto do que é mito.',
     '**A pergunta sobre a origem:** quem eram, de onde vieram, o que falavam, é um dos grandes problemas abertos da história da Eurásia.'
   ] },
-  { img: 'hun-delacroix', leg: 'Átila e as suas hordas pisam a Itália e as Artes, pintura de Eugène Delacroix, c. 1843 – 1847, Palais Bourbon, Paris; a imagem romântica, e partidária, do «bárbaro».' },
+  { img: 'hun-delacroix', leg: 'Átila e as suas hordas pisam a Itália e as Artes: esboço de Eugène Delacroix para a biblioteca do Palais Bourbon, Paris (c. 1843 – 1847); a imagem romântica, e partidária, do «bárbaro».' },
   { caixa: 'Os Hunos hoje', texto: 'Não existem «Hunos» hoje, e os Húngaros **não são descendentes diretos** dos Hunos: chegaram à planície do Danúbio por volta de 895 – 900, quase meio milénio depois de Átila. Mas a lenda de uma ascendência huna foi cultivada na Hungria medieval (as crónicas medievais húngaras apresentam Átila como antepassado) e continua a ter força na cultura popular. Do lado científico, o ADN antigo e as escavações de túmulos da Panónia, com caldeirões, joias e crânios deformados, estão a mudar o que sabemos: a imagem de «horda sem rosto» dá lugar à de uma sociedade complexa, de origens diversas e de grande mobilidade.' }
 ];
 
@@ -51,7 +51,7 @@ const linha = [
     { d: 'c. 370 – 375', t: 'Os Hunos atravessam o Volga e o Don', x: 'Segundo **Amiano Marcelino** (c. 390), um povo «pouco conhecido», que vivia para lá dos pântanos do mar de Azov, lançou-se sobre os **Alanos** (nómadas de língua iraniana) e derrotou-os, integrando muitos deles. O historiador dá uma descrição, muito hostil, dos recém-chegados.' },
   ] },
   { img: 'hun-chegada-europa', leg: 'Cavaleiros hunos a atacar um acampamento alano na estepe, c. 375; reconstituição conjetural. Ilustração gerada por IA.' },
-  { img: 'hun-amiano', leg: 'Amiano Marcelino (c. 330 – depois de 391), o historiador romano que deixou a primeira descrição dos Hunos.' },
+  { img: 'hun-amiano', leg: 'Página de uma edição das obras de Amiano Marcelino (Augsburgo, 1533): Amiano (c. 330 – depois de 391) é o historiador romano que deixou a primeira descrição dos Hunos.' },
   { linha: [
     { d: 'c. 375 – 376', t: 'Queda do reino dos Greutungos', x: 'Os Hunos atacam o reino dos **Greutungos** (Ostrogodos), na atual Ucrânia. Segundo Amiano, o velho rei **Ermanarico** matou-se de desespero; segundo **Jordanes** (século VI), que fala de um «rei» huno **Balamber**, esse chefe terá derrotado os Ostrogodos. A ligação entre estas duas versões, e a existência do próprio Balamber, são discutidas.' },
     { d: '376', t: 'Os Godos no Danúbio', x: 'Os **Tervíngios** (Visigodos), em fuga, pedem asilo ao imperador **Valente** e atravessam o Danúbio. A fome, a corrupção dos oficiais romanos e a ausência de organização levam à revolta. É o começo de um conflito de seis anos.' },
@@ -81,13 +81,13 @@ const linha = [
     { d: '451', t: 'A invasão da Gália', x: 'Átila cruza o Reno na primavera, com um exército que incluía muitos súbditos germânicos (Ostrogodos, Gépidas, Hérulos e outros). Saqueia **Metz** (abril), cerca **Orleães**, mas Aécio chega a tempo, com um exército romano e aliados, entre eles os **Visigodos** do rei **Teodorico I**.' },
     { d: '20 de junho de 451 (data discutida)', t: 'Batalha dos Campos Cataláunicos', x: 'Perto de **Troyes** (o local exato, *Locus Mauriacus*, é discutido), travam-se de um lado Átila, com os Hunos e os seus aliados, e do outro Aécio e Teodorico. Teodorico morre; o filho **Turismundo** herda o comando. Jordanes diz que morreram 165 000 homens, número sem credibilidade. Átila recua. O resultado é difícil de classificar: é um **empate tático**, mas uma derrota estratégica para o rei, que perde a iniciativa.' },
   ] },
-  { img: 'hun-catalaunicos-mapa', leg: 'Os Campos Cataláunicos, na Champanhe (França), onde se travou a batalha de 451; o local exato continua a ser discutido.' },
+  { img: 'hun-catalaunicos-mapa', leg: 'A batalha dos Campos Cataláunicos (451) numa miniatura medieval: a imagem mostra cavaleiros de armadura medieval, não o aspeto real da batalha; o local exato continua a ser discutido.' },
   { linha: [
     { d: '452', t: 'A invasão da Itália', x: 'Átila atravessa os Alpes Julianos, toma depois de um longo cerco **Aquileia**, destrói-a e avança sobre **Milão** e **Pavia**. Segundo uma tradição, os refugiados terão fundado **Veneza**, uma lenda mais do que um facto. Perto do rio **Míncio**, uma embaixada romana, em que se contava o **papa Leão I**, encontra Átila, que se retira. As causas prováveis: fome e doença no exército, a falta de provisões, e as tropas de Marciano a atacar a Panónia.' },
   ] },
   { img: 'hun-aquileia-cerco', leg: 'Cerco de Aquileia por Átila, 452; reconstituição conjetural. Ilustração gerada por IA.' },
   { img: 'hun-leao-atila', leg: 'O encontro do papa Leão I com Átila, fresco de Rafael e oficina, c. 1514, Estâncias do Vaticano; a presença de S. Pedro e S. Paulo no céu é uma tradição tardia.' },
-  { img: 'hun-galla-placidia', leg: 'Mausoléu de Gala Placídia, em Ravena: a corte de Honória e de Valentiniano III, cuja irmã, segundo a tradição, enviou o anel a Átila.' },
+  { img: 'hun-galla-placidia', leg: 'Mosaicos do Mausoléu de Gala Placídia, em Ravena (séc. V), mãe de Valentiniano III e de Honória; segundo a tradição, Honória enviou o seu anel a Átila.' },
   { linha: [
     { d: '453', t: 'Morte de Átila', x: 'Átila morre, segundo Prisco (citado por Jordanes), na noite de núpcias com uma jovem de nome **Ildico**, de uma hemorragia: ficou deitado de costas, bêbado, e sufocou com o sangue de uma hemorragia nasal. Outras versões falam de assassinato, mas não há prova; a causa natural é a mais provável. A lenda diz que foi enterrado em três caixões, de ouro, prata e ferro, e que os coveiros foram mortos (Jordanes; **não há prova arqueológica** de nada disto).' },
   ] },
@@ -124,14 +124,14 @@ const mapa = [
   { img: 'hun-mapa-campanhas', leg: 'Esquema das campanhas de Átila nos Balcãs (441 – 447), na Gália (451) e na Itália (452). Mapa gerado por IA. (Imagem ilustrativa gerada por IA.)' },
   { h: 'A Panónia e a corte de Átila' },
   'A **Panónia** era uma província romana, entre o Danúbio e os Alpes, que, a partir de c. 433, passou em parte para o controlo dos Hunos. No seu interior, na grande planície onde o Danúbio e o **Tisza** correm quase paralelos, ficava a **corte** de Átila. Prisco, que lá esteve em 449, descreve uma grande povoação de **casas de madeira**, com um palácio de troncos aplainados cercado por uma paliçada, e um balneário de pedra construído por um prisioneiro romano. Ninguém encontrou ainda, com certeza, esta «capital»: a hipótese mais difundida é a de que estaria entre o Danúbio e o Tisza, a leste do rio.',
-  { img: 'hun-panonia', leg: 'Mapa da província romana da Panónia, onde os Hunos se instalaram no século V.' },
-  { img: 'hun-aquincum', leg: 'Ruínas de Aquincum (Budapeste), cidade romana da Panónia, perto do território dominado pelos Hunos.' },
+  { img: 'hun-panonia', leg: 'Mapa da Panónia e da Ilíria, de Abraão Ortélio (*Theatrum Orbis Terrarum*, 1606): a província romana onde os Hunos se instalaram no século V.' },
+  { img: 'hun-aquincum', leg: 'Sistema de aquecimento por hipocausto em Aquincum (Budapeste), cidade romana da Panónia, perto do território dominado pelos Hunos.' },
   { h: 'Os Balcãs: o ouro e a devastação' },
   'As campanhas de 441 – 447 devastaram o Danúbio. Cidades como **Singiduno**, **Viminácio**, **Sírmio** e **Naisso** foram tomadas com **máquinas de cerco** (arietes e torres), que os Hunos aprenderam com os Romanos, talvez com a ajuda de desertores ou prisioneiros. Prisco, que passou por Naisso em 449, encontrou a cidade praticamente deserta e as margens do rio ainda cobertas de ossos dos mortos. Mas Constantinopla, defendida pelas suas muralhas, nunca foi tomada.',
   { img: 'hun-danubio', leg: 'O Danúbio, fronteira entre o Império Romano e o mundo «bárbaro», e eixo das campanhas hunas nos Balcãs.' },
   { h: 'A Gália e a Itália' },
   'Em 451, Átila saiu da Panónia e atravessou a Germânia até ao **Reno**. Em abril saqueou **Metz**; seguiu para **Orleães**, que resistiu até à chegada de Aécio. A batalha dos **Campos Cataláunicos** decidiu o destino da campanha. Em 452, Átila voltou-se para a **Itália**: **Aquileia** foi arrasada, e **Milão** e **Pavia** foram tomadas. Em vez de marchar sobre Roma, o rei retirou-se.',
-  { img: 'hun-aquileia', leg: 'Ruínas romanas de Aquileia, Itália, grande cidade do Adriático destruída por Átila em 452.' },
+  { img: 'hun-aquileia', leg: 'O rio Natissa em Aquileia (Itália), no sítio da grande cidade romana do Adriático destruída por Átila em 452.' },
   { h: 'Rotas e relações' },
   'Os Hunos mantinham ligações com muitos mundos. Para sul e oeste, o ouro e os produtos romanos; para leste, as rotas da estepe, com cavalos, peles e escravos; para o Norte, os príncipes germânicos que lhes pagavam tributo ou lhes davam reféns. As **feiras fronteiriças** no Danúbio, estabelecidas em Margus (435) e reguladas por tratado, eram o ponto de encontro entre os dois mundos.',
   { img: 'hun-acampamento', leg: 'Acampamento huno de carroças e tendas na planície húngara, séc. V; reconstituição conjetural. Ilustração gerada por IA.' }
@@ -168,7 +168,6 @@ const sociedade = [
   'Havia também **comércio**: nos mercados de fronteira, os Hunos trocavam cavalos, gado e escravos por tecidos, vinho, cereais e armas. Os romanos estavam proibidos, por tratado, de vender armas aos hunos, mas na prática havia contrabando. A agricultura era feita por súbditos: Prisco refere o milho-painço (para comer) e uma bebida de cevada, o *camos*, e uma de mel, o *medos*.',
   { h: '5. Escrita e língua' },
   'Os Hunos **não escreviam**. A sua língua nunca foi registada e continua a ser um enigma: conhecem-se alguns **nomes** (*Átila*, *Bleda*, *Uldin*, *Rua*) e algumas palavras citadas por Prisco e por Jordanes (*medos*, *camos*, *strava*, esta última um banquete funerário), mas nada que permita classificar a língua com segurança. Alguns nomes parecem germânicos (*Átila* seria um diminutivo gótico, «paizinho», ideia debatida), outros turcos ou iranianos. É possível que, pelo menos nas elites, se falasse **gótico**; Prisco diz que muitos Hunos falavam também **latim** e **gótico** (além do huno), e que os assuntos de estado com o Império eram tratados em latim ou grego por secretários. A tradição oral, dos cantos, desapareceu.',
-  { img: 'hun-jordanes', leg: 'Jordanes, historiador godo do século VI, autor da *Getica*, que resume a obra perdida de Prisco e de Cassiodoro sobre os Hunos.' },
   { h: '6. Casa e habitação' },
   'Os Hunos mais antigos viviam em **carroças** e **tendas**: Amiano diz que viviam «nos seus carros» e que a mulher e os filhos viajavam com os homens. No tempo de Átila, a elite tinha **casas e salões de madeira** (Prisco descreve o grande salão de Átila, de tábuas bem aplainadas e com paliçadas de madeira), mas o conjunto nunca foi uma cidade. A arqueologia dos Hunos é **pobre**: quase não há povoações, e o que conhecemos vem de túmulos, de achados dispersos e de tesouros enterrados.',
   { h: '7. Alimentação' },
@@ -188,14 +187,13 @@ const sociedade = [
   'Os Hunos não deixaram tratados nem observatórios. O que sabemos da sua **técnica** vem dos objetos: o **arco composto**, a metalurgia do **bronze** (caldeirões) e do **ouro**, a **carroça** e a **selaria**. Prisco e Amiano mostram alguma cultura prática: adaptaram **máquinas de cerco** romanas, e Átila usou engenheiros romanos prisioneiros. Quanto à medicina, só temos a **deformação craniana**, um costume cultural.',
   { h: '11. Deformação craniana' },
   'Um dos traços mais característicos da arqueologia hunica é a **deformação craniana artificial**: na infância, enquanto o crânio ainda é mole, comprimia-se a cabeça com ligaduras ou tábuas, e o resultado era um crânio alongado. O costume, **muito mais antigo que os Hunos** e comum a outros povos (Alanos, Sármatas, grupos germânicos e outros), aparece em muitos túmulos da **bacia dos Cárpatos** do século V. Amiano e Jordanes dizem que os Hunos cortavam as faces dos bebés para impedir a barba, e Sidónio Apolinário descreve narizes achatados; estas imagens vêm de autores hostis e não devem ser tomadas à letra. Um crânio deformado numa sepultura **não prova que o morto fosse huno**, só que seguia um costume prestigiante nessa região.',
-  { img: 'hun-craniano', leg: 'Crânio com deformação artificial, costume praticado por vários povos da estepe e da Europa central no século V.' },
   { h: '12. Caldeirões' },
   'Os **caldeirões de bronze** hunos são um dos achados típicos: grandes recipientes fundidos, de formas cónicas e com duas asas, encontrados da Sibéria à Hungria, muitas vezes junto a rios e túmulos. Podiam servir para cozinhar e para banquetes, mas parece ter havido também uma **função cerimonial**. Foram feitos em oficinas da estepe e, ao que parece, também na Europa. São o objeto mais «huno» que há, e, pela dispersão geográfica, um dos indícios das ligações dos Hunos à estepe asiática.',
-  { img: 'hun-caldeirao', leg: 'Caldeirão de bronze de tipo huno, séc. IV – V, encontrado na bacia dos Cárpatos (museu húngaro).' },
+  { img: 'hun-caldeirao', leg: 'Caldeirão de bronze de tipo huno, séc. IV – V (cópia de 2006, Museu de Kazan): os originais encontram-se desde a estepe até à bacia dos Cárpatos.' },
   { img: 'hun-oficina-caldeirao', leg: 'Fundição de um caldeirão de bronze numa oficina da estepe, séc. V; reconstituição conjetural. Ilustração gerada por IA.' },
   { h: '13. Guerra' },
   'A força dos Hunos era a **cavalaria ligeira de arqueiros**. O seu **arco composto**, feito de madeira, tendão e corno e reforçado com placas de osso, era curto, assimétrico e potente: permitia disparar a cavalo a distâncias de várias dezenas de metros. Usavam flechas de bronze ou de ferro de ponta triangular, laços e espadas, e fingiam a retirada para atrair o inimigo (a tática, comum nas estepes). Amiano diz que atacavam em grupos dispersos e que chegavam e partiam num instante. Não tinham muita armadura, ao contrário dos Godos, e o estribo, que só se generalizaria na Europa com os Ávaros, provavelmente não era usado por eles.',
-  { img: 'hun-arco-composto', leg: 'Arco composto de tipo asiático, reconstrução moderna: a arma que fez dos Hunos cavaleiros-arqueiros temíveis.' },
+  { img: 'hun-arco-composto', leg: 'Arco composto reconstruído com placas de osso do séc. XII (Museu do Kremlin de Novgorod): o princípio de madeira, osso e tendão é o das armas dos cavaleiros da estepe, como os Hunos.' },
   { img: 'hun-cavaleiro-arqueiro', leg: 'Cavaleiro arqueiro huno a galope, séc. V; reconstituição conjetural. Ilustração gerada por IA.' },
   'Contra cidades fortificadas, os Hunos eram inicialmente fracos, mas aprenderam com os Romanos a usar **arietes** e **torres de cerco**. O seu maior ponto fraco era a logística: um exército de dezenas de milhares de cavalos precisa de pastagens, e foi por isso, em parte, que as campanhas de Átila na Itália (com pestilência e fome) terminaram. O recurso mais eficaz era o **terror**: a fama de crueldade (muitas vezes exagerada) levava cidades a render-se.',
   { img: 'hun-cataunicos-batalha', leg: 'A batalha dos Campos Cataláunicos (451), entre Átila e Aécio com os Visigodos; reconstituição conjetural. Ilustração gerada por IA.' }
@@ -213,7 +211,7 @@ const personalidades = [
   'Irmão de Átila e co-rei até c. 445, quando, segundo as fontes, foi morto a mando do irmão. Tem tão pouco rasto histórico que é difícil saber qual era o seu papel; Prisco refere o seu bobo, o anão **Zerco**, que o acompanhava na guerra.',
   { h: 'Átila (m. 453)' },
   'O rei dos Hunos de 434 a 453. Prisco, que o conheceu, descreve-o baixo, de peito largo, cabeça grande, olhos pequenos, barba rala e andar altivo, e sóbrio nos hábitos. Era um hábil político: soube explorar os medos do Império, rodear-se de secretários romanos e jogar com as rivalidades entre os povos. Os autores cristãos viram-no como um castigo divino; as fontes germânicas fazem dele um rei. O que sabemos com certeza é pouco, e vem de Prisco e de Jordanes; a imagem de um «bárbaro sanguinário» vem sobretudo de autores posteriores.',
-  { img: 'hun-atila-gravura', leg: 'Retrato imaginário de Átila, gravura ou pintura de época moderna; nenhum retrato contemporâneo se conserva.' },
+  { img: 'hun-atila-gravura', leg: 'Estátua de cera de Átila (Istambul): imagem popular moderna; nenhum retrato contemporâneo se conserva.' },
   { h: 'Onegésio' },
   'O principal conselheiro de Átila, segundo Prisco, e dono de um balneário de pedra. Era o segundo homem da corte, a quem Átila confiava as relações com os estrangeiros. Mostra que a corte huna tinha uma elite de aristocratas e conselheiros, e não só de guerreiros.',
   { h: 'Kreka (Hereca)' },
@@ -274,7 +272,7 @@ const legado = [
   'Os Hunos não foram exterminados: os que ficaram misturaram-se com outros povos da estepe e do Danúbio. Alguns historiadores veem neles antepassados de grupos como os **Búlgaros** e os **Cutrigures**, mas esta ligação é hipotética.',
   { h: 'A redescoberta dos Hunos' },
   'Do Renascimento até ao século XIX, os Hunos foram sobretudo um tema literário e artístico: Rafael, Delacroix, Verdi (a ópera *Attila*, 1846) e, no século XX, os filmes. A imagem popular fixou-se num bárbaro implacável, e a Primeira Guerra Mundial usou o termo «Hunos» como propaganda contra os alemães (o uso vem de um discurso do Kaiser Guilherme II, em 1900, que pediu aos soldados enviados à China que se comportassem como os Hunos). A investigação científica, essa, avançou com Maenchen-Helfen, depois com a **arqueologia da Panónia** e, desde 2018, com o **ADN antigo**, que mostra um império de muitas origens.',
-  { img: 'hun-xiongnu-bronze', leg: 'Bronzes de Ordos, da estepe do norte da China, do tempo dos Xiongnu: a tradição metalúrgica da região de onde se pensa, em hipótese, terem vindo os Hunos.' },
+  { img: 'hun-xiongnu-bronze', leg: 'Placa de cinto de bronze com homens a lutar, região de Ordos (norte da China), séc. II – I a.C.: arte do tempo dos Xiongnu, de quem os Hunos, segundo uma hipótese debatida, descenderiam.' },
   { caixa: 'Onde ver os Hunos', texto: 'Na **Hungria**: o **Museu Nacional Húngaro**, em Budapeste, tem caldeirões, joias e achados de túmulos da época huna; o **Museu de Aquincum** mostra a Panónia romana. Em **Itália**, **Aquileia** conserva as ruínas romanas e o seu museu, e o **Vaticano** guarda o fresco de Rafael sobre Leão I e Átila. Em **Istambul**, as **Muralhas Teodosianas**. No **Museu Britânico** e no **Louvre** há objetos da estepe e da Antiguidade tardia. Em geral, o melhor é visitar o mundo romano em que os Hunos irromperam.' }
 ];
 
@@ -307,6 +305,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };
