@@ -10,6 +10,7 @@ const visao = [
   { h: 'Where it was' },
   'Teotihuacan lay in a small side valley of the **Valley of Mexico**, a high basin ringed by volcanoes and mountains, with lakes and springs. The site has plentiful **spring water**, fertile soil for maize and, nearby, deposits of **obsidian** (volcanic glass, the best “steel” of the Stone Age), above all the one at **Pachuca** to the north-east. These two advantages, water and obsidian, are among the reasons usually given for its success.',
   'At its height the city covered about **20 km²** (the protected archaeological zone is much larger). It was laid out on a **grid**, with a main axis, the **Avenue of the Dead**, skewed about 15.5° east of north, an orientation repeated in almost every building, whose exact reason (astronomical? a sacred mountain? the calendar?) is debated.',
+  { img: 'teo-vista-aerea', leg: 'Imagined reconstruction of Teotihuacan seen from above, c. AD 450: the Avenue of the Dead, the pyramids and the residential compounds (illustrative AI-generated image).' },
   { h: 'When it existed' },
   'The chronology of Teotihuacan rests on a sequence of pottery phases established by the archaeologist **René Millon** and his team, with names that are not Teotihuacan words but conventional labels. The dates are approximate, and some scholars propose adjustments based on radiocarbon dating.',
   { tabela: { cab: ['Phase', 'Approximate dates', 'What marks it'], linhas: [

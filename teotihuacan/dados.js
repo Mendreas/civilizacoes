@@ -13,6 +13,7 @@ const visao = [
   { h: 'Onde ficava' },
   'Teotihuacan situava-se num pequeno vale lateral do **vale do México**, uma bacia alta, rodeada de vulcões e de montanhas, com lagos e nascentes. O sítio tem **água de nascente** abundante, solos férteis para o milho e, nas proximidades, jazidas de **obsidiana** (um vidro vulcânico, o melhor «aço» da Idade da Pedra), sobretudo a de **Pachuca**, a nordeste. Estas duas vantagens, água e obsidiana, estão entre as razões habitualmente apontadas para o seu sucesso.',
   'A cidade ocupava cerca de **20 km²** no seu auge (a área arqueológica protegida é muito maior). Foi traçada em **quadrícula**, com um eixo principal, a **Avenida dos Mortos**, desviado cerca de 15,5° para leste do norte, uma orientação que se repete em quase todos os edifícios e cuja razão exata (astronómica? ligada a uma montanha sagrada? ao calendário?) é debatida.',
+  { img: 'teo-vista-aerea', leg: 'Reconstituição imaginada de Teotihuacan vista de cima, c. 450 d.C.: a Avenida dos Mortos, as pirâmides e os conjuntos residenciais (imagem ilustrativa gerada por IA).' },
   { h: 'Quando existiu' },
   'A cronologia de Teotihuacan assenta numa sequência de fases de cerâmica estabelecida pelo arqueólogo **René Millon** e pela sua equipa, com nomes que não são teotihuacanos, mas sim palavras convencionais. As datas são aproximadas e há quem proponha ajustes com base em datações por radiocarbono.',
   { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [

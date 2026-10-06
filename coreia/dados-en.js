@@ -186,6 +186,7 @@ const sociedade = [
   'Goguryeo was a military power: armoured horsemen, archers and a network of mountain **fortresses** (**sanseong**) that halted the Chinese armies. Silla created the young elite of the **hwarang** (“flowering youths”), which combined military training, study and ethics, and whose code (the **Five Precepts**) is attributed to the monk Wongwang. Goryeo used walls and, against the Mongols, withdrew to fortresses and islands. In Joseon the great novelty was the **navy**: the **panokseon**, a warship with a combat deck, and the **geobukseon**, the **turtle ship**, with a covered deck, which Yi Sun-sin used in 1592. Archers were the core of the army; firearms (arquebuses, cannon) became essential in the 17th century.',
   { img: 'cor-guerreiros-goguryeo', leg: 'Armoured Goguryeo horsemen, 4th – 5th centuries (artistic reconstruction). (Illustrative AI-generated image.)' },
   { img: 'cor-hwarang', leg: 'Young hwarang of Silla in training (artistic reconstruction). (Illustrative AI-generated image.)' },
+  { img: 'cor-geobukseon', leg: 'Imagined reconstruction of one of Yi Sun-sin\'s turtle ships (geobukseon), 16th century (illustrative AI-generated image).' }
 ];
 
 const personalidades = [
