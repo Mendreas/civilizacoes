@@ -117,6 +117,16 @@ export default {
       "Duveen Gallery - Parthenon marbles from the Acropolis of Athens - British Museum",
       "Andres Rueda",
       "CC BY 2.0"
+     ],
+     [
+      "gcl-mapa-guerras-medicas",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "gcl-mapa-liga-delos",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }
@@ -239,6 +249,16 @@ export default {
       "Duveen Gallery - Parthenon marbles from the Acropolis of Athens - British Museum",
       "Andres Rueda",
       "CC BY 2.0"
+     ],
+     [
+      "gcl-mapa-guerras-medicas",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "gcl-mapa-liga-delos",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }

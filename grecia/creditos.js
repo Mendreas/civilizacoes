@@ -142,6 +142,16 @@ export default {
       "The School of Athens Fresco by Raphael (Ank Kumar, Infosys Limited) 02",
       "Ank Kumar",
       "CC BY-SA 4.0"
+     ],
+     [
+      "gre-mapa-helenismo",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "gre-mapa-egeu",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }
@@ -289,6 +299,16 @@ export default {
       "The School of Athens Fresco by Raphael (Ank Kumar, Infosys Limited) 02",
       "Ank Kumar",
       "CC BY-SA 4.0"
+     ],
+     [
+      "gre-mapa-helenismo",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "gre-mapa-egeu",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }

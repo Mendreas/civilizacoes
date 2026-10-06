@@ -107,6 +107,11 @@ export default {
       "Standing Bhumi Naga was Set-up in 8th Regnal Year of Kushan Emperor Kanishka - Circa 2nd Century CE - Badava - ACCN 12-211 - Government Museum - Mathura 2013-02-23 5783.JPG",
       "Biswarup Ganguly",
       "CC BY 3.0"
+     ],
+     [
+      "isc-mapa-comercio",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }
@@ -219,6 +224,11 @@ export default {
       "Standing Bhumi Naga was Set-up in 8th Regnal Year of Kushan Emperor Kanishka - Circa 2nd Century CE - Badava - ACCN 12-211 - Government Museum - Mathura 2013-02-23 5783.JPG",
       "Biswarup Ganguly",
       "CC BY 3.0"
+     ],
+     [
+      "isc-mapa-comercio",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }

@@ -107,6 +107,11 @@ export default {
       "Ignoto portoghese, ritratto di un cavaliere dell'ordine di cristo, 1525-50 ca. 02",
       "Sailko",
       "CC BY 3.0"
+     ],
+     [
+      "igm-mapa-india-1000",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }
@@ -219,6 +224,11 @@ export default {
       "Ignoto portoghese, ritratto di un cavaliere dell'ordine di cristo, 1525-50 ca. 02",
       "Sailko",
       "CC BY 3.0"
+     ],
+     [
+      "igm-mapa-india-1000",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }

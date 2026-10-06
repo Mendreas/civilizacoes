@@ -112,6 +112,16 @@ export default {
       "Azara herm Louvre Ma436",
       "Copy after Lysippos",
       "Public domain"
+     ],
+     [
+      "ive-mapa-alexandre",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "ive-mapa-india-vedica",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }
@@ -229,6 +239,16 @@ export default {
       "Azara herm Louvre Ma436",
       "Copy after Lysippos",
       "Public domain"
+     ],
+     [
+      "ive-mapa-alexandre",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "ive-mapa-india-vedica",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }

@@ -97,6 +97,11 @@ export default {
       "Amphorae sherds, Pattanam excavation site (Kerala)",
       "KannanVM",
       "CC BY-SA 4.0"
+     ],
+     [
+      "ipm-mapa-india-200",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }
@@ -199,6 +204,11 @@ export default {
       "Amphorae sherds, Pattanam excavation site (Kerala)",
       "KannanVM",
       "CC BY-SA 4.0"
+     ],
+     [
+      "ipm-mapa-india-200",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }

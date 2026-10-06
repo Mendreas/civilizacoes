@@ -97,6 +97,11 @@ export default {
       "Tower of the Winds, Athens, 20240531 1804 9858",
       "Jakub Hałun",
       "CC BY 4.0"
+     ],
+     [
+      "ghe-mapa-imperio-alexandre",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }
@@ -199,6 +204,11 @@ export default {
       "Tower of the Winds, Athens, 20240531 1804 9858",
       "Jakub Hałun",
       "CC BY 4.0"
+     ],
+     [
+      "ghe-mapa-imperio-alexandre",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }

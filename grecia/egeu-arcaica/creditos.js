@@ -127,6 +127,11 @@ export default {
       "Alkaios Sappho Staatliche Antikensammlungen 2416 n1",
       "Brygos Painter",
       "Public domain"
+     ],
+     [
+      "gea-mapa-egeu-bronze",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }
@@ -259,6 +264,11 @@ export default {
       "Alkaios Sappho Staatliche Antikensammlungen 2416 n1",
       "Brygos Painter",
       "Public domain"
+     ],
+     [
+      "gea-mapa-egeu-bronze",
+      "Mapa original criado para este projeto; linhas de costa: GSHHG (P. Wessel e W. H. F. Smith)",
+      "Original (dados GSHHG: LGPL)"
      ]
     ]
    }
