@@ -2,6 +2,7 @@
 // Cronologia frágil: quase todas as datas anteriores a Alexandre (326 a.C.) são estimativas; as dos reis de Magadha seguem a tradição (Mahavamsa, Puranas) e há quem as recue ou adie. Assinalado no texto.
 // Imagens: cada {img:'id'} procura o ficheiro  india-classica/vedica-mahajanapadas/img/id.jpg  (ver IMAGENS_INDIA_CLASSICA_VEDICA_MAHAJANAPADAS.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -347,6 +348,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

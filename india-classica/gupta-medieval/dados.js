@@ -2,6 +2,7 @@
 // Datas aproximadas; a cronologia da Índia medieval é melhor do que a da Índia antiga (há inscrições, moedas e crónicas), mas muitas datas de reinados são debatidas e assinaladas no texto. a.C. = antes de Cristo, d.C. = depois de Cristo.
 // Imagens: cada {img:'id'} procura o ficheiro  india-classica/gupta-medieval/img/id.jpg  (ver IMAGENS_INDIA_CLASSICA_GUPTA_MEDIEVAL.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -349,6 +350,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

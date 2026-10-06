@@ -3,6 +3,7 @@
 // Datas aproximadas; muitas obras indianas só se datam por intervalos e por tradição, e isso é assinalado no texto. a.C. = antes de Cristo, d.C. = depois de Cristo.
 // Imagens: cada {img:'id'} procura o ficheiro  india-classica/ciencia-arte/img/id.jpg  (ver IMAGENS_INDIA_CLASSICA_CIENCIA_ARTE.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -340,4 +341,4 @@ export default { id: 'india-classica', cor: '#c4682f', emblema: '../../assets/im
   nome: { pt: 'Ciência, matemática e arte', en: 'Science, mathematics and art' },
   periodo: { pt: 'Da Antiguidade a c. 1500 d.C.', en: 'From antiquity to c. AD 1500' },
   visao: { pt: visao, en: EN.visao }, linha: { pt: linha, en: EN.linha }, mapa: { pt: mapa, en: EN.mapa }, sociedade: { pt: sociedade, en: EN.sociedade },
-  personalidades: { pt: personalidades, en: EN.personalidades }, legado: { pt: legado, en: EN.legado }, quiz: { pt: quiz, en: EN.quiz } };
+  personalidades: { pt: personalidades, en: EN.personalidades }, legado: { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] }, quiz: { pt: quiz, en: EN.quiz } };

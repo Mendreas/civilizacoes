@@ -3,6 +3,7 @@
 // Fontes de base: inscrições, moedas, Arthashastra, Dharmashastras, Jatakas, Periplus do Mar Eritreu, Plínio, Estrabão, Faxian, Xuanzang, literatura Sangam, arqueologia (Britannica, Cambridge, Oxford, UNESCO, estudos de R. Thapar, U. Singh, F. De Romanis).
 // Imagens: cada {img:'id'} procura o ficheiro  india-classica/sociedade-comercio/img/id.jpg  (ver IMAGENS_INDIA_CLASSICA_SOCIEDADE_COMERCIO.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
