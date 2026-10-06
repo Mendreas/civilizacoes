@@ -1,0 +1,293 @@
+// ARAMEUS — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
+import EN from './dados-en.js';
+import CRED from './creditos.js';
+// Datas aproximadas, na «cronologia média». a.C. = antes de Cristo. Os Arameus nunca foram um Estado único: o texto trata de vários reinos e tribos e, no fim, da língua que deixaram.
+// Imagens: cada {img:'id'} procura o ficheiro  arameus/img/id.jpg  (ver IMAGENS_ARAMEUS.md para a lista e os prompts).
+
+const visao = [
+  { caixa: 'Em resumo', texto: [
+    'Os **Arameus** foram um conjunto de povos de língua semita que, a partir de c. 1200 a.C., se instalaram na Síria e na Alta Mesopotâmia e ali fundaram dezenas de pequenos reinos e principados, entre eles **Aram-Damasco**, **Hamat**, **Bit-Adini**, **Sam’al** e **Bit-Bahiani** (Guzana, a atual Tell Halaf). Foram comerciantes, camponeses, pastores e guerreiros, e viveram durante séculos entre os impérios vizinhos, em especial o da Assíria.',
+    'Nunca se uniram num país. As suas cidades-estado lutaram umas contra as outras, aliaram-se contra a Assíria (como em Qarqar, 853 a.C.) e acabaram absorvidas por ela, entre 856 e 720 a.C. Mas deixaram uma herança desproporcionada: o seu **alfabeto e a sua língua**, o aramaico, tornaram-se a língua de comunicação de dois impérios, foram a língua corrente de Jesus de Nazaré e do Talmude, deram origem ao siríaco e ainda hoje são falados por comunidades na Síria, no Iraque, na Turquia e no Irão.'
+  ] },
+  { img: 'ara-mapa-estados', leg: 'Mapa dos reinos arameus e neo-hititas e dos seus vizinhos, c. 800 a.C.' },
+  { h: 'Onde ficavam' },
+  'O território arameu era uma faixa larga de terras entre o Mediterrâneo e o Tigre: a Síria interior, o vale do **Oronte**, o oásis de **Damasco**, o curso superior do **Eufrates**, o rio **Habur** e o planalto do norte da Mesopotâmia, até à zona de Harran e Amida (a atual Diyarbakır, na Turquia). Em partes da Babilónia viviam também tribos arameias, ao longo do Eufrates e do Tigre. Era um mosaico de oásis, vales e estepe onde a chuva chegava para a agricultura sem irrigação em muitas zonas, e onde os caminhos entre o Mediterrâneo, a Anatólia e a Mesopotâmia se cruzavam.',
+  'Os próprios Arameus chamavam à terra **Aram**, nome que aparece em inscrições antigas e na Bíblia. As cidades-estado eram muitas vezes designadas, nos textos assírios, como «casa de» um fundador: **Bit-Adini** («casa de Adini»), **Bit-Agusi** («casa de Agusi»), **Bit-Bahiani**, **Bit-Zamani**. Era a forma de dizer «o domínio da família ou da linhagem de» tal chefe.',
+  { img: 'ara-paisagem-habur', leg: 'Rio Habur junto de Tell Sheikh Hamad, nordeste da Síria.' },
+  { h: 'Quando existiram' },
+  'A história arameia não tem uma data única de início nem de fim. Aqui segue-se uma divisão simples, na «cronologia média». Os reinos acabam por volta de 720 a.C., mas a língua e o alfabeto continuam por mais de dois mil anos.',
+  { tabela: { cab: ['Fase', 'Datas aproximadas', 'O que a marca'], linhas: [
+    ['Antes dos Arameus', 'séculos XIV – XIII a.C.', 'Textos assírios falam de nómadas chamados Ahlamu; a ligação aos futuros Arameus é debatida'],
+    ['Instalação', 'c. 1200 – 1000 a.C.', 'Colapso das potências da Idade do Bronze; grupos arameus ocupam terras na Síria e no alto Eufrates; Tiglath-Pileser I (c. 1100) combate-os'],
+    ['Formação dos reinos', 'c. 1000 – 900 a.C.', 'Nascem Bit-Adini, Bit-Bahiani, Hamat, Bit-Agusi, Sam’al, Aram-Damasco e outros'],
+    ['Apogeu e guerras com a Assíria', 'c. 900 – 800 a.C.', 'Qarqar (853 a.C.), Hazael de Damasco, Estela de Tel Dan; os reinos do Eufrates caem primeiro (Bit-Adini, 856–855 a.C.)'],
+    ['Queda', 'c. 745 – 720 a.C.', 'Tiglath-Pileser III conquista Arpad (c. 740) e Damasco (732); Sargão II toma Hamat (720)'],
+    ['Depois dos reinos', 'c. 700 a.C. em diante', 'O aramaico espalha-se como língua do Império Assírio e, depois, do Império Persa; mais tarde é a língua de Jesus, do Talmude e do siríaco']
+  ] } },
+  { img: 'ara-tel-dan-estela', leg: 'Estela de Tel Dan, Museu de Israel.' },
+  { h: 'De onde vieram?' },
+  'É uma pergunta em aberto. A teoria mais comum diz que os Arameus eram grupos semitas do ocidente, da estepe da Síria e do deserto sírio, que se fixaram quando o poder dos Hititas, do Egito e da Assíria enfraqueceu, por volta de 1200 a.C. O primeiro texto em que o nome aparece de forma inequívoca como povo é uma inscrição de Tiglath-Pileser I da Assíria, c. 1100 a.C.; a procura de menções anteriores (por exemplo em textos do terceiro e do segundo milénios) deu resultados incertos e é muito debatida. A Bíblia dá aos antepassados de Israel origens arameias («um arameu errante era meu pai», Deuteronómio 26:5), mas essa tradição não prova nada sobre as migrações reais.',
+  'Também se discute se os Arameus eram sobretudo pastores nómadas que se foram fixando, ou se muitos eram já populações locais que adotaram uma nova identidade e língua. A arqueologia mostra que os reinos arameus misturam elementos locais, hititas e luvitas, e que a identidade «aramaica» era, antes de tudo, a da **língua** e das linhagens dos chefes, não a de um povo uniforme.',
+  { img: 'ara-nomadas-estepe', leg: 'Famílias arameias seminomádicas na estepe síria, c. 1100 a.C.; reconstrução artística. Ilustração gerada por IA.' },
+  { h: 'Porque importam' },
+  { lista: [
+    '**A língua e o alfabeto:** o aramaico foi a língua de comunicação de dois grandes impérios e o seu alfabeto deu origem a muitas escritas, entre elas as do hebraico moderno e do árabe.',
+    '**Os reinos intermédios:** os pequenos estados arameus ligaram Mesopotâmia, Anatólia, Levante e Egito e mostram como viviam os povos que a Assíria foi vencendo.',
+    '**Fontes diretas:** estelas como a de Tel Dan, de Zakkur ou de Sefire permitem ouvir os próprios reis arameus, e não só os seus inimigos.',
+    '**A Bíblia e a história:** Damasco, Hazael e Rezin aparecem nos textos bíblicos e nos assírios, e a comparação das duas fontes é uma das grandes questões da história do Próximo Oriente.',
+    '**Uma memória viva:** o aramaico nunca morreu. Ainda é falado hoje, em dialetos neoaramaicos.'
+  ] },
+  { caixa: 'Os Arameus hoje', texto: 'O nome «Arameus» foi retomado por algumas comunidades cristãs da Síria e da Turquia, que se consideram herdeiras diretas deste povo; outras comunidades que falam aramaico preferem o nome Assírios ou Caldeus. A ligação genética e cultural exata entre os Arameus antigos e estas comunidades modernas é **debatida** e tem também dimensão política.' }
+];
+
+const linha = [
+  'Esta linha do tempo segue os acontecimentos principais da história arameia, de c. 1200 a.C. até ao fim dos reinos e à vida posterior da língua. As datas são aproximadas, sobretudo as mais antigas, e as histórias contadas só pela Bíblia são assinaladas como tal.',
+  { linha: [
+    { d: 'séculos XIV – XIII a.C.', t: 'Os Ahlamu nos textos assírios', x: 'Reis da Assíria mencionam nómadas da estepe, os **Ahlamu**, que os incomodam nas fronteiras. Os estudiosos discutem se são os antepassados dos Arameus ou um grupo aparentado; um dos textos mais tardios junta os dois nomes («Ahlamu-Arameus»).' },
+    { d: 'c. 1200 – 1150 a.C.', t: 'O vazio depois do colapso', x: 'O Império Hitita desaba, Ugarit é destruída e a Assíria perde força. Neste vazio, grupos de língua aramaica ocupam terras na Síria e no Eufrates. As causas deste «colapso da Idade do Bronze» são ainda debatidas.' },
+    { d: 'c. 1100 a.C.', t: 'Tiglath-Pileser I combate os Arameus', x: 'O rei assírio **Tiglath-Pileser I** (c. 1114–1076 a.C.) afirma ter perseguido os «Ahlamu-Arameus» na margem do Eufrates e ter atravessado o rio 28 vezes. É a primeira menção clara do povo.' },
+    { d: 'c. 1050 – 1000 a.C.', t: 'Tribos arameias avançam sobre Pitru e Mutkinu', x: 'Os Arameus ocupam cidades assírias no Eufrates. Um rei assírio posterior, Assurrabi II (c. 1012–972 a.C.), queixa-se dessa perda. A Assíria só recupera o controlo no século IX a.C.' },
+    { d: 'c. séc. X a.C.', t: 'Os Arameus de Zobá e a Bíblia', x: 'A Bíblia (2 Samuel 8 e 10) fala de guerras do rei David contra reis arameus de **Zobá** e de Damasco. Não há confirmação em inscrições da época; o grau de historicidade do relato é **debatido**.' },
+    { d: 'c. 1000 – 900 a.C.', t: 'Nascem os reinos', x: 'Aparecem os estados que a Assíria vai conhecer: **Bit-Adini** (capital Til Barsip), **Bit-Bahiani** (Guzana), **Hamat**, **Bit-Agusi** (Arpad), **Sam’al** (Zincirli), **Aram-Damasco** e **Bit-Zamani**. Muitas destas cidades eram já antigas e tinham população luvita ou hitita.' },
+    { d: 'séc. X – IX a.C.', t: 'O palácio de Kapara em Guzana', x: 'O rei **Kapara** manda construir um palácio com grandes estátuas de basalto em Tell Halaf (Guzana). A data é **debatida**: o escavador, Max von Oppenheim, apontou o século X a.C.; estudos mais recentes aproximam-na do século IX a.C.' },
+    { d: '883 – 859 a.C.', t: 'Assurnasirpal II chega ao Mediterrâneo', x: 'O rei assírio **Assurnasirpal II** atravessa o Eufrates e recebe tributo de reinos arameus e neo-hititas da Síria. É o início de uma pressão assíria que durará mais de um século.' },
+    { d: '856 – 855 a.C.', t: 'Cai Bit-Adini', x: 'O rei assírio **Salmanasar III** conquista Bit-Adini, deporta o seu rei Ahuni e converte Til Barsip na cidade assíria de Kar-Salmanasar. É o primeiro grande reino arameu a perder a independência.' },
+    { d: '853 a.C.', t: 'Batalha de Qarqar', x: 'Uma coligação de cerca de doze reis do Levante, com Hadad-ezer de Damasco, Irhuleni de Hamat e Acab de Israel, enfrenta o exército de Salmanasar III junto ao Oronte. A Assíria diz que venceu, mas não avançou: o resultado é **debatido**. Os números das tropas, copiados do texto assírio, são provavelmente exagerados.' },
+    { d: 'c. 850 a.C.', t: 'A estátua bilingue de Tell Fekheriye', x: 'Uma estátua do governante Hadad-yis’i, com texto em acádio e em aramaico, mostra um mundo em que as duas línguas já convivem na Alta Mesopotâmia, sob influência assíria.' },
+    { d: 'c. 842 a.C.', t: 'Hazael toma o trono de Damasco', x: 'Hazael, que os assírios chamam «filho de ninguém», sucede a Hadad-ezer, segundo a Bíblia matando-o. Em 841 e 838 a.C. Salmanasar III volta a atacar Damasco sem a conquistar; **Aram-Damasco** torna-se a maior potência da Síria.' },
+    { d: 'c. 840 – 830 a.C.', t: 'A Estela de Tel Dan', x: 'Um rei de Damasco, que a maioria dos especialistas identifica como Hazael, manda erguer uma estela no norte de Israel a celebrar as suas vitórias. Menciona um rei de Israel e um «rei da Casa de David». É geralmente apontada como a mais antiga referência extrabíblica à dinastia de David, se a leitura estiver certa.' },
+    { d: 'c. 830 a.C.', t: 'Hazael contra Israel, Judá e Gat', x: 'Segundo a Bíblia e a arqueologia (Tell es-Safi, a antiga Gat), Hazael toma terras israelitas a leste do Jordão, conquista Gat e força o rei de Judá a pagar tributo para que Jerusalém não seja atacada. Peças com o nome de Hazael foram encontradas até nos santuários gregos de Samos e de Erétria.' },
+    { d: 'c. 825 a.C.', t: 'Kilamuwa de Sam’al', x: 'O rei Kilamuwa deixa uma inscrição (em fenício) a contar como contratou o rei da Assíria contra os seus vizinhos e fez prosperar o seu reino.' },
+    { d: 'c. 808 a.C.', t: 'Guzana torna-se província assíria', x: 'O reino de Bit-Bahiani, no Habur, perde a independência para a Assíria. A cidade aparece depois como capital de província; a Bíblia (2 Reis 17:6) cita «o rio Habur, rio de Gozan» como local onde foram instalados deportados israelitas.' },
+    { d: 'início do séc. VIII a.C.', t: 'Zakkur de Hamat resiste a Bar-Hadad', x: 'Na Estela de Zakkur, o rei de Hamat e Lu’ath conta como um grande exército de reis, chefiado por Bar-Hadad, filho de Hazael, o cercou na cidade de Hazrak sem o vencer, graças ao deus Baalshamin.' },
+    { d: 'c. 750 a.C.', t: 'O tratado de Sefire', x: 'Bar-Ga’yah de KTK e Mati’el de Arpad juram um tratado em que se invocam dezenas de deuses e se lançam maldições contra quem o quebrar. A data (meados do séc. VIII a.C.) e a identidade de KTK são **debatidas**.' },
+    { d: '745 – 740 a.C.', t: 'Tiglath-Pileser III e a queda de Arpad', x: '**Tiglath-Pileser III** reforma o Estado assírio e passa a anexar territórios em vez de se limitar a cobrar tributo. Arpad resiste cerca de três anos e cai por volta de 740 a.C.' },
+    { d: '735 – 732 a.C.', t: 'A guerra siro-efraimita e a queda de Damasco', x: '**Rezin** de Damasco e Peca de Israel atacam o rei Acaz de Judá, que pede ajuda à Assíria. Em 732 a.C. Tiglath-Pileser III conquista Damasco, deporta parte da população e transforma Aram-Damasco em províncias assírias. A Bíblia diz que Rezin foi morto.' },
+    { d: 'c. 733 a.C.', t: 'Morre Panamuwa II', x: 'Panamuwa II de Sam’al, vassalo fiel dos Assírios, morre durante a campanha de Damasco. O seu filho Bar-Rakib deixa-lhe uma estátua com inscrição em samalita, língua próxima do aramaico.' },
+    { d: '720 a.C.', t: 'Sargão II toma Hamat', x: 'Depois de uma revolta de Yau-bi’di de Hamat, **Sargão II** destrói a cidade, deporta o rei e instala colonos assírios. Com Hamat, desaparece o último grande reino arameu da Síria.' },
+    { d: 'séculos VIII – VII a.C.', t: 'O aramaico espalha-se pelo Império Assírio', x: 'As deportações em massa espalham falantes de aramaico por todo o império. Em 701 a.C., segundo 2 Reis 18:26, os oficiais de Ezequias pedem ao delegado assírio que fale em aramaico, língua da diplomacia, e não em hebraico. Reis assírios passam a ter escribas de aramaico ao lado dos de cuneiforme.' },
+    { d: '539 – 330 a.C.', t: 'O aramaico imperial dos Persas', x: 'Os imperadores aquemenidas adotam o aramaico como língua administrativa de um império que vai do Egito à Índia. Surgem as cartas do sátrapa Arsames, os papiros judeus de **Elefantina** e documentos escritos até à Bactriana.' },
+    { d: 'séc. III a.C. – séc. I d.C.', t: 'Do aramaico bíblico à língua de Jesus', x: 'O aramaico aparece em partes de Esdras e de Daniel, nos Manuscritos do Mar Morto e nos targumim. Torna-se a língua corrente dos judeus da Palestina, incluindo, segundo o consenso dos estudiosos, a de Jesus de Nazaré e dos primeiros discípulos.' },
+    { d: 'séc. II – VII d.C.', t: 'Siríaco, Talmude e dialetos tardios', x: 'Em Edessa (Urfa) o aramaico local, o **siríaco**, torna-se língua de uma grande literatura cristã. O **Talmude da Babilónia** é redigido em aramaico judaico. Com a conquista árabe, o árabe vai substituindo o aramaico no uso diário, mas não de todo.' },
+    { d: 'hoje', t: 'Línguas neoaramaicas', x: 'Dialetos descendentes do aramaico são falados na Síria (Maalula, Jubb’adin), no sudeste da Turquia (turoyo), no Iraque, no Irão e em comunidades da diáspora. Estão quase todos em perigo.' }
+  ] },
+  { img: 'ara-monolito-kurkh', leg: 'Monólito de Kurkh de Salmanasar III, com relato da batalha de Qarqar, Museu Britânico.' },
+  { img: 'ara-obelisco-negro', leg: 'Obelisco Negro de Salmanasar III, Museu Britânico.' },
+  { img: 'ara-testeira-hazael', leg: 'Testeira de cavalo com inscrição de Hazael, encontrada em Samos; Museu Arqueológico de Vathi.' },
+  { img: 'ara-deportacao-relevo', leg: 'Deportados do sul do Iraque num relevo de Nimrud, c. 728 a.C., do tempo de Tiglat-Pileser III; Museu Britânico.' },
+  { img: 'ara-sargao-relevo', leg: 'Relevo de Sargão II, de Khorsabad, Louvre.' }
+];
+
+const mapa = [
+  'Os Arameus nunca tiveram uma capital única. Cada reino girava à volta de uma cidade principal, com cidadela, palácio e templo do deus protetor, rodeada de aldeias e campos. Este mapa mostra os reinos mais importantes, da costa do Mediterrâneo ao Eufrates e ao Habur.',
+  { tabela: { cab: ['Reino', 'Cidade principal (local hoje)', 'Para que ficou conhecido'], linhas: [
+    ['Aram-Damasco', 'Damasco (Síria)', 'O reino mais poderoso; Hadad-ezer, Hazael, Rezin; Estela de Tel Dan; conquistado em 732 a.C.'],
+    ['Hamat', 'Hama (Síria)', 'Reino misto luvita e arameu; Irhuleni; Estela de Zakkur; destruído por Sargão II em 720 a.C.'],
+    ['Bit-Agusi', 'Arpad, Tell Rifaat (Síria)', 'Reino da região de Alepo; tratado de Sefire; cercada e tomada c. 740 a.C.'],
+    ['Sam’al', 'Zincirli (Turquia)', 'Reino do sopé do Amanus; Kilamuwa, Panamuwa II e Bar-Rakib; muitas inscrições'],
+    ['Bit-Adini', 'Til Barsip, Tell Ahmar (Síria)', 'Reino do Eufrates, derrotado em 856–855 a.C.; mais tarde cidade assíria'],
+    ['Bit-Bahiani', 'Guzana, Tell Halaf (Síria)', 'Palácio de Kapara; esculturas de basalto; escavações de Max von Oppenheim'],
+    ['Bit-Zamani', 'Amida, Diyarbakır (Turquia)', 'Reino do alto Tigre; foi conquistado pelos Assírios'],
+    ['Tribos do Eufrates e da Babilónia', 'sem cidade única', 'Grupos como os Puqudu, Gambulu, Itu’u e Ru’ua, instalados no sul da Mesopotâmia, em luta com a Assíria e a Babilónia']
+  ] } },
+  { h: 'Damasco, o grande reino' },
+  'Damasco ficava num oásis, regada pelo rio Barada, na ligação entre o Mediterrâneo, o deserto e as rotas para a Mesopotâmia. Dali saíam os exércitos de Hadad-ezer, de Hazael e de Rezin. As inscrições assírias chamam-lhe Dimašqa e ao reino Imērišu (Sa’imērišu); a Bíblia chama ao reino «Aram». Foi o maior estado arameu e o único capaz de enfrentar a Assíria em batalha aberta durante décadas. A cidade antiga está hoje debaixo da cidade moderna, o que torna a escavação do período arameu muito limitada.',
+  { img: 'ara-damasco-hazael', leg: 'Reconstrução hipotética de Damasco no reinado de Hazael, c. 830 a.C. Ilustração gerada por IA.' },
+  { h: 'Guzana e Tell Halaf' },
+  'Tell Halaf, junto à atual fronteira entre a Síria e a Turquia, é o monte onde estava **Guzana**, capital do reino de **Bit-Bahiani**. O sítio foi descoberto por Max von Oppenheim em 1899. A sua escavação (1911–1913 e 1927–1929) revelou o **Palácio Ocidental** do rei **Kapara**, com uma fachada de estilo sírio-hitita (um *bit hilani*, pórtico de colunas) assente em grandes figuras de basalto (um deus da tempestade, uma deusa e uma divindade solar) de cerca de três metros e meio. Os muros estavam cobertos de **ortóstatos**, placas de pedra esculpidas com caçadas, banquetes e seres fantásticos.',
+  { img: 'ara-tell-halaf-fachada', leg: 'Réplica da fachada do palácio de Tell Halaf na entrada do Museu Nacional de Alepo.' },
+  'Debaixo do palácio apareceu também cerâmica cerca de cinco mil anos mais antiga, de uma cultura neolítica, a **cultura de Halaf**, que deu nome ao período. Guzana foi conquistada pela Assíria e tornou-se capital de província. Em 1943 a coleção de Oppenheim, em Berlim, foi destruída por um bombardeamento; foi depois reconstruída pacientemente (ver «Legado»).',
+  { img: 'ara-tell-halaf-palacio', leg: 'Reconstrução artística do Palácio Ocidental de Kapara em Guzana (Tell Halaf), século IX a.C., com pórtico sobre estátuas e bases de animais. Ilustração gerada por IA.' },
+  { h: 'Sam’al (Zincirli)' },
+  'Sam’al ficava numa planície do sul da atual Turquia, ao pé das montanhas do Amanus. Era uma cidade circular, com muralhas de dupla linha e uma cidadela com vários palácios. As escavações alemãs de Felix von Luschan (1888–1902) e as americanas do Instituto Oriental de Chicago (desde 2006) encontraram leões e esfinges de pedra, portas monumentais e **inscrições em vários textos**: fenício e uma variedade local do aramaico, o *samalita*, cuja classificação (dialeto do aramaico antigo ou língua à parte) é **debatida**.',
+  { img: 'ara-zincirli-leao', leg: 'Cabeça de um leão guardião de pedra de Zincirli (Sam’al); Louvre, AO 8188.' },
+  { img: 'ara-zincirli-reconstrucao', leg: 'Reconstrução artística de Sam’al (Zincirli), século VIII a.C., com dupla muralha circular e cidadela. Ilustração gerada por IA.' },
+  { h: 'Hamat, Arpad e Til Barsip' },
+  '**Hamat** (a atual Hama) ficava no Oronte e era um reino misto: os seus primeiros reis usavam hieróglifos luvitas, e o aramaico só aparece mais tarde, com Zakkur, por volta de 800 a.C. O Oronte ainda faz girar as célebres norias da cidade. **Arpad** (Tell Rifaat) foi a capital de Bit-Agusi, ao norte de Alepo; foi tomada por Tiglath-Pileser III em 740 a.C. e perdeu a independência. **Til Barsip** (Tell Ahmar), no Eufrates, foi capital de Bit-Adini e depois cidade assíria, com pinturas murais que se conservaram.',
+  { img: 'ara-hamat-norias', leg: 'Norias históricas de Hama no rio Oronte, numa fotografia moderna; não são estruturas arameias da Idade do Ferro.' },
+  { img: 'ara-arpad-tell-rifaat', leg: 'Vista contemporânea de Tell Rifaat, localidade identificada com a antiga Arpad, Síria; fotograma de 2015.' },
+  { h: 'Harran e a fronteira com a Assíria' },
+  'Harran, no vale do Balikh (sul da Turquia), era uma cidade antiga na rota entre a Assíria e a Síria. O seu grande templo era o do deus-Lua **Sin**, venerado também pelos Arameus. Foi capital efémera do que restava da Assíria depois da queda de Nínive (612 a.C.) e, mais tarde, foi favorecida pelo rei babilónico Nabonido, filho de uma sacerdotisa de Sin.',
+  { img: 'ara-harran-ruinas', leg: 'Ruínas da Grande Mesquita medieval de Harran, Turquia; testemunho de uma fase posterior da cidade.' },
+  { h: 'As rotas das caravanas' },
+  'Os reinos arameus viviam do comércio entre o Mediterrâneo, a Mesopotâmia, a Anatólia e a Arábia. Damasco, Hamat e Arpad controlavam passagens e cobravam taxas. A **Bíblia** (Ezequiel 27) descreve Aram e Damasco a vender a Tiro lã, vinho, tecidos e pedras. Os Assírios, por sua vez, exigiam tributo em metais, tecidos e marfim e controlavam as rotas que cortavam o Eufrates. Uma frase que se repete nos livros, a de que os Arameus foram «os grandes comerciantes do Próximo Oriente», vem em parte desta imagem bíblica e é uma simplificação: a evidência direta do comércio arameu é limitada e muito do que se sabe vem de fontes assírias e bíblicas.'
+];
+
+const sociedade = [
+  { h: '1. Organização política' },
+  'Cada reino era governado por um **rei** (em aramaico *mlk*), cuja legitimidade vinha da dinastia («filho de» o rei anterior) e da proteção do deus nacional. Os textos reais (Kilamuwa, Zakkur, Panamuwa, Bar-Rakib) falam de um rei que é guerreiro, construtor, juiz e protegido do deus, e que assegura as chuvas e as colheitas. Entre as cidades havia rivalidade constante. A única vez em que muitos se uniram foi diante de ameaças comuns, como em Qarqar ou na coligação contra Zakkur.',
+  'Por baixo do rei havia uma corte de familiares, governadores de cidades, chefes de tribo, oficiais e escribas. Em muitos reinos, tribos e vilas conservavam a sua autonomia, e a ideia de que os Arameus eram «tribos que se tornaram reinos» é, em parte, uma simplificação: algumas das cidades mais importantes eram muito antigas.',
+  { img: 'ara-bit-hilani-corte', leg: 'Audiência na corte de um rei arameu num palácio bit hilani, século VIII a.C.; reconstrução artística. Ilustração gerada por IA.' },
+  { h: '2. Classes sociais' },
+  { lista: [
+    '**Rei e família real:** governavam e eram os principais construtores e doadores.',
+    '**Elites de corte e do templo:** funcionários, oficiais, sacerdotes e escribas. Em Zincirli, um funcionário, Kuttamuwa, mandou fazer a sua própria estela funerária.',
+    '**Camponeses, pastores e artesãos:** a maioria da população; muita da vida dos Arameus rurais tinha continuidade com a das populações anteriores.',
+    '**Mercadores e transportadores:** ligados às caravanas, mal documentados nas fontes diretas.',
+    '**Dependentes e escravos:** sobretudo prisioneiros de guerra e pessoas por dívidas. Os documentos conservados são escassos.'
+  ] },
+  { h: '3. Religião' },
+  'Os Arameus eram **politeístas** e não tinham um panteão exclusivamente seu: veneravam deuses da Síria e da Mesopotâmia, muitas vezes com nomes locais. Cada reino tinha o seu deus principal, e os reis invocavam-nos nas inscrições. Os principais eram:',
+  { tabela: { cab: ['Deus', 'Domínio', 'Onde era venerado'], linhas: [
+    ['Hadad (Adad, Ramman)', 'Tempestade, chuva, trovão, fertilidade; o mais importante', 'Damasco, Alepo, Sam’al, Guzana'],
+    ['Atar (Attar)', 'Divindade ligada ao céu e à fertilidade (a natureza exata é debatida); entra em nomes de reis, como Attar-shumki', 'Arpad e outros reinos'],
+    ['Sin', 'Lua', 'Harran e Alta Mesopotâmia'],
+    ['Rakib-El', 'Deus dinástico de Sam’al, o «cocheiro de El»', 'Sam’al'],
+    ['El', 'Deus supremo no mundo cananeu', 'Vários reinos'],
+    ['Baalshamin', '«Senhor dos Céus»', 'Hamat e Lu’ath (Estela de Zakkur)'],
+    ['Melqart', 'Deus de Tiro, patrono da estela de Bar-Hadad', 'Damasco / Alepo'],
+    ['Atargatis (Atar-’Ata)', 'Deusa-mãe dos tempos mais tardios, de Hierápolis (Manbij)', 'Síria, época helenística']
+  ] } },
+  'Os templos tinham a estátua do deus, onde se faziam oferendas e sacrifícios, e muitas vezes ficavam na cidadela, ao lado do palácio. No tratado de Sefire os dois lados invocam uma longa lista de deuses, mesopotâmicos e arameus, como testemunhas: é um bom exemplo da mistura religiosa do período. O **Hadad** de Damasco teve templo famoso, e o lugar do futuro templo de Júpiter e da Mesquita dos Omíadas foi (segundo a tradição, mas sem prova direta) um local de culto desde a época arameia.',
+  { img: 'ara-sin-harran-estela', leg: 'Estela de Nabónido proveniente da Babilónia, com símbolos divinos, incluindo o crescente de Sin; Museu Britânico.' },
+  { img: 'ara-hadad-estatua', leg: 'Estátua colossal de Hadad, de Gerdshin, junto de Sam’al, associada a Panamuwa I; Museu de Pérgamo.' },
+  { h: 'A vida depois da morte' },
+  'Há poucas fontes. Duas inscrições de Sam’al dão pistas: a estela de **Panamuwa II** pede que os sucessores o recordem no culto de Hadad, e a de **Kuttamuwa** (descoberta em 2008, c. 735–720 a.C.) diz que a «alma» (*nbš*) do falecido está na própria estela, onde se faz uma refeição ritual. Os estudiosos veem aqui uma ideia de sobrevivência ligada ao culto dos mortos, mas a interpretação é **debatida**.',
+  { h: '4. Economia e comércio' },
+  'A base da economia era a **agricultura de sequeiro** (cevada, trigo, oliveiras, vinha e pomares no oeste) e a pastorícia de ovelhas e cabras. O comércio era essencial. As cidades arameias vendiam lã, tecidos e vinho (a Bíblia cita o «vinho de Helbon», perto de Damasco) e revendiam metais e marfim. O **tributo** pago aos Assírios incluía prata, ouro, ferro, estanho, tecidos de lã e linho tingidos de púrpura, marfim e cavalos.',
+  { img: 'ara-caravana-camelos', leg: 'Caravana com dromedários e burros na estepe síria, c. 800 a.C.; cena reconstruída. Ilustração gerada por IA.' },
+  'Os **camelos** (dromedários) já eram usados em caravanas e na guerra: o texto assírio de Qarqar menciona mil camelos de um chefe árabe, Gindibu, a lutar na coligação. Os comerciantes, entre eles os Arameus, aproveitavam a nova capacidade de atravessar o deserto. Mas **não está provado** que os Arameus tenham dominado o comércio de caravanas: boa parte do tráfego era de populações árabes e de mercadores fenícios, e a imagem do «povo de mercadores» é uma simplificação.',
+  { img: 'ara-mercado-aramaico', leg: 'Mercado numa cidade arameia do século VIII a.C.; cena reconstruída. Ilustração gerada por IA.' },
+  { h: '5. Língua e escrita' },
+  'Os Arameus escreviam com um **alfabeto de 22 letras**, só com consoantes, adaptado do alfabeto fenício. Não o inventaram: aproveitaram um sistema criado cerca de 1050 a.C. na costa do Levante e fizeram-no sua língua. A grande vantagem sobre o cuneiforme era a **simplicidade**: poucas letras em vez de centenas de sinais, que se escreviam com tinta em papiro, pergaminho, ostraca (cacos de cerâmica) ou pedra.',
+  { img: 'ara-alfabeto-quadro', leg: 'Quadro comparativo de alfabetos aramaicos publicado por Mark Lidzbarski em 1898.' },
+  'Os primeiros textos aramaicos são inscrições reais dos séc. IX–VIII a.C.: a estátua de Tell Fekheriye, a Estela de Tel Dan, a estela de Bar-Hadad e as de Zakkur e Sefire. O aramaico antigo era ainda muito variado por região. Mais tarde, o sistema foi uniformizado pelas chancelarias assíria e persa.',
+  { tabela: { cab: ['Fase', 'Datas aproximadas', 'Exemplos'], linhas: [
+    ['Aramaico antigo', 'c. 925 – 700 a.C.', 'Tel Dan, Tell Fekheriye, Zakkur, Sefire, Zincirli'],
+    ['Aramaico imperial', 'c. 700 – 200 a.C.', 'Chancelaria assíria e persa; papiros de Elefantina; Daniel e Esdras'],
+    ['Aramaico médio', 'c. 200 a.C. – 200 d.C.', 'Nabateus, Palmira, Manuscritos do Mar Morto, targumim, língua de Jesus'],
+    ['Aramaico tardio', 'c. 200 – 1200 d.C.', 'Siríaco, aramaico do Talmude, mandaico'],
+    ['Neoaramaico', 'hoje', 'Maalula, turoyo, neoaramaico assírio e caldeu']
+  ] } },
+  { img: 'ara-escribas-relevo', leg: 'Escribas assírios a registar o butim, num relevo do Palácio Sudoeste de Nínive, c. 640–620 a.C.; Museu Britânico.' },
+  'A escrita em aramaico ganhou espaço no Império Assírio a partir do século VIII a.C., quando os deportados e os colonos arameus se espalharam. Os escribas de aramaico escreviam em pergaminho ou papiro, que quase não se conserva em Mesopotâmia, e por isso temos sobretudo os textos em cuneiforme, em ostraca e em tabuinhas com anotações aramaicas.',
+  { img: 'ara-escriba-pergaminho', leg: 'Escriba com pergaminho junto de um escriba cuneiforme, c. 700 a.C.; cena reconstruída. Ilustração gerada por IA.' },
+  { img: 'ara-fekheriye-estatua', leg: 'Estátua bilingue de Hadad-yis’i de Tell Fekheriye, Museu de Damasco.' },
+  { h: '6. Casa e cidade' },
+  'As cidades arameias eram fortificadas, com cidadela alta, palácio e templo. O estilo dos palácios era o **bit hilani**: uma sala longa precedida de um pórtico com colunas, tirado da arquitetura da Síria e da Anatólia. A casa comum era de tijolo cru e pedra, com pátio, e muitas famílias do campo viviam ainda em tendas ou em casas simples de aldeia.',
+  { h: '7. Alimentação' },
+  'A dieta baseava-se em **pão de cevada e trigo**, em lentilhas, favas, cebolas, azeite, tâmaras e figos, carne de ovelha e de cabra e produtos lácteos. A vinha era importante em zonas altas, e o vinho de Helbon (perto de Damasco) tinha fama. Há poucas fontes diretas; muito do que se diz vem dos costumes gerais da região.',
+  { h: '8. Vestuário' },
+  'Os relevos de Sam’al, de Guzana e de Zincirli mostram homens com túnicas e mantos longos, muitas vezes com franjas, cintos largos, barbas cuidadas e toucados ou fitas na cabeça. As mulheres usavam vestidos compridos e véus. Os tecidos de lã tingida de púrpura eram uma exportação importante.',
+  { h: '9. Música e jogos' },
+  'As fontes são escassas. Os relevos sírio-hititas mostram cenas de banquete com músicos de lira e instrumentos de sopro. O banquete é também o tema central de várias estelas funerárias de Sam’al, como a de Kuttamuwa. Dos jogos pouco se sabe com segurança.',
+  { h: '10. Ciência e saber' },
+  'Os Arameus não deixaram uma ciência própria. O seu papel foi de **transmissão**: a sua língua serviu de ponte entre a Mesopotâmia, a Pérsia e o Egito, e foi nela que circularam textos de sabedoria, como a história de **Aicar**, sábio da corte assíria, e, mais tarde, textos científicos e filosóficos traduzidos do grego para o siríaco.',
+  { h: '11. Tecnologia' },
+  'Viveram na Idade do Ferro e o ferro aparece entre os tributos que pagavam. Trabalhavam o marfim de modo notável (as placas de marfim de Arslan Tash e as «de estilo sírio», encontradas em Nimrud), a pedra e o bronze. Usavam carros de guerra e cavalos criados na região.',
+  { h: '12. A guerra' },
+  'O exército arameu tinha **carros de guerra**, cavalaria, infantaria e, como se vê em Qarqar, contingentes aliados de camelos de árabes. As cidades eram cercadas por muralhas duplas, e os reinos recorriam muito a alianças: Damasco lutou ao lado de Israel em Qarqar e contra Israel noutros anos. A Assíria dispunha de exércitos maiores, com engenharia de cerco e deportações em massa, e foi vencendo um reino de cada vez.',
+  { img: 'ara-guerra-carros', leg: 'Carros de guerra arameus numa planície, século IX a.C.; reconstrução artística. Ilustração gerada por IA.' }
+];
+
+const personalidades = [
+  'Dos Arameus conhecemos sobretudo reis, porque foram eles que mandaram escrever e esculpir. As datas são aproximadas, e algumas identidades (por exemplo, quem era «Ben-Hadad» da Bíblia) são debatidas pelos estudiosos.',
+  { h: 'Ahuni, rei de Bit-Adini' },
+  'Rei do reino do Eufrates, resistiu ao assírio Salmanasar III durante vários anos e foi derrotado e deportado em 856–855 a.C. Til Barsip passou a ser a cidade assíria de Kar-Salmanasar.',
+  { h: 'Hadad-ezer, rei de Damasco' },
+  'Governou c. 865–843 a.C. (datas aproximadas). Os textos assírios chamam-lhe **Adad-idri**; foi o líder da coligação de Qarqar (853 a.C.), com 1200 carros de guerra, 1200 cavaleiros e 20 000 soldados segundo o texto assírio (números provavelmente exagerados). Costuma identificar-se com o «Ben-Hadad» da Bíblia, mas esta equivalência é **debatida**. Segundo a Bíblia, foi assassinado por Hazael.',
+  { h: 'Hazael, rei de Damasco' },
+  'Governou c. 842–800 a.C. Subiu ao trono sem ser filho do rei anterior (os Assírios chamam-lhe «filho de ninguém»), repeliu os ataques de Salmanasar III e fez de Damasco a maior potência da Síria e da Palestina, conquistando terras de Israel e a cidade filisteia de Gat. Em Samos e Erétria foram encontradas testeiras de cavalo inscritas com o seu nome, e em Arslan Tash uma placa de marfim com a mesma inscrição. A Estela de Tel Dan é atribuída pela maioria dos estudiosos a ele (**debatido**).',
+  { img: 'ara-hazael-marfim', leg: 'Fragmentos de uma placa de marfim de Arslan Tash com inscrição que menciona Hazael; Louvre, AO 11489.' },
+  { h: 'Bar-Hadad (Ben-Hadad III)' },
+  'Filho de Hazael, reinou no início do séc. VIII a.C. (c. 800–770, datas incertas). Aparece na Estela de Zakkur, como chefe da coligação que cercou o rei de Hamat. A «estela de Bar-Hadad», com uma dedicatória ao deus Melqart, encontrada perto de Alepo, refere um rei com o mesmo nome, filho de Tabrimon, que alguns identificam com um Ben-Hadad anterior (talvez o primeiro, 1 Reis 15:18); a identificação é **debatida**.',
+  { img: 'ara-barhadad-melqart', leg: 'Estela de Bar-Hadad dedicada a Melqart, Museu de Alepo.' },
+  { h: 'Zakkur, rei de Hamat e Lu’ath' },
+  'Reinou no início do séc. VIII a.C. (c. 800–770, datas incertas). Mandou erguer em Afis uma estela em aramaico a relatar o cerco de Hazrak por uma coligação de reis chefiada por Bar-Hadad e a sua libertação por graça de **Baalshamin**.',
+  { img: 'ara-zakkur-estela', leg: 'Estela de Zakkur, Louvre.' },
+  { h: 'Rezin, último rei de Damasco' },
+  'Reinou c. 750–732 a.C. (datas aproximadas). Aparece entre os reis que pagaram tributo a Tiglath-Pileser III (c. 738 a.C.), mas aliou-se depois a Peca de Israel contra Judá. A Bíblia (2 Reis 16, Isaías 7) conta que o rei Acaz de Judá apelou à Assíria. Damasco foi conquistada em 732 a.C.; a Bíblia diz que Rezin foi morto. Os anais assírios deste episódio estão em mau estado.',
+  { h: 'Kapara, rei de Guzana' },
+  'Rei de Bit-Bahiani, a quem se atribui o palácio de Tell Halaf, com as suas esculturas. O texto das suas inscrições chama-lhe «filho de Hadiani»; a data do reinado é **debatida** (séc. X ou IX a.C.).',
+  { h: 'Kilamuwa, rei de Sam’al' },
+  'Reinou c. 840–815 a.C. (datas aproximadas). Numa inscrição em fenício, conta que os reis anteriores eram fracos, que contratou o rei da Assíria contra os seus inimigos («dei uma jovem por uma ovelha e um homem por uma veste») e que fez prosperar os pobres e os humildes.',
+  { img: 'ara-kilamuwa-estela', leg: 'Estela de Kilamuwa de Sam’al, c. 825 a.C., com inscrição em fenício; Museu de Pérgamo.' },
+  { h: 'Panamuwa II e Bar-Rakib, de Sam’al' },
+  'Panamuwa II (c. 743–733 a.C.) foi vassalo fiel de Tiglath-Pileser III e morreu durante a campanha de Damasco. O seu filho **Bar-Rakib** mandou erguer a estátua do pai e deixou relevos em que aparece sentado no trono, com o seu escriba, e em que se declara servidor do seu «senhor» Tiglath-Pileser III.',
+  { img: 'ara-bar-rakib-estela', leg: 'Relevo de Bar-Rakib no trono, de Zincirli, Museu de Pérgamo.' },
+  { h: 'Mati’el, rei de Arpad' },
+  'Rei de Bit-Agusi, ligado ao tratado de Sefire. A Assíria tomou a sua capital, Arpad, em 740 a.C.',
+  { h: 'Aicar (Ahiqar), o sábio' },
+  'Figura da literatura aramaica, conselheiro de reis assírios. A história de Aicar, com os seus provérbios e a traição do sobrinho, foi encontrada em Elefantina (séc. V a.C.). Uma lista de sábios cuneiforme tardia cita um sábio com este nome, mas a história é uma obra literária, e a sua historicidade é **incerta**.',
+  { img: 'ara-ahiqar-papiro', leg: 'Papiro de Aicar, em aramaico, proveniente de Elefantina, séc. V a.C.; Neues Museum, Berlim.' },
+  { h: 'Max von Oppenheim' },
+  'Diplomata e arqueólogo alemão (1860–1946). Descobriu Tell Halaf em 1899, escavou-o em 1911–1913 e 1927–1929 e abriu em 1930 um museu privado em Berlim, destruído em 1943.',
+  { img: 'ara-oppenheim-retrato', leg: 'Retrato de Max von Oppenheim.' }
+];
+
+const legado = [
+  { h: 'O que nos deixaram' },
+  { lista: [
+    '**O alfabeto aramaico:** deu origem à escrita hebraica quadrada, à siríaca, à nabateia (da qual vem a árabe) e, através de outros ramos, a escritas da Ásia Central e do sul da Ásia (como a kharosthi). A origem de outras, como a brahmi, é debatida.',
+    '**A língua franca:** foi a língua do comércio, da administração e da diplomacia dos impérios assírio, babilónico e persa, do Egito à Índia.',
+    '**Os reinos neo-hititas e arameus:** a sua arte (esculturas de basalto, ortóstatos, marfins) deixou marca na arte assíria e persa.',
+    '**A Bíblia e o Talmude:** partes de Daniel e de Esdras e muitos textos de Qumran estão em aramaico; o Talmude da Babilónia e o Kaddish também.',
+    '**O siríaco:** língua de uma literatura cristã imensa, que levou a fé e a ciência até à Índia e à China.',
+    '**A língua de Jesus:** o aramaico da Galileia, de que restam palavras nos Evangelhos, como *talitha koum* e *abba*.'
+  ] },
+  { h: 'O aramaico no império' },
+  'Em Elefantina (Egito), uma guarnição judaica ao serviço dos Persas deixou, no século V a.C., uma grande coleção de papiros em aramaico imperial: cartas, contratos, e uma carta de 407 a.C. ao governador de Judá a pedir licença para reconstruir o seu templo de «Yahu». Os mesmos arquivos incluem o texto de Aicar e uma versão em aramaico da inscrição de Behistun. Mais a leste, o rei Ashoka mandou gravar em Kandahar, no século III a.C., um édito em grego e em aramaico.',
+  { img: 'ara-elefantina-papiro', leg: 'Papiro aramaico de Elefantina com contrato de empréstimo de 400 a.C.; reprodução publicada por Eduard Sachau em 1909.' },
+  { img: 'ara-asoka-kandahar', leg: 'Inscrição bilingue grega e aramaica de Ashoka, Kandahar.' },
+  { h: 'Da língua de Jesus ao siríaco' },
+  'Os Evangelhos estão em grego, mas guardam palavras aramaicas: *talitha koum* («menina, levanta-te», Marcos 5:41), *effatha* («abre-te», Marcos 7:34), *abba* («pai») e o grito de Jesus na cruz, *Eloi, Eloi, lama sabachthani* (Marcos 15:34). O **siríaco**, aramaico de Edessa, tornou-se língua cristã, com a Bíblia *Peshitta*, os poemas de **Santo Efrém** (séc. IV) e a tradução de obras gregas que depois passaram ao árabe. Missionários de língua siríaca chegaram à Índia e à China, onde a Estela de Xian (781 d.C.) tem texto em chinês e em siríaco.',
+  { img: 'ara-rabbula-evangelho', leg: 'Ascensão, fólio 13v dos Evangelhos de Rabbula, manuscrito siríaco datado de 586; Biblioteca Medicea Laurenziana.' },
+  { img: 'ara-talmude-pagina', leg: 'Primeira página do tratado Berakhot (2a) do Talmude da Babilónia, numa edição impressa; não é um manuscrito antigo.' },
+  { h: 'O aramaico hoje' },
+  'O aramaico nunca desapareceu. Ainda se falam dialetos **neoaramaicos**: o **aramaico ocidental** em três aldeias da Síria (Maalula, Jubb’adin e Bakh’a); o **turoyo** no sudeste da Turquia; o neoaramaico **assírio** e **caldeu** no norte do Iraque, na Síria, na Turquia e no Irão e na diáspora; e o neomandaico, dos Mandeus. As estimativas de falantes variam, de algumas centenas de milhares a pouco mais de um milhão, conforme se definam as línguas. A UNESCO considera muitos dialetos em perigo. A guerra na Síria e no Iraque atingiu comunidades como a de Maalula.',
+  { img: 'ara-maalula', leg: 'Aldeia de Maalula, Síria.' },
+  { h: 'Arte' },
+  'A arte arameia é uma arte sírio-hitita: esculturas monumentais de basalto, leões e esfinges de guarda, ortóstatos esculpidos, estátuas de deuses e de reis, e marfins finamente trabalhados, exportados para a Assíria. Ao lado dos Assírios e dos Hititas, é um dos estilos dominantes da Síria do primeiro milénio a.C.',
+  { h: 'Arquitetura' },
+  'O monumento típico é o palácio de pórtico (*bit hilani*), com colunas sobre bases de animais. As cidades têm muralhas duplas e cidadelas elevadas, como em Zincirli. Muito pouco do período está acima do solo: quase tudo se estuda em escavações.',
+  { h: 'A redescoberta dos Arameus' },
+  { linha: [
+    { d: 'séc. XIX', t: 'Os Arameus nos textos assírios e bíblicos', x: 'A decifração do cuneiforme, depois de 1850, permite ler os anais assírios e comparar Hazael, Rezin e Qarqar com a Bíblia.' },
+    { d: '1888 – 1902', t: 'Zincirli', x: 'Felix von Luschan escava Sam’al e encontra leões, relevos e inscrições, entre elas a estátua de Hadad com o texto de Panamuwa II.' },
+    { d: '1899', t: 'Tell Halaf', x: 'Max von Oppenheim descobre as esculturas de basalto de Guzana. Escava em 1911–1913 e em 1927–1929.' },
+    { d: '1903', t: 'Estela de Zakkur', x: 'A estela é descoberta em Tell Afis, e publicada em 1907.' },
+    { d: '1893 – 1911', t: 'Papiros de Elefantina', x: 'Compradores e escavadores alemães, britânicos, franceses e americanos recolhem papiros em aramaico imperial.' },
+    { d: '1930', t: 'Museu de Tell Halaf', x: 'Oppenheim abre em Berlim um museu privado para mostrar as peças.' },
+    { d: '1930', t: 'Tratado de Sefire', x: 'Estelas com um tratado em aramaico são descobertas na Síria, perto de Alepo.' },
+    { d: '1943', t: 'Destruição do museu', x: 'Em novembro, uma bomba incendiária destrói o museu e grande parte da coleção de Oppenheim.' },
+    { d: '1993 – 1994', t: 'Estela de Tel Dan', x: 'Fragmentos de uma estela em aramaico antigo são descobertos pela equipa de Avraham Biran, com a expressão «Casa de David».' },
+    { d: '2001 – 2010', t: 'Reconstrução das esculturas de Tell Halaf', x: 'Restauradores recompõem mais de 30 esculturas a partir de cerca de 27 000 fragmentos; mostram-se em 2011 no Museu de Pérgamo.' },
+    { d: '2006 até hoje', t: 'Novas escavações em Zincirli e Tell Halaf', x: 'Equipas de Chicago e sírio-alemãs retomam as escavações; a de Zincirli encontra a estela de Kuttamuwa em 2008.' }
+  ] },
+  { img: 'ara-tell-halaf-1943', leg: 'Fragmentos de esculturas de Tell Halaf e remontagem apresentada numa exposição no Museu de Pérgamo, Berlim, 2011. Alternativa documental; não é uma fotografia do museu bombardeado em 1943.' },
+  { img: 'ara-tell-halaf-restauro', leg: 'Escultura de uma ave de Tell Halaf, remontada a partir de fragmentos; exposição no Museu de Pérgamo, 2011.' },
+  { caixa: 'Para visitar', texto: 'O **Museu de Pérgamo** (Berlim) tem Tell Halaf, Zincirli e a estátua de Hadad; o **Museu de Israel** (Jerusalém), a Estela de Tel Dan; o **Louvre** (Paris), a Estela de Zakkur; o **Museu Britânico** (Londres), os relevos assírios de Nimrud; o **Museu Nacional de Damasco** e o de **Alepo** guardam o material sírio. Alguns destes sítios na Síria foram danificados na guerra.' }
+];
+
+const quiz = [
+  { p: 'Quem mencionou de forma clara os Arameus como povo, por volta de 1100 a.C.?', op: ['Nabucodonosor II', 'Tiglath-Pileser I da Assíria', 'Ciro, o Grande', 'O faraó Ramsés III'], certa: 1, exp: 'Tiglath-Pileser I diz ter combatido os «Ahlamu-Arameus» e atravessado o Eufrates 28 vezes.' },
+  { p: 'Os Arameus formaram um único império com uma capital?', op: ['Sim, com capital em Damasco', 'Sim, com capital em Harran', 'Não, formaram vários reinos independentes', 'Sim, em Nínive'], certa: 2, exp: 'Eram reinos e tribos independentes, como Aram-Damasco, Hamat, Bit-Adini, Sam’al e outros.' },
+  { p: 'Qual era a capital do reino arameu de Bit-Adini, no Eufrates?', op: ['Arpad', 'Til Barsip (Tell Ahmar)', 'Damasco', 'Harran'], certa: 1, exp: 'Bit-Adini, no Eufrates, tinha Til Barsip como capital; foi conquistada em 856–855 a.C.' },
+  { p: 'Contra quem lutou a coligação de reis em Qarqar, em 853 a.C.?', op: ['Contra os Persas', 'Contra os Egípcios', 'Contra Salmanasar III da Assíria', 'Contra os Babilónios'], certa: 2, exp: 'Damasco, Hamat, Israel e outros aliaram-se contra Salmanasar III. O resultado é debatido: ele diz que venceu, mas não avançou.' },
+  { p: 'Que inscrição dá, na leitura da maioria dos estudiosos, a expressão «Casa de David»?', op: ['A Pedra de Roseta', 'A Estela de Tel Dan', 'A Estela dos Abutres', 'O Código de Hamurabi'], certa: 1, exp: 'A Estela de Tel Dan (séc. IX a.C.), em aramaico antigo, descoberta em 1993–1994.' },
+  { p: 'Quem tomou o trono de Damasco por volta de 842 a.C. e fez do reino a maior potência da Síria?', op: ['Rezin', 'Hazael', 'Kapara', 'Kilamuwa'], certa: 1, exp: 'Hazael, a quem os Assírios chamavam «filho de ninguém», reinou c. 842–800 a.C.' },
+  { p: 'Quem descobriu Tell Halaf (Guzana) em 1899?', op: ['Leonard Woolley', 'Max von Oppenheim', 'Heinrich Schliemann', 'Austen Henry Layard'], certa: 1, exp: 'O diplomata e arqueólogo alemão Max von Oppenheim descobriu o sítio em 1899 e escavou-o em 1911–1913 e 1927–1929.' },
+  { p: 'O que aconteceu em 1943 ao museu de Tell Halaf, em Berlim?', op: ['Foi roubado', 'Foi destruído por uma bomba incendiária', 'Foi inundado', 'Foi vendido aos EUA'], certa: 1, exp: 'Uma bomba incendiária destruiu o museu; as esculturas de basalto, em fragmentos, foram reconstruídas a partir de 2001.' },
+  { p: 'De que alfabeto derivou o alfabeto aramaico?', op: ['Do grego', 'Do fenício', 'Do latim', 'Dos hieróglifos'], certa: 1, exp: 'O alfabeto aramaico, de 22 letras, adaptou o fenício e só escreve consoantes.' },
+  { p: 'Quem foi o rei de Sam’al que deixou uma inscrição em fenício a contar que contratou o rei da Assíria?', op: ['Mati’el', 'Zakkur', 'Kilamuwa', 'Ahuni'], certa: 2, exp: 'Kilamuwa de Sam’al (c. 825 a.C.), numa inscrição de Zincirli.' },
+  { p: 'Em 2 Reis 18:26, porque pedem os oficiais de Ezequias que o delegado assírio fale aramaico?', op: ['Porque ninguém conhecia o assírio', 'Porque o aramaico era a língua da diplomacia, e queriam que o povo na muralha não percebesse', 'Porque a Bíblia foi escrita em aramaico', 'Porque eram arameus'], certa: 1, exp: 'O aramaico era já língua de comunicação internacional em 701 a.C.; o povo de Jerusalém falava hebraico.' },
+  { p: 'O que são os papiros de Elefantina?', op: ['Textos em aramaico de uma guarnição judaica no Egito persa (séc. V a.C.)', 'Cartas de faraós', 'Textos gregos de Alexandre', 'Mapas assírios'], certa: 0, exp: 'Em aramaico imperial, incluem contratos, cartas e o texto de Aicar.' },
+  { p: 'Qual era o deus principal dos Arameus, ligado à tempestade?', op: ['Marduk', 'Hadad', 'Osíris', 'Zeus'], certa: 1, exp: 'Hadad era o deus da tempestade, venerado em Damasco, Alepo e Sam’al.' },
+  { p: 'Quem conquistou Damasco em 732 a.C.?', op: ['Tiglath-Pileser III', 'Sargão de Acad', 'Ciro II', 'Nabucodonosor'], certa: 0, exp: 'Tiglath-Pileser III pôs fim ao reino de Aram-Damasco. Sargão II tomaria Hamat em 720 a.C.' },
+  { p: 'Onde se fala ainda o aramaico ocidental, numa aldeia da Síria?', op: ['Maalula', 'Palmira', 'Alepo', 'Homs'], certa: 0, exp: 'Em Maalula, Jubb’adin e Bakh’a ainda se fala aramaico ocidental, hoje em perigo.' }
+];
+
+export default {
+  id: 'arameus',
+  cor: '#9f7f4f',
+  emblema: '../assets/img/arameus.png',
+  nome:    { pt: 'Arameus', en: 'Arameans' },
+  periodo: { pt: 'c. 1200 a.C. – 720 a.C.', en: 'c. 1200 BC – 720 BC' },
+  visao:          { pt: visao, en: EN.visao },
+  linha:          { pt: linha, en: EN.linha },
+  mapa:           { pt: mapa, en: EN.mapa },
+  sociedade:      { pt: sociedade, en: EN.sociedade },
+  personalidades: { pt: personalidades, en: EN.personalidades },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
+  quiz:           { pt: quiz, en: EN.quiz }
+};
