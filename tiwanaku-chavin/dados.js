@@ -217,6 +217,7 @@ const personalidades = [
   { h: 'Wendell C. Bennett (1905 – 1953)' },
   'Arqueólogo norte-americano, fez escavações estratificadas em **Tiwanaku** em 1932 e estabeleceu uma sequência cronológica. Encontrou um monólito de c. 7 m que ficou com o seu nome, o **Monólito Bennett**, hoje no Museu Lítico de Tiwanaku.',
   { img: 'tch-monolito-bennett', leg: 'O Monólito Bennett, c. 7 m, no museu de Tiwanaku.' },
+  { img: 'tch-ano-nuevo', leg: 'Cerimónia ao amanhecer no solstício de inverno, no recinto do Kalasasaya, com a Porta do Sol ao fundo: reconstituição imaginada de um ritual do calendário agrário em Tiwanaku, c. 800 d.C. Ilustração gerada por IA.' },
   { h: 'Carlos Ponce Sanginés (1925 – 2005)' },
   'Arqueólogo boliviano, dirigiu os trabalhos de **Tiwanaku** a partir dos anos 1950 e fundou o Centro de Investigações Arqueológicas de Tiwanaku. Deu o seu nome a um dos monólitos principais. As reconstruções de edifícios realizadas sob a sua direção são hoje criticadas por terem alterado o aspeto original.',
   { h: 'Luis Guillermo Lumbreras (n. 1936)' },

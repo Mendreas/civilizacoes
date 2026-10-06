@@ -214,6 +214,7 @@ const personalidades = [
   { h: 'Wendell C. Bennett (1905 – 1953)' },
   'An American archaeologist, he carried out stratigraphic excavations at **Tiwanaku** in 1932 and established a chronological sequence. He found a monolith of c. 7 m that bears his name, the **Bennett Monolith**, now in the Lithic Museum of Tiwanaku.',
   { img: 'tch-monolito-bennett', leg: 'The Bennett Monolith, c. 7 m, in the museum at Tiwanaku.' },
+  { img: 'tch-ano-nuevo', leg: 'Dawn ceremony at the winter solstice in the Kalasasaya enclosure, with the Sun Gate behind: an imagined reconstruction of a ritual of the agricultural calendar at Tiwanaku, c. AD 800. AI-generated illustration.' },
   { h: 'Carlos Ponce Sanginés (1925 – 2005)' },
   'A Bolivian archaeologist, he directed the work at **Tiwanaku** from the 1950s and founded the Centre for Archaeological Research of Tiwanaku. He gave his name to one of the main monoliths. The reconstructions of buildings carried out under his direction are today criticised for having altered their original appearance.',
   { h: 'Luis Guillermo Lumbreras (b. 1936)' },
