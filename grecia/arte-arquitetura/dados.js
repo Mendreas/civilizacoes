@@ -2,6 +2,7 @@
 // Datas aproximadas, na «cronologia média»; muitas obras gregas só se conhecem por cópias romanas ou descrições antigas (Plínio, o Velho; Pausânias; Vitrúvio), pelo que datas e atribuições a artistas concretos são frequentemente debatidas, e o texto assinala-o.
 // Imagens: cada {img:'id'} procura o ficheiro  grecia/arte-arquitetura/img/id.jpg  (ver IMAGENS_GRECIA_ARTE_ARQUITETURA.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -360,6 +361,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

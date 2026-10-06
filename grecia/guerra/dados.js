@@ -2,6 +2,7 @@
 // Datas aproximadas, na «cronologia média»; as anteriores às Guerras Médicas assentam em tradições fixadas séculos depois. Números de combatentes e de baixas são estimativas das fontes antigas (Heródoto, Tucídides, Xenofonte, Diodoro, Políbio, Arriano, Plutarco), muitas vezes exageradas; indica-se o debate quando existe.
 // Imagens: cada {img:'id'} procura o ficheiro  grecia/guerra/img/id.jpg  (ver IMAGENS_GRECIA_GUERRA.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -345,6 +346,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

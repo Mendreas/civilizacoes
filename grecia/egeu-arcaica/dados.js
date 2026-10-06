@@ -2,6 +2,7 @@
 // Cronologia média, c. 3000 – 480 a.C. As datas da Idade do Bronze assentam em arqueologia e radiocarbono (e são discutidas); as da época arcaica assentam muitas vezes em tradições que os gregos fixaram séculos depois, e vêm marcadas com «c.» ou «segundo a tradição».
 // Imagens: cada {img:'id'} procura o ficheiro  grecia/egeu-arcaica/img/id.jpg  (ver IMAGENS_GRECIA_EGEU_ARCAICA.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -457,6 +458,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

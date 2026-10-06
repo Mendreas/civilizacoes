@@ -2,6 +2,7 @@
 // Datas na «cronologia média»; as do século V a.C. assentam sobretudo em Heródoto, Tucídides e Xenofonte. Quando há debate, assinala-se. Números de exércitos e baixas são estimativas.
 // Imagens: cada {img:'id'} procura o ficheiro  grecia/classica/img/id.jpg  (ver IMAGENS_GRECIA_CLASSICA.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -368,4 +369,4 @@ export default { id: 'grecia', cor: '#3a7ab8', emblema: '../../assets/img/grecia
   periodo: { pt: '480 – 323 a.C.', en: '480 – 323 BC' },
   visao: { pt: visao, en: EN.visao }, linha: { pt: linha, en: EN.linha }, mapa: { pt: mapa, en: EN.mapa },
   sociedade: { pt: sociedade, en: EN.sociedade }, personalidades: { pt: personalidades, en: EN.personalidades },
-  legado: { pt: legado, en: EN.legado }, quiz: { pt: quiz, en: EN.quiz } };
+  legado: { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] }, quiz: { pt: quiz, en: EN.quiz } };

@@ -1,5 +1,6 @@
 // GRÉCIA ANTIGA — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from './grupo.js';
 // Datas aproximadas, na «cronologia média». a.C. = antes de Cristo. Persas, Macedónios, Egito e Roma só de passagem; Bizâncio, Roma e a Pérsia terão páginas próprias.
 // Imagens: cada {img:'id'} procura o ficheiro  grecia/img/id.jpg  (ver IMAGENS_GRECIA.md para a lista e os prompts).
@@ -344,6 +345,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

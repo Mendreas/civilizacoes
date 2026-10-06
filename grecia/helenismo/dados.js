@@ -2,6 +2,7 @@
 // Datas na «cronologia média»; as de Alexandre e dos Diádocos seguem Arriano, Plutarco, Diodoro, Políbio e a historiografia moderna; onde há debate, assinala-se.
 // Imagens: cada {img:'id'} procura o ficheiro  grecia/helenismo/img/id.jpg  (ver IMAGENS_GRECIA_HELENISMO.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -325,6 +326,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

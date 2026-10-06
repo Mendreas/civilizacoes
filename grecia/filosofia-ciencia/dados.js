@@ -2,6 +2,7 @@
 // Datas aproximadas, na «cronologia média». Muitas datas de nascimento e morte de pensadores antigos são estimativas ou tradições tardias (sobretudo Diógenes Laércio, século III d.C.); assinala-se quando há debate.
 // Imagens: cada {img:'id'} procura o ficheiro  grecia/filosofia-ciencia/img/id.jpg  (ver IMAGENS_GRECIA_FILOSOFIA_CIENCIA.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -413,6 +414,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };

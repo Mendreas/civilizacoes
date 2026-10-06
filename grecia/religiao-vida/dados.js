@@ -2,6 +2,7 @@
 // Datas aproximadas, na «cronologia média». Os dados são sobretudo de Atenas (a cidade de que mais fontes restam); quando o assunto é de outra cidade, diz-se. Números (população, preços, salários) são estimativas debatidas.
 // Imagens: cada {img:'id'} procura o ficheiro  grecia/religiao-vida/img/id.jpg  (ver IMAGENS_GRECIA_RELIGIAO_VIDA.md).
 import EN from './dados-en.js';
+import CRED from './creditos.js';
 import { GRUPO } from '../grupo.js';
 
 const visao = [
@@ -418,6 +419,6 @@ export default {
   mapa:           { pt: mapa, en: EN.mapa },
   sociedade:      { pt: sociedade, en: EN.sociedade },
   personalidades: { pt: personalidades, en: EN.personalidades },
-  legado:         { pt: legado, en: EN.legado },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
   quiz:           { pt: quiz, en: EN.quiz }
 };
