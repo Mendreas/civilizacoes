@@ -1,0 +1,278 @@
+// ELAM — full English content. Same structure and same image slots as the Portuguese version (dados.js).
+// Dates are approximate, in the "middle chronology". BC = before Christ. Elam is poorly known: many dates, locations and interpretations are debated and are flagged as such.
+
+const visao = [
+  { caixa: 'In brief', texto: [
+    '**Elam** was one of the oldest civilizations in the world and the great eastern neighbour of Mesopotamia. It occupied the south-west of present-day Iran, with two historic capitals: **Susa**, on the plain, and **Anshan**, in the mountains. For over two thousand years it was tied to the Mesopotamian cities by war, trade and marriage. It had one of the earliest scripts in the world, **Proto-Elamite**, which nobody can yet read, a language of its own unlike any other known, and a religion with gods very different from the Mesopotamian ones.',
+    'The Elamites left no chronicles that have reached us. Most of what we know comes from the texts of their neighbours and enemies, Sumerians, Akkadians, Babylonians and Assyrians, and from excavations that still leave many questions open. That is one of the themes of this page: **Elam is a large and little-known civilization**, and on many points specialists disagree.'
+  ] },
+  { img: 'ela-mapa-regiao', leg: 'Modern map of the approximate location of Elam between Mesopotamia and the Iranian plateau; French labels.' },
+  { h: 'Where it was' },
+  'Elamite territory held two very different worlds. In the west, next to Mesopotamia, lay **Susiana** (today’s Khuzestan province in Iran): a hot, fertile plain watered by the **Karkheh, Dez and Karun** rivers, which came down from the Zagros mountains. It was a natural extension of the Mesopotamian plain, and its capital was **Susa**. To the east and north, in the Zagros, there were high, cool valleys with woods, pastures and mountain passes. The region of **Anshan**, in today’s Fars, west of Persepolis, was the centre of the highlands.',
+  'The Elamites called their land **Haltamti** (sometimes written Hatamti). The name “Elam” comes from the Akkadian form *Elamtu* and passed through the Bible into European languages. The Sumerians wrote the name with the sign meaning “high” (NIM), a reference to the plateau that lay above the plain. A debated point is whether Elam was always a single state with its capital at Susa or, in many periods, a **confederation** of kingdoms and chiefdoms, lowland and highland, with one ruler recognised as the head. The second view is now the more widely accepted for several periods, but the documentation is thin.',
+  { img: 'ela-vaso-susa', leg: 'Painted pottery beaker with an ibex, Susa I, c. 4200–3800 BCE. Louvre.' },
+  { h: 'When it existed' },
+  'The history of Elam is long and the divisions between periods are not agreed, partly because the texts of some periods are missing. What follows is a usual division, in the “middle chronology”.',
+  { tabela: { cab: ['Phase', 'Approximate dates', 'What marks it'], linhas: [
+    ['Before Elam (Susa I and II)', 'c. 4200 – 3100 BC', 'Susa founded as a centre with a monumental platform; painted pottery; strong Uruk influence in the later phase'],
+    ['Proto-Elamite', 'c. 3100 – 2700 BC', 'Proto-Elamite script (still undeciphered); culture spread from Susa to Anshan and the plateau'],
+    ['Old Elamite', 'c. 2700 – 1500 BC', 'Dynasties of Awan, Simashki and the Sukkalmah; intense contact with Sumerians, Akkadians and Babylonians; Linear Elamite'],
+    ['Middle Elamite', 'c. 1500 – 1100 BC', 'The peak: Untash-Napirisha and Chogha Zanbil; Shutruk-Nahhunte and the campaign against Babylon'],
+    ['Neo-Elamite', 'c. 1100 – 539 BC', 'Obscure centuries, then wars with Assyria; destruction of Susa by Ashurbanipal in 647 BC; absorption into the Persian empire']
+  ] } },
+  { h: 'Who were they?' },
+  'Elamite is a **language isolate**: it is not clearly linked to any other known language family. A link to the Dravidian languages of India (“Elamo-Dravidian”) has been proposed, but the great majority of specialists reject it. It was not a Semitic language, like Akkadian, nor Indo-European, like Persian. The Elamites were **not Persians**: the Persians, speakers of an Indo-Iranian language, reached south-west Iran only from c. 1000 BC (the chronology of their arrival is debated), and it was they who ended up inheriting Elamite land and culture.',
+  { img: 'ela-tabuinha-protoelamita', leg: 'Proto-Elamite tablet from Susa, c. 3100–2900 BCE. Louvre.' },
+  { h: 'What is little known and debated' },
+  { lista: [
+    '**Proto-Elamite writing** (c. 3100–2900 BC) **has not been deciphered.** Mainly the numbers and some signs for objects are understood, but not the language.',
+    '**Linear Elamite** was proposed as deciphered in 2022 by a Franco-Iranian team, and many accept the readings, but others keep their reservations.',
+    '**The location of several cities**, such as Awan and Simashki, is unknown.',
+    '**The system of succession to the throne**, in which inheritance seems to have passed between brothers or from uncle to the sister’s son, is much discussed.',
+    '**The link with Jiroft and Marhashi,** to the east, is a hypothesis, not a certainty.',
+    '**Its history after 1000 BC** rests on few native texts and almost always on Assyrian accounts, which are war propaganda.'
+  ] },
+  { h: 'Why they matter' },
+  { lista: [
+    '**Independent writing:** Elam had one of the oldest scripts in the world, perhaps created under Mesopotamian influence, but with signs of its own.',
+    '**A bridge between worlds:** it lay between Mesopotamia, the Iranian plateau and the Gulf, and controlled routes for metals, stones and timber.',
+    '**Great rival of Mesopotamia:** it sacked Ur in 2004 BC and took to Susa trophies such as the stele of Naram-Sin and, probably, the Code of Hammurabi.',
+    '**Women with power:** Elamite sources show queens and heiresses with a more visible role than in Mesopotamia.',
+    '**Cradle of the Persian empire:** the Persian kings of Anshan inherited the land, Elamite was an administrative language of the empire, and Susa was an Achaemenid capital.',
+    '**Chogha Zanbil:** the best-preserved ziggurat outside Mesopotamia and the first Iranian site inscribed by UNESCO (1979).'
+  ] },
+  { caixa: 'Elam today', texto: 'The ruins of **Susa** (UNESCO-listed in 2015) and **Chogha Zanbil** (1979) lie in south-west Iran, in Khuzestan province. The modern town of **Shush** stands beside the ancient mound of Susa. The great Elamite treasures are in museums in Paris and Tehran.' },
+  { img: 'ela-chogha-zanbil', leg: 'Ziggurat of Chogha Zanbil, ancient Dur-Untash, Iran; present-day view.' }
+];
+
+const linha = [
+  'This timeline follows the main events of Elamite history. Dates are approximate, and for several periods more than one chronology is in use. Where something is debated, it says so.',
+  { linha: [
+    { d: 'c. 4200 BC', t: 'Susa is founded', x: 'On the mound of Susa, beside the Shavur river, a settlement arises that within a few centuries will have a huge brick **platform** and a cemetery with thousands of graves, which yielded beautiful painted pottery. Smaller settlements already existed in the region before.' },
+    { d: 'c. 3800 – 3100 BC', t: 'Susa and the influence of Uruk', x: 'At Susa seals, tablets with numerical signs and Mesopotamian-style objects appear. Archaeologists debate whether this was a colony of Uruk, a cultural influence or a local elite adopting fashions from the south.' },
+    { d: 'c. 3100 – 2900 BC', t: 'Proto-Elamite writing', x: 'At Susa, scribes record cereals, animals, textiles and rations on tablets with signs of their own, **different from those of Uruk**. More than 1400 tablets from Susa have been published and many more from sites on the plateau. The language of this script is unknown and it has **not been deciphered**.' },
+    { d: 'c. 2900 – 2700 BC', t: 'The script disappears', x: 'Proto-Elamite goes out of use, and for centuries there are no texts in Elam, or very few. Why it disappeared is an open question: it may have been a political crisis, a change of elite, or a script tied to an administration that ended.' },
+    { d: 'c. 2700 – 2600 BC', t: 'Elam in Sumerian sources', x: 'Later Mesopotamian texts speak of wars with Elam from the earliest dynasties, and the Sumerian King List says that **Enmebaragesi of Kish** defeated Elam. This tradition is late and partly legendary, but it shows that Elam was a known neighbour from very early on.' },
+    { d: 'c. 2600 – 2100 BC', t: 'The dynasty of Awan', x: 'A king list found at Susa names **twelve kings of Awan**, the first Elamite state whose history is known. **Nobody knows where Awan lay** (hypotheses: in the Zagros, around Ilam or Luristan, or near Susa). The names appear in lists and later inscriptions, and the chronology of this dynasty is uncertain.' },
+    { d: 'c. 2300 – 2200 BC', t: 'Akkad dominates Susa', x: 'The kings of Akkad, Sargon, Rimush and Manishtushu, conquer Susa and Anshan and impose **Akkadian** as the administrative language. For a time Elam is ruled by Akkadian governors, but the local kings do not vanish.' },
+    { d: 'c. 2250 BC', t: 'Naram-Sin’s treaty with Hita of Awan', x: 'The Akkadian king Naram-Sin and the Elamite king Hita make a treaty written in **cuneiform Elamite**, the oldest long text known in this language. It invokes the gods of Elam, showing the wish to give the agreement religious force.' },
+    { d: 'c. 2200 – 2100 BC', t: 'Linear Elamite and Puzur-Inshushinak', x: 'Puzur-Inshushinak, governor of Susa under Akkad, becomes an independent king, expands Elamite rule and has inscriptions carved in **Linear Elamite**, a script different from cuneiform. This script vanished soon after and only in 2022 was a decipherment proposed, still under discussion.' },
+    { d: 'c. 2100 – 2020 BC', t: 'Ur III controls Susa', x: 'The kings of Ur, Ur-Nammu and Shulgi, dominate Susa and Susiana. Shulgi gives **daughters in marriage to rulers of Anshan and of Marhashi**, a policy of alliances rather than pure conquest.' },
+    { d: 'c. 2004 BC', t: 'Elam sacks Ur', x: 'An Elamite coalition, linked to the king of Simashki **Kindattu**, attacks and destroys Ur. King Ibbi-Sin is taken prisoner to Elam, and the statue of the god Nanna is carried off to Elam. It is the end of the Third Dynasty of Ur.' },
+    { d: 'c. 1900 – 1500 BC', t: 'The Sukkalmah dynasty', x: 'The kings of Old Elamite times use the title **sukkalmah**, “grand regent”, and rule with two other “regents” (sukkal), one of Elam and one of Susa, often their brothers or sons. The start of the dynasty is dated c. 1900 BC, or a little earlier, depending on the author. The texts of this period are numerous but unclear.' },
+    { d: 'c. 1835 – 1763 BC', t: 'Elamites in Larsa and the war with Hammurabi', x: 'The chief of Elamite origin **Kudur-Mabuk** puts his sons on the throne of Larsa, among them **Rim-Sin I**, who reigned over 60 years. The sukkalmah **Siwe-palar-huppak** was treated with great respect in the Mari correspondence. Hammurabi of Babylon defeats the Elamite coalition and Larsa around 1764–1763 BC.' },
+    { d: 'c. 1500 – 1400 BC', t: 'The start of Middle Elamite', x: 'A new dynasty, the **Kidinuids**, and then the Igehalkids, reorganise the kingdom. The kings begin to use the title “king of Anshan and Susa”, showing the union of the two parts of Elam. At Haft Tepe, near Susa, the ancient Kabnak preserves tombs and workshops of great interest.' },
+    { d: 'c. 1340 – 1300 BC', t: 'Untash-Napirisha and Dur-Untash', x: 'King **Untash-Napirisha** founds the sacred city of **Dur-Untash**, today Chogha Zanbil, with a great ziggurat and some twenty temples to the gods of Elam. The dates are debated (some place him later, in the 13th century BC).' },
+    { d: 'c. 1158 – 1155 BC', t: 'Shutruk-Nahhunte attacks Babylon', x: '**Shutruk-Nahhunte**, who married a daughter of the Kassite king of Babylon, invades Mesopotamia, plunders cities and carries to Susa ancient monuments, among them the **stele of Naram-Sin** and, it is believed, the **Code of Hammurabi**. His son **Kutir-Nahhunte** ends the Kassite dynasty of Babylon and takes the statue of the god Marduk.' },
+    { d: 'c. 1150 – 1120 BC', t: 'Shilhak-Inshushinak I, the last great king', x: 'Shilhak-Inshushinak extends Elamite rule to the east of Mesopotamia and restores many temples, at Susa and elsewhere. He leaves inscriptions and the famous bronze model called the **Sit-shamshi**. It is the end of Elam’s peak.' },
+    { d: 'c. 1110 BC', t: 'Nebuchadnezzar I avenges Babylon', x: 'The Babylonian king Nebuchadnezzar I invades Elam and defeats the Elamite king beside the river Ulai. Tradition says he recovered the statue of Marduk. The date and details are debated.' },
+    { d: 'c. 1100 – 770 BC', t: 'Obscure centuries', x: 'There are almost no Elamite texts in this long period, and specialists speak of an Elamite “dark age”. It is not clear whether Elam broke into smaller kingdoms or whether it is simply a lack of sources. Archaeologically, life goes on.' },
+    { d: '720 BC', t: 'Elam backs Babylon against Assyria', x: 'Elam and the Babylonian king Marduk-apla-iddina II face the Assyrian king Sargon II at Der. Each side claims victory. From here on, Elam will be the main ally of anyone who rebels against Assyria.' },
+    { d: '691 BC', t: 'The battle of Halule', x: 'Elamites and Babylonians face the Assyrian king Sennacherib at Halule. Both sides claim to have won. In 689 BC Sennacherib destroys Babylon, which weakens Elam’s allies.' },
+    { d: '653 BC', t: 'Til-Tuba: Teumman is killed', x: 'The Elamite king **Teumman** is defeated and killed by Ashurbanipal beside the river Ulai, at the battle of Til-Tuba. His head is taken to Nineveh and appears in the palace reliefs, where it is displayed in a garden.' },
+    { d: '647 BC', t: 'Ashurbanipal destroys Susa', x: 'After civil wars in Elam, the Assyrian king plunders Susa, takes divine statues, gold and silver, destroys the ziggurat and, by his own account, **desecrates the tombs of the kings**. The date is sometimes given as 646 BC. This destruction is described by the Assyrians, and we have no Elamite account.' },
+    { d: 'c. 640 – 600 BC', t: 'Persians in Anshan', x: 'The kingdom of Elam is fragmented. In Anshan, the Persians, led by the ancestors of Cyrus the Great, begin to take the Elamites’ place. A “Kurash” of Parsumash is said to have sent his son to the Assyrian court (c. 646 BC); whether he is the grandfather of Cyrus II is debated.' },
+    { d: '539 BC', t: 'Elam in the Persian empire', x: 'Cyrus II, who styles himself “king of Anshan”, conquers Babylon. Elam becomes one of the lands of the Achaemenid empire, and Susa one of its capitals. Elamite remains an administrative language.' },
+    { d: 'c. 521 – 486 BC', t: 'Darius I and Susa', x: 'Darius I rebuilds Susa with a great palace and an apadana, and has the account of his accession carved at Behistun in **Old Persian, Elamite and Babylonian**. This trilingual document made it possible to decipher cuneiform.' },
+    { d: 'c. 330 BC onwards', t: 'The end of written Elamite', x: 'After Alexander, Elamite disappears as a written language. The region of Susa remains important and, later, a local kingdom, **Elymais**, keeps the name of Elam until the 3rd century AD.' }
+  ] },
+  { img: 'ela-linear-elamita', leg: 'Linear Elamite inscription from Susa. Louvre.' },
+  { img: 'ela-estela-naramsin', leg: 'Akkadian Victory Stele of Naram-Sin, taken to Susa in antiquity. Louvre.' },
+  { img: 'ela-codigo-hamurabi', leg: 'Code of Hammurabi stele, taken to Susa as booty; a Babylonian work. Louvre.' },
+  { img: 'ela-obelisco-manishtushu', leg: 'Akkadian obelisk of Manishtushu, found at Susa. Louvre.' },
+  { img: 'ela-ulai-relevo', leg: 'Assyrian relief of the Battle of Til-Tuba by the River Ulai, from Nineveh. British Museum.' },
+  { img: 'ela-teumman-jardim', leg: 'Ashurbanipal’s garden banquet; Teumman’s head hangs from a tree. Assyrian relief from Nineveh, British Museum.' }
+];
+
+const mapa = [
+  'Elam was not a network of city-states like Sumer. It was a territory with two centres, **Susa** (plain) and **Anshan** (mountain), and many smaller settlements. Some of its most important cities have not yet been located.',
+  { img: 'ela-mapa-cidades', leg: 'Map of Elamite sites, including Susa, Chogha Zanbil and Tell-e Malyan (Anshan); French labels.' },
+  { tabela: { cab: ['City', 'Region', 'Place today', 'Known for'], linhas: [
+    ['Susa', 'Susiana (plain)', 'Shush, Khuzestan', 'Capital of Elam; its mound holds over 6000 years of history; treasury of Mesopotamian trophies; Achaemenid capital'],
+    ['Anshan', 'Fars (mountain)', 'Tal-e Malyan', 'Centre of the highlands; capital in many periods; land of the first Persian kings'],
+    ['Dur-Untash', 'Susiana', 'Chogha Zanbil', 'Sacred city of Untash-Napirisha, with the great ziggurat'],
+    ['Awan', 'Unknown', 'Unknown', 'First Elamite dynasty; location still not identified'],
+    ['Simashki', 'Mountain, unknown', 'Debated', 'Dynasty that sacked Ur; location debated, perhaps in the north'],
+    ['Madaktu', 'Susiana', 'Debated', 'Neo-Elamite capital beside the river Ulai, attacked by Ashurbanipal'],
+    ['Hidalu', 'Mountain', 'Debated', 'Mountain city of Neo-Elamite times; refuge of kings'],
+    ['Haft Tepe (Kabnak)', 'Susiana', 'Near Shush', 'City of Middle Elamite times, with tombs, workshops and tablets'],
+    ['Liyan', 'Gulf coast', 'Bushehr region', 'Elamite port on the Gulf, linked to the cult of the goddess Kiririsha']
+  ] } },
+  { h: 'Susa' },
+  'Susa was founded c. 4200 BC and was inhabited, with interruptions, for over six millennia. The mound has several parts: the **Acropolis**, with temples and an enormous platform, the **Apadana**, the palace of Darius, and the **Royal City**. It was a cult centre of the god **Inshushinak**, “lord of Susa”. In Middle Elamite times, the kings took their war trophies there. In the French excavations the Acropolis was dug extensively, but the lower areas remain little known.',
+  { img: 'ela-susa-ruinas', leg: 'Ruins at the archaeological site of Susa (Shush), Iran. In the background is the castle built by the French archaeological mission in the late 19th century.' },
+  { h: 'Anshan, the heart of the highlands' },
+  'Anshan is identified with **Tal-e Malyan**, a large mound on a plain in Fars, excavated scientifically from 1971 (American teams) and identified as Anshan in 1973. It was one of the largest centres of the plateau c. 3400–2800 BC, with Proto-Elamite tablets. Later it was the capital of Elamite kings. In the 7th century BC it was ruled by the ancestors of the Persian kings, who took the title “king of Anshan”. The exact relationship between the Elamites and the Persians of Anshan is one of the big questions in the history of this region.',
+  { img: 'ela-anshan-malyan', leg: 'Kaftari-style pottery from Tal-e Malyan (Anshan), c. 2200–1600 BCE; exhibition photograph. Alternative to a view of the mound.' },
+  { h: 'Dur-Untash (Chogha Zanbil)' },
+  'Untash-Napirisha built this city some 30–40 km from Susa, c. 1340–1300 BC, as a religious centre for all the gods of the kingdom. It had three concentric walls, temples, palaces and a five-level ziggurat. The base of the ziggurat measured about **105 m on a side**, and the original height would have been about 50 m (about 25 m remain). It was abandoned in Neo-Elamite times, and tradition says Ashurbanipal destroyed it. Its modern name, “basket mound”, is recent.',
+  { img: 'ela-zanbil-aerea', leg: 'Plan of the Dur-Untash (Chogha Zanbil) complex showing its precincts and buildings; documentary alternative to an aerial photograph.' },
+  { h: 'Jiroft and Marhashi, in passing' },
+  'To the east of Elam, in Kerman province, **Jiroft** became famous from 2001, after floods revealed tombs with large numbers of decorated **chlorite vessels**, c. 2500 BC. Some specialists link this culture to the kingdom of **Marhashi** (Warahshe), named in Mesopotamian texts, but there is no consensus, and attempts to link it to the legendary **Aratta** of Sumerian myths are very speculative. What we know is that the region exchanged stone objects with Susa and Mesopotamia.',
+  { img: 'ela-jiroft-vaso', leg: 'Jiroft-style chlorite vessel from southeastern Iran; a cultural context distinct from historical Elam.' },
+  { h: 'The rock reliefs of Kul-e Farah' },
+  'In the valley of Izeh, in the mountains, the rocks of **Kul-e Farah** carry reliefs carved in Neo-Elamite times (c. 7th–6th century BC, dating debated), with scenes of worship and musicians, besides inscriptions in Elamite. One of them names **Hanni, son of Tahhi**, “prince” of Ayapir (Izeh region) and vassal of an Elamite king, who left a long inscription in cuneiform Elamite. They are among the few images made by the Elamites themselves in Neo-Elamite times.',
+  { img: 'ela-kul-e-farah', leg: 'Rock reliefs at Kul-e Farah in the Izeh valley, Iran.' },
+  { h: 'Trade routes' },
+  'Elam lay at the crossroads between Mesopotamia, which needed stone, timber and metals, and the mountains and the Gulf, which had them. The route linking Susa to Anshan and the central plateau brought **tin, copper, silver, lapis lazuli, chlorite, steatite and timber**. To the Gulf the Elamites used the port of Liyan, and to the east, routes to Tepe Yahya and Shahr-i Sokhta, which led on to Afghanistan and the Indus valley. What the Elamites’ role was, as middlemen or as controllers of this trade, is debated.',
+  { img: 'ela-rotas-comercio', leg: 'Reconstruction of a donkey caravan carrying goods through the Zagros, c. 1800 BCE. AI-generated illustration.' }
+];
+
+const sociedade = [
+  { h: '1. Political organisation' },
+  'The political structure of Elam changed a great deal over two thousand years. In the early phases there is a **king of Awan** and later **kings of Simashki**; in the time of the **sukkalmah** power is shared among several “regents” of the same family; in Middle Elamite times the king styles himself **“king of Anshan and Susa”**. Specialists debate whether Elam was a centralised state or a **confederation** of territories with one ruler stronger than the others.',
+  'One much-discussed feature is the **system of succession**. In many periods power passed from one **brother** to another, and several kings say in their inscriptions that they are the “sister’s son” of the previous king. Some scholars saw in this inheritance through the mother’s line; others, succession between **uncle and nephew**, or merely a way of legitimising the king through the female side. The question is much debated and depends on few texts. What seems clear is that **kinship through the king’s mother and sister counted for a great deal**.',
+  { img: 'ela-selo-susa', leg: 'Cylinder seal from Susa III, Proto-Elamite period, c. 3150–2800 BCE, and modern impression. Louvre, Sb 1484.' },
+  { h: '2. Social classes' },
+  { lista: [
+    '**Kings and their extended family:** it includes brothers, nephews, sons and the queens, with enormous power.',
+    '**Priests and priestesses:** they look after the temples and cults, and may be of the royal family.',
+    '**Officials and scribes:** they manage the fields, storehouses and archives.',
+    '**Farmers, craftsmen and herders:** most of the population, tied to the fields of the plain and the flocks of the mountains.',
+    '**Soldiers and archers:** Elamite archers were famous among their neighbours.',
+    '**Slaves and dependents:** mostly prisoners of war; their status is little known.'
+  ] },
+  { h: '3. Religion' },
+  'Elamite religion was **polytheistic**, and the gods had names and functions very different from the Mesopotamian ones, although there were mutual influences. The pantheon changed with time and region: on the plain the god of Susa was the most important, and in the mountains, others. The sources give many names but explain little about the myths. The main ones were:',
+  { tabela: { cab: ['Deity', 'Domain', 'Notes'], linhas: [
+    ['Inshushinak', '“Lord of Susa”; protector of the kingdom; judge of the dead', 'Main god of Susa; kings give him temples, and the texts call him “lord of the dead”'],
+    ['Napirisha', '“The great god”', 'One of the main gods; at Chogha Zanbil he had a temple, with Inshushinak, on top of the ziggurat'],
+    ['Kiririsha', '“The great goddess”; mother', 'A much-venerated goddess, especially in the Liyan region and in the middle period'],
+    ['Pinikir', 'Great goddess', 'In early periods the most important goddess; later Kiririsha is more prominent'],
+    ['Humban', 'Head of the gods in later periods', 'His name is part of many Neo-Elamite royal names, such as Humban-Haltash'],
+    ['Nahhunte', 'Sun and justice', 'Sun god, also in royal names (Shutruk-Nahhunte, Kutir-Nahhunte)']
+  ] } },
+  'The Elamites built temples, but also held open-air cults: Assyrian texts speak of **sacred groves** that no foreigner had entered, and which were burned in 647 BC. The gods received offerings of food, drink and animals. A known rite is that of the **sunrise**, linked to the bronze model called the Sit-shamshi, but its interpretation is debated. Kings said they ruled by the will of the gods.',
+  { img: 'ela-sit-shamshi', leg: 'Bronze ritual model Sit-shamshi, found at Susa. Louvre.' },
+  { img: 'ela-templo-ritual', leg: 'Imagined scene of offerings before a temple of Inshushinak at Susa, c. 1200 BCE; architecture and ceremony are conjectural. AI-generated illustration.' },
+  { h: 'Life after death' },
+  'Little is known for certain. Inshushinak is called “lord of the dead”, and Kiririsha appears linked to the underworld, but the texts do not describe an afterlife in detail. The tombs of Susa, Haft Tepe and other places show burials with pottery, jewellery and weapons, and kings had monumental tombs. A statement by Ashurbanipal says he desecrated the tombs of the Elamite kings, which shows they were places of great religious value.',
+  { h: '4. Economy and agriculture' },
+  'On the plain of Susa, irrigation agriculture was the base: barley, wheat, dates, vegetables and flax. In the mountains, **sheep, goats and cattle** were raised, and the mountains supplied timber and stone. The kingdom profited from trade and from taxes on caravans. There were metal and pottery **workshops**, and Susa was a centre of production and storage. The temples had fields, flocks and workshops. In the Susa texts, payments are made in barley and silver.',
+  { img: 'ela-mercado-susa', leg: 'Artistic reconstruction of a market at Susa with grain, dates, pottery, metals and a scribe, c. 1500 BCE. AI-generated illustration.' },
+  { h: '5. Writing and languages' },
+  'Elam had **three scripts**, which is rare: **Proto-Elamite** (c. 3100–2900 BC, undeciphered), **Linear Elamite** (c. 2300–1850 BC, with a proposed decipherment in 2022, still discussed) and **cuneiform Elamite**, adapted from the Mesopotamian script, used from c. 2300 BC until after 330 BC. Only the last is well understood. The language is a linguistic isolate, and its vocabulary is known partly from lists and from bilingual texts.',
+  'Cuneiform Elamite became, in Persian times, one of the languages of the empire. From the archives of **Persepolis** (509–493 BC) come tens of thousands of tablets and fragments, most of them in Elamite, about rations, journeys and taxes. This shows that Persian administration still worked with Elamite scribes.',
+  { img: 'ela-tabuinha-elamita', leg: 'Tablets and fragments from the Achaemenid Persepolis Fortification Archive, under study at the University of Chicago’s ISAC; the archive mainly contains Elamite texts.' },
+  { h: '6. Women, family and succession' },
+  'Elam is known for giving women a visible role. Documents from Susa show that, in the 2nd millennium BC, **daughters could inherit** and widows had rights over property. Some queens left inscriptions and statues, such as **Napir-Asu**. The importance of kinship through the mother and sister in royal inscriptions led to the much-debated idea of succession or legitimacy through the female line.',
+  'We also know that kings married women of their own family. The texts mention **marriages between brothers and sisters and between half-siblings** and, in the case of one queen, **Nahhunte-utu**, successive marriages to two kings of the same family. The interpretation is debated: it may be a rule of inheritance, a strategy to keep power, or an over-reading of few documents. For ordinary women, the information is scarce.',
+  { img: 'ela-casa-elamita', leg: 'Artistic reconstruction of the courtyard of a family home at Susa, c. 1500 BCE. AI-generated illustration.' },
+  { caixa: 'Napir-Asu, the bronze queen', texto: 'The **statue of Napir-Asu**, wife of Untash-Napirisha (c. 1300 BC, Louvre), is 1.29 m tall and weighs almost 1750 kg. It has a bronze core covered by a copper shell, and the body is covered by an embroidered dress. The inscription, in Elamite, curses anyone who damages it. The head and part of the left shoulder are lost, but the rest survived.' },
+  { h: '7. Food' },
+  'People ate **bread and porridge of barley and wheat**, vegetables, onion, dates, cheese and the meat of sheep, goats and cattle. There was fish in the rivers. **Beer** and wine were known. In the highlands people ate dried fruit and game. The Susa texts record rations for workers. The details of Elamite cooking are little known, and much of what is said is deduced from Mesopotamian cooking.',
+  { img: 'ela-banquete', leg: 'Imagined Elamite family meal with bread, dates, lentils and beer, c. 1300 BCE. AI-generated illustration.' },
+  { h: '8. Clothing and jewellery' },
+  'In reliefs and statues, men appear in fringed tunics, with **headbands** and long hair; the Elamite soldiers of Assyrian reliefs wear short tunics and headbands. Women, like Napir-Asu, wear long dresses with embroidered patterns. The Elamites made jewellery of gold, silver, lapis lazuli and carnelian, and beads of **faience and glass**. Seals were also ornaments.',
+  { img: 'ela-vestuario', leg: 'Artistic interpretation of an Elamite man’s and woman’s clothing, c. 1300 BCE, inspired by ancient depictions; patterns and colours are conjectural. AI-generated illustration.' },
+  { h: '9. Music' },
+  'An Assyrian relief shows **Elamite musicians** with harps, drums and pipes coming out of an Elamite city to meet the Assyrian victors, which gives an idea of court music. String instruments were widely used. Little more is known about games and festivals; Elamite sources are poor on this subject.',
+  { h: '10. Science and knowledge' },
+  'The Elamites used Mesopotamian science. At Susa, **mathematical tablets** of the Old Babylonian period (early 2nd millennium BC) were found, in Akkadian, with problems in geometry and algebra. Elam had scribes who copied divination and medical texts from Babylon. No independent Elamite science is known, which may be only a lack of sources.',
+  { h: '11. Technology and art' },
+  { lista: [
+    '**Metallurgy:** bronze cast on a large scale, such as the statue of Napir-Asu; work in gold and silver.',
+    '**Brick architecture:** ziggurats, palaces and temples in fired brick, sometimes glazed, with inscriptions.',
+    '**Faience and glass:** at Chogha Zanbil, glass objects and glazed bricks were found.',
+    '**Scripts of their own:** three writing systems, of which two are original.',
+    '**Rock reliefs:** carved into the rock, in the mountains.',
+    '**Irrigation:** canals in Susiana, as in Mesopotamia.'
+  ] },
+  { h: '12. War' },
+  'The Elamites were known as **archers**: the Bible speaks of the “bow of Elam” and of Elamite archers. They also had war chariots, cavalry and spear infantry. Assyrian reliefs show Elamite armies in short tunics, with bows and spears, defending rivers and cities. War with Mesopotamia was almost constant, and the practice of carrying off the statues of enemy gods was common to both sides.',
+  { img: 'ela-guerreiros', leg: 'Historical reproduction of the Assyrian relief of the Battle of the Ulai, showing Elamite soldiers and chariots; published in 1903.' }
+];
+
+const personalidades = [
+  'Elamite kings are known mainly from inscriptions and from the texts of their enemies, so the portraits are often incomplete. These are some of the most important figures.',
+  { h: 'Hita, king of Awan' },
+  'King of Awan, c. 2250 BC (the date is approximate). He made a **treaty with Naram-Sin of Akkad**, written in cuneiform Elamite, the oldest long text known in this language.',
+  { h: 'Puzur-Inshushinak (Kutik-Inshushinak)' },
+  'Governor of Susa under Akkad and then king, c. 2200–2100 BC. He had texts written in **Linear Elamite** and in Akkadian, and expanded the territory. He was, it seems, the last king of Awan. He was defeated by the kings of Ur, but how and when is debated. His statue and inscriptions are in the Louvre.',
+  { img: 'ela-puzur-inshushinak', leg: 'Lower part of a seated statue of Puzur-Inshushinak, from Susa. Louvre.' },
+  { h: 'Kindattu, king of Simashki' },
+  'King of the Simashki dynasty, c. 2004 BC. Mesopotamian tradition attributes to him, or to his coalition, the destruction of **Ur**. Ibbi-Sin, the last king of Ur III, was taken prisoner, which is remembered in the “Lament for the Destruction of Ur”.',
+  { h: 'Kudur-Mabuk and Rim-Sin' },
+  'Kudur-Mabuk was a chief of Elamite origin, c. 1830 BC, who took control of Larsa and put his sons on the throne. **Rim-Sin I** reigned over 60 years and was defeated by Hammurabi in 1763 BC. It is not clear whether Kudur-Mabuk acted on his own or on behalf of the sukkalmah of Elam.',
+  { h: 'Siwe-palar-huppak, sukkalmah' },
+  'Sukkalmah in the 18th century BC. He was one of the most powerful rulers of his time, and neighbouring kings treated him with great respect, as the Mari letters show. He led the powerful Elamite campaign in Mesopotamia, which ended with the victory of a coalition led by Hammurabi.',
+  { h: 'Untash-Napirisha, the builder' },
+  'King of Middle Elamite times, c. 1340–1300 BC (for some, later). He founded **Dur-Untash** (Chogha Zanbil) and left inscriptions in dozens of temples and buildings. He married **Napir-Asu**, who may have been a Kassite princess, daughter of Burna-Buriash II, although this is discussed.',
+  { img: 'ela-untash-napirisha', leg: 'Stele of Untash-Napirisha, from Susa. Louvre.' },
+  { h: 'Napir-Asu, the queen' },
+  'Wife of Untash-Napirisha. The **bronze statue** dedicated to her, with a curse engraved against anyone who damaged it, is one of the great objects of Near Eastern art. It is the most famous evidence of the position of royal women in Elam.',
+  { img: 'ela-napir-asu', leg: 'Copper-alloy statue of Queen Napir-Asu. Louvre.' },
+  { h: 'Shutruk-Nahhunte I' },
+  'King c. 1184–1155 BC and founder of the Shutrukid dynasty. He invaded Babylon in 1158 BC, possibly to avenge his father-in-law, the Kassite king Meli-Shipak II, and took to Susa the **stele of Naram-Sin** and, it seems, also the **obelisk of Manishtushu** and the stele of the **Code of Hammurabi** (these two attributions are hypotheses). On the stele of Naram-Sin he carved an Elamite inscription in which he says he destroyed Sippar and carried the stele off to Elam. These trophies were found at Susa between 1898 and 1902.',
+  { h: 'Kutir-Nahhunte III' },
+  'Son of Shutruk-Nahhunte, he reigned c. 1155–1150 BC. He conquered Babylon and ended the Kassite dynasty. He took the statue of the god **Marduk** to Elam, an act of enormous symbolic weight. The statue was, according to tradition, recovered later by Nebuchadnezzar I.',
+  { h: 'Shilhak-Inshushinak I' },
+  'King c. 1150–1120 BC. He was the last great king of Middle Elamite times: he extended the territory, restored temples and left many inscriptions. The **Sit-shamshi** is attributed to him. After him, Elamite power declines.',
+  { h: 'Nahhunte-utu, the queen' },
+  'Queen of the Shutrukid dynasty, c. 12th century BC. She appears in inscriptions as the successive wife of two kings of the same family. For some scholars, she shows that the right to the throne could pass through women. The interpretation is debated, and the case rests on few texts.',
+  { h: 'Teumman, king of Elam' },
+  'King c. 664–653 BC. He came to the throne after a power struggle and was defeated by the Assyrians at the battle of **Til-Tuba** in 653 BC. His death appears in reliefs at Nineveh, and his head was displayed in a garden. We know him only from the Assyrian account.',
+  { h: 'Humban-Haltash III, the last king' },
+  'Last independent king of Elam (c. 648–647 BC; dates vary). He was reigning when Ashurbanipal destroyed Susa and was captured by the Assyrians; what happened to him afterwards is not known. The kingdom did not survive this defeat.',
+  { h: 'Cyrus II, king of Anshan' },
+  'Founder of the Persian empire, c. 559–530 BC. He styled himself “king of Anshan” in the Cyrus Cylinder and said he descended from Teispes, from a line of kings of Anshan. He conquered Babylon in 539 BC and brought Elam into the empire. The relationship between his family and the old Elamites is one of the topics that most interest specialists.',
+  { img: 'ela-cilindro-ciro', leg: 'Cyrus Cylinder, an inscription in Babylonian Akkadian; Achaemenid period. British Museum.' }
+];
+
+const legado = [
+  { h: 'What they left us' },
+  { lista: [
+    '**An original script:** Proto-Elamite and Linear Elamite show that writing was invented in more than one place, or at least reinvented.',
+    '**The language:** Elamite is one of the few language isolates of the ancient world, and its legacy lives on in place names in Iran.',
+    '**The bridge to the Persians:** the Persian kings inherited from Elam administration, the title “king of Anshan”, cuneiform writing and archive practice.',
+    '**The ziggurat of Chogha Zanbil:** the best-preserved monument of this type outside Mesopotamia.',
+    '**Bronze art:** the statue of Napir-Asu and the Sit-shamshi are masterpieces.',
+    '**The trophies of Susa:** without Shutruk-Nahhunte’s plunder, we might not have the Code of Hammurabi in one piece.',
+    '**The name “Khuzestan”:** it comes from Persian *Khuzestan*, “land of the Khuz”, a form that derives from Old Persian *Hūjiya* (“Elam”, “Elamite”), possibly from an Elamite name of the region, and **Susa** is still Shush.'
+  ] },
+  { img: 'ela-apadana-susa', leg: 'Ruins of the palace of Darius I at Susa; Achaemenid period.' },
+  { h: 'Art' },
+  'Elamite art mixes Mesopotamian features with its own: the painted pottery of **Susa I**, seals, **bronze** statues, the **rock reliefs** of Izeh and the **faience and glass** of Chogha Zanbil. Many pieces reached us only because they were taken to Susa as trophies. The **Frieze of the Archers** of Susa, in glazed brick, is a work of Persian times, but it rests on a local craft tradition.',
+  { img: 'ela-friso-arqueiros', leg: 'Glazed-brick Frieze of Archers from the Achaemenid palace at Susa. Louvre.' },
+  { h: 'Architecture: the Elamite ziggurat' },
+  'The ziggurat of Dur-Untash differs from the Mesopotamian ones: it had **five levels**, with vaulted staircases inside, and on top stood the temple of Napirisha and Inshushinak. The bricks bore votive inscriptions. Around it, three concentric enclosures separated the sacred space from the rest. It was a city of worship, more than a city to live in.',
+  { h: 'Elam and the Bible' },
+  'Elam appears in the Bible as the land of **Elam, son of Shem** (Genesis 10) and as an enemy and ally of the peoples of the Near East. The books of **Daniel** and **Esther** are set in Susa (the biblical “Shushan”). Genesis 14 speaks of an Elamite king, **Chedorlaomer**, but no historical Elamite king of this name is known, and the link with history is debated.',
+  { h: 'The rediscovery of Elam' },
+  { linha: [
+    { d: '1844 – 1855', t: 'Deciphering Elamite', x: 'The trilingual inscription of Behistun, copied by Rawlinson, has a version in Elamite. Westergaard (1844) and Norris (1855) studied it and published the first analyses of the language.' },
+    { d: '1851 – 1852', t: 'Loftus at Susa', x: 'William Loftus identifies the mound of Susa and carries out the first excavations.' },
+    { d: '1884 – 1886', t: 'The Dieulafoys', x: 'Marcel and Jane Dieulafoy excavate the Persian palace at Susa and take the glazed-brick friezes to Paris.' },
+    { d: '1897 – 1912', t: 'The mission of Jacques de Morgan', x: 'Large-scale French excavations at Susa find the stele of Naram-Sin (1898), the Code of Hammurabi (1901–1902) and the Sit-shamshi (1904–1905). Father Vincent Scheil translates the code.' },
+    { d: '1935 – 1962', t: 'Chogha Zanbil', x: 'The ziggurat is identified in 1935 by oil prospectors and excavated by Roman Ghirshman from 1951 to 1962.' },
+    { d: '1971 – 1978', t: 'Tal-e Malyan', x: 'American excavations (William Sumner) at Tal-e Malyan; the identification with Anshan is confirmed in 1973 and Proto-Elamite tablets appear.' },
+    { d: '1979', t: 'World Heritage', x: 'Chogha Zanbil is the first Iranian site inscribed by UNESCO. Susa is inscribed in 2015.' },
+    { d: '2001', t: 'Jiroft', x: 'Floods of the Halil river reveal tombs with chlorite vessels. The looting of pieces and the discussions about their origin became famous.' },
+    { d: '2022', t: 'A proposed decipherment of Linear Elamite', x: 'François Desset and a Franco-Iranian and European team announce a decipherment of Linear Elamite based on silver vessels. Many specialists accept much of the readings, but there are criticisms, and validation continues.' }
+  ] },
+  { img: 'ela-behistun', leg: 'Behistun inscription in Old Persian, Elamite and Babylonian Akkadian, 6th century BCE. Iran.' },
+  { img: 'ela-de-morgan', leg: 'Jacques de Morgan (1857–1924), archaeologist and director of excavations at Susa.' },
+  { img: 'ela-reconstrucao-zanbil', leg: 'Artistic reconstruction of Dur-Untash (Chogha Zanbil), c. 1300 BCE, with its ziggurat and walled precincts; details are conjectural. AI-generated illustration.' },
+  { img: 'ela-reconstrucao-susa', leg: 'Hypothetical reconstruction of the acropolis of Susa in the Middle Elamite period, c. 1200 BCE; it does not depict an established archaeological plan. AI-generated illustration.' },
+  { caixa: 'To visit', texto: 'The **Louvre** (Paris), in the Department of Near Eastern Antiquities, has the largest Elamite collection in the world, with the Code of Hammurabi, the statue of Napir-Asu and the Frieze of the Archers. The **National Museum of Iran** (Tehran), the **British Museum** (London, with the Assyrian reliefs) and the museum at Shush also have important pieces. On site, you can visit **Chogha Zanbil** and **Susa**, in south-west Iran.' }
+];
+
+const quiz = [
+  { p: 'Where was Elam?', op: ['In the Nile valley', 'In the south-west of present-day Iran', 'In southern Mesopotamia, between the two rivers', 'On the Mediterranean coast'], certa: 1, exp: 'Elam occupied south-west Iran, from the plain of Susa to the mountains of Anshan.' },
+  { p: 'What were the two historic capitals of Elam?', op: ['Ur and Uruk', 'Susa and Anshan', 'Nineveh and Assur', 'Persepolis and Ecbatana'], certa: 1, exp: 'Susa, on the plain, and Anshan, in the mountains of Fars.' },
+  { p: 'What is the situation of Proto-Elamite writing?', op: ['It was deciphered in 1900', 'It has not been deciphered', 'It is the same as cuneiform', 'It is the same as hieroglyphs'], certa: 1, exp: 'The numbers and some signs are known, but the language of Proto-Elamite remains unknown.' },
+  { p: 'To which family does the Elamite language belong?', op: ['Semitic', 'Indo-European', 'It is a language isolate', 'Egyptian'], certa: 2, exp: 'Elamite has no proven relatives. The link to Dravidian is rejected by most.' },
+  { p: 'Who destroyed Ur c. 2004 BC, taking King Ibbi-Sin prisoner?', op: ['The Akkadians', 'The Elamites', 'The Hittites', 'The Egyptians'], certa: 1, exp: 'An Elamite coalition, linked to Simashki, sacked Ur and took the king to Elam.' },
+  { p: 'Who built Dur-Untash (Chogha Zanbil)?', op: ['Hammurabi', 'Shutruk-Nahhunte', 'Untash-Napirisha', 'Ashurbanipal'], certa: 2, exp: 'Untash-Napirisha, c. 1340–1300 BC (dates debated), founded the sacred city.' },
+  { p: 'Which famous law text was carried to Susa by an Elamite king?', op: ['The Code of Ur-Nammu', 'The Law of Moses', 'The Code of Hammurabi', 'The Laws of Manu'], certa: 2, exp: 'The stele of the Code of Hammurabi was probably taken to Susa in the 12th century BC (a hypothesis) and found in 1901–1902.' },
+  { p: 'Who carved his name on the Victory Stele of Naram-Sin?', op: ['Kutir-Nahhunte', 'Shutruk-Nahhunte', 'Cyrus II', 'Darius I'], certa: 1, exp: 'Shutruk-Nahhunte took the stele from Sippar to Susa and inscribed his name in Elamite.' },
+  { p: 'Who was Inshushinak?', op: ['The god of Susa, judge of the dead', 'A king of Awan', 'A scribe', 'A sacred river'], certa: 0, exp: 'Inshushinak, “lord of Susa”, was the city’s main god and was linked to the dead.' },
+  { p: 'Which queen has a 1750 kg bronze statue in the Louvre?', op: ['Puabi', 'Enheduana', 'Napir-Asu', 'Nahhunte-utu'], certa: 2, exp: 'The statue of Napir-Asu, wife of Untash-Napirisha, c. 1300 BC, has a curse inscribed on it.' },
+  { p: 'What is debated about succession to the Elamite throne?', op: ['Whether there were kings', 'Whether power could pass through the female line, between brothers or from uncle to nephew', 'Whether women were slaves', 'Whether kings were elected every year'], certa: 1, exp: 'Many kings say they are the “sister’s son” of the previous one. The interpretation is debated.' },
+  { p: 'Who destroyed Susa in 647 BC?', op: ['Cyrus II', 'Alexander', 'Ashurbanipal of Assyria', 'Hammurabi'], certa: 2, exp: 'Ashurbanipal plundered Susa and, by his own account, desecrated the tombs of the kings.' },
+  { p: 'What title did Cyrus II use when conquering Babylon?', op: ['King of Susa', 'King of Anshan', 'King of Elam', 'Pharaoh'], certa: 1, exp: 'On the Cyrus Cylinder he styles himself “king of Anshan”. Anshan was the old Elamite capital in the mountains.' },
+  { p: 'Which language of Elam was used in Persian administration at Persepolis?', op: ['Akkadian', 'Greek', 'Elamite', 'Aramaic'], certa: 2, exp: 'Most of the Persepolis tablets are in cuneiform Elamite.' },
+  { p: 'Why is the link between Jiroft and Marhashi debated?', op: ['Because there were never excavations', 'Because there is no consensus on where Marhashi was', 'Because Jiroft is in India', 'Because Marhashi was undoubtedly Elamite'], certa: 1, exp: 'Marhashi appears in Mesopotamian texts, but its location is discussed. Jiroft is a hypothesis.' }
+];
+
+export default { visao, linha, mapa, sociedade, personalidades, legado, quiz };

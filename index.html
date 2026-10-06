@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05070d">
+<title>Civilizações</title>
+<style>
+  :root { --ouro:#e8d9a8; --fundo:#05070d; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; background:var(--fundo); color:#fff; overflow:hidden;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-tap-highlight-color: transparent; }
+  #palco { position:fixed; inset:0; touch-action:none; cursor:grab; user-select:none; -webkit-user-select:none; }
+  #palco.arrastar { cursor:grabbing; }
+  canvas { display:block; width:100%; height:100%; }
+  #marcadores { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+  .marcador { position:absolute; left:0; top:0; width:64px; height:64px; margin:0; padding:0; border:0; background:none;
+    pointer-events:auto; cursor:pointer; will-change:transform,opacity; color:#fff; font:inherit; }
+  .marcador .disco { display:flex; align-items:center; justify-content:center; width:64px; height:64px; border-radius:50%;
+    border:2px solid var(--ouro); background-size:cover; background-position:center;
+    font-family: Georgia, "Times New Roman", serif; font-size:26px; font-weight:700; color:#fff;
+    text-shadow:0 1px 3px rgba(0,0,0,.6); box-shadow:0 2px 14px rgba(0,0,0,.65), 0 0 0 4px rgba(5,7,13,.35);
+    transition: box-shadow .15s; }
+  .marcador .disco.imagem { border:0; background-color:transparent; box-shadow:0 3px 14px rgba(0,0,0,.7); }
+  .marcador:hover .disco.imagem, .marcador:focus-visible .disco.imagem { box-shadow:0 3px 18px rgba(0,0,0,.75), 0 0 0 3px rgba(232,217,168,.7); }
+  .marcador:hover .disco, .marcador:focus-visible .disco { box-shadow:0 2px 18px rgba(0,0,0,.7), 0 0 0 4px rgba(232,217,168,.55); outline:none; }
+  .marcador .nome { position:absolute; left:50%; top:70px; transform:translateX(-50%); white-space:nowrap;
+    font-size:14px; font-weight:600; letter-spacing:.2px; padding:2px 8px; border-radius:10px;
+    background:rgba(5,7,13,.7); text-shadow:0 1px 2px #000; opacity:0; transition:opacity .2s; pointer-events:none; }
+  .marcador.rotulo .nome, .marcador:hover .nome, .marcador:focus-visible .nome { opacity:1; }
+  header { position:fixed; left:0; right:0; top:0; padding:calc(14px + env(safe-area-inset-top)) 18px 0; display:flex;
+    justify-content:space-between; align-items:flex-start; pointer-events:none; z-index:5; }
+  header h1 { margin:0; font-family: Georgia, "Times New Roman", serif; font-size:26px; font-weight:700; letter-spacing:.5px;
+    color:var(--ouro); text-shadow:0 2px 10px rgba(0,0,0,.8); }
+  header p { margin:2px 0 0; font-size:13px; color:#b9c2d6; text-shadow:0 1px 6px rgba(0,0,0,.9); }
+  .idiomas { pointer-events:auto; display:flex; gap:4px; background:rgba(5,7,13,.6); border:1px solid rgba(232,217,168,.35);
+    border-radius:20px; padding:3px; }
+  .idiomas button { border:0; background:none; color:#b9c2d6; font:inherit; font-size:13px; font-weight:600; padding:6px 12px;
+    border-radius:16px; cursor:pointer; }
+  .idiomas button[aria-pressed="true"] { background:var(--ouro); color:#1a1405; }
+  #dica { position:fixed; left:0; right:0; bottom:calc(160px + env(safe-area-inset-bottom)); text-align:center; font-size:14px;
+    color:#c7cfe0; text-shadow:0 1px 8px #000; pointer-events:none; transition:opacity .8s; padding:0 70px; z-index:5; }
+  #dica.fora { opacity:0; }
+  .zoom { position:fixed; right:14px; bottom:calc(18px + env(safe-area-inset-bottom)); display:flex; flex-direction:column; gap:8px; z-index:6; }
+  .zoom button { width:44px; height:44px; border-radius:50%; border:1px solid rgba(232,217,168,.5); background:rgba(5,7,13,.65);
+    color:var(--ouro); font-size:24px; line-height:1; cursor:pointer; }
+  .zoom button:hover { background:rgba(232,217,168,.2); }
+
+  #tempo { position:fixed; left:14px; bottom:calc(14px + env(safe-area-inset-bottom)); width:min(560px, calc(100vw - 86px)); z-index:6;
+    background:rgba(5,7,13,.78); border:1px solid rgba(232,217,168,.35); border-radius:16px; padding:9px 12px 8px;
+    backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); }
+  @media (min-width:760px) { #tempo { left:50%; transform:translateX(-50%); } }
+  .t-linha { display:flex; align-items:center; flex-wrap:wrap; gap:6px 8px; min-height:34px; }
+  .t-linha button { border:1px solid rgba(232,217,168,.45); background:none; color:var(--ouro); font:inherit; font-size:13px; font-weight:600;
+    padding:6px 10px; border-radius:16px; cursor:pointer; white-space:nowrap; }
+  .t-linha button[aria-pressed="true"] { background:var(--ouro); color:#1a1405; }
+  #t-play { padding:6px 11px; min-width:38px; }
+  #t-ano { font-family:Georgia,"Times New Roman",serif; font-size:19px; font-weight:700; color:var(--ouro); flex:1; text-align:center; white-space:nowrap; }
+  #t-cont { order:5; flex-basis:100%; font-size:12px; color:#b9c2d6; text-align:center; line-height:1.15; }
+  .t-pista { position:relative; margin-top:4px; }
+  #t-slider { -webkit-appearance:none; appearance:none; width:100%; height:26px; margin:0; background:transparent; cursor:pointer; touch-action:none; }
+  #t-slider::-webkit-slider-runnable-track { height:4px; border-radius:2px; background:rgba(232,217,168,.35); }
+  #t-slider::-moz-range-track { height:4px; border-radius:2px; background:rgba(232,217,168,.35); }
+  #t-slider::-webkit-slider-thumb { -webkit-appearance:none; width:22px; height:22px; margin-top:-9px; border-radius:50%; background:var(--ouro); border:2px solid #1a1405; }
+  #t-slider::-moz-range-thumb { width:18px; height:18px; border-radius:50%; background:var(--ouro); border:2px solid #1a1405; }
+  #tempo.tudo #t-slider { opacity:.55; }
+  #t-eras, #t-marcas { margin-left:11px; margin-right:11px; }
+  #t-eras { position:relative; height:15px; margin-top:1px; }
+  #t-eras span { position:absolute; top:0; height:15px; font-size:10px; line-height:15px; text-align:center; color:#b9c2d6; overflow:hidden; white-space:nowrap;
+    border-left:1px solid rgba(232,217,168,.3); background:rgba(232,217,168,.07); }
+  #t-marcas { position:relative; height:13px; }
+  #t-marcas span { position:absolute; top:0; transform:translateX(-50%); font-size:10px; color:#8f9ab3; white-space:nowrap; }
+  .marcador.apagado .disco { filter:grayscale(1) brightness(.7); }
+  #carregar { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:var(--fundo);
+    color:var(--ouro); font-family:Georgia,serif; font-size:20px; z-index:20; transition:opacity .6s; }
+  #carregar.fora { opacity:0; pointer-events:none; }
+  #erro { position:fixed; inset:0; display:none; align-items:center; justify-content:center; text-align:center; padding:30px;
+    background:var(--fundo); color:#e8d9a8; font-size:17px; z-index:30; }
+  noscript { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:var(--fundo); color:#e8d9a8; z-index:40; }
+</style>
+<script type="importmap">{ "imports": { "three": "./vendor/three.module.js" } }</script>
+</head>
+<body>
+<noscript>É necessário ativar o JavaScript. / JavaScript is required.</noscript>
+<div id="palco">
+  <canvas id="c"></canvas>
+  <div id="marcadores"></div>
+</div>
+<header>
+  <div>
+    <h1 id="t-titulo">Civilizações</h1>
+    <p id="t-sub"></p>
+  </div>
+  <div id="ferr" style="display:flex;gap:8px;align-items:center;pointer-events:none">
+  <div class="idiomas" role="group" aria-label="Idioma / Language">
+    <button id="l-pt" aria-pressed="true">PT</button>
+    <button id="l-en" aria-pressed="false">EN</button>
+  </div>
+  </div>
+</header>
+<div id="tempo" class="tudo" role="group" aria-labelledby="t-ano">
+  <div class="t-linha">
+    <button id="t-tudo" aria-pressed="true"></button>
+    <span id="t-ano"></span>
+    <span id="t-cont"></span>
+    <button id="t-play" aria-label="Play">▶</button>
+    <button id="t-esc" aria-pressed="false"></button>
+  </div>
+  <div class="t-pista"><input type="range" id="t-slider" min="-3500" max="1500" step="10" value="-2000"></div>
+  <div id="t-eras"></div>
+  <div id="t-marcas"></div>
+</div>
+<div id="dica"></div>
+<div class="zoom">
+  <button id="z-mais" aria-label="+">+</button>
+  <button id="z-menos" aria-label="−">−</button>
+</div>
+<div id="carregar"><span id="t-carregar">A carregar a Terra…</span></div>
+<div id="erro"><span id="t-erro"></span></div>
+
+<script type="module">
+import * as THREE from 'three';
+import { CIVS } from './dados-civs.js';
+import { criarBotao } from './shared/pesquisa.js';
+
+// ---------- Textos ----------
+const TXT = {
+  pt: { titulo:'Civilizações', sub:'Da escrita a 1500 d.C.', dica:'Arrasta para rodar · pinça ou roda do rato para aproximar · toca numa civilização',
+        carregar:'A carregar a Terra…', erro:'Não foi possível iniciar o globo 3D neste dispositivo.', abrir:'Abrir', tudo:'Tudo', esconder:'Esconder', todas:'todas as civilizações', neste:n=>n+(n===1?' civilização existia':' civilizações existiam'), play:'Avançar o tempo', pausa:'Pausa',
+        eras:['Bronze','Antiguidade','Medieval'], ac:'a.C.', dc:'d.C.', semCivs:'nenhuma civilização do globo' },
+  en: { titulo:'Civilizations', sub:'From writing to AD 1500', dica:'Drag to rotate · pinch or scroll to zoom · tap a civilization',
+        carregar:'Loading Earth…', erro:'The 3D globe could not be started on this device.', abrir:'Open', tudo:'All', esconder:'Hide', todas:'all civilizations', neste:n=>n+(n===1?' civilization existed':' civilizations existed'), play:'Play time', pausa:'Pause',
+        eras:['Bronze','Antiquity','Medieval'], ac:'BC', dc:'AD', semCivs:'no civilization on the globe' }
+};
+let lang = 'pt';
+document.getElementById('ferr').prepend(criarBotao(() => lang));
+try { const g = localStorage.getItem('civ_lang'); if (g === 'pt' || g === 'en') lang = g; } catch (e) {}
+
+const $ = id => document.getElementById(id);
+
+// ---------- Estado de vista ----------
+const GRAU = Math.PI / 180;
+const centrarLon = lon => -(lon + 90) * GRAU;            // rotação Y que põe a longitude 'lon' de frente
+const centrarLat = lat => lat * GRAU;                    // inclinação X que põe a latitude 'lat' ao centro
+const estado = { rotY: centrarLon(15), tilt: 0, dist: 4.2 };
+let vel = 0;                                             // inércia da rotação
+let tocou = false;                                       // já houve interação?
+let anim = null;                                         // animação em curso
+let aSair = false;
+
+// ---------- Cena ----------
+const canvas = $('c');
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+} catch (e) {
+  $('carregar').classList.add('fora');
+  $('erro').style.display = 'flex';
+  $('t-erro').textContent = TXT[lang].erro;
+  throw e;
+}
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+renderer.setClearColor(0x05070d, 1);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(40, 1, 0.05, 100);
+const TAN = Math.tan(20 * GRAU);
+
+const terra = new THREE.Group();
+scene.add(terra);
+
+const textura = new THREE.TextureLoader().load('./assets/terra.jpg', () => $('carregar').classList.add('fora'),
+  undefined, () => { $('carregar').classList.add('fora'); $('erro').style.display = 'flex'; $('t-erro').textContent = TXT[lang].erro; });
+textura.colorSpace = THREE.SRGBColorSpace;
+textura.anisotropy = renderer.capabilities.getMaxAnisotropy();
+const esfera = new THREE.Mesh(new THREE.SphereGeometry(1, 128, 64), new THREE.MeshBasicMaterial({ map: textura }));
+terra.add(esfera);
+
+// escurecimento suave nas bordas (dá volume sem sombras)
+const limbo = new THREE.Mesh(new THREE.SphereGeometry(1.003, 96, 48), new THREE.ShaderMaterial({
+  transparent: true, depthWrite: false,
+  vertexShader: 'varying vec3 vN; void main(){ vN = normalize(normalMatrix*normal); gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.0); }',
+  fragmentShader: 'varying vec3 vN; void main(){ float f = pow(1.0 - clamp(vN.z,0.0,1.0), 2.6); gl_FragColor = vec4(0.0,0.02,0.06, f*0.55); }'
+}));
+scene.add(limbo);
+
+// halo da atmosfera
+const halo = new THREE.Mesh(new THREE.SphereGeometry(1.07, 96, 48), new THREE.ShaderMaterial({
+  transparent: true, depthWrite: false, side: THREE.BackSide, blending: THREE.AdditiveBlending,
+  vertexShader: 'varying vec3 vN; void main(){ vN = normalize(normalMatrix*normal); gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.0); }',
+  fragmentShader: 'varying vec3 vN; void main(){ float i = pow(max(0.0, 0.68 - vN.z), 3.0); gl_FragColor = vec4(0.35,0.62,1.0,1.0)*i*1.4; }'
+}));
+scene.add(halo);
+
+// estrelas
+{
+  const n = 1400, pos = new Float32Array(n * 3);
+  let s = 12345; const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < n; i++) {
+    const u = rnd() * 2 - 1, a = rnd() * Math.PI * 2, r = Math.sqrt(1 - u * u), d = 40 + rnd() * 20;
+    pos[i*3] = r * Math.cos(a) * d; pos[i*3+1] = u * d; pos[i*3+2] = r * Math.sin(a) * d;
+  }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  scene.add(new THREE.Points(g, new THREE.PointsMaterial({ color: 0xcdd6ee, size: 0.12, sizeAttenuation: true, transparent: true, opacity: 0.8 })));
+}
+
+// ---------- Geometria ----------
+// latitude/longitude -> ponto na esfera (mesma convenção da textura equirretangular)
+function pontoLatLon(lat, lon, r = 1) {
+  const la = lat * GRAU, lo = lon * GRAU;
+  return new THREE.Vector3(r * Math.cos(la) * Math.cos(lo), r * Math.sin(la), -r * Math.cos(la) * Math.sin(lo));
+}
+
+// ---------- Marcadores ----------
+const visiveis = CIVS.filter(c => c.pronta);
+const camada = $('marcadores');
+const marcadores = visiveis.map(c => {
+  const b = document.createElement('button');
+  b.className = 'marcador';
+  const d = document.createElement('span'); d.className = 'disco';
+  if (c.img) { d.style.backgroundImage = `url(${c.img})`; d.classList.add('imagem'); }
+  else { d.style.background = `radial-gradient(circle at 35% 30%, ${c.cor}, #1b1608 120%)`; d.textContent = c.nome.pt.charAt(0); }
+  const n = document.createElement('span'); n.className = 'nome';
+  b.append(d, n);
+  b.addEventListener('click', () => { if (!arrastou) abrir(c); });
+  camada.appendChild(b);
+  return { c, el: b, nome: n, p: pontoLatLon(c.lat, c.lon) };
+});
+
+
+// ---------- Cursor de tempo ----------
+// Anos: negativo = a.C. Lê "c. 4500 a – 2000 a", "753 a – 476 d", "1325 – 1521", "c. 50000 a – hoje" (ou ini/fim explícitos em CIVS).
+function lerPeriodo(txt) {
+  const m = txt.replace(/c\./g, '').match(/(\d+)\s*([ad])?\s*[–-]\s*(?:(\d+)\s*([ad])?|hoje)/);
+  if (!m) return [-9999, 9999];
+  const ini = (m[2] === 'a' ? -1 : 1) * +m[1];
+  const fim = m[3] === undefined ? 2100 : (m[4] === 'a' ? -1 : 1) * +m[3];
+  return [ini, fim];
+}
+marcadores.forEach(m => { const [a, b] = lerPeriodo(m.c.periodo.pt); m.ini = m.c.ini ?? a; m.fim = m.c.fim ?? b; m.ativo = true; });
+const T_MIN = -3500, T_MAX = 1500;
+let ano = null, esconder = false, tocando = false, acc = 0;     // ano === null: mostra tudo
+try { const a = sessionStorage.getItem('civ_ano'); if (a !== null && a !== '') ano = +a; esconder = sessionStorage.getItem('civ_esc') === '1'; } catch (e) {}
+const fmtAno = a => { const t = TXT[lang]; return a < 0 ? `${-a} ${t.ac}` : (lang === 'en' ? `${t.dc} ${a || 1}` : `${a || 1} ${t.dc}`); };
+function aplicarTempo() {
+  const t = TXT[lang];
+  marcadores.forEach(m => { m.ativo = ano === null || (m.ini <= ano && ano <= m.fim); m.el.classList.toggle('apagado', !m.ativo); });
+  const n = marcadores.filter(m => m.ativo).length;
+  $('tempo').classList.toggle('tudo', ano === null);
+  $('t-tudo').setAttribute('aria-pressed', ano === null);
+  $('t-esc').setAttribute('aria-pressed', esconder);
+  $('t-esc').disabled = ano === null; $('t-esc').style.opacity = ano === null ? .45 : 1;
+  $('t-ano').textContent = ano === null ? '—' : fmtAno(ano);
+  $('t-cont').textContent = ano === null ? t.todas : (n ? t.neste(n) : t.semCivs);
+  if (ano !== null) { $('t-slider').value = ano; $('t-slider').setAttribute('aria-valuetext', fmtAno(ano)); }
+  $('t-play').textContent = tocando ? '❚❚' : '▶';
+  $('t-play').setAttribute('aria-label', tocando ? t.pausa : t.play);
+  try { sessionStorage.setItem('civ_ano', ano === null ? '' : String(ano)); sessionStorage.setItem('civ_esc', esconder ? '1' : '0'); } catch (e) {}
+}
+function montarEscala() {
+  const t = TXT[lang], pc = v => ((v - T_MIN) / (T_MAX - T_MIN) * 100);
+  const eras = [[-3300, -1200], [-1200, 476], [476, 1500]];
+  $('t-eras').innerHTML = eras.map((e, i) => `<span style="left:${pc(e[0])}%;width:${pc(e[1]) - pc(e[0])}%">${t.eras[i]}</span>`).join('');
+  const marcas = [[-3000, `3000 ${t.ac}`], [-2000, '2000'], [-1000, '1000'], [0, '0'], [1000, `1000 ${t.dc}`]];
+  $('t-marcas').innerHTML = marcas.map(m => `<span style="left:${pc(m[0])}%">${m[1]}</span>`).join('');
+}
+$('t-tudo').addEventListener('click', () => { tocando = false; ano = null; aplicarTempo(); });
+$('t-esc').addEventListener('click', () => { if (ano === null) return; esconder = !esconder; aplicarTempo(); });
+$('t-slider').addEventListener('input', e => { tocando = false; ano = +e.target.value; aplicarTempo(); });
+$('t-play').addEventListener('click', () => {
+  if (tocando) { tocando = false; aplicarTempo(); return; }
+  if (ano === null || ano >= T_MAX) ano = T_MIN;
+  acc = ano; tocando = true; aplicarTempo();
+});
+['pointerdown', 'wheel', 'touchstart'].forEach(ev => $('tempo').addEventListener(ev, e => e.stopPropagation(), { passive: true }));
+
+function textos() {
+  const t = TXT[lang];
+  document.documentElement.lang = lang;
+  document.title = t.titulo;
+  $('t-titulo').textContent = t.titulo;
+  $('t-sub').textContent = t.sub;
+  $('dica').textContent = t.dica;
+  $('t-carregar').textContent = t.carregar;
+  $('l-pt').setAttribute('aria-pressed', lang === 'pt');
+  $('l-en').setAttribute('aria-pressed', lang === 'en');
+  $('t-tudo').textContent = t.tudo; $('t-esc').textContent = t.esconder; montarEscala(); aplicarTempo();
+  marcadores.forEach(m => { m.lw = 0; m.nome.textContent = m.c.nome[lang]; m.el.setAttribute('aria-label', `${t.abrir}: ${m.c.nome[lang]}, ${m.c.periodo[lang]}`); });
+}
+function mudarIdioma(l) { lang = l; try { localStorage.setItem('civ_lang', l); } catch (e) {} textos(); }
+$('l-pt').addEventListener('click', () => mudarIdioma('pt'));
+$('l-en').addEventListener('click', () => mudarIdioma('en'));
+
+// ---------- Dimensões e limites de zoom ----------
+let W = 1, H = 1, distMax = 4.2;
+const DIST_MIN = 1.25;
+function redimensionar() {
+  W = window.innerWidth; H = window.innerHeight;
+  renderer.setSize(W, H, false);
+  camera.aspect = W / H; camera.updateProjectionMatrix();
+  // em ecrãs altos (telemóvel) o globo tem de caber na largura
+  distMax = Math.max(4.2, 1.15 / (TAN * Math.min(camera.aspect, 1)));
+  estado.dist = Math.min(estado.dist, distMax);
+}
+window.addEventListener('resize', redimensionar);
+redimensionar();
+estado.dist = distMax;
+
+const limitar = (v, a, b) => Math.min(b, Math.max(a, v));
+const fatorZoom = () => limitar((distMax - estado.dist) / (distMax - 1.6), 0, 1);
+
+// ---------- Interação ----------
+const palco = $('palco');
+const ponteiros = new Map();
+let arrastou = false, inicioX = 0, inicioY = 0, distPinca = 0;
+
+// radianos por pixel: o ponto sob o dedo/rato acompanha o movimento (1:1) a qualquer nível de zoom
+function sensibilidade() { return 2 * TAN * (estado.dist - 1) / H; }
+function primeiraInteracao() { if (!tocou) { tocou = true; $('dica').classList.add('fora'); } }
+
+palco.addEventListener('pointerdown', e => {
+  if (aSair) return;
+  ponteiros.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  if (ponteiros.size === 1) { arrastou = false; inicioX = e.clientX; inicioY = e.clientY; vel = 0; anim = null; }
+  if (ponteiros.size === 2) { const [a, b] = [...ponteiros.values()]; distPinca = Math.hypot(a.x - b.x, a.y - b.y); arrastou = true; }
+});
+window.addEventListener('pointermove', e => {
+  const p = ponteiros.get(e.pointerId); if (!p) return;
+  const dx = e.clientX - p.x, dy = e.clientY - p.y;
+  p.x = e.clientX; p.y = e.clientY;
+  if (ponteiros.size === 1) {
+    if (!arrastou && Math.hypot(e.clientX - inicioX, e.clientY - inicioY) > 6) { arrastou = true; palco.classList.add('arrastar'); }
+    if (arrastou) {
+      primeiraInteracao();
+      const s = sensibilidade();
+      estado.rotY += dx * s; vel = dx * s;
+      estado.tilt = limitar(estado.tilt + dy * s, -inclinMax(), inclinMax());
+    }
+  } else if (ponteiros.size === 2) {
+    const [a, b] = [...ponteiros.values()]; const d = Math.hypot(a.x - b.x, a.y - b.y);
+    if (distPinca > 0) { primeiraInteracao(); estado.dist = limitar(estado.dist * distPinca / d, DIST_MIN, distMax); }
+    distPinca = d;
+  }
+});
+function fimPonteiro(e) {
+  if (!ponteiros.has(e.pointerId)) return;
+  ponteiros.delete(e.pointerId);
+  if (ponteiros.size < 2) distPinca = 0;
+  if (ponteiros.size === 0) { palco.classList.remove('arrastar'); setTimeout(() => { arrastou = false; }, 0); }
+}
+window.addEventListener('pointerup', fimPonteiro);
+window.addEventListener('pointercancel', fimPonteiro);
+palco.addEventListener('wheel', e => {
+  e.preventDefault(); if (aSair) return;
+  primeiraInteracao(); anim = null;
+  estado.dist = limitar(estado.dist * Math.exp(e.deltaY * 0.0015), DIST_MIN, distMax);
+}, { passive: false });
+$('z-mais').addEventListener('click', () => { primeiraInteracao(); irPara({ dist: limitar(estado.dist * 0.72, DIST_MIN, distMax) }, 350); });
+$('z-menos').addEventListener('click', () => { primeiraInteracao(); irPara({ dist: limitar(estado.dist / 0.72, DIST_MIN, distMax) }, 350); });
+
+// Rotação livre em longitude e latitude (inclinação limitada perto dos polos para o globo não virar ao contrário).
+function inclinMax() { return 1.45; }   // ~83°: permite chegar quase aos polos
+
+// ---------- Animações de vista ----------
+const suave = t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+function irPara(alvo, dur, depois) {
+  const de = { rotY: estado.rotY, tilt: estado.tilt, dist: estado.dist };
+  const para = { rotY: alvo.rotY ?? de.rotY, tilt: alvo.tilt ?? de.tilt, dist: alvo.dist ?? de.dist };
+  let dr = para.rotY - de.rotY; dr = Math.atan2(Math.sin(dr), Math.cos(dr)); para.rotY = de.rotY + dr;   // caminho mais curto
+  anim = { t0: performance.now(), dur, de, para, depois }; vel = 0;
+}
+function abrir(c) {
+  if (aSair) return; aSair = true; primeiraInteracao();
+  try { sessionStorage.setItem('civ_vista', JSON.stringify({ rotY: estado.rotY, tilt: estado.tilt, dist: estado.dist })); } catch (e) {}
+  irPara({ rotY: centrarLon(c.lon), tilt: limitar(centrarLat(c.lat) * 0.5, -0.5, 0.5), dist: 1.55 }, 750, () => { location.href = `${c.id}/`; });
+}
+
+// ---------- Arranque / regresso de uma civilização ----------
+{
+  const de = new URLSearchParams(location.search).get('de');
+  const c = de && CIVS.find(x => x.id === de);
+  let guardada = null;
+  try { guardada = JSON.parse(sessionStorage.getItem('civ_vista') || 'null'); } catch (e) {}
+  if (c) {
+    estado.rotY = centrarLon(c.lon); estado.tilt = limitar(centrarLat(c.lat) * 0.5, -0.5, 0.5); estado.dist = 1.55;
+    tocou = true; $('dica').classList.add('fora');
+    const alvo = guardada ? { rotY: guardada.rotY, tilt: guardada.tilt, dist: Math.min(guardada.dist, distMax) } : { dist: distMax, tilt: 0 };
+    setTimeout(() => irPara(alvo, 900), 150);
+    history.replaceState(null, '', location.pathname);
+  }
+}
+window.addEventListener('pageshow', e => { if (e.persisted) { aSair = false; anim = null; } });
+
+// ---------- Ciclo de desenho ----------
+const v = new THREE.Vector3(), nrm = new THREE.Vector3(), cam = new THREE.Vector3();
+let ultimo = performance.now();
+function desenhar(agora) {
+  const dt = Math.min(0.05, (agora - ultimo) / 1000); ultimo = agora;
+  if (tocando) { acc += 110 * dt; const r = Math.min(T_MAX, Math.round(acc / 10) * 10); if (r !== ano) { ano = r; aplicarTempo(); } if (acc >= T_MAX) { tocando = false; aplicarTempo(); } }
+
+  if (anim) {
+    const t = Math.min(1, (agora - anim.t0) / anim.dur), k = suave(t);
+    estado.rotY = anim.de.rotY + (anim.para.rotY - anim.de.rotY) * k;
+    estado.tilt = anim.de.tilt + (anim.para.tilt - anim.de.tilt) * k;
+    estado.dist = anim.de.dist + (anim.para.dist - anim.de.dist) * k;
+    if (t >= 1) { const f = anim.depois; anim = null; if (f) f(); }
+  } else if (ponteiros.size === 0) {
+    if (!tocou && estado.dist > distMax * 0.9) estado.rotY += 0.06 * dt;      // rotação lenta até à primeira interação
+    estado.rotY += vel; vel *= 0.93; if (Math.abs(vel) < 1e-5) vel = 0;
+    const m = inclinMax();
+    if (Math.abs(estado.tilt) > m) estado.tilt += (limitar(estado.tilt, -m, m) - estado.tilt) * Math.min(1, dt * 6);
+  }
+
+  terra.rotation.set(estado.tilt, estado.rotY, 0, 'XYZ');
+  terra.updateMatrixWorld(true);
+  camera.position.set(0, 0, estado.dist);
+  camera.lookAt(0, 0, 0);
+  camera.updateMatrixWorld(true);
+  cam.copy(camera.position);
+
+  const zf = fatorZoom(), escala = 0.64 + 0.64 * zf;
+  const vis = [];
+  for (const m of marcadores) {
+    v.copy(m.p).applyMatrix4(terra.matrixWorld);                    // posição no mundo
+    nrm.copy(v).normalize();
+    const frente = nrm.dot(cam.clone().sub(v).normalize());          // >0: face visível
+    if (frente < 0.1 || (esconder && ano !== null && !m.ativo)) { m.el.style.visibility = 'hidden'; continue; }
+    const p = v.clone().project(camera);
+    m.x0 = m.x = (p.x * 0.5 + 0.5) * W; m.y0 = m.y = (-p.y * 0.5 + 0.5) * H;
+    m.frente = frente;
+    vis.push(m);
+  }
+  // Com zoom forte, afasta marcadores (disco + nome) que se sobreporiam no ecrã.
+  const peso = limitar((zf - 0.3) / 0.3, 0, 1);
+  if (peso > 0 && vis.length > 1) {
+    const rotulos = zf > 0.3;
+    for (const m of vis) {
+      if (!m.lw) m.lw = m.nome.offsetWidth || 90;
+      m.w = Math.max(64, rotulos ? m.lw : 0) * escala + 8;           // largura da caixa (px)
+      m.h = (rotulos ? 70 + 26 : 64) * escala + 6;                    // altura da caixa: disco + nome
+    }
+    for (let it = 0; it < 40; it++) {
+      let mexeu = false;
+      for (let i = 0; i < vis.length; i++) for (let j = i + 1; j < vis.length; j++) {
+        const A = vis[i], B = vis[j];
+        // caixas centradas em x, com topo em y-32*escala
+        const dx = B.x - A.x, dy = B.y - A.y;
+        const ox = (A.w + B.w) / 2 - Math.abs(dx), oy = (A.h + B.h) / 2 - Math.abs(dy + 0);
+        if (ox > 0 && oy > 0) {
+          mexeu = true;
+          if (oy <= ox) { const k = (dy >= 0 ? 1 : -1) * oy / 2; A.y -= k; B.y += k; if (dy === 0) { A.y -= 0.5; B.y += 0.5; } }
+          else { const k = (dx >= 0 ? 1 : -1) * ox / 2; A.x -= k; B.x += k; if (dx === 0) { A.x -= 0.5; B.x += 0.5; } }
+        }
+      }
+      if (!mexeu) break;
+    }
+  }
+  for (const m of vis) {
+    const x = m.x0 + (m.x - m.x0) * peso, y = m.y0 + (m.y - m.y0) * peso;
+    m.el.style.visibility = 'visible';
+    m.el.style.opacity = String(limitar((m.frente - 0.1) / 0.25, 0, 1) * (m.ativo ? 1 : 0.3));
+    m.el.style.transform = `translate(${x - 32}px, ${y - 32}px) scale(${escala})`;
+    m.el.classList.toggle('rotulo', zf > 0.3);
+  }
+  renderer.render(scene, camera);
+  requestAnimationFrame(desenhar);
+}
+textos();
+requestAnimationFrame(desenhar);
+</script>
+</body>
+</html>
