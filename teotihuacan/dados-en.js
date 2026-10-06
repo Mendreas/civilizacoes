@@ -3,7 +3,7 @@
 
 const visao = [
   { caixa: 'In brief', texto: [
-    '**Teotihuacan** was the first great city of the Americas and one of the largest in the world of its time. It stood in the **Valley of Mexico**, about 50 km north-east of present-day Mexico City, at over 2,300 m above sea level. Between the 1st century BC and the 6th century AD it grew from scattered villages into a planned metropolis of perhaps **100,000 people or more** (estimates range from about 100,000 to 200,000 and are debated), with a monumental avenue, giant pyramids and thousands of stone-and-lime houses.',
+    '**Teotihuacan** was one of the first great cities of the Americas and one of the largest in the world of its time. It stood in the **Valley of Mexico**, about 50 km north-east of present-day Mexico City, at over 2,300 m above sea level. Between the 1st century BC and the 6th century AD it grew from scattered villages into a planned metropolis of perhaps **100,000 people or more** (estimates range from about 100,000 to 200,000 and are debated), with a monumental avenue, giant pyramids and thousands of stone-and-lime houses.',
     'We do not know what the city called itself, what language its people spoke, or the name of a single one of its rulers. “Teotihuacan” is an **Aztec** name, given by people who lived a thousand years later and found the ruins already silent. Even so, the city’s influence reached **Monte Albán** (Oaxaca), the **Maya** cities (Tikal, Copán, Kaminaljuyu) and the Gulf coast. Around **AD 550** the ceremonial centre was partly burned and the city went into decline; by about 650–750 it was a shadow of what it had been.'
   ] },
   { img: 'teo-mapa-mesoamerica', leg: 'Schematic map of Mesoamerica showing Teotihuacan and the regions it was in contact with (c. 100 BC–AD 600).' },
@@ -26,7 +26,7 @@ const visao = [
   'Here is the hardest and most honest point: **we do not know**. Teotihuacan was a **multi-ethnic** city, with neighbourhoods of people from Oaxaca, the Gulf coast and other regions. But the language of the dominant group is unknown. Proposals include **Nahua** (the language of the Aztecs; a hypothesis that gives the name “Teotihuacan” a natural meaning, but which would mean the Nahuas were already there a thousand years earlier), **Otomi**, **Totonac**, **Mixe-Zoquean** and others, and none is proved. The Teotihuacanos themselves left no readable texts: they had signs and symbols, but nobody has shown that they formed a complete writing system. **Maya** inscriptions mention “people of” or “lords of” a place that some epigraphers read as **Puh**, “place of reeds” (a name similar to the Nahua “Tollan”), but the reading is disputed.',
   { h: 'Why they matter' },
   { lista: [
-    '**The first metropolis of the Americas:** a planned city with streets, drainage, serial housing and an enormous ceremonial avenue, on a continent without horses, without transport wheels and without metal.',
+    '**One of the first metropolises of the Americas:** a planned city with streets, drainage, serial housing and an enormous ceremonial avenue, on a continent without horses, without transport wheels and without metal.',
     '**A society with no visible king:** there are no royal portraits, no confirmed royal tombs, and no texts naming rulers. Who ruled, and how, is one of the great open questions.',
     '**Mural art:** the murals of Teotihuacan, in reds, greens and blues, with gods, priests and animals, are among the most beautiful paintings of ancient America.',
     '**Trade and influence:** the city controlled obsidian and exported ideas, style and perhaps power as far as Guatemala.',
@@ -53,7 +53,7 @@ const linha = [
     { d: 'c. 200 – 350', t: 'The metropolis', x: 'The population grows and the city spreads. The great stone **apartment compounds**, with courtyards and paintings, are built. Foreign neighbourhoods appear: the **Oaxaca barrio (Tlailotlacan)**, linked to the Zapotecs, and the so-called **Merchants’ Barrio**, with links to the Gulf coast.' },
     { d: 'c. 250 – 300 (debated)', t: 'Xitle and Cuicuilco', x: 'The eruption of **Xitle** covers the fields and ruins of Cuicuilco, in the south of the valley, with lava. Teotihuacan is left without a rival in the region, where it was already probably the largest city.' },
     { d: 'c. 300 – 400', t: 'The outside neighbourhoods', x: 'The **Oaxaca barrio** consolidates, with chamber tombs of Zapotec type and Oaxacan pottery; bone analyses show that many of those buried there were born elsewhere. At Monte Albán, the Zapotec capital, paintings and pottery in turn show contacts with Teotihuacan, in a two-way traffic.' },
-    { d: 'AD 378', t: 'Arrival at Tikal', x: 'According to Maya inscriptions (above all the **stelae of Tikal**, studied by David Stuart, Simon Martin and others), a figure called **Siyaj K’ak’** (“Fire is Born”) reaches **El Perú-Waka** on 8 January and **Tikal** on 31 January, the same day the local king, **Chak Tok Ich’aak I**, dies. Siyaj K’ak’ came “from the west”, and the images associated with him (weapons, feathered headdresses, Tlaloc faces) are Teotihuacan. He is said to have been a general in the service of a lord of Teotihuacan called **Spearthrower Owl**. What this means, **military conquest, diplomatic intervention or political alliance**, is much debated.' },
+    { d: 'AD 378', t: 'Arrival at Tikal', x: 'According to Maya inscriptions (above all the **stelae of Tikal**, studied by David Stuart, Simon Martin and others), a figure called **Siyaj K’ak’** (“Fire is Born”) reaches **El Perú-Waka** on 8 January and **Tikal** in mid-January (readings point to 14–16 January), the same day the local king, **Chak Tok Ich’aak I**, dies. Siyaj K’ak’ came “from the west”, and the images associated with him (weapons, feathered headdresses, Tlaloc faces) are Teotihuacan. He is said to have been a general in the service of a lord of Teotihuacan called **Spearthrower Owl**. What this means, **military conquest, diplomatic intervention or political alliance**, is much debated.' },
     { d: '379', t: 'A new king in Tikal', x: '**Yax Nuun Ayiin I** (“First Crocodile”) takes the throne of Tikal, identified as the son of Spearthrower Owl. Later he was shown at Tikal in Teotihuacan dress. The pattern repeats at **Uaxactun** and other centres.' },
   ] },
   { img: 'teo-chegada-tikal', leg: 'Conjectural arrival of a Teotihuacan envoy at Tikal, AD 378. AI-generated illustration.' },
@@ -94,7 +94,7 @@ const mapa = [
     ['Quetzalpapalotl Palace', 'Palace next to the Pyramid of the Moon', 'c. 450 – 500', 'Carved pillars with quetzal and butterfly'],
     ['Tepantitla, Tetitla, Atetelco, Zacuala', 'Elite apartment compounds with murals', 'c. 350 – 550', 'The best murals'],
     ['Oaxaca Barrio (Tlailotlacan)', 'Neighbourhood of people from Oaxaca, to the west', 'c. 300 – 550', 'Zapotec-type tombs; local Oaxacan pottery'],
-    ['Merchants’ Barrio', 'Neighbourhood to the north-east with Gulf links', 'c. 300 – 550', 'Pottery from several regions; circular houses'],
+    ['Merchants’ Barrio', 'Neighbourhood on the periphery with Gulf links', 'c. 300 – 550', 'Pottery from several regions; circular houses'],
     ['La Ventilla', 'Neighbourhood with workshops and apartment compounds', 'c. 200 – 550', 'Graphic signs found on walls']
   ] } },
   { img: 'teo-esquema-urbano', leg: 'Simplified diagram of the layout of Teotihuacan, with the Avenue of the Dead and the quadrants. Drawn diagram. (Illustrative AI-generated image.)' },
@@ -116,7 +116,7 @@ const mapa = [
   { h: 'Teotihuacan and the rest of Mesoamerica' },
   'The city kept contacts with very distant regions. The main ones are these:',
   { lista: [
-    '**Oaxaca and Monte Albán:** the Zapotecs of **Monte Albán**, a thousand kilometres away, were a civilisation apart, and relations seem to have been **between equals**: exchange of gifts, envoys, and even a neighbourhood of people from Oaxaca in Teotihuacan. At Monte Albán, paintings and pottery from Teotihuacan are also found, but there is no proof of conquest.',
+    '**Oaxaca and Monte Albán:** the Zapotecs of **Monte Albán**, about 400 km away, were a civilisation apart, and relations seem to have been **between equals**: exchange of gifts, envoys, and even a neighbourhood of people from Oaxaca in Teotihuacan. At Monte Albán, paintings and pottery from Teotihuacan are also found, but there is no proof of conquest.',
     '**The Maya:** the most famous relationship is that with **Tikal** (AD 378) and neighbouring centres (Uaxactun, Copán). The argument is between **conquest**, **an alliance of elites** and **prestige imitation**; most likely there was a bit of each.',
     '**Kaminaljuyu and Matacapan:** at Kaminaljuyu (today in Guatemala City) there are buildings and tombs in Teotihuacan style; Matacapan (Veracruz) has a complex that may have been a colony or trading post.',
     '**The Gulf and the West:** pottery, shells, cotton, cacao and feathers came from afar and were exchanged for obsidian and other goods.'
@@ -245,7 +245,7 @@ const legado = [
     '**Mural art:** a painting tradition that later influenced the art of Cacaxtla, of Xochicalco and of the Maya cities.',
     '**Obsidian and pottery:** objects found across Mesoamerica.',
     '**The gods:** the Great Goddess, the Storm God and the Feathered Serpent reappear, under other names, in later civilisations (Toltec, Maya, Aztec).',
-    '**An idea of the city:** the first great planned city of the Americas, a reference of power, of the sacred and of urbanism for the peoples that followed.'
+    '**An idea of the city:** one of the first great planned cities of the Americas, a reference of power, of the sacred and of urbanism for the peoples that followed.'
   ] },
   { h: 'Art' },
   'Teotihuacan art is **geometric, stylised and very disciplined**: stone masks with neutral faces and eyes of shell or obsidian, ceramic figures, tripod vessels and theatre censers, and above all **mural painting**. The **stone masks** (of andesite, basalt and other stones), perhaps used in funerals or as offerings, are its icon. Teotihuacan art shows little concern for individuality: there are no portraits, but types and symbols.',

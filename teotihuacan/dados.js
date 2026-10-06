@@ -6,7 +6,7 @@ import CRED from './creditos.js';
 
 const visao = [
   { caixa: 'Em resumo', texto: [
-    '**Teotihuacan** foi a primeira grande cidade das Américas e uma das maiores do mundo no seu tempo. Ficava no **vale do México**, a cerca de 50 km a nordeste da atual Cidade do México, a mais de 2300 m de altitude. Entre o século I a.C. e o século VI d.C. passou de aldeias dispersas a uma metrópole planeada, de talvez **100 000 habitantes ou mais** (as estimativas vão de cerca de 100 000 a 200 000 e são debatidas), com uma avenida monumental, pirâmides gigantes e milhares de casas de pedra e cal.',
+    '**Teotihuacan** foi uma das primeiras grandes cidades das Américas e uma das maiores do mundo no seu tempo. Ficava no **vale do México**, a cerca de 50 km a nordeste da atual Cidade do México, a mais de 2300 m de altitude. Entre o século I a.C. e o século VI d.C. passou de aldeias dispersas a uma metrópole planeada, de talvez **100 000 habitantes ou mais** (as estimativas vão de cerca de 100 000 a 200 000 e são debatidas), com uma avenida monumental, pirâmides gigantes e milhares de casas de pedra e cal.',
     'Não sabemos como a cidade se chamava a si própria, que língua falava a sua população, nem o nome de um único dos seus governantes. «Teotihuacan» é um nome **asteca**, dado por gente que viveu mil anos depois e que encontrou as ruínas já silenciosas. Mesmo assim, a influência da cidade chegou a **Monte Albán** (Oaxaca), às cidades **maias** (Tikal, Copán, Kaminaljuyu) e à costa do Golfo. Por volta de **550 d.C.** o centro cerimonial foi em parte queimado e a cidade entrou em declínio; por volta de 650–750 já era uma sombra do que fora.'
   ] },
   { img: 'teo-mapa-mesoamerica', leg: 'Mapa esquemático da Mesoamérica com Teotihuacan e as regiões com que manteve contacto (c. 100 a.C.–600 d.C.).' },
@@ -29,7 +29,7 @@ const visao = [
   'Aqui está o ponto mais difícil e mais honesto: **não sabemos**. Teotihuacan era uma cidade **multiétnica**, com bairros de gente vinda de Oaxaca, do Golfo e de outras regiões. Mas a língua do grupo dominante é desconhecida. Foram propostos o **nahua** (a língua dos astecas; uma hipótese que dá ao nome «Teotihuacan» um sentido natural, mas que implicaria que os nahuas já ali estavam há mil anos), o **otomi**, o **totonaco**, o **mixe-zoque** e outras, e nenhuma está provada. Os próprios teotihuacanos não deixaram textos legíveis: tinham sinais e símbolos, mas ninguém demonstrou que formassem uma escrita completa. As inscrições **maias** referem uma «gente de» ou «senhores de» um lugar que alguns epigrafistas leem como **Puh**, «lugar das canas» (um nome parecido com o «Tollan» nahua), mas a leitura é discutida.',
   { h: 'Porque importam' },
   { lista: [
-    '**A primeira metrópole das Américas:** uma cidade planeada, com ruas, drenagem, conjuntos de habitação em série e uma enorme avenida cerimonial, num continente sem cavalos, sem roda de transporte e sem metal.',
+    '**Uma das primeiras metrópoles das Américas:** uma cidade planeada, com ruas, drenagem, conjuntos de habitação em série e uma enorme avenida cerimonial, num continente sem cavalos, sem roda de transporte e sem metal.',
     '**Uma sociedade sem rei visível:** não há retratos de reis, nem túmulos reais confirmados, nem textos que nomeiem governantes. Quem mandava e como é uma das grandes questões abertas.',
     '**Arte mural:** os murais de Teotihuacan, vermelhos, verdes e azuis, com deuses, sacerdotes e animais, são das pinturas mais belas da América antiga.',
     '**Comércio e influência:** a cidade controlou a obsidiana e exportou ideias, estilo e talvez poder até à Guatemala.',
@@ -56,7 +56,7 @@ const linha = [
     { d: 'c. 200 – 350', t: 'A cidade-metrópole', x: 'A população cresce e a cidade espalha-se. Constroem-se os grandes **conjuntos habitacionais** de pedra, com pátios e pinturas. Aparecem bairros de estrangeiros: o **bairro de Oaxaca (Tlailotlacan)**, ligado aos zapotecas, e o chamado **Barrio dos Comerciantes**, com ligações à costa do Golfo.' },
     { d: 'c. 250 – 300 (debatido)', t: 'O Xitle e Cuicuilco', x: 'A erupção do **Xitle** cobre de lava os campos e as ruínas de Cuicuilco, no sul do vale. Teotihuacan fica sem rival na região, onde já seria a maior cidade.' },
     { d: 'c. 300 – 400', t: 'Os bairros de fora', x: 'O **bairro de Oaxaca** consolida-se, com túmulos de câmara de tipo zapoteca e cerâmica de Oaxaca; análises a ossos revelam que muitos dos que ali foram enterrados nasceram noutro sítio. Em Monte Albán, a capital zapoteca, aparecem por seu lado pinturas e cerâmica que mostram contactos com Teotihuacan, num trânsito de dois sentidos.' },
-    { d: '378 d.C.', t: 'Chegada a Tikal', x: 'Segundo inscrições maias (sobretudo as **estelas de Tikal**, estudadas por David Stuart, Simon Martin e outros), um personagem chamado **Siyaj K’ak’** («Fogo Nasce») chega a **El Perú-Waka** a 8 de janeiro e a **Tikal** a 31 de janeiro, no mesmo dia em que morre o rei local, **Chak Tok Ich’aak I**. Siyaj K’ak’ vinha «do oeste», e as imagens que se lhe associam (armas, penachos, rostos de Tlaloc) são teotihuacanas. Teria sido um general a serviço de um senhor de Teotihuacan, chamado **Lançador-de-Lanças Coruja**. O que isto significa, **conquista militar, intervenção diplomática ou aliança política**, é muito discutido.' },
+    { d: '378 d.C.', t: 'Chegada a Tikal', x: 'Segundo inscrições maias (sobretudo as **estelas de Tikal**, estudadas por David Stuart, Simon Martin e outros), um personagem chamado **Siyaj K’ak’** («Fogo Nasce») chega a **El Perú-Waka** a 8 de janeiro e a **Tikal** em meados de janeiro (as leituras apontam para 14–16 de janeiro), no mesmo dia em que morre o rei local, **Chak Tok Ich’aak I**. Siyaj K’ak’ vinha «do oeste», e as imagens que se lhe associam (armas, penachos, rostos de Tlaloc) são teotihuacanas. Teria sido um general a serviço de um senhor de Teotihuacan, chamado **Lançador-de-Lanças Coruja**. O que isto significa, **conquista militar, intervenção diplomática ou aliança política**, é muito discutido.' },
     { d: '379', t: 'Um novo rei em Tikal', x: 'Sobe ao trono de Tikal **Yax Nuun Ayiin I** («Primeiro Crocodilo»), identificado como filho do Lançador-de-Lanças Coruja. Mais tarde era representado em Tikal com vestes teotihuacanas. O modelo repete-se em **Uaxactun** e noutros centros.' },
   ] },
   { img: 'teo-chegada-tikal', leg: 'Chegada conjetural de um enviado teotihuacano a Tikal, 378 d.C. Ilustração gerada por IA.' },
@@ -97,7 +97,7 @@ const mapa = [
     ['Palácio de Quetzalpapalotl', 'Palácio ao lado da Pirâmide da Lua', 'c. 450 – 500', 'Pilares esculpidos com quetzal e borboleta'],
     ['Tepantitla, Tetitla, Atetelco, Zacuala', 'Conjuntos de habitação de elite com murais', 'c. 350 – 550', 'Os melhores murais'],
     ['Bairro de Oaxaca (Tlailotlacan)', 'Bairro de gente de Oaxaca, a oeste', 'c. 300 – 550', 'Túmulos de tipo zapoteca; cerâmica local de Oaxaca'],
-    ['Barrio dos Comerciantes', 'Bairro a nordeste com ligações ao Golfo', 'c. 300 – 550', 'Cerâmica de várias regiões; casas circulares'],
+    ['Barrio dos Comerciantes', 'Bairro na periferia com ligações ao Golfo', 'c. 300 – 550', 'Cerâmica de várias regiões; casas circulares'],
     ['La Ventilla', 'Bairro com oficinas e conjuntos de habitação', 'c. 200 – 550', 'Sinais gráficos descobertos nos muros']
   ] } },
   { img: 'teo-esquema-urbano', leg: 'Esquema simplificado do traçado de Teotihuacan, com a Avenida dos Mortos e os quadrantes. Esquema desenhado. (Imagem ilustrativa gerada por IA.)' },
@@ -119,7 +119,7 @@ const mapa = [
   { h: 'Teotihuacan e o resto da Mesoamérica' },
   'A cidade manteve contactos com regiões muito distantes. Os principais são estes:',
   { lista: [
-    '**Oaxaca e Monte Albán:** os zapotecas de **Monte Albán**, a mil quilómetros de distância, são uma civilização à parte, e as relações parecem ter sido **entre iguais**: trocas de presentes, enviados, e até um bairro de gente de Oaxaca em Teotihuacan. Em Monte Albán encontram-se também pinturas e cerâmica de Teotihuacan, mas não há provas de conquista.',
+    '**Oaxaca e Monte Albán:** os zapotecas de **Monte Albán**, a cerca de 400 km de distância, são uma civilização à parte, e as relações parecem ter sido **entre iguais**: trocas de presentes, enviados, e até um bairro de gente de Oaxaca em Teotihuacan. Em Monte Albán encontram-se também pinturas e cerâmica de Teotihuacan, mas não há provas de conquista.',
     '**Os maias:** a relação mais famosa é a de **Tikal** (378 d.C.) e a dos centros vizinhos (Uaxactun, Copán). A discussão é entre **conquista**, **uma aliança de elites** e **imitação de prestígio**; o mais provável é que tenha havido um pouco de cada uma.',
     '**Kaminaljuyu e Matacapan:** em Kaminaljuyu (hoje na Cidade da Guatemala) há edifícios e túmulos ao estilo teotihuacano; Matacapan (Veracruz) tem um conjunto que pode ter sido uma colónia ou entreposto.',
     '**O Golfo e o Ocidente:** cerâmica, conchas, algodão, cacau e penas vinham de longe e eram trocados por obsidiana e outros artigos.'
@@ -248,7 +248,7 @@ const legado = [
     '**A arte mural:** uma tradição de pintura que influenciou, depois, a arte de Cacaxtla, de Xochicalco e das cidades maias.',
     '**A obsidiana e a cerâmica:** objetos encontrados em toda a Mesoamérica.',
     '**Os deuses:** a Grande Deusa, o Deus da Tempestade e a Serpente Emplumada reaparecem, com outros nomes, em civilizações posteriores (Tolteca, Maia, Asteca).',
-    '**Uma ideia de cidade:** a primeira grande cidade planeada das Américas, referência de poder, de sagrado e de urbanismo para os povos que a sucederam.'
+    '**Uma ideia de cidade:** uma das primeiras grandes cidades planeadas das Américas, referência de poder, de sagrado e de urbanismo para os povos que a sucederam.'
   ] },
   { h: 'Arte' },
   'A arte de Teotihuacan é **geométrica, estilizada e muito disciplinada**: máscaras de pedra de rosto neutro e olhos de concha ou de obsidiana, figuras de cerâmica, vasos de três pés e braseiros de teatro, e, sobretudo, a **pintura mural**. As **máscaras de pedra** (de andesito, basalto e outras pedras) usadas talvez em funerais ou como oferendas são o seu ícone. A arte de Teotihuacan tem pouca preocupação com a individualidade: não há retratos, mas tipos e símbolos.',
