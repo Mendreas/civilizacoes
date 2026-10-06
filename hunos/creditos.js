@@ -122,6 +122,11 @@ export default {
       "Belt plaque with design of wrestling men, Ordos region and western part of North China, 2nd century BC, bronze - Ethnological Museum, Berlin (cropped)",
       "Daderot",
       "CC0"
+     ],
+     [
+      "Hortobágy National Park kz08",
+      "Krzysztof Ziarnek, Kenraiz",
+      "CC BY-SA 4.0"
      ]
     ]
    }
@@ -249,6 +254,11 @@ export default {
       "Belt plaque with design of wrestling men, Ordos region and western part of North China, 2nd century BC, bronze - Ethnological Museum, Berlin (cropped)",
       "Daderot",
       "CC0"
+     ],
+     [
+      "Hortobágy National Park kz08",
+      "Krzysztof Ziarnek, Kenraiz",
+      "CC BY-SA 4.0"
      ]
     ]
    }

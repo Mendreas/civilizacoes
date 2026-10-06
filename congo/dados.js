@@ -64,6 +64,7 @@ const linha = [
   ] },
   { img: 'con-escola-real', leg: 'Cena conjetural da escola da corte de Mbanza Kongo, c. 1516. Ilustração gerada por IA.' },
   { img: 'con-batismo-1491', leg: 'Cena conjetural do batismo do rei Nzinga a Nkuwu, 3 de maio de 1491. Ilustração gerada por IA.' },
+  { img: 'con-embaixador-eckhout', leg: 'Homem africano pintado por Albert Eckhout (c. 1641), no Brasil holandês; a identificação com o Congo ou com Angola é discutida.' },
   { linha: [
     { d: '1526', t: 'A carta de Afonso I', x: 'Afonso I escreve a **D. João III** a denunciar que comerciantes portugueses (sobretudo de São Tomé) raptam pessoas livres e até nobres e familiares, e que o reino se «despovoa». Pede que se enviem apenas padres, professores e farmacêuticos, e que se controle o comércio. É um dos documentos mais importantes da história do tráfico de escravos. Os portugueses respondem com promessas e continuam a negociar com as províncias mais afastadas.' },
     { d: '1545 – 1561', t: 'Diogo I e os jesuítas', x: 'Depois da morte de Afonso I, e de uma curta sucessão (Pedro I), reina **Diogo I**. Em 1548 chega a primeira missão jesuíta. Diogo I tenta equilibrar a influência dos portugueses e dos padres, e as tensões com os comerciantes de São Tomé continuam.' },
@@ -182,6 +183,7 @@ const sociedade = [
   { img: 'con-marfim-loango', leg: 'Presa de marfim esculpida de Loango, século XIX, com cenas do quotidiano.' },
   { img: 'con-cavazzi-gravura', leg: 'Ilustração do manuscrito de Cavazzi (c. 1668): o «peixe-mulher» (pesce donna) dos rios de Angola e do Congo.' },
   { img: 'con-mangaaka', leg: 'Nkisi nkondi Mangaaka, grande figura de poder do povo Yombe, Congo (Metropolitan Museum of Art).' },
+  { img: 'con-pfemba', leg: 'Figura maternal (pfemba) do povo Kongo, República Democrática do Congo (Honolulu Museum of Art).' },
 ];
 
 const personalidades = [

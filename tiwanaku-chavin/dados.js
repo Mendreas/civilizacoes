@@ -182,6 +182,7 @@ const sociedade = [
   'A base eram a **batata** (centenas de variedades) e a **quinoa**, no altiplano, e o **milho** nos vales. Das batatas fazia-se o **chuño**, desidratado pela alternância de geada noturna e sol de dia: dura anos e foi talvez a invenção alimentar mais importante do altiplano. Comia-se também feijão, **kañiwa**, **tarwi** (tremoço), pimentos, e carne de **lama**, de alpaca e de **cobaia**, além de peixe e aves do lago. A bebida social era a **chicha**, cerveja de milho, bebida em grandes celebrações; os **keros**, copos de cerâmica ou de madeira, são uma das marcas da arte de Tiwanaku.',
   { img: 'tch-festa-chicha', leg: 'Celebração com chicha numa praça de Tiwanaku, c. 800 d.C. Ilustração gerada por IA.' },
   { img: 'tch-quero-tiwanaku', leg: 'Quero (copo cerimonial) da cultura Tiwanaku, para beber chicha.' },
+  { img: 'tch-incensario', leg: 'Incensário cerâmico em forma de felino, Tiwanaku (Metropolitan Museum of Art).' },
   { h: '8. Vestuário' },
   'A **lã de lama e de alpaca** era o material principal, e a tecelagem é uma das artes mais refinadas dos Andes. Os homens usavam **túnicas** (*unku*) sem mangas e **faixas** na cabeça, as mulheres vestidos e **mantas** presas com alfinetes de metal (*tupus*). Em Tiwanaku, as elites usavam **chapéus de quatro pontas** de tecido, túnicas de padrões em tapeçaria, ornamentos de ouro e de cobre, e adornos de nariz e de orelhas. Têxteis de Chavín e de Tiwanaku sobreviveram sobretudo em túmulos de clima seco (como os de Paracas e do Atacama).',
   { h: '9. Música, dança e jogos' },

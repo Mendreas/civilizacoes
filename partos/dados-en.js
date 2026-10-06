@@ -66,6 +66,7 @@ const linha = [
     { d: '53 BC', t: 'Orodes’ banquet', x: 'Plutarch tells that when Crassus’s head reached the Armenian court, where Orodes II and King **Artavasdes** were watching a Greek tragedy by Euripides, the *Bacchae*, the lead actor used the head as a prop in the scene where Agave brings in the head of Pentheus. The story is famous and plausible (the Parthian court enjoyed Greek theatre), but it is an anecdote told by a Roman author and should be read with caution.' },
   ] },
   { img: 'par-bacantes', leg: 'The banquet of Orodes II and Artavasdes, with Crassus’s head used in a performance of the Bacchae, according to Plutarch; imagined scene. AI-generated illustration.' },
+  { img: 'par-marco-antonio', leg: 'Bust of Mark Antony (National Archaeological Museum, Madrid), who invaded Parthia in 36 BC.' },
   { linha: [
     { d: '51 – 38 BC', t: 'The Parthians invade Syria', x: 'Prince **Pacorus I**, son of Orodes, attacks Roman Syria in 51 BC and returns in force in 40 BC, together with the rebel Roman general **Labienus** (who had supported Brutus and Cassius): they occupy Syria and part of Asia Minor. In **38 BC** the Roman general **Ventidius** defeats and kills Pacorus at **Gindarus**, and the Parthians withdraw. Orodes, shaken, abdicates, and ends up killed, according to Roman sources, at the hands of his son **Phraates IV**.' },
   ] },

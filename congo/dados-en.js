@@ -60,6 +60,7 @@ const linha = [
   ] },
   { img: 'con-escola-real', leg: 'Conjectural scene of the court school at Mbanza Kongo, c. 1516. AI-generated illustration.' },
   { img: 'con-batismo-1491', leg: 'Conjectural scene of the baptism of King Nzinga a Nkuwu, 3 May 1491. AI-generated illustration.' },
+  { img: 'con-embaixador-eckhout', leg: 'African man painted by Albert Eckhout (c. 1641) in Dutch Brazil; identification with Kongo or Angola is debated.' },
   { linha: [
     { d: '1526', t: 'Afonso I’s letter', x: 'Afonso I writes to **King João III** denouncing that Portuguese traders (mostly from São Tomé) kidnap free people, even nobles and relatives, and that the kingdom is being «depopulated». He asks that only priests, teachers and apothecaries be sent, and that trade be controlled. It is one of the most important documents in the history of the slave trade. The Portuguese reply with promises and carry on trading with the more distant provinces.' },
     { d: '1545 – 1561', t: 'Diogo I and the Jesuits', x: 'After Afonso I’s death, and a short reign (Pedro I), **Diogo I** reigns. In 1548 the first Jesuit mission arrives. Diogo I tries to balance the influence of the Portuguese and the priests, and tensions with São Tomé traders continue.' },
@@ -178,6 +179,7 @@ const sociedade = [
   { img: 'con-marfim-loango', leg: 'Carved ivory tusk from Loango, 19th century, with scenes of daily life.' },
   { img: 'con-cavazzi-gravura', leg: 'Illustration from Cavazzi’s manuscript (c. 1668): the «fish-woman» (pesce donna) of the rivers of Angola and Congo.' },
   { img: 'con-mangaaka', leg: 'Nkisi nkondi Mangaaka, a large power figure of the Yombe people, Congo (Metropolitan Museum of Art).' },
+  { img: 'con-pfemba', leg: 'Maternity figure (pfemba) of the Kongo people, Democratic Republic of the Congo (Honolulu Museum of Art).' },
 ];
 
 const personalidades = [

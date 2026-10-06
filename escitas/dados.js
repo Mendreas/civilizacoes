@@ -224,7 +224,8 @@ const personalidades = [
   'Arqueólogo alemão que dirigiu, com Konstantin Chugunov, a escavação de **Arzhan 2** (2000–2004), um dos poucos grandes túmulos citas encontrados intactos, com 5700 objetos de ouro. É autor de trabalhos de síntese sobre o mundo dos citas e das estepes.',
   { h: 'Maues (c. 85 a.C.)' },
   'Rei saca que fundou o primeiro estado **indo-cita** no noroeste da Índia, na região de Taxila. As suas moedas, bilingues, com divindades gregas e indianas, são a principal fonte para este reino. Mostra que os sacas não ficaram só na estepe.',
-  { img: 'esc-moeda-maues', leg: 'Moeda do rei indo-cita Maues (c. 85 a.C.), com legenda em grego e em kharosthi.' }
+  { img: 'esc-moeda-maues', leg: 'Moeda do rei indo-cita Maues (c. 85 a.C.), com legenda em grego e em kharosthi.' },
+  { img: 'esc-kurgan', leg: 'Kurgans no sul da Ucrânia: montes funerários de terra, como os dos citas.' },
 ];
 
 const legado = [

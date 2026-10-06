@@ -137,6 +137,11 @@ export default {
       "Yumbulagang (23013896592)",
       "Laika ac from UK",
       "CC BY-SA 2.0"
+     ],
+     [
+      "Sakya Pandita Kunga Gyaltsen and Drogon Chogyal Phagpa",
+      "Unknown authorUnknown author",
+      "Public domain"
      ]
     ]
    }
@@ -279,6 +284,11 @@ export default {
       "Yumbulagang (23013896592)",
       "Laika ac from UK",
       "CC BY-SA 2.0"
+     ],
+     [
+      "Sakya Pandita Kunga Gyaltsen and Drogon Chogyal Phagpa",
+      "Unknown authorUnknown author",
+      "Public domain"
      ]
     ]
    }

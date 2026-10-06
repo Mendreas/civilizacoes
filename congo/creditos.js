@@ -97,6 +97,16 @@ export default {
       "Brookes slave ship, British Library",
       "Printed by James Phillips, George Yard, Lombard Street, London",
       "Public domain"
+     ],
+     [
+      "Albert Eckhout painting",
+      "Albert Eckhout",
+      "Public domain"
+     ],
+     [
+      "Maternity figure, Kongo people, Honolulu Museum of Art, 4153.1.JPG",
+      "Hiart",
+      "CC0"
      ]
     ]
    }
@@ -199,6 +209,16 @@ export default {
       "Brookes slave ship, British Library",
       "Printed by James Phillips, George Yard, Lombard Street, London",
       "Public domain"
+     ],
+     [
+      "Albert Eckhout painting",
+      "Albert Eckhout",
+      "Public domain"
+     ],
+     [
+      "Maternity figure, Kongo people, Honolulu Museum of Art, 4153.1.JPG",
+      "Hiart",
+      "CC0"
      ]
     ]
    }

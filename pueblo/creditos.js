@@ -127,6 +127,26 @@ export default {
       "Milwaukee Public Museum April 2023 028 (Land of Sun- The Southwest--Village Life, Zuni Pueblo, New Mexico)",
       "Michael Barera",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Chimney Rock National Monument, a 4,726-acre U.S. national monument in San Juan National Forest in southwestern Colorado LCCN2015632922.tif",
+      "Carol M. Highsmith",
+      "Public domain"
+     ],
+     [
+      "Spruce Tree House, Mesa Verde's third largest and best preserved cliff dwelling. (ff6756dd-155d-451f-676c-33b3f07da237)",
+      "NPS",
+      "Public domain"
+     ],
+     [
+      "Sun Temple, Mesa Verde National Park",
+      "Lacee Curtis",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Chacoan turquoise pendant",
+      "US NPS",
+      "Public domain"
      ]
     ]
    }
@@ -259,6 +279,26 @@ export default {
       "Milwaukee Public Museum April 2023 028 (Land of Sun- The Southwest--Village Life, Zuni Pueblo, New Mexico)",
       "Michael Barera",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Chimney Rock National Monument, a 4,726-acre U.S. national monument in San Juan National Forest in southwestern Colorado LCCN2015632922.tif",
+      "Carol M. Highsmith",
+      "Public domain"
+     ],
+     [
+      "Spruce Tree House, Mesa Verde's third largest and best preserved cliff dwelling. (ff6756dd-155d-451f-676c-33b3f07da237)",
+      "NPS",
+      "Public domain"
+     ],
+     [
+      "Sun Temple, Mesa Verde National Park",
+      "Lacee Curtis",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Chacoan turquoise pendant",
+      "US NPS",
+      "Public domain"
      ]
     ]
    }

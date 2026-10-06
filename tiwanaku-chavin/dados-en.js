@@ -179,6 +179,7 @@ const sociedade = [
   'The staples were the **potato** (hundreds of varieties) and **quinoa** on the altiplano, and **maize** in the valleys. Potatoes were made into **chuño**, dehydrated by alternating night frost and daytime sun: it lasts for years and was perhaps the most important food invention of the altiplano. People also ate beans, **kañiwa**, **tarwi** (lupin), chillies, and the meat of **llama**, alpaca and **guinea pig**, as well as fish and birds from the lake. The social drink was **chicha**, maize beer, drunk at great celebrations; **keros**, drinking cups of pottery or wood, are one of the hallmarks of Tiwanaku art.',
   { img: 'tch-festa-chicha', leg: 'Celebration with chicha in a plaza at Tiwanaku, c. AD 800. AI-generated illustration.' },
   { img: 'tch-quero-tiwanaku', leg: 'Quero (ceremonial cup) of the Tiwanaku culture, for drinking chicha.' },
+  { img: 'tch-incensario', leg: 'Ceramic feline-shaped incense burner, Tiwanaku (Metropolitan Museum of Art).' },
   { h: '8. Clothing' },
   '**Llama and alpaca wool** was the main material, and weaving is one of the most refined arts of the Andes. Men wore sleeveless **tunics** (*unku*) and head **bands**, women dresses and **mantles** fastened with metal pins (*tupus*). At Tiwanaku the elites wore four-cornered **hats** of cloth, tunics with tapestry patterns, ornaments of gold and copper, and nose and ear adornments. Textiles of Chavín and Tiwanaku have survived mainly in tombs in dry climates (such as those of Paracas and the Atacama).',
   { h: '9. Music, dance and games' },

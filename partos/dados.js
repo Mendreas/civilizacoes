@@ -70,6 +70,7 @@ const linha = [
     { d: '53 a.C.', t: 'O banquete de Orodes', x: 'Plutarco conta que, quando a cabeça de Crasso chegou à corte arménia, onde Orodes II e o rei **Artavasdes** assistiam a uma tragédia grega de Eurípides, as *Bacantes*, o ator principal usou a cabeça como adereço, na cena em que Agave traz a cabeça de Penteu. A história é famosa e plausível (a corte parta apreciava o teatro grego), mas é uma anedota contada por um autor romano, e deve ser lida com cautela.' },
   ] },
   { img: 'par-bacantes', leg: 'O banquete de Orodes II e Artavasdes, com a cabeça de Crasso usada num espetáculo das Bacantes, segundo Plutarco; cena imaginada. Ilustração gerada por IA.' },
+  { img: 'par-marco-antonio', leg: 'Busto de Marco António (Museu Arqueológico Nacional, Madrid), que invadiu a Pártia em 36 a.C.' },
   { linha: [
     { d: '51 – 38 a.C.', t: 'Os partos invadem a Síria', x: 'O príncipe **Pacoro I**, filho de Orodes, ataca a Síria romana em 51 a.C. e volta em força em 40 a.C., juntamente com o general romano rebelde **Labieno** (que apoiara Bruto e Cássio): ocupam a Síria e parte da Ásia Menor. Em **38 a.C.**, o general romano **Ventídio** vence e mata Pacoro em **Gindaro**, e os partos recuam. Orodes, abalado, abdica, e acaba morto, segundo as fontes romanas, às mãos do filho **Fraates IV**.' },
   ] },

@@ -132,6 +132,11 @@ export default {
       "Pututu de caracola",
       "Ana Orero",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Feline Incense Vessel MET DT2618",
+      "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+      "CC0"
      ]
     ]
    }
@@ -269,6 +274,11 @@ export default {
       "Pututu de caracola",
       "Ana Orero",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Feline Incense Vessel MET DT2618",
+      "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+      "CC0"
      ]
     ]
    }

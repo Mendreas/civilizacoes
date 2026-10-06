@@ -112,6 +112,31 @@ export default {
       "Makutani Palace ruins, Kilwa Kisiwani, built by the Omanis in the 18th century (5) (28791044790)",
       "Richard Mortel from Riyadh, Saudi Arabia",
       "CC BY 2.0"
+     ],
+     [
+      "Coffee and banana plantation in Uganda",
+      "Kateregga1",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "African bloomery furnace types.png",
+      "Foreman Bandama and Abidemi Babatunde Babalola",
+      "CC BY 4.0"
+     ],
+     [
+      "Le Char des Dieux - Fako Mountain - Mount Cameroon National Park - Région du Sud-ouest (banner)",
+      "Eric Joel MAMA NKE",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Congo River, Africa",
+      "European Space Agency",
+      "CC BY-SA 3.0 igo"
+     ],
+     [
+      "KISU - Boats and landing sites on Lake Victoria at Kisumu, Kenya, 2012",
+      "Josep M. Gracia",
+      "CC BY-SA 4.0"
      ]
     ]
    }
@@ -229,6 +254,31 @@ export default {
       "Makutani Palace ruins, Kilwa Kisiwani, built by the Omanis in the 18th century (5) (28791044790)",
       "Richard Mortel from Riyadh, Saudi Arabia",
       "CC BY 2.0"
+     ],
+     [
+      "Coffee and banana plantation in Uganda",
+      "Kateregga1",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "African bloomery furnace types.png",
+      "Foreman Bandama and Abidemi Babatunde Babalola",
+      "CC BY 4.0"
+     ],
+     [
+      "Le Char des Dieux - Fako Mountain - Mount Cameroon National Park - Région du Sud-ouest (banner)",
+      "Eric Joel MAMA NKE",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Congo River, Africa",
+      "European Space Agency",
+      "CC BY-SA 3.0 igo"
+     ],
+     [
+      "KISU - Boats and landing sites on Lake Victoria at Kisumu, Kenya, 2012",
+      "Josep M. Gracia",
+      "CC BY-SA 4.0"
      ]
     ]
    }

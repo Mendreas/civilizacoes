@@ -122,6 +122,11 @@ export default {
       "Coin of Maues showing Buddha",
       "Classical Numismatic Group;[1]",
       "CC BY-SA 3.0"
+     ],
+     [
+      "Kurgans in southern Ukraine.png",
+      "Iwona Dembicz, Ivan I. Moysiyenko, Anastasia Shaposhnikova, Denys Vynokurov, Łukasz Kozub, Barbara Sudnik-Wœjcikowska",
+      "CC BY 4.0"
      ]
     ]
    }
@@ -249,6 +254,11 @@ export default {
       "Coin of Maues showing Buddha",
       "Classical Numismatic Group;[1]",
       "CC BY-SA 3.0"
+     ],
+     [
+      "Kurgans in southern Ukraine.png",
+      "Iwona Dembicz, Ivan I. Moysiyenko, Anastasia Shaposhnikova, Denys Vynokurov, Łukasz Kozub, Barbara Sudnik-Wœjcikowska",
+      "CC BY 4.0"
      ]
     ]
    }

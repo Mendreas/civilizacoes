@@ -122,6 +122,16 @@ export default {
       "Maori catamaran in museum of New Zealand Te Papa Tongarewa, Wellington",
       "Pierre André Leclercq",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Hawaiian Outrigger Canoe Teams Prepare to Race",
+      "An3s079",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Hula dancers, Poipu, Kauai, Hawaii (4829082993)",
+      "Frank Kovalchek from Anchorage, Alaska, USA",
+      "CC BY 2.0"
      ]
     ]
    }
@@ -249,6 +259,16 @@ export default {
       "Maori catamaran in museum of New Zealand Te Papa Tongarewa, Wellington",
       "Pierre André Leclercq",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Hawaiian Outrigger Canoe Teams Prepare to Race",
+      "An3s079",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Hula dancers, Poipu, Kauai, Hawaii (4829082993)",
+      "Frank Kovalchek from Anchorage, Alaska, USA",
+      "CC BY 2.0"
      ]
     ]
    }

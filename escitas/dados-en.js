@@ -221,7 +221,8 @@ const personalidades = [
   'German archaeologist who directed, with Konstantin Chugunov, the excavation of **Arzhan 2** (2000–2004), one of the few great Scythian tombs found intact, with 5,700 gold objects. He is the author of synthesis works on the world of the Scythians and the steppes.',
   { h: 'Maues (c. 85 BC)' },
   'A Saka king who founded the first **Indo-Scythian** state in north-western India, in the Taxila region. His bilingual coins, with Greek and Indian deities, are the main source for this kingdom. He shows that the Saka did not stay only on the steppe.',
-  { img: 'esc-moeda-maues', leg: 'Coin of the Indo-Scythian king Maues (c. 85 BC), with legends in Greek and Kharosthi.' }
+  { img: 'esc-moeda-maues', leg: 'Coin of the Indo-Scythian king Maues (c. 85 BC), with legends in Greek and Kharosthi.' },
+  { img: 'esc-kurgan', leg: 'Kurgans in southern Ukraine: earth burial mounds like those of the Scythians.' },
 ];
 
 const legado = [
