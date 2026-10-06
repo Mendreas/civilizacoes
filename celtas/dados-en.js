@@ -54,6 +54,7 @@ const visao = [
   ] },
   { img: 'cel-stonehenge', leg: 'Stonehenge (England), in its main form around 2500 BC: much older than the Iron Age Celts.' },
   { img: 'cel-mapa-linguas', leg: 'Schematic map of the Hallstatt and La Tène heartlands and Celtic expansion, c. 800–50 BC.' },
+  { img: 'cel-espada-hallstatt', leg: 'Hallstatt C iron swords, 7th–6th century BC, in the Wels Museum (Upper Austria).' },
   { caixa: 'The Celts today', texto: 'Six Celtic languages are still spoken: **Irish**, **Scottish Gaelic** and **Manx** (the “Goidelic” branch), and **Welsh**, **Cornish** and **Breton** (the “Brittonic” branch). Welsh is the most vigorous (about half a million speakers) and the only one that UNESCO does not consider endangered. Manx lost its last native speaker in 1974 and Cornish ceased to be a mother tongue in the 18th or early 19th century, but both have been revitalized. The modern “Celtic nations” are Ireland, Scotland, Wales, Cornwall, the Isle of Man and Brittany; Galicia and Asturias claim a cultural Celtic heritage but no longer speak any Celtic language. In Portugal, the legacy is mainly archaeological and in place names (see the legacy section).' }
 ];
 
@@ -227,6 +228,7 @@ const sociedade = [
     ['Pictish', 'Debated', 'North-east Scotland, 3rd – 9th century AD', 'Extinct; perhaps Brittonic, the point is discussed']
   ] } },
   { img: 'cel-coligny', leg: 'Fragment of the Coligny calendar, in bronze and in Gaulish, 2nd century AD; Gallo-Roman Museum, Lyon.' },
+  { img: 'cel-botorrita', leg: 'Botorrita III bronze (c. 100 BC), with a Celtiberian text; Museum of Zaragoza.' },
   { h: '6. Home and family' },
   'In Britain and Ireland, the typical house was the **roundhouse**, with walls of wattle and daub or of stone, a conical thatched roof and a hearth in the centre. In Gaul and central Europe there were also rectangular timber houses. In the north-west of the Peninsula, the castros had stone houses, round or oval, and many courtyards. Settlements included granaries, storage pits and, in the oppida, craftsmen’s quarters.',
   'The family was extended and dominated by fathers and elder brothers, but **women** had in many societies more rights than in Rome: in medieval Irish laws they could own property, divorce in certain cases and, in Roman accounts, there are warrior queens (**Boudica**, **Cartimandua**). The children of the nobility were often raised by another family (Irish **fosterage**), a way of creating alliances. **Hospitality** was a sacred obligation.',
@@ -255,6 +257,7 @@ const sociedade = [
     '**Others:** minted coinage, soap (according to Pliny, of tallow and beech ash, invented by the Gauls), wooden barrels and the reaping machine. Many of these attributions are made by Roman authors and some are disputed.'
   ] },
   { img: 'cel-escudo-battersea', leg: 'The Battersea Shield (River Thames), bronze with red glass decoration, c. 350–50 BC; British Museum.' },
+  { img: 'cel-guerreiro-galaico', leg: 'Statue of a Gallaecian-Lusitanian warrior from Boticas (Portugal), with a round shield.' },
   { h: '12. War' },
   'War was central to Celtic elites. The Romans describe them as brave but disorderly: Polybius and Livy speak of a furious charge, of great badly tempered swords that bent (partly true, perhaps exaggerated). The infantry used **spear, long sword and shield** oval or rectangular (and, for the richer, helmet and chain mail); the **horsemen**, wealthy, were held to be the best of the time, and were recruited into the Roman army. **War chariots**, used in Italy and Britain, impressed Caesar. There were Celtic **mercenaries** all over the Mediterranean (in Ptolemaic Egypt, in Greece, in Carthage). Trophy heads and the noise of the **carnyx** completed the psychological effect.',
   { h: '13. Death and graves' },

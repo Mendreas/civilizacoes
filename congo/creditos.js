@@ -72,6 +72,31 @@ export default {
       "Raffia cloth, Kuba kingdom, c. 1909, HMA.JPG",
       "Hiart",
       "CC0"
+     ],
+     [
+      "Cartoon depicting Leopold 2 and other emperial powers at Berlin conference 1884",
+      "François Maréchal",
+      "Public domain"
+     ],
+     [
+      "Pesce Donna",
+      "Giovanni Antonio Cavazzi",
+      "Public domain"
+     ],
+     [
+      "Padrão de Diogo Cão no Cabo Negro",
+      "Victorcouto",
+      "Public domain"
+     ],
+     [
+      "WLA metmuseum Kongo Power Figure Nkisi NKondi Mangaaka",
+      "Wikipedia Loves Art participant \"niborean\"",
+      "CC BY-SA 2.5"
+     ],
+     [
+      "Brookes slave ship, British Library",
+      "Printed by James Phillips, George Yard, Lombard Street, London",
+      "Public domain"
      ]
     ]
    }
@@ -149,6 +174,31 @@ export default {
       "Raffia cloth, Kuba kingdom, c. 1909, HMA.JPG",
       "Hiart",
       "CC0"
+     ],
+     [
+      "Cartoon depicting Leopold 2 and other emperial powers at Berlin conference 1884",
+      "François Maréchal",
+      "Public domain"
+     ],
+     [
+      "Pesce Donna",
+      "Giovanni Antonio Cavazzi",
+      "Public domain"
+     ],
+     [
+      "Padrão de Diogo Cão no Cabo Negro",
+      "Victorcouto",
+      "Public domain"
+     ],
+     [
+      "WLA metmuseum Kongo Power Figure Nkisi NKondi Mangaaka",
+      "Wikipedia Loves Art participant \"niborean\"",
+      "CC BY-SA 2.5"
+     ],
+     [
+      "Brookes slave ship, British Library",
+      "Printed by James Phillips, George Yard, Lombard Street, London",
+      "Public domain"
      ]
     ]
    }

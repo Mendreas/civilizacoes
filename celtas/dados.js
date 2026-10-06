@@ -57,6 +57,7 @@ const visao = [
   ] },
   { img: 'cel-stonehenge', leg: 'Stonehenge (Inglaterra), na sua forma principal por volta de 2500 a.C.: muito anterior aos celtas da Idade do Ferro.' },
   { img: 'cel-mapa-linguas', leg: 'Mapa esquemático dos núcleos Hallstatt e La Tène e da expansão céltica, c. 800–50 a.C.' },
+  { img: 'cel-espada-hallstatt', leg: 'Espadas de ferro de tipo Hallstatt C, séc. VII–VI a.C., no Museu de Wels (Alta Áustria).' },
   { caixa: 'Os celtas hoje', texto: 'Das línguas celtas ainda se falam seis: o **irlandês**, o **gaélico escocês** e o **manx** (o ramo «goidélico»), e o **galês**, o **córnico** e o **bretão** (o ramo «britónico»). O galês é o mais vivo (cerca de meio milhão de falantes) e o único que a UNESCO não considera em perigo. O manx perdeu o último falante nativo em 1974 e o córnico deixou de ser língua materna no século XVIII ou inícios do XIX, mas ambos foram revitalizados. As «nações celtas» modernas são a Irlanda, a Escócia, o País de Gales, a Cornualha, a Ilha de Man e a Bretanha; a Galiza e as Astúrias reivindicam uma herança celta cultural, mas já não falam nenhuma língua celta. Em Portugal, o legado é sobretudo arqueológico e toponímico (ver o legado).' }
 ];
 
@@ -230,6 +231,7 @@ const sociedade = [
     ['Picto', 'Debatido', 'Nordeste da Escócia, séc. III – IX d.C.', 'Extinta; talvez britónica, o ponto é discutido']
   ] } },
   { img: 'cel-coligny', leg: 'Fragmento do calendário de Coligny, em bronze e em gaulês, séc. II d.C.; Museu Galo-Romano de Lyon.' },
+  { img: 'cel-botorrita', leg: 'Bronze de Botorrita III (c. 100 a.C.), com texto em celtibérico; Museu de Saragoça.' },
   { h: '6. Casa e família' },
   'Na Britânia e na Irlanda, a casa típica era a **casa redonda**, de paredes de vime e barro ou de pedra, com telhado cónico de colmo e uma lareira no centro. Na Gália e na Europa central havia também casas retangulares de madeira. No noroeste da Península, os castros tinham casas de pedra, redondas ou ovais, e muitos pátios. Os povoados incluíam celeiros, fossas de armazenamento e, nos oppida, bairros de artesãos.',
   'A família era alargada e dominada por pais e irmãos mais velhos, mas as **mulheres** tinham em muitas sociedades mais direitos do que em Roma: nas leis irlandesas medievais podiam ter propriedade, divorciar-se em certos casos e, nos relatos romanos, há rainhas guerreiras (**Boudica**, **Cartimandua**). Os filhos da nobreza eram frequentemente criados por outra família (o **fosterage** irlandês), uma forma de criar alianças. A **hospitalidade** era uma obrigação sagrada.',
@@ -258,6 +260,7 @@ const sociedade = [
     '**Outros:** a moeda cunhada, o sabão (segundo Plínio, de sebo e cinza de faia, inventado pelos gauleses), os barris de madeira e a máquina de ceifar. Muitas destas atribuições são feitas por autores romanos e algumas são discutidas.'
   ] },
   { img: 'cel-escudo-battersea', leg: 'Escudo de Battersea (rio Tamisa), em bronze com decoração em vidro vermelho, c. 350–50 a.C.; Museu Britânico.' },
+  { img: 'cel-guerreiro-galaico', leg: 'Estátua de guerreiro galaico-lusitano de Boticas (Portugal), com escudo redondo.' },
   { h: '12. Guerra' },
   'A guerra era central para as elites celtas. Os romanos descrevem-nos como corajosos, mas desordenados: Políbio e Lívio falam de uma carga furiosa, de grandes espadas mal temperadas que se dobravam (em partes verdadeiro, mas talvez exagerado). A infantaria usava **lança, espada longa e escudo** oval ou retangular (e, nos mais ricos, capacete e cota de malha); os **cavaleiros**, ricos, eram tidos como os melhores do tempo, e foram recrutados para o exército romano. Os **carros de guerra**, usados na Itália e na Britânia, impressionaram César. Havia **mercenários** celtas por todo o Mediterrâneo (no Egito dos Ptolomeus, na Grécia, em Cartago). As cabeças-troféu e o ruído do **carnyx** completavam o efeito psicológico.',
   { h: '13. Morte e túmulos' },

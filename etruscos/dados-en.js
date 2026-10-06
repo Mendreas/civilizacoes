@@ -44,6 +44,7 @@ const linha = [
     { d: 'c. 900 BC', t: 'The Villanovan', x: 'The **Villanovan** culture appears, named after a find made in 1853 at Villanova, near Bologna. Ashes are kept in clay **biconical urns**, sometimes covered by a helmet; there are large villages on the plateaux of Veii, Tarquinia, Caere and Vulci, which will become the great Etruscan cities. Iron and bronze begin to be worked on a large scale.' },
   ] },
   { img: 'etr-villanoviano-urna', leg: 'Villanovan biconical urn, c. 9th–8th century BC, with a bowl-shaped lid.' },
+  { img: 'etr-marsiliana-abecedario', leg: 'Ivory writing tablet with the Greek-Etruscan alphabet, Marsiliana d’Albegna, c. 700 BC (model).' },
   { linha: [
     { d: 'c. 775 – 740 BC', t: 'The Greeks arrive in Italy', x: 'Greek colonists from Euboea settle at **Pithekoussai** (the island of Ischia) and then at **Cumae**, on the Bay of Naples. Contacts with the Etruscans bring wine, vases, myths and, above all, **writing**: the Etruscan alphabet will derive from a variant of the Euboean Greek alphabet.' },
     { d: 'c. 700 BC', t: 'The first inscriptions', x: 'The first Etruscan inscriptions appear. An ivory writing tablet from **Marsiliana d’Albegna** (c. 700) carries the full alphabet, copied as a writing model. The language is attested from c. 700 BC to the 1st century AD.' },

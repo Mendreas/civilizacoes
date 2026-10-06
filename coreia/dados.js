@@ -75,6 +75,7 @@ const linha = [
     { d: '751', t: 'Bulguksa e Seokguram', x: 'Em Gyeongju, o ministro **Kim Daeseong** inicia a construção do templo de **Bulguksa** e da gruta de **Seokguram**, com o seu Buda de granito (concluídos c. 774). O **Sino do Rei Seongdeok** (771) é o maior sino coreano conservado. Uma impressão em xilogravura (a **Dharani Sutra de Luz Pura**), encontrada em 1966 numa pagoda do templo, é das mais antigas do mundo e terá sido feita antes de 751 (a data é debatida).' },
   ] },
   { img: 'cor-bulguksa', leg: 'Templo de Bulguksa, em Gyeongju, fundado em 751.' },
+  { img: 'cor-tripitaka-haeinsa', leg: 'Placa de madeira da Tripitaka Koreana, em Haeinsa.' },
   { linha: [
     { d: '828 – 935', t: 'Jang Bogo e o fim de Silla', x: '**Jang Bogo** funda em 828 a base naval de **Cheonghaejin**, controlando o comércio entre a Coreia, a China e o Japão. Mais tarde, as rivalidades dos nobres e as revoltas camponesas fragmentam Silla nos «**Três Reinos Posteriores**» (892 – 936). O último rei de Silla, **Gyeongsun**, rende-se em **935**.' },
     { d: '918 – 936', t: 'Wang Geon funda o Goryeo', x: 'O chefe militar **Wang Geon**, de uma família de comerciantes marítimos de **Songak** (Kaesong), funda o **Goryeo** em 918, derrota o Baekje Posterior e unifica a península em **936**, reclamando-se herdeiro de Goguryeo. A sua política de conciliação com as elites de Silla e as suas dez injunções (**Hunyo Sipjo**) influenciaram o reino durante séculos.' },

@@ -137,6 +137,21 @@ export default {
       "Mapa original criado para este projeto (cel-mapa-linguas)",
       "Projeto Civilizações",
       "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "Zaragoza - Museo - Bronce de Botorrita III",
+      "Unknown authorUnknown author",
+      "Public domain"
+     ],
+     [
+      "Hallstatt 'C' Swords in Wels Museum, Upper Austria",
+      "Tyssul",
+      "CC BY-SA 3.0"
+     ],
+     [
+      "Guerreiro Galaico-Lusitano de Boticas - Portugal (8476453733)",
+      "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "CC BY-SA 2.0"
      ]
     ]
    }
@@ -279,6 +294,21 @@ export default {
       "Mapa original criado para este projeto (cel-mapa-linguas)",
       "Projeto Civilizações",
       "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "Zaragoza - Museo - Bronce de Botorrita III",
+      "Unknown authorUnknown author",
+      "Public domain"
+     ],
+     [
+      "Hallstatt 'C' Swords in Wels Museum, Upper Austria",
+      "Tyssul",
+      "CC BY-SA 3.0"
+     ],
+     [
+      "Guerreiro Galaico-Lusitano de Boticas - Portugal (8476453733)",
+      "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "CC BY-SA 2.0"
      ]
     ]
    }

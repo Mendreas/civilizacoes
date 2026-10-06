@@ -45,6 +45,7 @@ const linha = [
     { d: '15th c.', t: 'Expansion of the provinces', x: 'Lukeni’s successors add to the capital the provinces of **Mbamba**, **Nsundi**, **Mbata**, **Mpangu**, **Soyo** and **Mpemba**, governed by men the king trusts or by local chiefs who recognise his authority. Tribute is paid in raffia cloth, shell money (*nzimbu*), copper, iron and farm produce.' },
   ] },
   { img: 'con-lukeni-fundacao', leg: 'Conjectural scene of the founding of the kingdom according to oral tradition. AI-generated illustration.' },
+  { img: 'con-diogo-cao-padrao', leg: 'Padrão of Diogo Cão at Cabo Negro (Angola), stone marker of the Portuguese voyages of the 1480s.' },
   { linha: [
     { d: 'c. 1483', t: 'Diogo Cão reaches the river', x: 'The Portuguese navigator **Diogo Cão**, exploring the Atlantic coast of Africa on the orders of King João II, reaches the mouth of the Congo river and raises a **padrão** (a stone marker with Portugal’s arms). The Portuguese make contact with local chiefs; Cão takes some Kongo men to Lisbon, and returns with them on a second voyage (c. 1485–86). The details (dates, numbers, whether they were hostages or guests) are debated.' },
   ] },
@@ -112,6 +113,7 @@ const mapa = [
   { h: 'The Mpumbu market and the routes of the interior' },
   'To the east, on **Malebo Pool**, the great market of **Mpumbu** linked the kingdom to the upper Congo and to the world of the Teke, the Luba and other peoples. From there came ivory, copper, cloth and, over time, captives. The **pombeiros**, itinerant African traders, travelled these routes. Trade circulated the **nzimbu shells** (shells of a small mollusc from Luanda island), which served as money in the kingdom.',
   { img: 'con-mercado-mpumbu', leg: 'Conjectural scene of the Mpumbu market, 17th century. AI-generated illustration.' },
+  { img: 'con-berlim-1885', leg: 'Cartoon of Leopold II and other imperial powers at the Berlin Conference, 1884–85.' },
   { h: 'The neighbours' },
   'Kongo was not alone. To the north lay the kingdom of **Loango**, also with a coast and trade; to the south **Ndongo** and **Matamba** (ruled in the seventeenth century by Queen **Njinga**, who resisted the Portuguese). To the east lay the states of the **Luba** (16th c.), **Lunda** (17th c.) and **Kuba** (17th c.), known to Kongo through trade. They are independent histories, touched on here only in passing; they deserve chapters of their own.',
   { h: 'The division of the kingdom' },
@@ -149,6 +151,7 @@ const sociedade = [
   { h: '4. Economy' },
   'The base of the economy was **agriculture** (sorghum, yams, bananas and, later, American maize and cassava), hunting, river fishing and small livestock. **Iron** and **copper** were worked by smiths, who had a special status. **Raffia cloth** served as clothing, tribute and money. **Nzimbu shells**, from a small cowry of Luanda island, were the kingdom’s currency, controlled by the king until the seventeenth century, when Portuguese competition and inflation ruined them. Trade carried copper, salt, ivory, cloth and, more and more, people.',
   { img: 'con-aldeia-kongo', leg: 'Conjectural scene of a Kongo village with fields and thatched houses, 16th century. AI-generated illustration.' },
+  { img: 'con-navio-brookes', leg: 'Plan of the slave ship Brookes, 1788, used by abolitionists (British Library).' },
   { h: '5. The slave trade' },
   'Slavery existed in Kongo before 1483, as in many societies of the world, but it was small in scale and tied to the household. With the arrival of the Portuguese, the **demand for labour** for the sugar plantations of **São Tomé** and, from the sixteenth century, for **Brazil**, created a market that changed everything. King Afonso I and his successors took part in the trade, selling prisoners of war, and tried to regulate it; but growing demand made it uncontrollable. Traders from São Tomé and Luanda, and later Dutch, French, English and Brazilians, bought captives across the territory, and many free Kongo people were kidnapped.',
   'The numbers are hard to establish and vary by source. The international *Slave Voyages* database estimates that **more than 5 million** Africans embarked, between the sixteenth and nineteenth centuries, in the vast region of **West Central Africa** (from Cabinda to Benguela), the largest region of departure of the Atlantic trade. How many came from the kingdom of Kongo proper is debated, and most captives came more and more from the interior. What is certain is the effect: depopulation, wars to obtain captives, insecurity and the weakening of royal power.',
@@ -172,7 +175,9 @@ const sociedade = [
   { img: 'con-ferreiro-kongo', leg: 'Conjectural scene of a Kongo blacksmith’s workshop. AI-generated illustration.' },
   { h: '12. War' },
   'The army was made up of **archers**, **spearmen** and warriors with **leather shields** and **short swords**, commanded by governors. The introduction of Portuguese **firearms**, and later the participation of Portuguese allies, changed warfare. The kingdom never had a standing army comparable to the European ones and relied on provincial contingents. Control of firearms, in the hands of Portuguese and traders, was a decisive factor at Mbwila.',
-  { img: 'con-marfim-loango', leg: 'Carved ivory tusk from Loango, 19th century, with scenes of daily life.' }
+  { img: 'con-marfim-loango', leg: 'Carved ivory tusk from Loango, 19th century, with scenes of daily life.' },
+  { img: 'con-cavazzi-gravura', leg: 'Illustration from Cavazzi’s manuscript (c. 1668): the «fish-woman» (pesce donna) of the rivers of Angola and Congo.' },
+  { img: 'con-mangaaka', leg: 'Nkisi nkondi Mangaaka, a large power figure of the Yombe people, Congo (Metropolitan Museum of Art).' },
 ];
 
 const personalidades = [

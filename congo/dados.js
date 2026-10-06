@@ -49,6 +49,7 @@ const linha = [
     { d: 'séc. XV', t: 'Expansão das províncias', x: 'Os sucessores de Lukeni juntam à capital as províncias de **Mbamba**, **Nsundi**, **Mbata**, **Mpangu**, **Soyo** e **Mpemba**, governadas por homens da confiança do rei ou por chefes locais que reconhecem a sua autoridade. Os tributos pagam-se em tecidos de ráfia, conchas-moeda (*nzimbu*), cobre, ferro e produtos agrícolas.' },
   ] },
   { img: 'con-lukeni-fundacao', leg: 'Cena conjetural da fundação do reino segundo a tradição oral. Ilustração gerada por IA.' },
+  { img: 'con-diogo-cao-padrao', leg: 'Padrão de Diogo Cão no Cabo Negro (Angola), marco de pedra das viagens portuguesas de 1480.' },
   { linha: [
     { d: 'c. 1483', t: 'Diogo Cão chega ao rio', x: 'O navegador português **Diogo Cão**, em viagem de exploração da costa atlântica de África por ordem de D. João II, chega à foz do rio Congo e levanta um **padrão** (marco de pedra com as armas de Portugal). Os portugueses fazem contacto com chefes locais; Cão leva alguns congoleses para Lisboa, e regressa com eles numa segunda viagem (c. 1485–86). Os detalhes (datas, número de pessoas, se foram reféns ou convidados) são debatidos.' },
   ] },
@@ -116,6 +117,7 @@ const mapa = [
   { h: 'O mercado de Mpumbu e as rotas do interior' },
   'A leste, no **Malebo Pool**, o grande mercado de **Mpumbu** ligava o reino ao alto rio Congo e ao mundo dos Teke, dos Luba e de outros povos. Vinham de lá marfim, cobre, tecidos e, com o tempo, cativos. Os **pombeiros**, mercadores africanos itinerantes, percorriam estas rotas. O comércio fazia circular as **conchas nzimbu** (conchas de um pequeno molusco da ilha de Luanda), que serviam de moeda no reino.',
   { img: 'con-mercado-mpumbu', leg: 'Cena conjetural do mercado de Mpumbu, século XVII. Ilustração gerada por IA.' },
+  { img: 'con-berlim-1885', leg: 'Caricatura de Leopoldo II e de outras potências imperiais na Conferência de Berlim, 1884–85.' },
   { h: 'Os vizinhos' },
   'O Congo não estava sozinho. A norte ficava o reino de **Loango**, também com costa e comércio; a sul, o **Ndongo** e o **Matamba** (governados, no século XVII, pela rainha **Njinga**, que resistiu aos portugueses). A leste ficavam os estados dos **Luba** (séc. XVI), **Lunda** (séc. XVII) e **Kuba** (séc. XVII), que o Congo conhecia pelo comércio. São histórias independentes, só tocadas aqui de passagem; o seu estudo exige capítulos próprios.',
   { h: 'A divisão do reino' },
@@ -153,6 +155,7 @@ const sociedade = [
   { h: '4. Economia' },
   'A base da economia era a **agricultura** (sorgo, inhame, banana, e, mais tarde, milho e mandioca americanos), a caça, a pesca no rio e a criação de pequenos animais. O **ferro** e o **cobre** eram trabalhados por ferreiros, que tinham um estatuto especial. Os **tecidos de ráfia** serviam de roupa, de tributo e de moeda. As **conchas nzimbu**, de um pequeno búzio da ilha de Luanda, foram a moeda do reino, controlada pelo rei até ao século XVII, quando a concorrência portuguesa e a inflação a arruinaram. O comércio levava cobre, sal, marfim, tecidos e, cada vez mais, pessoas.',
   { img: 'con-aldeia-kongo', leg: 'Cena conjetural de uma aldeia kongo com campos e casas de capim, século XVI. Ilustração gerada por IA.' },
+  { img: 'con-navio-brookes', leg: 'Plano do navio negreiro Brookes, 1788, usado pelos abolicionistas (British Library).' },
   { h: '5. O tráfico de escravos' },
   'A escravatura existia no Congo antes de 1483, como em muitas sociedades do mundo, mas era de pequena escala e de integração familiar. Com a chegada dos portugueses, a **procura de mão de obra** para as plantações de açúcar de **São Tomé** e, a partir do século XVI, para o **Brasil**, criou um mercado que mudou tudo. O rei Afonso I e os seus sucessores participaram no comércio, vendendo prisioneiros de guerra, e tentaram regulá-lo; mas a procura crescente tornou-o incontrolável. Mercadores de São Tomé e de Luanda, e depois holandeses, franceses, ingleses e brasileiros, compraram cativos em todo o território, e muitos congoleses livres foram raptados.',
   'Os números são difíceis, e variam conforme as fontes. A base de dados internacional *Slave Voyages* estima que **mais de 5 milhões** de africanos embarcaram, entre os séculos XVI e XIX, na vasta região da **África Centro-Ocidental** (de Cabinda a Benguela), a maior região de partida do tráfico atlântico. Quantos vieram do reino do Congo propriamente dito é debatido, e a maioria dos cativos vinha cada vez mais do interior. O que é seguro é o efeito: despovoamento, guerras para obter cativos, insegurança e enfraquecimento do poder real.',
@@ -176,7 +179,9 @@ const sociedade = [
   { img: 'con-ferreiro-kongo', leg: 'Cena conjetural de uma oficina de ferreiro kongo. Ilustração gerada por IA.' },
   { h: '12. Guerra' },
   'O exército era formado por **arqueiros**, **lanceiros** e guerreiros com **escudos de couro** e **espadas curtas**, comandados por governadores. A introdução de **armas de fogo** portuguesas, e depois a participação de aliados portugueses, mudou a guerra. O reino nunca teve um exército permanente comparável ao europeu e dependia de contingentes provinciais. O controlo das armas de fogo, nas mãos de portugueses e de comerciantes, foi um fator decisivo em Ambuíla.',
-  { img: 'con-marfim-loango', leg: 'Presa de marfim esculpida de Loango, século XIX, com cenas do quotidiano.' }
+  { img: 'con-marfim-loango', leg: 'Presa de marfim esculpida de Loango, século XIX, com cenas do quotidiano.' },
+  { img: 'con-cavazzi-gravura', leg: 'Ilustração do manuscrito de Cavazzi (c. 1668): o «peixe-mulher» (pesce donna) dos rios de Angola e do Congo.' },
+  { img: 'con-mangaaka', leg: 'Nkisi nkondi Mangaaka, grande figura de poder do povo Yombe, Congo (Metropolitan Museum of Art).' },
 ];
 
 const personalidades = [

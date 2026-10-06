@@ -107,6 +107,16 @@ export default {
       "Mapa original criado para este projeto (teo-mapa-mesoamerica)",
       "Projeto Civilizações",
       "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "Teotihuacan March 1974 - Jaguar Mural",
+      "Per source. Please credit \"Family photos of Infrogmation\".",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "WLA lacma Anthropomorphic tripod vessel, Mexico, Teotihuacan, A.D. 200-500",
+      "LACMA",
+      "Public domain"
      ]
     ]
    }
@@ -219,6 +229,16 @@ export default {
       "Mapa original criado para este projeto (teo-mapa-mesoamerica)",
       "Projeto Civilizações",
       "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "Teotihuacan March 1974 - Jaguar Mural",
+      "Per source. Please credit \"Family photos of Infrogmation\".",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "WLA lacma Anthropomorphic tripod vessel, Mexico, Teotihuacan, A.D. 200-500",
+      "LACMA",
+      "Public domain"
      ]
     ]
    }

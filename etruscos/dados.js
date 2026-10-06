@@ -47,6 +47,7 @@ const linha = [
     { d: 'c. 900 a.C.', t: 'O Villanoviano', x: 'Surge a cultura **villanoviana**, nome dado por um achado de 1853 em Villanova, perto de Bolonha. As cinzas são guardadas em **urnas biconhas** de barro, por vezes cobertas por um capacete; há grandes aldeias nos planaltos de Veios, Tarquínia, Cerveteri e Vulci, que se tornarão as grandes cidades etruscas. O ferro e o bronze começam a trabalhar-se em grande escala.' },
   ] },
   { img: 'etr-villanoviano-urna', leg: 'Urna villanoviana biconha, c. século IX–VIII a.C., com tampa em forma de tigela.' },
+  { img: 'etr-marsiliana-abecedario', leg: 'Tabuinha de escrita de marfim com o alfabeto greco-etrusco, Marsiliana d’Albegna, c. 700 a.C. (modelo).' },
   { linha: [
     { d: 'c. 775 – 740 a.C.', t: 'Os gregos chegam à Itália', x: 'Colonos gregos da Eubeia instalam-se em **Pitecusa** (ilha de Ísquia) e depois em **Cumas**, na baía de Nápoles. Os contactos com os etruscos trazem vinho, vasos, mitos e, sobretudo, a **escrita**: o alfabeto etrusco derivará de uma variante do alfabeto grego eubeu.' },
     { d: 'c. 700 a.C.', t: 'As primeiras inscrições', x: 'Aparecem as primeiras inscrições etruscas. Uma tabuinha de marfim de **Marsiliana d’Albegna** (c. 700) traz o alfabeto completo, copiado como modelo de escrita. A língua está atestada de c. 700 a.C. ao século I d.C.' },

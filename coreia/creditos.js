@@ -132,6 +132,11 @@ export default {
       "Interior view of the Buddhist temple near Seokguram Grotto in Gyeongju South Korea",
       "Basile Morin",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Korea-Haeinsa Tripitaka Koreana woodblock 2770-06a",
+      "Steve46814",
+      "CC BY-SA 3.0"
      ]
     ]
    }
@@ -269,6 +274,11 @@ export default {
       "Interior view of the Buddhist temple near Seokguram Grotto in Gyeongju South Korea",
       "Basile Morin",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Korea-Haeinsa Tripitaka Koreana woodblock 2770-06a",
+      "Steve46814",
+      "CC BY-SA 3.0"
      ]
     ]
    }

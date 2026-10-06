@@ -122,6 +122,21 @@ export default {
       "Kumbum Gyantse",
       "Antoine Taveneaux",
       "CC BY-SA 3.0"
+     ],
+     [
+      "Bhutanese Gold Kangyur page detail",
+      "Christopher John Fynn",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Tsongkhapa, Tibet in Tibeto-Chinese style, 19th century AD, firegilt bronze - Linden-Museum - Stuttgart, Germany - DSC03701",
+      "Unknown authorUnknown author",
+      "Public domain"
+     ],
+     [
+      "Yumbulagang (23013896592)",
+      "Laika ac from UK",
+      "CC BY-SA 2.0"
      ]
     ]
    }
@@ -249,6 +264,21 @@ export default {
       "Kumbum Gyantse",
       "Antoine Taveneaux",
       "CC BY-SA 3.0"
+     ],
+     [
+      "Bhutanese Gold Kangyur page detail",
+      "Christopher John Fynn",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Tsongkhapa, Tibet in Tibeto-Chinese style, 19th century AD, firegilt bronze - Linden-Museum - Stuttgart, Germany - DSC03701",
+      "Unknown authorUnknown author",
+      "Public domain"
+     ],
+     [
+      "Yumbulagang (23013896592)",
+      "Laika ac from UK",
+      "CC BY-SA 2.0"
      ]
     ]
    }

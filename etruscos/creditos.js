@@ -142,6 +142,11 @@ export default {
       "Museo nazionale etrusco di Villa Giulia - Sala interna 3",
       "Andrea Comisi",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Tavoletta scrittoria con alfabeto greco-etrusco da modello, in avorio, dal circolo degli avori della necropoli della banditella a marsiliana d'albegna, 675-625 ac ca",
+      "Sailko",
+      "CC BY 3.0"
      ]
     ]
    }
@@ -289,6 +294,11 @@ export default {
       "Museo nazionale etrusco di Villa Giulia - Sala interna 3",
       "Andrea Comisi",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Tavoletta scrittoria con alfabeto greco-etrusco da modello, in avorio, dal circolo degli avori della necropoli della banditella a marsiliana d'albegna, 675-625 ac ca",
+      "Sailko",
+      "CC BY 3.0"
      ]
     ]
    }

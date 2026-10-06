@@ -122,6 +122,16 @@ export default {
       "Mapa original criado para este projeto (tch-mapa-andes)",
       "Projeto Civilizações",
       "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "Chavín de Huantar-67",
+      "AlisonRuthHughes",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Pututu de caracola",
+      "Ana Orero",
+      "CC BY-SA 4.0"
      ]
     ]
    }
@@ -249,6 +259,16 @@ export default {
       "Mapa original criado para este projeto (tch-mapa-andes)",
       "Projeto Civilizações",
       "Original (dados GSHHG: LGPL)"
+     ],
+     [
+      "Chavín de Huantar-67",
+      "AlisonRuthHughes",
+      "CC BY-SA 4.0"
+     ],
+     [
+      "Pututu de caracola",
+      "Ana Orero",
+      "CC BY-SA 4.0"
      ]
     ]
    }

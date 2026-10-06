@@ -72,6 +72,7 @@ const linha = [
     { d: '751', t: 'Bulguksa and Seokguram', x: 'In Gyeongju, the minister **Kim Daeseong** begins building **Bulguksa** temple and the **Seokguram** grotto, with its granite Buddha (completed c. 774). The **Divine Bell of King Seongdeok** (771) is the largest surviving bell in Korea. A woodblock print (the **Pure Light Dharani Sutra**), found in 1966 in a pagoda of the temple, is among the oldest in the world and was probably made before 751 (the date is debated).' },
   ] },
   { img: 'cor-bulguksa', leg: 'Bulguksa temple in Gyeongju, founded in 751.' },
+  { img: 'cor-tripitaka-haeinsa', leg: 'Woodblock of the Tripitaka Koreana at Haeinsa.' },
   { linha: [
     { d: '828 – 935', t: 'Jang Bogo and the end of Silla', x: '**Jang Bogo** founds the naval base of **Cheonghaejin** in 828, controlling trade between Korea, China and Japan. Later, noble rivalries and peasant revolts break Silla into the “**Later Three Kingdoms**” (892 – 936). The last king of Silla, **Gyeongsun**, surrenders in **935**.' },
     { d: '918 – 936', t: 'Wang Geon founds Goryeo', x: 'The military leader **Wang Geon**, from a family of maritime merchants of **Songak** (Kaesong), founds **Goryeo** in 918, defeats Later Baekje and unifies the peninsula in **936**, claiming to be the heir of Goguryeo. His policy of conciliation with the Silla elites and his ten injunctions (**Hunyo Sipjo**) influenced the kingdom for centuries.' },
