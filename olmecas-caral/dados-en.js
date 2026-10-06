@@ -1,0 +1,290 @@
+// OLMEC AND CARAL — full English content. Same structure and same image slots as the Portuguese version (dados.js).
+// Two “mother civilizations” of the Americas, treated side by side: Caral-Supe (Peru, c. 3000–1800 BC) and the Olmec (Gulf of Mexico, c. 1500–400 BC).
+// Dates are approximate and much of what is said about both is hypothesis. BC = before Christ. Links: Chavín de Huántar and Monte Albán (Zapotec) only as bridges.
+
+const visao = [
+  { caixa: 'In brief', texto: [
+    'This chapter brings together two civilizations that never met but play a similar role: they are the oldest “mother civilizations” of the Americas, one in the Andes and one in Mesoamerica. The first is **Caral-Supe**, on the north-central coast of **Peru**, which built pyramids, sunken circular plazas and a city some 4,600 years ago, without pottery and probably without wars. The second is the **Olmec**, in southern **Mexico**, in the Gulf lowlands, famous for their **colossal heads** of basalt, for jade, for the rubber ball game and for the first ceremonial centres of Mesoamerica.',
+    'There is a huge gap in time between them: Caral is more than a thousand years older than San Lorenzo, the first great Olmec capital. And one important caveat: **little is known** about either. Neither left readable texts, or the name they used for themselves (“Caral” and “Olmec” are names we gave them, or that were given long afterwards). What follows rests on excavations, radiocarbon dates and interpretations, and the most uncertain parts are marked.'
+  ] },
+  { img: 'olm-mapa-caral-supe', leg: 'Map of the Norte Chico region (Caral-Supe) on the north-central coast of Peru, with the main sites.' },
+  { img: 'olm-mapa-olmecas', leg: 'Map of the Olmec “heartland” in today’s states of Veracruz and Tabasco (Mexico), with San Lorenzo, La Venta and Tres Zapotes.' },
+  { h: 'Where they were' },
+  { lista: [
+    '**Caral-Supe (Peru):** the centre was the **Supe river valley**, about 180 km north of Lima and just over 20 km from the Pacific, on one of the driest coasts on Earth, cut by valleys that run down from the Andes. Archaeologists call the region the **Norte Chico** (“little north”). The site of **Caral** lies inland up the valley; **Áspero**, the fishing port, is at the mouth.',
+    '**Olmec (Mexico):** the Olmec “heartland” was a strip of hot, humid, swampy lowland in the south of today’s states of **Veracruz** and **Tabasco**, on the Gulf of Mexico. It was crossed by wide rivers such as the **Coatzacoalcos**, which served as transport routes, and ended in the north at the volcanic mountains of **Los Tuxtlas**, where the basalt came from.'
+  ] },
+  { img: 'olm-caral-vista-aerea', leg: 'Aerial view of the archaeological site of Caral, Supe valley, Peru: in the centre, the Pirámide Mayor and the plazas.' },
+  { h: 'When they existed' },
+  'The two civilizations are separated by more than a millennium, and the timing of each is debated. Dates are approximate throughout.',
+  { tabela: { cab: ['Civilization / phase', 'Approximate dates', 'What marks it'], linhas: [
+    ['Caral-Supe: first monuments', 'c. 3500 – 3000 BC', 'Platforms and plazas at sites such as Sechín Bajo and Huaricanga; dates still debated'],
+    ['Caral-Supe: peak', 'c. 2600 – 2000 BC', 'Caral and other Supe centres, with pyramids, circular plazas, cotton and fishing; no pottery'],
+    ['Caral-Supe: decline and dispersal', 'c. 2000 – 1800 BC (and later)', 'Caral is abandoned; other sites, such as Vichama, continue until c. 1500 BC'],
+    ['Olmec: antecedents', 'c. 1800 – 1400 BC', 'Farming villages on the Gulf; rubber balls at El Manatí; first occupation of San Lorenzo'],
+    ['Olmec: San Lorenzo', 'c. 1400 / 1200 – 900 BC', 'First great capital; artificial plateau, colossal heads, vast trade network'],
+    ['Olmec: La Venta', 'c. 900 – 400 BC', 'Second great centre; great pyramid, jade and serpentine offerings, altars and stelae'],
+    ['After the Olmec', 'c. 400 BC – 2nd century AD', 'Tres Zapotes and the “Epi-Olmec” culture: first Long Count dates and Isthmian script']
+  ] } },
+  { img: 'olm-ia-esquema-cronologia', leg: 'Diagram (illustration): the two civilizations on parallel timelines, with Chavín de Huántar and Monte Albán as bridges. Simplified diagram.' },
+  { h: 'Who were they?' },
+  { h: 'The people of Caral' },
+  'We do not know what they called themselves or what language they spoke. They were farmers and fishers who lived in small cities, with no visible army and no pottery, yet able to raise stone buildings tens of metres high. The word “**Caral**” is the name of the modern site. The Peruvian archaeologist **Ruth Shady** calls it the “Caral civilization” and thinks it the oldest in the Americas; many colleagues prefer “**Caral-Supe tradition**” or “**Norte Chico**” and debate whether it was a civilization in the full sense.',
+  { h: 'The Olmec' },
+  '“Olmec” comes from Nahuatl (the language of the Aztecs) and means “rubber people” (*ōlli*, rubber). It was the name the Aztecs gave to peoples living in the same region **two thousand years later**: it was applied by mistake to the far older builders. We do not know what they called themselves. As for language, some propose a language of the **Mixe-Zoquean** branch, still spoken today by neighbouring peoples, but this is a hypothesis: the Olmec left no readable texts.',
+  { h: 'Why they matter' },
+  { lista: [
+    '**Cities without pottery:** Caral shows that enormous monuments can be built before pots of fired clay, and perhaps before wars or empires.',
+    '**A “factory” of ideas:** in both, ceremonial platforms, plazas, an organized religion and large-scale collective labour appear for the first time in their regions.',
+    '**The “mother civilization” debate:** both the Olmec (Mesoamerica) and Chavín (Andes) have been called a “mother culture”; Caral and other finds force us to rethink that idea.',
+    '**The motif of rubber, jade and jaguar:** symbols that run through all of Mesoamerica after the Olmec, from Teotihuacan to the Maya and the Aztecs.',
+    '**A warning about “origins”:** they show how fragile it is to say “the oldest”: each new excavation or date can change the answer.'
+  ] },
+  { h: 'Today' },
+  'Caral has been a **UNESCO World Heritage Site** since 2009 and can be visited on a morning’s trip from Lima; the site is still being excavated and is threatened by illegal land occupation. Of the Olmec, the colossal heads are in museums in Xalapa, Villahermosa and Mexico City and in small local museums; at La Venta, San Lorenzo and Tres Zapotes much remains to be excavated, and in parts of the Olmec heartland the platforms are covered by cane fields, pasture and refineries.'
+];
+
+const linha = [
+  'This timeline puts the two civilizations side by side. Dates are approximate; the oldest (Caral before 2600 BC) and some Olmec ones (the origin of writing, the exact end) are the most uncertain.',
+  { linha: [
+    { d: 'c. 3500 BC', t: 'First monumental buildings in Peru', x: 'At sites on the north-central coast, such as **Sechín Bajo** (Casma valley) and **Huaricanga** (Fortaleza valley), platforms and sunken plazas appear that some date to this time. It is older than Caral and **debated**: the dates depend on few samples.' },
+    { d: 'c. 3000 BC', t: 'The Caral-Supe tradition begins', x: 'Settlements with stone architecture appear between the coast and the valleys: **Áspero**, at the mouth of the Supe, and other sites of fishers and cotton farmers. The dates and the exact sequence are still being studied.' },
+    { d: 'c. 2600 BC', t: 'The securest dates for Caral', x: 'Cords and **reed bags (*shicra*)** from the fill of Caral buildings gave radiocarbon dates of about **2627 BC**; in 2001 a team including **Ruth Shady**, Jonathan Haas and Winifred Creamer published in the journal *Science* a series of dates between c. 2600 and 2000 BC. Some propose still earlier construction, and it is debated.' },
+    { d: 'c. 2500 BC', t: 'The peak of Caral', x: 'The **Pirámide Mayor** and the amphitheatre pyramid are built, along with the sunken circular plazas and residential districts. It is the time when the pyramids of Egypt (Giza) are raised: contemporary civilizations, with no contact whatever.' },
+    { d: 'c. 2250 BC', t: 'A figure on a gourd', x: 'On an engraved gourd from the region appears a figure of a **“Staff God”**, an image that, centuries later, reappears in the Andes (at Chavín). If it really is the same being, Andean religion has roots 4,000 years deep.' },
+    { d: 'c. 2200 BC', t: 'A centuries-long drought?', x: 'A recent hypothesis, defended by Ruth Shady and others, links the weakening of the region to a **prolonged drought** some 4,200 years ago, a climate episode that affected several parts of the world. It is **debated**, and the end of Caral may have had more than one cause.' },
+    { d: 'c. 2170 BC', t: 'The flutes of Caral', x: 'The **bone flutes** from the amphitheatre of Caral, found by Shady’s team, gave a radiocarbon date of about 2170 BC (with a large margin of error). They are among the oldest musical instruments in the Americas.' },
+    { d: 'c. 2000 BC', t: 'Caral is abandoned', x: 'The buildings stop being remodelled and the last inhabitants leave. The builders **bury** plazas and temples under stones and earth, in acts that look like rituals of closure.' },
+    { d: 'c. 1800 BC', t: 'The tradition disperses', x: 'The end of the classic phase of Caral-Supe coincides with changes in climate and rivers, and the population moves to the coast and northwards. At **Vichama** (Huaura valley), occupied between c. 1800 and 1500 BC, clay reliefs show gaunt figures and frogs, interpreted as a memory of famine and of pleas for rain.' },
+    { d: 'c. 1750 BC', t: 'First settlements on the Gulf', x: 'At **San Lorenzo** (Veracruz) the earliest known occupation belongs to the **Ojochí** phase (c. 1750 – 1550 BC): farming villages, with pottery and maize. There are no monuments yet.' },
+    { d: 'c. 1600 BC', t: 'The rubber balls of El Manatí', x: 'In a spring-bog, **El Manatí**, wooden objects, **rubber balls** (about a dozen, from c. 1600 BC or earlier) and stone axes were offered over the centuries. It is the earliest evidence of the ritual use of rubber in Mesoamerica.' },
+    { d: 'c. 1400 BC', t: 'The first ball court (outside the Gulf)', x: 'The oldest known ball court, at **Paso de la Amada** on the Pacific coast (Chiapas), is not Olmec. It shows that the game, and the elite who played it, arose in several places in Mesoamerica, and that the Olmec were not the only “inventors”.' },
+    { d: 'c. 1400 – 1200 BC', t: 'San Lorenzo grows', x: 'The **artificial plateau** is built: terraces and fills that required enormous volumes of earth, and stone drains. There are traces of an elite and of stone workshops.' },
+    { d: 'c. 1200 – 900 BC', t: 'The peak of San Lorenzo', x: 'It is the largest city in Mesoamerica of its time, with a population estimated in the thousands. The **colossal heads** and basalt thrones are carved, hauled from tens of kilometres away, and jade, obsidian and Olmec-style pottery circulate throughout Mesoamerica.' },
+    { d: 'c. 1100 – 900 BC', t: 'The Cascajal block', x: 'A serpentine slab with **62 signs** (28 different) is, for some, the oldest writing in the Americas. It was found out of context, is unique, and remains undeciphered.' },
+    { d: 'c. 1000 – 800 BC', t: 'A monumental Maya neighbour', x: 'At **Aguada Fénix** (Tabasco), an enormous earthen platform some 1.4 km long was built around this time: it shows that outside the Olmec heartland, too, there were great works, and that Mesoamerica of the day was more diverse than was thought.' },
+    { d: 'c. 900 BC', t: 'San Lorenzo falls, La Venta rises', x: 'Monuments at San Lorenzo are **mutilated and buried** (revolt? conquest? rite?), and the river perhaps changes course. Power passes to **La Venta**, further east. At the same time, in the Andes, **Chavín de Huántar** begins to rise.' },
+    { d: 'c. 850 – 700 BC', t: 'The heads and the pyramid of La Venta', x: 'The four colossal heads of La Venta are carved and the **Great Pyramid** is built (about 34 m high and some 100,000 m³ of fill). There are offerings of serpentine and jade, and tombs of basalt columns.' },
+    { d: 'c. 650 BC', t: 'The San Andrés object', x: 'A ceramic object found at San Andrés (Tabasco), possibly a seal, shows a bird with speech scrolls and signs resembling those of later Maya writing. For some it is proof of late Olmec writing; it is **debated**.' },
+    { d: 'c. 600 BC', t: 'Writing and calendar in Oaxaca', x: 'At **San José Mogote** (Oaxaca), a relief with a prisoner and the sign “1 Earthquake” is one of the earliest signs of the **260-day calendar** and of writing, and it is **Zapotec**, not Olmec.' },
+    { d: 'c. 500 BC', t: 'Monte Albán is founded', x: 'The Zapotecs found **Monte Albán** on a hilltop in the Oaxaca valley. The reliefs of the **Danzantes**, with figures in an early style, show the link between the cultures of the Gulf and those of Oaxaca.' },
+    { d: 'c. 400 BC', t: 'La Venta is abandoned', x: 'Between 400 and 350 BC the population of the eastern part of the Olmec heartland drops sharply, probably because of **changes in the rivers and environment** (silting, tectonics or volcanism: debated). The “Olmec culture” as a style ends.' },
+    { d: '32 BC', t: 'Stela C at Tres Zapotes', x: 'A stela at **Tres Zapotes** bears the Long Count date **7.16.6.16.18**, corresponding to **3 September 32 BC**: one of the oldest dates of its kind (surpassed only by Stela 2 at Chiapa de Corzo, 36 BC), already in the **Epi-Olmec** period, centuries after the fall of La Venta.' },
+    { d: '2nd century AD', t: 'The last Epi-Olmec texts', x: 'The **La Mojarra Stela** (c. AD 156) and the **Tuxtla Statuette** (c. AD 162) carry texts in the Isthmian script, partly deciphered. They mark the end of the Olmec tradition, which merges into other cultures.' },
+    { d: '1862', t: 'First record of a head', x: 'In 1862 a colossal head is found near Tres Zapotes; the Mexican scholar **José Melgar y Serrano** publishes a description of it in 1869: the first scientific record of an Olmec object.' },
+    { d: '1938 – 1946', t: 'Stirling and National Geographic', x: '**Matthew Stirling** excavates at Tres Zapotes, Cerro de las Mesas and La Venta, and argues that the Olmec were a very ancient civilization. In 1942, **Alfonso Caso** calls them the “mother culture” of Mesoamerica.' },
+    { d: '1994 – 1996', t: 'Ruth Shady and the Caral Project', x: '**Ruth Shady Solís**, of the University of San Marcos, recognizes the scale of Caral from 1994 (the site had been seen in 1948 by Paul Kosok, who did not grasp its significance) and starts systematic excavations in the middle of the decade. In 2001 the radiocarbon dates are published.' },
+    { d: '2006 – 2009', t: 'Cascajal and UNESCO', x: 'In 2006 the journal *Science* publishes the **Cascajal block**; in 2009 the **Sacred City of Caral-Supe** is added to the World Heritage list.' }
+  ] },
+  { img: 'olm-estela-c', leg: 'Stela C of Tres Zapotes (the lower half, found by Stirling in 1939), with the Long Count date of 32 BC.' },
+  { img: 'olm-monte-alban', leg: 'The Great Plaza of Monte Albán, Oaxaca (Mexico), the Zapotec capital founded c. 500 BC.' }
+];
+
+const mapa = [
+  'These two civilizations did not form empires with borders: they were networks of ceremonial centres linked by rivers, coasts and trade routes. The table shows the main sites of each, and the sections that follow describe the most important.',
+  { h: 'Caral-Supe (Peru)' },
+  { tabela: { cab: ['Site', 'Where', 'Approximate dates', 'What it is known for'], linhas: [
+    ['Caral', 'Supe valley, 23 km from the coast', 'c. 2600 – 2000 BC', 'Pirámide Mayor, amphitheatre, circular plazas; main site; World Heritage (2009)'],
+    ['Áspero', 'Mouth of the Supe, coast', 'c. 3000 – 1800 BC', 'Fishing and trading port; about 13 ha, with some eleven mounds; offerings and burials'],
+    ['Vichama', 'Végueta, Huaura valley', 'c. 1800 – 1500 BC', 'Clay reliefs with gaunt figures and frogs; marks the end of the classic phase'],
+    ['Peñico', 'Supe valley, inland', 'c. 1800 – 1500 BC', 'Later centre; opened to the public in 2025'],
+    ['Sechín Bajo', 'Casma valley', 'c. 3500 BC (debated)', 'Circular plaza and very early architecture; further north'],
+    ['Huaricanga', 'Fortaleza valley', 'c. 3500 BC (debated)', 'Possibly one of the oldest monuments in the region'],
+    ['Bandurria', 'Huaura coast', 'c. 3000 BC', 'Fishing settlement with monuments; its priority over Caral is also disputed']
+  ] } },
+  { img: 'olm-caral-piramide-mayor', leg: 'The Pirámide Mayor of Caral, the largest building on the site, seen from one side, with the central stair.' },
+  { h: 'Caral' },
+  'The site of **Caral** covers more than **60 hectares** in its monumental core (the whole complex extends well beyond), on a terrace above the valley. It is divided into two parts: the “upper” part, with **six great complexes** (each with a pyramid, a plaza and buildings around), and the “lower”, where the **amphitheatre pyramid** stands. The **Pirámide Mayor** has a base of about **150 × 110 m** (some sources give 160 × 150 m) and rises, depending on the source, **18 to 28 m**; it has stairs, courtyards and stone walls, and was repeatedly covered and enlarged. The city is estimated to have had a few thousand inhabitants, and the Supe valley as a whole perhaps twenty thousand. The landscape is dry and desert, and irrigation from the Supe river was decisive.',
+  { img: 'olm-caral-praca-circular', leg: 'Sunken circular plaza at Caral, one of the two on the site: a ceremonial space with steps, at the centre of a monumental building.' },
+  { img: 'olm-ia-caral-cidade', leg: 'Reconstruction (AI illustration): Caral c. 2500 BC, with the Pirámide Mayor, the plazas and the houses. A hypothetical reconstruction.' },
+  { h: 'Áspero and the coast' },
+  '**Áspero** stood at the mouth of the Supe river and was a community of **fishers and shellfish gatherers**. Archaeologists have identified about **eleven artificial mounds**, with stone platforms, over some 13 hectares. On the mounds, called *huacas*, there were offerings, figurines of unfired clay and burials, including that of a child. In 2016 the discovery of the body of an elite woman, c. 2500 BC, was announced. Áspero supplied fish and shellfish (anchovies, sardines, mussels) and received in exchange farm produce from the interior, above all the **cotton** used in fishing nets.',
+  { img: 'olm-aspero', leg: 'The archaeological site of Áspero, at the mouth of the Supe river, Peru: mounds (huacas) facing the Pacific.' },
+  { h: 'Vichama and the end of the classic phase' },
+  '**Vichama**, at Végueta (Huaura valley), was occupied after Caral, between c. 1800 and 1500 BC. It has some sixteen mounds, with five pyramids, and **clay reliefs** on the walls with human figures and half-human, half-amphibian beings, among them frogs, often skeletal. Shady’s team interprets them as a record of a period of drought and famine and of pleas for water; this is a **plausible** reading, not the only one.',
+  { img: 'olm-vichama', leg: 'The archaeological site of Vichama, at Végueta (Peru), near the coast: pyramids and walls of the period c. 1800 – 1500 BC.' },
+  { h: 'The Olmec (Mexico)' },
+  { tabela: { cab: ['Site', 'Where', 'Approximate dates', 'What it is known for'], linhas: [
+    ['San Lorenzo', 'Veracruz, Coatzacoalcos river', 'c. 1400 / 1200 – 900 BC', 'First great capital; artificial plateau; 10 of the 17 colossal heads; stone drains'],
+    ['La Venta', 'Tabasco, near the coast', 'c. 900 – 400 BC', 'Great Pyramid; jade and serpentine offerings; 4 heads; altars'],
+    ['Tres Zapotes', 'Veracruz, Los Tuxtlas', 'c. 900 BC – 10th century AD', 'Two heads; Stela C (32 BC); “Epi-Olmec” centre'],
+    ['El Manatí', 'Spring-bog, Veracruz', 'c. 1600 – 1200 BC', 'Ritual offerings; rubber balls'],
+    ['Laguna de los Cerros', 'Veracruz', 'Formative (dates debated)', 'Large centre with basalt monuments, close to the stone sources'],
+    ['Chalcatzingo', 'Morelos, central highlands', 'c. 900 – 500 BC (peak c. 700 – 500)', 'Rock reliefs in Olmec style; shows influence outside the Gulf'],
+    ['San José Mogote / Monte Albán', 'Oaxaca valley', 'c. 1500 – 500 BC / c. 500 BC onwards', 'Villages and then Zapotec capital; early writing and calendar']
+  ] } },
+  { h: 'San Lorenzo' },
+  'San Lorenzo is a **plateau some 50 metres high** above the plain, partly natural and partly shaped by people, with terraces and walls and a network of buried **stone drains** that carried water. The core covers about 55 hectares; the whole complex, with the surrounding areas, is much larger. The ceremonial centre is estimated to have held a few thousand people and the area around ten thousand or more, with a wide margin of error. It is where the largest number of monuments was found: more than a hundred stone sculptures, among them **ten colossal heads**. It was excavated by Matthew Stirling (1945), by **Michael Coe and Richard Diehl** (1966–68) and, since the 1990s, by **Ann Cyphers**.',
+  { img: 'olm-ia-san-lorenzo', leg: 'Reconstruction (AI illustration): San Lorenzo c. 1000 BC, with the plateau, a colossal head and houses of cane and clay. A hypothetical reconstruction.' },
+  { h: 'La Venta' },
+  'Over 80 km from San Lorenzo, and nearer the sea, **La Venta** was built on an island among swamps. Along a north–south axis, oriented about 8° west of north, stand the buildings of “Complex A”, ringed by basalt columns, and the **Great Pyramid** (Complex C), about **34 m** high. Older studies took it for a cone; today it is thought to have been a rectangular pyramid with stepped sides, rounded by erosion. The buried offerings include dozens of separate caches, with **jade objects**, three great **mosaics of serpentine blocks** (about 4.5 × 6 m, with up to 485 blocks each, buried under layers of clay) and an enormous deposit of serpentine of about 50 tonnes. The heads and many monuments were moved to the **Parque-Museo La Venta** in Villahermosa, at the initiative of the poet **Carlos Pellicer**; the southern part of the site is now covered by an oil refinery.',
+  { img: 'olm-la-venta-piramide', leg: 'The Great Pyramid (Complex C) of La Venta, Tabasco, Mexico: today a rounded mound, about 34 m high.' },
+  { img: 'olm-ia-la-venta', leg: 'Reconstruction (AI illustration): the ceremonial centre of La Venta c. 600 BC, with the Great Pyramid and the basalt columns. A hypothetical reconstruction.' },
+  { h: 'Tres Zapotes' },
+  'At the foot of Los Tuxtlas, **Tres Zapotes** was the first Olmec site to become known (the head found in 1862 and described by Melgar in 1869) and the longest-lived: it stayed inhabited for some two thousand years, well after the fall of La Venta, and became an “Epi-Olmec” centre, with stelae bearing dates and text. It has two colossal heads, the smallest (under 1.5 m high), and the famous **Stela C**.',
+  { img: 'olm-cabeca-tres-zapotes', leg: 'Colossal head from Tres Zapotes (Monument A), the smallest of the group, just under 1.5 m high.' },
+  { h: 'The links: Chavín and Monte Albán' },
+  'To understand the context, two other cultures are worth a look, without treating them as “daughters” of the first two. **Chavín de Huántar**, in the north-central Peruvian Andes, at over 3,000 m altitude, was a great religious centre between c. 900 and 200 BC, more than a thousand years after Caral. **Monte Albán**, in the Oaxaca valley (Mexico), was founded by the Zapotecs around 500 BC, as La Venta was ending, and has reliefs and glyphs that show both a link and a difference with the Olmec world.',
+  { h: 'The routes' },
+  { lista: [
+    '**Caral-Supe:** the valley linked the **coast** (fish, shellfish, salt) with the **interior** (cotton, beans, squash, maize, fruit), and probably the **highlands** and the Amazon basin by trails; there may have been objects and shells from afar, but this is debated.',
+    '**Olmec:** the **rivers** of the Gulf (Coatzacoalcos, Tonalá, Papaloapan) were the roads: they carried basalt from Los Tuxtlas, pottery and jade. Jade came chiefly from the **Motagua valley** in Guatemala, and obsidian from workshops in the Guatemalan highlands and central Mexico, some hundreds of kilometres away.',
+    '**No contact between the two:** there is no evidence of any relations between the Andes and Mesoamerica at this time, and the timing of each is very different.'
+  ] }
+];
+
+const sociedade = [
+  'This chapter is organized by theme, and under each theme separates **Caral-Supe** and the **Olmec**. Almost everything said about people’s lives is **inference** from buildings, sculptures, food remains and burials. Where there is a legend or a bold hypothesis, it is marked.',
+  { h: '1. Political organization' },
+  '**Caral-Supe.** No weapons, walls, burnt buildings or mutilated skeletons are found: the cities do not seem to have been fortified. Archaeologists propose that power rested on **managing cotton, water and worship**: an elite of priest-administrators organized collective labour in exchange for religious protection and redistribution. But there may be weapons and war we do not see, and some warn that “no war” is a fragile conclusion. Some point to depictions of weapons at Sechín Bajo, further north, which complicates the picture.',
+  '**Olmec.** The colossal heads and basalt thrones suggest **powerful chiefs**, or rulers, with a hereditary elite, but we do not know whether there were kings, or how power was organized. San Lorenzo and La Venta were probably the centres of powerful **chiefdoms**, with networks of allies and dependants. When San Lorenzo fell, the monuments were deliberately broken up and buried: there may have been a revolt, a conquest or a rite of “closure”, and all of this is hypothesis.',
+  { img: 'olm-altar-4', leg: 'Altar 4 of La Venta (Monument 4): a figure seated in a niche, perhaps a ruler’s throne. Now in the Parque-Museo La Venta, Villahermosa.' },
+  { h: '2. Social classes' },
+  'In both civilizations the elite houses are larger and better built, and luxury offerings (jade, serpentine, shells) show differences in wealth. At Caral, the stone houses of the privileged lie near the ceremonial centres, and those of ordinary families, of cane and clay, in the surrounding areas. Among the Olmec, stone houses and the large workshops are concentrated in the centres, and the villages around were of farmers and fishers.',
+  { h: '3. Religion' },
+  '**Caral-Supe.** What can be seen are **platform temples**, sunken circular plazas and fires for offerings: objects were burned in the buildings, and the temples were periodically remodelled and buried under new phases, a pattern that would be repeated in the Andes for millennia. The “Staff God” figures and the images of frogs, snakes and birds, in the later phases, suggest a religion tied to **water** and animals.',
+  '**Olmec.** The best-known symbol is the so-called **“were-jaguar”**: figures with a down-turned mouth, the corners pointing down, and a cleft at the top of the head, which mix human and jaguar traits. A myth may have said that a woman and a jaguar had begotten a race of mythical beings, but this is a modern interpretation and a disputed one; others see babies here, or gods of rain or fertility. Also appearing are a **feathered serpent**, an **earth monster**, **maize** as a god and **jade** as a sacred substance.',
+  { img: 'olm-were-jaguar', leg: 'Olmec “were-jaguar” figure, with the down-turned mouth and the cleft in the forehead. A museum object; the interpretation is debated.' },
+  { tabela: { cab: ['Symbol / deity (modern name)', 'What it may represent', 'Where it appears'], linhas: [
+    ['Were-jaguar', 'Link between humans and jaguars; fertility, power; interpretation disputed', 'Sculptures, altars, jades'],
+    ['Serpent / Olmec “dragon”', 'Earth, water, the sky; tied to the ruler', 'Altars and reliefs at La Venta'],
+    ['Maize god (hypothesis)', 'Fertility, food', 'Figurines and jade axes'],
+    ['Staff God', 'Standing divine figure holding staffs; reappears at Chavín', 'Gourd from the Caral region (c. 2250 BC); later in the Andes'],
+    ['Frog / amphibian', 'Water and rain', 'Reliefs at Vichama'],
+    ['Condor, pelican, monkey', 'Sacred animals; appear on flutes and in reliefs', 'Instruments and reliefs at Caral and neighbouring sites']
+  ] } },
+  { h: '4. Economy' },
+  '**Caral-Supe.** What stands out most is the role of **cotton** (*Gossypium barbadense*): the valley’s farmers grew it to make **fishing nets** and clothing, and traded it for the fish and shellfish of the coast. **Michael Moseley’s** hypothesis (1975), of the “maritime foundations of Andean civilization”, held that fish, above all anchovy, sustained the first cities. Recent studies show, however, that the diet had **more plants** than was thought (beans, squash, sweet potato, fruit, **maize**), and that fish was only part of it. Construction used **shicra bags**: reed sacks full of stones, which served as fill, with the advantage of withstanding earthquakes.',
+  { img: 'olm-ia-shicra-construcao', leg: 'Reconstruction (AI illustration): workers filling reed bags (shicra) with stones to raise a building at Caral. A hypothetical reconstruction.' },
+  '**Olmec.** The base was **maize**, beans, squash and fish from the rivers and lagoons, supported by alluvial soils that gave abundant harvests. In the villages maize was processed with **lime** (nixtamalization), a technique that makes it nutritious and later spread across Mesoamerica; but for Olmec times there is still debate. Long-distance trade brought **basalt** from the mountains, **jade** from Guatemala and **obsidian** from hundreds of kilometres away, and carried **Olmec-style pottery** to distant regions. A 2005 study showed that part of the Olmec-style pottery found in Oaxaca had been made with San Lorenzo clay, proving real contacts.',
+  { img: 'olm-ia-aspero-pesca', leg: 'Reconstruction (AI illustration): fishers of Áspero casting cotton nets on the Pacific coast, c. 2500 BC. A hypothetical reconstruction.' },
+  { h: '5. Writing and record-keeping' },
+  '**Caral-Supe.** There is no writing in the sense we give the word. But Ruth Shady and others announced the discovery, at Caral, of **knotted cords** that seem to them primitive **quipus**, that is, a system of record-keeping by cords like the one the Incas used millennia later. The **date** (about 4,500 years) and the interpretation are **disputed**, and the find remains unique and undeciphered: it may have been accounting, a calendar or something else.',
+  { img: 'olm-quipu-inca', leg: 'An Inca quipu (knotted cords) in a museum, for comparison: it is much later, c. 15th–16th century AD, and is not a Caral quipu.' },
+  '**Olmec.** Here there are some signs, but few and debated. The **Cascajal block** (c. 1000 – 900 BC), a serpentine slab with **62 signs** (28 different), was found by workmen, out of context, which raised doubts; analyses in 2019 supported its authenticity, and it remains undeciphered. The **San Andrés object** (c. 650 BC) shows a bird and signs that may be writing. Later, the **Epi-Olmec** culture used the **Isthmian script**, at La Mojarra and on the Tuxtla Statuette, this partly deciphered. The **Long Count** of the calendar and the concept of **zero** are sometimes credited to the Olmec, but the oldest known dates (c. 36 and 32 BC) come from **after** the culture’s end, and the 260-day calendar appears first in Oaxaca (Zapotec, c. 600 BC).',
+  { img: 'olm-cascajal', leg: 'The Cascajal block, of serpentine, found in Veracruz, with its 62 signs. It may be the oldest writing in the Americas, or not: the debate is open.' },
+  { h: '6. Home, family and daily life' },
+  '**Caral-Supe.** Houses were of **quincha** (woven cane plastered with clay) or stone, with courtyards, and families slept on mats. There were no ceramic vessels, and **gourds** were used as containers, with cotton cloth and reed baskets. Cooking was by roasting on embers or on hot stones.',
+  { img: 'olm-ia-casa-caral', leg: 'Reconstruction (AI illustration): the interior of a quincha house at Caral, with mats, gourds and a stone hearth. A hypothetical reconstruction.' },
+  '**Olmec.** Houses were of wood, cane and clay, with thatched roofs, in villages on river banks and on clay platforms. There are tombs, but in acid, humid soils bones decay, and we know less than we would like. Women and men appear in sculptures with varied hair, headdresses and ornaments.',
+  { h: '7. Food' },
+  '**Caral-Supe.** Fish and shellfish (anchovies, sardines, mussels, clams), **squash**, **beans**, **sweet potato**, **maize**, fruit (guava, **lúcuma**, pacay). In the dry climate organic remains keep well, which is why scientists know so much about what they ate.',
+  '**Olmec.** **Maize** (in tortillas and drinks), **beans**, **squash**, **chilli**, fish, turtle and river birds, deer and dog. **Cacao** appears in Olmec phases or shortly after (the earliest evidence is c. 1900 BC on the Pacific coast, at Paso de la Amada), but its link to the Olmec is uncertain.',
+  { h: '8. Clothing' },
+  '**Caral-Supe.** **Cotton** cloth woven on simple looms, reed mats, necklaces of beads and shells. Textiles have survived less well than bones, but cords, threads and cotton nets do turn up.',
+  '**Olmec.** Sculptures show loincloths and capes, varied **headdresses** (hats, helmets, turbans) and large **earspools** and necklaces, which also appear in jade in the tombs. Some heads have “helmets” with ornaments: they may be ball-game protection, or rulers’ insignia.',
+  { h: '9. Music and games' },
+  '**Caral-Supe.** One of the most surprising finds is the **bone flutes**: thirty-two, mostly of **pelican bone**, some with figures of birds and other animals engraved, and several dozen cornets of deer and llama bone, found near the amphitheatre; a radiocarbon date gives about 2170 BC. It is proof of ritual music, perhaps ceremonies with song and dance.',
+  { img: 'olm-caral-flautas', leg: 'Bone (pelican) flute from Caral, with engraved figures, now in a museum in Peru: an instrument about 4,000 years old.' },
+  { img: 'olm-caral-anfiteatro', leg: 'The “amphitheatre” of Caral, a stepped-platform pyramid with a sunken circular plaza in front, used for ceremonies.' },
+  { img: 'olm-ia-anfiteatro-cerimonia', leg: 'Reconstruction (AI illustration): a ceremony with bone flutes and dance beside the amphitheatre of Caral. A hypothetical reconstruction.' },
+  '**Olmec.** The **ball game** with a **rubber ball** is associated with the civilizations of Mesoamerica. The earliest evidence is the **rubber balls of El Manatí** (c. 1600 BC), and the oldest known ball court (Paso de la Amada, Pacific) is not Olmec. At the Olmec sites themselves no unambiguous court has been identified. Sculptures of people with belts and head protection are often linked to the game, but the link is **debated**.',
+  { img: 'olm-ia-jogo-bola', leg: 'Reconstruction (AI illustration): a ball game with a rubber ball in a Gulf village, c. 1200 BC. A hypothetical reconstruction.' },
+  { h: '10. Science and knowledge' },
+  '**Caral-Supe.** There are signs of practical knowledge of **seismic engineering** (the *shicra* bags and sloping walls), of **irrigation** by canals and of **astronomy**: some structures appear aligned with the solstices, but the idea of Caral as “an observatory” is a debated hypothesis.',
+  '**Olmec.** The Mesoamerican **calendar** and numeration probably began in the region, but the oldest known dates are later and come from Zapotecs, Epi-Olmecs and Isthmian neighbours. **Complex A at La Venta** is oriented about 8° west of north, and the offerings of **iron-ore mirrors** (ilmenite, magnetite) suggest ritual use of polishing. The most important discovery, for the history of science, is that of **rubber**: the Olmec mixed the latex of *Castilla elastica* with the juice of the vine *Ipomoea alba* and obtained a quality rubber, a method rediscovered by studies in 1999.',
+  { img: 'olm-ia-borracha', leg: 'Reconstruction (AI illustration): extracting latex from a rubber tree and preparing the rubber with the juice of a vine. A hypothetical reconstruction.' },
+  { h: '11. Technology and construction' },
+  '**Caral-Supe.** **Stone** buildings (quarried and river cobbles) plastered with clay, on fills held by *shicra* bags, in an environment of frequent earthquakes. No metal, no wheel, no pottery.',
+  '**Olmec.** The greatest talent was in **stone sculpture**: basalt, serpentine, jade, all without metal, using stone hammers, sand and abrasives. They also built in **earth** (fills and clay pyramids, such as La Venta’s) and in **stone** (the drains of San Lorenzo, basalt columns). We lack descriptions of how it was done: most of what is said about transport and working is reconstruction.',
+  { h: '12. War' },
+  '**Caral-Supe.** Apparently almost without war, as said. At Vichama, the setting is one of famine and ritual, not combat. **Olmec.** There are figures of prisoners and armed men and scenes of domination in the reliefs (at Chalcatzingo and elsewhere), but the picture is unclear. The mutilation and deliberate burial of the monuments of San Lorenzo c. 900 BC may be a sign of internal or external conflict, but, as said, it is only hypothesis.'
+];
+
+const personalidades = [
+  'No name of a ruler, priest or artist of Caral or of the Olmec has come down to us: there are no texts to give one. The figures below are therefore mostly **researchers** who rediscovered these cultures and shaped the debate. At the end there are also the **nameless rulers**, whose features we may see in the colossal heads.',
+  { h: 'Ruth Shady Solís (b. 1946)' },
+  'Peruvian archaeologist at the National University of San Marcos, in Lima. She recognized the scale of Caral from 1994 and has directed the excavations since the second half of the 1990s. She argues that Caral is the **oldest civilization in the Americas** and has devoted her life to studying and protecting the site, a fight that includes illegal land occupations. In 2001 she published, with Haas and Creamer, the dating of Caral in the journal *Science*; later she had a public dispute over the credit for the work. She also directs the excavations at Vichama and Peñico.',
+  { img: 'olm-ruth-shady', leg: 'The Peruvian archaeologist Ruth Shady Solís, who has directed the Caral project since the 1990s.' },
+  { h: 'Paul Kosok (1896 – 1959)' },
+  'American historian and explorer, known for his study of the **Nazca lines**. In 1948 he visited the Supe valley and described the great mounds of Caral, but did not grasp their significance, and only half a century later was the site studied as it deserved.',
+  { h: 'Julio C. Tello (1880 – 1947)' },
+  'The “father of Peruvian archaeology”. He excavated **Chavín de Huántar** and argued that this culture was the “matrix culture” of the Andes. His thesis has a parallel in Caso’s for the Olmec, and it too was revised when Caral and other older cultures were discovered.',
+  { h: 'Michael E. Moseley' },
+  'American archaeologist. In 1975 he proposed the hypothesis of the **“maritime foundations of Andean civilization”**: that the abundant fishing of the Pacific, above all anchovy, allowed the first complex societies to form. It was much debated and continues to be refined in light of diet studies.',
+  { h: 'Jonathan Haas and Winifred Creamer' },
+  'American archaeologists who, with Shady, published in 2001 the first radiocarbon dates of Caral and who studied the Norte Chico for years. They argued that the region was broader and denser than had been supposed, and supported the hypothesis of the role of cotton and irrigation.',
+  { h: 'José Melgar y Serrano (19th century)' },
+  'Mexican naturalist and scholar. He studied the colossal head found in 1862 near Tres Zapotes and published a description of it in 1869, in a document considered the first scientific record of an Olmec piece. He wrongly thought it represented a person of African origin, an idea now rejected.',
+  { h: 'Matthew Stirling (1896 – 1975)' },
+  'American archaeologist. Between 1938 and 1946, with support from the National Geographic Society and the Smithsonian, he excavated Tres Zapotes, La Venta and San Lorenzo, and was the first to argue that the Olmec formed a very ancient civilization. He found the lower half of **Stela C**, with the date of 32 BC.',
+  { h: 'Alfonso Caso (1896 – 1970)' },
+  'Mexican archaeologist who excavated **Monte Albán** from 1931 and defined the ceramic sequence of Oaxaca. In 1942, at a congress, he declared the Olmec the **“mother culture”** of Mesoamerica, a phrase that shaped the debate for decades.',
+  { h: 'Miguel Covarrubias (1904 – 1957)' },
+  'Mexican artist and anthropologist. He studied **Olmec art** and argued for the Olmec origin of many Mesoamerican symbols, the jaguar in particular. His illustrations helped fix the popular image of the culture.',
+  { h: 'Michael D. Coe (1929 – 2019)' },
+  'American archaeologist at Yale University. With Richard Diehl he directed the excavation of **San Lorenzo** in 1966–68 and defined the phases of occupation. He wrote influential books on the Olmec and the Maya.',
+  { h: 'Ann Cyphers' },
+  'Archaeologist at UNAM (Mexico). Since 1990 she has directed the research project at **San Lorenzo**, and has shown the scale of the plateau, the drains and the workshops, and the daily life of elites and commoners.',
+  { h: 'Kent Flannery and Joyce Marcus' },
+  'American archaeologists who studied **San José Mogote** (Oaxaca). They were the leading defenders of the idea that the Olmec were a **“sister” culture** rather than a “mother”: the development of elites in Oaxaca, they argue, is independent, with exchange of goods and ideas between equals.',
+  { h: 'Carlos Pellicer Cámara (1897 – 1977)' },
+  'Mexican poet and museum-maker, born in Tabasco. In the 1950s he saved the monuments of La Venta from destruction by the oil industry, moving them to the **Parque-Museo La Venta** in Villahermosa, which he designed.',
+  { h: 'Rebecca González Lauck' },
+  'Mexican archaeologist (INAH). From the 1980s she directed the **La Venta** project: she mapped the site and promoted protection measures.',
+  { h: 'The nameless rulers' },
+  'The **colossal heads** are taken to be **portraits of rulers** (each face is different, and the “helmets” have their own ornaments), and perhaps some were cut from reused **thrones** after the chief’s death. At Caral, the absence of portraits and names makes the elites more anonymous still. To honour these people is to remember that the history of humankind was written mostly by people whose names we never knew.'
+];
+
+const legado = [
+  { h: 'What they left us' },
+  { lista: [
+    '**Caral-Supe:** the idea that one can have **a city and monuments without pottery**; the Andean model of the **platform temple** remodelled and buried; collective labour and **irrigation**; the possible origin of **quipus**; the bone flutes; the figure of the **Staff God**, which reappears at Chavín and in the Andes.',
+    '**Olmec:** the **style** of monumental stone sculpture; the idea of the **ceremonial centre** with plaza and pyramid; **jade** as a symbol of power; **rubber** and the **ball game**; religious symbols (the jaguar, the serpent, maize) that run through Mesoamerica; and, for some, the first steps of Mesoamerican **writing** and the **calendar**.',
+    '**The two debates:** on the “mother culture” (Olmec and Chavín), the present view is of **several cultures in contact**, with influences in all directions, and the exact role of each is open.'
+  ] },
+  { h: '“Mother culture” or “sister culture”?' },
+  'In 1942, Alfonso Caso and others argued that the Olmec had given rise to Mesoamerica, and Julio Tello thought the same of Chavín in the Andes. Today most archaeologists are more cautious. There are arguments **for Olmec influence**: the art style and symbols appear throughout Mesoamerica between 1200 and 600 BC, and in 2005 a study of pottery showed that Olmec-style pieces in Oaxaca came from San Lorenzo clay. And there are arguments **against**: there is older pottery, villages, irrigation canals and architecture outside the Gulf (Pacific Chiapas, the Valley of Mexico, Oaxaca), and the Oaxaca elite developed on its own. Hence the idea, from Flannery and Marcus, of **“sister cultures”**, which exchanged goods and ideas.',
+  'In the Andes something similar happens: **Caral is more than a thousand years older than Chavín**, and already has platform temples, sunken plazas and staff gods, which shows that the idea of a single “matrix culture” is too simple.',
+  { img: 'olm-chavin-lanzon', leg: 'The Lanzón of Chavín de Huántar, a granite monolith about 4.5 m tall, at the centre of the temple’s underground galleries.' },
+  { img: 'olm-chavin-raimondi', leg: 'The Raimondi Stela, from Chavín de Huántar, with the figure of the “Staff God”; museum in Lima.' },
+  { img: 'olm-danzante', leg: 'A “danzante” from Monte Albán (Oaxaca): a relief of a contorted figure, from c. 500 BC onwards, showing the link with the Olmec world.' },
+  { h: 'Art: basalt and jade' },
+  'Olmec art is, above all, **sculpture**. The largest pieces are the **colossal heads**: 17 have been found (10 at San Lorenzo, 4 at La Venta, 2 at Tres Zapotes and 1 at Rancho La Cobata), **between about 1.2 and 3.4 m** high and weighing **from some 6 to about 40 tonnes**. The features are realistic: broad nose, thick lips, eyes, each one different, with helmets. There are also **altars** (perhaps thrones), stelae, **statuettes** of jade and serpentine and **masks**. Small jade **axes** (“celts”) and figures with baby faces are typical.',
+  { img: 'olm-cabeca-san-lorenzo', leg: 'Olmec colossal head from San Lorenzo, now in the Museum of Anthropology in Xalapa (Veracruz), with helmet and individualized features.' },
+  { img: 'olm-cabeca-la-venta', leg: 'Colossal head from La Venta (Monument 1), now in the Parque-Museo La Venta, Villahermosa, Tabasco.' },
+  { img: 'olm-senhor-limas', leg: 'The statue of the “Señor de las Limas”, a seated figure with a jaguar baby on his lap, from c. 1000 BC onwards; now in the Xalapa museum.' },
+  { img: 'olm-oferenda-4', leg: 'Offering 4 at La Venta: small jade and granite figures arranged facing a row of axes. National Museum of Anthropology, Mexico City.' },
+  { img: 'olm-mascara-jade', leg: 'Jade mask in Olmec style, with the down-turned mouth; museum.' },
+  { h: 'How were the heads transported?' },
+  'The basalt came from the slopes of the volcano **Cerro Cintepec**, in **Los Tuxtlas**, some tens of kilometres from San Lorenzo and over 100 km from La Venta (distances vary by source); the Tres Zapotes ones come from Cerro el Vigía, nearer. The blocks, weighing many tonnes, were brought without wheels or pack animals. There are two main hypotheses: **by water**, on great log rafts, along the rivers and the coast, and **by land**, dragged on sledges, rollers and ropes, by many people. Either would have required **hundreds of people for months** for each head (estimates vary). The two methods were probably combined, and there is **no direct evidence**, nor any ancient depiction of the transport.',
+  { img: 'olm-ia-transporte-cabeca', leg: 'Reconstruction (AI illustration): transporting a block of basalt on a great log raft on a Gulf river. A hypothetical reconstruction.' },
+  { img: 'olm-ia-escultor', leg: 'Reconstruction (AI illustration): sculptors carving a colossal head with stone hammers beside an Olmec village. A hypothetical reconstruction.' },
+  { h: 'Architecture' },
+  '**Caral-Supe:** stepped **stone** pyramids, central stairs, **sunken circular plazas**, residential districts, all on the same axis, and the technique of **shicra bags**. **Olmec:** buildings of **earth** and clay, with **platforms**, a “plaza” and an axis, **basalt** columns and stone drains, plus a Great Pyramid at La Venta. In both cases, the concept of a ceremonial centre with **axis and plaza** marks all the later cultures of the region.',
+  { h: 'Where to see what remains' },
+  { lista: [
+    '**Peru:** the **Caral Archaeological Zone** (UNESCO World Heritage, about 180 km north of Lima; a day trip), and, in the region, **Áspero**, **Vichama** and **Peñico** (opened in 2025). In Lima, the **National Museum of Archaeology, Anthropology and History of Peru** holds the Raimondi Stela.',
+    '**Mexico:** the **Museum of Anthropology in Xalapa** (Veracruz) is the best place to see several colossal heads, the Señor de las Limas and pieces from San Lorenzo; the **Parque-Museo La Venta**, in Villahermosa (Tabasco), has heads, altars and stelae from La Venta in the open air; the **National Museum of Anthropology** in Mexico City has the jade pieces and Offering 4. There are small museums at **San Lorenzo** and **Tres Zapotes**, and **Monte Albán** (Oaxaca) has been a World Heritage Site since 1987.'
+  ] },
+  { h: 'The rediscovery' },
+  'The Olmec were “lost” for two thousand years. The name only arrived with the Tres Zapotes head (found in 1862) and the **idea of a civilization** with Stirling’s excavations (1938–46); radiocarbon, in the 1950s, showed they were much older than the Classic Maya. Caral was seen by Kosok in 1948 and **only recognized** as a city in the 1990s, after **Ruth Shady**. Radiocarbon (2001) showed it was contemporary with the pyramids of Egypt; UNESCO listed it in 2009. Discoveries continue: LiDAR (laser scanning from the air) has revealed unknown complexes, such as **Aguada Fénix**, and new Andean sites have been opened to the public.',
+  { h: 'What we still do not know' },
+  { lista: [
+    'What these peoples called themselves, and what languages they spoke.',
+    'Whether Caral is **really** the oldest city in the Americas (there are sites with even older dates), and whether the Caral quipu is truly a quipu.',
+    'Whether the Olmec invented writing and the calendar, or whether it was the Zapotecs and others.',
+    'Who the colossal heads portray and how they were transported.',
+    'Why Caral ended (climate? rivers? earthquakes?) and San Lorenzo and La Venta (rivers? volcanoes? revolts?).'
+  ] }
+];
+
+const quiz = [
+  { p: 'Who has directed the excavations of the Caral civilization, in Peru, since the 1990s?', op: ['Julio C. Tello', 'Ruth Shady', 'Paul Kosok', 'Michael Coe'], certa: 1, exp: 'Ruth Shady, a Peruvian archaeologist at the University of San Marcos, recognized the scale of Caral from 1994 and leads the project.' },
+  { p: 'Roughly when did Caral flourish?', op: ['c. 6000 BC', 'c. 2600 – 2000 BC', 'c. 1000 BC', 'c. AD 500'], certa: 1, exp: 'Radiocarbon dates give about 2600 to 2000 BC for the peak of Caral, in the time of the pyramids of Egypt.' },
+  { p: 'Which of these is NOT found at Caral?', op: ['Stone pyramids', 'Sunken circular plazas', 'Pottery', 'Bone flutes'], certa: 2, exp: 'Caral is a “preceramic” society: it did not make vessels of fired clay.' },
+  { p: 'What were the flutes found at Caral made of?', op: ['Wood', 'Bone (mostly pelican)', 'Fired clay', 'Copper'], certa: 1, exp: 'Thirty-two bone flutes were found, most of them of pelican, beside the amphitheatre.' },
+  { p: 'What was cotton used for in the Supe valley, according to archaeologists?', op: ['Only luxury clothing', 'Fishing nets, traded for coastal fish', 'Metal money', 'Fuel'], certa: 1, exp: 'Cotton from the interior was used, among other things, for fishing nets; coastal fishers gave fish and shellfish in return.' },
+  { p: 'What are shicra bags?', op: ['Musical instruments', 'Reed sacks filled with stones, used in construction', 'The first quipus', 'Fishing boats'], certa: 1, exp: 'Shicra were reed sacks that filled the fills and helped buildings withstand earthquakes; they were also used to date Caral.' },
+  { p: 'What does “Olmec” mean in its original sense?', op: ['People of the jaguar', 'Rubber people', 'Children of the Sun', 'Lords of maize'], certa: 1, exp: '“Olmec” comes from Nahuatl and means “rubber people”; the name was given by mistake to much older peoples.' },
+  { p: 'What was the first great Olmec capital?', op: ['La Venta', 'Tres Zapotes', 'San Lorenzo', 'Monte Albán'], certa: 2, exp: 'San Lorenzo was the great city of Mesoamerica c. 1200 – 900 BC; La Venta succeeded it.' },
+  { p: 'How many Olmec colossal heads are known?', op: ['3', '9', '17', '40'], certa: 2, exp: 'Seventeen are known: 10 at San Lorenzo, 4 at La Venta, 2 at Tres Zapotes and 1 at Rancho La Cobata.' },
+  { p: 'Where did the basalt for the colossal heads come from?', op: ['The mountains of Los Tuxtlas', 'The Andes', 'The sea', 'Guatemala'], certa: 0, exp: 'The basalt was quarried on volcanoes in Los Tuxtlas, tens of kilometres from the sites, and transported by water and/or by land.' },
+  { p: 'What is the “were-jaguar”?', op: ['A ball game', 'A figure mixing human and jaguar traits', 'A type of pottery', 'A king of La Venta'], certa: 1, exp: 'It is the typical image of Olmec art, with a down-turned mouth and a cleft in the head; its meaning is debated.' },
+  { p: 'What is the Cascajal block?', op: ['A colossal head', 'A serpentine slab with 62 signs, perhaps the oldest writing in the Americas', 'A quipu from Caral', 'A map of La Venta'], certa: 1, exp: 'It was found in Veracruz and dated to c. 1000 – 900 BC; its reading and its status as “writing” are debated.' },
+  { p: 'What Long Count date does Stela C at Tres Zapotes bear?', op: ['32 BC', '1000 BC', 'AD 500', 'AD 1862'], certa: 0, exp: 'Stela C at Tres Zapotes gives 7.16.6.16.18, or 3 September 32 BC, already in the Epi-Olmec period.' },
+  { p: 'What debate divides Alfonso Caso from Flannery and Marcus?', op: ['Whether Caral is older than Chavín', 'Whether the Olmec were a “mother culture” or a “sister culture”', 'Whether the heads are of stone or clay', 'Whether jade came from China'], certa: 1, exp: 'Caso called them the “mother culture” in 1942; Flannery and Marcus argue for “sister” cultures, developing in parallel.' },
+  { p: 'Which Andean culture, c. 900 – 200 BC, is famous for the Lanzón and the “Staff God”?', op: ['Chavín de Huántar', 'Nazca', 'Moche', 'Inca'], certa: 0, exp: 'Chavín de Huántar, in the Andes, was a great religious centre more than a thousand years after Caral; hence the “matrix culture” idea is open to question.' }
+];
+
+export default { visao, linha, mapa, sociedade, personalidades, legado, quiz };
