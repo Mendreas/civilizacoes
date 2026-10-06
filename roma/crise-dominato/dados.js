@@ -1,0 +1,416 @@
+// CRISE, DOMINATO E QUEDA (193–476 d.C.) — conteúdo completo em português. A versão inglesa está em dados-en.js (mesma estrutura).
+// Convenções: datas na cronologia tradicional (193 Septímio Severo; 284 Diocleciano; 476 deposição de Rómulo Augústulo); números de efetivos, população e preços são estimativas.
+// Imagens: cada {img:'id'} procura o ficheiro  roma/crise-dominato/img/id.jpg  (ver IMAGENS_ROMA_CRISE_DOMINATO.md).
+import EN from './dados-en.js';
+import CRED from './creditos.js';
+import { GRUPO } from '../grupo.js';
+
+const visao = [
+  { caixa: 'Em resumo', texto: [
+    'Esta página conta os **283 anos que separam a subida ao poder de Septímio Severo (193 d.C.) da deposição de Rómulo Augústulo (476 d.C.)**. É a época em que o Império Romano passou da paz relativa do século II para uma crise de meio século (235–284), foi reconstruído por imperadores de origem militar, mudou de religião, de capital e de modo de governar, e acabou, no Ocidente, por se desfazer em reinos governados por chefes germânicos.',
+    'O quadro geral é este: depois dos Severos (193–235), o Império quase se desfez durante a **Crise do século III**, com guerras civis, invasões, peste e inflação; **Diocleciano** (284–305) reorganizou-o com a **Tetrarquia**; **Constantino** (306–337) venceu as guerras civis, protegeu o cristianismo e fundou **Constantinopla**; **Teodósio I** (379–395) fez do cristianismo niceno a religião oficial e foi o último a governar o Império inteiro; e, ao longo do século V, o Ocidente perdeu as províncias uma a uma. **O Oriente não caiu**: continuou, com capital em Constantinopla, até 1453 (o futuro Império Bizantino, que terá a sua própria página).'
+  ] },
+  { img: 'rcd-mapa-divisao-395', leg: 'Divisão do Império Romano em 395: Ocidente a verde (1) e Oriente a rosa (2).' },
+  { h: 'Quando e onde' },
+  'No início desta época (193 d.C.), o Império ia da Britânia ao Eufrates e do Reno e do Danúbio ao Saara, com talvez 50 a 60 milhões de habitantes (estimativa; os números são muito incertos). Em 476, o poder do imperador do Ocidente resumia-se, na prática, à Itália. Os historiadores dividem o período em fases, cujos limites são convenções:',
+  { tabela: { cab: ['Fase', 'Datas', 'O que a marca'], linhas: [
+    ['Os Severos', '193 – 235', 'Dinastia de origem africana e síria; exército reforçado; cidadania alargada em 212; fim com o assassínio de Severo Alexandre.'],
+    ['Crise do século III', '235 – 284', 'Mais de 20 imperadores reconhecidos (e muitos mais usurpadores); Impérios Gaulês e de Palmira; invasões; peste; colapso da moeda.'],
+    ['Diocleciano e a Tetrarquia', '284 – 312', 'Reorganização do Estado, do exército e dos impostos; quatro governantes; Grande Perseguição aos cristãos (303 – 311).'],
+    ['Constantino e os seus filhos', '306 – 361', 'Reunificação, cristianização, Niceia (325), Constantinopla (330), solidus.'],
+    ['Juliano, Valentiniano e Teodósio', '361 – 395', 'Restauração pagã falhada (361 – 363); Adrianópolis (378); Édito de Tessalónica (380); última unidade (394 – 395).'],
+    ['O fim do Ocidente', '395 – 476', 'Godos, vândalos, hunos; saque de Roma (410); perda de África e Hispânia; deposição de Rómulo Augústulo (476).']
+  ] } },
+  { img: 'rcd-constantino-colosso', leg: 'Cabeça do colosso de Constantino, Museus Capitolinos, Roma.' },
+  { h: 'O que mudou: do Principado ao Dominato' },
+  'Os historiadores chamam **Principado** ao regime criado por Augusto (27 a.C.), em que o imperador era o *princeps*, o «primeiro cidadão», e mantinha a aparência de respeitar o Senado. A partir de Diocleciano, fala-se de **Dominato** (de *dominus*, «senhor»), um regime assumidamente monárquico, com cerimonial de corte, diadema, burocracia numerosa e um imperador que era saudado de joelhos. A expressão é **moderna** e simplifica: as duas fases têm muito em comum, e a mudança foi gradual, começando muito antes de Diocleciano.',
+  { h: 'As grandes transformações' },
+  { lista: [
+    '**Política:** o poder passa do Senado e das famílias de Roma para o exército, para os generais e para a corte. O imperador raramente vive em Roma: reside perto das fronteiras, em Tréveris, Milão, Sírmio, Nicomédia e, depois, Constantinopla e Ravena.',
+    '**Administração:** o Estado cresce em funcionários, províncias (mais de 100, mais pequenas) e impostos pagos em géneros e em ouro. A separação entre poder civil e militar reforça-se.',
+    '**Economia:** a moeda de prata perde quase todo o seu valor no século III; a reforma de Diocleciano e o ouro de Constantino estabilizam-na, mas a carga fiscal pesa sobre os camponeses e as cidades.',
+    '**Religião:** o cristianismo passa de religião perseguida a religião tolerada (313), favorecida (Constantino) e oficial (380). As religiões tradicionais perdem apoio do Estado.',
+    '**Fronteiras:** a pressão de godos, alamanos, francos, persas sassânidas e, depois, hunos exige exércitos móveis e acordos com povos que passam a viver dentro do Império.',
+    '**Geografia:** o centro de gravidade desloca-se para o Oriente, mais populoso e rico, onde fica a nova capital.'
+  ] },
+  { img: 'rcd-tetrarcas-veneza', leg: 'Os quatro tetrarcas em pórfiro, junto à Basílica de São Marcos, Veneza.' },
+  { h: 'Uma «queda»?' },
+  'A «queda de Roma» é uma expressão cómoda, mas enganadora. Em 476 não houve um dia em que o Império «acabasse»: um general germânico, Odoacro, depôs um rapaz adolescente (a idade exata não se sabe) e enviou as insígnias imperiais para Constantinopla. A vida nas cidades, o direito, o latim e a Igreja continuaram, e muitos contemporâneos nem terão notado uma rutura. Há historiadores que preferem falar de **transformação** e de **Antiguidade Tardia**; outros sublinham a **violência e o empobrecimento** reais. Esta página tenta mostrar as duas coisas.',
+  { caixa: 'O 476 é uma convenção', texto: 'A data de 476 foi consagrada pelos historiadores, mas as fontes da época são menos taxativas. **Júlio Nepos**, o imperador do Ocidente reconhecido por Constantinopla, continuou a reclamar o título na Dalmácia até ser assassinado em **480**, e o próprio Odoacro governou formalmente em nome do imperador do Oriente, Zenão. O Império Romano do Oriente prosseguiu até **1453**, e os seus habitantes chamavam-se «romanos».' },
+  { img: 'rcd-muralhas-aureliano', leg: 'Porta San Sebastiano, nas Muralhas Aurelianas de Roma; estado atual com alterações posteriores.' },
+  { h: 'Porque importam' },
+  { lista: [
+    '**O cristianismo na Europa:** foi nesta época que uma religião minoritária se tornou a religião do Estado, com consequências para toda a história europeia.',
+    '**Um modelo de Estado:** a burocracia, a fiscalidade e a divisão em províncias e dioceses do Baixo Império marcaram a administração da Igreja e dos reinos medievais.',
+    '**As origens da Europa medieval:** os reinos godo, franco, vândalo, suevo e burgúndio surgiram dentro das fronteiras romanas e herdaram o latim, o direito e a Igreja.',
+    '**Portugal:** o território foi nesta época a província da Lusitânia e da Galécia, com cidades como Mérida e Braga, *villae* ricas e, a partir de 409, a chegada de suevos, vândalos e alanos e, mais tarde, de visigodos.',
+    '**Lições sobre crises:** inflação, guerra civil, pressão nas fronteiras e peste fazem desta época um caso muito estudado de resiliência e de colapso.'
+  ] },
+  { h: 'O Império no fim: Ocidente e Oriente' },
+  'A partir de 395, os dois filhos de Teodósio, **Arcádio** (Oriente) e **Honório** (Ocidente), governaram partes separadas, ainda que formalmente de um só Império. O Oriente tinha mais população, mais cidades, mais impostos e uma capital quase inexpugnável; o Ocidente, mais pobre e mais exposto, perdeu em sucessivas décadas a Britânia, a Gália, a Hispânia e a África. O Império Romano do Oriente teve ainda séculos de história, incluindo as conquistas de Justiniano (533 – 554), mas **tem a sua própria página** e não é contado aqui em detalhe.',
+  { img: 'rcd-solido-romulo-augustulo', leg: 'Sólido de ouro de Rómulo Augústulo, 475–476.' },
+  { caixa: 'Hoje', texto: 'Desta época sobrevivem o **Arco de Constantino**, as **Termas de Caracala**, as **Muralhas Aurelianas**, o **Palácio de Diocleciano** em Split (ainda uma parte viva da cidade) e as muralhas de Constantinopla. Em Portugal, as muralhas tardias de **Conímbriga**, as *villae* de São Cucufate, Milreu, Torre de Palma ou Rabaçal e os achados de **Mértola**, **Tróia** e **Braga** contam o século IV e V na Lusitânia e na Galécia.' }
+];
+
+const linha = [
+  'Esta linha do tempo segue os acontecimentos principais de 193 a 480. As datas são as convencionais; quando divergem entre as fontes, assinala-se. Para a época anterior, veja a página sobre o Alto Império; para o que vem depois no Oriente, o futuro Império Bizantino.',
+  { linha: [
+    { d: '193 d.C.', t: 'O «ano dos cinco imperadores»', x: 'Depois do assassínio de Cómodo (31 de dezembro de 192), Pertinax é morto em março; **Dídio Juliano** compra o trono aos pretorianos; três generais, **Septímio Severo** (Panónia), **Pescénio Níger** (Síria) e **Clódio Albino** (Britânia), são aclamados pelas suas legiões. Severo ocupa Roma e dissolve a guarda pretoriana, que recompõe com os seus soldados.' },
+    { d: '194 – 211 d.C.', t: 'Vitória nas guerras civis, guerra parta e morte de Severo', x: 'Derrota Níger em **Isso** (194) e Albino em **Lugdunum** (Lyon, 197), funda a **dinastia dos Severos** (193 – 235), eleva o soldo das legiões e cria três novas, as *Parthicae*. Em 198, tropas romanas tomam **Ctesifonte**, a capital parta. Severo, nascido em Leptis Magna (hoje Líbia), faz campanha na Britânia a partir de 208 e morre em **Eboracum** (York) a 4 de fevereiro de 211, deixando o Império aos filhos Caracala e Geta.' }
+  ] },
+  { img: 'rcd-severos-tondo', leg: 'Tondo severiano, Altes Museum, Berlim; o rosto de Geta foi apagado.' },
+  { linha: [
+    { d: '212 d.C.', t: 'Constitutio Antoniniana', x: 'Caracala, que mandara matar o irmão Geta no fim de 211, concede a cidadania romana à grande maioria dos habitantes livres do Império (com exceções, como os *dediticii*). As razões (fiscais? simbólicas?) são debatidas.' }
+  ] },
+  { img: 'rcd-caracala-busto', leg: 'Busto Farnese de Caracala, Museu Arqueológico Nacional de Nápoles.' },
+  { linha: [
+    { d: '216 – 235 d.C.', t: 'Termas de Caracala e fim dos Severos', x: 'As **Termas de Caracala** são inauguradas em 216. Caracala é assassinado em 217, a caminho da Pártia; seguem-se **Macrino**, **Heliogábalo** (218 – 222) e **Severo Alexandre** (222 – 235), que é morto pelos seus soldados, com a mãe, junto a Mogúncia (Mainz), na fronteira do Reno. Em 224, na Pérsia, nasce o **Império Sassânida**, mais forte do que o parto.' },
+    { d: '235 – 248 d.C.', t: 'Os «imperadores-soldados» e os mil anos de Roma', x: 'Maximino Trácio (235 – 238), oficial de origem trácia, é o primeiro de uma série de imperadores aclamados pelas tropas. Em 238, o «**ano dos seis imperadores**»: Gordiano I e II (em África), Pupieno e Balbino (nomeados pelo Senado) e Gordiano III. Em 248, Filipe, o Árabe, celebra com jogos o milenar da cidade (753 a.C., segundo a tradição), já com o Império sob pressão nas fronteiras.' },
+    { d: '249 – 251 d.C.', t: 'Décio e Abritus', x: 'Em 250, Décio ordena que todos os habitantes sacrifiquem aos deuses tradicionais, o que causa a primeira perseguição geral aos cristãos. No verão de 251 morre na batalha de **Abritus** (hoje na Bulgária) contra os godos, apontado muitas vezes como o primeiro imperador romano a morrer em combate contra um inimigo estrangeiro. Desde c. 249 – 251 a «**peste de Cipriano**» assola o Império.' },
+    { d: '253 – 260 d.C.', t: 'Valeriano e Galieno; Valeriano capturado', x: 'Valeriano e o filho **Galieno** governam juntos. Em 260, Valeriano é derrotado e capturado pelo xá **Sapor I**, junto a Edessa: um desastre sem paralelo. A tradição romana hostil diz que foi humilhado até à morte; sabemos apenas que morreu em cativeiro, e o triunfo de Sapor foi gravado em Naqsh-e Rustam.' }
+  ] },
+  { img: 'rcd-shapur-valeriano-relevo', leg: 'Relevo de Naqsh-e Rustam: Sapor I, Valeriano capturado e Filipe, o Árabe, ajoelhado.' },
+  { linha: [
+    { d: '260 – 274 d.C.', t: 'O Império Gaulês', x: 'Em 260, **Póstumo** proclama-se imperador na Gália e controla a Gália, a Britânia e, durante algum tempo, a Hispânia; governa até 269, mas o Império Gaulês dura até 274. Não pretendia criar um Estado separado: copiava as instituições romanas, com o seu próprio senado e cônsules. Os francos, entretanto, devastam a Tarraconense (c. 260).' },
+    { d: '267 – 273 d.C.', t: 'O reino de Palmira', x: 'Depois do assassínio de **Odenato**, a sua viúva **Zenóbia** governa Palmira em nome do filho Vabalato e, a partir de 270, ocupa o Egito e partes da Ásia Menor. Proclama-se *Augusta* em 271 – 272.' },
+    { d: '268 – 270 d.C.', t: 'Os imperadores ilírios', x: 'Galieno é assassinado em 268 diante de Milão. **Cláudio II «Gótico»** vence os godos em **Naísso** (268 ou 269) e morre da peste em 270. Seguem-se **Aureliano** e **Probo**, oficiais de origem balcânica, que salvam o Império.' },
+    { d: '271 – 275 d.C.', t: 'Aureliano reunifica o Império', x: 'Constrói as **Muralhas Aurelianas** em Roma (c. 271 – 275) e abandona a província da **Dácia** (c. 271 – 275). Derrota Zenóbia (272) e o Império Gaulês (274, Châlons). Em 274 dedica o templo do **Sol Invictus** e reforma a moeda. É assassinado em 275 por oficiais, na Trácia. Fica com o título de *Restitutor Orbis*.' }
+  ] },
+  { img: 'rcd-mapa-crise-271', leg: 'Mapa do Império Romano c. 271: Império Gaulês, domínio central e Palmira.' },
+  { linha: [
+    { d: '284 – 285 d.C.', t: 'Diocleciano chega ao poder', x: 'Aclamado a 20 de novembro de 284 pelo exército, perto de Nicomédia, Diocleciano derrota **Carino** na batalha do Margo (285) e fica sozinho no poder.' },
+    { d: '286 – 293 d.C.', t: 'Da diarquia à Tetrarquia', x: 'Em 286, Diocleciano nomeia **Maximiano** como Augusto. A 1 de março de 293 acrescentam-se dois Césares, **Galério** e **Constâncio Cloro**. Cada um tem uma capital (Nicomédia, Milão, Sírmio, Tréveris). Entre 286 e 296, a Britânia esteve nas mãos dos usurpadores Caráusio e Alecto.' },
+    { d: '301 d.C.', t: 'Édito sobre os preços máximos', x: 'Diocleciano fixa por lei preços máximos de mais de mil artigos e salários, com pena de morte. A tentativa de travar a inflação falhou e foi abandonada, mas as cópias gravadas em pedra que se encontraram (Afrodísias, Estratonceia) são uma fonte única.' },
+    { d: '303 – 311 d.C.', t: 'A Grande Perseguição', x: 'A 23 de fevereiro de 303 é destruída a igreja de Nicomédia; seguem-se éditos que mandam queimar livros sagrados e exigir sacrifícios. A violência foi mais forte no Oriente do que no Ocidente. A 30 de abril de 311, Galério, doente, publica um **édito de tolerância**.' },
+    { d: '305 – 306 d.C.', t: 'Abdicação e nova guerra civil', x: 'A 1 de maio de 305, Diocleciano e Maximiano abdicam. Em julho de 306, morre Constâncio em York, e as tropas aclamam o filho, **Constantino**. Em Roma, **Maxêncio** é aclamado em outubro. O sistema tetrárquico desmorona-se numa série de guerras.' },
+    { d: '312 d.C.', t: 'Ponte Mílvia e acordo de Milão', x: 'A 28 de outubro, Constantino derrota Maxêncio junto a Roma e este morre afogado no Tibre. Segundo **Lactâncio** e **Eusébio**, Constantino teve uma visão ou sonho que o levou a pôr o sinal cristão nos escudos; as duas versões diferem e o episódio é debatido. Constantino dissolve a guarda pretoriana. Em 313, com **Licínio**, acorda em Milão conceder liberdade de culto a todos, incluindo os cristãos; o texto que se chama «Édito de Milão» foi, de facto, uma carta ou conjunto de cartas, e o termo «édito» é discutido.' }
+  ] },
+  { img: 'rcd-ponte-milvio-batalha', leg: 'Ilustração gerada por IA. Batalha da Ponte Mílvia, 312: interpretação artística.' },
+  { linha: [
+    { d: '324 – 325 d.C.', t: 'Constantino reunifica o Império; Niceia', x: 'Constantino vence Licínio em Adrianópolis e em **Crisópolis** (setembro de 324) e governa sozinho. Em 325 convoca o **Concílio de Niceia**, o primeiro concílio ecuménico, que condena o arianismo e produz um credo.' },
+    { d: '330 – 337 d.C.', t: 'Constantinopla e morte de Constantino', x: 'A 11 de maio de 330 Constantino inaugura a «Nova Roma» no local da antiga **Bizâncio**, no Bósforo. Na mesma época se generaliza o **sólido** de ouro, de cerca de 4,5 g, que durará séculos. Constantino, batizado pouco antes de morrer (22 de maio de 337, perto de Nicomédia), deixa o Império aos filhos Constantino II, Constâncio II e Constante, depois de um massacre de parentes; Constâncio II governa sozinho de 353 a 361.' },
+    { d: '361 – 363 d.C.', t: 'Juliano, «o Apóstata»', x: 'Sobrinho de Constantino, aclamado em Paris (360), tenta restaurar os cultos tradicionais e reduzir os privilégios do clero cristão. Morre em junho de 363, ferido numa campanha contra os persas. O seu sucessor, **Joviano**, cede territórios, entre eles Nísibis.' },
+    { d: '376 – 378 d.C.', t: 'Os godos atravessam o Danúbio; Adrianópolis', x: 'Em 376, os godos tervíngios, empurrados pelos hunos, pedem asilo e são mal tratados pelos funcionários romanos. Rebelam-se e, a **9 de agosto de 378**, destroem o exército de **Valente** em **Adrianópolis**; o imperador morre no combate.' }
+  ] },
+  { img: 'rcd-goda-travessia-danubio', leg: 'Ilustração gerada por IA. Travessia do Danúbio pelos Tervíngios, 376: interpretação artística.' },
+  { linha: [
+    { d: '380 – 395 d.C.', t: 'Teodósio I', x: 'Em 380, o **Édito de Tessalónica** impõe a fé nicena como a do Império. Em 382 instala os godos como federados. Vence em 394, no rio **Frígido**, o usurpador Eugénio e o franco Arbogasto, e morre em Milão a **17 de janeiro de 395**, deixando o Oriente a Arcádio e o Ocidente a Honório.' },
+    { d: '406 – 410 d.C.', t: 'Invasões do Reno e saque de Roma', x: 'A 31 de dezembro de 406 (ou 405, segundo outros), vândalos, alanos e suevos atravessam o Reno gelado. **Estilicão**, o general do Ocidente, é executado em 408. A 24 de agosto de 410, **Alarico** e os visigodos entram em Roma e saqueiam-na durante três dias: foi o primeiro saque da cidade desde a invasão gaulesa, c. 390 a.C.' }
+  ] },
+  { img: 'rcd-saque-roma-410', leg: 'Ilustração gerada por IA. Entrada dos Visigodos em Roma, 410: interpretação artística.' },
+  { linha: [
+    { d: '409 – 418 d.C.', t: 'Os bárbaros na Hispânia', x: 'Em setembro ou outubro de 409, suevos, vândalos asdingos e alanos entram na Hispânia; em 411 repartem-na «por sorte»: os suevos e os vândalos asdingos ficam com a Galécia; os alanos, com a Lusitânia e a Cartaginense; os vândalos silingos, com a Bética. Entre 416 e 418, os visigodos, a mando de Roma, destroem silingos e alanos.' },
+    { d: '429 – 439 d.C.', t: 'Os vândalos em África', x: 'Em 429, os vândalos de **Genserico** passam do sul da Hispânia para África; Santo Agostinho morre durante o cerco de Hipona (430). A 19 de outubro de 439 tomam **Cartago**, o celeiro e a principal fonte de impostos do Ocidente.' },
+    { d: '451 – 472 d.C.', t: 'Átila, Aécio, o saque vândalo e Recimero', x: 'Em 451, o general **Aécio** e os visigodos travam Átila na batalha dos Campos Cataláunicos (junho, segundo a datação habitual). Em 452 os hunos invadem a Itália e retiram-se; em 453 Átila morre. Aécio é assassinado pelo imperador Valentiniano III em 454, que é morto em 455; nesse ano os vândalos saqueiam Roma durante cerca de duas semanas. O general **Recimero**, de ascendência sueva e visigótica, faz e desfaz imperadores (Maioriano, Libio Severo, Antémio, Olíbrio) até à sua morte em 472.' },
+    { d: '475 – 476 d.C.', t: 'Rómulo Augústulo e Odoacro', x: 'Em 475, **Orestes** depõe Júlio Nepos e proclama imperador o seu filho, **Rómulo Augústulo**. Em agosto de 476, as tropas federadas, que exigiam terras na Itália, aclamam **Odoacro**, que mata Orestes e, a 4 de setembro, depõe o rapaz, poupado e enviado para a Campânia. Odoacro governa a Itália reconhecendo nominalmente Zenão.' }
+  ] },
+  { img: 'rcd-odoacro-romulo', leg: 'Ilustração gerada por IA. Odoacro diante de Rómulo Augústulo, 476: interpretação artística.' },
+  { linha: [
+    { d: '480 – 493 d.C.', t: 'Depois de 476', x: 'Júlio Nepos é assassinado na Dalmácia em 480. Em 486, **Clóvis** destrói o domínio romano residual de Siágrio no norte da Gália. Em 493, **Teodorico**, rei dos ostrogodos, mata Odoacro em Ravena e governa a Itália em nome do imperador do Oriente. No Oriente, o Império continua.' }
+  ] }
+];
+
+const mapa = [
+  'No Baixo Império, **Roma deixou de ser o lugar onde se governava**. Os imperadores viviam junto às fronteiras, nas «capitais tetrárquicas» e, depois, em Constantinopla e Ravena. Esta secção apresenta as cidades, as batalhas e as províncias que contam a história de 193 a 476, e termina com a Hispânia, de que Portugal fazia parte.',
+  { tabela: { cab: ['Cidade', 'Nome antigo', 'Papel nesta época', 'Local hoje'], linhas: [
+    ['Roma', 'Roma', 'Capital simbólica; muralhas de Aureliano; saques de 410 e 455', 'Roma, Itália'],
+    ['Milão', 'Mediolanum', 'Capital imperial do Ocidente (c. 286 – 402); Ambrósio, bispo', 'Milão, Itália'],
+    ['Ravena', 'Ravenna', 'Capital do Ocidente desde 402 (Honório) até 476', 'Ravena, Itália'],
+    ['Tréveris', 'Augusta Treverorum', 'Capital tetrárquica; residência de Constâncio e Constantino', 'Trier, Alemanha'],
+    ['Sírmio', 'Sirmium', 'Capital tetrárquica nos Balcãs; berço de vários imperadores', 'Sremska Mitrovica, Sérvia'],
+    ['Nicomédia', 'Nicomedia', 'Capital de Diocleciano no Oriente; início da perseguição (303)', 'Izmit, Turquia'],
+    ['Constantinopla', 'Constantinopolis', 'Nova capital desde 330; centro do Império do Oriente', 'Istambul, Turquia'],
+    ['Antioquia', 'Antiochia', 'Grande cidade do Oriente; base contra os persas', 'Antáquia, Turquia'],
+    ['Palmira', 'Palmyra', 'Capital do reino de Zenóbia (267 – 273)', 'Tadmor, Síria'],
+    ['Alexandria', 'Alexandria', 'Cidade mais populosa depois de Roma e Constantinopla; foco dos debates teológicos', 'Alexandria, Egito'],
+    ['Cartago', 'Carthago', 'Capital de África, celeiro de Roma; tomada pelos vândalos em 439', 'Tunes, Tunísia'],
+    ['Aquileia', 'Aquileia', 'Porta da Itália no Nordeste; Frígido (394) e Átila (452) passaram perto', 'Aquileia, Itália'],
+    ['Salona / Espalato', 'Salona / Spalatum', 'Terra natal de Diocleciano e local do seu palácio', 'Split, Croácia'],
+    ['Eboracum', 'Eboracum', 'Capital da Britânia Inferior; onde morreram Severo (211) e Constâncio (306)', 'York, Inglaterra'],
+    ['Mérida', 'Emerita Augusta', 'Capital da Lusitânia e da diocese das Hispânias', 'Mérida, Espanha'],
+    ['Braga', 'Bracara Augusta', 'Capital da Galécia; capital do reino suevo', 'Braga, Portugal'],
+    ['Conímbriga', 'Conimbriga', 'Cidade lusitana, murada no fim do século III; destruída no século V', 'Condeixa-a-Nova, Portugal'],
+    ['Lisboa', 'Olisipo (Felicitas Iulia)', 'Cidade portuária da Lusitânia; tomada pelos suevos em 468 – 469', 'Lisboa, Portugal']
+  ] } },
+  { h: 'Roma: capital sem imperador' },
+  'No século III, os imperadores passam cada vez menos tempo em Roma. Perante as incursões germânicas, **Aureliano** mandou cercar a cidade com muralhas (c. 271 – 275), com cerca de 19 km, centenas de torres e quase duas dezenas de portas principais, aproveitando edifícios existentes, como o anfiteatro Castrense e a pirâmide de Cestio. Roma continuou a ser o símbolo do Império e a sede do Senado, mas já não a sede do poder. A população, que no século II terá chegado a cerca de um milhão (estimativa muito incerta), diminuiu ao longo do século V; em 410 e 455 foi saqueada.',
+  { img: 'rcd-roma-aureliana', leg: 'Ilustração gerada por IA. Construção das Muralhas Aurelianas, c. 275: interpretação artística.' },
+  { img: 'rcd-basilica-maxencio', leg: 'Basílica de Maxêncio e Constantino, Fórum Romano.' },
+  { h: 'Mediolanum e Ravenna: as capitais do Ocidente' },
+  'Em 286 – 293, **Milão** tornou-se a residência de Maximiano e, mais tarde, dos imperadores ocidentais, por estar perto dos Alpes e das fronteiras do Reno e do Danúbio. Foi lá que, em 374, Ambrósio, então governador da região, foi aclamado bispo, e lá se cruzaram Teodósio e Ambrósio. Em 402 o imperador Honório mudou a corte para **Ravena**, uma cidade rodeada de pântanos e com porto no Adriático, mais difícil de atacar; ali ficaram os imperadores do Ocidente, e dali Odoacro e Teodorico governaram a Itália.',
+  { h: 'Tréveris e a Gália' },
+  '**Tréveris** (*Augusta Treverorum*), no vale do Mosela, foi a capital de Constâncio Cloro e do jovem Constantino e uma das maiores cidades do Ocidente. Dali se guardava o Reno contra francos e alamanos. Conserva, entre outros edifícios, a **Aula Palatina**, a sala do trono construída no início do século IV e usada hoje como igreja. A Gália viveu na segunda metade do século III os piores anos de invasões, mas recuperou com Constâncio e Constantino.',
+  { h: 'Sírmio, Salona e o palácio de Diocleciano' },
+  'A zona dos Balcãs foi o berço dos «imperadores ilírios»: Cláudio II, Aureliano, Probo, Diocleciano e Constâncio Cloro tinham origens nessa região, e Constantino nasceu em Naísso. **Sírmio** foi uma das capitais da Tetrarquia. Perto de **Salona** (a terra de Diocleciano, na Dalmácia), o imperador mandou erguer um grande palácio-fortaleza em **Spalatum**, hoje o centro histórico de Split, onde se retirou depois de abdicar (305). Foi classificado como Património Mundial da UNESCO em 1979.',
+  { img: 'rcd-palacio-split', leg: 'Peristilo do Palácio de Diocleciano, Split, Croácia.' },
+  { h: 'Nicomédia, Antioquia e a fronteira persa' },
+  'No Oriente, **Nicomédia** (na atual Turquia) foi a capital de Diocleciano e o lugar onde começou a Grande Perseguição, e **Antioquia** foi a base dos exércitos contra os persas. A guerra com o Império Sassânida marcou todo o período: Gordiano III (244), Valeriano (260), Galério (298, vitória), Juliano (363) e muitos outros combateram ali. A fronteira passou a estar protegida por fortalezas e estradas militares (a *Strata Diocletiana*), com os exércitos dos *limitanei* a guardá-las.',
+  { h: 'Palmira: o reino de Zenóbia' },
+  '**Palmira**, oásis caravaneiro no deserto da Síria, era uma cidade rica, cosmopolita e bilingue (aramaico e grego), com um comércio de seda e especiarias entre o Império Romano e a Pérsia. Entre 260 e 267, o seu governante **Odenato** foi aliado de Roma e defendeu a fronteira oriental depois do desastre de Valeriano. Depois da morte dele, a viúva **Zenóbia** governou em nome do filho Vabalato, conquistou o Egito (270) e parte da Anatólia e proclamou a independência. **Aureliano** derrotou-a em 272 e destruiu Palmira em 273, depois de uma revolta.',
+  { img: 'rcd-palmira-colunata', leg: 'Grande Colunata de Palmira, Síria; fotografia de 2008, anterior à destruição de 2015.' },
+  { img: 'rcd-zenobia-palmira', leg: 'Ilustração gerada por IA. Zenóbia na corte de Palmira, c. 271: retrato imaginado.' },
+  { h: 'Constantinopla: a nova Roma' },
+  'Em **330**, Constantino inaugurou a nova capital no local da antiga colónia grega de **Bizâncio**, na entrada do Bósforo, numa posição estratégica entre a Europa e a Ásia, com excelente porto (o Corno de Ouro) e difícil de cercar. Tinha Senado, hipódromo, fóruns, igrejas e, mais tarde, **muralhas** que a defenderam durante mil anos: as **Muralhas de Teodósio** (a partir de 413, com uma segunda linha após o sismo de 447) são das mais complexas do mundo antigo. A cidade cresceu rapidamente, com abastecimento de cereais vindo do Egito (e, depois de 439, já sem os grãos de África).',
+  { img: 'rcd-constantinopla-reconstrucao', leg: 'Ilustração gerada por IA. Constantinopla c. 400: reconstituição artística, com edifícios conjeturais.' },
+  { img: 'rcd-muralhas-constantinopla', leg: 'Muralhas de Teodósio II, Istambul.' },
+  { h: 'Alexandria e Cartago: os celeiros' },
+  '**Alexandria** foi, durante todo o período, a segunda ou terceira cidade do Império, um grande centro de ciência, de filosofia neoplatónica e de controvérsias cristãs (Ário, Atanásio, Cirilo). Foi atingida por revoltas, pela peste do século III e por conflitos religiosos. **Cartago**, capital da África romana, forneceu a Roma o trigo e o azeite, pagava a maior parte dos impostos do Ocidente e foi a cidade de Tertuliano e de Cipriano; Agostinho, natural de Tagaste, foi bispo de Hipona, perto dela. A sua conquista pelos vândalos, em 439, foi um golpe muito pesado para as finanças ocidentais.',
+  { h: 'As batalhas decisivas' },
+  { tabela: { cab: ['Batalha', 'Data', 'Local hoje', 'Resultado e importância'], linhas: [
+    ['Lugdunum', '197', 'Lyon, França', 'Severo derrota Albino; fim da guerra civil'],
+    ['Abritus', '251', 'Razgrad, Bulgária', 'Os godos matam o imperador Décio e o filho'],
+    ['Edessa', '260', 'Şanlıurfa, Turquia', 'Valeriano é capturado pelo xá Sapor I'],
+    ['Naísso', '268 ou 269', 'Niš, Sérvia', 'Cláudio II derrota os godos; viragem da crise'],
+    ['Châlons', '274', 'Gália', 'Aureliano derrota o Império Gaulês'],
+    ['Margo', '285', 'Sérvia', 'Diocleciano derrota Carino e fica sozinho'],
+    ['Ponte Mílvia', '312', 'Roma', 'Constantino derrota Maxêncio'],
+    ['Crisópolis', '324', 'Üsküdar, Istambul', 'Constantino derrota Licínio; reunificação'],
+    ['Estrasburgo', '357', 'Alsácia, França', 'O César Juliano derrota os alamanos'],
+    ['Adrianópolis', '378', 'Edirne, Turquia', 'Os godos destroem o exército de Valente'],
+    ['Frígido', '394', 'Eslovénia', 'Teodósio derrota Eugénio e Arbogasto'],
+    ['Campos Cataláunicos', '451', 'Champagne, França', 'Aécio e os visigodos travam Átila']
+  ] } },
+  { h: 'O Reno, o Danúbio e as fronteiras que cedem' },
+  'Durante o século III, as fronteiras do **Reno** e do **Danúbio** foram atravessadas muitas vezes por alamanos, francos, godos, vândalos e outros. A estratégia mudou: em vez de defender cada milha do *limes*, os imperadores criaram exércitos móveis e fortificaram as cidades. A **Dácia** (a norte do Danúbio) foi abandonada por Aureliano, e os *Agri Decumates* (entre o Reno e o Danúbio) foram perdidos por volta de 260. No século IV, a fronteira renana ainda aguentou, e a 31 de dezembro de 406 foi atravessada em massa por vândalos, alanos e suevos, sobre o rio gelado (segundo a tradição).',
+  { img: 'rcd-reno-travessia-406', leg: 'Ilustração gerada por IA. Travessia do Reno, 406: cena conjetural segundo a tradição do rio gelado, circunstância não comprovada.' },
+  { h: 'Britânia' },
+  'A **Britânia** foi governada pelos usurpadores Caráusio e Alecto (286 – 296), reconquistada por Constâncio e foi o lugar onde Constantino foi aclamado. Em 407 tropas locais elegeram Constantino III, que partiu para a Gália; em 410, segundo Zósimo, Honório escreveu às cidades britânicas a pedir-lhes que se defendessem sozinhas (a interpretação desta carta é debatida). As legiões nunca voltaram, e a administração imperial desapareceu na ilha por volta de 410 – 440.',
+  { h: 'A Hispânia no Baixo Império' },
+  'Depois das reformas de Diocleciano, a **Diocese das Hispânias** (governada por um vigário, com sede em Mérida) incluía seis províncias na península (Bética, Lusitânia, Galécia, Tarraconense, Cartaginense e, mais tarde, as Baleares) e a Mauritânia Tingitana, em África. O território do atual Portugal estava dividido entre a **Lusitânia** (a sul do Douro, com capital em **Emerita Augusta**, hoje Mérida) e a **Galécia** (a norte, com capital em **Bracara Augusta**, hoje Braga). A Hispânia, que dera imperadores ao Alto Império, deu o último grande do Baixo Império: **Teodósio I**, natural, segundo a tradição, de *Cauca* (Coca, Segóvia).',
+  { h: 'Conímbriga: uma cidade que se fecha' },
+  'A cidade de **Conímbriga**, na Lusitânia (Condeixa-a-Nova), era uma das mais ricas da região no século II, com a **Casa dos Repuxos** e um grande fórum. No fim do século III, perante o risco de ataques, os habitantes ergueram à pressa uma **muralha** de cerca de 1500 a 2000 m (estimativa), desmontando partes do fórum e de casas ricas, que deixaram de estar protegidas. Segundo o bispo **Hidácio** de Chaves, em 465 (ou 468, conforme as leituras) os suevos tomaram a cidade por um ardil, levaram habitantes como cativos e a «Casa de Cântabro», a maior habitação conhecida do local, é associada pelos arqueólogos, sem certeza, ao aristocrata de que fala Hidácio. A cidade nunca recuperou, e o bispado de Conímbriga passou depois para *Aeminium* (Coimbra), em data debatida.',
+  { img: 'rcd-conimbriga-muralha', leg: 'Muralha tardo-romana de Conímbriga, Portugal.' },
+  { img: 'rcd-conimbriga-465', leg: 'Ilustração gerada por IA. Ataque suevo a Conímbriga, 465: interpretação artística.' },
+  { h: 'Mérida, Braga e as cidades da Lusitânia e da Galécia' },
+  '**Emerita Augusta** manteve-se como capital da diocese até ao século V, com circo, teatro e anfiteatro ainda em uso, a basílica de Santa Eulália (mártir local, segundo a tradição morta c. 304, no tempo de Diocleciano) e uma elite que construiu grandes *villae*. **Bracara Augusta** era a capital da Galécia e, ao longo do século V, do reino dos suevos. **Olisipo** (Lisboa) e **Pax Iulia** (Beja) são outras cidades da Lusitânia: Olisipo foi entregue aos suevos por um traidor, segundo Hidácio, c. 468 – 469. O bispo Hidácio, natural de Lemica (Ourense) e bispo de **Aquae Flaviae** (Chaves), deixou uma crónica que é a principal fonte para a Hispânia do século V.',
+  { h: 'As *villae* do Sul: um campo próspero' },
+  'No século IV, a elite hispânica investiu nas *villae*, grandes propriedades rurais com termas, mosaicos e estátuas. Em Portugal, conhecem-se as de **Milreu** (Estói, Faro), **São Cucufate** (Vidigueira), **Torre de Palma** (Monforte), **Pisões** (Beja) e **Rabaçal** (Penela), muitas delas com mosaicos e fases de grande luxo nos séculos III e IV. A *villa* tornou-se o centro de uma economia semifechada, com camponeses dependentes (*coloni*), um modelo que influenciou a Idade Média.',
+  { img: 'rcd-villa-lusitania-tardia', leg: 'Ilustração gerada por IA. Villa lusitana do século IV: interpretação artística.' },
+  { h: 'Rotas e comunicações' },
+  'A rede de estradas romanas e de portos continuou a funcionar até ao século V. O **correio imperial** (*cursus publicus*) ligava as capitais; o **comércio marítimo** do Mediterrâneo trazia azeite da Bética e da Lusitânia, preparados de peixe (o *garum*, produzido em **Tróia**, Setúbal, e em **Lisboa**) e vinho. O cereal de África e do Egito alimentava Roma e Constantinopla. A perda de Cartago (439) e a insegurança no mar tornaram as rotas ocidentais mais difíceis.'
+];
+
+const sociedade = [
+  'Esta secção descreve como se governava, se pagava, se lutava, se acreditava e se vivia no Império entre 193 e 476. A época é tão longa que muitas coisas mudaram: o que vale para o tempo de Diocleciano nem sempre vale para o de Honório. Quando os números são estimativas, diz-se.',
+  { h: 'O poder: do soldado ao Dominato' },
+  'No século III, o imperador era, antes de tudo, **o homem que o exército aclamava**. Entre 235 e 284 houve mais de vinte imperadores reconhecidos e muitos outros usurpadores; quase todos morreram assassinados ou em batalha. Diocleciano acabou com a insegurança dando ao poder uma base religiosa e burocrática: o imperador passou a ser *dominus et deus* na linguagem da corte (a fórmula é moderna na sua generalização), com cerimonial, diadema, púrpura, ouro e a prostração (*adoratio*) de quem chegava à sua presença. Constantino manteve o cerimonial e acrescentou o apoio da Igreja.',
+  { h: 'A Tetrarquia: quatro governantes' },
+  'Diocleciano concluiu que um só homem não podia defender um Império tão grande. Dividiu o poder entre **dois Augustos** (ele no Oriente, Maximiano no Ocidente) e **dois Césares** (Galério e Constâncio Cloro), que seriam os sucessores. Cada um tinha o seu exército, a sua capital e o seu setor. Diocleciano ligou os governantes a deuses (Júpiter para ele, Hércules para Maximiano), de que resultam os nomes «jovianos» e «herculianos». O sistema funcionou durante cerca de 12 anos e falhou quando os filhos de Constâncio e de Maximiano, Constantino e Maxêncio, se recusaram a ficar de fora.',
+  { tabela: { cab: ['Cargo', 'Governante (293)', 'Capital', 'Zona'], linhas: [
+    ['Augusto do Oriente', 'Diocleciano', 'Nicomédia', 'Ásia Menor, Síria, Egito, Trácia'],
+    ['César do Oriente', 'Galério', 'Sírmio / Salonica', 'Balcãs e Danúbio'],
+    ['Augusto do Ocidente', 'Maximiano', 'Milão', 'Itália e África'],
+    ['César do Ocidente', 'Constâncio Cloro', 'Tréveris', 'Gália e Britânia']
+  ] } },
+  { img: 'rcd-diocleciano-busto', leg: 'Cabeça de Diocleciano, Museu Arqueológico de Istambul.' },
+  { h: 'A administração: províncias, dioceses, prefeituras' },
+  'Diocleciano e os seus sucessores reorganizaram o Império em **cerca de cem províncias**, agrupadas em **dioceses** (c. 12, governadas por um *vicarius*) e, ao longo do século IV, em **prefeituras do pretório** (Oriente, Ilírico, Itália, Gália). Os governadores deixaram de comandar tropas: o poder civil e o militar foram separados, o que dificultava as rebeliões, mas multiplicava os cargos. A burocracia cresceu muito: milhares de funcionários, com títulos hierarquizados e remunerados em géneros e em ouro. Os críticos da época, como Lactâncio, diziam que havia mais cobradores de impostos do que contribuintes; é um exagero, mas mostra o peso da administração.',
+  { h: 'Impostos e economia' },
+  'O Estado precisava de soldados, funcionários e cereais para as cidades. O sistema fiscal de Diocleciano (cerca de 297) baseava-se na **terra** (*iugatio*) e nas **pessoas** (*capitatio*), avaliadas por recenseamentos periódicos; o pagamento era feito sobretudo **em géneros** (a *annona*: cereais, azeite, vinho, carne) e, mais tarde, cada vez mais em ouro. O ciclo fiscal de 15 anos (a *indictio*) serviu depois para contar os anos na Idade Média. Os grandes proprietários, os senadores e o clero obtiveram isenções, e a carga recaiu sobre os pequenos proprietários e sobre os conselhos das cidades (*curiales*), que respondiam pessoalmente pelos impostos locais e que, por isso, fugiam dos cargos.',
+  { h: 'A moeda: da prata ao ouro' },
+  'No Alto Império, a moeda de referência era o **denário de prata**. No século III, os imperadores, para pagar ao exército, foram diminuindo a quantidade de prata nas moedas: o **antoniniano**, introduzido por Caracala (c. 215), tinha no início cerca de metade de prata e, por volta de 270, apenas uns poucos por cento (c. 5% ou menos), de modo que parecia prata e era quase cobre. O resultado foi uma **inflação** violenta, a fuga para o pagamento em géneros e a perda de confiança. **Diocleciano** reformou a moeda (c. 294, com o *aureus*, o *argenteus* e o *follis*), e **Constantino** impôs o **solidus** de ouro, de cerca de 4,5 g (1/72 de libra romana), que se manteve estável durante séculos e foi a «moeda forte» do Mediterrâneo.',
+  { img: 'rcd-antoniniano-moeda', leg: 'Antoniniano de prata de Aureliano (270–275), Metropolitan Museum of Art.' },
+  { h: 'O Édito sobre os preços máximos (301)' },
+  'Em 301, Diocleciano publicou um édito que fixava **preços máximos** para mais de mil produtos e serviços (cereais, vinho, carne, roupas, transportes, salários), com pena de morte para quem vendesse acima do tabelado. O preâmbulo culpa a «ganância» dos comerciantes, mas o problema era a desvalorização da moeda. O édito foi um **fracasso**: os produtos desapareceram do mercado ou foram vendidos às escondidas, e a lei foi abandonada em poucos anos. Os fragmentos gravados em pedra (em Afrodísias, na Turquia, e noutros locais) são hoje uma fonte preciosa para preços e profissões do tempo.',
+  { img: 'rcd-mercado-precos', leg: 'Ilustração gerada por IA. Mercado e anúncio de um édito de preços, c. 301: interpretação artística.' },
+  { h: 'Classes sociais: honestiores e humiliores' },
+  'A sociedade tardo-romana era profundamente desigual. Os juristas distinguiam **honestiores** (senadores, cavaleiros, oficiais, magistrados locais e veteranos) de **humiliores** (a grande maioria), com castigos diferentes para os mesmos crimes: os primeiros eram condenados ao exílio ou à multa; os segundos, ao açoite, às minas ou à morte. No topo estavam os **senadores**, muito ricos, proprietários de latifúndios; seguiam-se os cavaleiros, os funcionários e a elite das cidades; depois, artesãos, comerciantes e camponeses livres; e, por fim, os escravos. Estima-se que a maior parte da população vivesse do campo e da agricultura.',
+  { h: 'O colonato: camponeses presos à terra' },
+  'Os pequenos camponeses, endividados e sujeitos a impostos, procuravam a proteção (o **patrocínio**) dos grandes proprietários. Muitos tornaram-se **coloni**, arrendatários que trabalhavam a terra de outro. Uma lei de Constantino de 332 proibiu os colonos de abandonarem a terra onde estavam registados. Os historiadores veem aqui uma das origens da **servidão medieval**, embora a lei se aplicasse a casos particulares e o seu alcance seja discutido. A escravatura continuou, mas os escravos eram, nas grandes *villae* do século IV, menos numerosos do que no tempo da República.',
+  { h: 'As cidades: declínio ou transformação?' },
+  'As cidades do Baixo Império deixaram de construir grandes edifícios públicos pagos pelas elites locais; os recursos iam para a defesa (muralhas), a Igreja e as *villae*. Muitas encolheram, e o urbanismo mudou: as ruas ficaram mais estreitas, os monumentos foram reaproveitados e as igrejas tornaram-se centros da vida local. A Itália, a Gália e a Hispânia sofreram mais do que o Oriente, onde muitas cidades floresceram até ao século VI. Os **bispos** passaram a ter um papel cívico: distribuíam esmolas, defendiam os pobres e negociavam com os chefes bárbaros.',
+  { img: 'rcd-soldado-tardio', leg: 'Ilustração gerada por IA. Soldado romano do século IV: estudo de equipamento conjetural.' },
+  { h: 'O exército do Baixo Império' },
+  'Diocleciano aumentou os efetivos (as estimativas vão de c. 400 mil a mais de 600 mil homens; as fontes antigas dão números inflacionados) e criou mais unidades, mais pequenas. A partir de Diocleciano e, sobretudo, de Constantino, passou a haver dois tipos de tropas: os ***limitanei***, tropas de fronteira, pouco pagas e muitas vezes camponeses-soldados, e os ***comitatenses***, o **exército móvel** (*comitatus*) que acompanhava o imperador e acudia às crises. Cada vez mais soldados eram de origem **germânica** ou da fronteira: no século IV, muitos oficiais superiores eram francos ou godos. As legiões do tempo de Augusto, com 5000 homens, deram lugar a unidades muito menores, com um ou dois milhares, ou menos. A cavalaria ganhou peso. Mais pormenores na página sobre o Exército e a guerra.',
+  { h: 'A guerra e a diplomacia' },
+  'A defesa baseava-se em quatro ideias: **defesa em profundidade** (fortalezas e bases atrás da fronteira), **exércitos móveis**, **diplomacia** (subsídios e tratados com chefes bárbaros) e **guerra civil permanente**, que consumiu mais soldados do que as invasões. No século IV, o Império ainda conseguiu grandes vitórias (Estrasburgo, 357), mas a derrota de Adrianópolis (378) mostrou os limites do modelo: os godos foram depois instalados dentro das fronteiras como *foederati*, com os seus chefes, e passaram a negociar com o Império quase de igual para igual.',
+  { h: 'Os povos de fora e de dentro' },
+  { tabela: { cab: ['Povo', 'Origem', 'Papel nesta época'], linhas: [
+    ['Alamanos', 'Germânicos do alto Reno e Danúbio', 'Atacaram a Gália e a Itália (séc. III); derrotados em Estrasburgo (357)'],
+    ['Francos', 'Germânicos do baixo Reno', 'Federados na Gália; Clóvis funda o reino franco (final do séc. V)'],
+    ['Godos (tervíngios / visigodos; greutungos / ostrogodos)', 'Povo germânico, junto ao Mar Negro', 'Séc. III: invasões; 376 – 378: Adrianópolis; 410: Roma; reino de Tolosa; Itália (493)'],
+    ['Vândalos', 'Germânicos da Silésia e Panónia', 'Hispânia (409); África (429 – 439); saque de Roma (455)'],
+    ['Suevos', 'Germânicos da Europa central', 'Galécia e noroeste da Hispânia (411 – 585)'],
+    ['Alanos', 'Nómadas iranianos da estepe', 'Lusitânia e Cartaginense (409 – 418), depois integrados nos vândalos'],
+    ['Hunos', 'Nómadas da estepe asiática', 'Empurram os godos (c. 376); Átila (434 – 453)'],
+    ['Persas sassânidas', 'Império iraniano (224 – 651)', 'Maior rival oriental; Valeriano capturado (260)'],
+    ['Saxões, pictos e escotos', 'Mar do Norte e Britânia', 'Raides contra a Britânia (séc. IV – V)']
+  ] } },
+  { img: 'rcd-sarcofago-ludovisi', leg: 'Sarcófago Ludovisi, Palazzo Altemps, Roma.' },
+  { h: 'A religião tradicional e os novos cultos' },
+  'O mundo religioso era diversificado e em mudança. Os deuses de Roma (Júpiter, Juno, Minerva) continuavam a receber culto público; mas o século III trouxe um **movimento para o monoteísmo e para o culto do Sol**. Aureliano dedicou em 274 um templo ao **Sol Invictus**; Constantino ainda usou a imagem solar nas moedas durante anos. Ao lado, cresciam cultos de origem oriental, as filosofias (o neoplatonismo de Plotino) e o cristianismo.',
+  { tabela: { cab: ['Culto ou doutrina', 'Origem', 'Características', 'Estatuto'], linhas: [
+    ['Religião cívica romana', 'Roma', 'Sacrifícios, templos, colégios de sacerdotes (pontífices, áugures)', 'Oficial até c. 380'],
+    ['Culto imperial', 'Roma / Oriente', 'Veneração do imperador e dos *divi*', 'Oficial; atenuado com os imperadores cristãos'],
+    ['Sol Invictus', 'Síria / Roma', 'Deus-Sol; templo de Aureliano (274); 25 de dezembro', 'Oficial sob Aureliano e Constantino'],
+    ['Mitraísmo', 'Pérsia / Roma', 'Mistérios para homens, muito popular entre soldados', 'Tolerado; declina no séc. IV'],
+    ['Isis, Cibele', 'Egito, Anatólia', 'Cultos de mistérios com festas e iniciações', 'Tolerados'],
+    ['Maniqueísmo', 'Pérsia (Mani, séc. III)', 'Religião dualista, perseguida por Diocleciano (c. 297 – 302, data debatida)', 'Perseguido'],
+    ['Judaísmo', 'Judeia', 'Comunidades por todo o Império; sinagogas', 'Tolerado, com restrições crescentes'],
+    ['Cristianismo', 'Judeia', 'Igreja, bispos, Bíblia, caridade', 'Perseguido, tolerado (313), oficial (380)'],
+    ['Neoplatonismo', 'Alexandria / Roma (Plotino)', 'Filosofia religiosa (o Uno, a alma)', 'Aceite pelas elites; influenciou cristãos e pagãos']
+  ] } },
+  { h: 'O cristianismo: de perseguido a oficial' },
+  'No ano 200, os cristãos seriam uma minoria, talvez poucos por cento da população (as estimativas variam muito, de c. 5% a mais de 10% por volta de 300). Foram perseguidos em momentos precisos: sob **Décio** (250), **Valeriano** (257 – 258) e, sobretudo, sob **Diocleciano e os seus colegas** (303 – 311), com destruição de igrejas, queima de livros e execuções. Em 311, **Galério** autorizou-os a existir; em 313, **Constantino e Licínio** acordaram a liberdade religiosa. Constantino favoreceu a Igreja com isenções, doações e basílicas (a de São João de Latrão, a antiga de São Pedro, a do Santo Sepulcro), sem proibir os cultos tradicionais. Foi batizado só em 337, no leito de morte.',
+  { img: 'rcd-concilio-niceia', leg: 'Ilustração gerada por IA. Concílio de Niceia, 325: interpretação artística.' },
+  { h: 'Concílios e controvérsias' },
+  { tabela: { cab: ['Concílio / controvérsia', 'Data', 'O que decidiu'], linhas: [
+    ['Elvira (Hispânia)', 'c. 300 – 306', 'Um dos primeiros concílios de que se conservam atas; cânones sobre disciplina'],
+    ['Arles', '314', 'Condena os donatistas, movimento rigorista de África'],
+    ['Niceia', '325', 'Condena Ário; afirma que o Filho é «da mesma substância» (*homoousios*) que o Pai'],
+    ['Constantinopla I', '381', 'Reafirma Niceia e desenvolve o credo'],
+    ['Éfeso', '431', 'Condena Nestório; Maria como «mãe de Deus» (*Theotokos*)'],
+    ['Calcedónia', '451', 'Define as duas naturezas de Cristo; origem de divisões que persistem']
+  ] } },
+  'O **arianismo** (de Ário, presbítero de Alexandria) defendia que o Filho fora criado pelo Pai e lhe era inferior. Dividiu a Igreja durante grande parte do século IV, e foi a forma de cristianismo adotada por muitos povos germânicos (godos, vândalos, suevos), convertidos por missionários como **Úlfilas**. A Igreja «católica» (niceno) e a ariana conviveram em tensão nos reinos que surgiram em 476.',
+  { h: 'Teodósio e o fim do apoio oficial ao paganismo' },
+  'Em 27 de fevereiro de **380**, o **Édito de Tessalónica** declarou que os súbditos deviam seguir a fé do bispo de Roma e do de Alexandria, isto é, o cristianismo niceno. Nos anos seguintes, leis de Teodósio proibiram os sacrifícios e o culto público (391 – 392), e o altar da Vitória foi retirado do Senado por Graciano, entre protestos da aristocracia pagã (Símaco), em 382. Houve destruição de templos e conflitos violentos (como em Alexandria, em 391), mas o paganismo continuou nos campos e nas elites durante gerações. Não se pode falar de «fim súbito» do paganismo.',
+  { h: 'Juliano e a tentativa de restauração pagã' },
+  'O imperador **Juliano** (361 – 363), criado como cristão, tentou restabelecer os cultos tradicionais, reformando o sacerdócio pagão à imitação da organização da Igreja e proibindo os cristãos de ensinar os clássicos. O seu reinado durou menos de dois anos e a tentativa fracassou. Os cristãos chamaram-lhe «o Apóstata»; os pagãos, depois, lembraram-no com simpatia. Teve um bom historiador contemporâneo, **Amiano Marcelino**.',
+  { h: 'Os monges e os bispos' },
+  'O **monaquismo** nasceu no Egito: Antão (c. 251 – 356), que viveu como eremita, e Pacómio, que organizou comunidades. No Ocidente difundiu-se pela ação de Jerónimo, Martinho de Tours e, no século VI, Bento. Os bispos, como **Ambrósio** de Milão e **Agostinho** de Hipona, tornaram-se figuras públicas, com autoridade moral e política. A caridade da Igreja (hospitais, esmolas) foi um dos fatores da sua expansão. Em Roma, o bispo Dâmaso (366 – 384) e os seus sucessores começaram a afirmar a primazia do papa.',
+  { h: 'O direito' },
+  'Os séculos III e IV foram a época das grandes compilações. Os **Severos** tiveram juristas célebres, como **Papiniano** e **Ulpiano**, citados séculos depois por Justiniano. Ulpiano morreu assassinado pela guarda em 223, e Papiniano foi morto por ordem de Caracala em 212. No fim do século III surgiram os códigos **Gregoriano** e **Hermogeniano**, coleções de constituições imperiais. Em 438, Teodósio II promulgou o **Código Teodosiano**, com todas as leis gerais desde 312, aplicado também no Ocidente. Constantino terá abolido a crucificação, mas manteve penas duras; a lei passou a proteger a Igreja e a punir os heréticos. Em 426 a «Lei das Citações» elegeu cinco juristas (Papiniano, Paulo, Ulpiano, Modestino e Gaio) como autoridades.',
+  { h: 'A língua e a escrita' },
+  'O **latim** era a língua do poder no Ocidente e do exército em todo o Império; no Oriente, a língua da cultura e do dia-a-dia era o **grego**. A língua falada diferenciava-se cada vez mais da escrita («latim vulgar»), o que, a longo prazo, deu origem às línguas românicas, entre elas o português. A leitura passou do **rolo (volumen)** ao **códice** (livro de folhas), usado primeiro pelos cristãos e dominante no século IV, em pergaminho. A **Vulgata**, a tradução da Bíblia para latim feita por **Jerónimo** (c. 382 – 405), tornou-se o texto padrão da Igreja ocidental.',
+  { h: 'A educação e a cultura' },
+  'A educação dos filhos das elites continuou com **gramáticos** e **retores**, que ensinavam os clássicos (Virgílio, Cícero) e a eloquência; os cristãos, mesmo os mais exigentes, formaram-se nessa tradição: Agostinho foi professor de retórica. O ensino era pago e urbano; muitos não sabiam ler. Há escritores importantes: o historiador **Amiano Marcelino** (c. 330 – c. 395), o poeta **Cláudio Claudiano** (c. 370 – c. 404), o poeta hispânico **Prudêncio** (348 – c. 413, natural da Tarraconense, talvez de Calagurris), o historiador e teólogo **Paulo Orósio** (c. 380 – depois de 418, provavelmente natural de Bracara, no atual Portugal, ou de Tarraco; é debatido) e **Egéria**, uma peregrina que escreveu o relato de uma viagem à Terra Santa, c. 381 – 384, provavelmente natural da Galécia (debatido).',
+  { h: 'A arte e a arquitetura' },
+  'A arte do século III abandonou o realismo do Alto Império: retratos de rostos severos, de olhos grandes, e relevos mais simbólicos do que descritivos. A arte tetrárquica enfatiza a **unidade** e a **disciplina** (os tetrarcas abraçam-se, rígidos, em pórfiro). Constantino misturou a tradição clássica com **colossos** (o seu, sentado, teria cerca de 12 m de altura, e dele restam a cabeça e fragmentos) e o reaproveitamento de peças antigas (*spolia*) no seu arco. A arquitetura cristã adaptou a **basílica** romana (sala retangular com naves) ao culto. A pintura e o mosaico ganharam o brilho do fundo dourado, que marcou a arte bizantina.',
+  { img: 'rcd-mosaico-piazza-armerina', leg: 'Mosaico das «raparigas de biquíni», Villa Romana del Casale, Piazza Armerina.' },
+  { h: 'A casa e a vida quotidiana' },
+  'As famílias ricas viviam em **domus** urbanas ou em **villae** rurais, com pátio, termas, aquecimento por hipocausto, mosaicos e salas de receção. Os pobres moravam em prédios de vários andares (*insulae*), em Roma, ou em casas simples de adobe e madeira. O **casamento** e a **família** (pai, mãe, filhos e escravos) continuavam no centro da vida; a lei cristã tornou o divórcio mais difícil e favoreceu a viuvez e o celibato religioso. As mulheres, embora sem direitos políticos, eram proprietárias e tinham influência: de **Júlia Domna** e **Júlia Mameia** às imperatrizes cristãs **Helena** e **Gala Placídia**, que governou em nome do filho Valentiniano III.',
+  { h: 'Comida e bebida' },
+  'A base da dieta era a **tríade mediterrânica**: trigo (pão e papas), azeite e vinho, completada por legumes, queijo, peixe, azeitonas e, nos mais ricos, carne. O pão foi distribuído em Roma (Aureliano terá substituído a distribuição de cereal por pão cozido, segundo a *Historia Augusta*, fonte pouco fiável). Os preparados de peixe, o *garum*, eram feitos na Lusitânia, em Tróia e em Lisboa. O açúcar era desconhecido; usava-se mel. Nas casas ricas, a ceia (*cena*) era um banquete; nas pobres, uma refeição frugal.',
+  { h: 'Vestuário' },
+  'O traje comum era a **túnica**, mais comprida e com mangas (a *dalmática*); sobre ela, o manto (*paenula*, *pallium*). A toga, símbolo dos cidadãos, tornou-se cerimonial e foi substituída pela **clâmide**. As **calças** (*bracae*), de origem bárbara e há muito desprezadas, tornaram-se comuns entre os soldados e, no século IV, a ponto de Honório as proibir em Roma, em **397**, sem sucesso. A **púrpura** era reservada ao imperador. Os soldados e funcionários usavam um **cinto** (*cingulum*) como insígnia de cargo. A seda chegava da China por via da Pérsia.',
+  { h: 'Entretenimento: circo, teatro e termas' },
+  'As **corridas de carros** no Circo Máximo e no Hipódromo de Constantinopla eram o espetáculo mais popular; as «cores» (azuis, verdes, etc.) tinham fãs apaixonados. O **anfiteatro** continuou a receber caçadas e combates, mas os combates de gladiadores foram declinando (Constantino restringiu-os em 325) e desapareceram no século V (a história do monge Telémaco, que teria morrido na arena em 404, é tradição tardia). O **teatro** e as **termas** continuaram a ser pontos de encontro. A Igreja criticava os espetáculos, mas não os conseguiu acabar. Em Roma, as **Termas de Caracala** (216) e as de **Diocleciano** (c. 306) eram dos maiores complexos de banhos do mundo.',
+  { img: 'rcd-termas-caracala', leg: 'Ruínas das Termas de Caracala, Roma.' },
+  { h: 'Medicina e ciência' },
+  'A medicina continuou a seguir **Galeno** (c. 129 – c. 216, de Pérgamo; as datas são debatidas), cujos livros foram copiados durante mil anos. **Oribásio** (c. 325 – c. 400), médico de Juliano, compilou resumos de medicina grega. Os cristãos criaram os primeiros **hospitais**: o de **Basílio** em Cesareia (c. 369) e, em Roma, o de **Fabíola** (c. 390). Em Alexandria trabalharam o matemático **Diofanto** (século III, autor da *Aritmética*), **Papo** (c. 320) e a filósofa e astrónoma **Hipátia** (morta por uma multidão cristã em 415).',
+  { h: 'Tecnologia e engenharia' },
+  'O Império manteve a tecnologia romana: **concreto**, estradas, aquedutos, pontes e **moinhos de água**. Um relevo de Hierápolis (Turquia), do século III, mostra a mais antiga serra hidráulica conhecida, com biela e manivela. As **muralhas** tardias (Aurelianas, de Constantinopla, de Conímbriga) são obras de engenharia militar. O **códice**, o **sólido** e o uso do pórfiro e do mosaico dourado são inovações da época. Aquedutos e termas foram reparados, mas poucos construídos de novo no Ocidente depois do século IV.',
+  { h: 'A situação na Hispânia' },
+  'A Hispânia foi pouco afetada pelas guerras civis do século III, mas sofreu incursões de **francos**, que devastaram a Tarraconense por volta de 260, e, em 409, a chegada dos suevos, vândalos e alanos. Foi uma região de grande produção de **azeite**, **vinho**, **garum** e **minas** (ouro, prata e cobre), com *villae* luxuosas. Foi também um viveiro do cristianismo: o concílio de **Elvira** (c. 300), o bispo **Ósio de Córdova** (conselheiro de Constantino), o poeta Prudêncio, o movimento de **Prisciliano** (ascético, da Galécia, executado em Tréveris em 385, muitas vezes apontado como o primeiro cristão executado por heresia pelo poder civil). Em 411 os bárbaros dividiram a península; em 418, os visigodos restabeleceram a ordem em nome de Roma; em 456, o rei visigodo Teodorico II, em nome do imperador Avito, derrotou os suevos e saqueou Braga; o reino suevo da Galécia, com capital em Braga, durou até 585.',
+  { h: 'A visão dos contemporâneos' },
+  'Os contemporâneos viveram esta época de maneiras muito diferentes. Para os pagãos, como o historiador **Zósimo**, o abandono dos deuses causara a catástrofe; para os cristãos, como **Agostinho** na *Cidade de Deus* (escrita depois do saque de 410), Roma era uma cidade terrena, e a verdadeira cidade era a de Deus. **Orósio**, discípulo de Agostinho, procurou mostrar que os males do presente não eram piores do que os do passado pagão. **Hidácio** descreveu a Hispânia do século V como um mundo de pilhagem e de invasões. Para muita gente, a vida continuou, com impostos, colheitas e festas, e o fim do Império só foi percebido depois.'
+];
+
+const personalidades = [
+  'Quinze figuras que marcaram os 283 anos de 193 a 476: imperadores, uma rainha, bispos, generais e um cronista da Hispânia. Quando há lenda ou debate, diz-se. Para a lista completa dos imperadores e para as suas biografias, veja a página «Imperadores e grandes figuras».',
+  { h: 'Septímio Severo (145 – 211 d.C.)' },
+  'Nascido em **Leptis Magna** (hoje na Líbia), de família de cavaleiros, foi o primeiro imperador de origem africana. Subiu ao poder em 193, depois de derrotar dois rivais. Casou com **Júlia Domna**, síria de Emesa, que foi uma figura culta e influente, rodeada de filósofos. Aumentou o soldo dos legionários, criou três legiões e fez campanhas na Pártia e na Britânia; morreu em York. Uma frase que se lhe atribui no leito de morte («sede unidos, enriquecei os soldados e desprezai todos os outros») vem de Díon Cássio e é de autenticidade incerta, mas resume a sua política.',
+  { img: 'rcd-septimio-severo-busto', leg: 'Busto de Septímio Severo, Glyptothek de Munique, com restauros modernos.' },
+  { h: 'Caracala (188 – 217 d.C.)' },
+  'Filho de Severo, o seu nome era Lúcio Septímio Basiano; «Caracala» vem de uma capa gaulesa que usava. Governou com o irmão **Geta** e mandou matá-lo no fim de 211; um massacre dos apoiantes dele seguiu-se. Em 212, concedeu a **cidadania** a quase todos os habitantes livres do Império. Mandou construir as **Termas** que levam o seu nome e criou o antoniniano. As fontes, quase todas hostis, descrevem-no como cruel; foi muito popular entre os soldados. Foi assassinado em 217, a caminho de Carras, por um oficial a mando de Macrino.',
+  { h: 'Aureliano (c. 214 – 275 d.C.)' },
+  'Oficial de origem balcânica (a cidade de nascimento é incerta), chegou ao poder em 270 num Império quase desfeito. Em cinco anos, derrotou os godos, os vândalos e os jutungos, reconquistou o Oriente a **Zenóbia** (272), o Ocidente ao Império Gaulês (274) e cercou Roma de muralhas. Abandonou a Dácia, reformou a moeda e deu ao culto do **Sol Invictus** um lugar oficial. Foi assassinado em 275 por oficiais que temiam uma punição. Os seus contemporâneos chamaram-lhe «Restaurador do Mundo».',
+  { img: 'rcd-aureliano-busto', leg: 'Anverso de um áureo de Aureliano, cunhado em Siscia no outono de 271; retrato numismático.' },
+  { h: 'Zenóbia (c. 240 – depois de 274 d.C.)' },
+  'Septímia Bat-Zabbai, rainha de **Palmira**, esposa de Odenato e regente do filho Vabalato. Culta e ambiciosa, afirmava descender de Cleópatra (uma pretensão sem prova), protegeu filósofos e, segundo fontes tardias, falava várias línguas. Conquistou o Egito em 270 e proclamou-se *Augusta*. Derrotada por Aureliano em 272, foi levada para o Ocidente. O seu destino é incerto: a tradição diz que desfilou no triunfo de Aureliano em Roma (274) e acabou os seus dias numa *villa* perto de Tívoli, mas as fontes que o contam são pouco fiáveis.',
+  { h: 'Diocleciano (c. 243 – c. 311 d.C.)' },
+  'Nascido na Dalmácia, de origem humilde (chamava-se **Diocles**), foi oficial da guarda imperial e chegou ao trono em 284. Reorganizou o Império: Tetrarquia, novas províncias, reforma fiscal e monetária, um exército maior. Tentou travar a inflação com o Édito dos Preços (301) e dirigiu a **Grande Perseguição** aos cristãos (303 – 311). Foi um caso raro: **abdicou voluntariamente** (305) e retirou-se para o palácio de Spalatum (Split), onde morreu em 311 ou 312. A história de que preferia cultivar couves a voltar ao poder vem de uma tradição tardia.',
+  { h: 'Constantino I, «o Grande» (c. 272 – 337 d.C.)' },
+  'Nascido em Naísso (Niš, Sérvia), filho de Constâncio Cloro e de Helena. Aclamado em York (306), venceu Maxêncio na Ponte Mílvia (312) e Licínio (324) e governou sozinho. Adotou o cristianismo, pôs fim às perseguições, convocou o **Concílio de Niceia** (325) e fundou **Constantinopla** (330). Reformou a moeda (o sólido) e o exército. Mandou executar o filho Crispo e a mulher Fausta (326), por razões que as fontes não esclarecem. Foi batizado pouco antes de morrer. Os historiadores discutem a **sinceridade e a data da sua conversão**; a «Doação de Constantino», que dava ao papa poder sobre o Ocidente, é uma falsificação medieval.',
+  { h: 'Helena (c. 250 – c. 330 d.C.)' },
+  'Mãe de Constantino, de origem humilde (uma tradição, que Ambrósio regista, diz que era filha de um estalajadeiro). Quando o filho se tornou Augusto, recebeu o título de *Augusta*. Cristã, fez por volta de 327 – 328 uma peregrinação à Terra Santa e apoiou a construção de igrejas em Belém e no Monte das Oliveiras. A tradição que lhe atribui a descoberta da **Vera Cruz** é do fim do século IV e não tem confirmação histórica. É venerada como santa.',
+  { h: 'Juliano, «o Apóstata» (331 – 363 d.C.)' },
+  'Sobrinho de Constantino, escapou ao massacre da família em 337, estudou filosofia e foi nomeado César na Gália em 355. Venceu os alamanos em Estrasburgo (357) e foi aclamado Augusto pelas suas tropas em 360. Tornou-se imperador único em 361 e tentou restaurar os cultos tradicionais. Escreveu obras filosóficas e um texto satírico, o *Misopogon* («O odiador da barba»). Morreu em junho de 363, atingido numa escaramuça na guerra contra os persas. Algumas fontes cristãs referem uma frase final («Venceste, Galileu»), que é lenda.',
+  { img: 'rcd-juliano-busto', leg: 'Sólido de Juliano II, cunhado em Constantinopla (361–363): anverso com retrato e reverso.' },
+  { h: 'Teodósio I, «o Grande» (347 – 395 d.C.)' },
+  'Natural da Hispânia (de *Cauca*, segundo a tradição), filho de um general, foi escolhido por Graciano em 379, depois do desastre de Adrianópolis, para governar o Oriente. Fez a paz com os godos (382), proibiu o paganismo (391 – 392) e foi o último imperador a reinar sobre todo o Império (394 – 395), depois de vencer o usurpador Eugénio no Frígido. Segundo a tradição, em 390, depois de um massacre em Tessalónica ordenado em reação a uma revolta, o bispo Ambrósio obrigou-o a fazer penitência pública. Morreu em Milão e deixou o Império aos filhos Arcádio e Honório. O **Missório de Teodósio**, achado em Almendralejo (Badajoz), é um grande prato de prata do seu reinado.',
+  { img: 'rcd-missorium-teodosio', leg: 'Réplica do Missório de Teodósio I, exposta no Museu Nacional de Arte Romana de Mérida; original de 388 na Real Academia de la Historia, Madrid.' },
+  { h: 'Estilicão (c. 359 – 408 d.C.)' },
+  'Filho de um oficial vândalo e de uma romana, casou com Serena, sobrinha de Teodósio, e foi o general que governou o Ocidente em nome de Honório. Travou Alarico em Pollentia (402), batalha de resultado discutido, e venceu o chefe godo Radagaiso em Fiesole (406). Em 406, não conseguiu impedir a travessia do Reno. Foi acusado de traição e executado em Ravena em agosto de 408, o que deixou o Ocidente sem o seu melhor defensor. O **díptico de Monza** (c. 400) mostra, segundo a identificação mais aceite, Estilicão com a mulher e o filho.',
+  { img: 'rcd-diptico-estilicao', leg: 'Díptico de marfim tradicionalmente identificado com Estilicão e a sua família, c. 400.' },
+  { h: 'Alarico (c. 370 – 410 d.C.)' },
+  'Chefe dos godos (visigodos), serviu Teodósio como comandante de tropas federadas e depois entrou em conflito com o Império, exigindo terras, dinheiro e um posto militar. Cercou Roma em 408 e 409 e entrou nela a **24 de agosto de 410**, por três dias de saque. Não destruiu a cidade, poupou as igrejas de São Pedro e São Paulo (segundo as fontes cristãs) e morreu meses depois, em Cosência, no sul da Itália. A lenda diz que foi enterrado no leito do rio Busento, com o seu tesouro, mas os escravos que o cavaram terão sido mortos para guardar o segredo.',
+  { h: 'Agostinho de Hipona (354 – 430 d.C.)' },
+  'Nascido em Tagaste (África), foi professor de retórica, maniqueu e, em 386, converteu-se ao cristianismo; em 396 tornou-se bispo de **Hipona**. As suas *Confissões* (c. 397 – 400) são talvez a primeira autobiografia espiritual do Ocidente; a *Cidade de Deus* (413 – 426) foi escrita depois do saque de Roma, para responder à acusação pagã de que os cristãos tinham causado a catástrofe. Morreu a 28 de agosto de 430, durante o cerco de Hipona pelos vândalos. As suas ideias marcaram o pensamento ocidental.',
+  { h: 'Flávio Aécio (c. 391 – 454 d.C.)' },
+  'General do Ocidente, passou a juventude como refém entre os godos e os hunos, o que lhe deu contactos que usou depois. Dominou o governo de Valentiniano III durante cerca de 20 anos, defendeu a Gália e comandou a coligação romano-visigótica que travou Átila nos **Campos Cataláunicos** (451). Foi morto pelo próprio imperador, em 454, que temia a sua influência. Segundo a tradição, um cortesão disse a Valentiniano que cortara a mão direita com a esquerda; Valentiniano seria assassinado no ano seguinte.',
+  { h: 'Odoacro (c. 433 – 493 d.C.)' },
+  'Chefe de origem germânica (as fontes dão-lhe origens variadas: esciro, turíngio, e outras), oficial do exército imperial na Itália. Em 476, os soldados federados, que exigiam terras, proclamaram-no rei; mandou matar Orestes e depôs o jovem **Rómulo Augústulo**, que poupou. Enviou as insígnias imperiais a Zenão, em Constantinopla, e governou a Itália durante 17 anos, mantendo o Senado e a administração romana. Em 493, foi vencido por **Teodorico**, rei dos ostrogodos, que o matou à mesa, num banquete, em Ravena.',
+  { h: 'Hidácio de Chaves (c. 400 – c. 469 d.C.)' },
+  'Natural de Lemica (na atual Galiza), viajou jovem à Terra Santa e conheceu Jerónimo. Foi **bispo de Aquae Flaviae** (Chaves), c. 427, e viveu a chegada dos suevos e dos vândalos à Galécia. Foi capturado e preso durante uns meses em 460. A sua **Crónica**, que continua a de Jerónimo até 468, é a principal fonte escrita para a história da Hispânia no século V: fala de Braga, de Conímbriga, de Lisboa e de Mérida. Hidácio vê na invasão um castigo divino e anuncia, por vezes, o fim do mundo próximo.'
+];
+
+const legado = [
+  { h: 'O que nos deixaram' },
+  { lista: [
+    '**O cristianismo como religião do Ocidente e do Oriente europeus:** a Igreja herdou a organização do Império (dioceses, bispos, concílios).',
+    '**O direito:** o Código Teodosiano (438) e, depois, o *Corpus Iuris Civilis* de Justiniano estão na base do direito civil da Europa continental e de grande parte do mundo.',
+    '**As línguas românicas:** o latim falado evoluiu para o português, o espanhol, o francês, o italiano e o romeno; a Igreja manteve o latim como língua culta.',
+    '**O Império Romano do Oriente:** Constantinopla e a sua cultura grega e cristã sobreviveram até 1453.',
+    '**Um modelo de Estado:** impostos, burocracia, títulos, protocolo de corte e a ideia de um poder imperial marcaram os reinos e os impérios seguintes.',
+    '**A arte e a arquitetura cristãs:** a basílica, a cruz, os mosaicos, os ícones, que vêm do Baixo Império.'
+  ] },
+  { h: 'Os reinos romano-germânicos' },
+  'Em vez de «desaparecerem», as províncias do Ocidente transformaram-se em **reinos**: visigodos (Aquitânia e, depois, Hispânia), francos (Gália), burgúndios, vândalos (África), suevos (Galécia), ostrogodos (Itália), anglos e saxões (Britânia). Muitos reis consideravam-se aliados do imperador do Oriente, cunharam moeda com a sua efígie, mantiveram o direito romano para os romanos e adotaram o cristianismo. O **reino suevo** (409 ou 411 – 585), com capital em Braga, é muitas vezes apontado como um dos antecessores de Portugal; esta ligação é uma interpretação, não uma continuidade política.',
+  { h: 'Antiguidade Tardia: um novo olhar' },
+  'Para **Edward Gibbon**, cuja *História do Declínio e Queda do Império Romano* (1776 – 1788) marcou o debate, a causa foi, em grande parte, o cristianismo e a «barbárie». No século XX, **Peter Brown** (*The World of Late Antiquity*, 1971) defendeu que não houve queda mas uma **transformação criativa**; nos anos 2000, historiadores como **Bryan Ward-Perkins** e **Peter Heather** sublinharam a violência das invasões e o empobrecimento material. O debate continua, e a maior parte dos especialistas aceita uma síntese: houve uma queda política e uma crise económica no Ocidente, mas também uma enorme continuidade cultural.',
+  { h: 'Constantinopla e o Oriente' },
+  'A «Nova Roma» de Constantino tornou-se uma metrópole de talvez meio milhão de habitantes (estimativa) no século VI, com a Igreja de Santa Sofia (a atual foi construída por Justiniano, 532 – 537), o Hipódromo e as muralhas. A sua história, de Justiniano à queda em 1453 às mãos dos otomanos, será tratada na página dedicada ao Império Bizantino. É um erro dizer que o Império Romano «acabou» em 476: nesse ano, só o Ocidente deixou de ter imperador.',
+  { h: 'Fontes e arqueologia' },
+  'Conhecemos esta época por historiadores como **Amiano Marcelino**, **Zósimo**, **Eutrópio**, **Aurélio Vítor**, **Eusébio de Cesareia**, **Hidácio** e **Procópio** (já do século VI); por **leis** (Código Teodosiano), **inscrições**, **moedas** e **papiros**. A **Historia Augusta**, uma coleção de biografias imperiais escrita provavelmente no fim do século IV, tem muita informação, mas também invenções, e deve ser usada com cuidado. A **Cronografia de 354**, um calendário ilustrado, mostra a vida romana em meados do século IV (354).',
+  { h: 'Tesouros e achados' },
+  'Os séculos IV e V deixaram **tesouros enterrados** em tempos de perigo. O **Tesouro de Hoxne** (Suffolk, Inglaterra, achado em 1992) tem milhares de moedas de ouro e de prata e peças de joalharia enterradas no início do século V. O **Tesouro de Kaiseraugst** (Suíça, achado em 1961) é de prataria do século IV. Na Hispânia, o **Missório de Teodósio**, achado em Almendralejo em 1847, é uma das mais famosas peças da prata romana. Na Lusitânia, a **villa de São Cucufate**, as **termas e os mosaicos de Milreu** e o **mosaico do Rabaçal** são dos achados mais importantes.',
+  { img: 'rcd-arco-constantino', leg: 'Arco de Constantino, Roma.' },
+  { h: 'Palmira e o património em risco' },
+  'As ruínas de **Palmira**, Património Mundial, foram parcialmente destruídas em 2015 por forças do Estado Islâmico, que arrasaram os templos de Bel e Baalshamin e o Arco do Triunfo. A destruição levantou a questão do que fazer: reconstruir, conservar o que resta ou deixar. Casos como este mostram que o património desta época é frágil.',
+  { h: 'Onde visitar' },
+  { lista: [
+    '**Roma:** Arco de Constantino, Termas de Caracala, Muralhas Aurelianas, Basílica de Maxêncio e Constantino, Santa Constança e São João de Latrão.',
+    '**Split (Croácia):** o Palácio de Diocleciano, ainda habitado, e o museu arqueológico de Salona.',
+    '**Tréveris (Alemanha):** a Aula Palatina, as Termas Imperiais e a Porta Negra (esta, do século II).',
+    '**Istambul (Turquia):** as muralhas teodosianas, o Hipódromo e o Museu Arqueológico.',
+    '**Ravena (Itália):** os mosaicos do Mausoléu de Gala Placídia (século V) e a arte do tempo de Teodorico e de Justiniano.',
+    '**Piazza Armerina (Sicília):** a Villa Romana del Casale e os seus mosaicos.',
+    '**Felix Romuliana (Sérvia):** o palácio de Galério, Património Mundial.',
+    '**Portugal:** Conímbriga (com o Museu Monográfico), Milreu, São Cucufate, Torre de Palma, Braga (Museu D. Diogo de Sousa) e Museu Nacional de Arqueologia, em Lisboa.',
+    '**Espanha:** Mérida (o Museu Nacional de Arte Romana e a basílica de Santa Eulália) e Carranque (Toledo).'
+  ] },
+  { h: 'Mitos a evitar' },
+  { lista: [
+    '**«Roma caiu em 476»:** o Império do Oriente continuou; no Ocidente, a mudança foi gradual.',
+    '**«O cristianismo destruiu Roma»:** é a tese de Gibbon, hoje muito matizada, e a oposta (Agostinho) também era polémica.',
+    '**«Os bárbaros eram selvagens sem cultura»:** muitos serviam o exército romano, falavam latim e queriam ser romanos.',
+    '**«Constantino converteu-se na Ponte Mílvia e acabou com o paganismo»:** o processo foi longo; o paganismo só deixou de ser oficial com Teodósio e demorou séculos a desaparecer.',
+    '**«Odoacro destruiu Roma»:** não houve nenhum saque em 476.'
+  ] }
+];
+
+const quiz = [
+  { p: 'Quem foi o imperador que, em 212, concedeu a cidadania romana à grande maioria dos habitantes livres do Império?', op: ['Septímio Severo', 'Caracala', 'Diocleciano', 'Constantino'], certa: 1, exp: 'Foi a Constitutio Antoniniana, de Caracala (nome oficial Marco Aurélio Antonino).' },
+  { p: 'Que imperador morreu em 251, na batalha de Abritus, contra os godos?', op: ['Décio', 'Valeriano', 'Aureliano', 'Filipe, o Árabe'], certa: 0, exp: 'Décio foi um dos primeiros imperadores a morrer em combate contra um inimigo estrangeiro.' },
+  { p: 'Quem foi capturado pelos persas em 260, num desastre sem paralelo?', op: ['Galieno', 'Valeriano', 'Gordiano III', 'Probo'], certa: 1, exp: 'Valeriano foi derrotado e capturado pelo xá Sapor I perto de Edessa.' },
+  { p: 'Que imperador derrotou Zenóbia e reunificou o Império em 274?', op: ['Cláudio II', 'Probo', 'Aureliano', 'Diocleciano'], certa: 2, exp: 'Aureliano derrotou Zenóbia (272) e o Império Gaulês (274).' },
+  { p: 'Quantos governantes tinha a Tetrarquia criada por Diocleciano?', op: ['Dois', 'Três', 'Quatro', 'Cinco'], certa: 2, exp: 'Dois Augustos e dois Césares, a partir de 293.' },
+  { p: 'Que lei de Diocleciano, em 301, tentou controlar a inflação?', op: ['O Édito sobre os preços máximos', 'O Código Teodosiano', 'A Constitutio Antoniniana', 'O Édito de Milão'], certa: 0, exp: 'Fixava preços e salários máximos; foi um fracasso.' },
+  { p: 'Em que batalha, em 312, Constantino derrotou Maxêncio?', op: ['Adrianópolis', 'Ponte Mílvia', 'Crisópolis', 'Frígido'], certa: 1, exp: 'A 28 de outubro de 312, junto a Roma; Maxêncio morreu afogado no Tibre.' },
+  { p: 'Qual era a moeda de ouro estável criada por Constantino?', op: ['O denário', 'O antoniniano', 'O sólido', 'O sestércio'], certa: 2, exp: 'O sólido, de cerca de 4,5 g, durou séculos.' },
+  { p: 'Em que ano foi inaugurada Constantinopla?', op: ['312', '324', '330', '380'], certa: 2, exp: 'A 11 de maio de 330, no local da antiga Bizâncio.' },
+  { p: 'Que concílio de 325 condenou o arianismo?', op: ['Calcedónia', 'Niceia', 'Éfeso', 'Elvira'], certa: 1, exp: 'O Concílio de Niceia, convocado por Constantino.' },
+  { p: 'Que decreto de 380 fez do cristianismo niceno a religião do Império?', op: ['O Édito de Milão', 'O Édito de Tessalónica', 'O Édito dos Preços', 'A Lei das Citações'], certa: 1, exp: 'Foi promulgado por Teodósio I, Graciano e Valentiniano II, a 27 de fevereiro de 380.' },
+  { p: 'Que batalha, em 378, destruiu o exército de Valente e matou o imperador?', op: ['Estrasburgo', 'Adrianópolis', 'Naísso', 'Campos Cataláunicos'], certa: 1, exp: 'Adrianópolis, a 9 de agosto de 378, contra os godos.' },
+  { p: 'Quem comandou os visigodos que saquearam Roma em 410?', op: ['Átila', 'Genserico', 'Alarico', 'Odoacro'], certa: 2, exp: 'Alarico entrou em Roma a 24 de agosto de 410; o saque durou três dias.' },
+  { p: 'Quem foi o bispo de Chaves que escreveu uma crónica fundamental sobre a Hispânia do século V?', op: ['Prudêncio', 'Orósio', 'Hidácio', 'Ósio'], certa: 2, exp: 'Hidácio (c. 400 – c. 469), bispo de Aquae Flaviae.' },
+  { p: 'Quem depôs o último imperador do Ocidente, Rómulo Augústulo, em 476?', op: ['Teodorico', 'Odoacro', 'Estilicão', 'Aécio'], certa: 1, exp: 'Odoacro depôs-o em setembro de 476 e governou a Itália até 493.' }
+];
+
+export default {
+  id: 'roma',
+  cor: '#b5413a',
+  emblema: '../../assets/img/roma.png',
+  grupo: { ...GRUPO, aqui: 'crise-dominato' },
+  nome:    { pt: 'Crise, Dominato e Queda', en: 'Crisis, Dominate and Fall' },
+  periodo: { pt: '193 – 476 d.C.', en: '193 – 476 AD' },
+  visao:          { pt: visao, en: EN.visao },
+  linha:          { pt: linha, en: EN.linha },
+  mapa:           { pt: mapa, en: EN.mapa },
+  sociedade:      { pt: sociedade, en: EN.sociedade },
+  personalidades: { pt: personalidades, en: EN.personalidades },
+  legado:         { pt: [...legado, ...CRED.pt], en: [...EN.legado, ...CRED.en] },
+  quiz:           { pt: quiz, en: EN.quiz }
+};
