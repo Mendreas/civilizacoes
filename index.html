@@ -28,6 +28,12 @@
     font-size:14px; font-weight:600; letter-spacing:.2px; padding:2px 8px; border-radius:10px;
     background:rgba(5,7,13,.7); text-shadow:0 1px 2px #000; opacity:0; transition:opacity .2s; pointer-events:none; }
   .marcador.rotulo .nome, .marcador:hover .nome, .marcador:focus-visible .nome { opacity:1; }
+  .grupo .disco { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:2px; padding:5px; box-sizing:border-box; align-items:stretch; justify-content:stretch;
+    background:radial-gradient(circle at 35% 30%, #2b2414, #0b0a06 120%); border:2px solid var(--ouro); }
+  .grupo .mini { width:100%; height:100%; border-radius:50%; background-size:cover; background-position:center; background-color:rgba(232,217,168,.12); }
+  .grupo .num { position:absolute; right:-4px; top:-4px; min-width:24px; height:24px; padding:0 5px; box-sizing:border-box; border-radius:12px;
+    background:var(--ouro); color:#1b1608; font:700 14px/24px Georgia,serif; text-align:center; box-shadow:0 1px 6px rgba(0,0,0,.7); pointer-events:none; }
+  .grupo.apagado .num { background:#8f9ab3; }
   header { position:fixed; left:0; right:0; top:0; padding:calc(14px + env(safe-area-inset-top)) 18px 0; display:flex;
     justify-content:space-between; align-items:flex-start; pointer-events:none; z-index:5; }
   header h1 { margin:0; font-family: Georgia, "Times New Roman", serif; font-size:26px; font-weight:700; letter-spacing:.5px;
@@ -132,11 +138,11 @@ import { criarBotao } from './shared/pesquisa.js';
 
 // ---------- Textos ----------
 const TXT = {
-  pt: { titulo:'Civilizações', sub:'Da escrita a 1500 d.C.', dica:'Arrasta para rodar · pinça ou roda do rato para aproximar · toca numa civilização',
-        carregar:'A carregar a Terra…', erro:'Não foi possível iniciar o globo 3D neste dispositivo.', abrir:'Abrir', tudo:'Tudo', esconder:'Esconder', todas:'todas as civilizações', neste:n=>n+(n===1?' civilização existia':' civilizações existiam'), play:'Avançar o tempo', pausa:'Pausa',
+  pt: { titulo:'Civilizações', sub:'Da escrita a 1500 d.C.', dica:'Arrasta para rodar · pinça ou roda do rato para aproximar · toca numa região ou civilização',
+        ampliar:'ampliar a região', carregar:'A carregar a Terra…', erro:'Não foi possível iniciar o globo 3D neste dispositivo.', abrir:'Abrir', tudo:'Tudo', esconder:'Esconder', todas:'todas as civilizações', neste:n=>n+(n===1?' civilização existia':' civilizações existiam'), play:'Avançar o tempo', pausa:'Pausa',
         eras:['Bronze','Antiguidade','Medieval'], ac:'a.C.', dc:'d.C.', semCivs:'nenhuma civilização do globo' },
-  en: { titulo:'Civilizations', sub:'From writing to AD 1500', dica:'Drag to rotate · pinch or scroll to zoom · tap a civilization',
-        carregar:'Loading Earth…', erro:'The 3D globe could not be started on this device.', abrir:'Open', tudo:'All', esconder:'Hide', todas:'all civilizations', neste:n=>n+(n===1?' civilization existed':' civilizations existed'), play:'Play time', pausa:'Pause',
+  en: { titulo:'Civilizations', sub:'From writing to AD 1500', dica:'Drag to rotate · pinch or scroll to zoom · tap a region or a civilization',
+        ampliar:'zoom into the region', carregar:'Loading Earth…', erro:'The 3D globe could not be started on this device.', abrir:'Open', tudo:'All', esconder:'Hide', todas:'all civilizations', neste:n=>n+(n===1?' civilization existed':' civilizations existed'), play:'Play time', pausa:'Pause',
         eras:['Bronze','Antiquity','Medieval'], ac:'BC', dc:'AD', semCivs:'no civilization on the globe' }
 };
 let lang = 'pt';
@@ -234,6 +240,44 @@ const marcadores = visiveis.map(c => {
   return { c, el: b, nome: n, p: pontoLatLon(c.lat, c.lon) };
 });
 
+// ---------- Regiões: com o globo inteiro à vista, as civilizações vizinhas agrupam-se num só ícone ----------
+// Cada civilização fica na região com o centro mais próximo; regiões com 2 ou mais civilizações viram um grupo.
+const REGIOES = [
+  { id: 'europa',   lat: 52,  lon: 5,    nome: { pt: 'Europa',                en: 'Europe' } },
+  { id: 'medit',    lat: 40,  lon: 14,   nome: { pt: 'Mediterrâneo',          en: 'Mediterranean' } },
+  { id: 'anatolia', lat: 36,  lon: 35,   nome: { pt: 'Anatólia e Levante',    en: 'Anatolia and the Levant' } },
+  { id: 'mesopot',  lat: 33,  lon: 45,   nome: { pt: 'Mesopotâmia',           en: 'Mesopotamia' } },
+  { id: 'irao',     lat: 36,  lon: 55,   nome: { pt: 'Irão e estepe',         en: 'Iran and the steppe' } },
+  { id: 'egito',    lat: 20,  lon: 33,   nome: { pt: 'Egito e Núbia',         en: 'Egypt and Nubia' } },
+  { id: 'afoc',     lat: 11,  lon: -2,   nome: { pt: 'África Ocidental',      en: 'West Africa' } },
+  { id: 'afcen',    lat: -3,  lon: 18,   nome: { pt: 'África Central',        en: 'Central Africa' } },
+  { id: 'afaus',    lat: -14, lon: 35,   nome: { pt: 'África Oriental e Austral', en: 'East and Southern Africa' } },
+  { id: 'india',    lat: 27,  lon: 78,   nome: { pt: 'Índia e Himalaia',      en: 'India and the Himalayas' } },
+  { id: 'oriente',  lat: 38,  lon: 115,  nome: { pt: 'Extremo Oriente',       en: 'East Asia' } },
+  { id: 'sudeste',  lat: 13,  lon: 104,  nome: { pt: 'Sudeste Asiático',      en: 'Southeast Asia' } },
+  { id: 'austral',  lat: -25, lon: 134,  nome: { pt: 'Austrália',             en: 'Australia' } },
+  { id: 'polin',    lat: -17, lon: -149, nome: { pt: 'Polinésia',             en: 'Polynesia' } },
+  { id: 'meso',     lat: 18,  lon: -95,  nome: { pt: 'Mesoamérica',           en: 'Mesoamerica' } },
+  { id: 'andes',    lat: -14, lon: -71,  nome: { pt: 'Andes',                 en: 'The Andes' } },
+  { id: 'sudoeste', lat: 36,  lon: -108, nome: { pt: 'Sudoeste dos EUA',      en: 'US Southwest' } },
+];
+REGIOES.forEach(r => { r.p = pontoLatLon(r.lat, r.lon); r.mem = []; });
+marcadores.forEach(m => { let b = REGIOES[0], bd = 9; for (const r of REGIOES) { const d = r.p.angleTo(m.p); if (d < bd) { bd = d; b = r; } } m.reg = b; b.mem.push(m); });
+const grupos = REGIOES.filter(r => r.mem.length >= 2).map(r => {
+  const b = document.createElement('button'); b.className = 'marcador grupo rotulo';
+  const d = document.createElement('span'); d.className = 'disco';
+  r.mem.filter(m => m.c.img).slice(0, 4).forEach(m => { const mi = document.createElement('span'); mi.className = 'mini'; mi.style.backgroundImage = `url(${m.c.img})`; d.appendChild(mi); });
+  const num = document.createElement('span'); num.className = 'num';
+  const n = document.createElement('span'); n.className = 'nome';
+  b.append(d, num, n);
+  const c = new THREE.Vector3(); r.mem.forEach(m => c.add(m.p)); c.normalize();
+  const g = { r, el: b, nome: n, num, p: c, lat: Math.asin(c.y) / GRAU, lon: Math.atan2(-c.z, c.x) / GRAU, n: -1, ativo: true, fs: 1.3 };
+  r.grp = g;
+  b.addEventListener('click', () => { if (!arrastou) irRegiao(g); });
+  camada.appendChild(b);
+  return g;
+});
+
 
 // ---------- Cursor de tempo ----------
 // Anos: negativo = a.C. Lê "c. 4500 a – 2000 a", "753 a – 476 d", "1325 – 1521", "c. 50000 a – hoje" (ou ini/fim explícitos em CIVS).
@@ -249,10 +293,19 @@ const T_MIN = -3500, T_MAX = 1500;
 let ano = null, esconder = false, tocando = false, acc = 0;     // ano === null: mostra tudo
 try { const a = sessionStorage.getItem('civ_ano'); if (a !== null && a !== '') ano = +a; esconder = sessionStorage.getItem('civ_esc') === '1'; } catch (e) {}
 const fmtAno = a => { const t = TXT[lang]; return a < 0 ? `${-a} ${t.ac}` : (lang === 'en' ? `${t.dc} ${a || 1}` : `${a || 1} ${t.dc}`); };
+function atualizarGrupos() {
+  for (const g of grupos) {
+    const act = g.r.mem.filter(m => m.ativo).length, tot = g.r.mem.length;
+    g.ativo = ano === null || act > 0; g.n = ano === null ? tot : act;
+    g.num.textContent = g.n; g.el.classList.toggle('apagado', !g.ativo);
+    const t = TXT[lang]; g.el.setAttribute('aria-label', `${g.r.nome[lang]}: ${tot} — ${t.ampliar}`);
+  }
+}
 function aplicarTempo() {
   const t = TXT[lang];
   marcadores.forEach(m => { m.ativo = ano === null || (m.ini <= ano && ano <= m.fim); m.el.classList.toggle('apagado', !m.ativo); });
   const n = marcadores.filter(m => m.ativo).length;
+  atualizarGrupos();
   $('tempo').classList.toggle('tudo', ano === null);
   $('t-tudo').setAttribute('aria-pressed', ano === null);
   $('t-esc').setAttribute('aria-pressed', esconder);
@@ -292,6 +345,7 @@ function textos() {
   $('l-pt').setAttribute('aria-pressed', lang === 'pt');
   $('l-en').setAttribute('aria-pressed', lang === 'en');
   $('t-tudo').textContent = t.tudo; $('t-esc').textContent = t.esconder; montarEscala(); aplicarTempo();
+  grupos.forEach(g => { g.lw = 0; g.nome.textContent = g.r.nome[lang]; });
   marcadores.forEach(m => { m.lw = 0; m.nome.textContent = m.c.nome[lang]; m.el.setAttribute('aria-label', `${t.abrir}: ${m.c.nome[lang]}, ${m.c.periodo[lang]}`); });
 }
 function mudarIdioma(l) { lang = l; try { localStorage.setItem('civ_lang', l); } catch (e) {} textos(); }
@@ -400,6 +454,11 @@ window.addEventListener('pageshow', e => { if (e.persisted) { aSair = false; ani
 
 // ---------- Ciclo de desenho ----------
 const v = new THREE.Vector3(), nrm = new THREE.Vector3(), cam = new THREE.Vector3();
+const ZG0 = 0.30, ZG1 = 0.42;   // intervalo de zoom em que os grupos dão lugar às civilizações
+function irRegiao(g) {
+  primeiraInteracao();
+  irPara({ rotY: centrarLon(g.lon), tilt: limitar(centrarLat(g.lat) * 0.5, -0.5, 0.5), dist: distMax - Math.min(0.78, 0.52 + 0.025 * g.r.mem.length) * (distMax - 1.6) }, 750);   // regiões mais cheias: mais zoom
+}
 let ultimo = performance.now();
 function desenhar(agora) {
   const dt = Math.min(0.05, (agora - ultimo) / 1000); ultimo = agora;
@@ -429,34 +488,45 @@ function desenhar(agora) {
   // tamanho adaptado ao ecrã: com o globo inteiro à vista, o disco é uma fração do raio do globo (telemóvel = discos mais pequenos)
   const raioPx = (H / 2) * (1 / Math.sqrt(Math.max(estado.dist * estado.dist - 1, 0.01))) / TAN;
   const e0 = Math.min(0.64, Math.max(0.3, raioPx * 0.13 / 64));
-  const escala = e0 + (1.28 - e0) * zf;
-  const vis = [];
+  const emax = W < 600 ? 0.8 : 1.28;   // no telemóvel os ícones crescem menos ao aproximar
+  const escala = e0 + (emax - e0) * zf;
+  const cl = limitar((ZG1 - zf) / (ZG1 - ZG0), 0, 1);        // 1: só grupos; 0: só civilizações (mistura entre ZG0 e ZG1)
+
+  const frenteDe = (pt, dest) => {
+    v.copy(pt).applyMatrix4(terra.matrixWorld); nrm.copy(v).normalize();
+    const f = nrm.dot(cam.clone().sub(v).normalize());
+    const q = v.clone().project(camera);
+    dest.x0 = dest.x = (q.x * 0.5 + 0.5) * W; dest.y0 = dest.y = (-q.y * 0.5 + 0.5) * H;
+    return f;
+  };
+  const vis = [], visG = [];
   for (const m of marcadores) {
-    v.copy(m.p).applyMatrix4(terra.matrixWorld);                    // posição no mundo
-    nrm.copy(v).normalize();
-    const frente = nrm.dot(cam.clone().sub(v).normalize());          // >0: face visível
-    if (frente < 0.1 || (esconder && ano !== null && !m.ativo)) { m.el.style.visibility = 'hidden'; continue; }
-    const p = v.clone().project(camera);
-    m.x0 = m.x = (p.x * 0.5 + 0.5) * W; m.y0 = m.y = (-p.y * 0.5 + 0.5) * H;
-    m.frente = frente;
+    const mop = m.reg.grp ? 1 - cl : 1;
+    const f = frenteDe(m.p, m);
+    if (f < 0.1 || mop < 0.02 || (esconder && ano !== null && !m.ativo)) { m.el.style.visibility = 'hidden'; continue; }
+    m.frente = f; m.mop = mop;
     vis.push(m);
   }
-  // Com zoom forte, afasta marcadores (disco + nome) que se sobreporiam no ecrã.
-  const peso = 1;   // afasta sempre os marcadores sobrepostos (também com o globo todo à vista)
-  if (peso > 0 && vis.length > 1) {
-    const rotulos = zf > 0.3;
-    for (const m of vis) {
+  for (const g of grupos) {
+    const f = frenteDe(g.p, g);
+    if (f < 0.1 || cl < 0.02 || (esconder && ano !== null && !g.ativo)) { g.el.style.visibility = 'hidden'; continue; }
+    g.frente = f; g.mop = cl;
+    visG.push(g);
+  }
+  // Afasta ícones (disco + nome) que se sobreporiam no ecrã.
+  function afastar(lista, rotulos) {
+    if (lista.length < 2) return;
+    for (const m of lista) {
       if (!m.lw) m.lw = m.nome.offsetWidth || 90;
-      m.w = Math.max(64, rotulos ? m.lw : 0) * escala + 3;           // largura da caixa (px)
-      m.h = (rotulos ? 70 + 26 : 64) * escala + 3;                    // altura da caixa: disco + nome
+      m.w = Math.max(64, rotulos ? m.lw : 0) * escala * (m.fs || 1) + 3;           // largura da caixa (px)
+      m.h = (rotulos ? 70 + 26 : 64) * escala * (m.fs || 1) + 3;                    // altura da caixa: disco + nome
     }
     for (let it = 0; it < 60; it++) {
       let mexeu = false;
-      for (let i = 0; i < vis.length; i++) for (let j = i + 1; j < vis.length; j++) {
-        const A = vis[i], B = vis[j];
-        // caixas centradas em x, com topo em y-32*escala
+      for (let i = 0; i < lista.length; i++) for (let j = i + 1; j < lista.length; j++) {
+        const A = lista[i], B = lista[j];
         const dx = B.x - A.x, dy = B.y - A.y;
-        const ox = (A.w + B.w) / 2 - Math.abs(dx), oy = (A.h + B.h) / 2 - Math.abs(dy + 0);
+        const ox = (A.w + B.w) / 2 - Math.abs(dx), oy = (A.h + B.h) / 2 - Math.abs(dy);
         if (ox > 0 && oy > 0) {
           mexeu = true;
           if (oy <= ox) { const k = (dy >= 0 ? 1 : -1) * oy / 2; A.y -= k; B.y += k; if (dy === 0) { A.y -= 0.5; B.y += 0.5; } }
@@ -466,15 +536,19 @@ function desenhar(agora) {
       if (!mexeu) break;
     }
   }
-  for (const m of vis) {
-    const dmax = 110 * escala; let ddx = m.x - m.x0, ddy = m.y - m.y0; const dd = Math.hypot(ddx, ddy);
+  const rotulos = zf > 0.3;
+  afastar(vis, rotulos); afastar(visG, true);
+  const dmax = 110 * escala;
+  const pintar = (m, ativo, rot) => {
+    let ddx = m.x - m.x0, ddy = m.y - m.y0; const dd = Math.hypot(ddx, ddy);
     if (dd > dmax) { ddx *= dmax / dd; ddy *= dmax / dd; }
-    const x = m.x0 + ddx * peso, y = m.y0 + ddy * peso;
     m.el.style.visibility = 'visible';
-    m.el.style.opacity = String(limitar((m.frente - 0.1) / 0.25, 0, 1) * (m.ativo ? 1 : 0.3));
-    m.el.style.transform = `translate(${x - 32}px, ${y - 32}px) scale(${escala})`;
-    m.el.classList.toggle('rotulo', zf > 0.3);
-  }
+    m.el.style.opacity = String(limitar((m.frente - 0.1) / 0.25, 0, 1) * m.mop * (ativo ? 1 : 0.3));
+    m.el.style.transform = `translate(${m.x0 + ddx - 32}px, ${m.y0 + ddy - 32}px) scale(${escala * (m.fs || 1)})`;
+    m.el.classList.toggle('rotulo', rot);
+  };
+  for (const m of vis) pintar(m, m.ativo, rotulos);
+  for (const g of visG) pintar(g, g.ativo, true);
   renderer.render(scene, camera);
   requestAnimationFrame(desenhar);
 }
