@@ -76,6 +76,7 @@ const linha = [
   ] },
   { img: 'pue-pueblo-revolt', leg: 'A Revolta dos Pueblos de 1680, em mural de Loren Mozley (1936), Albuquerque, Novo México.' },
   { img: 'pue-seca-migracao', leg: 'Famílias a deixar uma aldeia do planalto do Colorado, séc. XIII; reconstituição conjetural. Ilustração gerada por IA.' },
+  { img: 'pue-wetherill', leg: 'Ilustração gerada por IA: Richard Wetherill e Charles Mason avistam Cliff Palace, em Mesa Verde, em dezembro de 1888.' },
   { linha: [
     { d: '1849', t: 'Os primeiros registos científicos', x: 'O tenente **James H. Simpson**, do exército norte-americano, visita o Chaco Canyon durante uma expedição contra os Navajo e descreve as ruínas, com desenhos de Richard Kern. O interesse dos viajantes e dos colecionadores cresce, e muitos objetos são levados.' },
     { d: '1888', t: 'O Cliff Palace «descoberto»', x: 'Em 18 de dezembro, os vaqueiros **Richard Wetherill** e **Charles Mason** avistam o Cliff Palace, em Mesa Verde. Os Ute e os Navajo da região conheciam o local há muito tempo, e as famílias Pueblo nunca o esqueceram, mas a notícia desencadeia a escavação, e o saque, em larga escala.' },
