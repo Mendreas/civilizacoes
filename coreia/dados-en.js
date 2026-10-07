@@ -119,7 +119,7 @@ const mapa = [
   ] } },
   { img: 'cor-kangnido', leg: 'The Kangnido map (1402), a Korean world map, in a 16th-century Japanese copy; the image compares it with the Fra Mauro map.' },
   { h: 'Gyeongju: the thousand-year capital' },
-  'Silla ruled from **Gyeongju** for almost a thousand years (57 BC – 935, according to tradition). The Samguk Sagi speaks of 178,936 households in the city in the 9th century (a figure that is hard to interpret), which would make Gyeongju one of the largest cities of East Asia. The great mounded **tombs** in the centre yielded the famous gold crowns. On the artificial lake of **Anapji** the king held banquets; the stone **Cheomseongdae** is traditionally seen as a 7th-century observatory.',
+  'Silla ruled from **Gyeongju** for almost a thousand years (57 BC – 935, according to tradition). The Samguk Yusa speaks of 178,936 households in the city in the 9th century (a figure that is hard to interpret), which would make Gyeongju one of the largest cities of East Asia. The great mounded **tombs** in the centre yielded the famous gold crowns. On the artificial lake of **Anapji** the king held banquets; the stone **Cheomseongdae** is traditionally seen as a 7th-century observatory.',
   { img: 'cor-gyeongju-reconstrucao', leg: 'Artistic reconstruction of Gyeongju, capital of Silla, in the 8th century. (Illustrative AI-generated image.)' },
   { img: 'cor-cheomseongdae', leg: 'Cheomseongdae, observatory of Gyeongju (7th century).' },
   { h: 'Seoul (Hanyang): the capital of Joseon' },
@@ -132,7 +132,7 @@ const mapa = [
   'Outside the capitals, life went on in clan **villages**, such as **Hahoe** and **Yangdong**, home to scholar families, and in traditional houses (**hanok**) with curved-tile roofs and **ondol**, floor heating. In Seoul the **Bukchon** district preserves many hanok.',
   { img: 'cor-hanok-bukchon', leg: 'Traditional houses (hanok) in the Bukchon district of Seoul.' },
   { h: 'Roads and routes' },
-  'Joseon organized a system of **post stations** and **roads** (six main roads left Seoul), with horses and couriers, and of **fire and smoke signals** (**bongsu**) that carried news of the frontiers to Seoul from mountain to mountain. At sea, coastal routes linked the southern ports to the capital by way of the Han river, and it was across the Yellow Sea that Baekje and Silla traded with China and Japan. Korean embassies (**tongsinsa**) went to Japan, and annual embassies to Beijing, with scholars and merchants, brought back books, medicines and ideas.'
+  'Joseon organized a system of **post stations** and **roads** (six main roads, in the most usual reckoning, left Seoul), with horses and couriers, and of **fire and smoke signals** (**bongsu**) that carried news of the frontiers to Seoul from mountain to mountain. At sea, coastal routes linked the southern ports to the capital by way of the Han river, and it was across the Yellow Sea that Baekje and Silla traded with China and Japan. Korean embassies (**tongsinsa**) went to Japan, and annual embassies to Beijing, with scholars and merchants, brought back books, medicines and ideas.'
 ];
 
 const sociedade = [
@@ -258,7 +258,7 @@ const legado = [
     '**The Jikji and Gutenberg:** they are independent technologies; there is no proof that one influenced the other.'
   ] },
   { h: 'Modern discovery' },
-  'Much of what we know comes from recent discoveries: the **tomb of King Muryeong** (Baekje) was found in 1971, intact, with more than 2,900 objects; the **Dharani Sutra** was discovered in 1966; the **Baekje incense burner** was found in 1993, in a water tank of a workshop at the former temple site of Neungsan-ri. The **Jikji** was taken to France by the diplomat **Victor Collin de Plancy** (bought in Seoul, in the late 19th century), and identified by the librarian **Park Byeong-seon** (1972), at an exhibition in Paris.',
+  'Much of what we know comes from recent discoveries: the **tomb of King Muryeong** (Baekje) was found in 1971, intact, with more than 2,900 objects; the **Dharani Sutra** was discovered in 1966; the **Baekje incense burner** was found in 1993, in a wooden water tank beside the workshop at the former temple site of Neungsan-ri. The **Jikji** was taken to France by the diplomat **Victor Collin de Plancy** (bought in Seoul, in the late 19th century), and identified by the librarian **Park Byeong-seon** (1972), at an exhibition in Paris.',
   { h: 'Where to visit' },
   { lista: [
     '**Seoul:** Gyeongbokgung and Changdeokgung palaces, Jongmyo, the National Museum of Korea, the Bukchon district.',

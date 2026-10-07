@@ -122,7 +122,7 @@ const mapa = [
   ] } },
   { img: 'cor-kangnido', leg: 'Mapa Kangnido (1402), mapa-múndi coreano, em cópia japonesa do século XVI; a imagem compara-o com o mapa de Fra Mauro.' },
   { h: 'Gyeongju: a capital de mil anos' },
-  'Silla governou a partir de **Gyeongju** durante quase mil anos (57 a.C. – 935, segundo a tradição). O Samguk Sagi fala de 178 936 famílias na cidade no século IX (número de interpretação difícil), o que faria de Gyeongju uma das maiores cidades da Ásia Oriental. Os grandes **túmulos** em montículo do centro guardaram as famosas coroas de ouro. No lago artificial de **Anapji** o rei dava banquetes; o **Cheomseongdae**, em pedra, é tradicionalmente visto como um observatório do século VII.',
+  'Silla governou a partir de **Gyeongju** durante quase mil anos (57 a.C. – 935, segundo a tradição). O Samguk Yusa fala de 178 936 famílias na cidade no século IX (número de interpretação difícil), o que faria de Gyeongju uma das maiores cidades da Ásia Oriental. Os grandes **túmulos** em montículo do centro guardaram as famosas coroas de ouro. No lago artificial de **Anapji** o rei dava banquetes; o **Cheomseongdae**, em pedra, é tradicionalmente visto como um observatório do século VII.',
   { img: 'cor-gyeongju-reconstrucao', leg: 'Reconstrução artística de Gyeongju, capital de Silla, no século VIII. (Imagem ilustrativa gerada por IA.)' },
   { img: 'cor-cheomseongdae', leg: 'Cheomseongdae, observatório de Gyeongju (século VII).' },
   { h: 'Seul (Hanyang): a capital do Joseon' },
@@ -135,7 +135,7 @@ const mapa = [
   'Fora das capitais, a vida fazia-se em **aldeias** de clã, como **Hahoe** e **Yangdong**, de famílias de letrados, e nas casas tradicionais (**hanok**) de telhado de telha curva, com **ondol**, o aquecimento pelo chão. Em Seul, o bairro de **Bukchon** conserva muitos hanok.',
   { img: 'cor-hanok-bukchon', leg: 'Casas tradicionais (hanok) no bairro de Bukchon, em Seul.' },
   { h: 'As estradas e as rotas' },
-  'O Joseon organizou um sistema de **estações de posta** e de **estradas** (seis estradas principais saíam de Seul), com cavalos e correios, e de **sinais de fogo e fumo** (**bongsu**) que, de montanha em montanha, levavam a Seul as notícias das fronteiras. No mar, as rotas de cabotagem ligavam os portos do sul à capital pelo rio Han, e foi pelo mar Amarelo que Baekje e Silla comerciaram com a China e o Japão. As embaixadas coreanas (**tongsinsa**) iam ao Japão, e as embaixadas anuais a Pequim, com letrados e mercadores, traziam livros, remédios e ideias.'
+  'O Joseon organizou um sistema de **estações de posta** e de **estradas** (seis estradas principais, segundo a classificação mais usual, saíam de Seul), com cavalos e correios, e de **sinais de fogo e fumo** (**bongsu**) que, de montanha em montanha, levavam a Seul as notícias das fronteiras. No mar, as rotas de cabotagem ligavam os portos do sul à capital pelo rio Han, e foi pelo mar Amarelo que Baekje e Silla comerciaram com a China e o Japão. As embaixadas coreanas (**tongsinsa**) iam ao Japão, e as embaixadas anuais a Pequim, com letrados e mercadores, traziam livros, remédios e ideias.'
 ];
 
 const sociedade = [
@@ -261,7 +261,7 @@ const legado = [
     '**O Jikji e Gutenberg:** são tecnologias independentes; não há prova de que uma tenha influenciado a outra.'
   ] },
   { h: 'A descoberta moderna' },
-  'Muito do que sabemos vem de descobertas recentes: o **túmulo do rei Muryeong** (Baekje) foi achado em 1971, intacto, com mais de 2900 objetos; a **Dharani Sutra** foi descoberta em 1966; o **incensário de Baekje** foi encontrado em 1993, num tanque de água de uma oficina, no sítio do antigo templo de Neungsan-ri. O **Jikji** foi levado para França pelo diplomata **Victor Collin de Plancy** (comprado em Seul, no final do século XIX), e identificado pela bibliotecária **Park Byeong-seon** (1972), numa exposição em Paris.',
+  'Muito do que sabemos vem de descobertas recentes: o **túmulo do rei Muryeong** (Baekje) foi achado em 1971, intacto, com mais de 2900 objetos; a **Dharani Sutra** foi descoberta em 1966; o **incensário de Baekje** foi encontrado em 1993, num tanque de madeira com água, junto à oficina do sítio do antigo templo de Neungsan-ri. O **Jikji** foi levado para França pelo diplomata **Victor Collin de Plancy** (comprado em Seul, no final do século XIX), e identificado pela bibliotecária **Park Byeong-seon** (1972), numa exposição em Paris.',
   { h: 'Onde visitar' },
   { lista: [
     '**Seul:** palácios de Gyeongbokgung e Changdeokgung, Jongmyo, Museu Nacional da Coreia, bairro de Bukchon.',
