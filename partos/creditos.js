@@ -132,6 +132,11 @@ export default {
       "Busto de Marco Antonio - Museo Arqueológico Nacional (M.A.N)",
       "Laci3",
       "CC0"
+     ],
+     [
+      "Coin of Arsaces I of Parthia",
+      "Autor desconhecido (moeda antiga; ficheiro carregado na Wikipédia em inglês, 2005)",
+      "Public domain"
      ]
     ]
    }
@@ -269,6 +274,11 @@ export default {
       "Busto de Marco Antonio - Museo Arqueológico Nacional (M.A.N)",
       "Laci3",
       "CC0"
+     ],
+     [
+      "Coin of Arsaces I of Parthia",
+      "Autor desconhecido (moeda antiga; ficheiro carregado na Wikipédia em inglês, 2005)",
+      "Public domain"
      ]
     ]
    }
