@@ -127,6 +127,11 @@ export default {
       "Hortobágy National Park kz08",
       "Krzysztof Ziarnek, Kenraiz",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Elongated skull Hungarian national Museum 1",
+      "Wikimedia Commons (autor indicado na página do ficheiro)",
+      "CC0"
      ]
     ]
    }
@@ -259,6 +264,11 @@ export default {
       "Hortobágy National Park kz08",
       "Krzysztof Ziarnek, Kenraiz",
       "CC BY-SA 4.0"
+     ],
+     [
+      "Elongated skull Hungarian national Museum 1",
+      "Wikimedia Commons (autor indicado na página do ficheiro)",
+      "CC0"
      ]
     ]
    }

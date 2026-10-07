@@ -110,6 +110,7 @@ const mapa = [
   { h: 'The Bosporus and Crimea' },
   'On the Strait of **Kerch**, **Panticapaeum** was the capital of the **Bosporan kingdom**, a Greco-Scythian state that exported **grain** to Athens. In the kurgans around the city, the rich were buried with gold made by Greek goldsmiths, such as the **Kul-Oba** vase. Further south, **Chersonesos** (now Sevastopol) was a Dorian colony, founded c. 422 BC. Inland, the Crimean mountains belonged to the Taurians and, later, to the last Scythian tribes.',
   { img: 'esc-panticapeu', leg: 'Panticapaeum, today Kerch, in Crimea: capital of the Bosporan kingdom, seen from Mount Mithridates.' },
+  { img: 'esc-quersoneso', leg: 'Ruins of Chersonesos, a Greek colony in south-western Crimea (UNESCO World Heritage Site).' },
   { h: 'Scythian Neapolis' },
   '**Scythian Neapolis** (“new city”), near Simferopol, was the capital of the last Scythian kingdom, between the 3rd century BC and c. AD 260. It is a real **fortified city**, with stone walls, houses, workshops and two mausoleums of nobles (one of them, c. 115 BC, held the body of a king, possibly **Skilouros**, with a gold cap). It shows a society already settled and much Hellenised, very different from Herodotus’ nomads.',
   { img: 'esc-neapolis-reconstrucao', leg: 'Scythian Neapolis in the 2nd century BC, with walls, stone houses and a mausoleum; conjectural reconstruction. AI-generated illustration.' },

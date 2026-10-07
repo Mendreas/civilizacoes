@@ -179,6 +179,7 @@ const sociedade = [
   { h: '8. Dress' },
   'Ammianus describes the Huns in fur caps, goatskin leggings, linen tunics and stitched field-mouse skins (a point on which he almost certainly exaggerates), and says they never changed clothes until they fell apart. The tombs show a richer picture for the elites: **gold**, **buckles**, **brooches** and **diadems** of gold and coloured glass, the “polychrome” fashion of 5th-century central Europe. There are also **bronze mirrors** in female tombs. Horsemen wore boots, trousers and close-fitting tunics, suited to life on horseback.',
   { img: 'hun-vestuario', leg: 'A Hunnic warrior and woman in 5th-century dress; conjectural reconstruction. AI-generated illustration.' },
+  { img: 'hun-craniano', leg: 'Skull with artificial deformation, a custom practised by several steppe and central European peoples in the 5th century.' },
   { h: '9. Music, bards and entertainment' },
   'At Attila’s court Priscus described singers (*bards*) who celebrated the king’s victories, and the guests, moved, wept or applauded; others amused the king with fools and jesters. Among them was the dwarf **Zerco**, of Moorish origin, a former jester of Bleda, whom Attila treated with irony and affection. It is one of the few intimate scenes we have of this court. The Huns also held horse races and war games.',
   { h: '10. Science, medicine and technology' },

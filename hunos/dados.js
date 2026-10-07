@@ -183,6 +183,7 @@ const sociedade = [
   { h: '8. Vestuário' },
   'Amiano descreve os Hunos com chapéus de pele, calças de pele de cabra, túnicas de linho e peles de rato do campo cosidas (um ponto onde exagera, quase certamente), e diz que nunca mudavam de roupa até se desfazer. Os túmulos mostram um quadro mais rico para as elites: **ouro**, **fivelas**, **fíbulas** e **diademas** de ouro e vidro colorido, a moda «polícroma» da Europa central do século V. Também há **espelhos de bronze** nos túmulos femininos. Os cavaleiros usavam botas, calças e túnicas ajustadas, adequadas à vida a cavalo.',
   { img: 'hun-vestuario', leg: 'Guerreiro e mulher hunos em trajes do século V; reconstituição conjetural. Ilustração gerada por IA.' },
+  { img: 'hun-craniano', leg: 'Crânio com deformação artificial, costume praticado por vários povos da estepe e da Europa central no século V.' },
   { h: '9. Música, bardos e entretenimento' },
   'Na corte de Átila, Prisco descreveu cantores (*bardos*) que celebravam as vitórias do rei, e os convidados, comovidos, choravam ou aplaudiam; outros divertiam o rei com loucos e bobos. Entre eles havia o anão **Zerco**, de origem mourisca, antigo bobo de Bleda, que Átila tratava com ironia e estima. É uma das poucas cenas íntimas que temos desta corte. Os Hunos praticavam também corridas de cavalos e jogos guerreiros.',
   { h: '10. Ciência, medicina e técnica' },

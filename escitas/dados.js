@@ -113,6 +113,7 @@ const mapa = [
   { h: 'O Bósforo e a Crimeia' },
   'No estreito de **Kerch**, **Panticapeu** foi a capital do **reino do Bósforo**, estado greco-cita que exportava **trigo** para Atenas. Nos kurgans à volta da cidade, os ricos enterravam-se com ouro feito por ourives gregos, como o vaso de **Kul-Oba**. Mais a sul, **Quersoneso** (hoje Sebastopol) foi uma colónia dórica, fundada c. 422 a.C. Do lado de dentro, as montanhas da Crimeia eram dos tauros e, depois, das últimas tribos citas.',
   { img: 'esc-panticapeu', leg: 'Panticapeu, hoje Kerch, na Crimeia: capital do reino do Bósforo, vista do monte Mitridates.' },
+  { img: 'esc-quersoneso', leg: 'Ruínas de Quersoneso, colónia grega no sudoeste da Crimeia (Património Mundial da UNESCO).' },
   { h: 'Neápolis cita' },
   'A **Neápolis cita** («cidade nova»), perto de Simferopol, foi a capital do último reino cita, entre o século III a.C. e c. 260 d.C. É uma verdadeira **cidade fortificada**, com muralhas de pedra, casas, ofícios e dois mausoléus de nobres (um deles, c. 115 a.C., guardava o corpo de um rei, possivelmente **Skilouros**, com uma touca de ouro). Mostra uma sociedade já sedentária e muito helenizada, bem diferente dos nómadas de Heródoto.',
   { img: 'esc-neapolis-reconstrucao', leg: 'Neápolis cita no séc. II a.C., com muralhas, casas de pedra e mausoléu; reconstituição conjetural. Ilustração gerada por IA.' },

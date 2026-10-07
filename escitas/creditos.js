@@ -127,6 +127,11 @@ export default {
       "Kurgans in southern Ukraine.png",
       "Iwona Dembicz, Ivan I. Moysiyenko, Anastasia Shaposhnikova, Denys Vynokurov, Łukasz Kozub, Barbara Sudnik-Wœjcikowska",
       "CC BY 4.0"
+     ],
+     [
+      "Chersonesos ruins",
+      "Wikimedia Commons (autor indicado na página do ficheiro)",
+      "CC BY-SA 3.0 / GFDL"
      ]
     ]
    }
@@ -259,6 +264,11 @@ export default {
       "Kurgans in southern Ukraine.png",
       "Iwona Dembicz, Ivan I. Moysiyenko, Anastasia Shaposhnikova, Denys Vynokurov, Łukasz Kozub, Barbara Sudnik-Wœjcikowska",
       "CC BY 4.0"
+     ],
+     [
+      "Chersonesos ruins",
+      "Wikimedia Commons (autor indicado na página do ficheiro)",
+      "CC BY-SA 3.0 / GFDL"
      ]
     ]
    }
