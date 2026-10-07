@@ -107,6 +107,7 @@ const mapa = [
     ['Loango, Cabinda and Ambriz', 'Coast north and south', '16th – 19th c.', 'Slave-trade ports outside the king’s direct control']
   ] } },
   { img: 'con-mapa-pigafetta', leg: 'Map of the kingdom of Kongo in the work of Pigafetta and Lopes, 1591.' },
+  { img: 'con-ruinas-se', leg: 'AI-generated illustration: reconstruction of the Cathedral of São Salvador at Mbanza Kongo, capital of the Kingdom of Kongo, in the early 16th century.' },
   { h: 'Mbanza Kongo: the capital' },
   '**Mbanza Kongo** stood on a plateau, with water and good soil around, some 150 km from the coast. It was more a **group of districts** than a walled city: the quarter of the king and court, the quarter of the nobles, the «Portuguese town» (from the sixteenth century) and the vast area of villages around. In the seventeenth century travellers speak of tens of thousands of inhabitants, which made it one of the largest cities of Central Africa, though the figures are estimates. The place also had religious value: near the city were trees, springs and sacred places linked to the ancestors.',
   'With Christianity the Portuguese built a **stone church** (the future cathedral), a rarity in central and western Africa in the sixteenth century, and the city took the name **São Salvador**. In the seventeenth century the ruins of the cathedral, churches and stone houses were visible, and many can still be seen today. In 1678 the city was abandoned during the civil war and only retaken in 1709.',

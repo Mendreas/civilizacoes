@@ -111,6 +111,7 @@ const mapa = [
     ['Loango, Cabinda e Ambriz', 'Costa a norte e a sul', 'Séc. XVI – XIX', 'Portos de embarque de escravos fora do controlo direto do rei']
   ] } },
   { img: 'con-mapa-pigafetta', leg: 'Mapa do reino do Congo na obra de Pigafetta e Lopes, 1591.' },
+  { img: 'con-ruinas-se', leg: 'Ilustração gerada por IA: reconstituição da catedral de São Salvador, em Mbanza Kongo, a capital do Reino do Congo, no início do século XVI.' },
   { h: 'Mbanza Kongo: a capital' },
   '**Mbanza Kongo** ficava num planalto, com água e boas terras à volta, a uns 150 km da costa. Era mais um **conjunto de bairros** do que uma cidade de muralhas: o bairro do rei e da corte, o bairro dos nobres, a «cidade dos portugueses» (a partir do século XVI) e a vasta área de aldeias à volta. No século XVII, os viajantes falam de dezenas de milhares de habitantes, o que a tornava uma das maiores cidades da África Central, embora os números sejam estimativas. O lugar tinha também um valor religioso: junto à cidade havia árvores, nascentes e lugares sagrados ligados aos antepassados.',
   'Com o cristianismo, os portugueses construíram uma **igreja de pedra** (a futura catedral), um facto raro na África central e ocidental do século XVI, e a cidade ganhou o nome de **São Salvador**. No século XVII, as ruínas da catedral, das igrejas e das casas de pedra eram visíveis, e muitas ainda se veem hoje. Em 1678, a cidade foi abandonada durante a guerra civil e só foi retomada em 1709.',
