@@ -61,6 +61,7 @@ const linha = [
   ] },
   { img: 'con-escola-real', leg: 'Conjectural scene of the court school at Mbanza Kongo, c. 1516. AI-generated illustration.' },
   { img: 'con-batismo-1491', leg: 'Conjectural scene of the baptism of King Nzinga a Nkuwu, 3 May 1491. AI-generated illustration.' },
+  { img: 'con-carta-afonso-1526', leg: 'AI-generated illustration: King Afonso I of Kongo writing to the King of Portugal in 1526 to denounce the slave trade.' },
   { img: 'con-embaixador-eckhout', leg: 'African man painted by Albert Eckhout (c. 1641) in Dutch Brazil; identification with Kongo or Angola is debated.' },
   { img: 'con-antonio-manuel-roma', leg: 'Antonio Manuel (Nsaku ne Vunda), ambassador of Kongo, at the Vatican in 1608: an imagined scene, with conjectural details of dress and guards. AI-generated illustration; not a portrait.' },
   { linha: [

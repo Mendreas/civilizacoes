@@ -130,7 +130,7 @@ export default {
      ],
      [
       "Elongated skull Hungarian national Museum 1",
-      "Wikimedia Commons (autor indicado na página do ficheiro)",
+      "Ceoil",
       "CC0"
      ]
     ]
@@ -267,7 +267,7 @@ export default {
      ],
      [
       "Elongated skull Hungarian national Museum 1",
-      "Wikimedia Commons (autor indicado na página do ficheiro)",
+      "Ceoil",
       "CC0"
      ]
     ]

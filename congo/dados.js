@@ -65,6 +65,7 @@ const linha = [
   ] },
   { img: 'con-escola-real', leg: 'Cena conjetural da escola da corte de Mbanza Kongo, c. 1516. Ilustração gerada por IA.' },
   { img: 'con-batismo-1491', leg: 'Cena conjetural do batismo do rei Nzinga a Nkuwu, 3 de maio de 1491. Ilustração gerada por IA.' },
+  { img: 'con-carta-afonso-1526', leg: 'Ilustração gerada por IA: o rei Afonso I do Congo escreve ao rei de Portugal, em 1526, para denunciar o tráfico de escravos.' },
   { img: 'con-embaixador-eckhout', leg: 'Homem africano pintado por Albert Eckhout (c. 1641), no Brasil holandês; a identificação com o Congo ou com Angola é discutida.' },
   { img: 'con-antonio-manuel-roma', leg: 'António Manuel (Nsaku ne Vunda), embaixador do Congo, no Vaticano em 1608: cena imaginada, com pormenores de traje e de guardas conjeturais. Ilustração gerada por IA; não é um retrato.' },
   { linha: [

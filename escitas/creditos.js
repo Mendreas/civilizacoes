@@ -130,7 +130,7 @@ export default {
      ],
      [
       "Chersonesos ruins",
-      "Wikimedia Commons (autor indicado na página do ficheiro)",
+      "Dmitry A. Mottl",
       "CC BY-SA 3.0 / GFDL"
      ]
     ]
@@ -267,7 +267,7 @@ export default {
      ],
      [
       "Chersonesos ruins",
-      "Wikimedia Commons (autor indicado na página do ficheiro)",
+      "Dmitry A. Mottl",
       "CC BY-SA 3.0 / GFDL"
      ]
     ]
